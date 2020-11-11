@@ -35,9 +35,9 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city and +1 Trade Route capacity while established in any city.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="en_US">
 			<Text>Byzantine unique Classical Era unit that replaces the Quadrireme and has additional range.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="en_US">
 			<Text>Receive +2 [ICON_Strength] Combat Strength for each Holy City converted to your Religion and Byzantium's Religion is spread to nearby cities when a major civilization's unit is defeated (Taxis)</Text>
 		</Replace>
@@ -140,9 +140,9 @@
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
 			<Text>When complete, this project awards 60 [ICON_CULTURE] Culture and 60 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
+		<!---<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
 			<Text>Ethiopia’s International Trade Routes grant +0.5 [ICON_Faith] Faith per resource at the origin. Resources provide +1 [ICON_Faith] Faith. Can purchase Archaeological Museums and Archaeologists with [ICON_Faith] Faith.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="en_US">
 			<Text>Receive [ICON_SCIENCE] Science and [ICON_CULTURE] Culture equal to 15% of your [ICON_FAITH] Faith generation in cities founded on Hills.</Text>
 		</Replace>
@@ -183,15 +183,12 @@
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production per segment. Provides an increase to [ICON_Strength] Defense. Bonus to [ICON_Gold] Gold if adjacent to other segments. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="en_US">
 			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 60% of civics and technologies instead of 50%.[NEWLINE][NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +1 [ICON_FAITH] Faith, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Science, and +1 [ICON_CULTURE] Culture.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="en_US">
 			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +1 [ICON_FAITH] Faith, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Science, and +1 [ICON_CULTURE] Culture.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +1 [ICON_FAITH] Faith, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Science, and +1 [ICON_CULTURE] Culture.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="en_US">
 			<Text>Land combat or Support units are 10% cheaper to purchase with [ICON_GOLD] Gold or [ICON_FAITH] Faith for each Encampment district building in that city.</Text>
 		</Replace>
@@ -246,9 +243,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="en_US">
 			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
+		<!---<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="en_US">
 			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]+1 [ICON_RESOURCE_NITER] Niter per turn once discovered.</Text>
 		</Replace>
@@ -420,12 +417,12 @@
 			<Text>+50% [ICON_Production] Production toward districts in cities without a specialty district.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="en_US">
 			<Text>May reduce the presence of other Religions in their territory by 50%, and initiate theological combat with units of other Religions.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>May reduce the presence of other Religions in their territory by 50%, and initiate theological combat with units of other Religions.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
 			<Text>Levied units gain an ability giving them +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
 		</Replace>
@@ -457,9 +454,9 @@
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Korea that replaces the Campus district and must be built on hills. +2 [ICON_SCIENCE] Science base adjacency and mines provide minor adjacency bonuses. Provides +1 [ICON_CULTURE] Culture to adjacent Theater Squares. Culture bombs adjacent tiles when completed.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="en_US">
 			<Text>Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from the adjacent flat Tundra {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
@@ -652,9 +649,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
 			<Text>+100% [ICON_PRODUCTION] Production to Theater Square Buildings. Great Works in Eleanor’s cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="en_US">
 			<Text>+100% [ICON_Production] Production toward Siege units and walls.</Text>
-		</Replace>
+		</Replace>-->
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="en_US">
 			<Text>+{1_num} [ICON_Science] Science from the adjacent Theater Square.</Text>
 		</Row>
@@ -856,9 +853,9 @@
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="en_US">
 			<Text>Each Holy Site or Theater Square district in a city following this Religion provides +2 [ICON_Faith] Faith or +2 [ICON_Culture] Culture respectively.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="en_US">
 			<Text>Religion spreads to cities 40% further away.</Text>
-		</Replace>
+		</Replace>-->
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Amenities] Amenity in cities with a specialty district.</Text>
 		</Replace>
@@ -910,6 +907,67 @@
 		<!-- coastal tiles -->
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food and +1 [ICON_PRODUCTION] Production. Can only be built on valid resources.[NEWLINE][NEWLINE]If built on Luxury resources, the city will gain use of that resource.</Text>
+		</Replace>
+		
+		<!--===============   NEW BBS  ===============-->
+		<!-- civilizations -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="en_US">
+			<Text>Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
+			<Text>Ethiopia’s International Trade Routes grant +0.5 [ICON_Faith] Faith per resource at the origin. Improved Resources provide +1 [ICON_Faith] Faith. Can purchase Archaeological Museums and Archaeologists with [ICON_Faith] Faith.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="en_US">
+			<Text>Toqui Ability</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="en_US">
+			<Text>Unique trait for Mapuche: +5 [ICON_Strength] Combat Strength versus Opponents in Golden Age.</Text>
+		</Replace>
+		<!-- leaders -->
+		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
+			<Text>When complete, this project awards 50 [ICON_CULTURE] Culture and 50  [ICON_TOURISM] Tourism (on Standard speed, 25 on Online speed) based on the number of excess copies of Luxury resources France possesses.</Text>
+		</Replace>				
+		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="en_US">
+			<Text>Has 1 level of [ICON_VisLimited] Diplomatic Visibility greater than normal with every civilization that she's met once Political Philosophy is discovered. Receives a free Spy (and extra spy capacity) with the Castles technology. All spies start as Agents with a free promotion.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production toward Holy Site districts. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
+		</Replace>		
+		<!-- policies -->
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Unit Combat Strength when fighting Barbarians.</Text>
+		</Replace>
+		
+		<!-- new policies -->
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="en_US">
+			<Text>Siegecraft</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward Ancient and Classical era siege units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>During the Peloponnesian War, one hundred sieges were attempted and fifty-eight ended with the surrender of the besieged area.[NEWLINE]Alexander the Great's army successfully besieged many powerful cities during his conquests. Two of his most impressive achievements in siegecraft took place in the Siege of Tyre and the Siege of the Sogdian Rock. His engineers built a causeway that was originally 60 m (200 ft) wide and reached the range of his torsion-powered artillery, while his soldiers pushed siege towers housing stone throwers and light catapults to bombard the city walls.[NEWLINE] Most conquerors before him had found Tyre, a Phoenician island-city about 1 km from the mainland, impregnable. The Macedonians built a mole, a raised spit of earth across the water, by piling stones up on a natural land bridge that extended underwater to the island, and although the Tyrians rallied by sending a fire ship to destroy the towers, and captured the mole in a swarming frenzy, the city eventually fell to the Macedonians after a seven-month siege. In complete contrast to Tyre, Sogdian Rock was captured by stealthy attack. Alexander used commando-like tactics to scale the cliffs and capture the high ground, and the demoralized defenders surrendered. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="en_US">
+			<Text>Hard-Shell Explosives</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward Renaissance era and earlier siege units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>According to the story, around the year 1189 Iron Li developed a new method for hunting foxes which used a ceramic explosive to scare foxes into his nets. The explosive consisted of a ceramic bottle with a mouth, stuffed with gunpowder, and attached with a fuse. Explosive and net were placed at strategic points of places such as watering holes frequented by foxes, and when they got near enough, Iron Li would light the fuse, causing the ceramic bottle to explode and scaring the frightened foxes right into his nets. [NEWLINE]While a fanciful tale, it's not exactly certain why this would cause the development of the iron bomb, given the explosive was made using ceramics, and other materials such as bamboo or even leather would have done the same job, assuming they made a loud enough noise. Nonetheless, the iron bomb made its first appearance in 1221 at the siege of Qizhou (in modern Hubei province), and this time it would be the Jin who possessed the technological advantage. The Song commander Zhao Yurong survived and was able to relay his account for posterity. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="en_US">
+			<Text>Trench Warfare</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward siege units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>Trench warfare is a type of land warfare using occupied fighting lines largely comprising military trenches, in which troops are well-protected from the enemy's small arms fire and are substantially sheltered from artillery. Trench warfare became archetypically associated with the World War I (1914–1918), when the Race to the Sea rapidly expanded trench use on the Western Front starting in September 1914.[NEWLINE]Trench warfare proliferated when a revolution in firepower was not matched by similar advances in mobility, resulting in a gruelling form of warfare in which the defender held the advantage. On the Western Front in 1914–1918, both sides constructed elaborate trench, underground, and dugout systems opposing each other along a front, protected from assault by barbed wire. The area between opposing trench lines (known as "no man's land") was fully exposed to artillery fire from both sides. Attacks, even if successful, often sustained severe casualties. </Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

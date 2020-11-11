@@ -1,16 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be218" version="3163">
+﻿<!-- BETA ModID
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be228" version="4000">
+-->
+<!-- Codenaugh's ModID -->
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4000">
 	<Properties>
-		<Name>Better Balanced Game 3.16.2 - Static patched version (October Patch)</Name>
+		<Name>Better Balanced Game 4.0.0</Name>
 		<Description>
-			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
+			Live patch of Better Balanced Game
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
-		<Authors>codenaugh, S1AL, D. / Jack The Narrator</Authors>
-		<SpecialThanks>abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate</SpecialThanks>
+		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
+		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, WhySoHate, Ignasiuz</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
-	
+	<Dependencies>
+    	<Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+	</Dependencies>
 	<!-- can load only select files based on these requirements, if applied -->
 	<ActionCriteria>
 		<Criteria id="xp1">
@@ -109,10 +114,22 @@
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<InGameActions>
-		<AddGameplayScripts id="bbg_fix_exploits">
-			<File>exploits/culture_fix.lua</File>
+		<AddGameplayScripts id="bbg_core_script">
+			<File>scripts/bbg_script.lua</File>
 		</AddGameplayScripts>
-
+		<ReplaceUIScript id="BBGUnitPanel">
+			<Properties>
+				<LoadOrder>11612</LoadOrder>
+				<LuaContext>UnitPanel</LuaContext>
+				<LuaReplace>ui/replacements/unitpanel_bbg.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="support_scripts">
+			<File>scripts/bbg_stateutils.lua</File>
+			<File>scripts/bbg_unitcommanddefs.lua</File>
+			<File>scripts/bbg_unitcommands.lua</File>
+			<File>ui/replacements/unitpanel_bbg.lua</File>
+		</ImportFiles>
 		<UpdateText id="bbg_text_updates">
 			<Properties>
 				<LoadOrder>152</LoadOrder>
@@ -131,6 +148,11 @@
 				<LoadOrder>11612</LoadOrder>
 			</Properties>
 			<File>sql/base.sql</File>
+			<File>sql/new_bbg_religion.sql</File>
+			<File>sql/new_bbg_policies.sql</File>
+			<File>sql/new_bbg_mother_russia.sql</File>
+			<File>sql/new_bbg_catherine_black_queen.sql</File>	
+			<File>sql/new_bbg_england.sql</File>	
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -189,6 +211,7 @@
 				<LoadOrder>11622</LoadOrder>
 			</Properties>
 			<File>sql/xp2_rise_and_fall.sql</File>
+			<File>sql/new_bbg_mapuche.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_australia" criteria="xp2_australia">
@@ -249,6 +272,7 @@
 				<LoadOrder>11633</LoadOrder>
 			</Properties>
 			<File>sql/nfp_ethiopia.sql</File>
+			<File>sql/new_bbg_ethiopia.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_nfp_xp2_ethiopia" criteria="nfp_xp2_ethiopia">
 			<Properties>
@@ -267,6 +291,7 @@
 				<LoadOrder>11636</LoadOrder>
 			</Properties>
 			<File>sql/nfp_catherine_persona.sql</File>
+			<File>sql/new_bbg_catherine_magnificient.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_nfp_byzantium_gaul" criteria="nfp_byzantium_gaul">
 			<Properties>
@@ -274,10 +299,20 @@
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
+		
+		<UpdateIcons id="bbg_Icons">
+			<File>data/new_bbg_icons.xml</File>
+		</UpdateIcons>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
 	<Files>
+		<File>scripts/bbg_script.lua</File>
+		<File>scripts/bbg_stateutils.lua</File>
+		<File>scripts/bbg_unitcommanddefs.lua</File>
+		<File>scripts/bbg_unitcommands.lua</File>
+		<File>ui/replacements/unitpanel_bbg.lua</File>
+
 		<File>lang/english.xml</File>
 		<File>lang/korean.xml</File>
 		<File>lang/russian.xml</File>
@@ -300,7 +335,6 @@
 		<File>sql/xp2_nubia.sql</File>
 		<File>sql/xp2_poland.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
-		<File>exploits/culture_fix.lua</File>
 		<File>sql/dlc_maya_colombia.sql</File>
 		<File>sql/nfp_macedon_persia_maya_colombia.sql</File>
 		<File>sql/nfp_xp1_maya_colombia.sql</File>
@@ -309,5 +343,15 @@
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
 		<File>sql/nfp_byzantium_gaul.sql</File>
+		<File>sql/new_bbg_religion.sql</File>
+		<File>sql/new_bbg_policies.sql</File>
+		<File>sql/new_bbg_catherine_magnificient.sql</File>
+		<File>sql/new_bbg_catherine_black_queen.sql</File>		
+		<File>sql/new_bbg_mother_russia.sql</File>
+		<File>sql/new_bbg_ethiopia.sql</File>
+		<File>sql/new_bbg_mapuche.sql</File>
+		<File>sql/new_bbg_england.sql</File>			
+		
+		<File>data/new_bbg_icons.xml</File>
 	</Files>
 </Mod>

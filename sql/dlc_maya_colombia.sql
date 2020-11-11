@@ -21,6 +21,8 @@ DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIEND
 DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIENDA' AND TerrainType='TERRAIN_GRASS_HILLS';
 
 
+
+
 --==================
 -- Maya
 --==================
@@ -57,7 +59,7 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 --==================
 -- City-States
 --==================
-UPDATE Units SET CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=10 WHERE UnitType='UNIT_LAHORE_NIHANG';
+-- UPDATE Units SET CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=10 WHERE UnitType='UNIT_LAHORE_NIHANG';
 
 
 --==================

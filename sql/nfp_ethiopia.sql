@@ -27,7 +27,9 @@ DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith4';
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith5';
 -- fix resources faith
+/*
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_ADJUST_PLOT_YIELD', SubjectRequirementSetId='STAVE_CHURCH_RESOURCE_REQUIREMENTS' WHERE ModifierId='TRAIT_FAITH_RESOURCES';
+*/
 -- +4 on hills only for Oromo
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_MENELIK' AND ModifierId='TRAIT_HILLS_COMBAT';
 INSERT OR IGNORE INTO RequirementSets VALUES

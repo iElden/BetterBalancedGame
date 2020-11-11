@@ -5,7 +5,6 @@ INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES
 INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
     ('REQUIRES_CITY_HAS_ORDU_BBG', 'BuildingType', 'BUILDING_ORDU');
 
-
 -- Add GrandComandante mouvement point
 INSERT OR IGNORE INTO GreatPersonIndividualBirthModifiers(GreatPersonIndividualType, ModifierId) VALUES
     ('GREAT_PERSON_INDIVIDUAL_COMMANDANTE_JOSE_DE_SUCRE', 'GREATPERSON_COMANDANTE_MOVEMENT_AOE_LAND'),

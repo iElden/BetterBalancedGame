@@ -1,6 +1,147 @@
 --==============================================================
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
+-- Sumeria's Ziggurat gets +1 Culture at Diplomatic Service instead of Natural History
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ZIGGURAT';
+-- zigg gets +1 science and culture at enlightenment
+INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqCivic)
+	VALUES
+	('IMPROVEMENT_ZIGGURAT', 'YIELD_CULTURE', 1, 'CIVIC_THE_ENLIGHTENMENT'),
+	('IMPROVEMENT_ZIGGURAT', 'YIELD_SCIENCE', 1, 'CIVIC_THE_ENLIGHTENMENT');
+
+
+
+--==============================================================
+--******				B U I L D I N G S			  	  ******
+--==============================================================
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_ARMORY';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_MILITARY_ACADEMY';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_SEAPORT';
+
+
+
+--==============================================================
+--******			  C I T Y - S T A T E S				  ******
+--==============================================================
+-- nan-modal culture per district no longer applies to city center or wonders
+INSERT OR IGNORE INTO Requirements ( RequirementId, RequirementType, Inverse )
+	VALUES
+		( 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
+		( 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
+		( 'REQUIRES_DISTRICT_IS_NOT_CANAL_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
+		( 'REQUIRES_DISTRICT_IS_NOT_DAM_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
+		( 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
+		( 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
+		( 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 );
+INSERT OR IGNORE INTO RequirementArguments ( RequirementId, Name, Value )
+	VALUES
+		( 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG', 'DistrictType', 'DISTRICT_CITY_CENTER' ),
+		( 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG', 'DistrictType', 'DISTRICT_AQUEDUCT' ),
+		( 'REQUIRES_DISTRICT_IS_NOT_CANAL_BBG', 'DistrictType', 'DISTRICT_CANAL' ),
+		( 'REQUIRES_DISTRICT_IS_NOT_DAM_BBG', 'DistrictType', 'DISTRICT_DAM' ),
+		( 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG', 'DistrictType', 'DISTRICT_NEIGHBORHOOD' ),
+		( 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG', 'DistrictType', 'DISTRICT_SPACEPORT' ),
+		( 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG', 'DistrictType', 'DISTRICT_WONDER' );
+INSERT OR IGNORE INTO RequirementSets ( RequirementSetId, RequirementSetType )
+	VALUES ( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIREMENTSET_TEST_ALL' );
+INSERT OR IGNORE INTO RequirementSetRequirements ( RequirementSetId, RequirementId )
+	VALUES
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_PLOT_IS_ADJACENT_TO_COAST' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_CANAL_BBG' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_DAM_BBG' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG' ),
+		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG' );
+UPDATE Modifiers SET SubjectRequirementSetId='SPECIAL_DISTRICT_ON_COAST_BBG' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
+
+
+--==============================================================
+--******		C U L T U R E   V I C T O R I E S		  ******
+--==============================================================
+-- moon landing worth 5x science in culture instead of 10x
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' AND Name='Multiplier';
+-- computers and environmentalism tourism boosts to 50% (from 25%)
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='COMPUTERS_BOOST_ALL_TOURISM';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST_ALL_TOURISM'; 
+-- base wonder tourism adjusted to 5
+UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
+-- Reduce amount of tourism needed for foreign tourist from 200 to 150
+UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
+-- lower number of turns to move greatworks between cities
+UPDATE GlobalParameters SET Value='2' WHERE Name='GREATWORK_ART_LOCK_TIME';
+-- relics give 4 tourism instead of 8
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
+--
+
+-- fix same artist, same archelogist culture and tourism from bing 1 and 1 to being default numbers
+UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_HERMITAGE';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_HERMITAGE';
+UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
+UPDATE Building_GreatWorks SET NonUniquePersonYield=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
+
+-- books give 4 culture and 2 tourism each (8 and 4 for each great person)
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE YieldChange=2;
+-- artworks give 4 culture and 4 tourism instead of 3 and 2 ( 12/12 for each GP)
+-- artifacts give 6 culture and 6 tourism instead of 3 and 3 ( 18/18 for each GP)
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIGIOUS';
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_SCULPTURE';
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_LANDSCAPE';
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_PORTRAIT';
+UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_ARTIFACT';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_RUBLEV_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_RUBLEV_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_RUBLEV_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BOSCH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BOSCH_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BOSCH_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_DONATELLO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_DONATELLO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_DONATELLO_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MICHELANGELO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MICHELANGELO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MICHELANGELO_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_YING_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_YING_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_YING_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TITIAN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TITIAN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TITIAN_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GRECO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GRECO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GRECO_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_REMBRANDT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_REMBRANDT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_REMBRANDT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ANGUISSOLA_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ANGUISSOLA_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ANGUISSOLA_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_KAUFFMAN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_KAUFFMAN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_KAUFFMAN_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_HOKUSAI_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_HOKUSAI_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_HOKUSAI_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_EOP_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_EOP_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_EOP_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GOGH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GOGH_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GOGH_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_LEWIS_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_LEWIS_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_LEWIS_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_1';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_2';
 
 --==================
 -- America
@@ -74,45 +215,45 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
 	('REQUIRES_PLAYER_HAS_DYNASTIC_CYCLE_TRAIT_BBG', 'TraitType', 'TRAIT_CIVILIZATION_DYNASTIC_CYCLE');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('TRAIT_ATTACH_WONDER_FOOD_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
-	('TRAIT_ATTACH_WONDER_PROD_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
-	('TRAIT_ATTACH_WONDER_FAITH_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
-	('TRAIT_ATTACH_WONDER_GOLD_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
-	('TRAIT_ATTACH_WONDER_SCI_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
-	('TRAIT_ATTACH_WONDER_CUL_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER');
+	('TRAIT_ATTACH_WONDER_PROD_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER');
+	--('TRAIT_ATTACH_WONDER_FAITH_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
+	--('TRAIT_ATTACH_WONDER_GOLD_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
+	--('TRAIT_ATTACH_WONDER_SCI_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'),
+	--('TRAIT_ATTACH_WONDER_CUL_BBG', 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_ATTACH_WONDER_FOOD_BBG', 'ModifierId', 'TRAIT_WONDER_FOOD_BBG'),
-	('TRAIT_ATTACH_WONDER_PROD_BBG', 'ModifierId', 'TRAIT_WONDER_PROD_BBG'),
-	('TRAIT_ATTACH_WONDER_FAITH_BBG', 'ModifierId', 'TRAIT_WONDER_FAITH_BBG'),
-	('TRAIT_ATTACH_WONDER_GOLD_BBG', 'ModifierId', 'TRAIT_WONDER_GOLD_BBG'),
-	('TRAIT_ATTACH_WONDER_SCI_BBG', 'ModifierId', 'TRAIT_WONDER_SCI_BBG'),
-	('TRAIT_ATTACH_WONDER_CUL_BBG', 'ModifierId', 'TRAIT_WONDER_CUL_BBG');
+	('TRAIT_ATTACH_WONDER_PROD_BBG', 'ModifierId', 'TRAIT_WONDER_PROD_BBG');
+	--('TRAIT_ATTACH_WONDER_FAITH_BBG', 'ModifierId', 'TRAIT_WONDER_FAITH_BBG'),
+	--('TRAIT_ATTACH_WONDER_GOLD_BBG', 'ModifierId', 'TRAIT_WONDER_GOLD_BBG'),
+	--('TRAIT_ATTACH_WONDER_SCI_BBG', 'ModifierId', 'TRAIT_WONDER_SCI_BBG'),
+	--('TRAIT_ATTACH_WONDER_CUL_BBG', 'ModifierId', 'TRAIT_WONDER_CUL_BBG');
 INSERT OR IGNORE INTO TraitModifiers VALUES
 	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_FOOD_BBG'),
-	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_PROD_BBG'),
-	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_FAITH_BBG'),
-	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_GOLD_BBG'),
-	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_SCI_BBG'),
-	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_CUL_BBG');
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_PROD_BBG');
+	--('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_FAITH_BBG'),
+	--('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_GOLD_BBG'),
+	--('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_SCI_BBG'),
+	--('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_CUL_BBG');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('TRAIT_WONDER_FOOD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
-	('TRAIT_WONDER_PROD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
-	('TRAIT_WONDER_FAITH_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
-	('TRAIT_WONDER_GOLD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
-	('TRAIT_WONDER_SCI_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
-	('TRAIT_WONDER_CUL_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE');
+	('TRAIT_WONDER_PROD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE');
+--	('TRAIT_WONDER_FAITH_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+--	('TRAIT_WONDER_GOLD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+--	('TRAIT_WONDER_SCI_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+--	('TRAIT_WONDER_CUL_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_WONDER_FOOD_BBG', 'Amount', '1'),
 	('TRAIT_WONDER_FOOD_BBG', 'YieldType', 'YIELD_FOOD'),
 	('TRAIT_WONDER_PROD_BBG', 'Amount', '1'),
-	('TRAIT_WONDER_PROD_BBG', 'YieldType', 'YIELD_PRODUCTION'),
-	('TRAIT_WONDER_FAITH_BBG', 'Amount', '1'),
-	('TRAIT_WONDER_FAITH_BBG', 'YieldType', 'YIELD_FAITH'),
-	('TRAIT_WONDER_GOLD_BBG', 'Amount', '1'),
-	('TRAIT_WONDER_GOLD_BBG', 'YieldType', 'YIELD_GOLD'),
-	('TRAIT_WONDER_SCI_BBG', 'Amount', '1'),
-	('TRAIT_WONDER_SCI_BBG', 'YieldType', 'YIELD_SCIENCE'),
-	('TRAIT_WONDER_CUL_BBG', 'Amount', '1'),
-	('TRAIT_WONDER_CUL_BBG', 'YieldType', 'YIELD_CULTURE');
+	('TRAIT_WONDER_PROD_BBG', 'YieldType', 'YIELD_PRODUCTION');
+	--('TRAIT_WONDER_FAITH_BBG', 'Amount', '1'),
+	--('TRAIT_WONDER_FAITH_BBG', 'YieldType', 'YIELD_FAITH'),
+	--('TRAIT_WONDER_GOLD_BBG', 'Amount', '1'),
+	--('TRAIT_WONDER_GOLD_BBG', 'YieldType', 'YIELD_GOLD'),
+	--('TRAIT_WONDER_SCI_BBG', 'Amount', '1'),
+	--('TRAIT_WONDER_SCI_BBG', 'YieldType', 'YIELD_SCIENCE'),
+	--('TRAIT_WONDER_CUL_BBG', 'Amount', '1'),
+	--('TRAIT_WONDER_CUL_BBG', 'YieldType', 'YIELD_CULTURE');
 -- great wall gets +1 prod, no initial gold, lowered gold and lowered culture per adj after castles
 INSERT OR IGNORE INTO Improvement_YieldChanges VALUES ('IMPROVEMENT_GREAT_WALL', 'YIELD_PRODUCTION', 1);
 UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_GREAT_WALL' AND YieldType='YIELD_GOLD';
@@ -442,7 +583,7 @@ INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 INSERT OR IGNORE INTO ExcludedAdjacencies (YieldChangeId , TraitType)
     VALUES
     ('District_HS_Gold_Negative' , 'TRAIT_LEADER_MELEE_COASTAL_RAIDS');
-/*
+
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
     ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
@@ -453,7 +594,7 @@ INSERT OR IGNORE INTO ExcludedAdjacencies
 	SELECT DISTINCT TraitType, 'District_HS_Gold_Positive'
 	FROM (SELECT * FROM LeaderTraits WHERE TraitType LIKE 'TRAIT_LEADER_%' GROUP BY LeaderType) 
 	WHERE LeaderType!='LEADER_HARDRADA' AND TraitType!='TRAIT_LEADER_MAJOR_CIV';
-*/
+
 -- Holy Sites coastal adjacency
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES
@@ -472,18 +613,18 @@ INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 -- +50% production towards Holy Sites and associated Buildings
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
-	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'              ),
-	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'              );
+	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'              );
+--	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'              );
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES
-	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null),
-	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null);
+	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null);
+--	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null)
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
-	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'Amount'       , '50'                 , null , null),
-	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
-	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'Amount'       , '50'                 , null , null);
+	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'Amount'       , '50'                 , null , null);
+--	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
+--	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'Amount'       , '50'                 , null , null);
 
 
 --==================
@@ -508,7 +649,7 @@ INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 -- Lavra only gets 1 Great Prophet Point per turn
 UPDATE District_GreatPersonPoints SET PointsPerTurn=1 WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_PROPHET';
 -- Only gets 2 extra tiles when founding a new city instead of 8 
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_INCREASED_TILES';
+--UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_INCREASED_TILES';
 -- Cossacks have same base strength as cavalry instead of +5
 UPDATE Units SET Combat=62 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
 -- Lavra district does not acrue Great Person Points unless city has a theater
@@ -650,147 +791,6 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 	VALUES
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_BARBARIAN'),
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_MINOR_CIV');
--- Sumeria's Ziggurat gets +1 Culture at Diplomatic Service instead of Natural History
-UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ZIGGURAT';
--- zigg gets +1 science and culture at enlightenment
-INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqCivic)
-	VALUES
-	('IMPROVEMENT_ZIGGURAT', 'YIELD_CULTURE', 1, 'CIVIC_THE_ENLIGHTENMENT'),
-	('IMPROVEMENT_ZIGGURAT', 'YIELD_SCIENCE', 1, 'CIVIC_THE_ENLIGHTENMENT');
-
-
-
---==============================================================
---******				B U I L D I N G S			  	  ******
---==============================================================
-UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
-UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
-UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';
-UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_ARMORY';
-UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_MILITARY_ACADEMY';
-UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_SEAPORT';
-
-
-
---==============================================================
---******			  C I T Y - S T A T E S				  ******
---==============================================================
--- nan-modal culture per district no longer applies to city center or wonders
-INSERT OR IGNORE INTO Requirements ( RequirementId, RequirementType, Inverse )
-	VALUES
-		( 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
-		( 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
-		( 'REQUIRES_DISTRICT_IS_NOT_CANAL_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
-		( 'REQUIRES_DISTRICT_IS_NOT_DAM_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
-		( 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
-		( 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
-		( 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 );
-INSERT OR IGNORE INTO RequirementArguments ( RequirementId, Name, Value )
-	VALUES
-		( 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG', 'DistrictType', 'DISTRICT_CITY_CENTER' ),
-		( 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG', 'DistrictType', 'DISTRICT_AQUEDUCT' ),
-		( 'REQUIRES_DISTRICT_IS_NOT_CANAL_BBG', 'DistrictType', 'DISTRICT_CANAL' ),
-		( 'REQUIRES_DISTRICT_IS_NOT_DAM_BBG', 'DistrictType', 'DISTRICT_DAM' ),
-		( 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG', 'DistrictType', 'DISTRICT_NEIGHBORHOOD' ),
-		( 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG', 'DistrictType', 'DISTRICT_SPACEPORT' ),
-		( 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG', 'DistrictType', 'DISTRICT_WONDER' );
-INSERT OR IGNORE INTO RequirementSets ( RequirementSetId, RequirementSetType )
-	VALUES ( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIREMENTSET_TEST_ALL' );
-INSERT OR IGNORE INTO RequirementSetRequirements ( RequirementSetId, RequirementId )
-	VALUES
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_PLOT_IS_ADJACENT_TO_COAST' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_CANAL_BBG' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_DAM_BBG' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG' ),
-		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG' );
-UPDATE Modifiers SET SubjectRequirementSetId='SPECIAL_DISTRICT_ON_COAST_BBG' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
-
-
---==============================================================
---******		C U L T U R E   V I C T O R I E S		  ******
---==============================================================
--- moon landing worth 5x science in culture instead of 10x
-UPDATE ModifierArguments SET Value='5' WHERE ModifierId='PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' AND Name='Multiplier';
--- computers and environmentalism tourism boosts to 50% (from 25%)
-UPDATE ModifierArguments SET Value='50' WHERE ModifierId='COMPUTERS_BOOST_ALL_TOURISM';
-UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST_ALL_TOURISM'; 
--- base wonder tourism adjusted to 5
-UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
--- Reduce amount of tourism needed for foreign tourist from 200 to 150
-UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
--- lower number of turns to move greatworks between cities
-UPDATE GlobalParameters SET Value='2' WHERE Name='GREATWORK_ART_LOCK_TIME';
--- relics give 4 tourism instead of 8
-UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
---
-
--- fix same artist, same archelogist culture and tourism from bing 1 and 1 to being default numbers
-UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_HERMITAGE';
-UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_HERMITAGE';
-UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
-UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
-UPDATE Building_GreatWorks SET NonUniquePersonYield=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
-UPDATE Building_GreatWorks SET NonUniquePersonTourism=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
-
--- books give 4 culture and 2 tourism each (8 and 4 for each great person)
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE YieldChange=2;
--- artworks give 4 culture and 4 tourism instead of 3 and 2 ( 12/12 for each GP)
--- artifacts give 6 culture and 6 tourism instead of 3 and 3 ( 18/18 for each GP)
-UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIGIOUS';
-UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_SCULPTURE';
-UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_LANDSCAPE';
-UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_PORTRAIT';
-UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_ARTIFACT';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_RUBLEV_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_RUBLEV_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_RUBLEV_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BOSCH_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BOSCH_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BOSCH_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_DONATELLO_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_DONATELLO_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_DONATELLO_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MICHELANGELO_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MICHELANGELO_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MICHELANGELO_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_YING_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_YING_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_YING_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TITIAN_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TITIAN_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TITIAN_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GRECO_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GRECO_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GRECO_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_REMBRANDT_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_REMBRANDT_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_REMBRANDT_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ANGUISSOLA_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ANGUISSOLA_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ANGUISSOLA_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_KAUFFMAN_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_KAUFFMAN_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_KAUFFMAN_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_HOKUSAI_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_HOKUSAI_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_HOKUSAI_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_EOP_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_EOP_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_EOP_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GOGH_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GOGH_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_GOGH_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_LEWIS_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_LEWIS_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_LEWIS_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_2';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_3';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_2';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_3';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ORLOVSKY_1';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ORLOVSKY_2';
@@ -906,7 +906,7 @@ INSERT OR IGNORE INTO BeliefModifiers VALUES
 -- city patron buff
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CITY_PATRON_GODDESS_DISTRICT_PRODUCTION_MODIFIER' AND Name='Amount';
 -- Dance of Aurora yields reduced... only work for flat tundra
-UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
 -- stone circles -1 faith and +1 prod
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
@@ -1053,6 +1053,8 @@ INSERT OR IGNORE INTO RequirementArguments
 --==============================================================
 --******			P O L I C Y   C A R D S				  ******
 --==============================================================
+
+/*
 -- Limes should not become obselete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 -- Adds +100% Siege Unit Production to Limes Policy Card
@@ -1072,7 +1074,8 @@ INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
---
+
+
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
@@ -1145,26 +1148,29 @@ INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ATOMIC_ERA_CPLMOD');
 INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INFORMATION_ERA_CPLMOD');
+*/
 
 
 
---==============================================================
+--==============================================================================================
 --******				R E L I G I O N					  ******
---==============================================================
-/*UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
-UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
-UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
-UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
-UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
+--==============================================================================================
+/*
+UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
+--UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
+--UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
+--UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
+--UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
 -- remove marytr ability from prasat missionaries
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR'; --DLC
 -- reduce debator promotion
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
-UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
 -- remove spread from condemning and defeating
-UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
-UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';*/
+--UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
+--UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
+*/
 
 -- give monks wall breaker ability
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
@@ -1176,7 +1182,7 @@ INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType) VALUES
 INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
 	('WARRIOR_MONK_WALL_BREAKER_BBG', 'ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG');
 -- Nerf Inquisitors
-UPDATE Units SET ReligionEvictPercent=50, SpreadCharges=2 WHERE UnitType='UNIT_INQUISITOR';
+-- UPDATE Units SET ReligionEvictPercent=50, SpreadCharges=2 WHERE UnitType='UNIT_INQUISITOR';
 -- Religious spread from trade routes increased
 UPDATE GlobalParameters SET Value='2.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
 UPDATE GlobalParameters SET Value='1.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
@@ -1188,7 +1194,7 @@ UPDATE ModifierArguments SET Value='7' WHERE ModifierId='JUST_WAR_COMBAT_BONUS_M
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_CULTURE_DISTRICTS_MODIFIER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_FAITH_DISTRICTS_MODIFIER' AND Name='Amount';
 -- Itinerant Preachers now causes a Religion to spread 40% father away instead of only 30%
-UPDATE ModifierArguments SET Value='4' WHERE ModifierId='ITINERANT_PREACHERS_SPREAD_DISTANCE';
+-- UPDATE ModifierArguments SET Value='4' WHERE ModifierId='ITINERANT_PREACHERS_SPREAD_DISTANCE';
 -- Cross-Cultural Dialogue is now +1 Science for every 3 foreign followers
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
 -- Tithe is now +1 Gold for every 3 followers
@@ -1769,6 +1775,7 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRO
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType="DISTRICT_LAVRA";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
+
 
 --****		REQUIREMENTS		****--
 INSERT OR IGNORE INTO Requirements
