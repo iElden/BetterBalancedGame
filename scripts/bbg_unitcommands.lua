@@ -134,7 +134,7 @@ function BBGCommand_Burn(eOwner : number, iUnitID : number)
 						victimDmg = 0
 					end
 					local dmgBase = iCondemn_BaseDmg 
-					if (dmgBase * dmgModifier - victimDmg) < 5  then
+					if (victimDmg - dmgBase * dmgModifier ) < 5  then
 						-- Kill the unit
 						local pUnitExp = unit:GetExperience()
 						local requiredPromotion = GameInfo.UnitPromotions["PROMOTION_MARTYR"];
