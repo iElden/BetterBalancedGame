@@ -1349,6 +1349,7 @@ UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DE
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
+/*
 -- Huey gives +2 culture to lake tiles
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
@@ -1361,6 +1362,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
 	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
 	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
+	*/
 -- cristo gets 1 relic
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
 	VALUES ('WONDER_GRANT_RELIC_BBG' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	

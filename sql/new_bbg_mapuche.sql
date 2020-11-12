@@ -7,6 +7,8 @@
 --******									MAPUCHE									   ******
 --==============================================================================================
 -- Delete Base Initial Requirement
+
+
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_MAPUCHE_TOQUI' AND ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 
 INSERT OR IGNORE INTO Requirements
@@ -82,3 +84,5 @@ INSERT OR IGNORE INTO TraitModifiers
 	(TraitType, ModifierId)
 	VALUES
 	('TRAIT_CIVILIZATION_MAPUCHE_TOQUI' ,'TRAIT_TOQUI_COMBAT_BONUS_ABILITY_VS_GOLDEN_AGE_CIV');	
+	
+	
