@@ -7,8 +7,30 @@
 --******									MAPUCHE									   ******
 --==============================================================================================
 -- Delete Base Initial Requirement
+
+
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_MAPUCHE_TOQUI' AND ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 
+INSERT OR IGNORE INTO Requirements
+	(RequirementId , RequirementType)
+	VALUES
+	('REQUIRES_OPPONENT_IS_GOLDEN_AGE_REQUIREMENTS' , 		'REQUIREMENT_REQUIREMENTSET_IS_MET');	
+	
+INSERT OR IGNORE INTO RequirementArguments
+	(RequirementId , Name, Value)
+	VALUES
+	('REQUIRES_OPPONENT_IS_GOLDEN_AGE_REQUIREMENTS' , 		'RequirementSetId', 'OPPONENT_IS_IN_GOLDEN_AGE_REQUIREMENTS');	
+
+INSERT OR IGNORE INTO RequirementSets
+	(RequirementSetId , RequirementSetType)
+	VALUES
+	('MAPUCHE_TRAIT_REQUIREMENTS' , 		'REQUIREMENTSET_TEST_ALL');	
+	
+INSERT OR IGNORE INTO RequirementSetRequirements
+	(RequirementSetId , RequirementId)
+	VALUES
+	('MAPUCHE_TRAIT_REQUIREMENTS' , 		'REQUIRES_OPPONENT_IS_GOLDEN_AGE_REQUIREMENTS');	
+	
 INSERT OR IGNORE INTO Modifiers
 	(ModifierId , ModifierType, Permanent)
 	VALUES
@@ -17,7 +39,7 @@ INSERT OR IGNORE INTO Modifiers
 INSERT OR IGNORE INTO Modifiers
 	(ModifierId , ModifierType, SubjectRequirementSetId)
 	VALUES
-	('MOD_ABILITY_MAPUCHE' ,'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_IS_IN_GOLDEN_AGE_REQUIREMENTS');	
+	('MOD_ABILITY_MAPUCHE' ,'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'MAPUCHE_TRAIT_REQUIREMENTS');	
 	
 INSERT OR IGNORE INTO ModifierArguments
 	(ModifierId , Name, Value, Extra,     SecondExtra)
@@ -49,11 +71,18 @@ INSERT OR IGNORE INTO TypeTags
 	('ABILITY_TRAIT_MAPUCHE' ,'CLASS_AIRCRAFT');	
 
 INSERT OR IGNORE INTO UnitAbilities
-	(UnitAbilityType , Name, Description)
+	(UnitAbilityType , Name, Description, Inactive)
 	VALUES
-	('ABILITY_TRAIT_MAPUCHE' ,'LOC_ABILITY_TRAIT_MAPUCHE_NAME', 'LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION');		
+	('ABILITY_TRAIT_MAPUCHE' ,'LOC_ABILITY_TRAIT_MAPUCHE_NAME', 'LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION', 1);		
 
 INSERT OR IGNORE INTO UnitAbilityModifiers
 	(UnitAbilityType , ModifierId)
 	VALUES
 	('ABILITY_TRAIT_MAPUCHE' ,'MOD_ABILITY_MAPUCHE');	
+
+INSERT OR IGNORE INTO TraitModifiers
+	(TraitType, ModifierId)
+	VALUES
+	('TRAIT_CIVILIZATION_MAPUCHE_TOQUI' ,'TRAIT_TOQUI_COMBAT_BONUS_ABILITY_VS_GOLDEN_AGE_CIV');	
+	
+	

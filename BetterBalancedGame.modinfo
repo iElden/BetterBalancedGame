@@ -1,10 +1,10 @@
 ﻿<!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be228" version="4000">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be228" version="4001">
 -->
 <!-- Codenaugh's ModID -->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4000">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4001">
 	<Properties>
-		<Name>Better Balanced Game 4.0.0</Name>
+		<Name>Better Balanced Game 4.0.1</Name>
 		<Description>
 			Live patch of Better Balanced Game
 		</Description>
