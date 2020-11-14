@@ -912,7 +912,13 @@
 		<!--===============   NEW BBS?  ===============-->
 		<!-- civilizations -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ko_KR">
-			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에서 [ICON_Faith] 신앙 +1을 제공합니다. 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다.</Text>
+			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다.</Text>
+		</Replace>  <!-- newly added -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다. 유닛이 눈보라에서 피해를 받지 않습니다. 러시아와 전쟁 중인 문명은 러시아 영토에서 눈보라에 +100% 유닛 피해를 받습니다.</Text>
+		</Replace>  <!-- newly added -->
+		<Replace Tag="LOC_TRAIT_LEADER_MAGNIFICENCES_DESCRIPTION" Language="ko_KR">
+			<Text>극장가 특수지구 또는 샤토에 인접한 사치 자원을 개발할 때마다 [ICON_CULTURE] 문화 +2를 얻습니다. 중세 시장 사회제도를 완료하면, 극장가 특수지구가 있는 도시에서 궁중 축제 프로젝트가 시작될 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다. 완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량 +1, [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
@@ -920,12 +926,12 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="ko_KR">
 			<Text>에티오피아의 국제 교역로가 출발지의 자원당 [ICON_Faith] 신앙 +0.5를 부여합니다. 개발된 자원에 [ICON_Faith] 신앙 +1을 제공합니다. [ICON_Faith] 신앙으로 고고학 박물관과 고고학자를 구매할 수 있습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="ko_KR">
+		<Row Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="ko_KR">
 			<Text>토키</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="ko_KR">
-			<Text>황금기에 진입한 다른 문명 상대 시 [ICON_Strength] 전투력 보너스 +5를 제공합니다.(토키 능력)</Text>
-		</Replace>
+		</Row>
+		<Row Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="ko_KR">
+			<Text>황금기에 진입한 다른 문명 상대 시 [ICON_Strength] 전투력 보너스 +5를 제공합니다. (라우타로)</Text>
+		</Row>
 		<!-- leaders -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="ko_KR">
 			<Text>완료 시 이 프로젝트는 프랑스가 소유한 사치 자원의 초과 개수에 따라 (일반 속도에서) [ICON_CULTURE] 문화 40 및 [ICON_TOURISM] 관광 40을 부여합니다.</Text>
@@ -964,7 +970,7 @@
 			<Text>참호전</Text>
 		</Row>
 		<Row Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="ko_KR">
-			<Text>공성 유닛 생성에 대한 [ICON_Production] 생산력 +50%.</Text>
+			<Text>모든 공성 유닛 생성에 대한 [ICON_Production] 생산력 +50%.</Text>
 		</Row>
 		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="ko_KR">
 			<Text>Trench warfare is a type of land warfare using occupied fighting lines largely comprising military trenches, in which troops are well-protected from the enemy's small arms fire and are substantially sheltered from artillery. Trench warfare became archetypically associated with the World War I (1914–1918), when the Race to the Sea rapidly expanded trench use on the Western Front starting in September 1914.[NEWLINE]Trench warfare proliferated when a revolution in firepower was not matched by similar advances in mobility, resulting in a gruelling form of warfare in which the defender held the advantage. On the Western Front in 1914–1918, both sides constructed elaborate trench, underground, and dugout systems opposing each other along a front, protected from assault by barbed wire. The area between opposing trench lines (known as "no man's land") was fully exposed to artillery fire from both sides. Attacks, even if successful, often sustained severe casualties. </Text>
