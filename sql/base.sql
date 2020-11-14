@@ -584,16 +584,16 @@ INSERT OR IGNORE INTO ExcludedAdjacencies (YieldChangeId , TraitType)
     VALUES
     ('District_HS_Gold_Negative' , 'TRAIT_LEADER_MELEE_COASTAL_RAIDS');
 
-INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
-    VALUES
-    ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
-INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
-    VALUES
-    ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive');
-INSERT OR IGNORE INTO ExcludedAdjacencies 
-	SELECT DISTINCT TraitType, 'District_HS_Gold_Positive'
-	FROM (SELECT * FROM LeaderTraits WHERE TraitType LIKE 'TRAIT_LEADER_%' GROUP BY LeaderType) 
-	WHERE LeaderType!='LEADER_HARDRADA' AND TraitType!='TRAIT_LEADER_MAJOR_CIV';
+-- INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
+--     VALUES
+--     ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
+-- INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
+--     VALUES
+--     ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive');
+-- INSERT OR IGNORE INTO ExcludedAdjacencies 
+-- 	SELECT DISTINCT TraitType, 'District_HS_Gold_Positive'
+-- 	FROM (SELECT * FROM LeaderTraits WHERE TraitType LIKE 'TRAIT_LEADER_%' GROUP BY LeaderType) 
+-- 	WHERE LeaderType!='LEADER_HARDRADA' AND TraitType!='TRAIT_LEADER_MAJOR_CIV';
 
 -- Holy Sites coastal adjacency
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
