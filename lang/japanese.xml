@@ -422,7 +422,7 @@
 			<Text>ギルド・ナショナリズムの社会制度を完了することでそれぞれ軍団・大軍団が解禁される。ナショナリズムの社会制度を完了すれば軍団・大軍団[ICON_STRENGTH]戦闘力ボーナスがさらに+5。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
-			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+1。</Text>
+			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+1。 TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がインド固有の改善である階段井戸を建設できるようになる。[NEWLINE][NEWLINE][ICON_Food]食料+1、[ICON_FAITH]信仰力+1[ICON_Housing]住宅+1。聖地区域に隣接している場合、さらに[ICON_Faith]信仰力+1。隣接している農場1つごとに[ICON_Food]食料+1。丘陵タイル上や他の階段井戸と隣接するタイルには建設できない。</Text>

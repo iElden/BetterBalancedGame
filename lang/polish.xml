@@ -270,7 +270,7 @@
 				<Text>Unikalna jednostka węgierska epoki średniowiecza zastępująca kawalerię courserską. +2 do [ICON_STRENGTH] siły bojowej za każdą sąsiadującą jednostkę poborową.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="pl_PL">
-				<Text>Unikalna jednostka węgierska epoki przemysłowej zastępująca kawalerię. +1 do [ICON_STRENGTH] siły bojowej za każdy aktywny sojusz.</Text>
+				<Text>Unikalna jednostka węgierska epoki przemysłowej zastępująca kawalerię. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 			</Replace>
 
 			<!-- ================ India ================ -->

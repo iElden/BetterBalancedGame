@@ -1,12 +1,12 @@
-﻿<!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be228" version="4001">
--->
-<!-- Codenaugh's ModID -->
+﻿<!-- BETA ModID -->
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be228" version="4010">
+<!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
+-->
 	<Properties>
-		<Name>Better Balanced Game 4.0.3</Name>
+		<Name>Better Balanced Game 4.1 build 1</Name>
 		<Description>
-			Live patch of Better Balanced Game
+			Rome wasn't build in one day, only the monument was
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
@@ -206,6 +206,7 @@
 				<LoadOrder>11621</LoadOrder>
 			</Properties>
 			<File>sql/xp2__gathering_storm.sql</File>
+			<File>sql/new_bbg_hungary.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -353,7 +354,8 @@
 		<File>sql/new_bbg_mother_russia.sql</File>
 		<File>sql/new_bbg_ethiopia.sql</File>
 		<File>sql/new_bbg_mapuche.sql</File>
-		<File>sql/new_bbg_england.sql</File>			
+		<File>sql/new_bbg_england.sql</File>
+		<File>sql/new_bbg_hungary.sql</File>
 		
 		<File>data/new_bbg_icons.xml</File>
 	</Files>

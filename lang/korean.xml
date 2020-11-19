@@ -434,7 +434,7 @@
 			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 민족주의 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +5를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
-			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +1을 획득합니다.</Text>
+			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +1을 획득합니다. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ko_KR">
 			<Text>인도 특유의 계단식 우물을 건설할 수 있도록 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Food] 식량 +1, [ICON_Faith] 신앙 +1, [ICON_Housing] 주거공간 +1을 제공합니다. 성지 특수지구에 인접한 경우 [ICON_Faith] 신앙 +1, 인접한 농장마다 [ICON_Food] 식량 +1을 추가 제공합니다. 언덕이나 다른 계단식 우물에 인접하게 지을 수 없습니다.</Text>

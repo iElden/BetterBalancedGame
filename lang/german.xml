@@ -519,7 +519,7 @@
 			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzlich +5 Basis-Kampfstärke für Korps und Armeen.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="de_DE">
-			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. +1 [ICON_Strength] Kampfstärke für jede aktive Allianz.</Text>
+			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Stufenbrunnen, die einzigartige Modernisierung Indiens, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 [ICON_Faith] Glauben und +1 [ICON_Housing] Wohnraum. +1 [ICON_Faith] Glauben, wenn angrenzend an einen Heilige-Stätte-Bezirk. +1 [ICON_Food] Nahrung für jeden angrenzenden Bauernhof. Kann nicht auf Hügeln oder angrenzend an einen weiteren Stufenbrunnen gebaut werden.</Text>

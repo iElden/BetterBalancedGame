@@ -434,7 +434,7 @@
 			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Nationalism Civic.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
-			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every active Alliance.</Text>
+			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_FAITH] Faith, and +1 [ICON_Housing] Housing. +1 [ICON_Faith] Faith if adjacent to a Holy Site district. +1 [ICON_Food] Food for each adjacent Farm. Cannot be built on Hills or adjacent to another Stepwell.</Text>

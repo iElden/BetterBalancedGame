@@ -428,7 +428,7 @@
 			<Text>Можно раньше формировать корпуса (социальный институт «Наемники») и армии (социальный институт «Национализм»). +5 к базовой [ICON_STRENGTH] боевой мощи корпусов и армий после получения социального института «Национализм».</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный венгерский юнит Промышленной эры. Заменяет кавалеристов. +1 [ICON_Strength] к боевой мощи за каждый действующий союз.</Text>
+			<Text>Уникальный венгерский юнит Промышленной эры. Заменяет кавалеристов. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить ступенчатые колодцы (уникально для Индии).[NEWLINE][NEWLINE]+1 [ICON_Food] пищи, +1 [ICON_Faith] веры и +1 [ICON_Housing] жилья. +1 [ICON_Faith] веры, если построен рядом со священным местом. +1 [ICON_Food] пищи, если находится рядом с фермой. Нельзя построить на холмах или рядом с другим ступенчатым колодцем.</Text>

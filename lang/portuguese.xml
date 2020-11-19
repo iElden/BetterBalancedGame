@@ -436,7 +436,7 @@
 			<Text>Pode formar corporações (cívico de Mercenários) e exércitos (cívico de Nacionalismo) mais cedo. Exércitos e corporações recebem um adicional de +5 [ICON_STRENGTH] de força de combate ao pesquisar o cívico Nacionalismo.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade exclusiva dos húngaros da Era Industrial. +1 de [ICON_Strength] força de combate para cada aliança ativa.</Text>
+			<Text>Unidade exclusiva dos húngaros da Era Industrial. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir um Poço com Degraus, exclusivo da Índia.[NEWLINE][NEWLINE]+1 de [ICON_FOOD] alimento, +1 de [ICON_FAITH] fé e +1 de [ICON_Housing] habitação. +1 de [ICON_FAITH] fé se adjacente a um Local Sagrado. +1 de [ICON_FOOD] alimento por cada Fazenda adjacente. Não pode ser construído em colinas ou adjacente a outro Poço com Degraus.</Text>
