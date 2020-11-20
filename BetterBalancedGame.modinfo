@@ -1,4 +1,4 @@
-﻿<!-- BETA ModID -->
+<!-- BETA ModID -->
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be228" version="4010">
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
@@ -157,6 +157,7 @@
 			<File>sql/new_bbg_england.sql</File>
 			<File>sql/new_bbg_sumer.sql</File>	
 			<File>sql/new_bbg_gilgamesh.sql</File>				
+			<File>sql/new_bbg_nfp_babylon.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -363,6 +364,8 @@
 		<File>sql/new_bbg_sumer_xp2.sql</File>	
 		<File>sql/new_bbg_gilgamesh.sql</File>		
 		
+		<File>sql/new_bbg_nfp_babylon.sql</File>
+
 		<File>data/new_bbg_icons.xml</File>
 	</Files>
 </Mod>
