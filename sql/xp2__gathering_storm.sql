@@ -180,10 +180,11 @@ UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 --==================
 -- Sumeria
 --==================
+/* REVERT TO BASE GAME
 INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost) VALUES
 	('UNIT_SUMERIAN_WAR_CART', 10);
 
-
+*/
 
 --==================
 -- Sweden

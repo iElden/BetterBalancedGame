@@ -43,16 +43,43 @@ local iReligion_DecayTech = GameInfo.Technologies["TECH_SCIENTIFIC_THEORY"].Inde
 -- ===========================================================================
 function OnGameTurnStarted( turn:number )
 	print ("BBG TURN STARTING: " .. turn);
-	-- Handle Adjustments for all major players
+
+end
+
+function ApplyGilgameshTrait()
+	local iStartEra = GameInfo.Eras[ GameConfiguration.GetStartEra() ];
+	local iStartIndex = 0
+	if iStartEra ~= nil then
+		iStartIndex = iStartEra.ChronologyIndex;
+		else
+		return
+	end
+	if iStartIndex ~= 1 then
+		return
+	end
+	
 	for _, iPlayerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
 		local pPlayer = Players[iPlayerID]
 		if pPlayer ~= nil then
-			if pPlayer:GetTechs():HasTech(iReligion_DecayTech) == true then
-				--ApplyScientificTheory(iPlayerID)
+			if PlayerConfigurations[iPlayerID]:GetLeaderTypeName() == "LEADER_GILGAMESH" then
+				local playerUnits;
+				playerUnits = Players[iPlayerID]:GetUnits();
+				for k, unit in playerUnits:Members() do
+					local unitTypeName = UnitManager.GetTypeName(unit)
+					if "LOC_UNIT_WARRIOR_NAME" == unitTypeName then
+						local unitX = unit:GetX()
+						local unitY = unit:GetY()
+						playerUnits:Destroy(unit)
+						local iWarCart = GameInfo.Units["UNIT_SUMERIAN_WAR_CART"].Index
+						playerUnits:Create(iWarCart, unitX, unitY)
+					end
+				end
 			end
 		end
-	end
+	end	
+
 end
+
 
 function ApplyScientificTheory(iPlayerID:number)
 	-- Remove Religious Pressure in Cities whose religions are not like the main religion
@@ -79,9 +106,17 @@ end
 
 function Initialize()
 
-print("BBG - Gameplay Script Launched")
-
-GameEvents.OnGameTurnStarted.Add(OnGameTurnStarted);
+	print("BBG - Gameplay Script Launched")
+	local currentTurn = Game.GetCurrentGameTurn()
+	local startTurn = GameConfiguration.GetStartTurn()
+	
+	
+	-- turn 0 effects:
+	if currentTurn == startTurn then
+		ApplyGilgameshTrait()
+	end
+	
+	GameEvents.OnGameTurnStarted.Add(OnGameTurnStarted);
 
 end
 
