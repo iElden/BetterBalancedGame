@@ -158,6 +158,7 @@
 			<File>sql/new_bbg_sumer.sql</File>	
 			<File>sql/new_bbg_gilgamesh.sql</File>				
 			<File>sql/new_bbg_nfp_babylon.sql</File>
+			<File>sql/new_bbg_citystates.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -210,7 +211,8 @@
 			</Properties>
 			<File>sql/xp2__gathering_storm.sql</File>
 			<File>sql/new_bbg_hungary.sql</File>
-			<File>sql/new_bbg_sumer_xp2.sql</File>	
+			<File>sql/new_bbg_sumer_xp2.sql</File>
+			<File>sql/new_bbg_citystates_xp2.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -362,7 +364,9 @@
 		<File>sql/new_bbg_hungary.sql</File>
 		<File>sql/new_bbg_sumer.sql</File>
 		<File>sql/new_bbg_sumer_xp2.sql</File>	
-		<File>sql/new_bbg_gilgamesh.sql</File>		
+		<File>sql/new_bbg_gilgamesh.sql</File>
+		<File>sql/new_bbg_citystates.sql</File>
+		<File>sql/new_bbg_citystates_xp2.sql</File>
 		
 		<File>sql/new_bbg_nfp_babylon.sql</File>
 
