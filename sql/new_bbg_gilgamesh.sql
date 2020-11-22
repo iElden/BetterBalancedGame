@@ -7,8 +7,7 @@
 --******			GILGAMESH					 	  ******
 --==============================================================================================
 -- Delete some old Traits as they are buggy :( 
-DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_ALLIED_WAR_DISCOUNT';
-DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU';
 
 -- Give the Barb modifier + Levy Discount + Add combat experience
 INSERT INTO TraitModifiers

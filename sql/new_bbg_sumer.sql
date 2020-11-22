@@ -7,8 +7,7 @@
 --******				SUMER						   ******
 --==============================================================================================
 -- Delete old Trait as they are moved and reworked to Gilgamesh
-DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_FIRST_CIVILIZATION' AND ModifierId='TRAIT_BARBARIAN_CAMP_GOODY';
-DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_FIRST_CIVILIZATION' AND ModifierId='TRAIT_LEVY_DISCOUNT';
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_FIRST_CIVILIZATION';
 
 -- Farms adjacent to a River yield +1 food, Farms adjacent to a River get + 1 prop if Water Mill
 INSERT INTO TraitModifiers
