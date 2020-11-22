@@ -94,6 +94,9 @@
 		<Criteria id="nfp_byzantium_gaul">
 			<ModInUse>A1100FC4-70F2-4129-AC27-2A65A685ED08</ModInUse>
 		</Criteria>
+		<Criteria id="nfp_babylon">
+			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
+		</Criteria>
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -157,7 +160,7 @@
 			<File>sql/new_bbg_england.sql</File>
 			<File>sql/new_bbg_sumer.sql</File>	
 			<File>sql/new_bbg_gilgamesh.sql</File>				
-			<File>sql/new_bbg_nfp_babylon.sql</File>
+			<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 			<File>sql/new_bbg_citystates.sql</File>
 		</UpdateDatabase>
 		
@@ -308,6 +311,12 @@
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
+				<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
+			<Properties>
+				<LoadOrder>11638</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_babylon.sql</File>
+		</UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -367,8 +376,10 @@
 		<File>sql/new_bbg_gilgamesh.sql</File>
 		<File>sql/new_bbg_citystates.sql</File>
 		<File>sql/new_bbg_citystates_xp2.sql</File>
-		
 		<File>sql/new_bbg_nfp_babylon.sql</File>
+
+		
+		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
 		<File>data/new_bbg_icons.xml</File>
 	</Files>
