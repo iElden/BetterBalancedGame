@@ -70,7 +70,7 @@ VALUES	('Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMP
 		('Ziggurat_Faith_District',		'Placeholder',	'YIELD_FAITH',		1,				1,				NULL,					1);
 
 
--- Sumerian War Carts are nerfed to 27
-UPDATE Units SET Combat=27 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
+-- Sumerian War Carts are nerfed to 28 (BASE = 30)
+UPDATE Units SET Combat=28 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
 
 -- Sumerian War Carts as a starting unit in Ancient is coded on the lua front
