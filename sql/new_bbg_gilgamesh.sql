@@ -22,6 +22,6 @@ VALUES	('TRAIT_GILGAMESH_COMBAT_EXPERIENCE',				'MODIFIER_PLAYER_UNITS_ADJUST_UN
 
 INSERT INTO ModifierArguments
 		(ModifierId,										Name,						Value)
-VALUES	('TRAIT_GILGAMESH_COMBAT_EXPERIENCE',				'Amount',					20);
+VALUES	('TRAIT_GILGAMESH_COMBAT_EXPERIENCE',				'Amount',					25);
 
 -- Sumerian War Carts as a starting unit in Ancient is coded on the lua front

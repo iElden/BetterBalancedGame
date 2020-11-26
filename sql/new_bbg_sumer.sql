@@ -9,7 +9,7 @@
 -- Delete old Trait as they are moved and reworked to Gilgamesh
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_FIRST_CIVILIZATION';
 
--- Farms adjacent to a River yield +1 food, Farms adjacent to a River get + 1 prop if Water Mill
+-- Farms adjacent to a River yield +1 food, Farms adjacent to a River get + 1 prop if next to Zigurat
 INSERT INTO TraitModifiers
 		(TraitType,											ModifierId)
 VALUES	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION', 			'FIRST_CIVILIZATION_FARM_FOOD'),
@@ -29,26 +29,30 @@ VALUES	('FIRST_CIVILIZATION_FARM_FOOD',				'YieldType',					'YIELD_FOOD'),
 		('FIRST_CIVILIZATION_FARM_PROD',				'Amount',						1);
 
 INSERT INTO RequirementSets
-		(RequirementSetId,											RequirementSetType)
-VALUES	('FIRST_CIVILIZATION_FARM_FOOD_REQUIREMENTS',		'REQUIREMENTSET_TEST_ALL'),
+		(RequirementSetId,										RequirementSetType)
+VALUES	('FIRST_CIVILIZATION_FARM_FOOD_REQUIREMENTS',			'REQUIREMENTSET_TEST_ALL'),
 		('FIRST_CIVILIZATION_FARM_PROD_REQUIREMENTS',			'REQUIREMENTSET_TEST_ALL');
 
 INSERT INTO RequirementSetRequirements
-		(RequirementSetId,											RequirementId)
-VALUES	('FIRST_CIVILIZATION_FARM_FOOD_REQUIREMENTS',		'REQUIRES_PLOT_HAS_FARM'),
-		('FIRST_CIVILIZATION_FARM_FOOD_REQUIREMENTS',		'REQUIRES_PLOT_ADJACENT_TO_RIVER'),
+		(RequirementSetId,										RequirementId)
+VALUES	('FIRST_CIVILIZATION_FARM_FOOD_REQUIREMENTS',			'REQUIRES_PLOT_HAS_FARM'),
+		('FIRST_CIVILIZATION_FARM_FOOD_REQUIREMENTS',			'REQUIRES_PLOT_ADJACENT_TO_RIVER'),
 
 		('FIRST_CIVILIZATION_FARM_PROD_REQUIREMENTS',			'REQUIRES_PLOT_HAS_FARM'),
-		('FIRST_CIVILIZATION_FARM_PROD_REQUIREMENTS',			'REQUIRES_PLOT_ADJACENT_TO_RIVER'),
-		('FIRST_CIVILIZATION_FARM_PROD_REQUIREMENTS',			'REQUIRES_CITY_HAS_WATER_MILL');
+		('FIRST_CIVILIZATION_FARM_PROD_REQUIREMENTS',			'REQUIRES_PLOT_ADJACENT_TO_ZIGGURAT'),
+		('FIRST_CIVILIZATION_FARM_PROD_REQUIREMENTS',			'REQUIRES_PLAYER_HAS_EARLY_EMPIRE');
 
 INSERT INTO Requirements
-		(RequirementId, 														RequirementType)
-VALUES	('REQUIRES_CITY_HAS_WATER_MILL',			'REQUIREMENT_CITY_HAS_BUILDING');
+		(RequirementId, 										RequirementType)
+VALUES	('REQUIRES_CITY_HAS_WATER_MILL',						'REQUIREMENT_CITY_HAS_BUILDING'),
+		('REQUIRES_PLOT_ADJACENT_TO_ZIGGURAT',					'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES'),
+		('REQUIRES_PLAYER_HAS_EARLY_EMPIRE' , 					'REQUIREMENT_PLAYER_HAS_CIVIC');	
 
 INSERT INTO RequirementArguments
-		(RequirementId, 														Name,					Value)
-VALUES	('REQUIRES_CITY_HAS_WATER_MILL', 		'BuildingType',			'BUILDING_WATER_MILL');
+		(RequirementId, 							Name,						Value)
+VALUES	('REQUIRES_CITY_HAS_WATER_MILL', 			'BuildingType',				'BUILDING_WATER_MILL'),
+		('REQUIRES_PLOT_ADJACENT_TO_ZIGGURAT', 		'ImprovementType',			'IMPROVEMENT_ZIGGURAT'),
+		('REQUIRES_PLAYER_HAS_EARLY_EMPIRE', 		'CivicType', 				'CIVIC_EARLY_EMPIRE');	
 
 
 -- Ziggurat buff
@@ -71,6 +75,9 @@ VALUES	('Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMP
 
 
 -- Sumerian War Carts are nerfed to 28 (BASE = 30)
-UPDATE Units SET Combat=28 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
+UPDATE Units SET Combat=28 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+-- Sumerian War Carts are cost is dimished to 45 (BASE = 55)
+UPDATE Units SET Cost=45 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
+
 
 -- Sumerian War Carts as a starting unit in Ancient is coded on the lua front

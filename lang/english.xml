@@ -942,7 +942,7 @@
 			<Text>The Cradle of Civilization</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
-			<Text>Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]This bonus is increased by +1 [ICON_Production] Production if the city has built a Water Mill. </Text>
+			<Text>Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
@@ -961,13 +961,13 @@
 			<Text>As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="en_US">
-			<Text>+20% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="en_US">
-			<Text>+20% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+20% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		
 		
