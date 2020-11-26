@@ -29,8 +29,8 @@
 -- Crusader reverted to +5
 
 
-include "bbg_stateutils"
-include "bbg_unitcommands"
+--include "bbg_stateutils"
+--include "bbg_unitcommands"
 
 -- ===========================================================================
 --	Constants

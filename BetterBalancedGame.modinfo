@@ -121,19 +121,6 @@
 		<AddGameplayScripts id="bbg_core_script">
 			<File>scripts/bbg_script.lua</File>
 		</AddGameplayScripts>
-		<ReplaceUIScript id="BBGUnitPanel">
-			<Properties>
-				<LoadOrder>11612</LoadOrder>
-				<LuaContext>UnitPanel</LuaContext>
-				<LuaReplace>ui/replacements/unitpanel_bbg.lua</LuaReplace>
-			</Properties>
-		</ReplaceUIScript>
-		<ImportFiles id="support_scripts">
-			<File>scripts/bbg_stateutils.lua</File>
-			<File>scripts/bbg_unitcommanddefs.lua</File>
-			<File>scripts/bbg_unitcommands.lua</File>
-			<File>ui/replacements/unitpanel_bbg.lua</File>
-		</ImportFiles>
 		<UpdateText id="bbg_text_updates">
 			<Properties>
 				<LoadOrder>152</LoadOrder>
@@ -326,10 +313,6 @@
 	<!-- defines file dependencies -->
 	<Files>
 		<File>scripts/bbg_script.lua</File>
-		<File>scripts/bbg_stateutils.lua</File>
-		<File>scripts/bbg_unitcommanddefs.lua</File>
-		<File>scripts/bbg_unitcommands.lua</File>
-		<File>ui/replacements/unitpanel_bbg.lua</File>
 
 		<File>lang/english.xml</File>
 		<File>lang/korean.xml</File>
