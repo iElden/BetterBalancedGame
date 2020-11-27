@@ -424,7 +424,8 @@
 			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
 		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
-            <Text>징병된 유닛이 능력을 획득하여 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+            <Text>징병된 유닛이 능력을 획득하여 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.
+			[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
         </Replace>
         <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
             <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다. 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>

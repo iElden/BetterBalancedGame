@@ -312,7 +312,8 @@
 			<Text>Exclusive à la Hongrie, cette unité du Moyen-âge remplace le coursier. [ICON_Strength] Puissance de combat +2 pour chaque unité mobilisée adjacente.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="fr_FR">
-			<Text>Les unités levées depuis une cité-état gagnent une capacité qui leur octroie 1 [ICON_Movement] PM. Améliorer des unités levées coûte 75 % d'[ICON_GOLD] or et de ressources en moins. Si vous levez les troupes d'une cité-état, vous recevez 1 [ICON_ENVOY] émissaire dans cette cité-état. Les châteaux débloquent l'Armée noire, une unité exclusive.</Text>
+			<Text>Les unités levées depuis une cité-état gagnent une capacité qui leur octroie 1 [ICON_Movement] PM. Améliorer des unités levées coûte 75 % d'[ICON_GOLD] or et de ressources en moins. Si vous levez les troupes d'une cité-état, vous recevez 1 [ICON_ENVOY] émissaire dans cette cité-état. Les châteaux débloquent l'Armée noire, une unité exclusive.
+				[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="fr_FR">			
 			<Text>Exclusive à la Hongrie, cette unité de l'ère industrielle remplace la cavalerie. [ICON_Strength] Puissance de combat +1 pour chaque cité-état dont vous êtes le suzerain.</Text>

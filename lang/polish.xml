@@ -264,7 +264,8 @@
 
 			<!-- ================ Hungary ================ -->
 			<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki poborowe zyskują umiejętność zapewniającą im +1 do [ICON_MOVEMENT] ruchu. Ulepszenie jednostek poborowych kosztuje o 75% mniej [ICON_GOLD] złota i zasobów. Rekrutując oddziały z miasta-państwa, zyskujesz w nim 1 [ICON_ENVOY] emisariuszy. Po odkryciu technologii zamków otrzymasz unikalną jednostkę – Czarną Armię.</Text>
+				<Text>Jednostki poborowe zyskują umiejętność zapewniającą im +1 do [ICON_MOVEMENT] ruchu. Ulepszenie jednostek poborowych kosztuje o 75% mniej [ICON_GOLD] złota i zasobów. Rekrutując oddziały z miasta-państwa, zyskujesz w nim 1 [ICON_ENVOY] emisariuszy. Po odkryciu technologii zamków otrzymasz unikalną jednostkę – Czarną Armię.
+				[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna jednostka węgierska epoki średniowiecza zastępująca kawalerię courserską. +2 do [ICON_STRENGTH] siły bojowej za każdą sąsiadującą jednostkę poborową.</Text>

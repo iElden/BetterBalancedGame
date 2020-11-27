@@ -406,7 +406,8 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
-            <Text>徴兵されたユニットの[ICON_Movement]移動力+1。徴兵されたユニットのアップグレードに必要な資源と[ICON_GOLD]ゴールドが75%減少。都市国家から徴兵を行うと、その都市国家に対する[ICON_ENVOY]代表団を1人獲得。城の技術を研究すると固有ユニットの黒軍が解禁される。</Text>
+            <Text>徴兵されたユニットの[ICON_Movement]移動力+1。徴兵されたユニットのアップグレードに必要な資源と[ICON_GOLD]ゴールドが75%減少。都市国家から徴兵を行うと、その都市国家に対する[ICON_ENVOY]代表団を1人獲得。城の技術を研究すると固有ユニットの黒軍が解禁される。
+			[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
         </Replace>
         <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ja_JP">
             <Text>ユニットを撃破するとそのユニットの[ICON_Strength]戦闘力の25%に等しい[ICON_Science]科学力を獲得する。都市が戦争による疲労をうけない。遺産のある都市を占領すると全ユニットのHPが完全回復する。</Text>

@@ -509,7 +509,8 @@
 			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
-			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +1 [ICON_Movement] Fortbewegung. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten zusätzlich in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht ist.</Text>
+			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +1 [ICON_Movement] Fortbewegung. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten zusätzlich in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht ist.
+			[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
 			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit. Städte werden nicht kriegsmüde. Alle Militäreinheiten heilen vollständig, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
