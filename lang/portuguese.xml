@@ -744,6 +744,10 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="pt_BR">
 			<Text>Uma construição única dos Astecas. Concede mais [ICON_AMENITIES] Serviços, +3 [ICON_CULTURE] Cultura, e um [ICON_GreatGeneral] ponto de Grande General por turno.</Text>
 		</Replace>
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="pt_BR"> 
 			<Text>Unidade chinesa exclusiva que substitui o Besteiro. +7 [ICON_Ranged] de Força de Combate quando atacando unidades adjacentes.</Text>
@@ -754,6 +758,10 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="pt_BR">
 			<Text>+7 [ICON_Strength] de Força de Combate quando atacando inimigos em painéis adjacentes.</Text>
 		</Row>
+		<!-- Dutch -->
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="pt_BR">
+      		<Text>As suas [ICON_TradeRoute] rotas comerciais para as suas próprias cidades concedem +1 de lealdade por turno para a cidade de início. [ICON_TradeRoute] Rotas comerciais de cidades estrangeiras concedem +1 de [ICON_Culture] cultura a você.</Text>
+    	</Replace>
 		<!-- Egypt -->
 		<!-- France -->
 		<!-- Georgia -->

@@ -737,6 +737,14 @@
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+50% [ICON_Production] производства в течение 10 ходов после освобождения города.</Text>
 		</Replace>
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ru_RU">
+			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
+		<!-- Dutch -->
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="ru_RU">
+			<Text>Ваши [ICON_TradeRoute] торговые пути к своим городам дают исходному пункту +1 лояльности за ход. [ICON_TradeRoute] Торговые пути к иностранным городам или от них дают вам +1 [ICON_Culture] культуры.</Text>
+		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ru_RU">
 			<Text>+{1_num} [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>

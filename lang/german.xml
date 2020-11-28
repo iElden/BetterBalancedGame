@@ -821,6 +821,10 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="de_DE">
 			<Text>Einzigartiges Gebäude der Azteken. Gewährt 1 [ICON_Amenities] Annehmlichkeit, +3 [ICON_Culture] Kultur und +1 [ICON_GreatGeneral] Punkt des Typs "Großer General" pro Runde.</Text>
 		</Replace>
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="de_DE">
 			<Text>Chinesische Spezialeinheit. Ersetzt den Armbrustschützen. +7 [ICON_Ranged] Fernkampfstärke beim Angriff auf benachbarte Einheiten.</Text>
@@ -831,6 +835,9 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="de_DE">
 			<Text>+7 [ICON_Strength] Kampfstärke beim ANgriff auf benachbarte feindliche Einheiten.</Text>
 		</Row>
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="de_DE">
+    		  <Text>Eure [ICON_TradeRoute] Handelswege zu Euren eigenen Städten gewähren +1 Loyalität pro Runde von der Ausgangsstadt. [ICON_TradeRoute] Handelswege zu oder von fremden Städten gewähren +2 [ICON_Culture] Kultur.</Text>
+   		 </Replace>
 		<!-- Egypt -->
 		<!-- France -->
 		<!-- Georgia -->

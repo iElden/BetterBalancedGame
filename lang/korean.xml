@@ -912,6 +912,10 @@
 		
 		<!--===============   NEW BBS?  ===============-->
 		<!-- civilizations -->
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ko_KR">
 			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다.</Text>
 		</Replace>  <!-- newly added -->
@@ -942,7 +946,10 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 광산을 약탈 또는 해안 강습하면 [ICON_GOLD] 금뿐만 아니라 [ICON_SCIENCE] 과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구를 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다. 성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
-		</Replace>		
+		</Replace>
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="ko_KR">
+      		<Text>국내 도시 간 연결된 [ICON_TradeRoute] 교역로에서 출발 도시에 턴마다 충성심 +1을 제공합니다. 외국 도시와 연결된 모든 [ICON_TradeRoute] 교역로에서 [ICON_Culture] 문화 +2을 획득합니다.</Text>
+    	</Replace>
 		<!-- policies -->
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="ko_KR">
 			<Text>야만인과 전투 시 [ICON_Strength] 유닛 전투력 +10.</Text>

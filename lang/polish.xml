@@ -92,6 +92,11 @@
 				<Text>Unikalna budowla Azteków. Zapewnia [ICON_AMENITIES] udogodnienia, +3 do [ICON_CULTURE] kultury i punkt [ICON_GreatGeneral] wielkiego generała.</Text>
 			</Replace>
 
+			<!-- Babylon -->
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="pl_PL">
+				<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+			</Replace>
+
 			<!-- ================ Byzantium ================ -->
 			<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="pl_PL">
 				<Text>Zapewnia +2 do [ICON_Strength] siły bojowej za każde święte miasto nawrócone na twoją religię. Pokonanie jednostki jednej z wielkich cywilizacji powoduje rozprzestrzenienie się religii Bizancjum na pobliskie miasta. (Taxis)</Text>
@@ -388,6 +393,9 @@
 			<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć polder dostępny wyłącznie dla Holandii.[NEWLINE][NEWLINE]+1 [ICON_FOOD] żywności, +1 do [ICON_Production] produkcji i +0,5 do [ICON_Housing] obszarów mieszkalnych. +1 do [ICON_FOOD] żywności, jeśli sąsiaduje z polderem. Dodatkowa [ICON_PRODUCTION] produkcja, [ICON_GOLD] złoto i [ICON_FOOD] żywność wraz z postępami na drzewach idei i technologii. Można umieścić wyłącznie na polu wybrzeża lub jeziora sąsiadującego co najmniej z 2 polami terenu umożliwiającego ruch. Zwiększa koszt [ICON_Movement] ruchu na polu do 3.</Text>
 			</Replace>
+		    <Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="pl_PL">
+      			<Text>Twoje wewnętrzne [ICON_TradeRoute] szlaki handlowe zapewniają +1 do lojalności na turę w miastach początkowych. Międzynarodowe [ICON_TradeRoute] szlaki handlowe zapewniają ci +2 do [ICON_Culture] kultury.</Text>
+    		</Replace>
 
 			<!-- ================ Norway ================ -->
 			<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="pl_PL">

@@ -737,6 +737,10 @@
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>都市を解放した後の10ターンの生産力に[ICON_Production]+50％。</Text>
 		</Replace>
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ja_JP">
 			<Text>隣接ボーナスとして+{1_num} [ICON_SCIENCE]。</Text>
