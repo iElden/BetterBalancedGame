@@ -436,9 +436,9 @@ UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE
 --==============================================================
 --******				START BIASES					  ******
 --==============================================================
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
+-- UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
-UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
+-- UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
 INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES
 	('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 4),

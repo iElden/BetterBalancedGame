@@ -193,6 +193,7 @@
 				<LoadOrder>11620</LoadOrder>
 			</Properties>
 			<File>sql/xp1__rise_and_fall.sql</File>
+			<File>sql/new_bbg_xp1_dutch.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_db_updates" criteria="xp2">
@@ -211,6 +212,7 @@
 			</Properties>
 			<File>sql/xp2_rise_and_fall.sql</File>
 			<File>sql/new_bbg_mapuche.sql</File>
+			<File>sql/new_bbg_xp1_dutch.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_australia" criteria="xp2_australia">
@@ -360,7 +362,8 @@
 		<File>sql/new_bbg_citystates.sql</File>
 		<File>sql/new_bbg_citystates_xp2.sql</File>
 		<File>sql/new_bbg_nfp_babylon.sql</File>
-
+		<File>sql/new_bbg_nfp_babylon.sql</File>
+		<File>sql/new_bbg_xp1_dutch.sql</File>
 		
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
