@@ -1,5 +1,5 @@
 <!-- BETA ModID -->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be220" version="40106">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be220" version="4016">
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
@@ -13,9 +13,11 @@
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, WhySoHate, Ignasiuz</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
+	<!--
 	<Dependencies>
     	<Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
 	</Dependencies>
+	-->
 	<!-- can load only select files based on these requirements, if applied -->
 	<ActionCriteria>
 		<Criteria id="xp1">
