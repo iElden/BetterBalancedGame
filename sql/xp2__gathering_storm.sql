@@ -270,7 +270,8 @@ UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_FEZ_INITIATI
 --==============================================================
 --******				  DIPLOMACY						  ******
 --==============================================================
-UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_DIPLOVICTORY';
+-- Changed from Medieval to Renaissance
+UPDATE Resolutions SET EarliestEra='ERA_RENAISSANCE' WHERE ResolutionType='WC_RES_DIPLOVICTORY';
 UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_WORLD_IDEOLOGY';
 UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_MIGRATION_TREATY';
 UPDATE Resolutions SET EarliestEra='ERA_RENAISSANCE' WHERE ResolutionType='WC_RES_GLOBAL_ENERGY_TREATY';
