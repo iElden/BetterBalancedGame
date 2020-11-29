@@ -11,3 +11,40 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value, Extra) VALUES
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
 INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
     ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
+
+
+
+-- Babylon - Nalanda infinite technology re-suze fix.
+-- Remove the trait modifier from the Nalanda Minor
+--  This was the initial cause of the problem.  
+--   The context was destroyed when suzerain was lost, and recreated when suzerain was gained.  
+--   Moving the context to the Game instance solves this problem.
+DELETE FROM TraitModifiers WHERE ModifierId="MINOR_CIV_NALANDA_FREE_TECHNOLOGY";
+
+-- We don't care about these modifiers anymore, they are connected to the TraitModifier
+DELETE FROM Modifiers WHERE ModifierId="MINOR_CIV_NALANDA_FREE_TECHNOLOGY_MODIFIER";
+DELETE FROM Modifiers WHERE ModifierId="MINOR_CIV_NALANDA_FREE_TECHNOLOGY";
+
+-- Attach the modifier to check for improvement to each player
+INSERT INTO Modifiers 
+	(ModifierId, ModifierType)
+	VALUES
+	('MINOR_CIV_NALANDA_MAHAVIHARA', "MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER");
+
+-- Modifier to actually check if the improvement is built, only done once
+INSERT INTO Modifiers 
+	(ModifierId, ModifierType, OwnerRequirementSetId, RunOnce, Permanent)
+	VALUES
+	('MINOR_CIV_NALANDA_MAHAVIHARA_TECH_ON_FIRST_BUILD', "MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY", "PLAYER_HAS_MAHAVIHARA", 1, 1);
+
+INSERT INTO ModifierArguments
+    (ModifierId, Name, Type, Value)
+    VALUES
+    ('MINOR_CIV_NALANDA_MAHAVIHARA', 'ModifierId', 'ARGTYPE_IDENTITY', 'MINOR_CIV_NALANDA_MAHAVIHARA_TECH_ON_FIRST_BUILD'),
+    ('MINOR_CIV_NALANDA_MAHAVIHARA_TECH_ON_FIRST_BUILD', 'Amount', 'ARGTYPE_IDENTITY', 1);
+
+-- Modifier which triggers and attaches to all players when game is created 
+INSERT INTO GameModifiers
+    (ModifierId)
+    VALUES
+    ('MINOR_CIV_NALANDA_MAHAVIHARA');
