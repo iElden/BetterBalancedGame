@@ -504,26 +504,32 @@
 			<Text>La Suède gagne 25 [ICON_Favor] faveurs diplomatiques lorsqu'elle obtient un personnage illustre (en vitesse en ligne). [NEWLINE] Les usines génèrent 1 point d'[ICON_GreatEngineer] ingénieur illustre supplémentaire et les universités 1 point de [ICON_GreatScientist] savant illustre supplémentaire. [ICON_PRODUCTION] Production +50% pour la construction des ateliers, usines, bibliothèques et universités. [NEWLINE] La présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de l'ère industrielle.</Text>
 		</Replace>
 		<!-- ========== SUMER ========== -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="fr_FR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]The Cradle of Civilization</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="fr_FR">
-			<Text>+3 Points d'Influence par tour pour l'obtention d'émissaires. Si vous capturez un avant-poste barbare, vous recevez une récompense de village tribal en plus de l'[ICON_Gold] or. Les levées de troupe dans les cités-états coûtent moitié moins.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une ziggurat, exclusive à Sumer. [NEWLINE][NEWLINE][ICON_Science] Science +2. [ICON_Culture] Culture +1 si adjacente à une rivière. [ICON_CULTURE] Culture +1 au Service Diplomatique. [ICON_CULTURE] Culture +1 et [ICON_Science] Science +1 aux Lumières. Construction impossible sur une colline, mais peut être construite sur des plaines inondables.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive aux Sumériens, cette unité de l'ère Classique remplace le Char Lourd et est débloquée à l'Équitation. Elle ne subit aucune pénalité contre les unités avantagées contre la cavalerie et profite d'un [ICON_Movement] PM supplémentaire si elle commence en terrain dégagé. A une chance de capturer les unités militaires des cités-états.</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="fr_FR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Shūtur eli sharrī</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="fr_FR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="fr_FR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="fr_FR">
-			<Text>Rendement des pillages doublé. Peut déclarer la guerre à quiconque est en guerre avec ses alliés, sans pénalité de bellicisme. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="fr_FR">
-			<Text>Rendement des pillages doublé. Peut déclarer la guerre à quiconque est en guerre avec ses alliés, sans pénalité de bellicisme. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Rendement des pillages doublé. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun.</Text>
-		</Replace>
-		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="fr_FR">
-			<Text>A une chance de capurer les unités de cités-états et barbares vaincues.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
@@ -593,6 +599,9 @@
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="fr_FR">
 			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] Foi intrinsèque.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="fr_FR">
+			<Text>[COLOR_RED]To translate :[END_COLOR] Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +7 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>

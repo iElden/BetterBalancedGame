@@ -459,9 +459,9 @@
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Korea that replaces the Campus district and must be built on hills. +2 [ICON_SCIENCE] Science base adjacency and mines provide minor adjacency bonuses. Provides +1 [ICON_CULTURE] Culture to adjacent Theater Squares. Culture bombs adjacent tiles when completed.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="en_US">
 			<Text>Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
-		</Replace>-->
+		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from the adjacent flat Tundra {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>

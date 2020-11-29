@@ -197,13 +197,33 @@
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
-		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="de_DE">
-			<Text>Kann besiegte Einheiten von Stadtstaaten und Barbaren gefangennehmen.</Text>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]The Cradle of Civilization</Text>
 		</Replace>
-
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="de_DE">
-			<Text>Sumerische Spezialeinheit der Klassik, welche den Streitwagen ersetzt und durch die Technologie "Reiterei" freigeschaltet wird.Kann besiegte Einheiten von Stadtstaaten und Barbaren gefangennehmen. Keine Malusse gegen Kavallarie-Abwehreinheiten und ignoriert Kontrollzonen. +1 [ICON_Movement] Fortbewegungspunkte bei Start auf offenem Gelände.</Text>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Shūtur eli sharrī</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>		
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="de_DE">
 			<Text>Alle Einheiten haben +1 Sichtweite. Die Beförderung von leichter Kavallarie beendet nicht ihre Runde.</Text>
 		</Replace>
@@ -406,15 +426,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="de_DE">
 			<Text>Städte mit Garnisons-Einheit erhalten +3 Loyalität pro Runde oder +5, wenn es sich um ein Korps oder eine Armee handelt. Eine Einheit, die eine Stadt einnimmt, wird zu einem Korps oder einer Armee verbessert, wenn Ihr die richtigen Ausrichtungen freigeschaltet habt. Gebäude im Ikanda-Bezirk gewähren jeweils +1 [ICON_CULTURE] Kultur und +1 [ICON_GOLD] Gold.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="de_DE">
-			<Text>Erhaltet doppelte Beute durch das Plündern von Feldern. Ihr dürft Krieg ohne Kriegstreiber-Malusse gegen jedweden erklären, der im Krieg mit Euren Verbündeten liegt.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>Erhaltet doppelte Beute durch das Plündern von Feldern. Allianzen erhalten Allianzpunkte, wenn sie Krieg gegen einen gemeinsamen Feind führen. Ihr dürft Krieg ohne Kriegstreiber-Malusse gegen jedweden erklären, der im Krieg mit Euren Verbündeten liegt.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Erhaltet doppelte Beute durch das Plündern von Feldern. Allianzen erhalten Allianzpunkte, wenn sie Krieg gegen einen gemeinsamen Feind führen.</Text>
-		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="de_DE">
 			<Text>Hic Sunt Dracones Goldenes Zeitalter:[NEWLINE] Erhaltet +3 [ICON_Citizen] Startbevölkerung  für neu gegründete Städte. +2 [ICON_Movement] Fortbewegung für Marine- oder gewasserte Einheiten. +2 Loyalität pro Runde für Städte, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
 		</Replace>
@@ -541,7 +552,7 @@
 			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_Science] Wissenschaft. Minen geben einen kleinen Nachbarschaftsbonus. Gewährt +1 [ICON_Culture] wenn neben einem Theaterplatz-Bezirk. Kulturschock auf angrenzen Feldern bei Fertigstellung.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="de_DE">
-			<Text>Heilige Stätten erhalten +1 [ICON_Faith] Glauben von angrenzenden Tundra-Geländerfeldern.</Text>
+			<Text>[COLOR_RED]To translate :[END_COLOR] Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Tundra-Geländefeldern.</Text>
@@ -608,12 +619,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="de_DE">
 			<Text>Modernisierung, die durch Steinmetzkunst freigeschaltet wird und auf Wüste, Wüstenhügeln oder Wüsten-Schwemmland gebaut werden muss. +1 [ICON_Faith] Glauben. Erhält zusätzliche Erträge durch angrenzende Bezirke. +2 [ICON_Food] Nahrung, wenn angrenzend an ein Stadtzentrum. Für alle anderen Bezirke, die Nachbarschaftsboni gewähren: +2 für den entsprechenden Ertrag, wenn der Bezirk angrenzt.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="de_DE">
-			<Text>Erhaltet 3 zusätzliche Einflusspunkte pro Runde.[NEWLINE][NEWLINE]Beim Einnehmen eines Barbaren-Außenpostens eine Stammesdorf-Belohnung zusätzlich zum üblichen [ICON_Gold] Gold erhalten. Ihr zahlt nur noch die Hälfte der Kosten, um Stadtstaat-Einheiten auszuheben.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Zikkurat, die einzigartige Modernisierung Sumers zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Science] Wissenschaft. +1 [ICON_Culture] Kultur, wenn neben einem Fluss. +1 [ICON_Culture] Kultur bei Erreichen der Ausrichtung Diplomatischer Dienst. +1 [ICON_Culture] Kultur und +1 [ICON_Science] Wissenschaft bei Erreichen der Aufklärung. Kann nicht auf Hügeln gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="de_DE">
 			<Text>+1 Annehmlichkeit durch Unterhaltung für jedes See-Geländefeld im Umkreis von einem Geländefeld von Huey Teocalli. +1 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur und +1 [ICON_Production] Produktion für jedes See-Geländefeld im eigenen Reich. Muss an einem See-Geländefeld neben Land gebaut sein.</Text>

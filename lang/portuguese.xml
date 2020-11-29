@@ -104,12 +104,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pt_BR">
 			<Text>Permite que o Construtor faça um Campo de Golfe, exclusivo da Escócia.[NEWLINE][NEWLINE]+1 de [ICON_AMENITIES] Serviço, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e  +1 de [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 de [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicionais à medida que avança pelas Árvores Cívica e Tecnológica. Não pode ser construído em Deserto. Um por cidade. Paineis com Campo de Golfe não podem ser trocados. +1 de Apelo</Text>
 		</Replace>
-		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="pt_BR">
-			<Text>Pode capturar unidades de cidades estado e bárbaros ao derrotá-las.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade da Era Antiga exclusiva da Suméria que substitui a Cavalaria Pesada e é desbloqueada em Cavalgar. Tem uma chance de capturar unidades derrotadas de Cidades Estado. Sem penalidades contra unidades anti-cavalaria e ignora zona de controle. +1 [ICON_Movement] Movimento se começar o turno em terreno plano.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as unidades tem +1 de visão. Promover unidades de Cavalaria Leve não encerra o turno delas.</Text>
 		</Replace>
@@ -320,15 +314,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="pt_BR">
 			<Text>Cidades guarnecidas por unidades obtêm +3 de lealdade por turno (+5 se for uma Corporação ou Exército). Conquistar cidades com unidades as melhoraram para Corporação ou Exército, se os cívicos adequados estiverem desbloqueados. Construções em Ikanda concedem +1 de [ICON_CULTURE] cultura e de [ICON_GOLD] ouro cada.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pt_BR">
-			<Text>Recebe o dobro de recompensa ao pilhar painéis. Pode declarar guerra em qualquer um que esteja em guerra com seus aliados sem gerar [ICON_STAT_GRIEVANCE] queixas.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pt_BR">
-			<Text>Recebe o dobro de recompensa ao pilhar painéis. Quando estiver em guerra com um inimigo em comum, suas alianças ganham pontos de aliança adicionais. Pode declarar guerra em qualquer um que estiver em guerra com seus aliados sem gerar [ICON_STAT_GRIEVANCE] queixas.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Recebe o dobro de recompensa ao pilhar painéis. Quando estiver em guerra com um inimigo em comum, suas alianças ganham pontos de aliança adicionais.</Text>
-		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="pt_BR">
 			<Text>Era de Ouro Hic Sunt Dracones:[NEWLINE]+3 de [ICON_Citizen] população inicial para cidades recém estabelecidas. +2 de [ICON_Movement] movimento para unidades navais e embarcadas. +2 de lealdade por turno para cidades que não estejam no continente natal de sua [ICON_Capital] Capital original.</Text>
 		</Replace>
@@ -526,11 +511,32 @@
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="pt_BR">
 			<Text>Melhoria desbloqueada com a tecnologia Alvenaria. Pode ser construída em  Deserto, Deserto (Colinas), Planices Aluviais, Planice e Pradarias. +1 [ICON_FAITH] Fé. Recebe bônus adicionais por distritos adjacentes. +2 [ICON_FOOD] Alimento se adjacente a um Centro de Cidade.[NEWLINE][NEWLINE] Para todos os outros distritos que recebem bônus de adjacência: +2 do Recurso gerado pelo distrito para esta Pirâmide Núbia.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]The Cradle of Civilization</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="pt_BR">
-			<Text>Recebe 3 pontos de Influência para obter Emissários em Cidades Estado e paga metade do Custo usal para Alavancar unidades de Cidades Estados.[NEWLINE][NEWLINE]Ao capturar um Acampamento Bárbaro, recebe recompensas de Aldeia Tribal além do benefício padrão em [ICON_GOLD] Ouro.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="pt_BR">
-			<Text>Desbloqueia a habilidade de Construtores para construir os Ziggurat, exclusivos da Suméria.[NEWLINE][NEWLINE]+2 [ICON_SCIENCE] Ciência. +1 [ICON_CULTURE] Cultura adjacente a um Rio. +1 [ICON_CULTURE] Cultura com o cívico de Serviço Diplomatico. +1 [ICON_CULTURE] Cultura e +1 [ICON_SCIENCE] Ciência com o Iluminismo. Não pode ser construído em Colinas.</Text>
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]Shūtur eli sharrī</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="pt_BR">
 			<Text>+1 [ICON_AMENITIES] de Serviço de entretenimento por cada painel de Lago com um Huey Teocalli. +1 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura para cada painel de Lago no Império. Só pode ser construído em um painel de lago adjacente a terra firme.</Text>
