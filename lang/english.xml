@@ -806,6 +806,9 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Chemamull, unique to Mapuche.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture equal to 75% of the tile's Appeal and +1 [ICON_PRODUCTION] Production. Gives an additional +1 [ICON_PRODUCTION] Production at the Civil Service Civic. Additional [ICON_TOURISM] Tourism after researching Flight. Minimum Appeal of Breathtaking.</Text>
 		</Replace>
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="en_US">
+			<Text>+{1_num} vs. Golden/Heroic Age</Text>
+		</Row>"
 		<!-- Norway -->
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="en_US">
             <Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city and +1 [ICON_PRODUCTION] Production for each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
