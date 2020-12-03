@@ -755,6 +755,9 @@
 			<Text>隣接ボーナスとして改善された2つの鉱山につき+{1_num} [ICON_SCIENCE]科学力（要訂正）</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
+			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ja_JP">
 			<Text>総督 [ICON_Governor]が着任した都市で訓練されたすべてのユニットについて、戦闘で得る経験値+25%黄金時代に入っている文明に対する戦闘力[ICON_Strength]+5。</Text>
 		</Replace>

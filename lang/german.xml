@@ -884,6 +884,9 @@
 			<Text>+{1_num} [ICON_Science] Wissenschaft Nachbarschaftsbonus von {1_Num : plural 1?der; other?den;} angrenzenden {1_Num : plural 1?Mine; other?Minen;}.</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="de_DE">
+			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="de_DE">
 			<Text>Alle Einheiten, die in Städten mit einem etablierten Gouverneur ausgebildet werden, erhalten 25 % mehr Erfahrung im Kampf. +5 Kampfstärkebonus gegen Zivilisationen in einem Goldenen Zeitalter.</Text>
 		</Replace>

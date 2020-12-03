@@ -369,6 +369,9 @@
 			</Replace>
 
 			<!-- ================ Mapuche ================ -->
+			<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="pl_PL">
+				<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+			</Row>
 			<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć chemamull dostępny wyłącznie dla Mapuczów.[NEWLINE][NEWLINE]Zapewnia [ICON_CULTURE] kulturę równą 75% atrakcyjności pola, na którym się znajduje i +1 do [ICON_PRODUCTION] produkcji. Dodatkowo +1 do [ICON_PRODUCTION] produkcji po opracowaniu idei służby cywilnej. Dodatkowa [ICON_TOURISM] turystyka po opracowaniu technologii lotu. Można umieścić wyłącznie na polach o co najmniej niesamowitym poziomie atrakcyjności.</Text>
 			</Replace>

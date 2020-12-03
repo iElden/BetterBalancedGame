@@ -809,6 +809,9 @@
 			<Text>+{1_num} [ICON_SCIENCE] Ciência por adjacência de minas {1_Num : plural 1?Mines; other?Mines;}.</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="pt_BR">
+			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="pt_BR">
 			<Text>Todas unidades treinadas em cidades com um [ICON_Governor] Governador Estabelecido ganham 25% mais experiência em combate. +5 [ICON_Strength] de Força de Combate bônus contra civilizações que estiverem em uma Era de Ouro.</Text>
 		</Replace>

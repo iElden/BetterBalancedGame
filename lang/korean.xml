@@ -798,6 +798,9 @@
 			<Text>인접한 {1_Num : plural 1?광산; other?광산;}에서 [ICON_Science] 과학 +{1_num}.</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ko_KR">
+			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_Governor] 총독이 정착한 도시에서 훈련된 모든 유닛은 전투에서 25% 추가 경험치를 획득합니다. 황금기에 진입한 다른 문명 상대 시 [ICON_Strength] 전투력 보너스 +5를 제공합니다.</Text>
 		</Replace>

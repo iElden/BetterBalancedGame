@@ -761,6 +761,9 @@
 			<Text>+{1_num} [ICON_SCIENCE] к науке за {1_Num : plural 1?рудники; other?рудники;} рядом.</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ru_RU">
+			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ru_RU">
 			<Text>Все боевые юниты, произведенные в городах с действующим [ICON_Governor] губернатором, получают на 25% больше опыта в бою. +5 [ICON_Strength] боевой мощи против цивилизаций, находящихся в золотом веке.</Text>
 		</Replace>
