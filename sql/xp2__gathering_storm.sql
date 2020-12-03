@@ -346,17 +346,29 @@ UPDATE BeliefModifiers SET ModifierID='WORLD_CHURCH_CULTURE_FOREIGN_FOLLOWER' WH
 UPDATE Beliefs SET Description='LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION' WHERE BeliefType='BELIEF_CROSS_CULTURAL_DIALOGUE';
 UPDATE Beliefs SET Description='LOC_BELIEF_WORLD_CHURCH_DESCRIPTION' WHERE BeliefType='BELIEF_WORLD_CHURCH';
 UPDATE Beliefs SET Description='LOC_BELIEF_LAY_MINISTRY_DESCRIPTION' WHERE BeliefType='BELIEF_LAY_MINISTRY';
+
+----------- HOLY WATER --------------
 -- holy waters affects mili units instead of religious, and works in all converted city tiles
+-- 2020-12-03 was previously affecting all districts
+
+-- We attach HOLY_WATERS_HEALING to all players that satisfy  REQUIRES_PLAYER_FOUNDED_RELIGION
+UPDATE Modifiers SET ModifierType='MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' WHERE ModifierId='HOLY_WATERS_HEALING';
+
+-- This modifier is then applied which applies to all of the founding players units
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNITS_ADJUST_HEAL_PER_TURN' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER';
+
 DELETE FROM RequirementSetRequirements WHERE RequirementSetId='HOLY_WATERS_HEALING_REQUIREMENTS';
 DELETE FROM RequirementSetRequirements WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
 INSERT OR IGNORE INTO RequirementSetRequirements VALUES
 	('HOLY_WATERS_HEALING_REQUIREMENTS', 'REQUIRES_PLAYER_FOUNDED_RELIGION'),
 	('HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_FRIENDLY_RELIGIOUS_CITY'),
 	('HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_ENEMY_RELIGIOUS_CITY');
-UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
-UPDATE ModifierArguments SET Value='5' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
 
+-- Inclusion test in Friendly or Enemy converted territory (happens per unit)
+UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
+
+-- Updated this value to match the description text
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
 
 --==============================================================
 --******				START BIASES					  ******
