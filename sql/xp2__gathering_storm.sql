@@ -453,6 +453,35 @@ UPDATE Feature_YieldChanges SET YieldChange='3' WHERE FeatureType='FEATURE_CHOCO
 UPDATE Feature_YieldChanges SET YieldChange='1' WHERE FeatureType='FEATURE_CHOCOLATEHILLS' AND YieldType='YIELD_SCIENCE'   ;
 UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEVILSTOWER' AND YieldType='YIELD_FAITH';
 
+--==============================================================
+--******			D I S A S T E R S       			  ******
+--==============================================================
+
+-- Revert exceptions
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_BLIZZARD_CRIPPLING';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_BLIZZARD_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_DUST_STORM_HABOOB';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_DUST_STORM_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_EYJAFJALLAJOKULL_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_EYJAFJALLAJOKULL_MEGACOLOSSAL';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_EYJAFJALLAJOKULL_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_FLOOD_1000_YEAR';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_FLOOD_MAJOR';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_FLOOD_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_FOREST_FIRE';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_FOREST_FIRE_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_HURRICANE_CAT_5';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_JUNGLE_FIRE';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_JUNGLE_FIRE_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_KILIMANJARO_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_KILIMANJARO_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_TORNADO_OUTBREAK';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_VESUVIUS_MEGACOLOSSAL';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_VESUVIUS_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_VOLCANO_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_VOLCANO_MEGACOLOSSAL';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE RandomEventType='RANDOM_EVENT_VOLCANO_TRIGGERED';
+
 
 
 --==============================================================
