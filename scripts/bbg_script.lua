@@ -37,14 +37,21 @@
 -- ===========================================================================
 local iReligion_ScientificDecay = 0;
 local iReligion_DecayTech = GameInfo.Technologies["TECH_SCIENTIFIC_THEORY"].Index
+local iDomination_level = 0.60;
 
 -- ===========================================================================
 --	Function
 -- ===========================================================================
+
 function OnGameTurnStarted( turn:number )
 	print ("BBG TURN STARTING: " .. turn);
-
+	Check_DominationVictory()
 end
+
+
+-- ===========================================================================
+--	Sumer
+-- ===========================================================================
 
 function ApplyGilgameshTrait()
 	local iStartEra = GameInfo.Eras[ GameConfiguration.GetStartEra() ];
@@ -80,6 +87,9 @@ function ApplyGilgameshTrait()
 
 end
 
+-- ===========================================================================
+--	Religion
+-- ===========================================================================
 
 function ApplyScientificTheory(iPlayerID:number)
 	-- Remove Religious Pressure in Cities whose religions are not like the main religion
@@ -103,6 +113,97 @@ function ApplyScientificTheory(iPlayerID:number)
 	
 end
 
+-- ===========================================================================
+--	Domination
+-- ===========================================================================
+
+function Check_DominationVictory()
+	local teamIDs = GetAliveMajorTeamIDs();
+	local hasWon = false
+	local victoryTeam = -99
+
+	for _, teamID in ipairs(teamIDs) do
+		if(teamID ~= nil) then
+			--local progress = Game.GetVictoryProgressForTeam(victoryType, teamID);
+			local progress = true
+			if(progress ~= nil) then
+
+				-- PlayerData
+				local playerCount:number = 0;
+				local teamGenericScore = 0;
+
+				for i, playerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
+					if Players[playerID]:GetTeam() == teamID then
+						local pPlayer:table = Players[playerID];
+						local genericScore = 0
+						local land = 0
+						for iPlotIndex = 0, Map.GetPlotCount()-1, 1 do
+							local pPlot = Map.GetPlotByIndex(iPlotIndex)
+							if (pPlot:IsWater() == false) then
+								land = land + 1;
+								if (pPlot:GetOwner() == playerID) then
+									genericScore = genericScore + 1;
+								end
+							end
+						end
+						if land ~= 0 then
+							genericScore = genericScore / land
+							else
+							genericScore = 0
+						end
+						teamGenericScore = teamGenericScore + genericScore
+						if teamGenericScore > iDomination_level then
+							hasWon = true
+							victoryTeam = teamID
+						end
+						playerCount = playerCount + 1;
+					end
+				end
+			end
+		end
+	end
+	
+	if hasWon == false or victoryTeam == -99 then
+		return
+	end
+
+	for i, playerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
+		if Players[playerID]:GetTeam() == victoryTeam then
+			local pPlayer:table = Players[playerID];
+			local pCapCity = Players[i]:GetCities():GetCapitalCity()
+			if pCapCity ~= nil then
+				-- Add Victory Flag
+				print("Add Victory Flag",playerID)
+			end
+		end
+	end	
+
+end
+
+-- ===========================================================================
+--	Tools
+-- ===========================================================================
+
+function GetAliveMajorTeamIDs()
+	print("GetAliveMajorTeamIDs()")
+	local ti = 1;
+	local result = {};
+	local duplicate_team = {};
+	for i,v in ipairs(PlayerManager.GetAliveMajors()) do
+		local teamId = v:GetTeam();
+		if(duplicate_team[teamId] == nil) then
+			duplicate_team[teamId] = true;
+			result[ti] = teamId;
+			ti = ti + 1;
+		end
+	end
+
+	return result;
+end
+
+-- ===========================================================================
+--	Initialize
+-- ===========================================================================
 
 function Initialize()
 
@@ -116,6 +217,7 @@ function Initialize()
 		ApplyGilgameshTrait()
 	end
 	
+	-- turn checked effects:
 	GameEvents.OnGameTurnStarted.Add(OnGameTurnStarted);
 
 end
