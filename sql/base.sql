@@ -1262,17 +1262,17 @@ INSERT OR IGNORE INTO Building_YieldChanges
 	VALUES 
 	('BUILDING_DAR_E_MEHR' , 'YIELD_CULTURE' , '2');
 -- All worship building production costs reduced	
-/*
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_CATHEDRAL'    ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_GURDWARA'     ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_MEETING_HOUSE';
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_MOSQUE'       ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_PAGODA'       ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_SYNAGOGUE'    ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_WAT'          ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_STUPA'        ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_DAR_E_MEHR'   ;
-*/
+
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_CATHEDRAL'    ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_GURDWARA'     ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_MEETING_HOUSE';
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_MOSQUE'       ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_PAGODA'       ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_SYNAGOGUE'    ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_WAT'          ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_STUPA'        ;
+--UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_DAR_E_MEHR'   ;
+
 
 
 --==============================================================
