@@ -151,6 +151,7 @@
 			<File>sql/new_bbg_gilgamesh.sql</File>				
 			<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 			<File>sql/new_bbg_citystates.sql</File>
+			<File>sql/new_bbg_great_people.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -368,6 +369,7 @@
 		<File>sql/new_bbg_nfp_babylon.sql</File>
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
+		<File>sql/new_bbg_great_people.sql</File>
 		
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
