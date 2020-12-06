@@ -206,6 +206,7 @@
 			<File>sql/new_bbg_hungary.sql</File>
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
+			<File>sql/new_bbg_xp2_phoenician.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -366,6 +367,7 @@
 		<File>sql/new_bbg_nfp_babylon.sql</File>
 		<File>sql/new_bbg_nfp_babylon.sql</File>
 		<File>sql/new_bbg_xp1_dutch.sql</File>
+		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
