@@ -198,31 +198,31 @@
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]The Cradle of Civilization</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The Cradle of Civilization</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Shūtur eli sharrī</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Shūtur eli sharrī</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
 		</Replace>	
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>		
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="de_DE">
 			<Text>Alle Einheiten haben +1 Sichtweite. Die Beförderung von leichter Kavallarie beendet nicht ihre Runde.</Text>
@@ -521,7 +521,7 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
 			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +1 [ICON_Movement] Fortbewegung. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten zusätzlich in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht ist.
-			[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
+			[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
 			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit. Städte werden nicht kriegsmüde. Alle Militäreinheiten heilen vollständig, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
@@ -552,7 +552,7 @@
 			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_Science] Wissenschaft. Minen geben einen kleinen Nachbarschaftsbonus. Gewährt +1 [ICON_Culture] wenn neben einem Theaterplatz-Bezirk. Kulturschock auf angrenzen Feldern bei Fertigstellung.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]To translate :[END_COLOR] Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
+			<Text>[COLOR_RED]To translate :[ENDCOLOR] Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Tundra-Geländefeldern.</Text>

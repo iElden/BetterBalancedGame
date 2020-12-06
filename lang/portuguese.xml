@@ -412,7 +412,7 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="pt_BR">
 			<Text>Unidades recrutadas ganham uma habilidade dando a eles +1 de [ICON_Movement] movimento. Custa 75% menos [ICON_GOLD] ouro e recursos estratégicos para melhorar unidades recrutadas. Se você recrutar tropas de uma cidade-estado, receberá 1 [ICON_ENVOY] emissário com aquela cidade-estado. Ganhe a unidade exclusiva Exército Negro quando pesquisar a tecnologia Castelos.
-			[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
+			[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pt_BR">
 			<Text>Ao derrotar uma unidade inimiga recebe bônus de [ICON_SCIENCE] ciência igual a 25% da [ICON_Strength] força de combate da unidade derrotada. Cidades são imunes à fadiga de guerra. Todas as unidades militares se curam completamente quando o jogador capturar uma cidade com uma maravilha construída.</Text>
@@ -512,31 +512,31 @@
 			<Text>Melhoria desbloqueada com a tecnologia Alvenaria. Pode ser construída em  Deserto, Deserto (Colinas), Planices Aluviais, Planice e Pradarias. +1 [ICON_FAITH] Fé. Recebe bônus adicionais por distritos adjacentes. +2 [ICON_FOOD] Alimento se adjacente a um Centro de Cidade.[NEWLINE][NEWLINE] Para todos os outros distritos que recebem bônus de adjacência: +2 do Recurso gerado pelo distrito para esta Pirâmide Núbia.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]The Cradle of Civilization</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The Cradle of Civilization</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Shūtur eli sharrī</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Shūtur eli sharrī</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
 		</Replace>	
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="pt_BR">
 			<Text>+1 [ICON_AMENITIES] de Serviço de entretenimento por cada painel de Lago com um Huey Teocalli. +1 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura para cada painel de Lago no Império. Só pode ser construído em um painel de lago adjacente a terra firme.</Text>

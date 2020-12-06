@@ -107,31 +107,31 @@
 			<Text>스코틀랜드 특유의 골프 코스를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_AMENITIES] 쾌적도 +1, [ICON_GOLD] 금 +2 및 [ICON_CULTURE] 문화 +1을 제공합니다. 도심부 특수지구가 인접해 있으면 [ICON_GOLD] 금 +1 및 [ICON_CULTURE] 문화 +1, 유흥단지 특수지구가 인접해 있으면 [ICON_CULTURE] 문화 +1을 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_TOURISM] 관광 및 [ICON_HOUSING] 주거공간이 추가됩니다. 사막이나 사막 언덕에 배치할 수 없으며 도시당 하나만 가능합니다. 골프 코스가 있는 타일은 교체할 수 없습니다. 매력도 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]The Cradle of Civilization</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The Cradle of Civilization</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]Shūtur eli sharrī</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Shūtur eli sharrī</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
 		</Replace>	
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]To Translate :[END_COLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ko_KR">
 			<Text>모든 유닛에게 시야 +1을 부여합니다. 경기병 유닛을 진급시킬 때 해당 유닛의 턴이 끝나지 않습니다.</Text>
@@ -436,7 +436,7 @@
 		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
             <Text>징병된 유닛이 능력을 획득하여 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.
-			[NEWLINE][COLOR_RED]BBG Beta :[END_COLOR] Levied unit got +3 [ICON_Strength] combat strength</Text>
+			[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
         </Replace>
         <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
             <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다. 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>

@@ -115,6 +115,7 @@
 			<File>lang/japanese.xml</File>
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
+			<File>lang/chinese.xml</File>
 		</UpdateText>
 	</FrontEndActions>
 
@@ -135,6 +136,7 @@
 			<File>lang/japanese.xml</File>
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
+			<File>lang/chinese.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates">
@@ -328,6 +330,7 @@
 		<File>lang/japanese.xml</File>
 		<File>lang/portuguese.xml</File>
         <File>lang/german.xml</File>
+		<File>lang/chinese.xml</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>
