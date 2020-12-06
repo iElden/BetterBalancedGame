@@ -2,7 +2,7 @@
 
 UPDATE ModifierArguments SET VALUE='3' WHERE ModifierId='RAVEN_LEVY_COMBAT' AND Name='Amount';
 
-
+-- Huszar +1 by suzed city-states
 INSERT INTO Requirements(RequirementId, RequirementType)
     SELECT 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType, 'REQUIREMENT_PLAYER_IS_SUZERAIN_OF_X'
     FROM Leaders
@@ -55,3 +55,22 @@ INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId)
         'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
 
 DELETE FROM UnitAbilityModifiers WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
+
+-- Get 2 envoy when levy a city-state if there are a t2 building in gouv plaza
+
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('BBG_REQUIREMENT_HAS_T2_GOUV_PLAZA', 'REQUIREMENTSET_TEST_ANY');
+
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('BBG_REQUIREMENT_HAS_T2_GOUV_PLAZA', 'PLAYER_HAS_GOV_BUILDING_CITYSTATES_REQUIREMENT'),
+    ('BBG_REQUIREMENT_HAS_T2_GOUV_PLAZA', 'PLAYER_HAS_GOV_BUILDING_FAITH_REQUIREMENT'),
+    ('BBG_REQUIREMENT_HAS_T2_GOUV_PLAZA', 'PLAYER_HAS_GOV_BUILDING_SPIES_REQUIREMENT');
+
+INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId) VALUES
+    ('BBG_LEVY_MILITARY_FREE_ENVOYS_T2_GOUV_PLAZA', 'MODIFIER_PLAYER_ADJUST_ENVOYS_FROM_LEVIED_CITY_STATES', 'BBG_REQUIREMENT_HAS_T2_GOUV_PLAZA');
+
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_LEVY_MILITARY_FREE_ENVOYS_T2_GOUV_PLAZA', 'Amount', '1');
+
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_LEADER_RAVEN_KING', 'BBG_LEVY_MILITARY_FREE_ENVOYS_T2_GOUV_PLAZA');

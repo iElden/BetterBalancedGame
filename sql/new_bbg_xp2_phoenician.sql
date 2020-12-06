@@ -1,4 +1,4 @@
 
 
 -- DELETE COTHON FULL HEAL
-UPDATE ModifierArgumets SET Value='0' WHERE ModifierId='COTHON_HEALFRIENDLY' AND Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COTHON_HEALFRIENDLY' AND Name='Amount';
