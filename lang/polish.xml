@@ -92,6 +92,11 @@
 				<Text>Unikalna budowla Azteków. Zapewnia [ICON_AMENITIES] udogodnienia, +3 do [ICON_CULTURE] kultury i punkt [ICON_GreatGeneral] wielkiego generała.</Text>
 			</Replace>
 
+			<!-- Babylon -->
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="pl_PL">
+				<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+			</Replace>
+
 			<!-- ================ Byzantium ================ -->
 			<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="pl_PL">
 				<Text>Zapewnia +2 do [ICON_Strength] siły bojowej za każde święte miasto nawrócone na twoją religię. Pokonanie jednostki jednej z wielkich cywilizacji powoduje rozprzestrzenienie się religii Bizancjum na pobliskie miasta. (Taxis)</Text>
@@ -264,13 +269,14 @@
 
 			<!-- ================ Hungary ================ -->
 			<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki poborowe zyskują umiejętność zapewniającą im +1 do [ICON_MOVEMENT] ruchu. Ulepszenie jednostek poborowych kosztuje o 75% mniej [ICON_GOLD] złota i zasobów. Rekrutując oddziały z miasta-państwa, zyskujesz w nim 1 [ICON_ENVOY] emisariuszy. Po odkryciu technologii zamków otrzymasz unikalną jednostkę – Czarną Armię.</Text>
+				<Text>Jednostki poborowe zyskują umiejętność zapewniającą im +1 do [ICON_MOVEMENT] ruchu. Ulepszenie jednostek poborowych kosztuje o 75% mniej [ICON_GOLD] złota i zasobów. Rekrutując oddziały z miasta-państwa, zyskujesz w nim 1 [ICON_ENVOY] emisariuszy. Po odkryciu technologii zamków otrzymasz unikalną jednostkę – Czarną Armię.
+				[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna jednostka węgierska epoki średniowiecza zastępująca kawalerię courserską. +2 do [ICON_STRENGTH] siły bojowej za każdą sąsiadującą jednostkę poborową.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="pl_PL">
-				<Text>Unikalna jednostka węgierska epoki przemysłowej zastępująca kawalerię. +1 do [ICON_STRENGTH] siły bojowej za każdy aktywny sojusz.</Text>
+				<Text>Unikalna jednostka węgierska epoki przemysłowej zastępująca kawalerię. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 			</Replace>
 
 			<!-- ================ India ================ -->
@@ -363,6 +369,9 @@
 			</Replace>
 
 			<!-- ================ Mapuche ================ -->
+			<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="pl_PL">
+				<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+			</Row>
 			<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć chemamull dostępny wyłącznie dla Mapuczów.[NEWLINE][NEWLINE]Zapewnia [ICON_CULTURE] kulturę równą 75% atrakcyjności pola, na którym się znajduje i +1 do [ICON_PRODUCTION] produkcji. Dodatkowo +1 do [ICON_PRODUCTION] produkcji po opracowaniu idei służby cywilnej. Dodatkowa [ICON_TOURISM] turystyka po opracowaniu technologii lotu. Można umieścić wyłącznie na polach o co najmniej niesamowitym poziomie atrakcyjności.</Text>
 			</Replace>
@@ -387,6 +396,9 @@
 			<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć polder dostępny wyłącznie dla Holandii.[NEWLINE][NEWLINE]+1 [ICON_FOOD] żywności, +1 do [ICON_Production] produkcji i +0,5 do [ICON_Housing] obszarów mieszkalnych. +1 do [ICON_FOOD] żywności, jeśli sąsiaduje z polderem. Dodatkowa [ICON_PRODUCTION] produkcja, [ICON_GOLD] złoto i [ICON_FOOD] żywność wraz z postępami na drzewach idei i technologii. Można umieścić wyłącznie na polu wybrzeża lub jeziora sąsiadującego co najmniej z 2 polami terenu umożliwiającego ruch. Zwiększa koszt [ICON_Movement] ruchu na polu do 3.</Text>
 			</Replace>
+		    <Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="pl_PL">
+      			<Text>Twoje wewnętrzne [ICON_TradeRoute] szlaki handlowe zapewniają +1 do lojalności na turę w miastach początkowych. Międzynarodowe [ICON_TradeRoute] szlaki handlowe zapewniają ci +2 do [ICON_Culture] kultury.</Text>
+    		</Replace>
 
 			<!-- ================ Norway ================ -->
 			<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="pl_PL">
@@ -514,29 +526,34 @@
 			</Replace>
 
 			<!-- ================ Sumer ================ -->
-			<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="pl_PL">
-				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść ziggurat, dostępny tylko w Sumerii.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki. +1 do [ICON_CULTURE] kultury, jeśli znajduje się nad rzeką. +1 [ICON_CULTURE] do kultury po opracowaniu idei służba dyplomatyczna. +1 do [ICON_CULTURE] kultury i +1 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia. Nie można zbudować go na wzgórzu, ale można wznieść go na równinach zalewowych.</Text>
-			</Replace>
-			<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="pl_PL">
-				<Text>zyskuje 3 dodatkowe punkty wpływów do emisariuszy i płać połowę domyślnych kosztów poboru jednostek miast-państw.[NEWLINE][NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz [ICON_Gold] złota) za przejęcie obozu barbarzyńców.</Text>
-			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pl_PL">
-				<Text>Podwojone łupu z plondrowania. Może bezkarnie wypowiadać wonjnę komukolwiek kto prowadzi wojnę z ich sojusznikiem.</Text>
-			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pl_PL">
-				<Text>Podwojone łupu z plondrowania. Ich sojusze zyskują punkty sojuszu za prowadzenie wojen ze wspólnym wrogiem. Może bezkarnie wypowiadać wonjnę komukolwiek kto prowadzi wojnę z ich sojusznikiem.</Text>
-			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Podwojone łupu z plondrowania. Ich sojusze zyskują punkty sojuszu za prowadzenie wojen ze wspólnym wrogiem.</Text>
-			</Replace>
-			<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pl_PL">
-				<Text>Starożytna jednostka dostępna wyłącznie dla Sumerii. Ma szansę schwytać pokonaną jednostkę Państwa-Miasta. Brak kar podczas walki z jednostkami zwalczania kawalerii. 4 punkty [ICON_MOVEMENT] ruchu, jeśli ruch jednostki rozpoczyna się na otwartym terenie.</Text>
-			</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The Cradle of Civilization</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Shūtur eli sharrī</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
 
-			<!-- ================ Sumeria ================ -->
-			<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="pl_PL">
-				<Text>Ma szansę schwytać pokonaną jednostkę barbarzyńców bądź państwa-miasta.</Text>
-			</Replace>
 
 			<!-- ================ Sweden ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pl_PL">

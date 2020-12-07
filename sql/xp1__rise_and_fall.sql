@@ -167,8 +167,10 @@ INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , Yiel
 --==================
 -- Sumeria
 --==================
+
 -- alpine training from matterhorn bugfix
 INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES ('ABILITY_ALPINE_TRAINING', 'CLASS_WAR_CART');
+/* REVERT TO BASE GAME
 -- extra +3 envoys points per turn
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'Amount', '3');
@@ -177,7 +179,7 @@ INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
 INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_FIRST_CIVILIZATION', 'SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE');
 
-
+*/
 --==================
 -- Zulu
 --==================
@@ -434,9 +436,9 @@ UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE
 --==============================================================
 --******				START BIASES					  ******
 --==============================================================
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
+-- UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
-UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
+-- UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
 INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES
 	('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 4),

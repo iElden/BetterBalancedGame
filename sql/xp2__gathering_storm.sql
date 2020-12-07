@@ -103,7 +103,7 @@ UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_FRENCH_GARDE_IMPERIALE
 -- only 1 envoy from levying city-states units
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='LEVY_MILITARY_TWO_FREE_ENVOYS';
 -- no combat bonus for levied units
-DELETE FROM ModifierArguments WHERE ModifierId='RAVEN_LEVY_COMBAT' AND Name='Amount' AND Value='5';
+-- DELETE FROM ModifierArguments WHERE ModifierId='RAVEN_LEVY_COMBAT' AND Name='Amount' AND Value='5';
 -- Huszars only +2 combat strength from each alliance instead of 3
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
 -- Black Army only +2 combat strength from adjacent levied units
@@ -180,10 +180,11 @@ UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 --==================
 -- Sumeria
 --==================
+/* REVERT TO BASE GAME
 INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost) VALUES
 	('UNIT_SUMERIAN_WAR_CART', 10);
 
-
+*/
 
 --==================
 -- Sweden
@@ -344,17 +345,29 @@ UPDATE BeliefModifiers SET ModifierID='WORLD_CHURCH_CULTURE_FOREIGN_FOLLOWER' WH
 UPDATE Beliefs SET Description='LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION' WHERE BeliefType='BELIEF_CROSS_CULTURAL_DIALOGUE';
 UPDATE Beliefs SET Description='LOC_BELIEF_WORLD_CHURCH_DESCRIPTION' WHERE BeliefType='BELIEF_WORLD_CHURCH';
 UPDATE Beliefs SET Description='LOC_BELIEF_LAY_MINISTRY_DESCRIPTION' WHERE BeliefType='BELIEF_LAY_MINISTRY';
+
+----------- HOLY WATER --------------
 -- holy waters affects mili units instead of religious, and works in all converted city tiles
+-- 2020-12-03 was previously affecting all districts
+
+-- We attach HOLY_WATERS_HEALING to all players that satisfy  REQUIRES_PLAYER_FOUNDED_RELIGION
+UPDATE Modifiers SET ModifierType='MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' WHERE ModifierId='HOLY_WATERS_HEALING';
+
+-- This modifier is then applied which applies to all of the founding players units
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNITS_ADJUST_HEAL_PER_TURN' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER';
+
 DELETE FROM RequirementSetRequirements WHERE RequirementSetId='HOLY_WATERS_HEALING_REQUIREMENTS';
 DELETE FROM RequirementSetRequirements WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
 INSERT OR IGNORE INTO RequirementSetRequirements VALUES
 	('HOLY_WATERS_HEALING_REQUIREMENTS', 'REQUIRES_PLAYER_FOUNDED_RELIGION'),
 	('HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_FRIENDLY_RELIGIOUS_CITY'),
 	('HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_ENEMY_RELIGIOUS_CITY');
-UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
-UPDATE ModifierArguments SET Value='5' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
 
+-- Inclusion test in Friendly or Enemy converted territory (happens per unit)
+UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
+
+-- Updated this value to match the description text
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
 
 --==============================================================
 --******				START BIASES					  ******
@@ -438,6 +451,35 @@ UPDATE Feature_YieldChanges SET YieldChange='3' WHERE FeatureType='FEATURE_CHOCO
 UPDATE Feature_YieldChanges SET YieldChange='3' WHERE FeatureType='FEATURE_CHOCOLATEHILLS' AND YieldType='YIELD_PRODUCTION';
 UPDATE Feature_YieldChanges SET YieldChange='1' WHERE FeatureType='FEATURE_CHOCOLATEHILLS' AND YieldType='YIELD_SCIENCE'   ;
 UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEVILSTOWER' AND YieldType='YIELD_FAITH';
+
+--==============================================================
+--******			D I S A S T E R S       			  ******
+--==============================================================
+
+-- Revert exceptions
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_DUST_STORM_HABOOB';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_BLIZZARD_CRIPPLING';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_BLIZZARD_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_DUST_STORM_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_EYJAFJALLAJOKULL_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_EYJAFJALLAJOKULL_MEGACOLOSSAL';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_EYJAFJALLAJOKULL_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_FLOOD_1000_YEAR';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_FLOOD_MAJOR';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_FLOOD_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_FOREST_FIRE';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_FOREST_FIRE_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_HURRICANE_CAT_5';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_JUNGLE_FIRE';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_JUNGLE_FIRE_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_KILIMANJARO_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_KILIMANJARO_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_TORNADO_OUTBREAK';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VESUVIUS_MEGACOLOSSAL';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VESUVIUS_TRIGGERED';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VOLCANO_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VOLCANO_MEGACOLOSSAL';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VOLCANO_TRIGGERED';
 
 
 

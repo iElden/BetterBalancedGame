@@ -103,12 +103,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+1、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
 		</Replace>
-		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="ja_JP">
-			<Text>都市国家や蛮族のユニットを拿捕できる可能性がある。</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ja_JP">
-			<Text>ヒッタイト・チャリオットを代替するシュメール固有の古代のユニット。騎乗で解禁される。都市国家のユニットを捕獲できる可能性がある。対騎兵ユニットに対するペナルティとZOCを受けない。開けた地形でターンを開始した場合は[ICON_Movement]移動力+1。</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ja_JP">
 			<Text>すべてのユニットの視界+1。軽騎兵の昇進がユニットのターンを終了しない。</Text>
 		</Replace>
@@ -308,15 +302,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ja_JP">
 			<Text>ユニットが駐留している都市は毎ターン忠誠度+3を得る。軍団あるいは大軍団が駐留している場合は毎ターン忠誠度+5を得る。対応する社会制度が発明されている場合、都市を征服したユニットは軍団あるいは大軍団にアップグレードされる。固有建造物のイカンダが[ICON_CULTURE]文化力+1、[ICON_GOLD]ゴールド+1を供給する。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ja_JP">
-			<Text>タイルを略奪した際の報酬が2倍になる。戦争している文明に対し、同盟国とともに好戦性ペナルティなしで宣戦布告できる。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ja_JP">
-			<Text>タイルを略奪した際の報酬が2倍になる。共通の敵を持つことで同盟国に対する同盟ポイントを獲得できる。戦争している文明に対し、同盟国とともに好戦性ペナルティなしで宣戦布告できる。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>タイルを略奪した際の報酬が2倍になる。共通の敵を持つことで同盟国に対する同盟ポイントを獲得できる。</Text>
-		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="ja_JP">
 			<Text>未知の領域 黄金時代:[NEWLINE]新たに建設された都市の[ICON_Citizen]人口+3。海上ユニット、乗船したユニットの[ICON_Movement]移動力+2。自国の[ICON_Capital]首都とは異なる大陸に存在する都市の忠誠度毎ターン+2。</Text>
 		</Replace>
@@ -406,7 +391,8 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
-            <Text>徴兵されたユニットの[ICON_Movement]移動力+1。徴兵されたユニットのアップグレードに必要な資源と[ICON_GOLD]ゴールドが75%減少。都市国家から徴兵を行うと、その都市国家に対する[ICON_ENVOY]代表団を1人獲得。城の技術を研究すると固有ユニットの黒軍が解禁される。</Text>
+            <Text>徴兵されたユニットの[ICON_Movement]移動力+1。徴兵されたユニットのアップグレードに必要な資源と[ICON_GOLD]ゴールドが75%減少。都市国家から徴兵を行うと、その都市国家に対する[ICON_ENVOY]代表団を1人獲得。城の技術を研究すると固有ユニットの黒軍が解禁される。
+			[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
         </Replace>
         <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ja_JP">
             <Text>ユニットを撃破するとそのユニットの[ICON_Strength]戦闘力の25%に等しい[ICON_Science]科学力を獲得する。都市が戦争による疲労をうけない。遺産のある都市を占領すると全ユニットのHPが完全回復する。</Text>
@@ -422,7 +408,7 @@
 			<Text>ギルド・ナショナリズムの社会制度を完了することでそれぞれ軍団・大軍団が解禁される。ナショナリズムの社会制度を完了すれば軍団・大軍団[ICON_STRENGTH]戦闘力ボーナスがさらに+5。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
-			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+1。</Text>
+			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+1。 TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がインド固有の改善である階段井戸を建設できるようになる。[NEWLINE][NEWLINE][ICON_Food]食料+1、[ICON_FAITH]信仰力+1[ICON_Housing]住宅+1。聖地区域に隣接している場合、さらに[ICON_Faith]信仰力+1。隣接している農場1つごとに[ICON_Food]食料+1。丘陵タイル上や他の階段井戸と隣接するタイルには建設できない。</Text>
@@ -443,7 +429,7 @@
 			<Text>キャンパスを代替する韓国固有の区域。丘陵タイルに建設されなければならない。基本隣接ボーナスとして[ICON_SCIENCE]科学力+2。隣接する鉱山2つにつき [ICON_SCIENCE] 科学力+1。隣接する劇場区域の [ICON_CULTURE] 文化力+1。建設によって文化爆弾を発動する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="ja_JP">
-			<Text>聖地区域は隣接するツンドラごとに[ICON_Faith]信仰力+1。</Text>
+			<Text>[COLOR_RED]To translate :[ENDCOLOR] Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="ja_JP">
 			<Text>聖地区域は隣接するツンドラごとに[ICON_Faith]信仰力+1.</Text>
@@ -514,11 +500,32 @@
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ja_JP">
 			<Text>石工術の技術によって解禁される改善。草原、平原、砂漠、丘陵の砂漠あるいは氾濫原にしか建設できない。[ICON_Faith]信仰力+1。隣接する区域によって追加の産出を得る。都心に隣接している場合[ICON_Food]食料+2。その他のタイル産出がある区域に隣接している場合、該当する出力と同じ種類のものを2得る。</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The Cradle of Civilization</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ja_JP">
-			<Text>代表団を得るための影響力を毎ターン追加で3獲得し、都市国家から徴用を行う際のコストが半分になる。[NEWLINE][NEWLINE]蛮族の野営地を討伐した際、通常の[ICON_Gold]ゴールド報酬に加えて集落からのボーナスも得る。</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="ja_JP">
-			<Text>労働者がシュメール固有の改善であるジッグラトを建設できるようになる。[NEWLINE][NEWLINE]河川に隣接している場合[ICON_Science]科学力+2、[ICON_Culture]文化力+1。外交官の社会制度を解禁すると追加で[ICON_CULTURE]文化力+1。啓蒙思想の社会制度を解禁するとさらに追加で[ICON_Science]科学力+1および[ICON_CULTURE]文化力+1。丘陵上には建設できない。</Text>
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Shūtur eli sharrī</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ja_JP">
 			<Text>この遺産に接する湖タイルの数と同じ数だけ娯楽からの[ICON_Amenities]快適性を得る。 自文明のすべての湖における[ICON_Food]食料+1、[ICON_Production]生産+1、[ICON_CULTURE]文化+2。陸タイルに隣接した湖にしか建設できない。</Text>
@@ -736,6 +743,10 @@
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>都市を解放した後の10ターンの生産力に[ICON_Production]+50％。</Text>
 		</Replace>
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ja_JP">
 			<Text>隣接ボーナスとして+{1_num} [ICON_SCIENCE]。</Text>
@@ -744,6 +755,9 @@
 			<Text>隣接ボーナスとして改善された2つの鉱山につき+{1_num} [ICON_SCIENCE]科学力（要訂正）</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
+			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ja_JP">
 			<Text>総督 [ICON_Governor]が着任した都市で訓練されたすべてのユニットについて、戦闘で得る経験値+25%黄金時代に入っている文明に対する戦闘力[ICON_Strength]+5。</Text>
 		</Replace>

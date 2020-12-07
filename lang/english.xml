@@ -106,13 +106,15 @@
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
 		</Replace>
+		<!--
 		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="en_US">
 			<Text>May capture defeated city-state and barbarian units.</Text>
 		</Replace>
-
+		
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="en_US">
 			<Text>Sumerian unique Classical era unit that replaces the Heavy Chariot and is unlocked at Horseback Riding. Has a chance to capture defeated City-State units. No penalties against anti-cavalry units and ignores Zone of Control. +1 [ICON_Movement] Movement if this unit starts on flat terrain.</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="en_US">
 			<Text>All units have +1 sight. Promoting Light Cavalry units do not end their turn.</Text>
 		</Replace>
@@ -321,6 +323,7 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="en_US">
 			<Text>Cities with a garrisoned unit get +3 Loyalty per turn, or +5 if it is a Corps or Army. Conquering a city with a unit will upgrade it into a Corps or Army, if the proper Civics are unlocked. Ikanda buildings provide +1 [ICON_CULTURE] Culture and +1 Gold [ICON_GOLD] each.</Text>
 		</Replace>
+		<!--
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="en_US">
 			<Text>Receieve double the rewards from pilliaging tiles. May declare war on anyone at war with their allies without warmonger penalties.</Text>
 		</Replace>
@@ -330,6 +333,7 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Receieve double the rewards from pilliaging tiles. Their Alliances gain Alliance Points for being at war with a common foe.</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="en_US">
 			<Text>Hic Sunt Dracones Golden Age:[NEWLINE]+3 starting [ICON_Citizen] Population for newly settled cities. +2 [ICON_Movement] Movement for naval and embarked units. +2 Loyalty per turn for cities not on your original [ICON_Capital] Capital's continent.</Text>
 		</Replace>
@@ -424,7 +428,7 @@
 			<Text>May reduce the presence of other Religions in their territory by 50%, and initiate theological combat with units of other Religions.</Text>
 		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
-			<Text>Levied units gain an ability giving them +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
+			<Text>Levied units gain an ability giving them +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State, 2 [ICON_ENVOY] Envoys if you have a second gouvernement plaza building. Levied unit got +3 [ICON_Strength] combat strength. Gain the Black Army unique unit when the Castles technology is researched.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="en_US">
 			<Text>Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit. Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
@@ -434,7 +438,7 @@
 			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Nationalism Civic.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
-			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every active Alliance.</Text>
+			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_FAITH] Faith, and +1 [ICON_Housing] Housing. +1 [ICON_Faith] Faith if adjacent to a Holy Site district. +1 [ICON_Food] Food for each adjacent Farm. Cannot be built on Hills or adjacent to another Stepwell.</Text>
@@ -454,9 +458,9 @@
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Korea that replaces the Campus district and must be built on hills. +2 [ICON_SCIENCE] Science base adjacency and mines provide minor adjacency bonuses. Provides +1 [ICON_CULTURE] Culture to adjacent Theater Squares. Culture bombs adjacent tiles when completed.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="en_US">
 			<Text>Holy Site districts get +1 [ICON_Faith] Faith from adjacent flat Tundra tiles.</Text>
-		</Replace>-->
+		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from the adjacent flat Tundra {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
@@ -523,12 +527,15 @@
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
 			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
 		</Replace>
+		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
 			<Text>Earn 3 extra influence points per turn towards gaining envoys and pay half the usual cost to levy city-state units.[NEWLINE][NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold.</Text>
 		</Replace>
+		
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_CULTURE] Culture at Diplomatic Service. +1 [ICON_CULTURE] Culture and +1 [ICON_Science] Science at The Enlightenment. Cannot be built on Hills.</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Amenities] Amenity from entertainment for each Lake tile within one tile of Huey Teocalli. +1 [ICON_Food] Food, +1 [ICON_Production] Production, +2 [ICON_CULTURE] Culture for each Lake tile in your empire. Must be built on a Lake tile adjacent to land.</Text>
 		</Replace>
@@ -798,6 +805,9 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Chemamull, unique to Mapuche.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture equal to 75% of the tile's Appeal and +1 [ICON_PRODUCTION] Production. Gives an additional +1 [ICON_PRODUCTION] Production at the Civil Service Civic. Additional [ICON_TOURISM] Tourism after researching Flight. Minimum Appeal of Breathtaking.</Text>
 		</Replace>
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="en_US">
+			<Text>+{1_num} vs. Golden/Heroic Age</Text>
+		</Row>"
 		<!-- Norway -->
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="en_US">
             <Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city and +1 [ICON_PRODUCTION] Production for each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
@@ -911,22 +921,63 @@
 		
 		<!--===============   NEW BBG  ===============-->
 		<!-- civilizations -->
+		<!-- BABYLON -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
+			<Text>[ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+		</Replace>
+		<!-- RUSSIA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="en_US">
 			<Text>Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
 		</Replace>
+		<!-- CHINA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
 		</Replace>
+		<!-- ETHIOPIA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
 			<Text>Ethiopia’s International Trade Routes grant +0.5 [ICON_Faith] Faith per resource at the origin. Improved Resources provide +1 [ICON_Faith] Faith. Can purchase Archaeological Museums and Archaeologists with [ICON_Faith] Faith.</Text>
 		</Replace>
+		<!-- MAPUCHE -->
 		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="en_US">
 			<Text>Toqui Ability</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="en_US">
 			<Text>Unique trait for Mapuche: +5 [ICON_Strength] Combat Strength versus Opponents in Golden Age.</Text>
 		</Replace>
+		<!-- SUMMER -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="en_US">
+			<Text>The Cradle of Civilization</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
+			<Text>Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+		</Replace>
+		
+		
 		<!-- leaders -->
+		<!-- GILGAMESH -->
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="en_US">
+			<Text>Shūtur eli sharrī</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<Text>The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="en_US">
+			<Text>As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="en_US">
+			<Text>+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="en_US">
+			<Text>+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+		
+		
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
 			<Text>When complete, this project awards 50 [ICON_CULTURE] Culture and 50  [ICON_TOURISM] Tourism (on Standard speed, 25 on Online speed) based on the number of excess copies of Luxury resources France possesses.</Text>
 		</Replace>				
@@ -935,7 +986,13 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production toward Holy Site districts. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
-		</Replace>		
+		</Replace>
+
+		<!-- dutch -->
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="en_US">
+			<Text>Your [ICON_TradeRoute] Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. [ICON_TradeRoute] Trade Routes to foreign cities or from foreign cities provide +2 [ICON_Culture] Culture to you.</Text>
+		</Replace>
+
 		<!-- policies -->
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Strength] Unit Combat Strength when fighting Barbarians.</Text>

@@ -96,10 +96,6 @@
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ru_RU">
 			<Text>Соседство: Стандартный бонус к [ICON_Culture] культуре за соседство с центром города и каждый соседний район. Повышенный бонус к [ICON_Culture] культуре за каждое соседнее чудо света. Можно построить только на холмах.</Text>
 		</Replace>
-
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ru_RU">
-		  <Text>Уникальный шумерский юнит, мощная тяжелая кавалерия античности, заменяющая тяжелую колесницу. Имеет шанс захвата побежденных юнитов городов-государств. Нет штрафа в сражениях против антикавалерийских юнитов. +1 [ICON_Movement] очко перемещения, если начинает ход на открытой местности.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+3 [ICON_Favor] очка дипломатического влияния. Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
 		</Replace>
@@ -317,15 +313,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ru_RU">
 			<Text>Города с размещенным юнитом получают +3 лояльности за ход, +5 – с размещенным корпусом или армией. Захват города юнитом повышает его до корпуса или армии, если открыты соответствующие социальные институты. Постройки в Иканде получают +1 [ICON_CULTURE] культуры и +1 золота [ICON_GOLD].</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ru_RU">
-			<Text>Получает удвоенный бонус при грабеже. Может объявить войну любому, кто находится в войне с его союзником без штрафа за милитаризм.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>Получает удвоенный бонус при грабеже. Союзы приносят очки за участие в войне против общего врага. Может объявить войну любому, кто находится в войне с его союзником без штрафа за милитаризм.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Получает удвоенный бонус при грабеже. Может объявить войну любому, кто находится в войне с его союзником без штрафа за милитаризм.</Text>
-		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="ru_RU">
 			<Text>Здесь живут драконы - золотой век:[NEWLINE]+3 ед. [ICON_Citizen] населения в новых городах. +2 [ICON_Movement] ОП для морских и находящихся на борту судна юнитов. +2 ед. лояльности за ход в городах на континентах, на которых нет вашей [ICON_Capital] столицы.</Text>
 		</Replace>
@@ -428,7 +415,7 @@
 			<Text>Можно раньше формировать корпуса (социальный институт «Наемники») и армии (социальный институт «Национализм»). +5 к базовой [ICON_STRENGTH] боевой мощи корпусов и армий после получения социального института «Национализм».</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный венгерский юнит Промышленной эры. Заменяет кавалеристов. +1 [ICON_Strength] к боевой мощи за каждый действующий союз.</Text>
+			<Text>Уникальный венгерский юнит Промышленной эры. Заменяет кавалеристов. +1 [ICON_Strength] боевой мощи за каждый город-государство, сюзереном которого вы являетесь.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить ступенчатые колодцы (уникально для Индии).[NEWLINE][NEWLINE]+1 [ICON_Food] пищи, +1 [ICON_Faith] веры и +1 [ICON_Housing] жилья. +1 [ICON_Faith] веры, если построен рядом со священным местом. +1 [ICON_Food] пищи, если находится рядом с фермой. Нельзя построить на холмах или рядом с другим ступенчатым колодцем.</Text>
@@ -521,11 +508,32 @@
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ru_RU">
 			<Text>Улучшение, доступное после изучения каменной кладки. Можно построить на пустынных холмах, поймах, полях и лугах. +1 [ICON_Faith] веры. Производит больше в зависимости от того, какие районы находятся рядом (+2 ресурса, соответствующего соседнему району). +2 [ICON_Food] пищи рядом с городским центром.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="ru_RU">
+			<Text>Колыбель Цивилизации</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ru_RU">
-			<Text>Даёт 3 очка влияния в ход на получение послов, а приобретение войск ГГ стоит в 2 раза меньше.[NEWLINE][NEWLINE]При захвате варварского лагеря получите дополнительный бонус как при исследовании племенной деревни.</Text>
+			<Text>Фермы получают +1 [ICON_Food] пищи рядом с рекой. [NEWLINE]Фермы получают +1 [ICON_Production] производства рядом с зиккуратом после открытия Ранней Империи.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет рабочим строить Зикураты, уникальное улучшение Шумеров.[NEWLINE][NEWLINE]+2 [ICON_Science] науки. +1 [ICON_Culture] культуры рядом с рекой. +1 [ICON_CULTURE] культуры после открытия дипломатической службы. +1 [ICON_CULTURE] культуры и +1 [ICON_Science] науки после открытия просвещения. Нельзя строить на холмах.</Text>
+			<Text>Уникальное улучшение Шумеров.[NEWLINE][NEWLINE]+1 [ICON_Housing] жилье. +2 [ICON_Science] науки. +1 [ICON_Culture] культуры рядом с рекой. +1 [ICON_Faith] веры за соседство с районом или двумя фермами. [NEWLINE]Нельзя построить на холмах и рядом с другим зиккуратом.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="ru_RU">
+			<Text>Шутур Эли Шарри</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="ru_RU">
+			<Text>Король всех Королей является могущественным лидером, способным проявить раннюю агрессию или построить высокую империю в зависимости от ситуации.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="ru_RU">
+			<Text>Как первая цивилизация в истории человечества, шумеры сразу начинают блистать. Боевые колесницы и Зиккураты доступны с самого начала игры, а рост и развитие должны быть быстрыми благодаря Колыбели Цивализации. Гильгамеш будет строить боевые колесницы и нападать на варварские лагеря, чтобы воспользоваться своей способностью. Он также усеет берега ближайших рек зиккуратами, чтобы быстро повысить уровень [ICON_Science] науки, [ICON_Culture] культуры и даже [ICON_Faith] веры, при хорошем планировании городов.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ru_RU">
+			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в 2 раза дешевле.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ru_RU">
+			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в 2 раза дешевле.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в 2 раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Amenities] довольства от всех соседних с этим чудом озерных клеток. +1 [ICON_Food] пищи, +1 [ICON_Production] производства и +2 [ICON_CULTURE] культуры всем озерным клеткам в ваших городах. Может быть построено на озере рядом с землёй.</Text>
@@ -737,6 +745,14 @@
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+50% [ICON_Production] производства в течение 10 ходов после освобождения города.</Text>
 		</Replace>
+		<!-- Babylon -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ru_RU">
+			<Text>[ICON_TechBoosted] Озарения дают 85% [ICON_SCIENCE] науки для технологий. -50% к [ICON_SCIENCE] науке за ход.</Text>
+		</Replace>
+		<!-- Dutch -->
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="ru_RU">
+			<Text>Ваши [ICON_TradeRoute] торговые пути к своим городам дают исходному пункту +1 лояльности за ход. [ICON_TradeRoute] Торговые пути к иностранным городам или от них дают вам +1 [ICON_Culture] культуры.</Text>
+		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ru_RU">
 			<Text>+{1_num} [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>
@@ -745,6 +761,9 @@
 			<Text>+{1_num} [ICON_SCIENCE] к науке за {1_Num : plural 1?рудники; other?рудники;} рядом.</Text>
 		</Row>
 		<!-- Mapuche -->
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ru_RU">
+			<Text>+{1_num} против золотого/героического века</Text>
+		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ru_RU">
 			<Text>Все боевые юниты, произведенные в городах с действующим [ICON_Governor] губернатором, получают на 25% больше опыта в бою. +5 [ICON_Strength] боевой мощи против цивилизаций, находящихся в золотом веке.</Text>
 		</Replace>
