@@ -1,12 +1,15 @@
-<!-- BETA ModID -->
+<!-- BETA ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40111">
+-->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
+<!-- Elden's ModID-->
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4010">
 	<Properties>
-		<Name>Better Balanced Game 4.1 build 11</Name>
+		<Name>Better Balanced Game 4.1.0</Name>
 		<Description>
-			Rome wasn't build in one day, only the monument was
+			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
