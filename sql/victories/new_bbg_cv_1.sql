@@ -1,10 +1,10 @@
 ------------------------------------------------------------------------------
---	FILE:	 new_bbg_cv_2.sql
+--	FILE:	 new_bbg_cv_1.sql
 --	AUTHOR:  iElden, D. / Jack The Narrator
 --	PURPOSE: Database modifications by new BBG
 ------------------------------------------------------------------------------
 --==============================================================================================
---******				CV: FASTEST SETTINGS a.k.a Legacy BBG		  ******
+--******				CV: FAST SETTINGS				  ******
 --==============================================================================================
 
 -- moon landing worth 5x science in culture instead of 10x
@@ -14,8 +14,6 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='COMPUTERS_BOOST_ALL_TO
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST_ALL_TOURISM'; 
 -- base wonder tourism adjusted to 5
 UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
--- Reduce amount of tourism needed for foreign tourist from 200 to 150
-UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
 -- lower number of turns to move greatworks between cities
 UPDATE GlobalParameters SET Value='2' WHERE Name='GREATWORK_ART_LOCK_TIME';
 -- relics give 4 tourism instead of 8

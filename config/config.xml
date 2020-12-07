@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameInfo>
-
+	<Victories>
+		<Row VictoryType="VICTORY_DOMINATION" Name="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Description="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" />
+	</Victories>
 	<Parameters>
 		<Row ParameterId="VictoryMasterSlider" Name="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Description="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Domain="BBGVictorySpeedSliderRange" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" GroupId="Victories" Hash="0" SortIndex="0" />
 		<Row ParameterId="VictoryCulturalSetting" Name="CV" Description="BBG_FRONT_VICTORY_CULTURAL_SETTING_DESC" Domain="BBGVictoryCulturalSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryCulturalSetting" GroupId="Victories" SortIndex="1" />
 		<Row ParameterId="VictoryScoreSetting" Name="SV" Description="BBG_FRONT_VICTORY_SCORE_SETTING_DESC" Domain="BBGVictoryScoreSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryScoreSetting" GroupId="Victories" SortIndex="2" />
 		<Row ParameterId="VictoryScienceSetting" Name="SV" Description="BBG_FRONT_VICTORY_SCIENCE_SETTING_DESC" Domain="BBGVictoryScienceSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryScienceSetting" GroupId="Victories" SortIndex="3" />
 		<Row ParameterId="VictoryDiploSetting" Name="DV" Description="BBG_FRONT_VICTORY_DIPLO_SETTING_DESC" Domain="BBGVictoryDiploSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryDiploSetting" GroupId="Victories" SortIndex="4" />
+		<Row ParameterId="VictoryDominationSetting" Name="DV" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_DESC" Domain="BBGVictoryDominationSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryDominationSetting" GroupId="Victories" SortIndex="5" />
 	</Parameters>
 
 	<Queries>
@@ -34,6 +37,10 @@
 		<Row Domain="BBGVictoryDiploSettingDomain" Value="1" Name="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Description="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" SortIndex="20"/>
 		<Row Domain="BBGVictoryDiploSettingDomain" Value="2" Name="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Description="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" SortIndex="30"/>
 		<Row Domain="BBGVictoryDiploSettingDomain" Value="3" Name="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Description="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" SortIndex="40"/>
+		<Row Domain="BBGVictoryDominationSettingDomain" Value="0" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" SortIndex="10"/>
+		<Row Domain="BBGVictoryDominationSettingDomain" Value="1" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" SortIndex="20"/>
+		<Row Domain="BBGVictoryDominationSettingDomain" Value="2" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" SortIndex="30"/>
+		<Row Domain="BBGVictoryDominationSettingDomain" Value="3" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" SortIndex="40"/>
 	</DomainValues>
 
 	<ConfigurationUpdates>
@@ -53,12 +60,10 @@
 		<Row SourceGroup="Game" SourceId="VictoryDiploSetting" SourceValue="1" TargetGroup="Game" TargetId="VICTORY_DIPLOMATIC" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryDiploSetting" SourceValue="2" TargetGroup="Game" TargetId="VICTORY_DIPLOMATIC" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryDiploSetting" SourceValue="3" TargetGroup="Game" TargetId="VICTORY_DIPLOMATIC" TargetValue="0" />
-		<!-- Need to figure this out
-		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="0" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="500"  />
-		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="1" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="400" />
-		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="2" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="300" />
-		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="3" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="-1" />
-		-->
+		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="0" TargetGroup="Game" TargetId="VICTORY_CONQUEST" TargetValue="1"  />
+		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="1" TargetGroup="Game" TargetId="VICTORY_CONQUEST" TargetValue="1" />
+		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="2" TargetGroup="Game" TargetId="VICTORY_CONQUEST" TargetValue="1" />
+		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="3" TargetGroup="Game" TargetId="VICTORY_CONQUEST" TargetValue="0" />
 	</ConfigurationUpdates>
 
 </GameInfo>

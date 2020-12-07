@@ -102,6 +102,13 @@
                 <Value>2</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		<Criteria id="CVSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
 		<Criteria id="SVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryScienceSetting</ConfigurationId>
@@ -109,11 +116,25 @@
                 <Value>2</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		<Criteria id="SVSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryScienceSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
 		<Criteria id="DVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryDiploSetting</ConfigurationId>
                 <Group>Game</Group>
                 <Value>2</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="DVSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryDiploSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
 		
@@ -180,6 +201,7 @@
 				<LoadOrder>11612</LoadOrder>
 			</Properties>
 			<File>sql/base.sql</File>
+			<File>sql/victories/new_bbg_new_domination.sql</File>
 			<File>sql/new_bbg_religion.sql</File>
 			<File>sql/new_bbg_policies.sql</File>
 			<File>sql/new_bbg_mother_russia.sql</File>
@@ -340,6 +362,13 @@
 			<Criteria>CVSetting_2</Criteria>
             <File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
+		<UpdateDatabase id="VictoryCulturalSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>CVSetting_1</Criteria>
+            <File>sql/victories/new_bbg_cv_1.sql</File>
+        </UpdateDatabase>
 		<UpdateDatabase id="VictoryScienceSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -348,6 +377,14 @@
 			<Criteria>xp2</Criteria>
             <File>sql/victories/new_bbg_sv_2.sql</File>
         </UpdateDatabase>
+		<UpdateDatabase id="VictoryScienceSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>SVSetting_1</Criteria>
+			<Criteria>xp2</Criteria>
+            <File>sql/victories/new_bbg_sv_1.sql</File>
+        </UpdateDatabase>
 		<UpdateDatabase id="VictoryDiploSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -355,6 +392,14 @@
 			<Criteria>DVSetting_2</Criteria>
 			<Criteria>xp2</Criteria>
             <File>sql/victories/new_bbg_dv_2.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryDiploSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>DVSetting_1</Criteria>
+			<Criteria>xp2</Criteria>
+            <File>sql/victories/new_bbg_dv_1.sql</File>
         </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
@@ -419,5 +464,9 @@
 		<File>sql/victories/new_bbg_cv_2.sql</File>
 		<File>sql/victories/new_bbg_sv_2.sql</File>
 		<File>sql/victories/new_bbg_dv_2.sql</File>
+		<File>sql/victories/new_bbg_cv_1.sql</File>
+		<File>sql/victories/new_bbg_sv_1.sql</File>
+		<File>sql/victories/new_bbg_dv_1.sql</File>
+		<File>sql/victories/new_bbg_new_domination.sql</File>
 	</Files>
 </Mod>
