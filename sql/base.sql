@@ -60,7 +60,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements ( RequirementSetId, Requirement
 		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG' );
 UPDATE Modifiers SET SubjectRequirementSetId='SPECIAL_DISTRICT_ON_COAST_BBG' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
 
-
+/*
 --==============================================================
 --******		C U L T U R E   V I C T O R I E S		  ******
 --==============================================================
@@ -143,7 +143,7 @@ UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_C
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_COLLOT_3';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_1';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_2';
-
+*/
 --==================
 -- America
 --==================
@@ -795,6 +795,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_MINOR_CIV');
 */	
 	
+/*   
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_3';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ORLOVSKY_1';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ORLOVSKY_2';
@@ -868,6 +869,7 @@ UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWOR
 UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_JAAN_2';
 UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_1';
 UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_2';
+*/  
 
 
 
