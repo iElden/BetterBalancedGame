@@ -1067,5 +1067,84 @@
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
+		<!-- Front End -->
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="en_US">
+			<Text>Quick Setup</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="en_US">
+			<Text>Quickly preset how soon the victory conditions would occur in-game. [NEWLINE] 0: Original Firaxis Settings [NEWLINE] 1: Earlier (pro-players achieved a victory in 115-130 turns) [NEWLINE] 2: Earliest (pro-players achieved a victory in 100-115 turns)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
