@@ -79,10 +79,34 @@ VALUES	('Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMP
 		('Ziggurat_Faith_District',		'Placeholder',	'YIELD_FAITH',		1,				1,				NULL,					1);
 
 
--- Sumerian War Carts are nerfed to 28 (BASE = 30)
-UPDATE Units SET Combat=28 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
--- Sumerian War Carts are cost is dimished to 45 (BASE = 55)
-UPDATE Units SET Cost=45 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
+-- Sumerian War Carts are nerfed to 26 (BASE = 30)
+-- 20-12-07 Hotfix: Nerf from 28->26
+UPDATE Units SET Combat=26 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+-- Sumerian War Carts are cost is dimished to 55 (BASE = 55)
+-- 20-12-07 Hotfix: Revert to 55 cost
+UPDATE Units SET Cost=55 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
 
+
+-- 20-12-07 Hotfix: Increase war-cart strength vs. barbs
+INSERT OR IGNORE INTO Types (Type, Kind) VALUES
+	('ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG', 'KIND_ABILITY');
+INSERT OR IGNORE INTO TypeTags VALUES
+	('ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG' ,'CLASS_WAR_CART');
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description, Inactive) VALUES
+	('ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG', 'LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_NAME_BBG', 'LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG', 0);
+INSERT OR IGNORE INTO UnitAbilityModifiers VALUES
+	('ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG', 'WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG');
+
+INSERT OR IGNORE INTO Modifiers
+		(ModifierId, ModifierType, SubjectRequirementSetId)
+VALUES	('WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG','MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_OPPONENT_IS_BARBARIAN');
+
+INSERT OR IGNORE INTO ModifierStrings
+		(ModifierId, Context, Text)
+VALUES	('WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG','Preview', 'LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG');
+
+INSERT INTO ModifierArguments
+		(ModifierId, Name, Value)
+VALUES	('WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG', 'Amount', 4);
 
 -- Sumerian War Carts as a starting unit in Ancient is coded on the lua front

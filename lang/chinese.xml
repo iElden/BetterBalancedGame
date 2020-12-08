@@ -113,6 +113,9 @@
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>苏美尔古典时代特色单位，取代重型战车，在科技“骑马”解锁。有几率俘获击败的城邦单位。对站抗骑兵单位，无减益。如果该单位从开阔地形开始回合，+1 [ICON_Movement] 移动力。</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="zh_Hans_CN">
+			<Text>同蛮族战斗时，+4 [ICON_Strength] 单位战斗力。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>所有单位+1视野. 升级轻骑兵单位不会结束其回合。</Text>
 		</Replace>

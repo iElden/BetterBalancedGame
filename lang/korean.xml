@@ -115,6 +115,9 @@
 			<Text>중전차를 대체하는 수메르 특유의 고전 시대 유닛입니다. 기마술 연구완료시 생산할 수 있습니다. 처치한 도시 국가 유닛을 일정한 확률로 포획합니다. 대기병 유닛과 전투할 때 페널티가 없습니다. 평지 지형에서 턴을 시작하는 경우 [ICON_Movement] 이동력 +1을 받습니다.</Text>
 		</Replace>
 		-->
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="ko_KR">
+			<Text>야만인과 전투 시 [ICON_Strength] 유닛 전투력 +4.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ko_KR">
 			<Text>모든 유닛에게 시야 +1을 부여합니다. 경기병 유닛을 진급시킬 때 해당 유닛의 턴이 끝나지 않습니다.</Text>
 		</Replace>
