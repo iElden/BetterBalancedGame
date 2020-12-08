@@ -170,10 +170,14 @@ function Check_DominationVictory()
 	for i, playerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
 		if Players[playerID]:GetTeam() == victoryTeam then
 			local pPlayer:table = Players[playerID];
-			local pCapCity = Players[i]:GetCities():GetCapitalCity()
+			local pCapCity = pPlayer:GetCities():GetCapitalCity()
 			if pCapCity ~= nil then
 				-- Add Victory Flag
 				print("Add Victory Flag",playerID)
+				local flag = GameInfo.Buildings["BUILDING_TRADITIONAL_DOMINATION_VICTORY_FLAG"]
+				if pCapCity:GetBuildings():HasBuilding(flag.Index) == false then
+					pCapCity:GetBuildQueue():CreateBuilding(flag.Index)
+				end
 			end
 		end
 	end	
