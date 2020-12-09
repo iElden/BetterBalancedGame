@@ -193,7 +193,16 @@ function Check_DominationVictory()
 	local teamIDs = GetAliveMajorTeamIDs();
 	local hasWon = false
 	local victoryTeam = -99
-
+	local iDomination_level = 1
+	print("TRADITIONAL_DOMINATION_LEVEL",GameConfiguration.GetValue("VICTORY_TRADITIONAL_DOMINATION"))
+	if GameConfiguration.GetValue("VICTORY_TRADITIONAL_DOMINATION") == false or GameConfiguration.GetValue("VICTORY_TRADITIONAL_DOMINATION") == nil then
+		return
+		else
+		if GameConfiguration.GetValue("TRADITIONAL_DOMINATION_LEVEL") ~= nil then
+			iDomination_level = GameConfiguration.GetValue("TRADITIONAL_DOMINATION_LEVEL") / 100
+		end
+	end
+	
 	for _, teamID in ipairs(teamIDs) do
 		if(teamID ~= nil) then
 			--local progress = Game.GetVictoryProgressForTeam(victoryType, teamID);
