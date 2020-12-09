@@ -186,6 +186,14 @@
 			<File>lang/chinese.xml</File>
 		</UpdateText>
 		
+		<ReplaceUIScript id="bbg_worldranking">
+			<Properties>
+			<LoadOrder>9999</LoadOrder>
+			<LuaContext>WorldRankings</LuaContext>
+			<LuaReplace>ui/replacements/worldrankings_bbg.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		
 		<UpdateDatabase id="bbg_base_db_updates">
 			<Properties>
 				<LoadOrder>11612</LoadOrder>
@@ -467,8 +475,9 @@
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
-		
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
+
+		<File>ui/replacements/worldrankings_bbg.lua</File>
 
 		<File>data/new_bbg_icons.xml</File>
 		<File>config/config.xml</File>
