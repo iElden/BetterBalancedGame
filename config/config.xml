@@ -10,7 +10,7 @@
 		<Row Domain="Expansion2_Victories" VictoryType="VICTORY_DIPLOMATIC" Name="LOC_VICTORY_DIPLOMATIC_NAME" Description="LOC_VICTORY_DIPLOMATIC_TT" Visible="0"/>
 	</Victories>
 	<Parameters>
-		<Row ParameterId="TRADITIONAL_DOMINATION_LEVEL" Name="Domination Level" Description="Description" Visible="0"  Domain="int" DefaultValue="100" ConfigurationGroup="Game" ConfigurationId="TRADITIONAL_DOMINATION_LEVEL" GroupId="AdvancedOptions" />
+		<Row ParameterId="TRADITIONAL_DOMINATION_LEVEL" Name="Domination Level" Description="Description" Visible="0"  Domain="int" DefaultValue="66" ConfigurationGroup="Game" ConfigurationId="TRADITIONAL_DOMINATION_LEVEL" GroupId="AdvancedOptions" />
 		<Row ParameterId="VICTORY_TRADITIONAL_DOMINATION" Name="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Description="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Visible="0"  Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VICTORY_TRADITIONAL_DOMINATION" GroupId="Victories" />
 		<Row ParameterId="VICTORY_CONQUEST" Name="LOC_VICTORY_DOMINATION_NAME" Description="LOC_VICTORY_DOMINATION_TT" Visible="0" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VICTORY_CONQUEST" GroupId="Victories" />
 		<Row ParameterId="VICTORY_CULTURE" Name="LOC_VICTORY_CULTURE_NAME" Description="LOC_VICTORY_CULTURE_TT" Visible="0" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VICTORY_CULTURE" GroupId="Victories" />
@@ -91,7 +91,7 @@
 		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="1" TargetGroup="Game" TargetId="VICTORY_TRADITIONAL_DOMINATION" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="2" TargetGroup="Game" TargetId="VICTORY_TRADITIONAL_DOMINATION" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="3" TargetGroup="Game" TargetId="VICTORY_TRADITIONAL_DOMINATION" TargetValue="0" />
-		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="0" TargetGroup="Game" TargetId="TRADITIONAL_DOMINATION_LEVEL" TargetValue="75"  />
+		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="0" TargetGroup="Game" TargetId="TRADITIONAL_DOMINATION_LEVEL" TargetValue="66"  />
 		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="1" TargetGroup="Game" TargetId="TRADITIONAL_DOMINATION_LEVEL" TargetValue="60" />
 		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="2" TargetGroup="Game" TargetId="TRADITIONAL_DOMINATION_LEVEL" TargetValue="50" />
 		<Row SourceGroup="Game" SourceId="VictoryDominationSetting" SourceValue="3" TargetGroup="Game" TargetId="TRADITIONAL_DOMINATION_LEVEL" TargetValue="100" />
