@@ -1179,6 +1179,9 @@
 		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="en_US">
 			<Text>Land tiles owned:</Text>
 		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="en_US">
+			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
+		</Replace>
 		
 		
 		<!-- Conquest legacy text -->

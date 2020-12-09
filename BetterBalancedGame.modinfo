@@ -181,6 +181,9 @@
 			<File>lang/chinese.xml</File>
 		</UpdateText>
 		<UpdateDatabase id="bbg_frontend_custom_victory">
+			<Properties>
+				<LoadOrder>999</LoadOrder>
+			</Properties>
             	<File>config/config.xml</File>
         </UpdateDatabase>										   
 	</FrontEndActions>
@@ -453,6 +456,11 @@
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
 		</UpdateIcons>
+		
+		<ImportFiles id="bbg_files">
+				<File>ui/replacements/endgamemenu_bbg.lua</File>
+				<File>ui/replacements/endgamemenu.xml</File>
+		</ImportFiles>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -526,7 +534,9 @@
 >>>>>>> f8844ec... Domination + Conquest Victory coded
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
-
+		<File>ui/replacements/endgamemenu_bbg.lua</File>
+		<File>ui/replacements/endgamemenu.xml</File>
+		
 		<File>data/new_bbg_icons.xml</File>
 		<File>config/config.xml</File>
 		
