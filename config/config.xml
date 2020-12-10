@@ -25,6 +25,8 @@
 		<Row ParameterId="VictoryDiploSetting" Name="LOC_VICTORY_DIPLOMATIC_NAME" Description="BBG_FRONT_VICTORY_DIPLO_SETTING_DESC" Domain="BBGVictoryDiploSettingDomain" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VictoryDiploSetting" GroupId="Victories" SortIndex="4" />
 		<Row ParameterId="VictoryDominationSetting" Name="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_DESC" Domain="BBGVictoryDominationSettingDomain" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VictoryDominationSetting" GroupId="Victories" SortIndex="5" />
 		<Row ParameterId="VictoryReligiousSetting" Name="LOC_VICTORY_RELIGIOUS_NAME" Description="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_DESC" Domain="BBGVictoryReligiousSettingDomain" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VictoryReligiousSetting" GroupId="Victories" SortIndex="6" />
+		<Row ParameterId="TurnLimit" Name="LOC_LIMIT_TURNS_NAME" Description="LOC_LIMIT_TURNS_DESCRIPTION" Domain="StandardTurnLimits" Hash="1" DefaultValue="TURNLIMIT_CUSTOM" ConfigurationGroup="Game" ConfigurationId="GAME_TURN_LIMIT" GroupId="AdvancedOptions" SortIndex="2000"/>
+		<Row ParameterId="MaxTurns" Name="LOC_MAX_TURNS_NAME" Description="LOC_MAX_TURNS_DESCRIPTION" Domain="uint" Hash="0" DefaultValue="250" ConfigurationGroup="Game" ConfigurationId="GAME_MAX_TURNS" GroupId="AdvancedOptions" SortIndex="2000"/>
 	</Parameters>
 
 	<Queries>
@@ -60,6 +62,9 @@
 		<Row Domain="BBGVictoryDominationSettingDomain" Value="1" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" SortIndex="20"/>
 		<Row Domain="BBGVictoryDominationSettingDomain" Value="2" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" SortIndex="30"/>
 		<Row Domain="BBGVictoryDominationSettingDomain" Value="3" Name="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Description="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" SortIndex="40"/>
+		<Row Domain="StandardTurnLimits" Value="TURNLIMIT_NONE" Name="LOC_TURNLIMIT_NONE_NAME" Description="LOC_TURNLIMIT_NONE_DESCRIPTION" SortIndex="1"/>
+		<Row Domain="StandardTurnLimits" Value="TURNLIMIT_GAMESPEED" Name="LOC_TURNLIMIT_GAMESPEED_NAME" Description="LOC_TURNLIMIT_GAMESPEED_DESCRIPTION" SortIndex="1"/>
+		<Row Domain="StandardTurnLimits" Value="TURNLIMIT_CUSTOM" Name="LOC_TURNLIMIT_CUSTOM_NAME" Description="LOC_TURNLIMIT_CUSTOM_DESCRIPTION" SortIndex="1"/>
 	</DomainValues>
 
 	<ConfigurationUpdates>
@@ -71,6 +76,12 @@
 		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="1" TargetGroup="Game" TargetId="VICTORY_SCORE" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="2" TargetGroup="Game" TargetId="VICTORY_SCORE" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="3" TargetGroup="Game" TargetId="VICTORY_SCORE" TargetValue="0" />
+		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="0" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="TURNLIMIT_GAMESPEED" Hash="1" />
+		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="1" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="TURNLIMIT_CUSTOM" />
+		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="2" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="TURNLIMIT_CUSTOM" />
+		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="1" TargetGroup="Game" TargetId="GAME_MAX_TURNS" TargetValue="175" />
+		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="2" TargetGroup="Game" TargetId="GAME_MAX_TURNS" TargetValue="150" />
+		<Row SourceGroup="Game" SourceId="VictoryScoreSetting" SourceValue="3" TargetGroup="Game" TargetId="GAME_TURN_LIMIT" TargetValue="TURNLIMIT_NONE" Hash="1" />
 		<Row SourceGroup="Game" SourceId="VictoryScienceSetting" SourceValue="0" TargetGroup="Game" TargetId="VICTORY_TECHNOLOGY" TargetValue="1"  />
 		<Row SourceGroup="Game" SourceId="VictoryScienceSetting" SourceValue="1" TargetGroup="Game" TargetId="VICTORY_TECHNOLOGY" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="VictoryScienceSetting" SourceValue="2" TargetGroup="Game" TargetId="VICTORY_TECHNOLOGY" TargetValue="1" />

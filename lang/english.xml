@@ -1139,7 +1139,7 @@
 			<Text>Standard Firaxis Settings: 250 turns (Online)</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="en_US">
-			<Text>200 turns</Text>
+			<Text>175 turns</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="en_US">
 			<Text>150 turns</Text>
