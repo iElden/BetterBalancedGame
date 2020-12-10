@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- BETA ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40111">
 -->
@@ -9,16 +8,6 @@
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4024">
 	<Properties>
 		<Name>Better Balanced Game 4.2.4</Name>
-=======
-<!-- BETA ModID -->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40121">
-
-<!-- Elden's ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4010">
--->
-	<Properties>
-		<Name>Better Balanced Game 4.2.0 BETA (Build 1)</Name>
->>>>>>> edd6ac4... Merge Difficulties in BETA
 		<Description>
 			BETA
 		</Description>
@@ -113,11 +102,9 @@
 		<Criteria id="nfp_babylon">
 			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
 		</Criteria>
-<<<<<<< HEAD
 		<Criteria id="nfp_vietnam_kubilai">
 			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
 		</Criteria>
-=======
 		<Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
@@ -132,6 +119,7 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		
 		<Criteria id="SVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryScienceSetting</ConfigurationId>
@@ -146,6 +134,7 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		
 		<Criteria id="DVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryDiploSetting</ConfigurationId>
@@ -160,8 +149,22 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
-										
->>>>>>> edd6ac4... Merge Difficulties in BETA
+		
+		<Criteria id="RVSetting_2">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryReligiousSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>2</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="RVSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryReligiousSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -397,14 +400,12 @@
 			</Properties>
 			<File>sql/new_bbg_nfp_babylon.sql</File>
 		</UpdateDatabase>
-<<<<<<< HEAD
 		<UpdateDatabase id="bbg_nfp_vietnam_kubilai" criteria="nfp_vietnam_kubilai">
 			<Properties>
 				<LoadOrder>11639</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_vietnam.sql</File>
 		</UpdateDatabase>
-=======
 			<UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -450,8 +451,21 @@
 			<Criteria>DVSetting_1</Criteria>
 			<Criteria>xp2</Criteria>
             <File>sql/victories/new_bbg_dv_1.sql</File>
-        </UpdateDatabase>											
->>>>>>> edd6ac4... Merge Difficulties in BETA
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryReligiousSetting_2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>RVSetting_2</Criteria>
+            <File>sql/victories/new_bbg_rv_2.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryReligiousSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>RVSetting_1</Criteria>
+            <File>sql/victories/new_bbg_rv_1.sql</File>
+        </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -518,7 +532,6 @@
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
-<<<<<<< HEAD
 		<File>sql/new_bbg_great_works.sql</File>
 		<File>sql/new_bbg_base_units.sql</File>
 		<File>sql/new_bbg_xp2_units.sql</File>
@@ -529,9 +542,6 @@
 		<File>sql/new_bbg_xp1_zulus.sql</File>
 		<File>sql/new_bbg_nfp_vietnam.sql</File>
 
-=======
-		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
->>>>>>> f8844ec... Domination + Conquest Victory coded
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
@@ -546,6 +556,8 @@
 		<File>sql/victories/new_bbg_cv_1.sql</File>
 		<File>sql/victories/new_bbg_sv_1.sql</File>
 		<File>sql/victories/new_bbg_dv_1.sql</File>
+		<File>sql/victories/new_bbg_rv_1.sql</File>
+		<File>sql/victories/new_bbg_rv_2.sql</File>
 		<File>sql/victories/new_bbg_new_domination.sql</File>							
 	</Files>
 </Mod>
