@@ -280,9 +280,8 @@ UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_DEFORESTATION_TREATY';
 UPDATE Resolutions SET EarliestEra='ERA_MODERN' WHERE ResolutionType='WC_RES_ARMS_CONTROL';
 DELETE FROM Resolutions WHERE ResolutionType='WC_RES_PUBLIC_RELATIONS';
-*/  
 
-
+*/
 
 --==============================================================
 --******				G O V E R N M E N T				  ******
