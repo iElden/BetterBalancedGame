@@ -114,6 +114,7 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		
 		<Criteria id="SVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryScienceSetting</ConfigurationId>
@@ -128,6 +129,7 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		
 		<Criteria id="DVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryDiploSetting</ConfigurationId>
@@ -138,6 +140,21 @@
 		<Criteria id="DVSetting_1">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryDiploSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		
+		<Criteria id="RVSetting_2">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryReligiousSetting</ConfigurationId>
+                <Group>Game</Group>
+                <Value>2</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="RVSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryReligiousSetting</ConfigurationId>
                 <Group>Game</Group>
                 <Value>1</Value>
             </ConfigurationValueMatches>
@@ -416,7 +433,21 @@
 			<Criteria>DVSetting_1</Criteria>
 			<Criteria>xp2</Criteria>
             <File>sql/victories/new_bbg_dv_1.sql</File>
-        </UpdateDatabase>											
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryReligiousSetting_2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>RVSetting_2</Criteria>
+            <File>sql/victories/new_bbg_rv_2.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryReligiousSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>RVSetting_1</Criteria>
+            <File>sql/victories/new_bbg_rv_1.sql</File>
+        </UpdateDatabase>		
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -498,6 +529,8 @@
 		<File>sql/victories/new_bbg_cv_1.sql</File>
 		<File>sql/victories/new_bbg_sv_1.sql</File>
 		<File>sql/victories/new_bbg_dv_1.sql</File>
+		<File>sql/victories/new_bbg_rv_1.sql</File>
+		<File>sql/victories/new_bbg_rv_2.sql</File>
 		<File>sql/victories/new_bbg_new_domination.sql</File>							
 	</Files>
 </Mod>
