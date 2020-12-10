@@ -1110,6 +1110,80 @@
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="en_US">
 			<Text>Off</Text>
 		</Replace>
+		
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="en_US">
+			<Text>Great works and artifacts are providing more tourism and culture</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="en_US">
+			<Text>Great works and artifacts are providing more tourism and culture[NEWLINE]Amount of tourism required is 25% lower</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="en_US">
+			<Text>No Culture Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: Religious pressure extents up to 10 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="en_US">
+			<Text>Religious pressure extents up to 12 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="en_US">
+			<Text>Religious pressure extents up to 13 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="en_US">
+			<Text>No Religious Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: 250 turns (Online)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="en_US">
+			<Text>200 turns</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="en_US">
+			<Text>150 turns</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="en_US">
+			<Text>No Score Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="en_US">
+			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules[NEWLINE]Mars Hydrophonics</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="en_US">
+			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="en_US">
+			<Text>No Science Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="en_US">
+			<Text>First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Renaissance Era</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="en_US">
+			<Text>First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Medieval Era</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="en_US">
+			<Text>No Diplomatic Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: All Capitals Enemy or 66% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="en_US">
+			<Text>All Enemy Capitals or 60% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="en_US">
+			<Text>All Enemy Capitals or 50% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="en_US">
+			<Text>No Conquest or Domination Victories</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
 			<Text>% of emerged land controlled</Text>
 		</Replace>
