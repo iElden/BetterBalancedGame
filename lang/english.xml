@@ -1146,6 +1146,12 @@
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="en_US">
 			<Text>Off</Text>
 		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
 		
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="en_US">
 			<Text>Standard Firaxis Settings</Text>
@@ -1208,16 +1214,22 @@
 			<Text>No Diplomatic Victory</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="en_US">
-			<Text>Standard Firaxis Settings: All Capitals Enemy or 66% of Emerged Lands in your empire</Text>
+			<Text>Standard Firaxis Settings: 66% of Emerged Lands</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="en_US">
-			<Text>All Enemy Capitals or 60% of Emerged Lands in your empire</Text>
+			<Text>60% of Emerged Lands in your empire</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="en_US">
-			<Text>All Enemy Capitals or 50% of Emerged Lands in your empire</Text>
+			<Text>50% of Emerged Lands in your empire</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="en_US">
-			<Text>No Conquest or Domination Victories</Text>
+			<Text>No Domination Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: All Capitals Captured</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="en_US">
+			<Text>No Conquest Victory</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
@@ -1266,6 +1278,9 @@
 			<Text>Conquest Victory</Text>
 		</Replace>
 		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="en_US">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="en_US">
 			<Text>Conquest Victory</Text>
 		</Replace>
 		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="en_US">
