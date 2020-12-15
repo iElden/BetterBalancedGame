@@ -9,6 +9,11 @@
 -- Delete some old Traits as they are buggy :( 
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU';
 
+-- In case heroes mode is enabled, this needs to be re-inserted.
+-- Arguably, this makes Gilga OP in heroes, but that's okay.
+INSERT OR IGNORE INTO Traits (TraitType , Name , Description) VALUES
+   ('TRAIT_LEADER_ADVENTURES_ENKIDU', 'TRAIT_LEADER_ADVENTURES_ENKIDU_NAME', 'TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION' );
+
 -- Give the Barb modifier + Levy Discount + Add combat experience
 INSERT INTO TraitModifiers
 		(TraitType,									ModifierId)
