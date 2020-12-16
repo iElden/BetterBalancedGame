@@ -48,3 +48,25 @@ INSERT INTO GameModifiers
     (ModifierId)
     VALUES
     ('MINOR_CIV_NALANDA_MAHAVIHARA');
+
+
+-- 2020/12/16 - Ayutthaya Culture bug fix
+-- https://github.com/iElden/BetterBalancedGame/issues/48
+
+UPDATE ModifierArguments SET Value=60 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+UPDATE ModifierArguments SET Value=24 WHERE ModifierId="CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS" AND Name="BuildingProductionPercent";
+-- Scenario: Building momument on Online speed with 30 production code
+-- BuildingProductionPercent    Faith   Percentage
+-- 0                            0       0%
+-- 1                            180     600%
+-- 6                            30      100%
+-- 10                           18      60% -- Current Ayutthaya 
+-- 17.5                         10.5    35%
+-- 24                           7.5     25% -- Correct Moksha
+-- 25                           7.2     24% -- Current Moksha 
+-- 50                           3.6     12%
+-- 60                           3       10% -- Correct Ayutthaya
+-- 6 * ProductionCost / BuildingProductionPercent = Yield
+-- Therefore =>  
+-- USE THIS FORMULA TO CALCULATE THE DESIRED ((BuildingProductionPercent)) FIELD
+-- BuildingProductionPercent =  ProductionCost * 6 / Yield
