@@ -960,6 +960,9 @@
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ko_KR"> <!--new add-->
 			<Text>수메르 특유의 고대 시대 유닛입니다. 대기병 유닛과 전투할 때 페널티가 없습니다. 야만인과 전투 시 [ICON_Strength] 전투력 +4가 적용됩니다. 개방 지형에서 턴을 시작하는 경우 [ICON_Movement] 이동력이 4가 됩니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="ko_KR"> <!--new add-->
+			<Text>야만인과 전투 시 [ICON_Strength] 유닛 전투력 +4.</Text>
+		</Replace>
 		
 		
 		<!-- leaders -->

@@ -223,7 +223,10 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
-		</Replace>		
+		</Replace>
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="de_DE">
+			<Text>+4 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
+		</Replace>	
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="de_DE">
 			<Text>Alle Einheiten haben +1 Sichtweite. Die Beförderung von leichter Kavallarie beendet nicht ihre Runde.</Text>
 		</Replace>
@@ -278,7 +281,9 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder, das in Küstengebieten gefunden werden kann und +3 [ICON_Food] Nahrung und +2 [ICON_Science] Wissenschaft bietet. Gewährt einen großen Nachbarschaftbonus für angrenzende Campus-Bezirke.	</Text>
 		</Replace>
-
+		<Replace Tag="LOC_LEADER_TRAIT_Loc_Ability_war_DESCRIPTION" Language="de_DE">
+			<Text>Wenn Ihr eine religiöse Einheit erstmals zur Bekehrung einer Stadt einsetzt, erhaltet ihr 10 [ICON_SCIENCE] Wissenschaft pro [ICON_Citizen] Bevölkerung der Stadt.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="de_DE">
 			<Text>Atemberaubende Geländefelder, die entweder an ein Naturwunder oder einen Berg angrenzen, erhalten +1 [ICON_SCIENCE] Wissenschaft, und zusätzlich +1 [ICON_SCIENCE] Wissenschaft nach der Erforschung von 'Astronomie'. Atemberaubende Geländefelder, die entweder an ein Naturwunder oder an Wälder angrenzen, erhalten +1 [ICON_CULTURE] Kultur, und zusätzlich +1 [ICON_CULTURE] Kultur nach dem Erlangen der Ausrichtung 'Aufklärung'. Alle Felder in Städten mit einen Nationalpark haben +1 Anziehungskraft.</Text>
 		</Replace>
@@ -641,6 +646,12 @@
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="de_DE">
 			<Text>+7 [ICON_Strength] Kampfstärke beim Angriff auf Nah- und Fernkampfeinheiten.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
+			<Text>Schnellere Fortbewegung in Wald und Regenwald.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartige Einheit der Cree in der Antike, welche stärker als der Späher ist und diesen ersetzt. Schnellere Fortbewegung [ICON_Movement]in Wald und Regenwald.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
 			<Text>Das Ausheben des Militärs von Stadtstaaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärkebonus, sofern Ihr der Suzerän des Stadtstaats seid (inklusive ausgehobene Einheiten).[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte und +3 Einflusspunkte pro Runde für Gesandte in Stadtstaaten.</Text>
 		</Replace>
@@ -830,6 +841,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="de_DE">
 			<Text>Heureka gewähren 85% der benötigten [ICON_SCIENCE] Wissenschaft für Technologien. -50% [ICON_SCIENCE] Wissenschaft pro Zug.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="de_DE">
+			<Text>Zusätzliches Territorium bei Stadtgründung. +1 [ICON_Faith] Glauben in Eurer Hauptstadt. +1 [ICON_Production] Produktion durch Tundra-Felder.</Text>
+		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="de_DE">
 			<Text>Chinesische Spezialeinheit. Ersetzt den Armbrustschützen. +7 [ICON_Ranged] Fernkampfstärke beim Angriff auf benachbarte Einheiten.</Text>
@@ -892,6 +906,12 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chemamüll, die einzigartige Modernisierung der Mapuche, zu bauen.[NEWLINE][NEWLINE]Gewährt [ICON_Culture] Kultur in Höhe von 75 % der Anziehungskraft des Geländefelds und +1 [ICON_Production] Produktion. Gibt zusätzlich +1 [ICON_Production] Production bei der Ausrichtung "Öffentliche Verwaltung". Zusätzlicher [ICON_TOURISM] Tourismus nach Erforschung der Luftfahrt. Mindest-Anziehungskraft "Atemberaubend".</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="de_DE">
+			<Text>Toki</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartige Eigenschaft der Mapuche: +5 [ICON_Strength] Kampfstärke gegen Zivilisationen in einem goldenen Zeitalter.</Text>
 		</Replace>
 		<!-- Norway -->
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
