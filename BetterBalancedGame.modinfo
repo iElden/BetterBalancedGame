@@ -106,6 +106,9 @@
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
 	<FrontEndActions>
+		<UpdateDatabase id="BBG_SETTINGS">
+			<File>config/config.sql</File>
+        </UpdateDatabase>
 		<UpdateText id="bbg_pregame_text_updates">
 			<Properties>
 				<LoadOrder>150</LoadOrder>
@@ -119,6 +122,7 @@
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
+			<File>config/text.xml</File>
 		</UpdateText>
 	</FrontEndActions>
 
@@ -376,9 +380,12 @@
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
-		
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
+		<File>config/config.sql</File>
+		<File>config/text.xml</File>
+
 		<File>data/new_bbg_icons.xml</File>
+
 	</Files>
 </Mod>

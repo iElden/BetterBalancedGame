@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+        <Replace Tag="BBG_CFG_SHOW_ADVANCED_NAME" language="en">
+            <Text>[COLOR_GREEN]BBG Advanced options[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="BBG_CFG_ENABLE_CITY_STATE_REWORK_NAME" language="en">
+            <Text>Enable city-state rework</Text>
+        </Replace>
+        <Replace Tag="BBG_CFG_ENABLE_GREAT_PEOPLE_REWORK_NAME" language="en">
+            <Text>Enable great people rework</Text>
+        </Replace>
+        <Replace Tag="BBG_CFG_ALLOW_ANTI_AIR_SHOOT_AIRPLANE_NAME" language="en">
+            <Text>Allow anti-air to shoot airplane</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>
