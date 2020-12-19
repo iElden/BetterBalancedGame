@@ -319,10 +319,19 @@
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
 		</UpdateIcons>
+
+		<ReplaceUIScript id="bbg_PartialUIReplacements">
+			<Properties>
+				<LoadOrder>11639</LoadOrder>
+				<LuaContext>ReligionScreen</LuaContext>
+				<LuaReplace>ui/replacements/religionscreen_bbg.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
 	<Files>
+		<File>ui/replacements/religionscreen_bbg.lua</File>
 		<File>scripts/bbg_script.lua</File>
 
 		<File>lang/english.xml</File>
