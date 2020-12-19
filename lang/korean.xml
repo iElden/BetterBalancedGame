@@ -124,6 +124,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 [ICON_Faith] 신앙 +2, [ICON_PRODUCTION] 생산력 +1 및 [ICON_Food] 식량 +1을 제공합니다. 수도와 같은 대륙에 있으면 [ICON_Housing] 주거 +1을 제공합니다.[NEWLINE][NEWLINE]모든 인접한 캠퍼스 및 성지 특수지구에 대해 [ICON_Science] 과학 +1을 제공합니다. 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다. 다른 전도관 옆에 지을 수 없습니다.</Text>
 		</Replace>
+		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="en_US">
+			<Text>[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>강에 인접한 성지 특수지구에서 +2의 [ICON_FAITH] 신앙 인접 보너스를 제공합니다. 강에 인접한 성지 특수지구가 있는 도시에 [ICON_Amenities] 쾌적도 +1 및 [ICON_Housing] 주거공간 +1을 제공합니다.</Text>
 		</Replace>

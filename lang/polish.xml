@@ -968,6 +968,10 @@
 			<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>Tempo rozszerzania się granic jest o 50% większe.</Text>
 			</Replace>
+			<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
+			<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="en_US">
+				<Text>[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+			</Replace>
 			<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="pl_PL">
 				<Text>Rzeki dają +2 do [ICON_FAITH] wiary bonus za sąsiedztwo dla dzielnicy świątyynnej. +1 [ICON_Amenities] udogodnienie dla miast mających dzielnicę świątynną sąsiadującą z rzeką.</Text>
 			</Replace>
