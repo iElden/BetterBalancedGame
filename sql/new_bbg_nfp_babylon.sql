@@ -48,3 +48,12 @@ INSERT INTO GameModifiers
     (ModifierId)
     VALUES
     ('MINOR_CIV_NALANDA_MAHAVIHARA');
+
+
+-- 2020/12/19 - Add Mahavihara faith adjacencies for Lavra as well as Holy Site
+-- https://github.com/iElden/BetterBalancedGame/issues/51
+INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict)
+    VALUES ("Mahavihara_Lavra_Faith", "Placeholder","YIELD_FAITH", 1, 1, "DISTRICT_LAVRA");
+
+INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
+    VALUES ("IMPROVEMENT_MAHAVIHARA","Mahavihara_Lavra_Faith");
