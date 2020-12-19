@@ -463,8 +463,12 @@ function PopulateAvailableBeliefs(beliefType:string)
 			not m_pGameReligion:IsInSomeReligion(row.Index) and
 			not m_pGameReligion:IsTooManyForReligion(row.Index, m_PlayerReligionType) and
 			((beliefType ~= nil and row.BeliefClassType == beliefType) or
-			 (beliefType == nil and row.BeliefClassType ~= "BELIEF_CLASS_PANTHEON"))) then
-			table.insert(Beliefs, row);
+             (beliefType == nil and row.BeliefClassType ~= "BELIEF_CLASS_PANTHEON"))) then
+
+            -- Skipped delayed beliefs unless we already 2+ beliefs 
+            if (not (row.BeliefClassType == "BELIEF_CLASS_ENHANCER_DELAYED" and m_NumBeliefsEquipped < 2)) then
+			    table.insert(Beliefs, row);
+            end
 		end
 	end
 

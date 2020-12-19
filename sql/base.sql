@@ -1176,6 +1176,13 @@ DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierI
 --UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
 */
 
+-- 2020/12/19 -- Prevent Defender from being chosen upon founding a religion
+-- Related to https://github.com/iElden/BetterBalancedGame/issues/52
+INSERT OR IGNORE INTO BeliefClasses (BeliefClassType, Name, MaxInReligion, AdoptionOrder)
+	VALUES ("BELIEF_CLASS_ENHANCER_DELAYED", "LOC_BELIEF_CLASS_ENHANCER_NAME", 1, 4);
+UPDATE Beliefs SET BeliefClassType="BELIEF_CLASS_ENHANCER_DELAYED" WHERE BeliefType="BELIEF_DEFENDER_OF_FAITH";
+
+
 -- give monks wall breaker ability
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES
 	('WARRIOR_MONK_WALL_BREAKER_BBG', 'KIND_MODIFIER');
