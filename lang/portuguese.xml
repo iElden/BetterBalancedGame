@@ -928,5 +928,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="pt_BR">
 			<Text>Habilita a habilidade do construitor fazer Barcos de Pesca.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Alimento e +1 [ICON_PRODUCTION] Produção. Só pode ser construído em recursos válidos.[NEWLINE][NEWLINE]Se construído em um recurso de luxo, a cidade irá utilizá-lo.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="pt_BR">
+			<Text>Unidades de combate ganham +3 de [ICON_Strength] força de combate dentro das fronteiras de cidades amistosas que seguem essa religião.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

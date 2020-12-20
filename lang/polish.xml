@@ -1126,5 +1126,8 @@
 			<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="pl_PL">
 				<Text>+100% do [ICON_PRODUCTION] produkcji jednostek morskich we wszystkich miastach. Można zbudować tylko przy wybrzeżu i w sąsiedztwie dzielnicy przemysłowej.</Text>
 			</Replace>
+			<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="pl_PL">
+				<Text>Jednostki bojowe otrzymują +3 do [ICON_Strength] siły bojowej w granicach przyjaznych miast wyznających tę religię.</Text>
+			</Replace>
 	</LocalizedText>
 </GameData>

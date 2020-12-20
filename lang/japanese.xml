@@ -882,5 +882,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ja_JP">
 			<Text>労働者が漁船を建造できるようになる。[NEWLINE][NEWLINE][ICON_Food] 食料+1。 [ICON_PRODUCTION] 生産力+1と 適切な資源のある場合のみ建設可能。[NEWLINE][NEWLINE]高級資源がある場所に建設すると、都市はそれを利用できるようになる。</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ja_JP">
+			<Text>この宗教を信奉している友好都市の国境内だと戦闘ユニットの [ICON_Strength] 戦闘力+3。</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

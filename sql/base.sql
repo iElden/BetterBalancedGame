@@ -1052,6 +1052,8 @@ INSERT OR IGNORE INTO RequirementArguments
     VALUES 
     ('REQUIRES_PLOT_HAS_PANTANAL'           , 'FeatureType' , 'FEATURE_PANTANAL'             );
 
+-- 2020/12/20 Pundit Proposal: Defender of Faith Nerf (from +5)
+UPDATE ModifierArguments SET Value=3 WHERE ModifierId="DEFENDER_OF_FAITH_COMBAT_BONUS_MODIFIER" AND Name="Amount";
 
 
 --==============================================================

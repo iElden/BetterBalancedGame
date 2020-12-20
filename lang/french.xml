@@ -1027,5 +1027,8 @@
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +10 contre les barbares.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +3 pour les unités militaires sur le territoire des villes alliées converties à cette religion.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
