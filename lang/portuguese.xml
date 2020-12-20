@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<!--===============   BBG 4.1  ===============-->
+		
+		<!-- civilizations -->
+		<!-- RUSSIA -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="pt_BR">
+			<Text>Recebe paineis extras ao fundar cidades. +1 de [ICON_Faith] Fé no seu império. +1 de [ICON_Production] Produção de Tundra.</Text>
+		</Replace>
+		
+		<!-- MAPUCHE -->
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="pt_BR">
+			<Text>Toqui</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="pt_BR">
+			<Text>Característica única do Mapuche: +5 de [ICON_Strength] Força de Combate contra oponentes numa Era de Ouro.</Text>
+		</Replace>
+		
+		<!-- leaders -->
+		<!-- GILGAMESH -->
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="pt_BR">
+			<Text>+4 de [ICON_Strength] Força de Combate contra Bárbaros.</Text>
+		</Replace>
+		
+		<!-- policies -->
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="pt_BR">
+			<Text>+10 de [ICON_Strength] Força de Combate contra Bárbaros.</Text>
+		</Replace>
+		
+		<!-- new policies -->
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="pt_BR">
+			<Text>Armas de Cerco</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="pt_BR">
+			<Text>+50% [ICON_Production] Produção pra unidades de cerco das Eras Antiga e Clássica.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="pt_BR">
+			<Text>Durante a Guerra do Peloponeso, foram tentados cem cercos e 58 terminaram com a rendição da área sitiada. [NEWLINE] O exército de Alexandre, o Grande, sitiou com sucesso muitas cidades poderosas durante suas conquistas. Duas de suas realizações mais impressionantes no cerco ocorreram no Cerco de Tiro e no Cerco da Rocha Sogdian. Seus engenheiros construíram uma ponte que tinha originalmente 60 m de largura e alcançou o alcance de sua artilharia movida a torção, enquanto seus soldados empurravam torres de cerco que abrigavam lançadores de pedra e catapultas leves para bombardear as muralhas da cidade. [NEWLINE] A maioria dos conquistadores antes dele encontrou Tiro, uma cidade-ilha fenícia a cerca de 1 km do continente, inexpugnável. Os macedônios construíram uma toupeira, uma saliência elevada de terra sobre a água, empilhando pedras em uma ponte de terra natural que se estendia debaixo d'água até a ilha, e embora os tírios se reunissem enviando um navio de bombeiros para destruir as torres e capturassem a toupeira em um frenesi fervilhante, a cidade acabou caindo nas mãos dos macedônios após um cerco de sete meses. Em total contraste com Tiro, Rocha Sogdian foi capturado por um ataque furtivo. Alexandre usou táticas semelhantes a comandos para escalar os penhascos e capturar o terreno elevado, e os desmoralizados defensores se renderam. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="pt_BR">
+			<Text>Explosivos Balísticos</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="pt_BR">
+			<Text>+50% [ICON_Production] Produção pra unidades de cerco da Era do Renascimento e eras anteriores.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="pt_BR">
+			<Text>De acordo com a história, por volta do ano 1189, Iron Li desenvolveu um novo método para caçar raposas que usava um explosivo de cerâmica para assustar as raposas para dentro de suas redes. O explosivo consistia em uma garrafa de cerâmica com boca, recheada com pólvora e fixada por um fusível. Explosivo e rede foram colocados em pontos estratégicos de lugares como bebedouros freqüentados por raposas, e quando eles se aproximassem o suficiente, Iron Li acenderia o pavio, fazendo com que a garrafa de cerâmica explodisse e assustando as raposas assustadas direto para suas redes. [NEWLINE] Embora seja uma história fantasiosa, não se sabe exatamente por que isso causaria o desenvolvimento da bomba de ferro, já que o explosivo foi feito com cerâmica, e outros materiais como bambu ou mesmo couro fariam o mesmo trabalho, presumindo que fossem feitos um barulho alto o suficiente. No entanto, a bomba de ferro fez sua primeira aparição em 1221 no cerco de Qizhou (na moderna província de Hubei), e desta vez seria o Jin que possuía a vantagem tecnológica. O comandante Song Zhao Yurong sobreviveu e foi capaz de retransmitir seu relato para a posteridade. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="pt_BR">
+			<Text>Guerra de Trincheira</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de [ICON_Production] Produção pra todas as unidades de cerco.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="pt_BR">
+			<Text>A guerra de trincheiras é um tipo de guerra terrestre que usa linhas de combate ocupadas, em grande parte compostas por trincheiras militares, nas quais as tropas estão bem protegidas do fogo de armas pequenas do inimigo e substancialmente protegidas da artilharia. A guerra de trincheiras tornou-se arquetipicamente associada à Primeira Guerra Mundial (1914-1918), quando a Race to the Sea rapidamente expandiu o uso de trincheiras na Frente Ocidental a partir de setembro de 1914. [NEWLINE] A guerra de trincheiras proliferou quando uma revolução no poder de fogo não foi acompanhada por avanços semelhantes na mobilidade, resultando em uma forma extenuante de guerra em que o defensor tinha a vantagem. Na Frente Ocidental, em 1914–1918, ambos os lados construíram sistemas elaborados de trincheiras, subterrâneos e de escavações, que se opõem ao longo de uma frente, protegidos de ataques por arame farpado. A área entre as linhas de trincheira opostas (conhecida como "terra de ninguém") foi totalmente exposta ao fogo de artilharia de ambos os lados. Ataques, mesmo que bem-sucedidos, freqüentemente causaram graves baixas. </Text>
+		</Replace>
+		
+		
+		<!--===============   BBG  ===============-->
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
             <Text>50% de desconto em [ICON_GOLD] Ouro ao comprar unidades e distritos na cidade.</Text>
         </Row>
@@ -38,9 +96,6 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="pt_BR">
 			<Text>+2 de [ICON_Gold] Ouro por turno pra cada [ICON_Citizen] Cidadão na cidade e +1 capacidade de Rota de comércio quando estabelecida em qualquer cidade.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade da Era Clássica, exclusiva de Bizâncio, que substitui o Quadrireme e tem alcance de ataque adicional.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe +2 de [ICON_Strength] Força de Combate pra cada Cidade Sagrada convertida pra Religião de Bizâncio. A Religião de Bizâncio se espalha para cidades próximas quando uma unidade de uma civilização é derrotada (Táxis)</Text>
 		</Replace>
@@ -57,7 +112,7 @@
 			<Text>Permite construir uma Igreja Escavada na Rocha, melhoria única da Etiopia. [NEWLINE][NEWLINE]+1 de [ICON_Faith] Fé pra cada painel de colina adjacente. Concede [ICON_TOURISM] Turismo por [ICON_FAITH] Fé depois de pesquisar Vôo. +1 de Apelo. Não pode ser destruída por desastres naturais, apenas danificadas. Só pode ser construída em Solo Vulcânico ou Colinas que não estejam adjacentes a outra Igreja Escavada na Rocha.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="pt_BR">
-			<Text>Permite construir uma Igreja Escavada na Rocha, melhoria única da Etiopia. [NEWLINE][NEWLINE]+1 de [ICON_Faith] Fé. +1 de [ICON_Faith] Fé pra cada painel de colina adjacente. Concede [ICON_TOURISM] Turismo por [ICON_FAITH] Fé depois de pesquisar Vôo. +1 de Apelo. Só pode ser construída em Colinas que não estejam adjacentes a outra Igreja Escavada na Rocha.</Text>
+			<Text>Permite construir uma Igreja Escavada na Rocha, melhoria única da Etiopia. +1 de [ICON_Faith] Fé pra cada painel de colina adjacente. Concede [ICON_TOURISM] Turismo por [ICON_FAITH] Fé depois de pesquisar Vôo. +1 de Apelo. Só pode ser construída em Colinas que não estejam adjacentes a outra Igreja Escavada na Rocha.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="pt_BR">
 			<Text>Cidades Felizes recebem um adicional de +10% de [ICON_SCIENCE] Ciência e [ICON_PRODUCTION] Produção. Cidades Eufóricas recebem um adicional de +15%  de [ICON_SCIENCE] Ciência e [ICON_PRODUCTION] Produção. Cidades Felizes geram +1  pontos de [ICON_GreatScientist] Grande Cientista por Campus e +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro por Zona Industrial. Cidades Eufóricas dobram essas quantidades.</Text>
@@ -129,7 +184,7 @@
 			<Text>+25% de experiência de combate para todas as unidades navais treinadas nessa cidade. Permite o treinamento direto de Frotas e Armadas. Custo de treinamento de Frotas e Armadas reduzido em 25%. +2 de [ICON_GOLD] Ouro em todos os paineis costeiros dessa cidade. +1 de [ICON_RESOURCE_COAL] Carvão por turno.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pt_BR">
-			<Text>Quando finalizado, esse projeto concede 60 de [ICON_CULTURE] Cultura e 60 de [ICON_TOURISM] Turismo (na velocidade padrão) baseado no número de cópias em excesso que a França possui.</Text>
+			<Text>Quando finalizado, esse projeto concede 40 de [ICON_CULTURE] Cultura e 40 de [ICON_TOURISM] Turismo (na velocidade padrão) baseado no número de cópias em excesso que a França possui.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="pt_BR">
 			<Text>Rotas comerciais concedem +0.5 de [ICON_FAITH] por recurso na origem. Recursos concedem +1 de [ICON_FAITH] Fé. Pode comprar Museus arqueológicos e Arqueológos com [ICON_FAITH] Fé.</Text>
@@ -174,13 +229,13 @@
 			<Text>Desbloqueia a habilidade do Construtor de construir a Grande Muralha, única da China.[NEWLINE][NEWLINE]+1 de [ICON_PRODUCTION] Produção por segmento. Provê um bônus de  [ICON_Strength] Defesa. Bônus de [ICON_Gold] Ouro se adjacente a outros segmentos. [ICON_Culture] Cultura e [ICON_Tourism] Turismo adicional por segmento à medida que avança nas árvores Cívica e Tecnológica. Deve ser construída em linha, seguindo a fronteira do seu Império. Só pode ser danificada (nunca destruída) por desastres naturais.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="pt_BR">
-			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 60% das cívicas e tecnologias, ao invés de 50%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento, +1 de [ICON_PRODUCTION] Produção, +1 de [ICON_FAITH] Fé, +1 de [ICON_GOLD] Ouro, +1 de [ICON_SCIENCE] Ciência, e +1 de [ICON_CULTURE] Cultura.</Text>
+			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 60% das cívicas e tecnologias, ao invés de 50%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento e +1 de [ICON_PRODUCTION] Produção.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="pt_BR">
-			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 50% das cívicas e tecnologias, ao invés de 40%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento, +1 de [ICON_PRODUCTION] Produção, +1 de [ICON_FAITH] Fé, +1 de [ICON_GOLD] Ouro, +1 de [ICON_SCIENCE] Ciência, e +1 de [ICON_CULTURE] Cultura.</Text>
+			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 50% das cívicas e tecnologias, ao invés de 40%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento e +1 de [ICON_PRODUCTION] Produção.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 50% das cívicas e tecnologias, ao invés de 40%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento, +1 de [ICON_PRODUCTION] Produção, +1 de [ICON_FAITH] Fé, +1 de [ICON_GOLD] Ouro, +1 de [ICON_SCIENCE] Ciência, e +1 de [ICON_CULTURE] Cultura.</Text>
+			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 50% das cívicas e tecnologias, ao invés de 40%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento e +1 de [ICON_PRODUCTION] Produção.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="pt_BR">
 			<Text>Unidades de Combate terrestres e de Suporte são 10% mais baratas de comprar com  [ICON_GOLD] Ouro ou [ICON_FAITH] Fé pra cada construção do distrito de Acampamento na cidade.</Text>
@@ -243,7 +298,7 @@
 			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
+			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]Estoque máximo de recurso estratégico aumentados em +10 (na velocidade padrão).[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="pt_BR">
 			<Text>+25% de [ICON_PRODUCTION] produção para distritos e maravilhas se colocados ao lado de um rio. Planices aluviais não bloqueiam o posicionamento de maravilhas e distritos.</Text>
@@ -288,16 +343,13 @@
 		</Replace>
 
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="pt_BR">
-			<Text>15% de aumento em [ICON_CULTURE] cultura gerada pela cidade e a pressão religiosa advindo desta cidade é 100% em outras cidades.</Text>
+			<Text>15% de aumento em [ICON_CULTURE] cultura gerada pela cidade e a pressão religiosa advindo desta cidade é 50% em outras cidades.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="pt_BR">
 			<Text>+1 de [ICON_PRODUCTION] Produção e +1 de [ICON_FAITH] fé de Pedreiras.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe um Espião gratuitamente (e um espaço extra de capacidade) com a tecnologia de Castelo. Todos os espiões começam como Agentes com uma promoção grátis. +20% de [ICON_PRODUCTION] produção para maravilhas da era Medieval, Renascimento, e Industrial. [ICON_Tourism] Turismo de maravilhas de qualquer era é +50% maior.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="pt_BR">
-			<Text>[ICON_TradeRoute] Rotas de troca domésticas para a cidade com o governador Pingala concedem +3 de [ICON_SCIENCE] Ciência.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="pt_BR">
 			<Text>+10 de [ICON_Strength] força de combate quando sitiando distritos e cidades.</Text>
@@ -312,7 +364,7 @@
 			<Text>+5 de força de combate enquando atacando em continente estrangeiro.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="pt_BR">
-			<Text>Cidades guarnecidas por unidades obtêm +3 de lealdade por turno (+5 se for uma Corporação ou Exército). Conquistar cidades com unidades as melhoraram para Corporação ou Exército, se os cívicos adequados estiverem desbloqueados. Construções em Ikanda concedem +1 de [ICON_CULTURE] cultura e de [ICON_GOLD] ouro cada.</Text>
+			<Text>Cidades guarnecidas por unidades obtêm +3 de lealdade por turno (+5 se for uma Corporação ou Exército). Conquistar cidades com unidades as melhoraram para Corporação ou Exército, se os cívicos adequados estiverem desbloqueados. Construções em Ikanda concedem +1 de [ICON_CULTURE] cultura e +1 de [ICON_GOLD] ouro cada.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="pt_BR">
 			<Text>Era de Ouro Hic Sunt Dracones:[NEWLINE]+3 de [ICON_Citizen] população inicial para cidades recém estabelecidas. +2 de [ICON_Movement] movimento para unidades navais e embarcadas. +2 de lealdade por turno para cidades que não estejam no continente natal de sua [ICON_Capital] Capital original.</Text>
@@ -330,7 +382,7 @@
 			<Text>Concede 1 relíquia [ICON_GreatWork_Relic]. O [ICON_GreatWork_Relic] turismo religioso não é reduzido por civilizações que pesquisaram o cívico Iluminismo. +100% de [ICON_Tourism] turismo de Resortes em sua civilização. Deve ser construído em colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="pt_BR">
-			<Text>+20% de [ICON_SCIENCE] ciência e 10% de [ICON_PRODUCTION] produção em todas as cidades. Se esta cidade possuir 5 paíneis de bioma de tundra, os bônus são aumentados em 100%. Deve ser construído adjacente a Campus com Laboratório de Pesquisa em tundra ou neve.</Text>
+			<Text>+20% de [ICON_SCIENCE] ciência e 10% de [ICON_PRODUCTION] produção em todas as cidades. Se esta cidade possuir 5 paíneis de bioma de tundra contidos em até 3 paineis de distância da cidade, e pertencentes ao jogador, os bônus são dobrados. Deve ser construído adjacente a Campus com Laboratório de Pesquisa em tundra ou neve.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="pt_BR">
 			<Text>Possui 1 nível de [ICON_VisLimited] Visibilidade Diplomática maior do que o normal com cada civilização que ela encontrou.</Text>
@@ -352,32 +404,11 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="pt_BR">
 			<Text>15% de aumento em [ICON_SCIENCE] ciência gerada pela cidade.</Text>
 		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="pt_BR">
-			<Text>Conhecimento Compartilhado</Text>
-		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="pt_BR">
-			<Text>Eureca</Text>
-		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="pt_BR">
-			<Text>Dobra a adjacência do distrito de Campus da cidade.</Text>
-		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="pt_BR">
 			<Text>Concede o adicional de um recurso estratégico por turno daqueles revelados pela sua civilização.</Text>
 		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="pt_BR">
-			<Text>Negociador</Text>
-		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="pt_BR">
-			<Text>A cidade não pode ser posta em cerco e recebe +5 de força de defesa.</Text>
-		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as cidades em um raio de 9 painéis recebem +4 de pressão de lealdade por turno a favor da sua civiliação.</Text>
-		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="pt_BR">
-			<Text>Empresária</Text>
-		</Replace>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
-			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações, distritos e unidades de combate na cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="pt_BR">
 			<Text>Recursos estratégicos não são necessários nesta cidade para construir unidades dependentes deles.</Text>
@@ -403,16 +434,8 @@
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="pt_BR">
 			<Text>+50% de [ICON_PRODUCTION] produção para distritos em cidades sem distritos especializados.</Text>
 		</Replace>
-
-		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="pt_BR">
-			<Text>Pode reduzir a presença de outras religiões em seu território em 50% e iniciar um combate teológico com unidades de outras religões.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Pode reduzir a presença de outras religiões em seu território em 50% e iniciar um combate teológico com unidades de outras religões.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades recrutadas ganham uma habilidade dando a eles +1 de [ICON_Movement] movimento. Custa 75% menos [ICON_GOLD] ouro e recursos estratégicos para melhorar unidades recrutadas. Se você recrutar tropas de uma cidade-estado, receberá 1 [ICON_ENVOY] emissário com aquela cidade-estado. Ganhe a unidade exclusiva Exército Negro quando pesquisar a tecnologia Castelos.
-			[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
+			<Text>Unidades recrutadas ganham uma habilidade dando a eles +1 de [ICON_Movement] movimento. Custa 75% menos [ICON_GOLD] ouro e recursos estratégicos para melhorar unidades recrutadas. Se você recrutar tropas de uma cidade-estado, receberá 1 [ICON_ENVOY] emissário com aquela cidade-estado. +2 [ICON_Envoy] Emissários se você possuir uma construção de segundo nível no Edifício Administrativo.Unidades recrutadas recebem +3 de [ICON_Strength] Força de Combate. Tem acesso à unidade exclusiva Exército Negro quando pesquisar a tecnologia Castelos.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pt_BR">
 			<Text>Ao derrotar uma unidade inimiga recebe bônus de [ICON_SCIENCE] ciência igual a 25% da [ICON_Strength] força de combate da unidade derrotada. Cidades são imunes à fadiga de guerra. Todas as unidades militares se curam completamente quando o jogador capturar uma cidade com uma maravilha construída.</Text>
@@ -422,7 +445,7 @@
 			<Text>Pode formar corporações (cívico de Mercenários) e exércitos (cívico de Nacionalismo) mais cedo. Exércitos e corporações recebem um adicional de +5 [ICON_STRENGTH] de força de combate ao pesquisar o cívico Nacionalismo.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade exclusiva dos húngaros da Era Industrial. TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
+			<Text>Unidade exclusiva dos húngaros da Era Industrial. +1 de [ICON_Strength] Força de Combate pra cada cidade estado da qual você é suserano.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir um Poço com Degraus, exclusivo da Índia.[NEWLINE][NEWLINE]+1 de [ICON_FOOD] alimento, +1 de [ICON_FAITH] fé e +1 de [ICON_Housing] habitação. +1 de [ICON_FAITH] fé se adjacente a um Local Sagrado. +1 de [ICON_FOOD] alimento por cada Fazenda adjacente. Não pode ser construído em colinas ou adjacente a outro Poço com Degraus.</Text>
@@ -437,10 +460,10 @@
 			<Text>Caneta, Pincel, e Voz: Recebe +1 de pontuação de Era a cada que vez você acionar uma [ICON_CivicBoosted] inspiração. +1 de pontuação de Era por construir uma edificação com um espaço para uma grande obra. Se escolhida no início de uma Era de Ouro, Inspirações concedem um adicional de 10% aos custos de cívico. Cada cidade recebe +2 de [ICON_CULTURE] cultura e +1 de [ICON_GOLD] ouro por cada distrito especializado.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pt_BR">
-			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +1 título de [Icon_Governor] governador.</Text>
+			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +2 títulos de [Icon_Governor] governador.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo da Coreia que substitui o distrito de Campus. +2 de [ICON_SCIENCE] ciência de adjacência base, aumentando por cada duas minas adjacentes. Concede +1 de adjacência de [ICON_CULTURE] cultura a Teatros. Recebe -1 de adjacência por cada distrito adjacente ao Seowon, a exceção dos distritos de Teatro e Administrativo. Completar o distrito ativa explosão cultural.</Text>
+			<Text>Um distrito exclusivo da Coreia que substitui o distrito de Campus. +2 de [ICON_SCIENCE] ciência de adjacência base, aumentando por cada duas minas adjacentes. Concede +1 de adjacência de [ICON_CULTURE] cultura a Teatros. Completar o distrito ativa explosão cultural.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="pt_BR">
 			<Text>Locais Sagrados recebem +1 de adjacência de [ICON_FAITH] fé por cada painel de tundra que não seja uma colina.</Text>
@@ -464,13 +487,13 @@
 			<Text>+{1_Value} quando atacando</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada dois distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Cidades que já têm água doce recebem +2 de [ICON_Housing] habitação. Se construído adjacente a uma Fissura Geotérmica, +1 de [ICON_AMENITIES] serviço. Em qualquer um dos casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
+			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada 2 distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Cidades que já têm água doce recebem +2 de [ICON_Housing] habitação. Se construído adjacente a uma Fissura Geotérmica, +1 de [ICON_AMENITIES] serviço. Em qualquer um dos casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada dois distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Cidades que já têm água doce recebem +2 de [ICON_Housing] habitação. Se construído adjacente a uma Fissura Geotérmica, +1 de [ICON_AMENITIES] serviço. Em qualquer um dos casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
+			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada 2 distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Cidades que já têm água doce recebem +2 de [ICON_Housing] habitação. Se construído adjacente a uma Fissura Geotérmica, +1 de [ICON_AMENITIES] serviço. Em qualquer um dos casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada dois distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Cidades que já têm água doce recebem +2 de [ICON_Housing] habitação. Em qualquer um dos casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
+			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada 2 distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Em todos os casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir uma Esfinge, exclusiva do Egito.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] fé, +1 de [ICON_CULTURE] cultura e +2 de apelo.[NEWLINE][NEWLINE]+1 de [ICON_FAITH] fé e +1 de [ICON_CULTURE] cultura se construída ao lado de uma maravilha. +1 de [ICON_FOOD] alimento e +1 de [ICON_PRODUCTION] produção se construída em deserto ou +1 de [ICON_CULTURE] cultura se construída em planície aluvial.[NEWLINE][NEWLINE]Cultura [ICON_CULTURE] adicional quando o cívico Serviço Diplomático for pesquisado. Concede [ICON_TOURISM] turismo após pesquisar Vôo. Não pode ser construída adjacente a outra Esfinge ou em painéis que contenham neve.</Text>
@@ -506,37 +529,37 @@
 			<Text>+10 de força de combate quando resistindo a ataques à distância.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo da Rússia para atividades religiosas. Substitui o Local Sagrado e é mais barato de se construir.[NEWLINE][NEWLINE]Cidadades com Teatro e Lavra concedem +1 ponto adicional de [ICON_GREATWRITER] Grande Escritor, [ICON_GREATArtist] Grande Artista, e [ICON_GREATMusician] Grande Músico. Sua cidade cresce um painél adicional cada vez que a habilidade de uma grande personalidade for ativada.</Text>
+			<Text>Um distrito exclusivo da Rússia para atividades religiosas. Substitui o Local Sagrado e é mais barato de se construir.[NEWLINE][NEWLINE]Cidadades com Teatro e Lavra concedem um ponto adicional de [ICON_GREATWRITER] Grande Escritor, [ICON_GREATArtist] Grande Artista, e [ICON_GREATMusician] Grande Músico. Sua cidade cresce um painél adicional cada vez que a habilidade de uma grande personalidade for ativada.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="pt_BR">
 			<Text>Melhoria desbloqueada com a tecnologia Alvenaria. Pode ser construída em  Deserto, Deserto (Colinas), Planices Aluviais, Planice e Pradarias. +1 [ICON_FAITH] Fé. Recebe bônus adicionais por distritos adjacentes. +2 [ICON_FOOD] Alimento se adjacente a um Centro de Cidade.[NEWLINE][NEWLINE] Para todos os outros distritos que recebem bônus de adjacência: +2 do Recurso gerado pelo distrito para esta Pirâmide Núbia.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The Cradle of Civilization</Text>
+			<Text>O Berço da Civilização</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+			<Text>Fazendas recebem +1 de [ICON_Food] Comida quando adjacentes a um rio. [NEWLINE]Fazendas recebem +1 de [ICON_Production] Produção se estiverem adjacentes a um Ziggurat depois de descobrir Início do Império.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
+			<Text>Permite a um construtor fazer o Ziggurat, melhoria única da Suméria.[NEWLINE][NEWLINE]+1 de [ICON_Housing] Habitação.+2 de [ICON_SCIENCE] Ciência. +1 de [ICON_CULTURE] Cultura se estiver adjacente a um rio. +1 de [ICON_Faith] Fé se estiver adjacente a um Distrito ou duas Fazendas.[NEWLINE]Não pode ser construído em Colinas ou adjacente a outro Ziggurat.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]Shūtur eli sharrī</Text>
+			<Text>Shūtur eli sharrī</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+			<Text>O Rei que ultrapassa todos os reis é um líder poderoso com a habilidade de promover uma agressão antecipada, ou construir um império populoso, dependendo da situação.</Text>
 		</Replace>	
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+			<Text>Sendo a primeira civilização na história documentada, a Suméria se destaca desde o princípio. Seus Carros de Guerra e Zigguratssão acessíveis desde o primeiro turno, a o crescimento se beneficia pela habilidade O Berço da Civilização. Gilgamesh vai construir Carros de Guerra e caçar Acampamentos Bárbaros no início do jogo, para que possa aproveitar a sua habilidade Shūtur eli sharrī ("Ultrapassa os Reis"). Ele também vai espalhar Zigurates ao longo dos rios pra ter um destaque inicial em [ICON_SCIENCE] Ciência, [ICON_CULTURE] Cultura e até mesmo [ICON_Faith] Fé, dado um bom planejamento de infraestrutura.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="pt_BR">
 			<Text>+1 [ICON_AMENITIES] de Serviço de entretenimento por cada painel de Lago com um Huey Teocalli. +1 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura para cada painel de Lago no Império. Só pode ser construído em um painel de lago adjacente a terra firme.</Text>
@@ -623,10 +646,10 @@
 			<Text>Adjacência: +1 [ICON_SCIENCE] de Ciência por cada 2 minas adjacentes. -1 [ICON_SCIENCE] Ciência por cada Distrito adjacente, com exceção do Teatro. Também provê +1 [ICON_CULTURE] Cultura por cada Teatro.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da Natureza de 2 painéis. Aparece como um Lago e possui +2 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura, +2 [ICON_GOLD] Ouro.</Text>
+			<Text>Maravilha da Natureza de dois painéis. Aparece como um Lago e possui +2 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura, +2 [ICON_GOLD] Ouro.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da Natureza de 2 painéis. Aparece como um Lago e possui +2 [ICON_FOOD] Alimento, +2 [ICON_FAITH] Fé, +2 [ICON_CULTURE] Cultura. Unidades Curam completamente caso descansem por ao menos um turno estando adjacente ao Mar Morto.</Text>
+			<Text>Maravilha da Natureza de dois painéis. Aparece como um Lago e possui +2 [ICON_FOOD] Alimento, +2 [ICON_FAITH] Fé, +2 [ICON_CULTURE] Cultura. Unidades Curam completamente caso descansem por ao menos um turno estando adjacente ao Mar Morto.</Text>
 		</Replace>
 		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="pt_BR">
 			<Text>+{1_Amount} de Força de Combate quando próximo de até 4 painéis de um Parque Nacional.</Text>
@@ -641,13 +664,13 @@
 			<Text>+25% [ICON_PRODUCTION] Produção para unidades militares terrestres e navais. Reduz o custo de manutenção em 1 [ICON_GOLD] de Ouro.[NEWLINE]Recebe +1 [Icon_Governor] Título de Governador e aumenta a capacidade de estocar recursos estratégicos em 15.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 3 painéis. Gera +4 [ICON_CULTURE] Cultura and +4 [ICON_PRODUCTION] Produção.</Text>
+			<Text>Maravilha da natureza de três painéis. Gera +4 [ICON_CULTURE] Cultura and +4 [ICON_PRODUCTION] Produção.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 4 painéis. Recebe +2 [ICON_SCIENCE] Ciência, +2 [ICON_CULTURE] Cultura,  e +6 [ICON_GOLD] Ouro.</Text>
+			<Text>Maravilha da natureza de quatro painéis. Recebe +2 [ICON_SCIENCE] Ciência, +2 [ICON_CULTURE] Cultura,  e +6 [ICON_GOLD] Ouro.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 4 painéis. Gera +3 [ICON_FOOD] Alimento, +3 [ICON_PRODUCTION] Produção,  e +1 [ICON_SCIENCE] Ciência.</Text>
+			<Text>Maravilha da natureza de quatro painéis. Gera +3 [ICON_FOOD] Alimento, +3 [ICON_PRODUCTION] Produção,  e +1 [ICON_SCIENCE] Ciência.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="pt_BR">
 			<Text>Maravilha da natureza de um painél. Gera +2 [ICON_FAITH] Fé e +1 [ICON_PRODUCTION] Produção para painéis adjacentes.</Text>
@@ -658,9 +681,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="pt_BR">
 			<Text>+100% [ICON_PRODUCTION] Produção para as Edificações do Teatro. Grandes Obras nas cidades da Leonor causam -1 de Lealdade por turno em cidades estrangeiras em até 9 painéis de distância. Uma cidade que abandone uma civilização por perder lealdade e esteja recebendo a maior pressão de Lealdade pela civilização da Leonor pula a fase de rebelião e torna-se parte da civilização.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="pt_BR">
-			<Text>+100% [ICON_PRODUCTION] Produção para armas de cerco e muralhas.</Text>
-		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="pt_BR">
 			<Text>+{1_num} [ICON_SCIENCE] Ciência por um Teatro adjacente.</Text>
 		</Row>
@@ -668,10 +688,10 @@
 			<Text>+{1_num} [ICON_CULTURE] de Cultura por um Seowon adjacente.</Text>
 		</Row>		
 		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade Medieval única dos Mapuche que substitui a Cavalaria Especial. +1 [ICON_Movement] Movimento, e pilhar custa apenas um de [ICON_Movement] Movimento.</Text>
+			<Text>Unidade Medieval única dos Mapuche que substitui a Cavalaria Especial. +1 [ICON_Movement] Movimento, e pilhar custa apenas 1 de [ICON_Movement] Movimento.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade Moderna de suporte Anti-aéreo. Recebe cobertura de ataques aéreos em até um hexágono de distância da arma Anti-aérea.</Text>
+			<Text>Unidade Moderna de suporte Anti-aéreo. Recebe cobertura de ataques aéreos em até 1 hexágono de distância da arma Anti-aérea.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="pt_BR">
 			<Text>Unidade da Era moderna exclusiva do Canadá. Pode criar um Parque Nacional. +5 [ICON_Strength] Força de combate enquanto lutando em até 4 painéis de um Parque Nacional. Recebe +5 [ICON_Strength] de Força de Combate quando lutando em até 4 painéis de um parque nacional que pertença ao Canadá.</Text>
@@ -752,7 +772,7 @@
 		</Replace>
 		<!-- Babylon -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
+			<Text>Eurekas dão 85% da [ICON_SCIENCE] Ciência pra tecnologias. -50% de [ICON_SCIENCE] Ciência por turno.</Text>
 		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="pt_BR"> 
@@ -766,7 +786,7 @@
 		</Row>
 		<!-- Dutch -->
 		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="pt_BR">
-      		<Text>As suas [ICON_TradeRoute] rotas comerciais para as suas próprias cidades concedem +1 de lealdade por turno para a cidade de início. [ICON_TradeRoute] Rotas comerciais de cidades estrangeiras concedem +1 de [ICON_Culture] cultura a você.</Text>
+      		<Text>As suas [ICON_TradeRoute] rotas comerciais para as suas próprias cidades concedem +1 de lealdade por turno para a cidade de início. [ICON_TradeRoute] Rotas comerciais de cidades estrangeiras concedem +2 de [ICON_Culture] cultura a você.</Text>
     	</Replace>
 		<!-- Egypt -->
 		<!-- France -->
@@ -778,7 +798,7 @@
 			<Text>Unidade da Era Clássica exclusiva da Georgia, substitui o Espadachim. Colinas concedem +5 [ICON_Strength] de Força de Combate bonus e requerem apenas 1 [ICON_Movement] de Movemento.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="pt_BR">
-			<Text>Matar uma unidade militar concede [ICON_FAITH] Fé igual a 50% da [ICON_STRENGTH] Força base da unidade. Cada [ICON_ENVOY] Emissário que você enviar a uma cidade-estado que siga sua religião majoritária conta como 2[ICON_ENVOY] emissários. (É necessário ter uma religião majoritária).</Text>
+			<Text>Matar uma unidade militar concede [ICON_FAITH] Fé igual a 50% da [ICON_STRENGTH] Força base da unidade. Cada [ICON_ENVOY] Emissário que você enviar a uma cidade-estado que siga sua religião majoritária conta como dois [ICON_ENVOY] emissários. (É necessário ter uma religião majoritária).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="pt_BR">
@@ -810,7 +830,7 @@
 		</Row>
 		<!-- Mapuche -->
 		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="pt_BR">
-			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+			<Text>+{1_num} vs. Era de Ouro/Heroica</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="pt_BR">
 			<Text>Todas unidades treinadas em cidades com um [ICON_Governor] Governador Estabelecido ganham 25% mais experiência em combate. +5 [ICON_Strength] de Força de Combate bônus contra civilizações que estiverem em uma Era de Ouro.</Text>
@@ -832,7 +852,7 @@
 		<!-- Persia -->
 		<!-- Poland -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="pt_BR">
-			<Text>A religião fundada pela Polônia torna-se majoritaria em uma cidade que tenha perdido um painél por uma Explosão cultural polonesa.[NEWLINE][NEWLINE]Locais sagrados recebem bônus de Fé padrão (+1) por distritos adjacentes.[NEWLINE][NEWLINE]Todas relíquias concedem bonus de Fé (+2), Cultura (+2) e Ouro (+4). Recebe uma Relíquia ao Fundar e completar sua Religião</Text>
+			<Text>A religião fundada pela Polônia torna-se majoritaria em uma cidade que tenha perdido um painél por uma Explosão cultural polonesa.[NEWLINE][NEWLINE]Locais sagrados recebem bônus de Fé padrão por distritos adjacentes.[NEWLINE][NEWLINE]Todas relíquias concedem bonus de Fé (+2), Cultura (+2) e Ouro (+4). Recebe uma Relíquia ao Fundar e completar sua Religião</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="pt_BR">
@@ -873,9 +893,6 @@
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pt_BR">
 			<Text>Cada distrito de Local Sagrado ou Teatro em uma cidade seguindo esta Religião gera +2 de [ICON_FAITH] Fé ou +2 [ICON_CULTURE] de Cultura respectivamente</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="pt_BR">
-			<Text>Religião se espalha para cidades 40% mais distantes.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="pt_BR">
 			<Text>+1 [ICON_AMENITIES] de Serviço em cidades com um distrito especializado.</Text>
 		</Replace>
@@ -904,22 +921,22 @@
 		<!---->
 		<!--===============   W O N D E R S  (NATURAL)   ===============-->
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="pt_BR"> 
-			<Text>Maravilha da Natureza de 4 painéis . Aparece como um pântano e concede +2 [ICON_FOOD] Alimento, +2 [ICON_CULTURE] Cultura, and +2 [ICON_SCIENCE] Ciência.</Text>
+			<Text>Maravilha da Natureza de quatro painéis . Aparece como um pântano e concede +2 [ICON_FOOD] Alimento, +2 [ICON_CULTURE] Cultura, and +2 [ICON_SCIENCE] Ciência.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da Natureza de 3 painéis. Concende +2 [ICON_FOOD] Alimento, +2 [ICON_PRODUCTION] Produção, and +2 [ICON_SCIENCE] Ciência.</Text>
+			<Text>Maravilha da Natureza de três painéis. Concende +2 [ICON_FOOD] Alimento, +2 [ICON_PRODUCTION] Produção, and +2 [ICON_SCIENCE] Ciência.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 2 painéis. Surge como um Penhasco adjacente à água e concede +2 [ICON_FOOD] Alimento, +3 [ICON_CULTURE] Cultura, and +2 [ICON_GOLD] Ouro.</Text>
+			<Text>Maravilha da natureza de dois painéis. Surge como um Penhasco adjacente à água e concede +2 [ICON_FOOD] Alimento, +3 [ICON_CULTURE] Cultura, and +2 [ICON_GOLD] Ouro.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 1 painel.Surge como um Lago e concede +2 [ICON_FOOD] Alimento, +2 [ICON_SCIENCE] Ciência, +4 [ICON_FAITH] Fé.</Text>
+			<Text>Maravilha da natureza de um painel. Surge como um Lago e concede +2 [ICON_FOOD] Alimento, +2 [ICON_SCIENCE] Ciência, +4 [ICON_FAITH] Fé.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 4 painéis. Surge como um Pântano e concede +2 [ICON_FAITH] Fé, +2 [ICON_FOOD] Alimento, and +2 [ICON_PRODUCTION] Produção.</Text>
+			<Text>Maravilha da natureza de quatro painéis. Surge como um Pântano e concede +2 [ICON_FAITH] Fé, +2 [ICON_FOOD] Alimento, and +2 [ICON_PRODUCTION] Produção.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_GALAPAGOS_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da natureza de 2 paíneis. Surge em terreno costeiro e concede +2 [ICON_SCIENCE] Ciência and +1 [ICON_FOOD] Alimento a painéis adjacentes.</Text>
+			<Text>Maravilha da natureza de dois paíneis. Surge em terreno costeiro e concede +2 [ICON_SCIENCE] Ciência and +1 [ICON_FOOD] Alimento a painéis adjacentes.</Text>
 		</Replace>
 		<!---->
 		<!---->
