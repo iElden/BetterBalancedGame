@@ -133,7 +133,7 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ko_KR">
 			<Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. [ICON_TradeRoute] 교역로를 보유한 도시 국가에 보낸 한 명 사절이 두 명의 [ICON_Envoy] 사절로 계산됩니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION " Language="ko_KR">
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ko_KR">
 			<Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ko_KR">
@@ -185,12 +185,12 @@
         <Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ko_KR">
             <Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산력 +1을 제공합니다. [ICON_Strength] 방어력이 증가합니다. 서로 연결된 만리장성 타일에는 [ICON_Gold] 금 보너스를 제공합니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Culture] 문화 및 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다. 자연재해로 인해 약탈당할 수 있지만, 파괴되지는 않습니다.</Text>
         </Replace>
-		<!--<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 50%가 아닌 60%의 상승효과를 제공합니다.[NEWLINE][NEWLINE]완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량, [ICON_PRODUCTION] 생산력, [ICON_FAITH] 신앙, [ICON_GOLD] 금, [ICON_SCIENCE] 과학, [ICON_CULTURE] 문화 +1을 제공합니다.</Text>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 50%가 아닌 60%의 상승효과를 제공합니다. 완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량 +1, [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다.[NEWLINE][NEWLINE]완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량, [ICON_PRODUCTION] 생산력, [ICON_FAITH] 신앙, [ICON_GOLD] 금, [ICON_SCIENCE] 과학, [ICON_CULTURE] 문화 +1을 제공합니다.</Text>
-		</Replace>-->
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다. 완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량 +1, [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="ko_KR">
 			<Text>지상 전투 또는 지원 유닛 구입에 드는 [ICON_GOLD] 금 및 [ICON_FAITH] 신앙이 해당 도시의 각 주둔지 특수지구 건물마다 10% 더 감소합니다.</Text>
 		</Replace>
