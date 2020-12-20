@@ -929,6 +929,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="en_US">
 			<Text>Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+		</Replace>
 		<!-- CHINA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
