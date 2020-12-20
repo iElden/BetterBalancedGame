@@ -882,5 +882,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ja_JP">
 			<Text>労働者が漁船を建造できるようになる。[NEWLINE][NEWLINE][ICON_Food] 食料+1。 [ICON_PRODUCTION] 生産力+1と 適切な資源のある場合のみ建設可能。[NEWLINE][NEWLINE]高級資源がある場所に建設すると、都市はそれを利用できるようになる。</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="ja_JP">
+			<Text>キャンパス内の建造物から得られる [ICON_SCIENCE] 科学力が増える。都市の [ICON_CITIZEN] 人口が15以上の場合+50%、区域が+3以上の隣接ボーナスを得ていると+50%。</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

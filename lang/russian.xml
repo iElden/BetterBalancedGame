@@ -901,5 +901,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям создавать рыбацкие суда.[NEWLINE][NEWLINE]+1 [ICON_Food] пищи и +1 [ICON_PRODUCTION] производства. Можно строить только на определенных ресурсах.[NEWLINE][NEWLINE]При постройке на редких ресурсах город получит эти ресурсы.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="ru_RU">
+			<Text>Дополнительная [ICON_Science] наука от зданий в кампусе: +50% при [ICON_CITIZEN] населении города не ниже 15; +50%, если бонус за соседство с районом не ниже +3.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
