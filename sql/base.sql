@@ -1806,6 +1806,19 @@ INSERT OR IGNORE INTO RequirementArguments
 
 
 
+--==============================================================
+--******			NAVAL COMBAT CHANGES				  ******
+--==============================================================
+-- https://github.com/iElden/BetterBalancedGame/issues/59
+-- 2020/12/20
 
+UPDATE Units SET StrategicResource=NULL WHERE UnitType="UNIT_SUBMARINE";
+UPDATE Units SET BaseMoves=4 WHERE UnitType="UNIT_SUBMARINE";
 
+UPDATE Units SET StrategicResource=NULL WHERE UnitType="UNIT_GERMAN_UBOAT";
+UPDATE Units SET BaseMoves=4 WHERE UnitType="UNIT_GERMAN_UBOAT";
+
+UPDATE Units SET BaseMoves=6 WHERE UnitType="UNIT_DESTROYER";
+
+UPDATE Units SET BaseMoves=5 WHERE UnitType="UNIT_AIRCRAFT_CARRIER";
 

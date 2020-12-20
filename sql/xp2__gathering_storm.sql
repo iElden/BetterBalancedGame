@@ -899,3 +899,19 @@ INSERT OR IGNORE INTO GovernorPromotionPrereqs ( GovernorPromotionType, PrereqGo
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId) VALUES
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_FLOODPLAINS_PROD_BBG' ),
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_VOLCANO_PROD_BBG' );
+
+
+
+--==============================================================
+--******			NAVAL COMBAT CHANGES				  ******
+--==============================================================
+-- https://github.com/iElden/BetterBalancedGame/issues/59
+-- 2020/12/20
+
+UPDATE Units_XP2 SET ResourceMaintenanceAmount=0 WHERE UnitType="UNIT_SUBMARINE";
+UPDATE Units_XP2 SET ResourceCost=0 WHERE UnitType="UNIT_SUBMARINE";
+UPDATE Units_XP2 SET ResourceMaintenanceType=NULL WHERE UnitType="UNIT_SUBMARINE";
+
+UPDATE Units_XP2 SET ResourceMaintenanceAmount=0 WHERE UnitType="UNIT_GERMAN_UBOAT";
+UPDATE Units_XP2 SET ResourceCost=0 WHERE UnitType="UNIT_GERMAN_UBOAT";
+UPDATE Units_XP2 SET ResourceMaintenanceType=NULL WHERE UnitType="UNIT_GERMAN_UBOAT";
