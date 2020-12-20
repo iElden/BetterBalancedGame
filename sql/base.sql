@@ -1805,6 +1805,13 @@ INSERT OR IGNORE INTO RequirementArguments
 	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'TechnologyType', 	'TECH_ECONOMICS');
 
 
+-- 2020/12/20 -- Add Scientific Theory as Prereq for Steam Power
+-- https://github.com/iElden/BetterBalancedGame/issues/60
+INSERT OR IGNORE INTO TechnologyPrereqs (Technology, PrereqTech)
+	VALUES ("TECH_STEAM_POWER", "TECH_SCIENTIFIC_THEORY");
+
+-- This is simply a visual change which makes the tech paths slighly more understandable (the dotted lines)
+UPDATE Technologies SET UITreeRow=-3 WHERE TechnologyType="TECH_INDUSTRIALIZATION";
 
 
 
