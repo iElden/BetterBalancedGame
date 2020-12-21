@@ -122,6 +122,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁建造者建造西班牙特色改良设施传教团的能力。[NEWLINE][NEWLINE]+2 [ICON_Faith] 信仰值。地处于首都不同的大陆时，+2 [ICON_Faith] 信仰值，+1  [ICON_PRODUCTION] 生产力，+1 [ICON_FOOD] 食物。地处首都同大陆时+1 [ICON_HOUSING] 住房。[NEWLINE][NEWLINE]与每个学院和圣地相邻时+1 [ICON_Science] 科技值。研究启蒙运动市政后+2 [ICON_Science] 科技值。不能与另一个传教团相邻建造。</Text>
 		</Replace>
+		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>西班牙文艺复兴时期特色单位，取代火枪手。与宗教单位处于同一格位时+10 [ICON_Strength] 战斗力。如果该单位占领城市、或在城市被占领时处于相邻的单元格，该城市会自动将该单位所属玩家的宗教采纳为主流宗教。[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>与河流相邻的圣地区域+2 [ICON_FAITH] 信仰值相邻加成。如果拥有与河流相邻的圣地区域，则该城市+1 [ICON_Amenities] 宜居度，+1 [ICON_Housing] 住房。</Text>
 		</Replace>
