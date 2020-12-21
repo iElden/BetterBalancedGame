@@ -1126,5 +1126,8 @@
 			<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="pl_PL">
 				<Text>+100% do [ICON_PRODUCTION] produkcji jednostek morskich we wszystkich miastach. Można zbudować tylko przy wybrzeżu i w sąsiedztwie dzielnicy przemysłowej.</Text>
 			</Replace>
+			<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="pl_PL">
+				<Text>Premia do [ICON_Science] nauki za budowle w kampusach: +50%, jeśli [ICON_CITIZEN] populacja miasta wynosi 15 lub więcej, +50%, jeśli dzielnica ma co najmniej +3 premii za sąsiedztwo.</Text>
+			</Replace>
 	</LocalizedText>
 </GameData>

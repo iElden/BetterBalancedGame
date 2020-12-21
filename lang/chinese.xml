@@ -1003,5 +1003,8 @@
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>堑壕战（又称战壕战或壕沟战）利用低于地面，并能够保护士兵的战壕进行作战。参战双方都有固定的防线。当双方火力大大提高，移动力和通讯系统却没有多大改进时，堑壕战就会开始。美國南北战争（1861年至1865年）和日俄战争（1904年至1905年）都出现堑壕战，在第一次世界大战中，西线战场的堑壕战造成了最多的伤亡。
 		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>学院中的建筑将产出额外的 [ICON_Science] 科技值：如城市 [ICON_CITIZEN] 人口大于等于15点，+50%科技值；如区域拥有至少+3相邻加成，+50%科技值。</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
