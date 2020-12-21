@@ -594,6 +594,10 @@
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50 % pour la construction de quartiers dans les villes ne possédant pas de quartier spécialisé.</Text>
 		</Replace>
+		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="fr_FR">
+			<Text>Exclusive à l'Espagne, cette unité de la Renaissance remplace le mousquetaire. [ICON_Strength] Puissance de combat +10 sur la même case qu'une unité religieuse. Si le conquistador capture une ville ou est adjacent à elle lors de sa capture, il la convertit automatiquement à la religion dominante de sa civilisation.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Bonus de proximité +2 pour les Lieux saints adjacents à une rivière. [ICON_Amenities] Activités +1 et [ICON_Housing] habitations +1 dans les villes possédant un Lieu saint adjacent à une rivière.</Text>
 		</Replace>
