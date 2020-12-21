@@ -53,8 +53,14 @@ INSERT INTO GameModifiers
 -- 2020/12/16 - Ayutthaya Culture bug fix
 -- https://github.com/iElden/BetterBalancedGame/issues/48
 
-UPDATE ModifierArguments SET Value=60 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
-UPDATE ModifierArguments SET Value=24 WHERE ModifierId="CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS" AND Name="BuildingProductionPercent";
+-- THESE ARE THE VALUE FIRAXIS INTENDED
+-- 10%
+-- UPDATE ModifierArguments SET Value=60 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+
+-- 2020/12/20 - Ayutthaya Culture buff (10% => 20%)
+-- 20%
+UPDATE ModifierArguments SET Value=30 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+
 -- Scenario: Building momument on Online speed with 30 production code
 -- BuildingProductionPercent    Faith   Percentage
 -- 0                            0       0%
