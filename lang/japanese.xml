@@ -113,8 +113,8 @@
 			<Text>労働者がスペイン固有の改善である修道院を建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰+2。自文明の[ICON_Capital]首都と異なる大陸に建設された場合、[ICON_Faith]信仰+2、[ICON_PRODUCTION]生産力+1、[ICON_FOOD]食料+1。自文明の首都と同じ大陸に建設された場合は[ICON_HOUSING]住宅+1。[NEWLINE][NEWLINE]隣接するキャンパスあるいは聖地1つごとに[ICON_Science]科学力+1（啓蒙思想の研究完了で+2）。他の修道院に隣接することはできない。</Text>
 		</Replace>
 		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
-		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="en_US">
-			<Text>[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="ja_JP">
+			<Text>マスケット銃兵に取ってかわるスペイン固有のルネサンス時代のユニット。同じタイルに宗教ユニットがいると [ICON_Strength] 戦闘力+10。このユニットが都市を制圧するか、このユニットが隣接した状態で都市を制圧すると、そのプレイヤーの宗教が自動的にその都市の主流宗教になる。[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>河川が隣接する聖地に[ICON_FAITH]信仰力+2の隣接ボーナスを与える。この条件を満たす聖地を持つ都市は[ICON_Amenities]快適性+1、[ICON_Housing]住宅+1。</Text>
