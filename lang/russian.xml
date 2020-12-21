@@ -119,8 +119,8 @@
 			<Text>Уникальное улучшение Испании.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, +1 [ICON_PRODUCTION] производство, and +1 [ICON_FOOD] еда, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +1 [ICON_HOUSING] жилье, если построено на том же континенте, что и ваша столица.[NEWLINE][NEWLINE]+1 [ICON_Science] науки за каждый соседний кампус и священное место. +2 науки после открытия просвещения. Не может быть построено рядом с другой миссией</Text>
 		</Replace>
 		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
-		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="en_US">
-			<Text>[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный испанский юнит эпохи Возрождения, заменяющий мушкетера. +10 к [ICON_Strength] боевой мощи, если находится на одной клетке с религиозным юнитом. Если юнит захватывает город или во время захвата города находится на соседней клетке, то этот город автоматически получает религию конкистадора в качестве преобладающей.[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Священные места, построенные у реки, получают +2 [ICON_FAITH] веры, а также дают городу +1 [ICON_Amenities] довольство и +1 [ICON_Housing] жилье.</Text>
