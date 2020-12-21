@@ -48,3 +48,39 @@ INSERT INTO GameModifiers
     (ModifierId)
     VALUES
     ('MINOR_CIV_NALANDA_MAHAVIHARA');
+
+
+-- 2020/12/16 - Ayutthaya Culture bug fix
+-- https://github.com/iElden/BetterBalancedGame/issues/48
+
+-- THESE ARE THE VALUE FIRAXIS INTENDED
+-- 10%
+-- UPDATE ModifierArguments SET Value=60 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+
+-- 2020/12/20 - Ayutthaya Culture buff (10% => 20%)
+-- 20%
+UPDATE ModifierArguments SET Value=30 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+
+-- Scenario: Building momument on Online speed with 30 production code
+-- BuildingProductionPercent    Faith   Percentage
+-- 0                            0       0%
+-- 1                            180     600%
+-- 6                            30      100%
+-- 10                           18      60% -- Current Ayutthaya 
+-- 17.5                         10.5    35%
+-- 24                           7.5     25% -- Correct Moksha
+-- 25                           7.2     24% -- Current Moksha 
+-- 50                           3.6     12%
+-- 60                           3       10% -- Correct Ayutthaya
+-- 6 * ProductionCost / BuildingProductionPercent = Yield
+-- Therefore =>  
+-- USE THIS FORMULA TO CALCULATE THE DESIRED ((BuildingProductionPercent)) FIELD
+-- BuildingProductionPercent =  ProductionCost * 6 / Yield
+
+-- 2020/12/19 - Add Mahavihara faith adjacencies for Lavra as well as Holy Site
+-- https://github.com/iElden/BetterBalancedGame/issues/51
+INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict)
+    VALUES ("Mahavihara_Lavra_Faith", "Placeholder","YIELD_FAITH", 1, 1, "DISTRICT_LAVRA");
+
+INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
+    VALUES ("IMPROVEMENT_MAHAVIHARA","Mahavihara_Lavra_Faith");

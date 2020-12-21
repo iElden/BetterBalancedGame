@@ -488,6 +488,12 @@
 			<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="pl_PL">
 				<Text>Jednostka epoki przemysłowej dostępna wyłącznie dla Rosji. Zastępuje kawalerię i jest od niej silniejsza. Zyskuje +5 do [ICON_STRENGTH] siły bojowej podczas walki na własnym terytorium lub na polu z nim sąsiadującym. Możliwość wykonania ruchu po ataku, jeśli pozostaną dostępne punkty [ICON_MOVEMENT] ruchu.</Text>
 			</Replace>
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="pl_PL">
+				<Text>[COLOR_RED]TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>[COLOR_RED]TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+			</Replace>
 
 			<!-- ================ Scotland ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pl_PL">
@@ -1129,6 +1135,9 @@
 			</Replace>
 			<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="pl_PL">
 				<Text>+100% do [ICON_PRODUCTION] produkcji jednostek morskich we wszystkich miastach. Można zbudować tylko przy wybrzeżu i w sąsiedztwie dzielnicy przemysłowej.</Text>
+			</Replace>
+			<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="pl_PL">
+				<Text>Premia do [ICON_Science] nauki za budowle w kampusach: +50%, jeśli [ICON_CITIZEN] populacja miasta wynosi 15 lub więcej, +50%, jeśli dzielnica ma co najmniej +3 premii za sąsiedztwo.</Text>
 			</Replace>
 	</LocalizedText>
 </GameData>

@@ -491,6 +491,11 @@ UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR_HOLLOW' AND YieldType='YIELD_FOOD';
 
 
+--==============================================================
+--******				    POLICIES					  ******
+--==============================================================
+-- 2020/12/20 Pundit proposal accepted to revert Rationalism requirement to +3 (from +4)
+UPDATE RequirementArguments SET Value=3 WHERE RequirementId="REQUIRES_CAMPUS_HAS_HIGH_ADJACENCY" AND Name="Amount";
 
 --==============================================================
 --******				    O T H E R					  ******

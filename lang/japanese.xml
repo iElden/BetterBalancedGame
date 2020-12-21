@@ -751,6 +751,13 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ja_JP">
 			<Text>[COLOR_RED]TO TRANSLATE: [ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
 		</Replace>
+		<!-- Russia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ja_JP">
 			<Text>隣接ボーナスとして+{1_num} [ICON_SCIENCE]。</Text>
@@ -885,6 +892,9 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ja_JP">
 			<Text>労働者が漁船を建造できるようになる。[NEWLINE][NEWLINE][ICON_Food] 食料+1。 [ICON_PRODUCTION] 生産力+1と 適切な資源のある場合のみ建設可能。[NEWLINE][NEWLINE]高級資源がある場所に建設すると、都市はそれを利用できるようになる。</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="ja_JP">
+			<Text>キャンパス内の建造物から得られる [ICON_SCIENCE] 科学力が増える。都市の [ICON_CITIZEN] 人口が15以上の場合+50%、区域が+3以上の隣接ボーナスを得ていると+50%。</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
