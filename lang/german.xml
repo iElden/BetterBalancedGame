@@ -844,6 +844,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="de_DE">
 			<Text>Zusätzliches Territorium bei Stadtgründung. +1 [ICON_Faith] Glauben in Eurer Hauptstadt. +1 [ICON_Production] Produktion durch Tundra-Felder.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>[NEWLINE][COLOR_RED] TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="de_DE">
 			<Text>Chinesische Spezialeinheit. Ersetzt den Armbrustschützen. +7 [ICON_Ranged] Fernkampfstärke beim Angriff auf benachbarte Einheiten.</Text>

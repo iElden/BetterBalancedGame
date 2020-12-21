@@ -903,9 +903,9 @@
     <Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ru_RU">
       <Text>Получает дополнительные клетки при основании города. +1 [ICON_Faith] веры в столице. +1 [ICON_Production] производство на клетках тундры.</Text>
     </Replace>
-    <Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ru_RU">
-      <Text>Получает дополнительные клетки при основании города. +1 [ICON_Faith] веры в столице. +1 [ICON_Production] производство на клетках тундры.</Text>
-    </Replace>  
+	<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ru_RU">
+		<Text>[COLOR_RED]TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+	</Replace>
     <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ru_RU">
       <Text>Победа в бою дает [ICON_Science] науку в размере 25% от [ICON_Strength] боевой мощи уничтоженного юнита. Города не получают усталости от войны. При захвате города с чудом света все военные юниты полностью восстанавливают здоровье.</Text>
     </Replace>
