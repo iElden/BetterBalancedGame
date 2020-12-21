@@ -114,8 +114,8 @@
 			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] Fé. +2 de [ICON_FAITH] Fé, +1 de [ICON_PRODUCTION] Produção, e +1 de [ICON_FOOD] Alimento se estiver em um continente diferente do de sua [ICON_Capital] Capital.+1 de [ICON_HOUSING] Habitação se construída no continente natal.[NEWLINE][NEWLINE]+1 de [ICON_SCIENCE] Ciência por cada Campus e Local Sagrado Adjacente. +2 de [ICON_SCIENCE] Ciência com o Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
 		</Replace>
 		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
-		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="en_US">
-			<Text>[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="pt_BR">
+			<Text>Unidade exclusiva espanhola que substitui os Mosqueteiros. Luta melhor com uma unidade religiosa no mesmo hexágono. Se esta unidade capturar uma cidade ou estiver adjacente a uma cidade quando for capturada, a cidade é automaticamente convertida para a religião principal do Conquistador do jogador.[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Rios dão adjacência de +2 de [ICON_FAITH] Fé aos Distritos de Local Sagrado. +1 de [ICON_Amenities] Serviços e +1 de [ICON_Housing] Habitação pra cidades se elas possuírem um Local Sagrado adjacente ao um Rio.</Text>
