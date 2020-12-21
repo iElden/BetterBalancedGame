@@ -76,3 +76,11 @@ UPDATE ModifierArguments SET Value=30 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULT
 -- Therefore =>  
 -- USE THIS FORMULA TO CALCULATE THE DESIRED ((BuildingProductionPercent)) FIELD
 -- BuildingProductionPercent =  ProductionCost * 6 / Yield
+
+-- 2020/12/19 - Add Mahavihara faith adjacencies for Lavra as well as Holy Site
+-- https://github.com/iElden/BetterBalancedGame/issues/51
+INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict)
+    VALUES ("Mahavihara_Lavra_Faith", "Placeholder","YIELD_FAITH", 1, 1, "DISTRICT_LAVRA");
+
+INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
+    VALUES ("IMPROVEMENT_MAHAVIHARA","Mahavihara_Lavra_Faith");
