@@ -948,5 +948,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="pt_BR">
 			<Text>Habilita a habilidade do construitor fazer Barcos de Pesca.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Alimento e +1 [ICON_PRODUCTION] Produção. Só pode ser construído em recursos válidos.[NEWLINE][NEWLINE]Se construído em um recurso de luxo, a cidade irá utilizá-lo.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="pt_BR">
+			<Text>[ICON_Science] Ciência extra nas edificações dos Campi: +50% se a [ICON_CITIZEN] população da cidade for 15 ou maior, +50% se o distrito tiver pelo menos +3 de bônus de adjacência.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

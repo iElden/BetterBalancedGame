@@ -1027,5 +1027,8 @@
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +10 contre les barbares.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Science] Science bonus pour les bâtiments des campus : +50 % si la ville compte 15 [ICON_CITIZEN] citoyens ou plus, +50 % si bonus de proximité +3 ou plus pour le quartier.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
