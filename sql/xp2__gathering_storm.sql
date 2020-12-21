@@ -483,6 +483,11 @@ UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILI
 
 
 
+-- 20/12/20 -- Drought area of effect to 3 tiles (from 7), more candidates for drought throught the map
+-- https://github.com/iElden/BetterBalancedGame/issues/66
+UPDATE RandomEvents SET Hexes=3 WHERE RandomEventType="RANDOM_EVENT_DROUGHT_MAJOR";
+UPDATE RandomEvents SET Hexes=3 WHERE RandomEventType="RANDOM_EVENT_DROUGHT_EXTREME";
+
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
