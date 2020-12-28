@@ -1,16 +1,18 @@
 <!-- BETA ModID -->
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40121">
-
+<!-- Codenaugh's ModID
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
+-->
 <!-- Elden's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4010">
 -->
 	<Properties>
-		<Name>Better Balanced Game 4.2.0 BETA (Build 2)</Name>
+		<Name>Better Balanced Game 4.2.0 BETA (Build 3)</Name>
 		<Description>
-			BETA
+			BETA build of BBG
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
-		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
+		<Authors>iElden, D. / Jack The Narrator, codenaugh, MarsLife(puj)</Authors>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, WhySoHate, Ignasiuz</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -159,7 +161,6 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
-										
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -447,7 +448,7 @@
             </Properties>
 			<Criteria>RVSetting_1</Criteria>
             <File>sql/victories/new_bbg_rv_1.sql</File>
-        </UpdateDatabase>		
+        </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -514,6 +515,7 @@
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
+
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>

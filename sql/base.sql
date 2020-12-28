@@ -653,6 +653,11 @@ UPDATE District_GreatPersonPoints SET PointsPerTurn=1 WHERE DistrictType='DISTRI
 --UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_INCREASED_TILES';
 -- Cossacks have same base strength as cavalry instead of +5
 UPDATE Units SET Combat=62 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
+
+-- 2020/12/15 - Found in 4.1.2: Fix corner case where Cossacks don't work on borders
+UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId="COSSACK_LOCAL_COMBAT";
+UPDATE Modifiers SET OwnerRequirementSetId="COSSACK_PLOT_IS_OWNER_OR_ADJACENT_REQUIREMENTS" WHERE ModifierId="COSSACK_LOCAL_COMBAT";
+
 -- Lavra district does not acrue Great Person Points unless city has a theater
 UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_ARTIST';
 UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_MUSICIAN';
@@ -793,8 +798,8 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 	VALUES
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_BARBARIAN'),
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_MINOR_CIV');
-*/	
-/*	
+*/
+
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_MONET_3';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ORLOVSKY_1';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_ORLOVSKY_2';
@@ -870,7 +875,6 @@ UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWOR
 UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_2';
 
 
-*/
 --==============================================================
 --******			  G O V E R N M E N T S				  ******
 --==============================================================
