@@ -1033,5 +1033,233 @@
 		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="en_US">
 			<Text>Extra [ICON_Science] Science from buildings in Campuses: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
 		</Replace>
+		<!-- Front End -->
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="en_US">
+			<Text>Quick Setup</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="en_US">
+			<Text>Quickly preset how soon the victory conditions would occur in-game. [NEWLINE] 0: Original Firaxis Settings [NEWLINE] 1: Earlier (pro-players achieved a victory in 115-130 turns) [NEWLINE] 2: Earliest (pro-players achieved a victory in 100-115 turns)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="en_US">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="en_US">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="en_US">
+			<Text>Off</Text>
+		</Replace>
+		
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="en_US">
+			<Text>Great works and artifacts are providing more tourism and culture</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="en_US">
+			<Text>Great works and artifacts are providing more tourism and culture[NEWLINE]Amount of tourism required is 25% lower</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="en_US">
+			<Text>No Culture Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: Religious pressure extents up to 10 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="en_US">
+			<Text>Religious pressure extents up to 12 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="en_US">
+			<Text>Religious pressure extents up to 13 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="en_US">
+			<Text>No Religious Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: 250 turns (Online)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="en_US">
+			<Text>175 turns</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="en_US">
+			<Text>150 turns</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="en_US">
+			<Text>No Score Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="en_US">
+			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules[NEWLINE]Mars Hydrophonics</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="en_US">
+			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="en_US">
+			<Text>No Science Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="en_US">
+			<Text>First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Renaissance Era</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="en_US">
+			<Text>First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Medieval Era</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="en_US">
+			<Text>No Diplomatic Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: 66% of Emerged Lands</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="en_US">
+			<Text>60% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="en_US">
+			<Text>50% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="en_US">
+			<Text>No Domination Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="en_US">
+			<Text>Standard Firaxis Settings: All Capitals Captured</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="en_US">
+			<Text>No Conquest Victory</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
+			<Text>% of emerged land controlled</Text>
+		</Replace>
+		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="en_US">
+			<Text>Domination</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="en_US">
+			<Text>Domination</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="en_US">
+			<Text>Domination Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="en_US">
+			<Text>Domination Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="en_US">
+			<Text>DOMINATION VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="en_US">
+			<Text>DOMINATION VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
+			<Text>Domination Progress</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="en_US">
+			<Text>To achieve a [COLOR:ResMilitaryLabelCS]DOMINATION[ENDCOLOR] victory, you need to expand your empire and conquer your foes to control the largest amount of emerged lands.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="en_US">
+			<Text>[NEWLINE][NEWLINE]Required amount of total emerged owned to win:  </Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="en_US">
+			<Text>Land tiles owned:</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="en_US">
+			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
+		</Replace>
+		
+		
+		<!-- Conquest legacy text -->
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="en_US">
+			<Text>Conquest</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="en_US">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="en_US">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="en_US">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="en_US">
+			<Text>CONQUEST VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="en_US">
+			<Text>CONQUEST VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="en_US">
+			<Text>Conquest Progress</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="en_US">
+			<Text>To achieve a [COLOR:ResMilitaryLabelCS]CONQUEST[ENDCOLOR] victory, you must conquer the original [ICON_Capital] Capital of every other civilization.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
