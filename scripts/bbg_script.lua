@@ -37,6 +37,7 @@
 -- ===========================================================================
 local iReligion_ScientificDecay = 0;
 local iReligion_DecayTech = GameInfo.Technologies["TECH_SCIENTIFIC_THEORY"].Index
+local iDomination_level = 0.60;
 
 -- ===========================================================================
 --	Function
@@ -129,7 +130,7 @@ function Check_DominationVictory()
 			iDomination_level = GameConfiguration.GetValue("TRADITIONAL_DOMINATION_LEVEL") / 100
 		end
 	end
-	
+
 	for _, teamID in ipairs(teamIDs) do
 		if(teamID ~= nil) then
 			--local progress = Game.GetVictoryProgressForTeam(victoryType, teamID);
