@@ -110,7 +110,7 @@ end
 
 function ViewScience()
 	
-	if xp2 == true and GameConfiguration.GetValue("VictoryScienceSetting") == 0 then
+	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
 		XP2_ViewScience()
 		else
 		BASE_ViewScience()
@@ -120,7 +120,7 @@ end
 
 function PopulateScienceProgressMeters(instance:table, progressData:table)
 
-	if xp2 == true and GameConfiguration.GetValue("VictoryScienceSetting") == 0 then
+	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
 		XP2_PopulateScienceProgressMeters(instance, progressData)
 		else
 		BASE_PopulateScienceProgressMeters(instance, progressData)
@@ -129,7 +129,7 @@ end
 
 function PopulateScienceInstance(instance:table, pPlayer:table)
 
-	if xp2 == true and GameConfiguration.GetValue("VictoryScienceSetting") == 0 then
+	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
 		XP2_PopulateScienceInstance(instance, pPlayer)
 		else
 		BASE_PopulateScienceInstance(instance, pPlayer)
@@ -138,7 +138,7 @@ end
 
 function PopulateScienceTeamInstance(instance:table, pPlayer:table)
 
-	if xp2 == true and GameConfiguration.GetValue("VictoryScienceSetting") == 0 then
+	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
 		XP2_PopulateScienceTeamInstance(instance, pPlayer)
 		else
 		BASE_PopulateScienceTeamInstance(instance, pPlayer)
