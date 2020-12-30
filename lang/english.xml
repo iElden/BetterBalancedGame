@@ -1067,12 +1067,43 @@
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
+
 		<!-- Front End -->
 		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="en_US">
-			<Text>Quick Setup</Text>
+			<Text>Requirements</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="en_US">
-			<Text>Quickly preset how soon the victory conditions would occur in-game. [NEWLINE] 0: Original Firaxis Settings [NEWLINE] 1: Earlier (pro-players achieved a victory in 115-130 turns) [NEWLINE] 2: Earliest (pro-players achieved a victory in 100-115 turns)</Text>
+			<Text>Define how soon the victory conditions would occur in-game.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_NAME" Language="en_US">
+			<Text>GS Balanced</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_NAME" Language="en_US">
+			<Text>RF Balanced</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Language="en_US">
+			<Text>Custom</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="en_US">
+			<Text>Default Firaxis Settings for GS</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="en_US">
+			<Text>Balance the condition around GS timing:[NEWLINE]CV: more culture/tourims per great works, less tourism required to attract tourist [NEWLINE]DV: first congress at Medieval Era, first diplomatic vote at Renaissance Era [NEWLINE]SV: Slight cheaper projects and smaller distance to travel.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="en_US">
+			<Text>Balance the condition around RF timing:[NEWLINE]CV: more culture/tourims per great works, even less tourism required to attract tourist [NEWLINE]DV: first congress and diplomatic vote at Medieval Era [NEWLINE]SV: Ends at Mars Colonies.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="en_US">
+			<Text>Balance each victory condition individualy</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="en_US">
+			<Text>Disable all victory conditions</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="en_US">
+			<Text>Off</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="en_US">
 			<Text>Standard</Text>
@@ -1232,6 +1263,9 @@
 			<Text>No Conquest Victory</Text>
 		</Replace>
 		
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="en_US">
+			<Text>Use your military and empire growth to your advantage to dominate the lands!</Text>
+		</Replace>
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
 			<Text>% of emerged land controlled</Text>
 		</Replace>

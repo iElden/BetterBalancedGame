@@ -164,7 +164,20 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
-
+		<Criteria id="GlobalSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryMasterSlider</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="GlobalSetting_2">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryMasterSlider</ConfigurationId>
+                <Group>Game</Group>
+                <Value>2</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -465,6 +478,26 @@
             </Properties>
 			<Criteria>RVSetting_1</Criteria>
             <File>sql/victories/new_bbg_rv_1.sql</File>
+        </UpdateDatabase>	
+		<UpdateDatabase id="GlobalVictorySetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>GlobalSetting_1</Criteria>
+            <File>sql/victories/new_bbg_rv_1.sql</File>
+			<File>sql/victories/new_bbg_dv_1.sql</File>
+			<File>sql/victories/new_bbg_sv_1.sql</File>
+			<File>sql/victories/new_bbg_cv_1.sql</File>
+        </UpdateDatabase>	
+		<UpdateDatabase id="GlobalVictorySetting_2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>GlobalSetting_2</Criteria>
+            <File>sql/victories/new_bbg_rv_2.sql</File>
+			<File>sql/victories/new_bbg_dv_2.sql</File>
+			<File>sql/victories/new_bbg_sv_2.sql</File>
+			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
