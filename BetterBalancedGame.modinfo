@@ -245,6 +245,7 @@ Live version: XYYZ for BBG X.YY.Z
 				<LoadOrder>11612</LoadOrder>
 			</Properties>
 			<File>sql/base.sql</File>
+			<File>sql/new_bbg_base_units.sql</File>
 			<File>sql/new_bbg_religion.sql</File>
 			<File>sql/new_bbg_policies.sql</File>
 			<File>sql/new_bbg_mother_russia.sql</File>
@@ -308,6 +309,7 @@ Live version: XYYZ for BBG X.YY.Z
 				<LoadOrder>11621</LoadOrder>
 			</Properties>
 			<File>sql/xp2__gathering_storm.sql</File>
+			<File>sql/new_bbg_xp2_units.sql</File>
 			<File>sql/new_bbg_hungary.sql</File>
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
@@ -568,6 +570,8 @@ Live version: XYYZ for BBG X.YY.Z
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
+		<File>sql/new_bbg_base_units.sql</File>
+		<File>sql/new_bbg_xp2_units.sql</File>
 
 		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
 
