@@ -18,7 +18,7 @@
 		<Row ParameterId="VICTORY_SCORE" Name="LOC_VICTORY_SCORE_NAME" Description="LOC_VICTORY_SCORE_TT" Visible="1" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VICTORY_SCORE" GroupId="Victories" />
 		<Row ParameterId="VICTORY_TECHNOLOGY" Name="LOC_VICTORY_SCIENCE_NAME" Description="LOC_VICTORY_SCIENCE_TT_XP2" Visible="1" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VICTORY_TECHNOLOGY" GroupId="Victories" />
 		<Row ParameterId="VICTORY_DIPLOMATIC" Name="LOC_VICTORY_DIPLOMATIC_NAME" Description="LOC_VICTORY_DIPLOMATIC_TT" Visible="1" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="VICTORY_DIPLOMATIC" GroupId="Victories" />
-		<Row ParameterId="VictoryMasterSlider" Name="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Description="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Domain="BBGVictorySpeedSliderRange" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" GroupId="Victories" Hash="0" SortIndex="0" />
+		<Row ParameterId="VictoryMasterSlider" Name="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Description="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Domain="BBGVictorySpeedSliderRange" DefaultValue="5" ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" GroupId="Victories" Hash="0" SortIndex="0" />
 		<Row ParameterId="VictoryCulturalSetting" Name="LOC_VICTORY_CULTURE_NAME" Description="BBG_FRONT_VICTORY_CULTURAL_SETTING_DESC" Domain="BBGVictoryCulturalSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryCulturalSetting" GroupId="Victories" SortIndex="1" />
 		<Row ParameterId="VictoryScoreSetting" Name="LOC_VICTORY_SCORE_NAME" Description="BBG_FRONT_VICTORY_SCORE_SETTING_DESC" Domain="BBGVictoryScoreSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryScoreSetting" GroupId="Victories" SortIndex="7" />
 		<Row ParameterId="VictoryScienceSetting" Name="LOC_VICTORY_SCIENCE_NAME" Description="BBG_FRONT_VICTORY_SCIENCE_SETTING_DESC" Domain="BBGVictoryScienceSettingDomain" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="VictoryScienceSetting" GroupId="Victories" SortIndex="3" />
@@ -98,6 +98,7 @@
 		<Row Domain="BBGVictorySpeedSliderRange" Value="1" Name="BBG_FRONT_MASTER_SETTING_1_NAME" Description="BBG_FRONT_MASTER_SETTING_1_DESC" SortIndex="20"/>
 		<Row Domain="BBGVictorySpeedSliderRange" Value="2" Name="BBG_FRONT_MASTER_SETTING_2_NAME" Description="BBG_FRONT_MASTER_SETTING_2_DESC" SortIndex="30"/>
 		<Row Domain="BBGVictorySpeedSliderRange" Value="3" Name="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Description="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" SortIndex="50"/>
+		<Row Domain="BBGVictorySpeedSliderRange" Value="5" Name="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_NAME" Description="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" SortIndex="50"/>
 		<Row Domain="BBGVictorySpeedSliderRange" Value="-1" Name="BBG_FRONT_MASTER_SETTING_OFF_NAME" Description="BBG_FRONT_MASTER_SETTING_OFF_DESC" SortIndex="40"/>
 		<Row Domain="BBGVictoryCulturalSettingDomain" Value="0" Name="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Description="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" SortIndex="10"/>
 		<Row Domain="BBGVictoryCulturalSettingDomain" Value="1" Name="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Description="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" SortIndex="20"/>
@@ -183,6 +184,13 @@
 		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="2" TargetGroup="Game" TargetId="VictoryScienceSetting" TargetValue="2" />
 		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="2" TargetGroup="Game" TargetId="VictoryScoreSetting" TargetValue="2" />
 		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="2" TargetGroup="Game" TargetId="VictoryCulturalSetting" TargetValue="2" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryDominationSetting" TargetValue="3" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryReligiousSetting" TargetValue="0" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryDiploSetting" TargetValue="2" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryScienceSetting" TargetValue="0" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryScoreSetting" TargetValue="0" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryConquestSetting" TargetValue="0" />
+		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="5" TargetGroup="Game" TargetId="VictoryCulturalSetting" TargetValue="2" />
 		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="-1" TargetGroup="Game" TargetId="VictoryDominationSetting" TargetValue="3" />
 		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="-1" TargetGroup="Game" TargetId="VictoryReligiousSetting" TargetValue="3" />
 		<Row SourceGroup="Game" SourceId="BBGVictorySpeedSlider" SourceValue="-1" TargetGroup="Game" TargetId="VictoryDiploSetting" TargetValue="3" />
