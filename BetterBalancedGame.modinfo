@@ -147,6 +147,7 @@
 				<LoadOrder>11612</LoadOrder>
 			</Properties>
 			<File>sql/base.sql</File>
+			<File>sql/new_bbg_base_units.sql</File>
 			<File>sql/new_bbg_religion.sql</File>
 			<File>sql/new_bbg_policies.sql</File>
 			<File>sql/new_bbg_mother_russia.sql</File>
@@ -202,6 +203,7 @@
 			</Properties>
 			<File>sql/xp1__rise_and_fall.sql</File>
 			<File>sql/new_bbg_xp1_dutch.sql</File>
+			<File>sql/new_bbg_xp1_policies.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_db_updates" criteria="xp2">
@@ -209,6 +211,7 @@
 				<LoadOrder>11621</LoadOrder>
 			</Properties>
 			<File>sql/xp2__gathering_storm.sql</File>
+			<File>sql/new_bbg_xp2_units.sql</File>
 			<File>sql/new_bbg_hungary.sql</File>
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
@@ -377,6 +380,9 @@
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
 		<File>sql/new_bbg_great_works.sql</File>
+		<File>sql/new_bbg_base_units.sql</File>
+		<File>sql/new_bbg_xp2_units.sql</File>
+		<File>sql/new_bbg_xp1_policies.sql</File>
 
 		<File>data/new_bbg_icons.xml</File>
 	</Files>
