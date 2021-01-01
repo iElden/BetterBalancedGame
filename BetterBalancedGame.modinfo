@@ -1,5 +1,5 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40111">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40204">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
@@ -176,6 +176,13 @@
                 <ConfigurationId>VictoryMasterSlider</ConfigurationId>
                 <Group>Game</Group>
                 <Value>2</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="GlobalSetting_BBG_Legacy">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VictoryMasterSlider</ConfigurationId>
+                <Group>Game</Group>
+                <Value>5</Value>
             </ConfigurationValueMatches>
         </Criteria>
 	</ActionCriteria>
@@ -497,6 +504,14 @@
             <File>sql/victories/new_bbg_rv_2.sql</File>
 			<File>sql/victories/new_bbg_dv_2.sql</File>
 			<File>sql/victories/new_bbg_sv_2.sql</File>
+			<File>sql/victories/new_bbg_cv_2.sql</File>
+        </UpdateDatabase>	
+		<UpdateDatabase id="GlobalVictorySetting_BBG_Legacy">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>GlobalSetting_BBG_Legacy</Criteria>
+			<File>sql/victories/new_bbg_dv_2.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
 		
