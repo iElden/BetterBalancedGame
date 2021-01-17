@@ -1074,6 +1074,39 @@
 		
 >>>>>>> 450c625... Defaut Victory to Legacy BBG
 		<!-- Front End -->
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="en_US">
+			<Text>Barbarian Tribes</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_DESC" Language="en_US">
+			<Text>Define how the Barbarians would appear in the game.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_NAME" Language="en_US">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_NAME" Language="en_US">
+			<Text>Balanced</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="en_US">
+			<Text>Raging</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="en_US">
+			<Text>No Barbarians</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_DESC" Language="en_US">
+			<Text>Original Firaxis Setting</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_DESC" Language="en_US">
+			<Text>Cavalry Tribes would not appear before turn 15. [NEWLINE]Camps placement are balanced between players.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="en_US">
+			<Text>May God have mercy for your soul.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="en_US">
+			<Text>No Barbarians</Text>
+		</Replace>			
+		
+		
+		
 		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="en_US">
 			<Text>Requirements</Text>
 		</Replace>
