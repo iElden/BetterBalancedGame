@@ -209,6 +209,7 @@ Live version: XYYZ for BBG X.YY.Z
 				<LoadOrder>999</LoadOrder>
 			</Properties>
             	<File>config/config.xml</File>
+				<File>config/config.sql</File>
         </UpdateDatabase>										   
 	</FrontEndActions>
 
@@ -581,6 +582,7 @@ Live version: XYYZ for BBG X.YY.Z
 		
 		<File>data/new_bbg_icons.xml</File>
 		<File>config/config.xml</File>
+		<File>config/config.sql</File>
 		
 		<File>sql/victories/new_bbg_cv_2.sql</File>
 		<File>sql/victories/new_bbg_sv_2.sql</File>
