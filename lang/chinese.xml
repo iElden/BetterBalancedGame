@@ -124,7 +124,7 @@
 		</Replace>
 		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
 		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>西班牙文艺复兴时期特色单位，取代火枪手。与宗教单位处于同一格位时+10 [ICON_Strength] 战斗力。如果该单位占领城市、或在城市被占领时处于相邻的单元格，该城市会自动将该单位所属玩家的宗教采纳为主流宗教。[NEWLINE][COLOR_RED] TO TRANSLATE:Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+			<Text>西班牙文艺复兴时期特色单位，取代火枪手。与宗教单位处于同一格位时+10 [ICON_Strength] 战斗力。如果该单位占领城市、或在城市被占领时处于相邻的单元格，该城市会自动将该单位所属玩家的宗教采纳为主流宗教。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>与河流相邻的圣地区域+2 [ICON_FAITH] 信仰值相邻加成。如果拥有与河流相邻的圣地区域，则该城市+1 [ICON_Amenities] 宜居度，+1 [ICON_Housing] 住房。</Text>
@@ -817,18 +817,18 @@
 		</Replace>
 		<!-- Khmer -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>+2 [ICON_FAITH] Faith to Khmer from incoming and outgoing international trade routes. The sending Civilization also receives +2 [ICON_FAITH] Faith. +3 [ICON_FAITH] Faith and +1 [ICON_AMENITIES] Amenity from entertainment to each city with an Aqueduct. Farms provide +2 [ICON_FOOD] Food if adjacent to an Aqueduct.</Text>
+			<Text>往来高棉的国际贸易路线提供+2 [ICON_FAITH] 信仰值。向高棉派商路的文明也获得+2 [ICON_FAITH] 信仰值。若城市中有水渠，娱乐区域/水上乐园额外提供+3 [ICON_FAITH] 信仰值和+1 [ICON_AMENITIES] 宜居度。若和水渠相邻，农场提供+2 [ICON_FOOD] 食物。</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_SCIENCE] Science base adjacency.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值相邻加成。</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_SCIENCE] Science adjacency from the adjacent {1_Num : plural 1?Mines; other?Mines;}.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值，来自相邻的矿山 {1_Num : plural 1?Mines; other?Mines;}.</Text>
 		</Row>
 		<!-- Mapuche -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="zh_Hans_CN">
-			<Text> [ICON_Governor] 总督就职城市所生产的单位在战斗中获得的经验值获取+25%。与处于黄金时代的文明作战时+10 [ICON_Strength] 战斗力加成。</Text>
+			<Text> [ICON_Governor] 总督就职城市所生产的单位在战斗中获得的经验值获取+25%。与处于黄金时代的文明作战时+5 [ICON_Strength] 战斗力加成。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁建造者建造马普切木人（马普切特色改良设施）的能力。[NEWLINE][NEWLINE]提供所在单元格魅力75%的 [ICON_CULTURE] 文化值和+1 [ICON_PRODUCTION] 生产力。  获得“行政部门”市政后提供 +1 [ICON_PRODUCTION] 生产力。研究完“飞行”后可获得更多 [ICON_Tourism] 旅游业绩。要求单元格至少达到惊艳魅力。</Text>
@@ -953,7 +953,7 @@
 			<Text>建立城市可获得额外领土。文明获得+1 [ICON_Faith] 信仰值。冻土提供+1 [ICON_Production] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[NEWLINE][COLOR_RED] TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+			<Text>建立城市可获得额外领土。文明获得+1 [ICON_Faith] 信仰值。冻土提供+1 [ICON_Production] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>[ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞提升50%的科技和市政，而非40%。[NEWLINE][NEWLINE]奇观为所在城市提供 +1 [ICON_FOOD] 食物与 +1 [ICON_PRODUCTION] 生产力。</Text>
