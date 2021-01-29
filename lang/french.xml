@@ -1004,11 +1004,25 @@
 		<Replace Tag="LOC_LEADER_TRAIT_VILNIUS_DESCRIPTION" Language="fr_FR">
 			<Text>Toutes les places du théâtre reçoivent +50 % de bonus de proximité si vous possédez une alliance de niveau 1, augmenté à 100% pour une alliance de niveau 2 et à 150% pour une alliance de niveau 3. Non cumulable avec plusieurs alliances.</Text>
 		</Replace>
-		<!-- Correction traduction Firaxis suite au DLC Ethiopie -->
-		<Replace Tag="LOC_MINOR_CIV_TRADE_TRAIT_SMALL_INFLUENCE_BONUS" Language="fr_FR">
-			<Text>[ICON_Gold] Or +1 dans la [ICON_Capital] capitale et pour chaque marché et phare construits.</Text>
+		<Replace Tag="LOC_CIVILIZATION_PRESLAV_BONUS_XP1" Language="fr_FR">
+			<Text>Loyauté +40 dans toutes vos villes, vous assurant une loyauté sans faille dans tout votre empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="fr_FR">
+			<Text>Loyauté +40 dans toutes vos villes, vous assurant une loyauté sans faille dans tout votre empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MOHENJO_DARO_BONUS" Language="fr_FR">
+			<Text>Toutes vos villes sans eau douce le deviennent, leur octroyant 5 habitations de base.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_MOHENJO_DARO_DESCRIPTION" Language="fr_FR">
+			<Text>Toutes vos villes sans eau douce le deviennent, leur octroyant 5 habitations de base.</Text>
 		</Replace>
 		<!-- Autres -->
+		<Replace Tag="LOC_DISTRICT_AQUEDUCT_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier fournissant de l'eau douce à la ville, depuis une rivière, un lac, un oasis ou une montagne adjacent. [NEWLINE][ICON_Housing] Habitations +4 pour les villes sans eau. [NEWLINE][ICON_Housing] Habitations +3 pour les villes cotières sans eau douce. [NEWLINE][ICON_Housing] Habitations +2 pour les villes avec eau douce. [NEWLINE]Doit être adjacent au centre-ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_AQUEDUCT_ALT_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier fournissant à la ville une source d'eau douce s'il est adjacent à une rivière, un lac, une oasis ou une montagne. [NEWLINE][ICON_Housing] Habitations +4 pour les villes sans eau. [NEWLINE][ICON_Housing] Habitations +3 pour les villes cotières sans eau douce. [NEWLINE][ICON_Housing] Habitations +2 pour les villes avec eau douce. [NEWLINE][ICON_Amenities] Activités +1 si construit sur une case adjacente à une fissure géothermique. Évite les pertes de [ICON_Food] nourriture en cas de sécheresse. Les ingénieurs militaires peuvent dépenser une charge pour achever 20 % de la construction d'un aqueduc.</Text>
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 [ICON_PRODUCTION] Production +1. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
 		</Replace>
