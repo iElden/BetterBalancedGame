@@ -158,6 +158,7 @@
 			<File>sql/new_bbg_citystates.sql</File>
 			<File>sql/new_bbg_great_people.sql</File>
 			<File>sql/new_bbg_great_works.sql</File>
+			<File>sql/new_bbg_religion_belief.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -204,6 +205,9 @@
 			<File>sql/xp1__rise_and_fall.sql</File>
 			<File>sql/new_bbg_xp1_dutch.sql</File>
 			<File>sql/new_bbg_xp1_policies.sql</File>
+			<File>sql/new_bbg_xp1_cree.sql</File>
+			<File>sql/new_bbg_xp1_scotland.sql</File>
+			<File>sql/new_bbg_xp1_zulus.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_db_updates" criteria="xp2">
@@ -383,6 +387,10 @@
 		<File>sql/new_bbg_base_units.sql</File>
 		<File>sql/new_bbg_xp2_units.sql</File>
 		<File>sql/new_bbg_xp1_policies.sql</File>
+		<File>sql/new_bbg_religion_belief.sql</File>
+		<File>sql/new_bbg_xp1_cree.sql</File>
+		<File>sql/new_bbg_xp1_scotland.sql</File>
+		<File>sql/new_bbg_xp1_zulus.sql</File>
 
 		<File>data/new_bbg_icons.xml</File>
 	</Files>
