@@ -3,5 +3,5 @@
 -- Delete Cothon full heal
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COTHON_HEALFRIENDLY' AND Name='Amount';
 
--- Delete settler PM
-UPDATE ModifierArguments SET Value='0' WHERE ModifierId='MEDITERRANEAN_COLONIES_EXTRA_MOVEMENT';
+-- nerf settler PM to +1
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='MEDITERRANEAN_COLONIES_EXTRA_MOVEMENT';

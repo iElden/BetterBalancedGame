@@ -959,7 +959,7 @@
 		<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
 	</Replace>
 	<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
+		<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +1 [ICON_Movement] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
 	</Replace>
 	<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ru_RU">
 		<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_TradeRoute] Trade Route capacity with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them.</Text>
