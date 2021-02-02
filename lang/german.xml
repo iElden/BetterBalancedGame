@@ -192,10 +192,10 @@
 			<Text>+3 [ICON_Favor] Diplomatische Gunst. Das Ausheben des Militärs von Stadtsstaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärke-Bonus sofern Ihr der Suzerän des Stadtstaates seid (inklusive ausgehobene Einheiten).[NEWLINE]Gewährt +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte and +2 Einflusspunkte pro Runde Gesandte in Stadtstaaten.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE"> <!-- Last update: 4.2.0-->
-			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold  und +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_AMENITIES] Annehmlichkeit und +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE"> <!-- Last update: 4.2.0-->
-			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
+			<TextSchaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_AMENITIES] Annehmlichkeit und +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE">
@@ -545,7 +545,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Mobilization Civic.</Text>
+			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzliche +5 [ICON_STRENGTH] Basis-Kampfstärke für Korps und Armeen ab der Ausrichtung 'Mobilisierung'.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. +1 [ICON_Strength] Kampfstärke für jeden Stadtstaat in welchem Ihr Suzerän seid.</Text>
@@ -1068,25 +1068,25 @@
 			<Text>Mehr [ICON_Science] Wissenschaft von Campus-Gebäuden: +50 %, bei 15 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50 %, bei +3 Nachbarschaftsbonus und mehr.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_FAITH] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+			<Text>Zusätzlicher Glauben [ICON_FAITH] durch Gebäude in Heiligen Stätten: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_CULTURE] Culture from buildings in Theater Squares: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+			<Text> Mehr [ICON_CULTURE] Kultur von Gebäuden im Theaterplatz: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your districts on or next to Coast or Lake tiles provide +1 [ICON_Culture] Culture. +1 [ICON_Culture] Culture once Exploration reached.</Text>
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +2 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
+			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +1 [ICON_Movement] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
+			<Text>Beginnt das Spiel mit dem Heureka [ICON_TechBoosted] der Schrift-Technologie. Küstenstädte, die von den Phöniziern gegründet wurden und sich auf dem gleichen Kontinent wie die phönizische [ICON_Capital] Hauptstadt befinden, sind zu 100% loyal. Gewasserte Siedler erhalten +2 Sichtweite. Für Siedler gelten keine zusätzlichen [ICON_Movement] Fortbewegungskosten für das Wassern und Ausschiffen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_TradeRoute] Trade Route capacity with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them.</Text>
+			<Text>+1 [ICON_TradeRoute] Handelsweg-Kapazität mit der Keramik-Technologie. Unbeanspruchte Geländefelder innerhalb von 3 Feldern einer Cree-Stadt fallen unter die Kontrolle der Cree, wenn ein Händler sie als Erster betritt.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat units gain +3 [ICON_Strength] Combat Strength when within the borders of friendly cities that follow this Religion.</Text>
+			<Text>Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen von freundlich gesinnten Städten mit dieser Religion.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
