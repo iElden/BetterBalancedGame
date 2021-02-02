@@ -191,12 +191,20 @@
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+3 [ICON_Favor] Diplomatische Gunst. Das Ausheben des Militärs von Stadtsstaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärke-Bonus sofern Ihr der Suzerän des Stadtstaates seid (inklusive ausgehobene Einheiten).[NEWLINE]Gewährt +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte and +2 Einflusspunkte pro Runde Gesandte in Stadtstaaten.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE"> <!-- Last update: 4.2.0-->
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold  und +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_AMENITIES] Annehmlichkeit und +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE"> <!-- Last update: 4.2.0-->
+			<TextSchaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_AMENITIES] Annehmlichkeit und +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
+		</Replace>
+		<!--
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_AMENITIES] Annehmlichkeiten, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="de_DE">
 			<Text>Wiege der Zivilisation</Text>
 		</Replace>
@@ -262,7 +270,7 @@
 			<Text>Äthiopiens internationale Handelswege gewähren +0.5 [ICON_Faith] Glauben pro Ressource am Ausgangsort. Verbesserte Ressourcen liefern +1 [ICON_Faith] Glauben. Kauf von Archäologischen Museen und Archäologen mit [ICON_Faith] Glauben möglich.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="de_DE">
-			<Text>Erhaltet [ICON_SCIENCE] Wissenschaft und [ICON_CULTURE] Kultur in Höhe von 15% Eurer [ICON_FAITH] Glaubensgenerierung in Städten, die auf Hügeln gegründet wurden. Einheiten erhalten +4 [ICON_Strength] Kampfstärke auf Hügeln.</Text>
+			<Text>Erhaltet [ICON_SCIENCE] Wissenschaft und [ICON_CULTURE] Kultur in Höhe von 10% Eurer [ICON_FAITH] Glaubensgenerierung in Städten, die auf Hügeln gegründet wurden. Einheiten erhalten +4 [ICON_Strength] Kampfstärke auf Hügeln.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="de_DE">
 			<Text>Äthiopische Leichte Kavallerie-Spezialeinheit des Mittelalters. Verfügt über bessere Sicht, erhält keinen [ICON_Movement] Fortbewegungsmalus für die Fortbewegung auf Hügeln, und verfügt über +4 [ICON_Strength] Kampfstärke auf Hügeln.</Text>
@@ -313,7 +321,7 @@
 			<Text>Land-Kampf- oder Unterstützungseinheiten kosten 20 % weniger mit [ICON_GOLD] Gold oder [ICON_FAITH] Glauben für jedes Lagerbezirksgebäude in der Stadt.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Phönizien zur Verfügung stehender Bezirk für Marine-Aktivitäten in Eurer Stadt. Ersetzt den Hafenbezirk und ist günstiger im Bau. Muss an Küste oder See-Geländefeldern neben Land gebaut werden.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Produktion für Marineeinheiten und Siedler in dieser Stadt. Alle verwundeten Marineeinheiten innerhalb der Stadtgrenzen regenerieren 100 Trefferpunkte pro Runde.</Text>
+			<Text>Ein ausschließlich Phönizien zur Verfügung stehender Bezirk für Marine-Aktivitäten in Eurer Stadt. Ersetzt den Hafenbezirk und ist günstiger im Bau. Muss an Küste oder See-Geländefeldern neben Land gebaut werden.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Produktion für Marineeinheiten und Siedler in dieser Stadt.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="de_DE">
@@ -537,7 +545,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
-			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzlich +5 Basis-Kampfstärke für Korps und Armeen.</Text>
+			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzliche +5 [ICON_STRENGTH] Basis-Kampfstärke für Korps und Armeen ab der Ausrichtung 'Mobilisierung'.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. +1 [ICON_Strength] Kampfstärke für jeden Stadtstaat in welchem Ihr Suzerän seid.</Text>
@@ -1058,6 +1066,27 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="de_DE">
 			<Text>Mehr [ICON_Science] Wissenschaft von Campus-Gebäuden: +50 %, bei 15 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50 %, bei +3 Nachbarschaftsbonus und mehr.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="de_DE">
+			<Text>Zusätzlicher Glauben [ICON_FAITH] durch Gebäude in Heiligen Stätten: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="de_DE">
+			<Text> Mehr [ICON_CULTURE] Kultur von Gebäuden im Theaterplatz: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="de_DE">
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +2 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="de_DE">
+			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="de_DE">
+			<Text>Beginnt das Spiel mit dem Heureka [ICON_TechBoosted] der Schrift-Technologie. Küstenstädte, die von den Phöniziern gegründet wurden und sich auf dem gleichen Kontinent wie die phönizische [ICON_Capital] Hauptstadt befinden, sind zu 100% loyal. Gewasserte Siedler erhalten +2 Sichtweite. Für Siedler gelten keine zusätzlichen [ICON_Movement] Fortbewegungskosten für das Wassern und Ausschiffen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_TradeRoute] Handelsweg-Kapazität mit der Keramik-Technologie. Unbeanspruchte Geländefelder innerhalb von 3 Feldern einer Cree-Stadt fallen unter die Kontrolle der Cree, wenn ein Händler sie als Erster betritt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="de_DE">
+			<Text>Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen von freundlich gesinnten Städten mit dieser Religion.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

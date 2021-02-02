@@ -97,12 +97,20 @@
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_Favor]外交的支持+3. 都市国家からの徴用にかかる[ICON_Gold]ゴールドが半分になる。[NEWLINE]自文明が宗主国である場合、都市国家ユニットの[ICON_Strength]戦闘力+4。（徴用されたユニットを含む）。[NEWLINE][Icon_Governor]総督の昇進+1。代表団+2、代表団を得るためのターンごとの影響力+2。</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ja_JP"> <!-- Last update: 4.2.0-->
+			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ja_JP"> <!-- Last update: 4.2.0-->
+			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
+		</Replace>
+		<!--
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+2、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+1、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ja_JP">
 			<Text>すべてのユニットの視界+1。軽騎兵の昇進がユニットのターンを終了しない。</Text>
 		</Replace>
@@ -135,7 +143,7 @@
 			<Text>エチオピアの国際交易路は起点となる都市における資源1つごとに[ICON_Faith]信仰力+0.5を与える。資源1つごとに[ICON_Faith]信仰力+1。考古博物館と考古学者を[ICON_Faith]信仰力で購入できる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="ja_JP">
-			<Text>丘陵上に建設された都市から生み出されている[ICON_FAITH]信仰力の15%に等しい[ICON_SCIENCE]科学力と[ICON_CULTURE]文化力を得る。</Text>
+			<Text>丘陵上に建設された都市から生み出されている[ICON_FAITH]信仰力の10%に等しい[ICON_SCIENCE]科学力と[ICON_CULTURE]文化力を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="ja_JP">
 			<Text>エチオピアに固有の中世における軽騎兵。追加の視界を持ち、丘陵による[ICON_Movement]移動力のペナルティを受けない。丘陵上で戦闘する際に[ICON_STRENGTH]戦闘力+4。</Text>
@@ -189,7 +197,7 @@
 			<Text>この都市に建設されている兵営の建造物1つごとに、陸上戦闘及び支援ユニットの[ICON_GOLD]ゴールドおよび[ICON_FAITH]信仰力による購入費用-10%。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="ja_JP">
-			<Text>港を代替するフェニキア固有の区域。港より建造コストが低い。陸に隣接した沿岸あるいは湖タイル状に建設されなければならない。[NEWLINE][NEWLINE]開拓者と海軍ユニットに対する[ICON_PRODUCTION]生産力+25%。この都市のタイルでは傷ついた海軍ユニットが毎ターン全回復する。</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Phoenicia for naval activity in your city. Replaces the Harbor district and cheaper to build. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production towards naval units and Settlers in this city.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>ダルエ・メフルの建設が可能になる。([ICON_Faith]信仰力+3、[ICON_CULTURE]文化力+2。災害によって破壊されない。）</Text>
@@ -409,7 +417,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ja_JP">
-			<Text>ギルド・ナショナリズムの社会制度を完了することでそれぞれ軍団・大軍団が解禁される。ナショナリズムの社会制度を完了すれば軍団・大軍団[ICON_STRENGTH]戦闘力ボーナスがさらに+5。</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Mobilization Civic.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
 			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+1。 TO TRANSLATE: +1 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
@@ -895,6 +903,27 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="ja_JP">
 			<Text>キャンパス内の建造物から得られる [ICON_SCIENCE] 科学力が増える。都市の [ICON_CITIZEN] 人口が15以上の場合+50%、区域が+3以上の隣接ボーナスを得ていると+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_FAITH] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_CULTURE] Culture from buildings in Theater Squares: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Your districts on or next to Coast or Lake tiles provide +1 [ICON_Culture] Culture. +1 [ICON_Culture] Culture once Exploration reached.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +1 [ICON_Movement] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_TradeRoute] Trade Route capacity with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat units gain +3 [ICON_Strength] Combat Strength when within the borders of friendly cities that follow this Religion.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
