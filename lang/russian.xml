@@ -160,18 +160,17 @@
 		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="ru_RU">
 			<Text>При первом обращении города религиозным юнитом в свою религию вы получаете 10 [ICON_SCIENCE] науки за каждого [ICON_Citizen] жителя.</Text>
 		</Replace>
-
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ru_RU">
-            <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +1 к [ICON_SCIENCE] науке. Дополнительная 1 [ICON_SCIENCE] наука после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Дополнительно получают +1 [ICON_CULTURE] культуры после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу.</Text>
+        <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +1 к [ICON_SCIENCE] науке. Дополнительная 1 [ICON_SCIENCE] наука после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Дополнительно получают +1 [ICON_CULTURE] культуры после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ru_RU">
 			<Text>+10 к лечению на клетках города, обращенного в вашу религию.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ru_RU">
-            <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
+        <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи. Великая стена может быть разорена (но не уничтожена) только стихийными бедствиями.</Text>
+        <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи. Великая стена может быть разорена (но не уничтожена) только стихийными бедствиями.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ru_RU">
 			<Text>[ICON_TechBoosted] Озарения и [ICON_CivicBoosted] вдохновения дают 60% к получению социальных институтов и технологий вместо 40%.[NEWLINE][NEWLINE]Каждое чудо света дает дополнительно +1 [ICON_FOOD] еды, +1 [ICON_PRODUCTION] производства.</Text>
@@ -196,15 +195,13 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ru_RU">
 			<Text>+1 к [ICON_HOUSING] жилью за каждый район и чудо в этом городе.</Text>
-		</Replace>
-		
+		</Replace>	
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>Позволяет строить храмы огня (+3 [ICON_Faith] веры, +2 [ICON_CULTURE] культуры. Не разрушается стихийными бедствиями).</Text>
-        </Replace>
-        <Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>+2 [ICON_CULTURE] культуры. Не разрушается стихийными бедствиями.</Text>
-		</Replace>
-		
+        <Text>Позволяет строить храмы огня (+3 [ICON_Faith] веры, +2 [ICON_CULTURE] культуры. Не разрушается стихийными бедствиями).</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ru_RU">
+        <Text>+2 [ICON_CULTURE] культуры. Не разрушается стихийными бедствиями.</Text>
+		</Replace>	
 		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ru_RU">
 			<Text>+5 [ICON_Strength] к боевой мощи в сражениях на холмах.[NEWLINE][ICON_Bullet]Нет штрафа за [ICON_Movement] передвижение по холмам.</Text>
 		</Replace>
@@ -251,31 +248,29 @@
 			<Text>+25% [ICON_Production] производства районов и чудес, размещенных рядом с рекой. Затопления не наносят повреждения.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="ru_RU">
-            <Text>Бонус к [ICON_Culture] культуре от соседства с Великой стеной. Играя за Францию, вы получаете бесплатного шпиона.</Text>
-        </Replace>
-        <Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="ru_RU">
-            <Text>+6 [ICON_Tourism] туризма. Можно построить только одно такое здание в городе, даже если в нем есть несколько пригородов.</Text>
-        </Replace>
-        <Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
-            <Text>Уникальное здание кхмеров, которое заменяет храм. При постройке здания дает бесплатно одного миссионера (если основана религия). Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру.</Text>
-        </Replace>
-
+        <Text>Бонус к [ICON_Culture] культуре от соседства с Великой стеной. Играя за Францию, вы получаете бесплатного шпиона.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="ru_RU">
+        <Text>+6 [ICON_Tourism] туризма. Можно построить только одно такое здание в городе, даже если в нем есть несколько пригородов.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
+        <Text>Уникальное здание кхмеров, которое заменяет храм. При постройке здания дает бесплатно одного миссионера (если основана религия). Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру.</Text>
+    </Replace>
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ru_RU">
-            <Text>+10 [ICON_STRENGTH] против защищенных районов.</Text>
-        </Row>
-        <Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
-            <Text>Монументальность – золотой век:[NEWLINE]Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
-        </Replace>
-        <Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="ru_RU">
-            <Text>Монументальность: Каждый построенный специализированный район прибавляет +1 очко к счету эпохи. Если выбрано в начале золотого века, Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Античность, Средневековье и Возрождение. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
-        </Replace>
+        <Text>+10 [ICON_STRENGTH] против защищенных районов.</Text>
+    </Row>
+    <Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
+        <Text>Монументальность – золотой век:[NEWLINE]Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
+    </Replace>
+    <Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="ru_RU">
+        <Text>Монументальность: Каждый построенный специализированный район прибавляет +1 очко к счету эпохи. Если выбрано в начале золотого века, Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Античность, Средневековье и Возрождение. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
+    </Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="ru_RU">
 			<Text>К оружию! - золотой век:[NEWLINE]Дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="ru_RU">
 			<Text>К оружию!: Каждый уничтоженный в бою корпус, кроме варваров, прибавляет 1 очко к счету эпохи, а уничтоженная армия - 2 очка. Если выбрано в начале золотого века, дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
 		</Replace>
-
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
 			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 100%.</Text>
 		</Replace>
@@ -325,8 +320,8 @@
 			<Text>+50% боевого опыта всем воздушным юнитам, созданным в этом городе. +2 ячейки для воздушных юнитов на аэродроме. После открытия технологии «Быстрое развертывание» позволяет перебрасывать наземные юниты между аэродромами, где есть аэропорты. +2 [ICON_RESOURCE_ALUMINUM] Алюминия в ход.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>+25% боевого опыта всем наземным войскам, созданным в этом городе. [NEWLINE]Запасы стратегических ресурсов увеличины на 10 (при стандартной скорости игры). [NEWLINE]Позволяет создавать сразу корпуса и армии. Стоимость подготовки корпусов и армий уменьшается на 25%. +2 [ICON_RESOURCE_OIL] Нефти в ход, если открыта.</Text>
-        </Replace>
+        <Text>+25% боевого опыта всем наземным войскам, созданным в этом городе. [NEWLINE]Запасы стратегических ресурсов увеличины на 10 (при стандартной скорости игры). [NEWLINE]Позволяет создавать сразу корпуса и армии. Стоимость подготовки корпусов и армий уменьшается на 25%. +2 [ICON_RESOURCE_OIL] Нефти в ход, если открыта.</Text>
+    </Replace>
 		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="ru_RU">
 			<Text>{LOC_GOVERNOR_THE_CARDINAL_NAME} Духовный и религиозный губернатор, увеличивающий [ICON_CULTURE] Культурные показатели и [ICON_Religion] Религиозное влияние города.</Text>
 		</Replace>
@@ -363,7 +358,7 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ru_RU">
 			<Text>Дилер</Text>
 		</Row>
-    <Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="en_US">
+    <Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ru_RU">
       <Text>50% скидка в [ICON_GOLD] золоте на покупку районов и зданий в городе.</Text>
     </Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ru_RU">
@@ -426,7 +421,6 @@
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный норвежский юнит ближнего боя Средневековья. +2 [ICON_Movement] ОП, если движение начато на вражеской территории или на воде. +15 [ICON_Strength] к боевой мощи при атаке. Можно покупать юнит за веру.</Text>
 		</Replace>
-
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="ru_RU">
 			<Text>+{1_Value} при атаке</Text>
 		</Replace>
@@ -524,17 +518,17 @@
 			<Text>+5 [ICON_Strength] боевой мощи от Фашизма.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="ru_RU">
-            <Text>+7 к [ICON_Bombard] осадной боевой мощи при атаке наземных юнитов.</Text>
-        </Replace>
-        <Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="ru_RU">
-            <Text>+10 к [ICON_Bombard] осадной боевой мощи при атаке наземных юнитов.</Text>
-        </Replace>
-        <Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="ru_RU">
-            <Text>+10 к [ICON_Bombard] осадной боевой мощи при атаке морских юнитов.</Text>
-        </Replace>
-        <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ru_RU">
-            <Text>+7 к [ICON_Strength] боевой мощи при атаке юнитов ближнего и дальнего боя.</Text>
-        </Replace>
+        <Text>+7 к [ICON_Bombard] осадной боевой мощи при атаке наземных юнитов.</Text>
+    </Replace>
+    <Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="ru_RU">
+        <Text>+10 к [ICON_Bombard] осадной боевой мощи при атаке наземных юнитов.</Text>
+    </Replace>
+    <Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="ru_RU">
+        <Text>+10 к [ICON_Bombard] осадной боевой мощи при атаке морских юнитов.</Text>
+    </Replace>
+    <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ru_RU">
+        <Text>+7 к [ICON_Strength] боевой мощи при атаке юнитов ближнего и дальнего боя.</Text>
+    </Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный разведывательный юнит Кри древней эпохи. Быстрее перемещается по лесам и джунглям.</Text>
 		</Replace>
@@ -544,18 +538,18 @@
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_FOOD] пищи на клетках с тундрой. Позволяет строить фермы в тундре. После открытия строительной инженерии можно строить фермы на холмах в тундре. На клетках снега и тундры (в том числе с холмами) все рудники и лесопилки дают +1 [ICON_PRODUCTION] производства, лагеря дают +1 [ICON_FOOD] пищи, скорость накопления стратегических ресурсов увеличивается на 100%. Стоимость приобретения клеток с тундрой и снегом снижается на 50%. Город получает бонус +8 [ICON_FOOD] пищи и +8 [ICON_PRODUCTION] производства, если в нём есть национальный парк.</Text>
 		</Replace>
-        <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
-            <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
-        </Replace>
+    <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
+        <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
+    </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
-        </Replace>
-        <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
-            <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
-        </Replace>
-        <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="ru_RU">
-            <Text>Скидка в 50% [ICON_Gold] золота при улучшении юнитов. Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
-        </Replace>
+        <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
+    </Replace>
+    <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
+        <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
+    </Replace>
+    <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="ru_RU">
+        <Text>Скидка в 50% [ICON_Gold] золота при улучшении юнитов. Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
+    </Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ru_RU">
 			<Text>Ваша лунная экспедиция завершается успешно! Это дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
 		</Replace>
@@ -910,9 +904,9 @@
     <Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ru_RU">
       <Text>Получает дополнительные клетки при основании города. +1 [ICON_Faith] веры в столице. +1 [ICON_Production] производство на клетках тундры.</Text>
     </Replace>
-	<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ru_RU">
-		<Text>Получает дополнительные клетки при основании города. +1 [ICON_Faith] веры в столице. +1 [ICON_Production] производство на клетках тундры.</Text>
-	</Replace>
+	  <Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ru_RU">
+		    <Text>Получает дополнительные клетки при основании города. +1 [ICON_Faith] веры в столице. +1 [ICON_Production] производство на клетках тундры.</Text>
+	  </Replace>
     <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ru_RU">
       <Text>Победа в бою дает [ICON_Science] науку в размере 25% от [ICON_Strength] боевой мощи уничтоженного юнита. Города не получают усталости от войны. При захвате города с чудом света все военные юниты полностью восстанавливают здоровье.</Text>
     </Replace>
@@ -945,12 +939,11 @@
 	<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="ru_RU">
 		<Text>Ваши районы на побережье/озере дают +1 [ICON_Culture] культуру. +1 [ICON_Culture] культура после изучения социального института "Исследование".</Text>
 	</Replace>
-	</Replace>
 	<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ru_RU">
 		<Text>Ваши торговые пути невозможно разграбить.</Text>
 	</Replace>
 	<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ru_RU">
-		<Text>Начинает игру с [ICON_TechBoosted] озарением технологии "Письменность". В городах на побережье, основанные финицийцами на одном континенте со [ICON_Capital] столицей, лояльность составляет 100%. Поселенцы получают +2 к обзору на корабле. Поселенцы не получают штрафа к [ICON_Movement] перемещению от погрузки и выгрузки с корабля.</Text>
+		<Text>Начинает игру с [ICON_TechBoosted] озарением технологии "Письменность". В городах на побережье, основанные финицийцами на одном континенте со [ICON_Capital] столицей, лояльность составляет 100%. Поселенцы получают +1 к [ICON_Movement] перемещению и +2 к обзору на корабле. Поселенцы не получают штрафа к [ICON_Movement] перемещению от погрузки и выгрузки с корабля.</Text>
 	</Replace>
 	<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ru_RU">
 		<Text>+1 [ICON_TradeRoute] доступный торговый путь после изучения гончарного дела. Ничейные клетки в радиусе 3 клеток вокруг города кри переходят под его контроль при первом посещении их торговцем.</Text>
