@@ -37,7 +37,17 @@
 -- ===========================================================================
 local iReligion_ScientificDecay = 0;
 local iReligion_DecayTech = GameInfo.Technologies["TECH_SCIENTIFIC_THEORY"].Index
+local iReligion_ByzantiumRange = 90; -- In tiles covered, 90 tiles covered = 5 tiles radius 
+local iReligion_ByzantiumMultiplier = 5; -- multipler X unit base combat strength
 local iDomination_level = 0.60;
+
+local NO_TEAM :number = -1;
+local NO_PLAYER :number = -1;
+local NO_PLOT :number = -1;
+local NO_UNIT :number = -1;
+local NO_DISTRICT :number = -1;
+local NO_IMPROVEMENT :number = -1;
+local NO_BUILDING :number = -1;
 
 -- ===========================================================================
 --	Function
@@ -48,7 +58,66 @@ function OnGameTurnStarted( turn:number )
 	Check_DominationVictory()
 end
 
+function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defenderPlayerID :number, defenderUnitID :number, attackerDistrictID :number, defenderDistrictID :number)
+	if(attackerPlayerID == NO_PLAYER 
+		or defenderPlayerID == NO_PLAYER) then
+		return;
+	end
 
+	local pAttackerPlayer = Players[attackerPlayerID];
+	local pAttackerReligion = pAttackerPlayer:GetReligion()
+	local pAttackerLeader = PlayerConfigurations[attackerPlayerID]:GetLeaderTypeName()
+	local pDefenderPlayer = Players[defenderPlayerID];
+	local pAttackingUnit :object = attackerUnitID ~= NO_UNIT and pAttackerPlayer:GetUnits():FindID(attackerUnitID) or nil;
+	local pDefendingUnit :object = defenderUnitID ~= NO_UNIT and pDefenderPlayer:GetUnits():FindID(defenderUnitID) or nil;
+	local pAttackingDistrict :object = attackerDistrictID ~= NO_DISTRICT and pAttackerPlayer:GetDistricts():FindID(attackerDistrictID) or nil;
+	local pDefendingDistrict :object = defenderDistrictID ~= NO_DISTRICT and pDefenderPlayer:GetDistricts():FindID(defenderDistrictID) or nil;
+	
+	-- Attacker died to defender.
+	if(pAttackingUnit ~= nil and pDefendingUnit ~= nil and (pDefendingUnit:IsDead() or pDefendingUnit:IsDelayedDeath())) then
+		if pAttackerLeader = "LEADER_BASIL" then
+			local x = pAttackingUnit:GetX()
+			local y = pAttackingUnit:GetY()
+			local power = pDefendingUnit:GetCombat()
+			local religionType = pAttackerReligion:GetReligionInMajorityOfCities()
+			if x ~= nil and y ~= nil and power ~= nil and religionType ~= nil then
+				ApplyByzantiumTrait(x,y,power,religionType,attackerPlayerID)
+			end
+		end
+	end
+
+end
+
+-- ===========================================================================
+--	Bizantium
+-- ===========================================================================
+function ApplyByzantiumTrait(x,y,power,religionType,playerID)
+	if x == nil or y == nil or power == nil or religionType == nil then
+		return
+	end
+	--local religionInfo = GameInfo.Religions[religionType]
+	local pPlot = Map.GetPlot(x, y)
+	for i = 1, iReligion_ByzantiumRange do
+		local plotScanned = GetAdjacentTiles(pPlot, i)
+		if plotScanned ~= nil then
+			if plotScanned:IsCity() then
+				local pCity = Cities.GetCityInPlot(plotScanned)
+				local pCityReligion = pCity:GetReligion()
+				local impact = power * iReligion_ByzantiumMultiplier
+				pCityReligion:AddReligiousPressure(playerID, religionType,impact, -1);
+				print("Added Religious Pressure",impact,pCity:GetName())
+				local message:string  = "+"..tostring(impact)
+				if religionInfo ~= nil then
+					--message = message.."[ICON_" .. religionInfo.ReligionType .."]"
+					message = message.." [ICON_Religion]"
+					else
+					message = message.." [ICON_Religion]"
+				end
+				Game.AddWorldViewText(0, message, pCity:GetX(), pCity:GetY());
+			end
+		end
+	end
+end
 -- ===========================================================================
 --	Sumer
 -- ===========================================================================
@@ -220,6 +289,8 @@ function Initialize()
 	-- turn checked effects:
 	GameEvents.OnGameTurnStarted.Add(OnGameTurnStarted);
 
+	-- combat effect:
+	GameEvents.OnCombatOccurred.Add(OnCombatOccurred);
 end
 
 Initialize();
