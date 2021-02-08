@@ -79,8 +79,8 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 			local x = pAttackingUnit:GetX()
 			local y = pAttackingUnit:GetY()
 			local power = pDefendingUnit:GetCombat()
-			local religionType = pAttackerReligion:GetReligionInMajorityOfCities()
-			if x ~= nil and y ~= nil and power ~= nil and religionType ~= nil then
+			local religionType = pAttackerReligion:GetReligionTypeCreated()
+			if x ~= nil and y ~= nil and power ~= nil and religionType ~= nil and religionType ~= -1 then
 				ApplyByzantiumTrait(x,y,power,religionType,attackerPlayerID)
 			end
 		end
@@ -105,6 +105,9 @@ function ApplyByzantiumTrait(x,y,power,religionType,playerID)
 				local pCity = Cities.GetCityInPlot(plotScanned)
 				local pCityReligion = pCity:GetReligion()
 				local impact = power * iReligion_ByzantiumMultiplier
+				print("playerID "..tostring(playerID))
+				print("playerID "..tostring(religionType))
+				print("playerID "..tostring(impact))
 				pCityReligion:AddReligiousPressure(playerID, religionType, impact, -1);
 				print("Added Religious Pressure",impact,pCity:GetName())
 				local message:string  = "+"..tostring(impact)
