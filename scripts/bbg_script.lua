@@ -76,7 +76,7 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 	
 	-- Attacker died to defender.
 	if(pAttackingUnit ~= nil and pDefendingUnit ~= nil and (pDefendingUnit:IsDead() or pDefendingUnit:IsDelayedDeath())) then
-		if pAttackerLeader = "LEADER_BASIL" then
+		if pAttackerLeader == "LEADER_BASIL" then
 			local x = pAttackingUnit:GetX()
 			local y = pAttackingUnit:GetY()
 			local power = pDefendingUnit:GetCombat()
