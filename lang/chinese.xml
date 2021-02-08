@@ -101,10 +101,10 @@
 			<Text>+3 [ICON_Favor] 外交支持。 征召城邦单位消耗的 [ICON_Gold] 金币减半。[NEWLINE]如果你是城邦的宗主国，则城邦单位+4 [ICON_Strength] 战斗力（征召单位包含在内）。[NEWLINE]奖励1个 [Icon_Governor] 总督头衔。 奖励2个 [ICON_Envoy] 使者，用于获得使者的影响力点数每回合+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="zh_Hans_CN"> <!-- Last update: 4.2.0-->
-			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
+			<Text>解锁建造者建造苏格兰特色改良设施高尔夫球场的能力。[NEWLINE][NEWLINE]提供+1 [ICON_AMENITIES] 宜居度，+2 [ICON_GOLD] 金币，和 +1 [ICON_CULTURE] 文化值。若与市中心相邻则+1 [ICON_GOLD] 金币和+1 [ICON_CULTURE] 文化值。与娱乐设施区域相邻+1 [ICON_AMENITIES] 宜居度和+1 [ICON_CULTURE] 文化值。 解锁更多市政和科技后可获得额外的 [ICON_CULTURE] 文化值、 [ICON_GOLD] 金币、 [ICON_TOURISM] 旅游业绩和 [ICON_HOUSING] 住房。无法建在沙漠、沙漠丘陵、泛滥平原或火山土地貌上。每座城市仅限建造一座。拥有高尔夫球场的单元格无法切换。为相邻单元格提供+1 魅力。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="zh_Hans_CN"> <!-- Last update: 4.2.0-->
-			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
+			<Text>解锁建造者建造苏格兰特色改良设施高尔夫球场的能力。[NEWLINE][NEWLINE]提供+1 [ICON_AMENITIES] 宜居度，+2 [ICON_GOLD] 金币，和 +1 [ICON_CULTURE] 文化值。若与市中心相邻则+1 [ICON_GOLD] 金币和+1 [ICON_CULTURE] 文化值。与娱乐设施区域相邻+1 [ICON_AMENITIES] 宜居度和+1 [ICON_CULTURE] 文化值。 Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] 解锁更多市政和科技后可获得额外的 [ICON_CULTURE] 文化值、 [ICON_GOLD] 金币、 [ICON_TOURISM] 旅游业绩和 [ICON_HOUSING] 住房。无法建在沙漠、沙漠丘陵、泛滥平原或火山土地貌上。每座城市仅限建造一座。拥有高尔夫球场的单元格无法切换。为相邻单元格提供+1 魅力。</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="zh_Hans_CN">
@@ -205,9 +205,8 @@
 			<Text>城市中每拥有1个“军营”内建筑，购买陆地战斗或者支援单位所需要的 [ICON_GOLD] 金币或者 [ICON_FAITH] 信仰值便减少10%</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Phoenicia for naval activity in your city. Replaces the Harbor district and cheaper to build. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production towards naval units and Settlers in this city.</Text>
+			<Text>腓尼基特色城市海军活动区域，取代港口且建造成本更低。必须修建在海岸或与陆地相邻的湖泊地貌上。[NEWLINE][NEWLINE]该城市生产海军单位与开拓者时+25% [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
-
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁建造者建造大哥伦比亚特色建筑大庄园的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金币、+1 [ICON_PRODUCTION] 生产力且+1 [Icon_Housing] 住房。每和2座种植园相邻时+1 [ICON_Food] 食物（解锁科技“零件规格化”后，，每和1座种植园相邻便可获得加成）。每和2座大庄园相邻，种植园与大庄园便+1 [ICON_Production] 生产力（完成市政“紧急部署”后，每和1座大庄园相邻便能获得加成）。仅能建造在平原和草原上。</Text>
 		</Replace>
@@ -470,7 +469,7 @@
 		</Replace>		
 		
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Mobilization Civic.</Text>
+			<Text>可更早组建军团（需雇佣兵市政）和军队（需民族主义市政）。解锁“动员”军团和军队的基础战斗力额外+5。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>匈牙利工业时代特色单位，取代骑兵。每个有效同盟提供+1 [ICON_Strength] 战斗力。每宗主1个城邦则+1 [ICON_Strength] 战斗力。</Text>
@@ -1022,25 +1021,25 @@
 			<Text>学院中的建筑将产出额外的 [ICON_Science] 科技值：如城市 [ICON_CITIZEN] 人口大于等于15点，+50%科技值；如区域拥有至少+3相邻加成，+50%科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_FAITH] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+			<Text>圣地建筑将产出额外 [ICON_FAITH] 信仰值：如城市人口 [ICON_CITIZEN] 大于等于15点，+50% [ICON_FAITH] 信仰值；如区域拥有至少+3相邻加成则额外+50% [ICON_FAITH] 信仰值。</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_CULTURE] Culture from buildings in Theater Squares: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+			<Text>剧院广场建筑将产出额外 [ICON_CULTURE] 文化值：如城市人口 [ICON_CITIZEN] 大于等于15点，+50% [ICON_CULTURE] 文化值；如区域拥有至少+3相邻加成则额外+50%  [ICON_CULTURE] 文化值。</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your districts on or next to Coast or Lake tiles provide +1 [ICON_Culture] Culture. +1 [ICON_Culture] Culture once Exploration reached.</Text>
+			<Text>与海岸或湖泊单元格相邻的区域+1 [ICON_Culture] 文化值。解锁“探索”市政额外提供+1 [ICON_Culture] 文化值</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
+			<Text>您的商人单位不会被掠夺。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +1 [ICON_Movement] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
+			<Text>游戏开始便激活“写作”科技 [ICON_TechBoosted] 尤里卡。 腓尼基建造的海岸城市若与 [ICON_Capital] 首都在统一大陆，则其忠诚度为100%。开拓者进入水域，+1 [ICON_Movement] 行动力和+2 视野范围。开拓者进入水域和登陆无需额外消耗 [ICON_Movement] 行动力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_TradeRoute] Trade Route capacity with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them.</Text>
+			<Text>解锁“制陶术”科技后+1 [ICON_TradeRoute] 贸易路线容量。商人首次进入克里城市3个单元格内的无主单元格后，这些单元格将划入克里领土中。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat units gain +3 [ICON_Strength] Combat Strength when within the borders of friendly cities that follow this Religion.</Text>
+			<Text>单位处于信奉该宗教的友好城市境内时+3 [ICON_Strength] 战斗力</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
