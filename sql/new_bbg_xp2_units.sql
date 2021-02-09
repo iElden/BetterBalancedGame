@@ -7,9 +7,14 @@
 --******						STANDARD UNITS FROM GS 										******
 --==============================================================================================
 -- Jack the Ripper proposal (31/12/2020) to boost Naval Movement
+
 -- Resource cost / Maintenance is 1 in GS
 UPDATE Units_XP2 SET ResourceCost='0' WHERE  UnitType='UNIT_SUBMARINE';
 UPDATE Units_XP2 SET ResourceMaintenanceAmount='0' WHERE  UnitType='UNIT_SUBMARINE';
+UPDATE Units SET StrategicResource=NULL WHERE UnitType='UNIT_SUBMARINE';
+UPDATE Units_XP2 SET ResourceMaintenanceType=NULL WHERE  UnitType='UNIT_SUBMARINE';
+
 UPDATE Units_XP2 SET ResourceCost='0' WHERE  UnitType='UNIT_GERMAN_UBOAT';
 UPDATE Units_XP2 SET ResourceMaintenanceAmount='0' WHERE  UnitType='UNIT_GERMAN_UBOAT';
-
+UPDATE Units SET StrategicResource=NULL WHERE UnitType='UNIT_GERMAN_UBOAT';
+UPDATE Units_XP2 SET ResourceMaintenanceType=NULL WHERE  UnitType='UNIT_GERMAN_UBOAT';
