@@ -432,7 +432,7 @@
 			<Text>May reduce the presence of other Religions in their territory by 50%, and initiate theological combat with units of other Religions.</Text>
 		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
-			<Text>Levied units gain an ability giving them +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State, 2 [ICON_ENVOY] Envoys if you have a second gouvernement plaza building. Levied unit got +3 [ICON_Strength] combat strength. Gain the Black Army unique unit when the Castles technology is researched.</Text>
+			<Text>Levied units gain an ability giving them +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State. Levied unit got +3 [ICON_Strength] combat strength. Gain the Black Army unique unit when the Castles technology is researched.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="en_US">
 			<Text>Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit. Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
