@@ -330,6 +330,8 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_
 --==============================================================
 --******				G O V E R N M E N T				  ******
 --==============================================================
+-- revert for Firaxis patch (25/02/2021)
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='GOV_TALL_AMENITY_BUFF' AND Name='Amount';
 -- audience chamber +1 gov title
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOV_BUILDING_TALL_GRANT_GOVERNOR_POINTS' AND Name='Delta';
 -- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing
