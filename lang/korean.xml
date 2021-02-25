@@ -1051,6 +1051,12 @@
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ko_KR">
 			<Text>플레이어의 상인 유닛이 약탈을 당하지 않습니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="ko_KR">
+			<Text>해안이나 호수 옆 타일에 있는 전문 특수지구에 [ICON_Culture] 문화 +1을 제공합니다. 탐험 사회제도 완료시 [ICON_Culture] 문화 +1을 추가로 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="ko_KR">
+			<Text>플레이어의 상인 유닛이 약탈을 당하지 않습니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ko_KR">
 			<Text>문자 기술 [ICON_TechBoosted] 유레카를 보유한 상태에서 게임을 시작합니다. 페니키아가 건설하고 페니키아 [ICON_Capital] 수도와 같은 대륙에 있는 해안 도시가 충성심 100%를 유지합니다. 승선한 개척자가 [ICON_Movement] 이동력 +1과 시야 +2를 얻습니다. 개척자의 승선 및 하선에 따른 추가 [ICON_Movement] 이동력을 소모하지 않습니다.</Text>
 		</Replace>

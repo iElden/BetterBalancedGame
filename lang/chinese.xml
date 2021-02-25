@@ -1032,6 +1032,12 @@
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="zh_Hans_CN">
 			<Text>您的商人单位不会被掠夺。</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与海岸或湖泊单元格相邻的区域+1 [ICON_Culture] 文化值。解锁“探索”市政额外提供+1 [ICON_Culture] 文化值</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>您的商人单位不会被掠夺。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>游戏开始便激活“写作”科技 [ICON_TechBoosted] 尤里卡。 腓尼基建造的海岸城市若与 [ICON_Capital] 首都在统一大陆，则其忠诚度为100%。开拓者进入水域，+1 [ICON_Movement] 行动力和+2 视野范围。开拓者进入水域和登陆无需额外消耗 [ICON_Movement] 行动力。</Text>
 		</Replace>

@@ -916,6 +916,12 @@
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ja_JP">
 			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Your districts on or next to Coast or Lake tiles provide +1 [ICON_Culture] Culture. +1 [ICON_Culture] Culture once Exploration reached.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ja_JP">
 			<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +1 [ICON_Movement] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
 		</Replace>

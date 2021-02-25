@@ -942,6 +942,12 @@
 	<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ru_RU">
 		<Text>Ваши торговые пути невозможно разграбить.</Text>
 	</Replace>
+	<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="ru_RU">
+		<Text>Ваши районы на побережье/озере дают +1 [ICON_Culture] культуру. +1 [ICON_Culture] культура после изучения социального института "Исследование".</Text>
+	</Replace>
+	<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="ru_RU">
+		<Text>Ваши торговые пути невозможно разграбить.</Text>
+	</Replace>
 	<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ru_RU">
 		<Text>Начинает игру с [ICON_TechBoosted] озарением технологии "Письменность". В городах на побережье, основанные финицийцами на одном континенте со [ICON_Capital] столицей, лояльность составляет 100%. Поселенцы получают +1 к [ICON_Movement] перемещению и +2 к обзору на корабле. Поселенцы не получают штрафа к [ICON_Movement] перемещению от погрузки и выгрузки с корабля.</Text>
 	</Replace>

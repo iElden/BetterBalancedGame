@@ -1027,7 +1027,13 @@
 		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="fr_FR">
 			<Text>[ICON_Culture] Culture +1 pour vos quartiers sur ou près des côtes ou des lacs. Augmente à +2 une fois le dogme de l'Exploration découvert.</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Culture] Culture +1 pour vos quartiers sur ou près des côtes ou des lacs. Augmente à +2 une fois le dogme de l'Exploration découvert.</Text>
+		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="fr_FR">
+			<Text>Tous vos négociants sont immunisés contre le pillage.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="fr_FR">
 			<Text>Tous vos négociants sont immunisés contre le pillage.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
