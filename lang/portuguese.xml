@@ -975,6 +975,12 @@
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="pt_BR">
 			<Text>Suas unidades de Comerciantes são imunes a serem saqueadas.</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="pt_BR">
+			<Text>Seus distritos em Costa ou Lago, ou adjacentes a esses paineis, dão +1 de [ICON_Culture] Cultura. +1 de [ICON_Culture] Cultura quando pesquisar Exploração.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="pt_BR">
+			<Text>Suas unidades de Comerciantes são imunes a serem saqueadas.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="pt_BR">
 			<Text>Comece o jogo com a [ICON_TechBoosted] Eureca da Tecnologia de Escrita. Cidades costeiras fundadas pela Fenícia e localizadas no mesmo continente da [ICON_Capital] Capital são 100% leais. Colonos ganham +1 de [ICON_Movement] Movimento e +2 de alcance de visão quando embarcados. Colonos ignoram custos adicionais de [ICON_Movement] movimento pra embarcar e desembarcar.</Text>
 		</Replace>
@@ -983,6 +989,12 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="pt_BR">
 			<Text>Unidades de combate ganham +3 de [ICON_Strength] Força de Combate quando estiverem dentro das bordas de cidades amigáveis que sigam essa Religião.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

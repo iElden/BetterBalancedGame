@@ -452,7 +452,7 @@
 			<Text>解锁建造者建造渔场的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物、若与海洋资源相邻，额外+1 [ICON_Food] 食物。必须在海洋单元格或湖泊单元格上修建。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>为没有特色区域的城市+50% [ICON_Production] 生产力。</Text>
+			<Text>没有特色区域的城市修建第一个特色区域时+50% [ICON_Production] 生产力。</Text>
 		</Replace>
 
 		<!--<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="en_US">
@@ -1000,7 +1000,7 @@
 			<Text>在伯罗奔尼撒战争期间，发生的100次围城中，58次以被围城方的投降告终。 [NEWLINE] 在亚历山大大帝的征服之路中，他的军队成功围困了许多强大的城市。其中，围困并占领泰尔和栗特岩山成为其攻城战中的两个教科书般的典范。他的工程师们为他建造了一条宽达60米的堤道为其攻城器械达到攻击距离，因此他的士兵在攻城塔掩护下可以使用撞城锤和投石机去攻打城墙。 [NEWLINE] 在亚历山大大帝之前的许多征服者都发现了苏尔，一个距离大陆1公里的腓尼基的岛城是一个无法攻陷的城市。结果马其顿人用石头在一个天然的连接桥上建造了一个防洪堤，填平了低于地表的水面使其军队可以到达泰尔城下。尽管腓尼基人用火船摧毁了一些攻城塔并且破坏了堤道中间一段，泰尔还是在被围城7个月之后陷落。对比与泰尔的围困之战，栗特岩山则是被一次精准的偷袭所攻陷。亚历山大帝运用了一次精妙的类特种部队敌后战法，让一些勇猛的士兵爬上了悬崖，占据了高地之后迫使士气低迷的守方投降。 </Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="zh_Hans_CN">
-			<Text>高爆炸药。</Text>
+			<Text>高爆炸药</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>生产文艺复兴及更早时代的攻城单位时+50% [ICON_Production] 生产力。</Text>
@@ -1032,6 +1032,12 @@
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="zh_Hans_CN">
 			<Text>您的商人单位不会被掠夺。</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与海岸或湖泊单元格相邻的区域+1 [ICON_Culture] 文化值。解锁“探索”市政额外提供+1 [ICON_Culture] 文化值</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>您的商人单位不会被掠夺。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>游戏开始便激活“写作”科技 [ICON_TechBoosted] 尤里卡。 腓尼基建造的海岸城市若与 [ICON_Capital] 首都在统一大陆，则其忠诚度为100%。开拓者进入水域，+1 [ICON_Movement] 行动力和+2 视野范围。开拓者进入水域和登陆无需额外消耗 [ICON_Movement] 行动力。</Text>
 		</Replace>
@@ -1040,6 +1046,13 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>单位处于信奉该宗教的友好城市境内时+3 [ICON_Strength] 战斗力</Text>
+		</Replace>
+
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

@@ -942,6 +942,12 @@
 	<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ru_RU">
 		<Text>Ваши торговые пути невозможно разграбить.</Text>
 	</Replace>
+	<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="ru_RU">
+		<Text>Ваши районы на побережье/озере дают +1 [ICON_Culture] культуру. +1 [ICON_Culture] культура после изучения социального института "Исследование".</Text>
+	</Replace>
+	<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="ru_RU">
+		<Text>Ваши торговые пути невозможно разграбить.</Text>
+	</Replace>
 	<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ru_RU">
 		<Text>Начинает игру с [ICON_TechBoosted] озарением технологии "Письменность". В городах на побережье, основанные финицийцами на одном континенте со [ICON_Capital] столицей, лояльность составляет 100%. Поселенцы получают +1 к [ICON_Movement] перемещению и +2 к обзору на корабле. Поселенцы не получают штрафа к [ICON_Movement] перемещению от погрузки и выгрузки с корабля.</Text>
 	</Replace>
@@ -951,5 +957,11 @@
 	<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ru_RU">
 		<Text>Военные юниты получают +3 к [ICON_Strength] боевой мощи на территории дружественных городов, исповедующих эту религию.</Text>
 	</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="ru_RU">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="ru_RU">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
   </LocalizedText>
 </GameData>

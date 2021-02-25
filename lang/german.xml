@@ -984,6 +984,12 @@
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="de_DE">
 			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="de_DE">
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +2 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="de_DE">
+			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="de_DE">
 			<Text>Beginnt das Spiel mit dem Heureka [ICON_TechBoosted] der Schrift-Technologie. Küstenstädte, die von den Phöniziern gegründet wurden und sich auf dem gleichen Kontinent wie die phönizische [ICON_Capital] Hauptstadt befinden, sind zu 100% loyal. Gewasserte Siedler +1 [ICON_Movement] Fortbewegung und erhalten +2 Sichtweite. Für Siedler gelten keine zusätzlichen [ICON_Movement] Fortbewegungskosten für das Wassern und Ausschiffen.</Text>
 		</Replace>
@@ -992,6 +998,13 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="de_DE">
 			<Text>Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen von freundlich gesinnten Städten mit dieser Religion.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
