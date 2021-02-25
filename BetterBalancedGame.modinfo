@@ -102,6 +102,9 @@
 		<Criteria id="nfp_babylon">
 			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
 		</Criteria>
+		<Criteria id="nfp_vietnam_kubilai">
+			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
+		</Criteria>
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -316,11 +319,17 @@
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
-				<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
+		<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
 			<Properties>
 				<LoadOrder>11638</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_babylon.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_vietnam_kubilai" criteria="nfp_vietnam_kubilai">
+			<Properties>
+				<LoadOrder>11639</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_vietnam.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
@@ -391,6 +400,8 @@
 		<File>sql/new_bbg_xp1_cree.sql</File>
 		<File>sql/new_bbg_xp1_scotland.sql</File>
 		<File>sql/new_bbg_xp1_zulus.sql</File>
+		<File>sql/new_bbg_nfp_vietnam.sql</File>
+
 
 		<File>data/new_bbg_icons.xml</File>
 	</Files>
