@@ -82,9 +82,10 @@ VALUES	('Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMP
 -- Sumerian War Carts are nerfed to 26 (BASE = 30)
 -- 20-12-07 Hotfix: Nerf from 28->26
 UPDATE Units SET Combat=26 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
--- Sumerian War Carts are cost is dimished to 55 (BASE = 55)
+-- Sumerian War Carts are cost is dimished to 45 (BASE = 55)
 -- 20-12-07 Hotfix: Revert to 55 cost
-UPDATE Units SET Cost=55 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+-- Beta Buff: Revert to 45 cost
+UPDATE Units SET Cost=45 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 
 
 -- 20-12-07 Hotfix: Increase war-cart strength vs. barbs
