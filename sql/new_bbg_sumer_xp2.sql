@@ -13,8 +13,9 @@ INSERT INTO Improvements_XP2
 VALUES	('IMPROVEMENT_ZIGGURAT',		1);
 
 -- StartBiasFeatures add Floodplains
-INSERT INTO StartBiasFeatures
-		(CivilizationType,					FeatureType,						Tier)
-VALUES	('CIVILIZATION_SUMERIA',			'FEATURE_FLOODPLAINS',				3),
-		('CIVILIZATION_SUMERIA',			'FEATURE_FLOODPLAINS_GRASSLAND',	3),
-		('CIVILIZATION_SUMERIA',			'FEATURE_FLOODPLAINS_PLAINS',		3);
+-- BETA Remove the Floodplains Bias
+--INSERT INTO StartBiasFeatures
+--		(CivilizationType,					FeatureType,						Tier)
+--VALUES	('CIVILIZATION_SUMERIA',			'FEATURE_FLOODPLAINS',				3),
+--		('CIVILIZATION_SUMERIA',			'FEATURE_FLOODPLAINS_GRASSLAND',	3),
+--		('CIVILIZATION_SUMERIA',			'FEATURE_FLOODPLAINS_PLAINS',		3);
