@@ -1033,7 +1033,6 @@
 		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="en_US">
 			<Text>Extra [ICON_Science] Science from buildings in Campuses: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
 		</Replace>
-<<<<<<< HEAD
 		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="en_US">
 			<Text>Extra [ICON_FAITH] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
 		</Replace>
@@ -1068,11 +1067,6 @@
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
-
-=======
-		
-		
->>>>>>> 450c625... Defaut Victory to Legacy BBG
 		<!-- Front End -->
 		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="en_US">
 			<Text>Barbarian Tribes</Text>
@@ -1298,7 +1292,7 @@
 			<Text>50% of Emerged Lands in your empire</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="en_US">
-			<Text>No Domination Victory</Text>
+			<Text>No Territorial Victory</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="en_US">
 			<Text>Standard Firaxis Settings: All Capitals Captured</Text>
@@ -1314,28 +1308,28 @@
 			<Text>% of emerged land controlled</Text>
 		</Replace>
 		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="en_US">
-			<Text>Domination</Text>
+			<Text>Territorial</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="en_US">
-			<Text>Domination</Text>
+			<Text>Territorial</Text>
 		</Replace>
 		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="en_US">
-			<Text>Domination Victory</Text>
+			<Text>Territorial Victory</Text>
 		</Replace>
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="en_US">
-			<Text>Domination Victory</Text>
+			<Text>Territorial Victory</Text>
 		</Replace>
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="en_US">
-			<Text>DOMINATION VICTORY</Text>
+			<Text>TERRITORIAL VICTORY</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="en_US">
-			<Text>DOMINATION VICTORY</Text>
+			<Text>TERRITORIAL VICTORY</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
-			<Text>Domination Progress</Text>
+			<Text>TERRITORIAL Progress</Text>
 		</Replace>
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="en_US">
-			<Text>To achieve a [COLOR:ResMilitaryLabelCS]DOMINATION[ENDCOLOR] victory, you need to expand your empire and conquer your foes to control the largest amount of emerged lands.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
+			<Text>To achieve a [COLOR:ResMilitaryLabelCS]TERRITORIAL[ENDCOLOR] victory, you need to expand your empire and conquer your foes to control the largest amount of emerged lands.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="en_US">
 			<Text>[NEWLINE][NEWLINE]Required amount of total emerged owned to win:  </Text>

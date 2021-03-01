@@ -164,6 +164,13 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		<Criteria id="TerritorialSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VICTORY_TRADITIONAL_DOMINATION</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
 		<Criteria id="GlobalSetting_1">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryMasterSlider</ConfigurationId>
@@ -205,7 +212,7 @@
 		</UpdateText>
 		<UpdateDatabase id="bbg_frontend_custom_victory">
 			<Properties>
-				<LoadOrder>999</LoadOrder>
+				<LoadOrder>19999</LoadOrder>
 			</Properties>
             	<File>config/config.xml</File>
 				<File>config/config.sql</File>
@@ -234,7 +241,7 @@
 		
 		<ReplaceUIScript id="bbg_worldranking">
 			<Properties>
-			<LoadOrder>9999</LoadOrder>
+			<LoadOrder>19999</LoadOrder>
 			<LuaContext>WorldRankings</LuaContext>
 			<LuaReplace>ui/replacements/worldrankings_bbg.lua</LuaReplace>
 			</Properties>
@@ -432,14 +439,15 @@
                 <LoadOrder>20000</LoadOrder>
             </Properties>
 			<Criteria>CVSetting_2</Criteria>
-            <File>sql/victories/new_bbg_cv_2.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
+			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
 		<UpdateDatabase id="VictoryCulturalSetting_1">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
             </Properties>
 			<Criteria>CVSetting_1</Criteria>
-            <File>sql/victories/new_bbg_cv_1.sql</File>
+            <File>sql/victories/new_bbg_cv.sql</File>
         </UpdateDatabase>
 		<UpdateDatabase id="VictoryScienceSetting_2">
             <Properties>
@@ -486,7 +494,14 @@
             </Properties>
 			<Criteria>RVSetting_1</Criteria>
             <File>sql/victories/new_bbg_rv_1.sql</File>
-        </UpdateDatabase>	
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryTerritorialSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>TerritorialSetting_1</Criteria>
+            <File>sql/victories/new_bbg_new_domination.sql</File>
+        </UpdateDatabase>
 		<UpdateDatabase id="GlobalVictorySetting_1">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -495,7 +510,7 @@
             <File>sql/victories/new_bbg_rv_1.sql</File>
 			<File>sql/victories/new_bbg_dv_1.sql</File>
 			<File>sql/victories/new_bbg_sv_1.sql</File>
-			<File>sql/victories/new_bbg_cv_1.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
         </UpdateDatabase>	
 		<UpdateDatabase id="GlobalVictorySetting_2">
             <Properties>
@@ -505,6 +520,7 @@
             <File>sql/victories/new_bbg_rv_2.sql</File>
 			<File>sql/victories/new_bbg_dv_2.sql</File>
 			<File>sql/victories/new_bbg_sv_2.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>	
 		<UpdateDatabase id="GlobalVictorySetting_BBG_Legacy">
@@ -513,6 +529,7 @@
             </Properties>
 			<Criteria>GlobalSetting_BBG_Legacy</Criteria>
 			<File>sql/victories/new_bbg_dv_2.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
 		
@@ -603,7 +620,7 @@
 		<File>sql/victories/new_bbg_cv_2.sql</File>
 		<File>sql/victories/new_bbg_sv_2.sql</File>
 		<File>sql/victories/new_bbg_dv_2.sql</File>
-		<File>sql/victories/new_bbg_cv_1.sql</File>
+		<File>sql/victories/new_bbg_cv.sql</File>
 		<File>sql/victories/new_bbg_sv_1.sql</File>
 		<File>sql/victories/new_bbg_dv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_1.sql</File>

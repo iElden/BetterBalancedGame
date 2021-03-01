@@ -198,12 +198,12 @@ function Check_DominationVictory()
 	print("TRADITIONAL_DOMINATION_LEVEL",GameConfiguration.GetValue("VICTORY_TRADITIONAL_DOMINATION"))
 	if GameConfiguration.GetValue("VICTORY_TRADITIONAL_DOMINATION") == false or GameConfiguration.GetValue("VICTORY_TRADITIONAL_DOMINATION") == nil then
 		return
-		else
+    else
 		if GameConfiguration.GetValue("TRADITIONAL_DOMINATION_LEVEL") ~= nil then
 			iDomination_level = GameConfiguration.GetValue("TRADITIONAL_DOMINATION_LEVEL") / 100
 		end
 	end
-	
+
 	for _, teamID in ipairs(teamIDs) do
 		if(teamID ~= nil) then
 			--local progress = Game.GetVictoryProgressForTeam(victoryType, teamID);
@@ -590,7 +590,7 @@ function PlaceOriginalBarbCamps()
 			local bValidTerrain = true
 			local iTargetID = -1
 			-- First Check
-			if pPlot:IsWater() or pPlot:IsImpassable() or pPlot:IsNaturalWonder() then
+			if pPlot:IsWater() or pPlot:IsImpassable() or pPlot:IsNaturalWonder() or pPlot:GetOwner() ~= -1 then
 				bValidTerrain = false
 			end
 			
