@@ -409,7 +409,7 @@
 		</Replace>
 		<!-- ========== NORVÈGE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] [ICON_GOLD] Or +2 pour les ports adjacents à un Lieu Saint.</Text>
+			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. [NEWLINE][NEWLINE] [ICON_PRODUCTION] Production +50% Pour les lieux saints et leurs bâtiments. Les lieux saints recoivent un bonus de proximité standard pour les cases d'eau côtière. Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
@@ -472,6 +472,9 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>+{1_Value} en attaque</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_TradeRoute] Routes commerciales +1 avec la philosophie politique. [ICON_Gold] Or +2 et [ICON_Culture] culture +1 pour vos routes commerciales internes. [NEWLINE][ICON_Gold] Or +2 à Banque. [NEWLINE][ICON_Gold] Or +2 à Sciences Economiques. [NEWLINE][ICON_Culture] Culture +2 à Foires Médiévales. [NEWLINE][ICON_Culture] Culture +2 à l'Urbanisation. [NEWLINE]Les routes construites sur votre territoire sont d'un niveau supérieur.</Text>
 		</Replace>
 		<!-- ========== ROME ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="fr_FR">
@@ -543,6 +546,13 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience +25% pour toutes les unités. [NEWLINE]Débute la partie avec un Char de Guerre à la place d'un Guerrier. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
+		</Replace>
+		<!-- ========== VIETNAM ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
 		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
@@ -1078,17 +1088,12 @@
 			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-		</Replace>
+
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +1 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations et ne peut pas être construit sur une case adjacente au centre-ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+			<Text>[ICON_Housing] Habitations +1 pour chaque niveau de remparts. [ICON_CULTURE] Culture +2 pour chaque remparts de la Renaissance</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
