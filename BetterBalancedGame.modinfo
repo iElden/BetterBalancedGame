@@ -7,9 +7,9 @@
 <!-- Elden's ModID-->
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4024">
 	<Properties>
-		<Name>Better Balanced Game 4.2.4</Name>
+		<Name>Better Balanced Game 4.3.0</Name>
 		<Description>
-			BETA
+			Live build of Better Balanced Game
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh, MarsLife(puj)</Authors>
@@ -326,6 +326,7 @@
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
+			<File>sql/new_bbg_xp2_government.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -607,6 +608,7 @@
 		<File>sql/new_bbg_xp1_scotland.sql</File>
 		<File>sql/new_bbg_xp1_zulus.sql</File>
 		<File>sql/new_bbg_nfp_vietnam.sql</File>
+		<File>sql/new_bbg_xp2_government.sql</File>
 
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
