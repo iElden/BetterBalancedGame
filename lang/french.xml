@@ -1095,5 +1095,8 @@
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="fr_FR">
 			<Text>[ICON_Housing] Habitations +1 pour chaque niveau de remparts. [ICON_CULTURE] Culture +2 pour chaque remparts de la Renaissance</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Faith] Foi +1 pour les cases d'attrait charmant ou supérieur.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

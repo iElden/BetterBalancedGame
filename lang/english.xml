@@ -1374,6 +1374,9 @@
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="en_US">
 			<Text>[ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+		</Replace>
 		
 	</LocalizedText>
 </GameData>
