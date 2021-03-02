@@ -1417,10 +1417,10 @@ VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
 -- great barrier reef gives +2 science adj
-INSERT OR IGNORE INTO District_Adjacencies VALUES
-	('DISTRICT_CAMPUS', 'BarrierReef_Science');
-INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature) VALUES
-	('BarrierReef_Science', 'LOC_DISTRICT_REEF_SCIENCE', 'YIELD_SCIENCE', 2, 1, 'FEATURE_BARRIER_REEF');
+-- INSERT OR IGNORE INTO District_Adjacencies VALUES
+--	('DISTRICT_CAMPUS', 'BarrierReef_Science');
+--INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature) VALUES
+--	('BarrierReef_Science', 'LOC_DISTRICT_REEF_SCIENCE', 'YIELD_SCIENCE', 2, 1, 'FEATURE_BARRIER_REEF');
 -- Several lack-luster wonders improved
 UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
 INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
