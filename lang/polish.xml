@@ -116,7 +116,7 @@
 				<Text>+{1_Amount} do siły bojowej w promieniu 4 pól od parku narodowego należącego do tego gracza</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="pl_PL">
-				<Text>Umożliwia budowę farm na polach z tundrą. Po odblokowaniu inżynierii cywilnej farmy mogą być budowane na wzgórzach z tundrą. Wszystkie kopalnie i tartaki na polach ze śniegiem, tundrą, wzgórzami ze śniegiem i wzgórzami z tundrą zapewniają +1 do [ICON_PRODUCTION] produkcji, a obozy na tych polach zapewniają +1 do [ICON_FOOD] żywności. +100% do tempa gromadzenia zasobów na polach ze śniegiem, wzgórzami ze śniegiem, tundrą oraz ze wzgórzami z tundrą. Zmniejsza koszt zakupu pól z terenem tego typu o 50%.[NEWLINE][NEWLINE]Miasta z parkiem narodowym zapewniają dodatkowe +8 do [ICON_FOOD] żywności i +8 do [ICON_PRODUCTION] produkcji na turę.</Text>
+				<Text>Umożliwia budowę farm na polach z tundrą. Po odblokowaniu inżynierii cywilnej farmy mogą być budowane na wzgórzach z tundrą. Wszystkie kopalnie i tartaki na polach ze śniegiem, tundrą, wzgórzami ze śniegiem i wzgórzami z tundrą zapewniają +1 do [ICON_PRODUCTION] produkcji, a obozy na tych polach zapewniają +1 do [ICON_FOOD] żywności. +100% do tempa gromadzenia zasobów na polach ze śniegiem, wzgórzami ze śniegiem, tundrą oraz ze wzgórzami z tundrą. Zmniejsza koszt zakupu pól z terenem tego typu o 50%.[NEWLINE][NEWLINE]Miasta z parkiem narodowym zapewniają dodatkowe +4 do [ICON_FOOD] żywności i +4 do [ICON_PRODUCTION] produkcji na turę.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna kanadyjska jednostka współczesna. Może stworzyć park narodowy. +5 do [ICON_STRENGTH] siły bojowej podczas walki w promieniu 4 pól od parku narodowego. Dodatkowe +5 do [ICON_STRENGTH] siły bojowej podczas walki w promieniu 4 pól od parku narodowego należącego do ciebie.</Text>
@@ -677,7 +677,7 @@
 				<Text>+25% do [ICON_PRODUCTION] produkcji wszystkich jednostek morskich i lądowych. Zmniejsza koszt utrzymania jednostek o 1 [ICON_GOLD] złota.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora i zwiększa zapasy zasobów strategicznych o 10.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pl_PL">
-				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorem.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatora.[NEWLINE]Daje 2 tytuł [Icon_Governor] gubernatora.</Text>
+				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorem.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatora.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora.</Text>
 			</Replace>
 
 			<!-- ================ Harbour ================ -->

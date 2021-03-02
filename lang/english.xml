@@ -457,7 +457,7 @@
 			<Text>Pen, Brush, and Voice: Gain +1 Era Score each time you trigger an [ICON_CivicBoosted] Inspiration. +1 Era Score for constructing a building with a Great Work Slot. If chosen at the start of a Golden Age, [ICON_CivicBoosted] Inspirations provide an additional 10% of civic costs. Each city receives +2 [ICON_Culture] Culture and +1 [ICON_Gold] Gold for each specialty district.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_FOOD] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +2 [Icon_Governor] Governor Title.</Text>
+			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_FOOD] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Korea that replaces the Campus district and must be built on hills. +2 [ICON_SCIENCE] Science base adjacency and mines provide minor adjacency bonuses. Provides +1 [ICON_CULTURE] Culture to adjacent Theater Squares. Culture bombs adjacent tiles when completed.</Text>
@@ -574,7 +574,7 @@
 			<Text>+1 [ICON_Production] Production from the Lumber Mill improvement. Unlocks Urban Defenses, giving all of your cities an automatic 300 Fortification Strength and the ability to perform a ranged attack. All previous wall improvements become obsolete and siege support units are no longer effective.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_FOOD] Food in Tundra tiles. In Snow and Tundra tiles, all Mines and Lumbermills provide +1 [ICON_PRODUCTION] Production, all Camps provides +1 [ICON_FOOD] Food, and strategic resource accumulation rate is +100%.[NEWLINE][NEWLINE]Can build Farms on Tundra tiles, and also on Tundra Hills tiles with the Civil Engineering Civic.[NEWLINE][NEWLINE]The cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles is reduced by 50%.[NEWLINE][NEWLINE]Cities with National Parks generate an extra +8 [ICON_FOOD] Food and +8 [ICON_PRODUCTION] Production per turn.</Text>
+			<Text>+1 [ICON_FOOD] Food in Tundra tiles. In Snow and Tundra tiles, all Mines and Lumbermills provide +1 [ICON_PRODUCTION] Production, all Camps provides +1 [ICON_FOOD] Food, and strategic resource accumulation rate is +100%.[NEWLINE][NEWLINE]Can build Farms on Tundra tiles, and also on Tundra Hills tiles with the Civil Engineering Civic.[NEWLINE][NEWLINE]The cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles is reduced by 50%.[NEWLINE][NEWLINE]Cities with National Parks generate an extra +4 [ICON_FOOD] Food and +4 [ICON_PRODUCTION] Production per turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
 			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>

@@ -457,7 +457,7 @@
 			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +2.</Text>
+			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
 			<Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공하며 인접한 광산 2개마다 [ICON_SCIENCE] 과학 +1의 인접 보너스를 추가로 획득합니다. 인접한 극장가 특수지구에서 [ICON_CULTURE] 문화 +1의 인접 보너스를 획득합니다. 언덕에 지어야 합니다. 서원이 완성되면 인접 타일에 문화 폭탄을 투여합니다.</Text>
@@ -574,7 +574,7 @@
 			<Text>제재소 시설에서 [ICON_Production] 생산력 +1을 제공합니다. 플레이어의 모든 도시에 자동으로 요새 전투력 300을 부여하고 원거리 공격을 가능하게 하는 도시 방어를 잠금 해제합니다. 이전의 모든 성벽 시설이 구식으로 변하고 공성 지원 유닛이 효과를 발휘하지 못합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ko_KR">
-            <Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕 및 툰드라 언덕에서 모든 광산이 [ICON_PRODUCTION] 생산력 +1을, 제재소에서 [ICON_PRODUCTION] 생산력 +1을, 야영지에서 [ICON_FOOD] 식량 +1을 제공하며, 전략 자원 누적률은 +100% 증가합니다. 또한 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +8과 [ICON_PRODUCTION] 생산력 +8을 획득합니다.</Text>
+            <Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕 및 툰드라 언덕에서 모든 광산이 [ICON_PRODUCTION] 생산력 +1을, 제재소에서 [ICON_PRODUCTION] 생산력 +1을, 야영지에서 [ICON_FOOD] 식량 +1을 제공하며, 전략 자원 누적률은 +100% 증가합니다. 또한 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +4과 [ICON_PRODUCTION] 생산력 +4을 획득합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
             <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
