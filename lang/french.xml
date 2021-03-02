@@ -114,7 +114,7 @@
 		</Replace>
 		<!-- ========== CANADA ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="fr_FR">
-			<Text>Permet de construire des fermes sur les cases de toundra. Après l'adoption du Génie Civil, les fermes peuvent être construites sur des cases de colline de toundra.[NEWLINE][ICON_FOOD] Nourriture + 1 pour toutes les cases de Toundra.[NEWLINE]Sur toutes les cases de neige et de toundra : [ICON_PRODUCTION] production +1 pour les mines et les scieries, [ICON_FOOD] nourriture +1 pour les camps, et le taux d'accumulation de ressources stratégiques augmente de 100 %. Réduit le coût d'achat de ce type de cases de 50 %.[NEWLINE][NEWLINE] Les villes avec un Parc National génèrent 4 [ICON_FOOD] Nourriture et 4 [ICON_PRODUCTION] Production supplémentaires par tour.</Text>
+			<Text>Permet de construire des fermes sur les cases de toundra. Après l'adoption du Génie Civil, les fermes peuvent être construites sur des cases de colline de toundra.[NEWLINE][ICON_FOOD] Nourriture + 1 pour toutes les cases de Toundra.[NEWLINE]Sur toutes les cases de neige et de toundra : [ICON_PRODUCTION] production +1 pour les mines et les scieries, [ICON_FOOD] nourriture +1 pour les camps, et le taux d'accumulation de ressources stratégiques augmente de 100 %. Réduit le coût d'achat de ce type de cases de 50 %.[NEWLINE][NEWLINE] Les villes avec un Parc National génèrent 8 [ICON_FOOD] Nourriture et 8 [ICON_PRODUCTION] Production supplémentaires par tour.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive au Canada, cette unité de l'ère moderne peut créer un parc national. [ICON_Strength] Puissance de combat +5 lors des combats dans un rayon de 4 cases autour d'un parc national, et +10 si ce parc national vous appartient.</Text>
@@ -409,7 +409,7 @@
 		</Replace>
 		<!-- ========== NORVÈGE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
+			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] [ICON_GOLD] Or +2 pour les ports adjacents à un Lieu Saint.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. [NEWLINE][NEWLINE] [ICON_PRODUCTION] Production +50% Pour les lieux saints et leurs bâtiments. Les lieux saints recoivent un bonus de proximité standard pour les cases d'eau côtière. Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
@@ -472,9 +472,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>+{1_Value} en attaque</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_TradeRoute] Routes commerciales +1 avec la philosophie politique. [ICON_Gold] Or +2 et [ICON_Culture] culture +1 pour vos routes commerciales internes. [NEWLINE][ICON_Gold] Or +2 à Banque. [NEWLINE][ICON_Gold] Or +2 à Sciences Economiques. [NEWLINE][ICON_Culture] Culture +2 à Foires Médiévales. [NEWLINE][ICON_Culture] Culture +2 à l'Urbanisation. [NEWLINE]Les routes construites sur votre territoire sont d'un niveau supérieur.</Text>
 		</Replace>
 		<!-- ========== ROME ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="fr_FR">
@@ -546,13 +543,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience +25% pour toutes les unités. [NEWLINE]Débute la partie avec un Char de Guerre à la place d'un Guerrier. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
-		</Replace>
-		<!-- ========== VIETNAM ========== -->
-		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
 		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
@@ -791,7 +781,7 @@
 		
 		<!-- Place de la gouvernance -->
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Amenities] Activités +1, [ICON_FOOD] Nourriture +3 et [ICON_Housing] Habitations +3 pour les villes avec un [ICON_Governor] gouverneur. [NEWLINE]Loyauté -2 dans les villes sans [ICON_Governor] Gouverneur.[NEWLINE]Octroie un titre de [Icon_Governor] Gouverneur.</Text>
+			<Text>[ICON_Amenities] Activités +1, [ICON_FOOD] Nourriture +3 et [ICON_Housing] Habitations +3 pour les villes avec un [ICON_Governor] gouverneur. [NEWLINE]Loyauté -2 dans les villes sans [ICON_Governor] Gouverneur.[NEWLINE]Octroie deux titres de [Icon_Governor] Gouverneur.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="fr_FR">
 			<Text>Lever les troupes d'une cité-état coûte deux fois moins d'[ICON_Gold] or. [NEWLINE][ICON_Strength] Puissance de combat +4 pour les unités d'une cité-état si vous en êtes le suzerain (y compris pour les unités levées). [NEWLINE]Octroie un titre de [Icon_Governor] gouverneur. [NEWLINE] Octroie 2 [ICON_ENVOY] Emissaires et +2 Points d'Influence par tour.</Text>
@@ -1088,12 +1078,11 @@
 			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
 		</Replace>
 
-
-		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +1 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations et ne peut pas être construit sur une case adjacente au centre-ville.</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="fr_FR">
-			<Text>[ICON_Housing] Habitations +1 pour chaque niveau de remparts. [ICON_CULTURE] Culture +2 pour chaque remparts de la Renaissance</Text>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

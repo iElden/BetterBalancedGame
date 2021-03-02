@@ -26,8 +26,5 @@ INSERT OR IGNORE INTO ModifierArguments
 	('TRAIT_ONE_FAITH'  , 		'Amount', 1),
 	('TRAIT_ONE_FAITH'  , 		'YieldType', 'YIELD_FAITH');
 
--- /!\ REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG is definied in base.sql (nan_madol nerf)
+	
 
-INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
-    ('PLOT_HAS_TUNDRA_REQUIREMENTS', 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG'),
-    ('PLOT_HAS_TUNDRA_HILLS_REQUIREMENTS', 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG');

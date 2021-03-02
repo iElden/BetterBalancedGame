@@ -1,5 +1,5 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40204">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40111">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
@@ -7,9 +7,9 @@
 <!-- Elden's ModID-->
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4024">
 	<Properties>
-		<Name>Better Balanced Game 4.3.0</Name>
+		<Name>Better Balanced Game 4.2.4</Name>
 		<Description>
-			Live build of Better Balanced Game
+			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh, MarsLife(puj)</Authors>
@@ -105,93 +105,6 @@
 		<Criteria id="nfp_vietnam_kubilai">
 			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
 		</Criteria>
-		<Criteria id="CVSetting_2">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>2</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="CVSetting_1">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		
-		<Criteria id="SVSetting_2">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryScienceSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>2</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="SVSetting_1">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryScienceSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		
-		<Criteria id="DVSetting_2">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryDiploSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>2</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="DVSetting_1">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryDiploSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		
-		<Criteria id="RVSetting_2">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryReligiousSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>2</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="RVSetting_1">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryReligiousSetting</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="TerritorialSetting_1">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VICTORY_TRADITIONAL_DOMINATION</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="GlobalSetting_1">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryMasterSlider</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="GlobalSetting_2">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryMasterSlider</ConfigurationId>
-                <Group>Game</Group>
-                <Value>2</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
-		<Criteria id="GlobalSetting_BBG_Legacy">
-            <ConfigurationValueMatches>
-                <ConfigurationId>VictoryMasterSlider</ConfigurationId>
-                <Group>Game</Group>
-                <Value>5</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -210,13 +123,6 @@
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
 		</UpdateText>
-		<UpdateDatabase id="bbg_frontend_custom_victory">
-			<Properties>
-				<LoadOrder>19999</LoadOrder>
-			</Properties>
-            	<File>config/config.xml</File>
-				<File>config/config.sql</File>
-        </UpdateDatabase>										   
 	</FrontEndActions>
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
@@ -239,14 +145,6 @@
 			<File>lang/chinese.xml</File>
 		</UpdateText>
 		
-		<ReplaceUIScript id="bbg_worldranking">
-			<Properties>
-			<LoadOrder>19999</LoadOrder>
-			<LuaContext>WorldRankings</LuaContext>
-			<LuaReplace>ui/replacements/worldrankings_bbg.lua</LuaReplace>
-			</Properties>
-		</ReplaceUIScript>
-		
 		<UpdateDatabase id="bbg_base_db_updates">
 			<Properties>
 				<LoadOrder>11612</LoadOrder>
@@ -264,7 +162,6 @@
 			<File>sql/new_bbg_great_people.sql</File>
 			<File>sql/new_bbg_great_works.sql</File>
 			<File>sql/new_bbg_religion_belief.sql</File>
-			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -326,7 +223,6 @@
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
-			<File>sql/new_bbg_xp2_government.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -435,113 +331,10 @@
 			</Properties>
 			<File>sql/new_bbg_nfp_vietnam.sql</File>
 		</UpdateDatabase>
-			<UpdateDatabase id="VictoryCulturalSetting_2">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>CVSetting_2</Criteria>
-			<File>sql/victories/new_bbg_cv.sql</File>
-			<File>sql/victories/new_bbg_cv_2.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryCulturalSetting_1">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>CVSetting_1</Criteria>
-            <File>sql/victories/new_bbg_cv.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryScienceSetting_2">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>SVSetting_2</Criteria>
-			<Criteria>xp2</Criteria>
-            <File>sql/victories/new_bbg_sv_2.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryScienceSetting_1">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>SVSetting_1</Criteria>
-			<Criteria>xp2</Criteria>
-            <File>sql/victories/new_bbg_sv_1.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryDiploSetting_2">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>DVSetting_2</Criteria>
-			<Criteria>xp2</Criteria>
-            <File>sql/victories/new_bbg_dv_2.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryDiploSetting_1">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>DVSetting_1</Criteria>
-			<Criteria>xp2</Criteria>
-            <File>sql/victories/new_bbg_dv_1.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryReligiousSetting_2">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>RVSetting_2</Criteria>
-            <File>sql/victories/new_bbg_rv_2.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryReligiousSetting_1">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>RVSetting_1</Criteria>
-            <File>sql/victories/new_bbg_rv_1.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="VictoryTerritorialSetting_1">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>TerritorialSetting_1</Criteria>
-            <File>sql/victories/new_bbg_new_domination.sql</File>
-        </UpdateDatabase>
-		<UpdateDatabase id="GlobalVictorySetting_1">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>GlobalSetting_1</Criteria>
-            <File>sql/victories/new_bbg_rv_1.sql</File>
-			<File>sql/victories/new_bbg_dv_1.sql</File>
-			<File>sql/victories/new_bbg_sv_1.sql</File>
-			<File>sql/victories/new_bbg_cv.sql</File>
-        </UpdateDatabase>	
-		<UpdateDatabase id="GlobalVictorySetting_2">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>GlobalSetting_2</Criteria>
-            <File>sql/victories/new_bbg_rv_2.sql</File>
-			<File>sql/victories/new_bbg_dv_2.sql</File>
-			<File>sql/victories/new_bbg_sv_2.sql</File>
-			<File>sql/victories/new_bbg_cv.sql</File>
-			<File>sql/victories/new_bbg_cv_2.sql</File>
-        </UpdateDatabase>	
-		<UpdateDatabase id="GlobalVictorySetting_BBG_Legacy">
-            <Properties>
-                <LoadOrder>20000</LoadOrder>
-            </Properties>
-			<Criteria>GlobalSetting_BBG_Legacy</Criteria>
-			<File>sql/victories/new_bbg_dv_2.sql</File>
-			<File>sql/victories/new_bbg_cv.sql</File>
-			<File>sql/victories/new_bbg_cv_2.sql</File>
-        </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
 		</UpdateIcons>
-		
-		<ImportFiles id="bbg_files">
-				<File>ui/replacements/endgamemenu_bbg.lua</File>
-				<File>ui/replacements/endgamemenu.xml</File>
-		</ImportFiles>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -608,25 +401,8 @@
 		<File>sql/new_bbg_xp1_scotland.sql</File>
 		<File>sql/new_bbg_xp1_zulus.sql</File>
 		<File>sql/new_bbg_nfp_vietnam.sql</File>
-		<File>sql/new_bbg_xp2_government.sql</File>
 
 
-		<File>ui/replacements/worldrankings_bbg.lua</File>
-		<File>ui/replacements/endgamemenu_bbg.lua</File>
-		<File>ui/replacements/endgamemenu.xml</File>
-		
 		<File>data/new_bbg_icons.xml</File>
-		<File>config/config.xml</File>
-		<File>config/config.sql</File>
-		
-		<File>sql/victories/new_bbg_cv_2.sql</File>
-		<File>sql/victories/new_bbg_sv_2.sql</File>
-		<File>sql/victories/new_bbg_dv_2.sql</File>
-		<File>sql/victories/new_bbg_cv.sql</File>
-		<File>sql/victories/new_bbg_sv_1.sql</File>
-		<File>sql/victories/new_bbg_dv_1.sql</File>
-		<File>sql/victories/new_bbg_rv_1.sql</File>
-		<File>sql/victories/new_bbg_rv_2.sql</File>
-		<File>sql/victories/new_bbg_new_domination.sql</File>							
 	</Files>
 </Mod>

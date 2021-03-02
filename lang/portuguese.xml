@@ -475,7 +475,7 @@
 			<Text>Caneta, Pincel, e Voz: Recebe +1 de pontuação de Era a cada que vez você acionar uma [ICON_CivicBoosted] inspiração. +1 de pontuação de Era por construir uma edificação com um espaço para uma grande obra. Se escolhida no início de uma Era de Ouro, Inspirações concedem um adicional de 10% aos custos de cívico. Cada cidade recebe +2 de [ICON_CULTURE] cultura e +1 de [ICON_GOLD] ouro por cada distrito especializado.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pt_BR">
-			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +1 títulos de [Icon_Governor] governador.</Text>
+			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +2 títulos de [Icon_Governor] governador.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="pt_BR">
 			<Text>Um distrito exclusivo da Coreia que substitui o distrito de Campus. +2 de [ICON_SCIENCE] ciência de adjacência base, aumentando por cada duas minas adjacentes. Concede +1 de adjacência de [ICON_CULTURE] cultura a Teatros. Completar o distrito ativa explosão cultural.</Text>
@@ -610,7 +610,7 @@
 			<Text>+1 [ICON_PRODUCTION] Produção para melhoria de Serraria. Desloqueia defesas Urbanas, concedendo automaticamente para todas as suas cidades 300 de força de Fortificação e permitindo ataques à distância. Todas as melhorias de Muralhas tornam-se obsoletas, assim como unidades de apoio a cerco (ariete e torre de cerco).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="pt_BR">
-			<Text>+1 [ICON_FOOD] Alimento painéis de Tundra. Em painéis de Neve e Tundra todas as Minas e Serrarias recebem +1 de [ICON_PRODUCTION] Produção, todos os acampamentos recebem +1 [ICON_FOOD] Alimento, e recursos estratégicos acumulam +100%.[NEWLINE][NEWLINE]Permite construir Fazendas em Painéis de Tundra, permite construir Fazendas em painéis de Tundra (Colinas).[NEWLINE][NEWLINE]O custo para a compra de de painéis de Neve, Neve(Colinas), Tundra e Tundra (colinas) é reduzido em 50%.[NEWLINE][NEWLINE]Cidades com Parques Nacionais recebem um extra de +4 [ICON_FOOD] Alimento e +4 [ICON_PRODUCTION] Produção por Turno.</Text>
+			<Text>+1 [ICON_FOOD] Alimento painéis de Tundra. Em painéis de Neve e Tundra todas as Minas e Serrarias recebem +1 de [ICON_PRODUCTION] Produção, todos os acampamentos recebem +1 [ICON_FOOD] Alimento, e recursos estratégicos acumulam +100%.[NEWLINE][NEWLINE]Permite construir Fazendas em Painéis de Tundra, permite construir Fazendas em painéis de Tundra (Colinas).[NEWLINE][NEWLINE]O custo para a compra de de painéis de Neve, Neve(Colinas), Tundra e Tundra (colinas) é reduzido em 50%.[NEWLINE][NEWLINE]Cidades com Parques Nacionais recebem um extra de +8 [ICON_FOOD] Alimento e +8 [ICON_PRODUCTION] Produção por Turno.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe 25% do custo em Produção de unidades militares terrestres em [ICON_FAITH] Fé ao produzir unidades.</Text>
@@ -995,12 +995,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="pt_BR">
 			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="pt_BR">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

@@ -487,7 +487,7 @@
 			<Text>百花齐放：每次触发 [ICON_CivicBoosted] 鼓舞+1时代得分。建成拥有巨作槽位的建筑时+1时代得分。在黄金时代开始选择此着力点后，[ICON_CivicBoosted] 鼓舞提供额外10%市政进度。特色区域提供+2 [ICON_Culture] 文化值和+1 [ICON_Gold] 金币</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>有 [ICON_Governor] 总督的城市+1 [ICON_Amenities] 宜居度、+3 [ICON_FOOD] 食物和+3 [ICON_Housing] 住房。[NEWLINE]无 [ICON_Governor] 总督的城市-2忠诚度。[NEWLINE]奖励1个 [Icon_Governor] 总督头衔。</Text>
+			<Text>有 [ICON_Governor] 总督的城市+1 [ICON_Amenities] 宜居度、+3 [ICON_FOOD] 食物和+3 [ICON_Housing] 住房。[NEWLINE]无 [ICON_Governor] 总督的城市-2忠诚度。[NEWLINE]奖励2个 [Icon_Governor] 总督头衔。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>朝鲜王国特色区域，替代学院，且必须建在丘陵上。基础提供+2 [ICON_SCIENCE] 科技值相邻加成，每2个矿山提供+1 [ICON_SCIENCE] 科技值相邻加成。剧院广场提供+1 [ICON_CULTURE] 相邻加成。建成时向相邻单元格施放文化炸弹。</Text>
@@ -601,7 +601,7 @@
 			<Text>所有伐木场改良设施+1 [ICON_Production] 生产力。解锁城市防御，为所有城市提供300点自动防御力和发起远程攻击的能力。之前的城墙改良设施将全部过时，攻城辅助单位进攻时不再拥有特殊效果。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>所有的冻土单元格+1 [ICON_FOOD] 食物。雪地和冻土单元格的矿山和伐木场额外+1 [ICON_PRODUCTION] 生产力，营地改良设施+1 [ICON_FOOD] 食物，战略资源累计速度+100%。 [NEWLINE][NEWLINE]可以在冻土平原上建造农场, 解锁“土木工程”市政后可以在冻土丘陵上建造农场。[NEWLINE][NEWLINE]购买雪地，雪地丘陵，冻土，冻土丘陵花费的 [ICON_GOLD] 金币减半。[NEWLINE][NEWLINE] 有国家公园的城市每回合+4 [ICON_FOOD] 食物和+4 [ICON_PRODUCTION] 生产力。</Text>
+			<Text>所有的冻土单元格+1 [ICON_FOOD] 食物。雪地和冻土单元格的矿山和伐木场额外+1 [ICON_PRODUCTION] 生产力，营地改良设施+1 [ICON_FOOD] 食物，战略资源累计速度+100%。 [NEWLINE][NEWLINE]可以在冻土平原上建造农场, 解锁“土木工程”市政后可以在冻土丘陵上建造农场。[NEWLINE][NEWLINE]购买雪地，雪地丘陵，冻土，冻土丘陵花费的 [ICON_GOLD] 金币减半。[NEWLINE][NEWLINE] 有国家公园的城市每回合+8 [ICON_FOOD] 食物和+8 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>生产单位时获得相当于该单位生产力25%的 [ICON_FAITH] 信仰值。</Text>
@@ -1053,12 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

@@ -435,7 +435,7 @@
 			<Text>ペン・筆・声: [ICON_CivicBoosted]天啓を得るごとに時代スコア+1。傑作スロットを持つ建造物を建設するごとに時代スコア+1。黄金時代の開始時に選択された場合、[ICON_CivicBoosted]天啓による社会制度解禁へのボーナス+10%。すべての都市は専門区域1つごとに[ICON_Culture]文化力+2と[ICON_Gold]ゴールド+1を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_Governor] 総督が置かれている都市の [ICON_Amenities] 快適性+1、 [ICON_FOOD] 食料+3、 [ICON_Housing] 住宅+3。[NEWLINE][ICON_Governor] 総督が置かれていない都市の忠誠度-2。[NEWLINE][ICON_Governor] 総督の昇進を1つ獲得。</Text>
+			<Text>[ICON_Governor] 総督が置かれている都市の [ICON_Amenities] 快適性+1、 [ICON_FOOD] 食料+3、 [ICON_Housing] 住宅+3。[NEWLINE][ICON_Governor] 総督が置かれていない都市の忠誠度-2。[NEWLINE][ICON_Governor] 総督の昇進を2つ獲得。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ja_JP">
 			<Text>キャンパスを代替する韓国固有の区域。丘陵タイルに建設されなければならない。基本隣接ボーナスとして[ICON_SCIENCE]科学力+2。隣接する鉱山2つにつき [ICON_SCIENCE] 科学力+1。隣接する劇場区域の [ICON_CULTURE] 文化力+1。建設によって文化爆弾を発動する。</Text>
@@ -570,7 +570,7 @@
 			<Text>製材所の施設の [ICON_Production] 生産力+1。都市防衛を解除し、すべての都市に自動的に防衛力300と長距離攻撃能力をもたらす。これまでの防壁施設はすべて廃れ、攻城支援ユニットは有効性を失う。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ja_JP">
-            <Text>ツンドラから[ICON_FOOD]食料+1。ツンドラおよび雪原タイルでは鉱山が[ICON_PRODUCTION]生産力+1、[ICON_FOOD]キャンプが食料+1を追加で算出し、戦略資源の産出量が+100%となる。[NEWLINE][NEWLINE]ツンドラおよび雪原タイルに農場を建設できる。土木工学の解禁でそれらタイルの丘陵にも建設できるようになる。[NEWLINE][NEWLINE]丘陵を含むツンドラおよび雪原タイルの購入費用-50%。[NEWLINE][NEWLINE]国立公園のある都市は[ICON_FOOD]食料と[ICON_PRODUCTION]生産力を追加で4ずつ毎ターン産出する。</Text>
+            <Text>ツンドラから[ICON_FOOD]食料+1。ツンドラおよび雪原タイルでは鉱山が[ICON_PRODUCTION]生産力+1、[ICON_FOOD]キャンプが食料+1を追加で算出し、戦略資源の産出量が+100%となる。[NEWLINE][NEWLINE]ツンドラおよび雪原タイルに農場を建設できる。土木工学の解禁でそれらタイルの丘陵にも建設できるようになる。[NEWLINE][NEWLINE]丘陵を含むツンドラおよび雪原タイルの購入費用-50%。[NEWLINE][NEWLINE]国立公園のある都市は[ICON_FOOD]食料と[ICON_PRODUCTION]生産力を追加で8ずつ毎ターン産出する。</Text>
         </Replace>
         <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ja_JP">
             <Text>陸上ユニットを生産した際、そのコストの25%に相当する[ICON_FAITH]信仰力を得る。</Text>
@@ -937,12 +937,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="ja_JP">
 			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

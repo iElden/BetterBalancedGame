@@ -404,7 +404,7 @@
 			<Text>«Перо, кисть, голос»: каждое вызванное [ICON_CivicBoosted] вдохновение прибавляет 1 очко к счету эпохи. +1 очко к счету эпохи за постройку здания с ячейкой для шедевра. При выборе в начале золотого века [ICON_CivicBoosted] вдохновение дает дополнительно 10% стоимости социальных институтов. Каждый город получает +2 [ICON_Culture] культуры и +1 [ICON_Gold] золота за каждый специализированный район. Античность и Средневековье.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_Amenities] довольства, +3 [ICON_FOOD] пищи и +3 [ICON_Housing] жилья в городах с [ICON_Governor] губернаторами.[NEWLINE]-2 лояльности в городах без губернаторов.[NEWLINE]Дает +1 [Icon_Governor] губернаторский титул.</Text>
+			<Text>+1 [ICON_Amenities] довольства, +3 [ICON_FOOD] пищи и +3 [ICON_Housing] жилья в городах с [ICON_Governor] губернаторами.[NEWLINE]-2 лояльности в городах без губернаторов.[NEWLINE]Дает +2 [Icon_Governor] губернаторский титул.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный район Кореи для научных исследований. Заменяет кампус. Имеет базовый бонус соседства +2 [ICON_SCIENCE] науки. Шахты даёт малый бонус соседства. +1 [ICON_CULTURE] культуры рядом с театральной площадью. Можно строить только на холмах.</Text>
@@ -536,7 +536,7 @@
 			<Text>Лесопилка дает +1 [ICON_Production] производства. Открывает городские укрепления, автоматически дающие всем вашим городам по 300 ед. мощи при обороне и способность к дальнобойной атаке. Все предыдущие улучшения стен и осадные юниты поддержки становятся неэффективными.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_FOOD] пищи на клетках с тундрой. Позволяет строить фермы в тундре. После открытия строительной инженерии можно строить фермы на холмах в тундре. На клетках снега и тундры (в том числе с холмами) все рудники и лесопилки дают +1 [ICON_PRODUCTION] производства, лагеря дают +1 [ICON_FOOD] пищи, скорость накопления стратегических ресурсов увеличивается на 100%. Стоимость приобретения клеток с тундрой и снегом снижается на 50%. Город получает бонус +4 [ICON_FOOD] пищи и +4 [ICON_PRODUCTION] производства, если в нём есть национальный парк.</Text>
+			<Text>+1 [ICON_FOOD] пищи на клетках с тундрой. Позволяет строить фермы в тундре. После открытия строительной инженерии можно строить фермы на холмах в тундре. На клетках снега и тундры (в том числе с холмами) все рудники и лесопилки дают +1 [ICON_PRODUCTION] производства, лагеря дают +1 [ICON_FOOD] пищи, скорость накопления стратегических ресурсов увеличивается на 100%. Стоимость приобретения клеток с тундрой и снегом снижается на 50%. Город получает бонус +8 [ICON_FOOD] пищи и +8 [ICON_PRODUCTION] производства, если в нём есть национальный парк.</Text>
 		</Replace>
     <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
         <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
@@ -957,18 +957,11 @@
 	<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ru_RU">
 		<Text>Военные юниты получают +3 к [ICON_Strength] боевой мощи на территории дружественных городов, исповедующих эту религию.</Text>
 	</Replace>
-	<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-	</Replace>
-	<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
-	</Replace>
-	<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
-	</Replace>
-	<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
-	</Replace>
-
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="ru_RU">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="ru_RU">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
   </LocalizedText>
 </GameData>

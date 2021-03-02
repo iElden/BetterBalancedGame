@@ -1,6 +1,15 @@
 --==============================================================
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
+/* REVERTED TO BASE GAME
+-- Sumeria's Ziggurat gets +1 Culture at Diplomatic Service instead of Natural History
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ZIGGURAT';
+-- zigg gets +1 science and culture at enlightenment
+INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqCivic)
+	VALUES
+	('IMPROVEMENT_ZIGGURAT', 'YIELD_CULTURE', 1, 'CIVIC_THE_ENLIGHTENMENT'),
+	('IMPROVEMENT_ZIGGURAT', 'YIELD_SCIENCE', 1, 'CIVIC_THE_ENLIGHTENMENT');
+*/
 
 
 --==============================================================
@@ -51,6 +60,30 @@ INSERT OR IGNORE INTO RequirementSetRequirements ( RequirementSetId, Requirement
 		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG' );
 UPDATE Modifiers SET SubjectRequirementSetId='SPECIAL_DISTRICT_ON_COAST_BBG' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
 
+
+--==============================================================
+--******		C U L T U R E   V I C T O R I E S		  ******
+--==============================================================
+-- moon landing worth 5x science in culture instead of 10x
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' AND Name='Multiplier';
+-- computers and environmentalism tourism boosts to 50% (from 25%)
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='COMPUTERS_BOOST_ALL_TOURISM';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST_ALL_TOURISM'; 
+-- base wonder tourism adjusted to 5
+UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
+-- Reduce amount of tourism needed for foreign tourist from 200 to 150
+UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
+-- lower number of turns to move greatworks between cities
+UPDATE GlobalParameters SET Value='2' WHERE Name='GREATWORK_ART_LOCK_TIME';
+--
+
+-- fix same artist, same archelogist culture and tourism from bing 1 and 1 to being default numbers
+UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_HERMITAGE';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_HERMITAGE';
+UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
+UPDATE Building_GreatWorks SET NonUniquePersonYield=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
 
 --==================
 -- America
@@ -672,6 +705,41 @@ UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AN
 INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
 
+	
+--==================
+-- Sumeria
+--==================
+/* REVERTED TO BASE GAME
+-- replace bugged shared xp and pillage rewards with double pillage rewards
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
+	('TRAIT_ADJUST_PILLAGE_BBG', 'MODIFIER_PLAYER_ADJUST_IMPROVEMENT_PILLAGE');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
+	('TRAIT_ADJUST_PILLAGE_BBG', 'Amount', '2', '-1');
+UPDATE TraitModifiers SET ModifierId='TRAIT_ADJUST_PILLAGE_BBG' WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
+-- Sumerian War Carts are now unlocked at horseback riding and buffed
+UPDATE Units SET Cost=80, Maintenance=2, BaseMoves=4, Combat=36, StrategicResource='RESOURCE_HORSES', PrereqTech='TECH_HORSEBACK_RIDING', MandatoryObsoleteTech='TECH_COMBUSTION' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
+-- war carts have a chance to steal defeated barbs and city state units
+INSERT OR IGNORE INTO Types (Type , Kind)
+	VALUES ('ABILITY_WAR_CART_CAPTURE' , 'KIND_ABILITY');
+INSERT OR IGNORE INTO TypeTags (Type, Tag)
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'CLASS_WAR_CART');
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description)
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG');
+INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'WAR_CART_CAPTURE_CS_BARBS');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+	VALUES ('WAR_CART_CAPTURE_CS_BARBS', 'MODIFIER_UNIT_ADJUST_COMBAT_UNIT_CAPTURE', 'OPP_IS_CS_OR_BARB');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES ('WAR_CART_CAPTURE_CS_BARBS', 'CanCapture', '1');
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES ('OPP_IS_CS_OR_BARB', 'REQUIREMENTSET_TEST_ANY');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES
+	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_BARBARIAN'),
+	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_MINOR_CIV');
+*/
 
 --==============================================================
 --******			  G O V E R N M E N T S				  ******
@@ -860,12 +928,123 @@ INSERT OR IGNORE INTO RequirementArguments
 --******			P O L I C Y   C A R D S				  ******
 --==============================================================
 
+/*
+-- Limes should not become obselete
+DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
+-- Adds +100% Siege Unit Production to Limes Policy Card
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+
+
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'EraType' , 'ERA_ANCIENT' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'EraType' , 'ERA_CLASSICAL' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'EraType' , 'ERA_MEDIEVAL' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'EraType' , 'ERA_RENAISSANCE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'EraType' , 'ERA_INDUSTRIAL' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'EraType' , 'ERA_MODERN' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'EraType' , 'ERA_ATOMIC' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+	
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'EraType' , 'ERA_INFORMATION' , '-1');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'Amount' , '100' , '-1');
+
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ANCIENT_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_CLASSICAL_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_MODERN_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ATOMIC_ERA_CPLMOD');
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INFORMATION_ERA_CPLMOD');
+*/
 
 
 
 --==============================================================================================
 --******				R E L I G I O N					  ******
 --==============================================================================================
+/*
+UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
+--UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
+--UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
+--UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
+--UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
+-- remove marytr ability from prasat missionaries
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR'; --DLC
+-- reduce debator promotion
+--UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
+-- remove spread from condemning and defeating
+--UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
+--UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
+*/
 
 -- give monks wall breaker ability
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES
@@ -1049,6 +1228,20 @@ UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DE
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
+/*
+-- Huey gives +2 culture to lake tiles
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
+	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+	VALUES
+	('HUEY_LAKE_CULTURE', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'FOODHUEY_PLAYER_REQUIREMENTS'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'FOODHUEY_PLOT_IS_LAKE_REQUIREMENTS');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES
+	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
+	*/
 -- cristo gets 1 relic
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
 	VALUES ('WONDER_GRANT_RELIC_BBG' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	
@@ -1417,10 +1610,10 @@ VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
 -- great barrier reef gives +2 science adj
--- INSERT OR IGNORE INTO District_Adjacencies VALUES
---	('DISTRICT_CAMPUS', 'BarrierReef_Science');
---INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature) VALUES
---	('BarrierReef_Science', 'LOC_DISTRICT_REEF_SCIENCE', 'YIELD_SCIENCE', 2, 1, 'FEATURE_BARRIER_REEF');
+INSERT OR IGNORE INTO District_Adjacencies VALUES
+	('DISTRICT_CAMPUS', 'BarrierReef_Science');
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature) VALUES
+	('BarrierReef_Science', 'LOC_DISTRICT_REEF_SCIENCE', 'YIELD_SCIENCE', 2, 1, 'FEATURE_BARRIER_REEF');
 -- Several lack-luster wonders improved
 UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
 INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)

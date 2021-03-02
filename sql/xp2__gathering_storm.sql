@@ -40,9 +40,9 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'      , 'YieldType' , 'YIELD_FOOD'      ),
 	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'      , 'Amount'    , '1'               ),
 	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD'    , 'YieldType' , 'YIELD_FOOD'      ),
-	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD'    , 'Amount'    , '4'               ),
+	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD'    , 'Amount'    , '8'               ),
 	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'YieldType' , 'YIELD_PRODUCTION'),
-	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'Amount'    , '4'               );
+	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'Amount'    , '8'               );
 -- Hockey rink at Civil Service
 UPDATE Improvements SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ICE_HOCKEY_RINK';
 -- Mounties get a base combat buff and combat buff from nearby parks radius increased
@@ -266,7 +266,7 @@ UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_POWE
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_FEZ_INITIATION_SCIENCE_POPULATION' AND Name='Amount';
 
 
-/*
+
 --==============================================================
 --******				  DIPLOMACY						  ******
 --==============================================================
@@ -280,7 +280,6 @@ UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_DEFORESTATION_TREATY';
 UPDATE Resolutions SET EarliestEra='ERA_MODERN' WHERE ResolutionType='WC_RES_ARMS_CONTROL';
 DELETE FROM Resolutions WHERE ResolutionType='WC_RES_PUBLIC_RELATIONS';
-*/  
 
 
 
