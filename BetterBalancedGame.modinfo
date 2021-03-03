@@ -1,15 +1,15 @@
-<!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40204">
--->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
-<!-- Elden's ModID-->
+<!-- BETA ModID-->
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40400">
+<!-- Elden's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4030">
+-->
 	<Properties>
-		<Name>Better Balanced Game 4.3.0</Name>
+		<Name>Better Balanced Game BETA 4.4 (Build 0)</Name>
 		<Description>
-			Live build of Better Balanced Game
+			Beta build of BBG
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh, MarsLife(puj)</Authors>
