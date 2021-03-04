@@ -858,8 +858,20 @@ function PlaceBarbarianCamp(x, y, playerID, tribeType)
 	local pPlot = Map.GetPlot(x,y);	
 	--ImprovementBuilder.SetImprovementType(pPlot, BARB_CAMP_ID, BARBARIAN_ID);
 
+	for i = 1, 90 do
+		local plotScanned = GetAdjacentTiles(pPlot, i)
+		if plotScanned ~= nil then
+			if plotScanned:GetImprovementType() == BARB_CAMP_ID then
+				print("Already has a Barbarian Camp Nearby")
+				return
+			end
+		end
+	end
+
 
 	local pBarbManager = Game.GetBarbarianManager();
+	
+	
 
    ImprovementBuilder.SetImprovementType(pPlot, -1, NO_PLAYER);   
 
