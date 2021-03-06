@@ -154,6 +154,78 @@ function OnPillage(iUnitPlayerID :number, iUnitID :number, eImprovement :number,
 	end		
 end
 
+function OnTechBoost(playerID, iTechBoosted)
+	print("OnTechBoost",playerID, iTechBoosted)
+	local pPlayer = Players[playerID]
+	if (pPlayer == nil) or (iTechBoosted == nil) or (iTechBoosted < 0) then
+		return
+	end
+	local pConfig = PlayerConfigurations[playerID]
+	
+	if pConfig ~= nil then
+		if pConfig:GetLeaderTypeName() == "LEADER_HAMMURABI" then
+			ApplyHammurabiTrait(playerID, iTechBoosted)
+		end
+	end
+end
+
+-- ===========================================================================
+--	Babylon
+-- ===========================================================================
+
+function ApplyHammurabiTrait(playerID, iTechBoosted)
+	print("ApplyHammurabiTrait",playerID, iTechBoosted)
+	local pPlayer = Players[playerID]
+	if (pPlayer == nil) or (iTechBoosted == nil) or (iTechBoosted < 0) then
+		return
+	end	
+	
+	local TechBoosted = {}
+	
+	for Tech in GameInfo.Technologies() do
+		if Tech.Index == iTechBoosted then
+			TechBoosted = Tech
+			break
+		end
+	end
+	
+	local iSpeedCostMultiplier = GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()].CostMultiplier
+	local pPlayerTechs = pPlayer:GetTechs()
+	if pPlayerTechs:CanResearch(iTechBoosted) then
+		local team = pPlayer:GetTeam()
+		local bNotGainedViaTeam = true
+		if (team == nil) or (team == -1) then
+			local cost = TechBoosted.Cost
+			if cost ~= nil and iSpeedCostMultiplier ~= nil then
+				cost = cost * iSpeedCostMultiplier/100
+			end
+			pPlayerTechs:SetResearchProgress(TechBoosted.Index,cost)
+			else
+			for _, iPlayerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
+				local pTeamPlayer = Players[iPlayerID]
+				if (pTeamPlayer ~= nil) and (iPlayerID ~= playerID) then
+					if (pTeamPlayer:GetTeam() == team) then
+						local pTeamTech = pTeamPlayer:GetTechs()
+						if (pTeamTech:HasTech(iTechBoosted) == true) then
+							bNotGainedViaTeam = false
+						end
+					end
+				end
+			end
+		end
+		
+		if (bNotGainedViaTeam == true) then
+			local cost = TechBoosted.Cost
+			if cost ~= nil and iSpeedCostMultiplier ~= nil then
+				cost = cost * iSpeedCostMultiplier/100
+			end
+			pPlayerTechs:SetResearchProgress(TechBoosted.Index,cost)
+			return
+		end
+	end	
+		
+end
+
 -- ===========================================================================
 --	Bizantium
 -- ===========================================================================
@@ -187,6 +259,7 @@ function ApplyByzantiumTrait(x,y,power,religionType,playerID)
 		end
 	end
 end
+
 -- ===========================================================================
 --	Sumer
 -- ===========================================================================
@@ -1996,6 +2069,10 @@ local count = 0
 
 end
 
+
+
+
+
 -- ===========================================================================
 --	Initialize
 -- ===========================================================================
@@ -2021,6 +2098,9 @@ function Initialize()
 	
 	-- pillage effect:
 	GameEvents.OnPillage.Add(OnPillage)
+	
+	-- tech boost effect:
+	Events.TechBoostTriggered.Add(OnTechBoost);
 end
 
 Initialize();

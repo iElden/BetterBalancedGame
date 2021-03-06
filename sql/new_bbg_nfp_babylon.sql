@@ -2,16 +2,19 @@
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
 
-INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
-    ('BBG_TRAIT_BABYLON_EUREKA', 'MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST');
+--INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+--    ('BBG_TRAIT_BABYLON_EUREKA', 'MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST');
 
-INSERT INTO ModifierArguments(ModifierId, Name, Value, Extra) VALUES
-    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '45', '-1');
+--INSERT INTO ModifierArguments(ModifierId, Name, Value, Extra) VALUES
+--   ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '45', '-1');
 
+-- Beta 6/3/21 Now Handled by lua Free tech if you have the prerequisite and not gained from the team
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
-INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
-    ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
+--INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
+--    ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
 
+-- Beta 6/3/21 Move decrease to District not the entire yield output
+UPDATE Modifiers SET	ModifierType = 'MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER' WHERE ModifierId = 'TRAIT_SCIENCE_DECREASE';
 
 
 -- Babylon - Nalanda infinite technology re-suze fix.
