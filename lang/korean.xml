@@ -226,7 +226,7 @@
 			<Text>3타일 자연경관입니다. 이 지역에 들어오는 유닛은 멀리 떨어진 바다로 순간 이동합니다. 하지만 해상 유닛의 경우 '신비한 해류' 능력([ICON_Movement] 이동력 +1)을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ko_KR">
-			<Text>통과할 수 없는 3타일 자연경관입니다. 인접 타일에 [ICON_Gold] 금 +1과 [ICON_Culture] 문화 +1을 제공합니다. 극장가와 상업 중심지 특수지구에 많은 인접 보너스를 제공합니다.</Text>
+			<Text>통과할 수 없는 3타일 자연경관입니다. 인접 타일에 [ICON_Gold] 금 +1과 [ICON_Culture] 문화 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시의 범람원 및 화산토 타일에 [ICON_PRODUCTION] 생산력 +1을 제공합니다. 이 도시의 시설, 건물 및 특수지구는 환경 효과에 의해 피해를 입지 않습니다.</Text>
@@ -238,7 +238,7 @@
 			<Text>기병대를 대체하는 그란 콜롬비아 특유의 산업 시대 유닛입니다. 유지 비용이 낮습니다. 인접한 각 야네로에게서 [ICON_Strength] 전투력 +2를 얻습니다. 퇴각 능력을 활성화하는 사령관의 범위 내에 있으면 체력을 모두 회복합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ko_KR">
-			<Text>인접한 야네로 유닛마다 [ICON_Strength] 전투력 +2를 제공합니다..</Text>
+			<Text>인접한 야네로 유닛마다 [ICON_Strength] 전투력 +2를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ko_KR">
 			<Text>새 시대에 진입하면 사령관을 얻습니다. [ICON_GreatGeneral] 위대한 장군을 영입할 수 없습니다.</Text>
@@ -574,7 +574,7 @@
 			<Text>제재소 시설에서 [ICON_Production] 생산력 +1을 제공합니다. 플레이어의 모든 도시에 자동으로 요새 전투력 300을 부여하고 원거리 공격을 가능하게 하는 도시 방어를 잠금 해제합니다. 이전의 모든 성벽 시설이 구식으로 변하고 공성 지원 유닛이 효과를 발휘하지 못합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ko_KR">
-            <Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕 및 툰드라 언덕에서 모든 광산이 [ICON_PRODUCTION] 생산력 +1을, 제재소에서 [ICON_PRODUCTION] 생산력 +1을, 야영지에서 [ICON_FOOD] 식량 +1을 제공하며, 전략 자원 누적률은 +100% 증가합니다. 또한 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +4과 [ICON_PRODUCTION] 생산력 +4을 획득합니다.</Text>
+            <Text>도심부 타일을 제외한 툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕 및 툰드라 언덕에서 모든 광산이 [ICON_PRODUCTION] 생산력 +1을, 제재소에서 [ICON_PRODUCTION] 생산력 +1을, 야영지에서 [ICON_FOOD] 식량 +1을 제공하며, 전략 자원 누적률은 +100% 증가합니다. 또한 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +4와 [ICON_PRODUCTION] 생산력 +4를 획득합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
             <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
@@ -931,10 +931,10 @@
 		</Replace>
 		<!-- RUSSIA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ko_KR">
-			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다.</Text>
+			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 도심부 타일을 제외한 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다. 유닛이 눈보라에서 피해를 받지 않습니다. 러시아와 전쟁 중인 문명은 러시아 영토에서 눈보라에 +100% 유닛 피해를 받습니다.</Text>
+			<Text>도시를 세울 때 추가 영토를 8타일 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 도심부 타일을 제외한 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다. 유닛이 눈보라에서 피해를 받지 않습니다. 러시아와 전쟁 중인 문명은 러시아 영토에서 눈보라에 +100% 유닛 피해를 받습니다.</Text>
 		</Replace>
 		<!-- CHINA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ko_KR">
@@ -1066,6 +1066,7 @@
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ko_KR">
 			<Text>전투 유닛은 이 종교를 믿는 우호적인 도시 영토 내에서 [ICON_Strength] 전투력 +3을 획득합니다.</Text>
 		</Replace>
+		
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="ko_KR">
 			<Text>열대우림, 습지 또는 숲 타일에서 전투 중인 유닛이 [ICON_Strength] 전투력 +2를 얻습니다. 이러한 타일에서 턴을 시작하는 경우 [ICON_Movement] 이동력 +1을 얻습니다. 해당 타일이 자국 영토인 경우 이 두 가지 보너스는 2배가 됩니다.</Text>
 		</Replace>
@@ -1073,13 +1074,318 @@
 			<Text>열대우림, 습지 또는 숲 타일에서 전투 중인 유닛이 [ICON_Strength] 전투력 +2를 얻습니다. 이러한 타일에서 턴을 시작하는 경우 [ICON_Movement] 이동력 +1을 얻습니다. 해당 타일이 자국 영토인 경우 이 두 가지 보너스는 2배가 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+			<Text>베트남 특유의 특수지구이며 주둔지를 대체합니다. 인접한 각 특수지구마다 [ICON_CULTURE] 문화 +1을 얻습니다. 비행을 연구하면 [ICON_CULTURE] 문화 생산량에 해당하는 [ICON_TOURISM] 관광을 얻습니다. 이 특수지구는 인구 조건이 없고, 건설 비용이 저렴하고, 도심부 인근에 건설할 수 없으며, 전문 특수지구가 아닙니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_VIETNAMESE_VOI_CHIEN_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>석궁병을 대체하는 베트남 특유 중세 시대 원거리 유닛입니다. 공격 후에 이동할 수 있습니다. 또한 방어 능력이 우수하고 시야가 더 넓지만, 생산 비용이 비싼 유닛입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="ko_KR">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+			<Text>성벽의 레벨마다 [ICON_Housing] 주거공간 +1, 르네상스 성벽마다 [ICON_Culture] 문화 +2.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+			<Text>멋진 혹은 놀라운 매력도의 타일에서 [ICON_Faith] 신앙 +1을 획득합니다.</Text>
 		</Replace>
+		
+		<!-- Front End -->
+		<Row Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="ko_KR">
+			<Text>야만인 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARBARIANS_SETTING_DESC" Language="ko_KR">
+			<Text>야만인이 게임에서 어떻게 나타날 지에 대해 설정하십시오.</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_1_NAME" Language="ko_KR">
+			<Text>균형적</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="ko_KR">
+			<Text>야만인 부흥</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="ko_KR">
+			<Text>야만인 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_0_DESC" Language="ko_KR">
+			<Text>모드로 변경하지 않은 기본 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_1_DESC" Language="ko_KR">
+			<Text>[ICON_BULLET]야만인 기병 부족이 15턴 이내에 등장하지 않음. [NEWLINE][ICON_BULLET]야만인 주둔지가 플레이어들 간에 균형을 이루게 배치됨.</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="ko_KR">
+			<Text>야만인이 더욱 공격적으로 등장함.</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="ko_KR">
+			<Text>야만인 없음</Text>
+		</Row>			
+		
+		
+		
+		<Row Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="ko_KR">
+			<Text>승리 조건</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="ko_KR">
+			<Text>얼마나 빠르게 승리 조건에 달성할 수 있게 할지 조정합니다.</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_1_NAME" Language="ko_KR">
+			<Text>물려드는 폭풍 균형적</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_2_NAME" Language="ko_KR">
+			<Text>흥망성쇠 균형적</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Language="ko_KR">
+			<Text>사용자 지정 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_NAME" Language="ko_KR">
+			<Text>과거 BBG</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" Language="ko_KR">
+			<Text>BBG 4.0버전 이전의 승리 조건: 빠른 문화 승리와 외교 승리, 그 외 변경 없음.</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="ko_KR">
+			<Text>모드로 변경하지 않은, 몰려드는 폭풍 DLC 기본 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="ko_KR">
+			<Text>몰려드는 폭풍 게임 속도에 맞게 승리조건 조정:[NEWLINE][ICON_BOLT]문화 승리: 걸작이 제공하는 문화와 관광 증가, 관광객 증가에 필요한 관광 요구치 감소. [NEWLINE][ICON_BOLT]외교 승리: 중세 시대에 첫 세계 의회 개최, 르네상스 시대부터 외교 승리 안건 투표 가능. [NEWLINE][ICON_BOLT]과학 승리: 과학승리 프로젝트 요구 생산력 비용 약간 감소, 외계 행성 탐험대 프로젝트 완료시 탐사에 추가 턴을 소요하지 않고 과학 승리.</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="ko_KR">
+			<Text>흥망성쇠 게임 속도에 맞게 승리조건 조정:[NEWLINE][ICON_BOLT]문화 승리: 걸작이 제공하는 문화와 관광 증가, 관광객 증가에 필요한 관광 요구치 더 많이 감소. [NEWLINE][ICON_BOLT]외교 승리: 중세 시대에 첫 세계 의회 개최 및 외교 승리 안건 투표 가능. [NEWLINE][ICON_BOLT]과학 승리: 해당 프로젝트 완료시 과학 승리: [NEWLINE]  [ICON_BULLET]화성 원자로 모듈 발사 (핵융합)[NEWLINE]  [ICON_BULLET]화성 주거 모듈 발사 (로봇공학)[NEWLINE]  [ICON_BULLET]화성 수경 재배 모듈 발사 (나노기술)</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="ko_KR">
+			<Text>각 승리 조건을 개별적으로 조정 가능</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="ko_KR">
+			<Text>모든 승리조건 제거</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="ko_KR">
+			<Text>승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="ko_KR">
+			<Text>빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="ko_KR">
+			<Text>더 빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="ko_KR">
+			<Text>문화승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="ko_KR">
+			<Text>빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="ko_KR">
+			<Text>더 빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="ko_KR">
+			<Text>종교승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="ko_KR">
+			<Text>빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="ko_KR">
+			<Text>더 빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="ko_KR">
+			<Text>시간승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="ko_KR">
+			<Text>빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="ko_KR">
+			<Text>더 빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="ko_KR">
+			<Text>과학승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="ko_KR">
+			<Text>빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="ko_KR">
+			<Text>더 빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="ko_KR">
+			<Text>외교승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="ko_KR">
+			<Text>빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="ko_KR">
+			<Text>더 빠르게</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="ko_KR">
+			<Text>영토승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="ko_KR">
+			<Text>표준</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="ko_KR">
+			<Text>지배승리 없음</Text>
+		</Row>
+		
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="ko_KR">
+			<Text>모드로 변경하지 않은 기본 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="ko_KR">
+			<Text>걸작과 유물이 제공하는 문화와 관광 증가</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="ko_KR">
+			<Text>[ICON_BOLT]걸작과 유물이 제공하는 문화와 관광 증가[NEWLINE][ICON_BOLT]관광객 증가에 필요한 관광 요구치 25% 감소</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="ko_KR">
+			<Text>문화승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="ko_KR">
+			<Text>기본 설정: 종교 영향력은 주변 10타일 이내의 도시에 영향을 줌</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="ko_KR">
+			<Text>종교 영향력은 주변 12타일 이내의 도시에 영향을 줌</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="ko_KR">
+			<Text>종교 영향력은 주변 13타일 이내의 도시에 영향을 줌</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="ko_KR">
+			<Text>종교승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="ko_KR">
+			<Text>모드로 변경하지 않은 기본 설정: 온라인 속도 기준 250턴</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="ko_KR">
+			<Text>175턴 제한</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="ko_KR">
+			<Text>150턴 제한</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="ko_KR">
+			<Text>시간승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="ko_KR">
+			<Text>모드로 변경하지 않은 기본 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="ko_KR">
+			<Text>외계 행성 탐험대 프로젝트 완료시 탐사에 추가 턴을 소요하지 않고 과학 승리</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="ko_KR">
+			<Text>해당 프로젝트 완료시 과학 승리: [NEWLINE][ICON_BOLT]화성 원자로 모듈 발사 (핵융합)[NEWLINE][ICON_BOLT]화성 주거 모듈 발사 (로봇공학)[NEWLINE][ICON_BOLT]화성 수경 재배 모듈 발사 (나노기술)</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="ko_KR">
+			<Text>과학승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="ko_KR">
+			<Text>모드로 변경하지 않은 기본 설정</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="ko_KR">
+			<Text>중세 시대에 첫 세계 의회 개최, 르네상스 시대부터 외교 승리 안건 투표 가능</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="ko_KR">
+			<Text>중세 시대에 첫 세계 의회 개최 및 외교 승리 안건 투표 가능</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="ko_KR">
+			<Text>외교승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="ko_KR">
+			<Text>기본 설정: 육지 타일의 66% 이상을 영토로 보유시 승리</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="ko_KR">
+			<Text>육지 타일의 60% 이상을 영토로 보유시 승리</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="ko_KR">
+			<Text>육지 타일의 50% 이상을 영토로 보유시 승리</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="ko_KR">
+			<Text>영토 승리 없음</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="ko_KR">
+			<Text>기본 설정: 모든 수도 보유시 승리</Text>
+		</Row>
+		<Row Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="ko_KR">
+			<Text>지배승리 없음</Text>
+		</Row>
+		
+		<Row Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="ko_KR">
+			<Text>군대와 제국 성장을 활용하여 육지를 지배하십시오. 당신 제국을 확장하고 적들을 점령하여 가장 넓은 영토를 차지하여야 합니다.</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="ko_KR">
+			<Text>% 의 육지를 영토로 보유</Text>
+		</Row>
+		<Row Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="ko_KR">
+			<Text>영토</Text>
+		</Row>
+		<Row Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="ko_KR">
+			<Text>영토</Text>
+		</Row>
+		<Row Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="ko_KR">
+			<Text>영토 승리</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="ko_KR">
+			<Text>영토 승리</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="ko_KR">
+			<Text>영토 승리</Text>
+		</Row>
+		<Row Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="ko_KR">
+			<Text>영토 승리</Text>
+		</Row>
+		<Row Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="ko_KR">
+			<Text>영토 승리 진행도</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR:ResMilitaryLabelCS]영토[ENDCOLOR] 승리를 달성하기 위해서는, 당신 제국의 영토를 확장하고 적들을 점령하여 가장 넓은 영토를 차지하여야 합니다.[NEWLINE][NEWLINE]강한 군사력을 보유하는것을 권장합니다.</Text>
+		</Row>
+		<Row Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="ko_KR">
+			<Text>[NEWLINE][NEWLINE]영토 승리를 위해 필요한 육지 점유율:  </Text>
+		</Row>
+		<Row Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="ko_KR">
+			<Text>소유한 육지 타일:</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="ko_KR">
+			<Text>세계는 당신의 절대적인 지배를 인정합니다. 당신은 해가 지지 않는 제국을 건설하였습니다.</Text>
+		</Row>
+		
+		
+		<!-- Conquest legacy text -->
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="ko_KR">
+			<Text>지배</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="ko_KR">
+			<Text>지배 승리</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="ko_KR">
+			<Text>지배 승리</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="ko_KR">
+			<Text>지배 승리</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="ko_KR">
+			<Text>지배 승리</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="ko_KR">
+			<Text>지배 승리</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="ko_KR">
+			<Text>지배 진척도</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="ko_KR">
+			<Text>[COLOR:ResMilitaryLabelCS]지배[ENDCOLOR] 승리를 달성하기 위해서는 다른 모든 문명의 원래 [ICON_Capital] 수도를 정복해야 합니다.[NEWLINE][NEWLINE]따라서 강력한 군대를 보유하는 것이 좋습니다.</Text>
+		</Replace>
+		
 	</LocalizedText>
 </GameData>
