@@ -501,8 +501,8 @@ end
 -- ===========================================================================
 --	Barbarians
 -- ===========================================================================
-local iBarbs_Original_Weight = 0.66;
-local iBarbs_Naval_Weight = 0.5;
+local iBarbs_Original_Weight = 0.55;
+local iBarbs_Naval_Weight = 0.4;
 local iBarbs_Minimum_Horse_Turn = 15;
 
 function Check_Barbarians()
@@ -535,7 +535,7 @@ function Check_Barbarians()
 			end
 		end
 	end	
-	maxCamps = math.floor(maxCamps * 2.25)
+	maxCamps = math.floor(maxCamps * 2.25) - 2
 	
 	if BarbsSetting == 2 then
 		maxCamps = maxCamps * 3
@@ -931,7 +931,7 @@ function PlaceBarbarianCamp(x, y, playerID, tribeType)
 	local pPlot = Map.GetPlot(x,y);	
 	--ImprovementBuilder.SetImprovementType(pPlot, BARB_CAMP_ID, BARBARIAN_ID);
 
-	for i = 1, 90 do
+	for i = 0, 90 do
 		local plotScanned = GetAdjacentTiles(pPlot, i)
 		if plotScanned ~= nil then
 			if plotScanned:GetImprovementType() == BARB_CAMP_ID then
