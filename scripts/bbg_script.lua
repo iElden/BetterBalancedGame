@@ -699,7 +699,7 @@ function PlaceBarbarianCamp(x, y, playerID, tribeType)
 	local pPlot = Map.GetPlot(x,y);	
 	--ImprovementBuilder.SetImprovementType(pPlot, BARB_CAMP_ID, BARBARIAN_ID);
 
-	for i = 1, 90 do
+	for i = 0, 90 do
 		local plotScanned = GetAdjacentTiles(pPlot, i)
 		if plotScanned ~= nil then
 			if plotScanned:GetImprovementType() == BARB_CAMP_ID then
