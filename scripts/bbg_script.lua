@@ -269,8 +269,8 @@ end
 -- ===========================================================================
 --	Barbarians
 -- ===========================================================================
-local iBarbs_Original_Weight = 0.66;
-local iBarbs_Naval_Weight = 0.5;
+local iBarbs_Original_Weight = 0.55;
+local iBarbs_Naval_Weight = 0.4;
 local iBarbs_Minimum_Horse_Turn = 15;
 
 function Check_Barbarians()
@@ -303,7 +303,7 @@ function Check_Barbarians()
 			end
 		end
 	end	
-	maxCamps = math.floor(maxCamps * 2.25)
+	maxCamps = math.floor(maxCamps * 2.25) - 2
 	
 	if BarbsSetting == 2 then
 		maxCamps = maxCamps * 3
