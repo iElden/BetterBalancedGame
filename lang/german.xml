@@ -449,7 +449,7 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
 			<Text>Ausgehobene Einheiten von Stadstaaten erlangen eine Fähigkeit, die ihnen +1 [ICON_Movement] Fortbewegung gewährt. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten zusätzlich in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht ist.
-			[NEWLINE]Ausgehobene Einheiten von Stadtstaaten erhalten +3 [ICON_Strength] Kampfstärke, erhaltet zusätzlich +1 [ICON_Envoy] Gesandten im betreffenden Stadstaat, sobald ihr ein Gebäude der zweiten Stufe im Regierungsbezirk errichtet habt</Text>
+			[NEWLINE]Ausgehobene Einheiten von Stadtstaaten erhalten +3 [ICON_Strength] Kampfstärke.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
 			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit. Städte werden nicht kriegsmüde. Alle Militäreinheiten heilen vollständig, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
@@ -483,7 +483,7 @@
 			<Text>Heilige-Stätte-Bezirke erhalten +1 [ICON_Faith] von angrenzenden flachen Tundra-Feldern.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="de_DE">
-			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden flachen Tundra-Geländefeldern.</Text>
+			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden flachen Tundra-Geländefeldern {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="de_DE">
 			<Text>Verteidigende Einheiten im Gebiet der Stadt erhalten +3 [ICON_Strength] Kampfstärke. Eure anderen Städte in einem Umkreis von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
@@ -501,7 +501,7 @@
 			<Text>+{1_Value} beim Angriff</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss.  In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Verhindert den Verlust von [ICON_Food] Nahrung bei Dürre. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
+			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss. In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Verhindert den Verlust von [ICON_Food] Nahrung bei Dürre. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="de_DE">
 			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss.  In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Verhindert den Verlust von [ICON_Food] Nahrung bei Dürre. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
@@ -624,7 +624,7 @@
 			<Text>Heilige-Stätte-Bezirke erhalten +1 Glauben [ICON_Faith] durch benachbarte Wald- und Regenwald-Geländefelder.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="de_DE">
-			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Wald-Geländefeldern.</Text>
+			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Wald-Geländefeldern {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Row>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.</Text>
@@ -790,7 +790,7 @@
 			<Text>Georgische Spezialeinheit des Mittelalters. +5 [ICON_Strength] Kampfstärke beim Kampf in Hügel-Gelände. Kein Fortbewegungsmalus in Hügel-Gelände.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="de_DE">
-			<Text>Erhält [ICON_Faith] Glaube in Höhe von 50% der [ICON_STRENGTH] Grundkampfstärke einer im Kampf besiegten Einheit. Jeder [ICON_ENVOY] Gesandte, den Ihr in einen Stadtstaat mit eurer Mehrheitsreligion schickt, zählt als 2 [ICON_ENVOY] Gesandte.</Text>
+			<Text>Erhält [ICON_Faith] Glaube in Höhe von 50% der [ICON_STRENGTH] Grundkampfstärke einer im Kampf besiegten Einheit. Jeder [ICON_ENVOY] Gesandte, den Ihr in einen Stadtstaat mit eurer Mehrheitsreligion schickt, zählt als zwei [ICON_ENVOY] Gesandte.</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="de_DE">
@@ -979,13 +979,13 @@
 			<Text> Mehr [ICON_CULTURE] Kultur von Gebäuden im Theaterplatz: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="de_DE">
-			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +2 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +1 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="de_DE">
 			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="de_DE">
-			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +2 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +1 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="de_DE">
 			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
@@ -1001,19 +1001,319 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+			<Text> +2 [ICON_Strength] Kampfstärke für Einheiten auf Regenwald-, Sumpf- oder Waldfeldern. +1 [ICON_Movement] Fortbewegung sofern Sie ihren Zug dort beginnen. Beide Boni werden verdoppelt, sofern sich das Geländefeld in Eurem Territorium befindet.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+			<Text>+2 [ICON_Strength] Kampfstärke für Einheiten auf Regenwald-, Sumpf- oder Waldfeldern. +1 [ICON_Movement] Fortbewegung sofern Sie ihren Zug dort beginnen. Beide Boni werden verdoppelt, sofern sich das Geländefeld in Eurem Territorium befindet.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+			<Text>Ein einzigartiger Distrikt Vietnams der das Lager ersetzt. +1 [ICON_CULTURE] Kultur für jeden angrenzenden Bezirk. Nach Erforschung von 'Luftfahrt' erhaltet [ICON_TOURISM] in Höhe der erwirtschafteten [ICON_CULTURE] Kultur. Dieser Bezirk benötigt keine Bevölkerung, ist günstiger im Bau, kann nicht angrenzend an ein Stadtzentrum errichtet werden und zählt nicht als Spezialdistrikt.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_HOUSING] Wohnraum pro Ausbaustufe der Mauer. +2 [ICON_CULTURE] Kultur für jede Renaissance-Mauer.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+			<Text>+1 Glauben [ICON_Faith] für Geländefelder mit einer Anziehungskraft von 'Bezaubernd' oder besser.</Text>
 		</Replace>
+		<!-- Front End -->
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="de_DE">
+			<Text>Barbarenstämme</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_DESC" Language="de_DE">
+			<Text>Definiert, in welcher Form Barbaren in Eurem Spiel auftauchen.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_NAME" Language="de_DE">
+			<Text>Ausgewogen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="de_DE">
+			<Text>Rasend</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="de_DE">
+			<Text>Keine Barbaren</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_DESC" Language="de_DE">
+			<Text>Vanilla Setting</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_DESC" Language="de_DE">
+			<Text>Kavallerie-Stämme tauchen nicht vor Zug 15 auf. [NEWLINE]Die Platzierung der Lager zwischen den Spielern ist ausgewogen.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="de_DE">
+			<Text>Möge Gott gnade mit Eurer Seele haben.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="de_DE">
+			<Text>Keine Barbaren</Text>
+		</Replace>			
+
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="de_DE">
+			<Text>Voraussetzungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="de_DE">
+			<Text>Definiert, wie früh in Eurem Spiel die Siegbedingungen erfüllt werden können.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_NAME" Language="de_DE">
+			<Text>Ausgewogen f. Gathering Storm</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_NAME" Language="de_DE">
+			<Text>Ausgewogen f. Rise and Fall</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Language="de_DE">
+			<Text>Angepasst</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_NAME" Language="de_DE">
+			<Text>Legacy BBG</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" Language="de_DE">
+			<Text>Pre 4.0 BBG-Einstellungen: frühestmöglich für Kultur- und Diplomatiesieg, alle übrigen Siegvarianten auf Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="de_DE">
+			<Text>Voreingestelltes Firaxis Setting für Gathering Storm</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="de_DE">
+			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Gathering Storm:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, -25% Tourismus benötigt, um Auslandstouristen anzuziehen [NEWLINE]Diplomatiesieg: Erster Kongress im Mittelalter, erste Vergabe von Diplomatiesiegpunkten in der Renaissance [NEWLINE]Wissenschaftssieg: Leicht günstigere Projekte und eine geringe Reisezeit für die Exoplanet-Expedition.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="de_DE">
+			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Rise and Fall:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, sogar noch weniger Tourismus benötigt, um Auslandstouristen anzuziehen. [NEWLINE]Diplomatiesieg: Erster Kongress und erste Vergabe von Diplomatiesiegpunkten im Mittelalter [NEWLINE]Wissenschaftssieg: Endet mit Marks-Kolonien.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="de_DE">
+			<Text>Passt jede Siegbedingung individuell an</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="de_DE">
+			<Text>Deaktiviert alle Siegbedingungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="de_DE">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="de_DE">
+			<Text>Große Werke und Artefakte gewähren mehr Tourismus und Kultur.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="de_DE">
+			<Text>Große Werke und Artefakte gewähren mehr Tourismus und Kultur[NEWLINE]-25% Tourismus benötigt, um Auslandstouristen anzuziehen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Kultursieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: Religiöser Druck erstreckt sich 10 Felder weit</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="de_DE">
+			<Text>Religiöser Druck erstreckt sich 12 Felder weit</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="de_DE">
+			<Text>Religiöser Drucke rstreckt sich 13 Felder weit</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Religionssieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: 250 Züge (Online)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="de_DE">
+			<Text>175 Züge</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="de_DE">
+			<Text>150 Züge</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Punktesieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="de_DE">
+			<Text>Wissenschaftssieg benötigt: [NEWLINE]Mars-Reaktor[NEWLINE]Mars-Wohnmodule[NEWLINE]Mars-Hydrokultur</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="de_DE">
+			<Text>Wissenschaftssieg benötigt: [NEWLINE]Mars-Reaktor[NEWLINE]Mars-Wohnmodule</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Wissenschaftssieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="de_DE">
+			<Text>Erster Kongress im Mittelalter[NEWLINE]Erste Vergabe von Diplomatiesiegpunkten in der Renaissance</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="de_DE">
+			<Text>Erster Kongress im Mittelalter[NEWLINE]Erste Vergabe von Diplomatiesiegpunkten im Mittelalter</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Diplomatiesieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: 66% der Landmasse</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="de_DE">
+			<Text>60% der Landmasse in eurem Reich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="de_DE">
+			<Text>50% der Landmasse in eurem Reich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Territorialsieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: Einnahme aller Hauptstädte</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Herrschaftssieg</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="de_DE">
+			<Text>Nutzt Euer Militär und Euer wachsendes Reich um die Länder dieser Welt zu dominieren!</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="de_DE">
+			<Text>% der kontrollierten Landmasse</Text>
+		</Replace>
+		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="de_DE">
+			<Text>Territorial</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="de_DE">
+			<Text>Territorial</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="de_DE">
+			<Text>TerritorialSieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="de_DE">
+			<Text>TerritorialSieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="de_DE">
+			<Text>TERRITORIALSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="de_DE">
+			<Text>TERRITORIALSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="de_DE">
+			<Text>TERRITORIAL Fortschritt</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="de_DE">
+			<Text>Um einen [COLOR:ResMilitaryLabelCS]Territorial[ENDCOLOR] Sieg zu erzielen, müsst Ihr euer Reich vergrößern und eure Feinde erobern, um den größtmöglichen Anteil der Landmasse zu kontrollieren.[NEWLINE][NEWLINE]Ein starkes Militär ist äußert empfehlenswert.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="de_DE">
+			<Text>[NEWLINE][NEWLINE]Benötigter prozentualer Anteil der Landmasse um zu gewinnen:  </Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="de_DE">
+			<Text>Landfelder im Besitz:</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="de_DE">
+			<Text>Die Welt erkennt eure absolute Herrschaft an, für welche Ihr ein Imperium errichtet hat, in dem die Sonne nie untergeht.</Text>
+		</Replace>
+		
+		
+		<!-- Conquest legacy text -->
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="de_DE">
+			<Text>HERRSCHAFTSSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="de_DE">
+			<Text>HERRSCHAFTSSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="de_DE">
+			<Text>Fortschritt Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="de_DE">
+			<Text>Um einen [COLOR:ResMilitaryLabelCS]HERRSCHAFTS[ENDCOLOR] Sieg zu erzielen, müsst Ihr die ursprüngliche [ICON_Capital] Hauptstadt jeder anderen Zivilisation erobern.[NEWLINE][NEWLINE]Ein sarkes Militär ist äußert empfehlenswert</Text>
+		</Replace>
+
+		
 	</LocalizedText>
 </GameData>

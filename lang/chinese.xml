@@ -1049,19 +1049,19 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+			<Text>单位在树林，雨林或沼泽上获得+2 [ICON_Strength] 战斗力。如果在树林，雨林或沼泽开始回合则+1 [ICON_Movement] 行动力。在越南境内上述加成翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+			<Text>单位在树林，雨林或沼泽上获得+2 [ICON_Strength] 战斗力。如果在树林，雨林或沼泽开始回合则+1 [ICON_Movement] 行动力。在越南境内上述加成翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+			<Text>越南独有区域，替代军营。每和一个区域相邻则提供+1 [ICON_CULTURE] 文化值产出。解锁“飞行”科技后获得等同于区域 [ICON_CULTURE] 文化值产出的 [ICON_TOURISM] 旅游业绩。区域不需要人口，生产力更低，不能与市中心相邻，且不是一个特色区域。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+			<Text>每级城墙提供+1 [ICON_HOUSING] 住房。文艺复兴城墙提供+2 [ICON_CULTURE] 文化值。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+			<Text>魅力为“迷人”及以上的单元格提供+1 [ICON_Faith] 信仰值。</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
