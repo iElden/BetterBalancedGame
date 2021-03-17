@@ -1123,7 +1123,7 @@
 			<Text>Legacy BBG</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" Language="en_US">
-			<Text>Pre 4.0 BBG Settings: earliest possible for CV & DV, everything else is standard</Text>
+			<Text>Pre 4.0 BBG Settings: earliest possible for CV and DV, everything else is standard</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="en_US">
 			<Text>Default Firaxis Settings for GS</Text>

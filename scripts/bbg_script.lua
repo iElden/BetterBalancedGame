@@ -941,7 +941,6 @@ function PlaceBarbarianCamp(x, y, playerID, tribeType)
 		end
 	end
 
-
 	local pBarbManager = Game.GetBarbarianManager();
 	
 	
