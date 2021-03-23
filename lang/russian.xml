@@ -2,16 +2,16 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ru_RU">
-			<Text>Швеция получает 50 [ICON_Favor] единиц мирового влияния за каждого нанятого великого человека. Швеция получает +1 [ICON_GreatEngineer] очко великого инженера от каждой фабрики и +1 [ICON_GreatScientist] очко великого ученого от каждого университета, а также +50% [ICON_PRODUCTION] к производству библиотек, мастерских, университетов и фабрик. Если Швеция присутствует в игре, то начиная с промышленной эры добавляются 3 уникальных соревнования всемирного конгресса.</Text>
+			<Text>Швеция получает 50 [ICON_Favor] единиц мирового влияния за каждого нанятого великого человека. Швеция получает +1 [ICON_GreatEngineer] очко великого инженера от каждой фабрики и +1 [ICON_GreatScientist] очко великого ученого от каждого университета, а также +50% [ICON_PRODUCTION] к производству библиотек, мастерских, университетов и фабрик. Если Швеция присутствует в игре, то начиная с промышленной эры добавляются три уникальных соревнования всемирного конгресса.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ru_RU">
 			<Text>+2 [ICON_Faith] веры и +2 [ICON_GOLD] золота от рудников редких и бонусных ресурсов.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
-			<Text>Получает дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] очко перемещения. +5 [ICON_Faith] веры за каждую известную цивилизацию, включая Индию, которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в 2 раза больше усталости от войны.</Text>
+			<Text>Получает дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] очко перемещения. +5 [ICON_Faith] веры за каждую известную цивилизацию, включая Индию, которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Получает дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] очко перемещения. +5 [ICON_Faith] веры и +1 [ICON_Favor] очко мирового влияния в ход за каждую известную цивилизацию, включая Индию, которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в 2 раза больше усталости от войны.</Text>
+			<Text>Получает дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] очко перемещения. +5 [ICON_Faith] веры и +1 [ICON_Favor] очко мирового влияния в ход за каждую известную цивилизацию, включая Индию, которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="ru_RU">
@@ -39,7 +39,7 @@
 			<Text>Юниты получают +2 [ICON_RELIGION] к религиозной силе за каждый священный город, обращенный в религию Византии.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="ru_RU">
-			<Text>Юниты получают +2 [ICON_Strength] к боевой мощи or [ICON_Religion] религиозной силе за каждый священный город, обращенный в религию Византии. Византия распространяет свою религию на ближайшие города при убийстве вражеского юнита. +1 [ICON_GreatProphet] очко великого пророка от каждого города со священным местом.</Text>
+			<Text>Юниты получают +2 [ICON_Strength] к боевой мощи или [ICON_Religion] религиозной силе за каждый священный город, обращенный в религию Византии. Византия распространяет свою религию на ближайшие города при убийстве вражеского юнита. +1 [ICON_GreatProphet] очко великого пророка от каждого города со священным местом.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="ru_RU">
 			<Text>+3 очка влияния за ход. + 200 [ICON_Science] науки (на стандартной скорости) за каждый уровень вражеского шпиона, захваченного или убитого этой цивилизацией.</Text>
@@ -73,7 +73,7 @@
 			<Text>После открытия свода законов все города при основании получают дополнительное здание в центре города. (В Древнем мире это монумент).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное улучшение Голландии.[NEWLINE][NEWLINE]+1 [ICON_FOOD] пищи, +1 [ICON_Production] произвлдство и +0.5 [ICON_Housing] жилья. +1 [ICON_FOOD] пищи за соседство с польдером. Дополнительные [ICON_PRODUCTION] производство, [ICON_GOLD] золото и [ICON_FOOD] пища по мере продвижения по дереву технологий и социальных институтов. Можно построить только на клетках побережья или озера рядом с 2-мя и более проходимыми клетками суши. Увеличивает стоимость [ICON_Movement] перемещения по клетке до 3.</Text>
+			<Text>Уникальное улучшение Голландии.[NEWLINE][NEWLINE]+1 [ICON_FOOD] пищи, +1 [ICON_Production] производство и +0.5 [ICON_Housing] жилья. +1 [ICON_FOOD] пищи за соседство с польдером. Дополнительные [ICON_PRODUCTION] производство, [ICON_GOLD] золото и [ICON_FOOD] пища по мере продвижения по дереву технологий и социальных институтов. Можно построить только на клетках побережья или озера рядом с 2-мя и более проходимыми клетками суши. Увеличивает стоимость [ICON_Movement] перемещения по клетке до 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="ru_RU">
 			<Text>Игра начинается на клетке океана. Получает +1 [ICON_Citizen] население при основании первого города. Дворец получает +3 [ICON_HOUSING] жилья и +1 [ICON_AMENITIES] довольство. +2 [ICON_SCIENCE] науки и +2 [ICON_CULTURE] культуры в ход до основания первого города.</Text>
@@ -91,7 +91,7 @@
 			<Text>Соседство: Стандартный бонус к [ICON_Culture] культуре за соседство с центром города и каждый соседний район. Повышенный бонус к [ICON_Culture] культуре за каждое соседнее чудо света. Можно построить только на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>+3 [ICON_Favor] очка дипломатического влияния. Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
+			<Text>+3 [ICON_Favor] очка дипломатического влияния. Приобретение войск ГГ стоит в два раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ru_RU"> <!-- Last update: 4.2.0-->
 			<Text>Уникальное улучшение Шотландии.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] довольство, +2 [ICON_GOLD] золота и +1 [ICON_CULTURE] культура. +1 [ICON_GOLD] золото и +1 [ICON_CULTURE] культура, если расположено рядом с центром города. +1 [ICON_AMENITIES] довольство и +1 [ICON_CULTURE] культура, если расположено рядом с развлекательным комплексом. Дает дополнительные [ICON_CULTURE] культуру, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Не может быть построено на пустыне и пустынном холме. Одно на город. Клетка с полем для гольфа не может быть передана другому городу. +1 престиж.</Text>
@@ -155,7 +155,7 @@
 			<Text>+3 к [ICON_Strength] боевой мощи юнитов в пределах 6 клеток от [ICON_Capital] своей столицы</Text>	
 		</Replace>
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="ru_RU">
-			<Text>Прибрежное чудо света из 2-х клеток, каждая из которых дает +3 [ICON_Food] еды и +2 [ICON_Science] науки. Дает бонус рифа за соседство кампусу.</Text>
+			<Text>Прибрежное чудо света из двух клеток, каждая из которых дает +3 [ICON_Food] еды и +2 [ICON_Science] науки. Дает бонус рифа за соседство кампусу.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="ru_RU">
 			<Text>При первом обращении города религиозным юнитом в свою религию вы получаете 10 [ICON_SCIENCE] науки за каждого [ICON_Citizen] жителя.</Text>
@@ -173,7 +173,7 @@
         <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи. Великая стена может быть разорена (но не уничтожена) только стихийными бедствиями.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ru_RU">
-			<Text>[ICON_TechBoosted] Озарения и [ICON_CivicBoosted] вдохновения дают 60% к получению социальных институтов и технологий вместо 40%.[NEWLINE][NEWLINE]Каждое чудо света дает дополнительно +1 [ICON_FOOD] еды, +1 [ICON_PRODUCTION] производства.</Text>
+			<Text>[ICON_TechBoosted] Озарения и [ICON_CivicBoosted] вдохновения дают 60% к получению социальных институтов и технологий вместо 50%.[NEWLINE][NEWLINE]Каждое чудо света дает дополнительно +1 [ICON_FOOD] еды, +1 [ICON_PRODUCTION] производства.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="ru_RU">
 			<Text>[ICON_TechBoosted] Озарения и [ICON_CivicBoosted] вдохновения дают 50% к получению социальных институтов и технологий вместо 40%.[NEWLINE][NEWLINE]Каждое чудо света дает дополнительно +1 [ICON_FOOD] еды, +1 [ICON_PRODUCTION] производства.</Text>
@@ -314,7 +314,7 @@
 			<Text>+20% к [ICON_SCIENCE] науке и 10% к [ICON_PRODUCTION] производству во всех городах. Если в радиусе 3 клеток вокруг города имеется 5 клеток тундры или тундровых холмов, и они принадлежат игроку, то бонус удваивается. Можно построить только рядом с кампусом, в котором есть лаборатория, на клетке снега или тундры.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="ru_RU">
-			<Text>После открытия политической философии имеет на один уровень [ICON_VisLimited] дипломатической видимости больше, чем обычно, для каждой известной ей цивилизации.</Text>
+			<Text>После открытия политической философии имеет на 1 уровень [ICON_VisLimited] дипломатической видимости больше, чем обычно, для каждой известной ей цивилизации.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ru_RU">
 			<Text>+50% боевого опыта всем воздушным юнитам, созданным в этом городе. +2 ячейки для воздушных юнитов на аэродроме. После открытия технологии «Быстрое развертывание» позволяет перебрасывать наземные юниты между аэродромами, где есть аэропорты. +2 [ICON_RESOURCE_ALUMINUM] Алюминия в ход.</Text>
@@ -431,7 +431,7 @@
 			<Text>Уникальный район Рима, заменяющий акведук. Стоит меньше производства. +1 [ICON_Culture] культуры за каждые 2 соседние района.[NEWLINE][NEWLINE] Построенный рядом с рекой, озером, оазисом или горой, акведук даёт городу питьевую воду. Города без питьевой воды при постройке получают вплоть до 6 [ICON_Housing] жилья. Города с питьевой водой при постройке получают +2 [ICON_Housing] жилья. При постройке рядом с геотермальным источником даёт +1 [ICON_Amenities] довольства. Вдобавок к вышеперечисленным бонусам купальня даёт +2 [ICON_Housing] жилья и +1 [ICON_Amenities] довольства. Предотвращает потерю [ICON_Food] пищи при засухе. Должна быть построена рядом с центром города.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Рима, заменяющий акведук. Стоит меньше производства. +1 [ICON_Culture] культуры за каждые 2 соседние района.[NEWLINE][NEWLINE] Построенный рядом с рекой, озером, оазисом или горой, акведук даёт городу питьевую воду. Города без питьевой воды при постройке получают вплоть до 6 [ICON_Housing] жилья. Города с питьевой водой при постройке получают +2 [ICON_Housing] жилья. Вдобавок к вышеперечисленным бонусам купальня даёт +2 [ICON_Housing] жилья и +1 [ICON_Amenities] довольства. Должна быть построена рядом с центром города.</Text>
+			<Text>Уникальный район Рима, заменяющий акведук. Стоит меньше производства. +1 [ICON_Culture] культуры за каждые два соседние района.[NEWLINE][NEWLINE] Построенный рядом с рекой, озером, оазисом или горой, акведук даёт городу питьевую воду. Города без питьевой воды при постройке получают вплоть до 6 [ICON_Housing] жилья. Города с питьевой водой при постройке получают +2 [ICON_Housing] жилья. Вдобавок к вышеперечисленным бонусам купальня даёт +2 [ICON_Housing] жилья и +1 [ICON_Amenities] довольства. Должна быть построена рядом с центром города.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное улучшение Египта.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры, +1 [ICON_Culture] культура и +2 престижа.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_CULTURE] культуры рядом с чудом света. +1 [ICON_FOOD] пищи и +1 [ICON_PRODUCTION] производства в пустыне или +1 [ICON_CULTURE] культуры на пойме.[NEWLINE][NEWLINE]Дополнительная [ICON_CULTURE] культура при открытии Дипломатической службы. Даёт [ICON_TOURISM] туризм после изучения Полёта. Нельзя построить рядом с другим сфинксом, а также на снегу.</Text>
@@ -470,10 +470,10 @@
 			<Text>+4 [ICON_FAITH] веры от геотермальных полей и вулканической почвы.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
-			<Text>Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
+			<Text>Приобретение войск ГГ стоит в два раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. Дает 2 посла и +2 влияния в ход на получение послов.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный религиозный район России. Заменяет священное место и дешевле стоит.[NEWLINE][NEWLINE]Даёт очки великих [ICON_GREATWRITER] писателей, [ICON_GREATArtist] художников и [ICON_GREATMusician] музыкантов, если в городе есть театральная площадь. Каждый раз, когда в городе израсходован великий человек, его границы растут на 1 клетку.</Text>
+			<Text>Уникальный религиозный район России. Заменяет священное место и дешевле стоит.[NEWLINE][NEWLINE]Даёт очки великих [ICON_GREATWRITER] писателей, [ICON_GREATArtist] художников и [ICON_GREATMusician] музыкантов, если в городе есть театральная площадь. Каждый раз, когда в городе израсходован великий человек, его границы растут на одну клетку.</Text>
 		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="ru_RU">
 			<Text>+10 боевой мощи против дальнобойных атак.</Text>
@@ -500,13 +500,13 @@
 			<Text>Как первая цивилизация в истории человечества, шумеры сразу начинают блистать. Боевые колесницы и Зиккураты доступны с самого начала игры, а рост и развитие должны быть быстрыми благодаря Колыбели Цивализации. Гильгамеш будет строить боевые колесницы и нападать на варварские лагеря, чтобы воспользоваться своей способностью. Он также усеет берега ближайших рек зиккуратами, чтобы быстро повысить уровень [ICON_Science] науки, [ICON_Culture] культуры и даже [ICON_Faith] веры, при хорошем планировании городов.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ru_RU">
-			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в 2 раза дешевле.</Text>
+			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в 2 раза дешевле.</Text>
+			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в 2 раза дешевле.</Text>
+			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Amenities] довольства от всех соседних с этим чудом озерных клеток. +1 [ICON_Food] пищи, +1 [ICON_Production] производства и +2 [ICON_CULTURE] культуры всем озерным клеткам в ваших городах. Может быть построено на озере рядом с землёй.</Text>
@@ -635,7 +635,7 @@
 			<Text>Юнит противовоздушной обороны эпохи Современности. Защищает от атак с воздуха в пределах 1 клетки от своего местоположения.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ru_RU">
-			<Text>Канадский уникальный юнит эпохи Современности. Может создавать национальный парк. +5 к [ICON_Strength] боевой мощи в 4 клетках от нац. парка. Ещё +5 к [ICON_Strength] боевой мощи рядом с дружественным национальным парком.</Text>
+			<Text>Канадский уникальный юнит эпохи Современности. Может создавать национальный парк. +5 к [ICON_Strength] боевой мощи в 4 клетках от нац. парка. Ещё +5 к [ICON_Strength] боевой мощи в 4 клетках от собственного нац. парка.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="ru_RU">
 			<Text>Дает ячейку шпиона. +50% к [ICON_Tourism] туризму от любых источников.</Text>
@@ -645,17 +645,17 @@
 		</Replace>
 		
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить шато (уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и [ICON_FOOD] пище за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
+			<Text>Уникальное улучшение Франции.[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и +1 [ICON_FOOD] пища за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить шато (уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и [ICON_FOOD] пище за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
+			<Text>Уникальное улучшение Франции.[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и +1 [ICON_FOOD] пища за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Можно создавать флоты и армады раньше обычного (Наемники и Меркантилизм). Бонусы от межконтинентальных [ICON_TradeRoute] торговых путей ( в [ICON_Gold] золоте, если к другим цивилизациям; в [ICON_Food] пище и [ICON_Production] производстве, если внутри страны. +2 лояльности за ход, если рядом с центром города построена миссия, а сам город не находится на континенте, где расположена [ICON_Capital] столица.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Стоимость миссионеров снижена на 30%. Инквизиторы могут очищать от ереси на 1 раз больше. Инквизиторы ликвидируют присутствие других религий на 100%. боевые юниты получают + 4 [ICON_Strength] боевой мощи против игроков с другой религией.</Text>
+			<Text>Стоимость миссионеров снижена на 30%. Инквизиторы могут очищать от ереси на один раз больше. Инквизиторы ликвидируют присутствие других религий на 100%. боевые юниты получают + 4 [ICON_Strength] боевой мощи против игроков с другой религией.</Text>
 		</Replace>
 		<!--======  LATEST VERSION  ======-->
 		<!-- Khmer -->
@@ -792,7 +792,7 @@
 			<Text>Можно покупать легкую, тяжелую и дальнобойную кавалерию за [ICON_FAITH] веру</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям создавать курганы (Уникально для Скифии).[NEWLINE][NEWLINE]+1 [ICON_Faith] веры. +1 [ICON_Gold] золота. [NEWLINE]+1 [ICON_Faith] веры за каждое соседнее пастбище.</Text>
+			<Text>Уникальное улучшение Скифии.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_Gold] золото. [NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_PRODUCTION] производство за каждое соседнее пастбище.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание Грузии, которое заменяет первые стены и защищает сильнее их. Дает +3 [ICON_TOURISM] ед. туризма после исследования социального института «Охрана природы». Дает +3 [ICON_Faith] ед. веры.</Text>
@@ -805,7 +805,7 @@
 			<Text>Каждый поверженный Вами юнит противника дает [ICON_FAITH] веру в количестве 50% от базовой [ICON_STRENGTH] боевой мощи поверженного юнита. Каждый ваш [ICON_ENVOY] посол в городе-государстве с вашей доминирующей религией считается за двух [ICON_ENVOY] послов. (Должна быть доминирующая религия).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ru_RU">
-			<Text>Дополнительная универсальная ячейка политического курса при любом правительстве.[NEWLINE][NEWLINE]При постройке амфитеатра получите 1 посла.</Text>
+			<Text>Дополнительная универсальная ячейка политического курса при любом правительстве после открытия "Политической философии".[NEWLINE][NEWLINE]При постройке амфитеатра получает посла.</Text>
 		</Replace>
 		<!-- Newest -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="ru_RU">
@@ -815,7 +815,7 @@
 			<Text>Религия, основанная Польшей, начинает преобладать в соседнем городе, который теряет клетку в результате культурного захвата. Священные места получают стандартный бонус веры от соседства с районами. Все реликвии дают бонус к вере (+2), культуре (+2) и золоту (+4). Получите [ICON_GreatWork_Relic] реликвию при основании религии и еще одну при получении всех возможных верований.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное здание ацтеков. Дает [ICON_Amenities] довольство, +3 очка [ICON_Culture] культуры и 1 очко [ICON_GreatGeneral] великого полководца.</Text>
+			<Text>Уникальное здание ацтеков. Дает [ICON_Amenities] довольство, +3 очка [ICON_Culture] культуры и очко [ICON_GreatGeneral] великого полководца.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы. Занимает три клетки. Дает +2 [ICON_FOOD] еды, +2 [ICON_PRODUCTION] производства и +2 [ICON_SCIENCE] науки.</Text>
@@ -848,7 +848,7 @@
 			<Text>Чудо природы на две непроходимые клетки. Появляется на побережье и дает +2 [ICON_Science] науки и +1 [ICON_FOOD] пищи соседним клеткам.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="ru_RU"> 
-			<Text>Уникальный китайский юнит Средневековья, заменяющий арбалетчиков. [ICON_Range] дальность – 2, +7 [ICON_Ranged] к мощи выстрела по соседним юнитам.</Text>
+			<Text>Уникальный китайский юнит Средневековья, заменяющий арбалетчиков. +7 [ICON_Ranged] к мощи выстрела по соседним юнитам.</Text>
 		</Replace>
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="ru_RU">
 			<Text>В яблочко!</Text>
@@ -958,20 +958,319 @@
 		<Text>Военные юниты получают +3 к [ICON_Strength] боевой мощи на территории дружественных городов, исповедующих эту религию.</Text>
 	</Replace>
 	<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		<Text>+2 к [ICON_Strength] боевой мощи юнитов в сражениях на лесах, тропических лесах и болотах. +1 [ICON_Movement] к перемещению, если они начинают ход на этих клетках. Оба бонуса удваиваются на вашей территории.</Text>
 	</Replace>
 	<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		<Text>+2 к [ICON_Strength] боевой мощи юнитов в сражениях на лесах, тропических лесах и болотах. +1 [ICON_Movement] к перемещению, если они начинают ход на этих клетках. Оба бонуса удваиваются на вашей территории.</Text>
 	</Replace>
 	<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+		<Text>Уникальный район Вьетнама, заменяющий военный лагерь. +1 [ICON_CULTURE] культура за каждый соседний район. После исследования технологии "Авиация" дает [ICON_TOURISM] туризм, равный [ICON_CULTURE] очкам культуры. Не требует населения. Не является специализированным районом. Нельзя построить рядом с центром города.</Text>
 	</Replace>
 	<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+		<Text>Дает [ICON_HOUSING] жилье за каждый уровень стен. +2 [ICON_CULTURE] культуры за каждую стену Возрождения.</Text>
 	</Replace>
 	<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="ru_RU">
-		<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+		<Text>+1 вера [ICON_Faith] на клетках с престижем Притягивающий и выше.</Text>
 	</Replace>
 
+    <Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="ru_RU">
+      <Text>Варвары</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARBARIANS_SETTING_DESC" Language="ru_RU">
+      <Text>Определяет алгоритм появления варваров в игре.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартные</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_1_NAME" Language="ru_RU">
+      <Text>Балансные</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="ru_RU">
+      <Text>Яростные</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="ru_RU">
+      <Text>Без варваров</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_0_DESC" Language="ru_RU">
+      <Text>Оригинальная настройка Firaxis</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_1_DESC" Language="ru_RU">
+      <Text>Лагеря с кавалерией не появятся до 15 хода.[NEWLINE]Лагеря распределяются между игроками равномерно.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="ru_RU">
+      <Text>Да помилует Бог вашу душу.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="ru_RU">
+      <Text>Отключить варваров</Text>
+    </Replace>
+
+
+
+    <Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="ru_RU">
+      <Text>Требования</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="ru_RU">
+      <Text>Определяет, как скоро в игре будут выполнены условия победы.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандарт</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_1_NAME" Language="ru_RU">
+      <Text>ГС баланс</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_2_NAME" Language="ru_RU">
+      <Text>РФ баланс</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Language="ru_RU">
+      <Text>Особый</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_NAME" Language="ru_RU">
+      <Text>Старый ББГ</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" Language="ru_RU">
+      <Text>Настройки до 4.0 ББГ: как можно раньше для культурной и дипломатической, все остальное стандартно.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="ru_RU">
+      <Text>Настройки Firaxis по умолчанию для ГС</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="ru_RU">
+      <Text>Баланс победы по таймингам ГС:[NEWLINE]Культурная: больше культуры/туризма от шедевров, меньше туризма на привлечение туристов [NEWLINE]Дипломатическая: первый конгресс в Средневековье, первое голосование на очки в Ренессансе [NEWLINE]Научная: проекты немного дешевле и дистанция полета меньше.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="ru_RU">
+      <Text>Баланс победы по таймингам РФ:[NEWLINE]Культурная: больше культуры/туризма от шедевров, еще меньше туризма на привлечение туристов [NEWLINE]Дипломатическая: первый конгресс и голосование на очки в Средневековье [NEWLINE]Научная: запуск колонии на Марс является условием победы.</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="ru_RU">
+      <Text>Отрегулировать каждое условие победы индивидуально</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="ru_RU">
+      <Text>Выключить все виды побед</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="ru_RU">
+      <Text>Рано</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="ru_RU">
+      <Text>Как можно раньше</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="ru_RU">
+      <Text>Рано</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="ru_RU">
+      <Text>Как можно раньше</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="ru_RU">
+      <Text>Рано</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="ru_RU">
+      <Text>Как можно раньше</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="ru_RU">
+      <Text>Рано</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="ru_RU">
+      <Text>Как можно раньше</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="ru_RU">
+      <Text>Рано</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="ru_RU">
+      <Text>Как можно раньше</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="ru_RU">
+      <Text>Рано</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="ru_RU">
+      <Text>Как можно раньше</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="ru_RU">
+      <Text>Стандартно</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="ru_RU">
+      <Text>Выключено</Text>
+    </Replace>
+
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="ru_RU">
+      <Text>Шедевры и артефакты дают больше туризма</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="ru_RU">
+      <Text>Шедевры и артефакты дают больше туризма и культуры.[NEWLINE]Необходимое количество туристов уменьшено на 25%</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без культурной победы</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis: Религиозное давление распространяется на 10 клеток</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="ru_RU">
+      <Text>Религиозное давление распространяется на 12 клеток</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="ru_RU">
+      <Text>Религиозное давление распространяется на 13 клеток</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без религиозной победы</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis: 250 ходов (Сетевая скорость)</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="ru_RU">
+      <Text>175 ходов</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="ru_RU">
+      <Text>150 ходов</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без победы по счету</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="ru_RU">
+      <Text>Для научной победы требуется: [NEWLINE]Запуск реакторного модуля[NEWLINE]Запуск жилого модуля[NEWLINE]Запуск гидропонного модуля</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="ru_RU">
+      <Text>Для научной победы требуется: [NEWLINE]Запуск реакторного модуля[NEWLINE]Запуск жилого модуля</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без научной победы</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="ru_RU">
+      <Text>Первый конгресс в Средневековье[NEWLINE]Первое голосование на очки в Ренессансе</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="ru_RU">
+      <Text>Первый конгресс в Средневековье[NEWLINE]Первое голосование на очки в Средневековье</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без дипломатической победы</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis: 66% от возникших земель</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="ru_RU">
+      <Text>60% от возникших земель в вашей империи</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="ru_RU">
+      <Text>50% от возникших земель в вашей империи</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без территориальной победы</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="ru_RU">
+      <Text>Стандартная настройка Firaxis: Захватить все столицы</Text>
+    </Replace>
+    <Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="ru_RU">
+      <Text>Без военной победы</Text>
+    </Replace>
+
+    <Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="ru_RU">
+      <Text>Используйте армию и рост империи в своих интересах, чтобы доминировать над землями!</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="ru_RU">
+      <Text>% от возникших земель под контролем</Text>
+    </Replace>
+    <Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="ru_RU">
+      <Text>Территориальная</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="ru_RU">
+      <Text>Территориальная</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="ru_RU">
+      <Text>Территориальная Победа</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="ru_RU">
+      <Text>Территориальная Победа</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="ru_RU">
+      <Text>ТЕРРИТОРИАЛЬНАЯ ПОБЕДА</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="ru_RU">
+      <Text>ТЕРРИТОРИАЛЬНАЯ ПОБЕДА</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="ru_RU">
+      <Text>ТЕРРИТОРИАЛЬНЫЙ ПРОГРЕСС</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="ru_RU">
+      <Text>Чтобы достичь [COLOR:ResMilitaryLabelCS]Территориальной[ENDCOLOR] победы, вам нужно расширять свою империю и побеждать врагов, чтобы контролировать наибольшее количество земель.[NEWLINE][NEWLINE]Рекомендуется иметь сильную армию.</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="ru_RU">
+      <Text>[NEWLINE][NEWLINE]Требуемое общее количество земель на победу: </Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="ru_RU">
+      <Text>Клеток земли под контролем:</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="ru_RU">
+      <Text>Мир признает ваше абсолютное господство, потому что вы построили империю, над которой никогда не заходит солнце!</Text>
+    </Replace>
+
+
+    <!-- Conquest legacy text -->
+    <Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="ru_RU">
+      <Text>Военная</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="ru_RU">
+      <Text>Военная победа</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="ru_RU">
+      <Text>Военная Победа</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="ru_RU">
+      <Text>Военная Победа</Text>
+    </Replace>
+    <Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="ru_RU">
+      <Text>ВОЕННАЯ ПОБЕДА</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="ru_RU">
+      <Text>ВОЕННАЯ ПОБЕДА</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="ru_RU">
+      <Text>Военный Прогресс</Text>
+    </Replace>
+    <Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="ru_RU">
+      <Text>Чтобы достичь [COLOR:ResMilitaryLabelCS]Военной[ENDCOLOR] победы, вам нужно захватить оригинальные [ICON_Capital] столицы всех других цивилизаций.[NEWLINE][NEWLINE]Рекомендуется иметь сильную армию.</Text>
+    </Replace>  
   </LocalizedText>
 </GameData>
