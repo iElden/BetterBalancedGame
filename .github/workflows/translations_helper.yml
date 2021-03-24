@@ -1,0 +1,38 @@
+# This workflow runs the masseelch/BBGTranslationChecker Tool against the current translations. The generated report is then sent to the translators.
+name: Translation Helper
+
+on:
+  # Triggers the workflow on push or pull request events for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Might be needed later
+  # workflow_dispatch:
+
+jobs:
+  # This workflow has two steps:
+  # - run the checker tool
+  # - sent the output to the translators
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      # Check-out the repo
+      - uses: actions/checkout@v2
+      
+      # Get the tool
+      - name: Install BBGTranslationChecker
+        run: wget -qO- https://github.com/masseelch/BBGTranslationChecker/releases/latest/download/linux.tar.gz | tar xvz -C $GITHUB_WORKSPACE/
+
+      # Run the tool on the lang folder
+      - name: Check Translations
+        run: $GITHUB_WORKSPACE/bbg-translation-checker --source $GITHUB_WORKSPACE/lang --truth english.xml --output $GITHUB_WORKSPACE/checker-reports
+
+      # Upload the artifacts to keep them available for download.
+      - name: Upload Translation Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: translation-checker-reports
+          path: ${{ github.workspace }}/checker-reports
+          retention-days: 15
