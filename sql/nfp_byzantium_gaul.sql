@@ -9,6 +9,10 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BYZANTIUM_COMBAT_HOLY_C
 -- Delete Byzantium religious spread (script will do it)
 DELETE FROM Modifiers WHERE ModifierId='BYZANTIUM_PRESSURE_KILLS';
 
+-- Reduce Tagma bonus to +2 (from +4)
+UPDATE ModifierArguments SET Value=2 WHERE ModifierId='TAGMA_COMBAT_STRENGTH' AND Name='Amount';
+UPDATE ModifierArguments SET Value=2 WHERE ModifierId='TAGMA_RELIGIOUS_COMBAT' AND Name='Amount';
+
 
 --==================
 -- Gaul
