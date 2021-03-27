@@ -35,14 +35,14 @@ INSERT OR IGNORE INTO GreatPersonIndividualBirthModifiers
 	FROM (SELECT * FROM GreatPersonIndividuals WHERE GreatPersonClassType='GREAT_PERSON_CLASS_GENERAL');
 
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HYPASPIST_SIEGE_BONUS' AND Name='Amount';
--- 25% Science from kills
+-- 25% Science from kills (online speed)
 INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_LEADER_TO_WORLDS_END', 'SCIENCE_ON_KILLS_BBG');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('SCIENCE_ON_KILLS_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES
-		('SCIENCE_ON_KILLS_BBG', 'PercentDefeatedStrength', '25'),
+		('SCIENCE_ON_KILLS_BBG', 'PercentDefeatedStrength', '50'),
 		('SCIENCE_ON_KILLS_BBG', 'YieldType', 'YIELD_SCIENCE');
 -- +20% Production for 10 turns after conquering a city
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
