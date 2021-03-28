@@ -42,6 +42,7 @@ local iReligion_ByzantiumRange = 90; -- In tiles covered, 90 tiles covered = 5 t
 local iReligion_ByzantiumMultiplier = 5; -- multipler X unit base combat strength
 
 local iTrait_GilgameshPillageRange = 6; -- In Radius 6 anything less than 6 excluding 6
+local iTrait_GilgameshXPRange = 6; -- In Radius 6 anything less than 6 excluding 6
 
 local iDomination_level = 0.60;
 
@@ -87,6 +88,126 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 			local religionType = pAttackerReligion:GetReligionTypeCreated()
 			if x ~= nil and y ~= nil and power ~= nil and religionType ~= nil and religionType ~= -1 then
 				ApplyByzantiumTrait(x,y,power,religionType,attackerPlayerID)
+			end
+		end
+	end
+	
+	-- Gilga XP Sharing, Gilga is not attacker or defender
+	local pDiplomacyAttacker:table = pAttackerPlayer:GetDiplomacy();
+	local pDiplomacyDefender:table = pDefenderPlayer:GetDiplomacy();
+		
+	for _, iPlayerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
+		local pCheckedPlayer = Players[iPlayerID]
+		if iPlayerID ~= attackerUnitID and iPlayerID ~= defenderPlayerID then
+			if PlayerConfigurations[iPlayerID]:GetLeaderTypeName() == "LEADER_GILGAMESH" then
+				-- Attacker is allied with Gilgamesh
+				if pDiplomacyAttacker:HasAllied(iPlayerID) == true and pAttackingUnit ~= nil then
+					local plot = Map.GetPlot(pAttackingUnit:GetX(), pAttackingUnit:GetY())
+					local iPlotIndex = plot:GetIndex()
+					-- Is Gilga also at war with Defender ?
+					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
+					if (pDiploGilga:IsAtWarWith(defenderPlayerID) == true) then
+					
+					-- does Gilgamesh has one his unit nearby ?
+					local playerGilgaUnits;
+					playerGilgaUnits = pCheckedPlayer:GetUnits();	
+					for k, unit in playerGilgaUnits:Members() do
+						local unitGilgaPlot = Map.GetPlot(unit:GetX(), unit:GetY())
+						local iGilgaPlotIndex = unitGilgaPlot:GetIndex()
+						local distance_check =  Map.GetPlotDistance(iPlotIndex, iGilgaPlotIndex);
+						print("OnCombat - distance_check ",distance_check, UnitManager.GetTypeName(unit))
+						if distance_check ~= nil and distance_check > -1 then
+							if distance_check < iTrait_GilgameshXPRange then
+								ApplyGilgameshTrait_XP(iPlayerID,unit,unitGilgaPlot,false)
+							end
+						end
+					end	
+					end
+				end
+				
+				-- Defender is allied with Gilgamesh
+				if pDiplomacyDefender:HasAllied(iPlayerID) == true and pDefendingUnit ~= nil then
+					local plot = Map.GetPlot(pDefendingUnit:GetX(), pDefendingUnit:GetY())
+					local iPlotIndex = plot:GetIndex()
+					-- Is Gilga also at war with Defender ?
+					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
+					if (pDiploGilga:IsAtWarWith(attackerPlayerID) == true) then
+					
+					-- does Gilgamesh has one his unit nearby ?
+					local playerGilgaUnits;
+					playerGilgaUnits = pCheckedPlayer:GetUnits();	
+					for k, unit in playerGilgaUnits:Members() do
+						local unitGilgaPlot = Map.GetPlot(unit:GetX(), unit:GetY())
+						local iGilgaPlotIndex = unitGilgaPlot:GetIndex()
+						local distance_check =  Map.GetPlotDistance(iPlotIndex, iGilgaPlotIndex);
+						print("OnCombat - distance_check ",distance_check, UnitManager.GetTypeName(unit))
+						if distance_check ~= nil and distance_check > -1 then
+							if distance_check < iTrait_GilgameshXPRange then
+								ApplyGilgameshTrait_XP(iPlayerID,unit,unitGilgaPlot,false)
+							end
+						end
+					end	
+					end
+				end				
+			end
+		end
+	end	
+
+	-- Gilga XP Sharing, Gilga is attacker or defender
+	if PlayerConfigurations[attackerPlayerID]:GetLeaderTypeName() == "LEADER_GILGAMESH" then
+		for _, iPlayerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
+			local pCheckedPlayer = Players[iPlayerID]
+			if iPlayerID ~= attackerPlayerID and iPlayerID ~= defenderPlayerID then
+				if pDiplomacyAttacker:HasAllied(iPlayerID) == true and pAttackingUnit ~= nil then
+					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
+					if (pDiploGilga:IsAtWarWith(defenderPlayerID) == true) then
+						local plot = Map.GetPlot(pAttackingUnit:GetX(), pAttackingUnit:GetY())
+						local iPlotIndex = plot:GetIndex()
+					-- has the ally some unit nearby
+						local playerGilgaUnits;
+						playerGilgaUnits = pCheckedPlayer:GetUnits();	
+						for k, unit in playerGilgaUnits:Members() do
+							local unitGilgaPlot = Map.GetPlot(unit:GetX(), unit:GetY())
+							local iGilgaPlotIndex = unitGilgaPlot:GetIndex()
+							local distance_check =  Map.GetPlotDistance(iPlotIndex, iGilgaPlotIndex);
+							print("OnCombat - distance_check ",distance_check, UnitManager.GetTypeName(unit))
+							if distance_check ~= nil and distance_check > -1 then
+								if distance_check < iTrait_GilgameshXPRange then
+									ApplyGilgameshTrait_XP(iPlayerID,unit,unitGilgaPlot,true)
+								end
+							end
+						end	
+					end
+				end
+			end
+		end
+	end
+	
+	if PlayerConfigurations[defenderPlayerID]:GetLeaderTypeName() == "LEADER_GILGAMESH" then
+		for _, iPlayerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
+			local pCheckedPlayer = Players[iPlayerID]
+			if iPlayerID ~= attackerPlayerID and iPlayerID ~= defenderPlayerID then
+				if pDiplomacyDefender:HasAllied(iPlayerID) == true and pDefendingUnit ~= nil then
+					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
+					if (pDiploGilga:IsAtWarWith(attackerPlayerID) == true) then
+						local plot = Map.GetPlot(pDefendingUnit:GetX(), pDefendingUnit:GetY())
+						local iPlotIndex = plot:GetIndex()
+					-- has the ally some unit nearby
+						local playerGilgaUnits;
+						playerGilgaUnits = pCheckedPlayer:GetUnits();	
+						for k, unit in playerGilgaUnits:Members() do
+							local unitGilgaPlot = Map.GetPlot(unit:GetX(), unit:GetY())
+							local iGilgaPlotIndex = unitGilgaPlot:GetIndex()
+							local distance_check =  Map.GetPlotDistance(iPlotIndex, iGilgaPlotIndex);
+							print("OnCombat - distance_check ",distance_check, UnitManager.GetTypeName(unit))
+							if distance_check ~= nil and distance_check > -1 then
+								if distance_check < iTrait_GilgameshXPRange then
+									ApplyGilgameshTrait_XP(iPlayerID,unit,unitGilgaPlot,true)
+								end
+							end
+						end	
+					end
+				end
 			end
 		end
 	end
@@ -219,6 +340,7 @@ function ApplyHammurabiTrait(playerID, iTechBoosted)
 			if cost ~= nil and iSpeedCostMultiplier ~= nil then
 				cost = cost * iSpeedCostMultiplier/100
 			end
+			print("ApplyHammurabiTrait bNotGainedViaTeam == true",bNotGainedViaTeam,TechBoosted.Index,cost)
 			pPlayerTechs:SetResearchProgress(TechBoosted.Index,cost)
 			return
 		end
@@ -390,6 +512,35 @@ function ApplyGilgameshTrait_Pillage(iPlayer,refunit,pPlot,eImprovement,eBuildin
 		Visibility = RevealedState.VISIBLE;
 	}
 	Game.AddWorldViewText(messageData);
+end
+
+function ApplyGilgameshTrait_XP(iPlayer,pUnit,pPlot,isGilgaUnit)
+	local XPAmount = 2
+	local pPlayer = Players[iPlayer]
+	
+	if (pPlayer == nil) or (pUnit == nil) then
+		return
+	end
+		
+	local unitXP = pUnit:GetExperience()
+	unitXP:ChangeExperience(XPAmount)
+
+		
+	local message:string  = "+"..tostring(XPAmount)
+	message = message.."XP"
+	
+	if isGilgaUnit == false then
+		return
+	end
+	
+	local messageData : table = {
+		MessageType = 0;
+		MessageText = message;
+		PlotX = pPlot:GetX();
+		PlotY = pPlot:GetY();
+		Visibility = RevealedState.VISIBLE;
+	}
+	--Game.AddWorldViewText(messageData);
 end
 
 -- ===========================================================================
