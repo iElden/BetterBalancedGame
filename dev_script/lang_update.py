@@ -21,12 +21,16 @@ def write_file(tag, text, file, lang_tag):
     assert len(f) < 2
     if f:
         txt = re.sub(
-                rf"""^\s*<Replace\s*Tag=\"{tag}\"\s*Language=\"[a-zA-Z_]+\">\s*<Text>.*?<\/Text>\s*<\/Replace>""",
-                f"\t\t<Replace Tag=\"{tag}\" Language=\"{lang_tag}\">\n\t\t\t<Text>{text}<\/Text>\n\t\t\t<\/Replace>",
-                txt, re.MULTILINE
+                rf"""\s*<Replace\s*Tag=\"{tag}\"\s*Language=\"[a-zA-Z_]+\">\s*<Text>.*?<\/Text>\s*<\/Replace>""",
+                f"\n\t\t<Replace Tag=\"{tag}\" Language=\"{lang_tag}\">\n\t\t\t<Text>{text}</Text>\n\t\t</Replace>",
+                txt,
         )
     else:
-        print(f"Don't find line in {file} for {tag}")
+        txt = re.sub(
+                rf"""\s*</LocalizedText>""",
+                f"\n\t\t<Replace Tag=\"{tag}\" Language=\"{lang_tag}\">\n\t\t\t<Text>{text}</Text>\n\t\t</Replace>\n\t</LocalizedText>",
+                txt,
+        )
     print(f"Write file {file}")
     with open(file, 'w', encoding='utf-8') as fd:
         fd.write(txt)
@@ -40,7 +44,7 @@ def main():
     text = argv[2]
     write_file(tag, text, ENGLISH_PATH, ENGLISH_TAG)
     for k, v in FILES.items():
-        write_file(tag, "[COLOR_RED]TO_TRANSLATE:" + text, k, v)
+        write_file(tag, "[COLOR_RED]TO_TRANSLATE: " + text, k, v)
 
 
 
