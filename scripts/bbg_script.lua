@@ -103,6 +103,7 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 				-- Attacker is allied with Gilgamesh
 				if pDiplomacyAttacker:HasAllied(iPlayerID) == true and pAttackingUnit ~= nil then
 					local plot = Map.GetPlot(pAttackingUnit:GetX(), pAttackingUnit:GetY())
+					if plot ~= nil then
 					local iPlotIndex = plot:GetIndex()
 					-- Is Gilga also at war with Defender ?
 					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
@@ -123,11 +124,13 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 						end
 					end	
 					end
+					end
 				end
 				
 				-- Defender is allied with Gilgamesh
 				if pDiplomacyDefender:HasAllied(iPlayerID) == true and pDefendingUnit ~= nil then
 					local plot = Map.GetPlot(pDefendingUnit:GetX(), pDefendingUnit:GetY())
+					if plot ~= nil then
 					local iPlotIndex = plot:GetIndex()
 					-- Is Gilga also at war with Defender ?
 					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
@@ -147,6 +150,7 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 							end
 						end
 					end	
+					end
 					end
 				end				
 			end
@@ -162,6 +166,7 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
 					if (pDiploGilga:IsAtWarWith(defenderPlayerID) == true) then
 						local plot = Map.GetPlot(pAttackingUnit:GetX(), pAttackingUnit:GetY())
+						if plot ~= nil then
 						local iPlotIndex = plot:GetIndex()
 					-- has the ally some unit nearby
 						local playerGilgaUnits;
@@ -177,6 +182,7 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 								end
 							end
 						end	
+						end
 					end
 				end
 			end
@@ -191,6 +197,7 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 					local pDiploGilga = pCheckedPlayer:GetDiplomacy()
 					if (pDiploGilga:IsAtWarWith(attackerPlayerID) == true) then
 						local plot = Map.GetPlot(pDefendingUnit:GetX(), pDefendingUnit:GetY())
+						if plot ~= nil then
 						local iPlotIndex = plot:GetIndex()
 					-- has the ally some unit nearby
 						local playerGilgaUnits;
@@ -205,7 +212,8 @@ function OnCombatOccurred(attackerPlayerID :number, attackerUnitID :number, defe
 									ApplyGilgameshTrait_XP(iPlayerID,unit,unitGilgaPlot,true)
 								end
 							end
-						end	
+						end
+						end		
 					end
 				end
 			end
