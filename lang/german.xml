@@ -142,7 +142,7 @@
 			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="de_DE">
 			<Text>+4 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
@@ -452,7 +452,7 @@
 			[NEWLINE]Ausgehobene Einheiten von Stadtstaaten erhalten +3 [ICON_Strength] Kampfstärke.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
-			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit. Städte werden nicht kriegsmüde. Alle Militäreinheiten heilen vollständig, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
@@ -697,7 +697,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Kann Flotten (Söldner-Ausrichtung) und Armadas (Merkantilismus-Ausrichtung) früher formen. [ICON_TradeRoute] Internationale Handelsrouten zwsichen mehreren Kontinenten erhalten zusätzlich [ICON_Gold] Gold. Zusätzlich [ICON_Food] Nahrung und [ICON_Production] Produktion für Handelsrouten zwischen Euren Städten. +2 Loyalität pro Runde für Städte mit einer Mission Modernisierung auf einem anderen Kontinent als Eure [ICON_Capital] ]Hauptstadt und neben dem Stadtzentrum</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Missionare kosten 30% weniger [ICON_Faith] Glauben. Inquisitors können Ketzerei ein mal mehr entfernen und eliminieren 100% des Einflusses fremder Religionen. Militärsiche Einheiten erhalten +4 [ICON_Strength] Kampfstärke gegen Einheiten anderer Civilizationen mit fremder Mehrheitsreligion.</Text>
@@ -790,7 +790,7 @@
 			<Text>Georgische Spezialeinheit des Mittelalters. +5 [ICON_Strength] Kampfstärke beim Kampf in Hügel-Gelände. Kein Fortbewegungsmalus in Hügel-Gelände.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="de_DE">
-			<Text>Erhält [ICON_Faith] Glaube in Höhe von 50% der [ICON_STRENGTH] Grundkampfstärke einer im Kampf besiegten Einheit. Jeder [ICON_ENVOY] Gesandte, den Ihr in einen Stadtstaat mit eurer Mehrheitsreligion schickt, zählt als zwei [ICON_ENVOY] Gesandte.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="de_DE">
@@ -1313,7 +1313,26 @@
 		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="de_DE">
 			<Text>Um einen [COLOR:ResMilitaryLabelCS]HERRSCHAFTS[ENDCOLOR] Sieg zu erzielen, müsst Ihr die ursprüngliche [ICON_Capital] Hauptstadt jeder anderen Zivilisation erobern.[NEWLINE][NEWLINE]Ein sarkes Militär ist äußert empfehlenswert</Text>
 		</Replace>
-
-		
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="de_DE">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

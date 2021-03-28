@@ -406,9 +406,9 @@
             <Text>徴兵されたユニットの[ICON_Movement]移動力+1。徴兵されたユニットのアップグレードに必要な資源と[ICON_GOLD]ゴールドが75%減少。都市国家から徴兵を行うと、その都市国家に対する[ICON_ENVOY]代表団を1人獲得。城の技術を研究すると固有ユニットの黒軍が解禁される。
 			[NEWLINE][COLOR_RED]TO TRANSLATE :[ENDCOLOR] Levied unit got +3 [ICON_Strength] combat strength, +1 Envoy [ICON_Envoy] when levied city-state if you have a second gouvernement plaza building.</Text>
         </Replace>
-        <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ja_JP">
-            <Text>ユニットを撃破するとそのユニットの[ICON_Strength]戦闘力の25%に等しい[ICON_Science]科学力を獲得する。都市が戦争による疲労をうけない。遺産のある都市を占領すると全ユニットのHPが完全回復する。</Text>
-        </Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+		</Replace>
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ja_JP">
 			<Text>領土内から他の宗教の勢力を50%減少させ、他の宗教のユニットと神学戦争を始めることができる。</Text>
 		</Replace>
@@ -537,7 +537,7 @@
 			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ja_JP">
 			<Text>この遺産に接する湖タイルの数と同じ数だけ娯楽からの[ICON_Amenities]快適性を得る。 自文明のすべての湖における[ICON_Food]食料+1、[ICON_Production]生産+1、[ICON_CULTURE]文化+2。陸タイルに隣接した湖にしか建設できない。</Text>
@@ -688,7 +688,7 @@
 		</Replace>
 		<!--=============== GATHERING STORM ==================-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>通常より早い段階で艦隊と大艦隊を編成できる（傭兵と重商主義）。大陸間にまたがる[ICON_TradeRoute]交易路が存在する場合、他文明と結ばれた交易路には[ICON_Gold]ゴールドのボーナス、自分の都市同士を結ぶ交易路には[ICON_Food]食糧と[ICON_Production]生産力のボーナスが発生する。最初の[ICON_Capital]首都と異なる大陸に位置する都市の都心に隣接していると、その都市でのターン毎の忠誠心+2。</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>伝道者に対するコスト-30％。審問官は一回多く審問を行うことができ、完全にほかの宗教を排除できる。全てのユニットは、異なる宗教を信奉する文明のユニットと戦闘する時に戦闘力[ICON_Strength]+4。</Text>
@@ -832,7 +832,7 @@
 		</Replace>
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ja_JP">
-			<Text>戦闘に勝利すると、倒したしたユニットの基本[ICON_STRENGTH]戦闘力の50%に等しい[ICON_FAITH]信仰力が得られる。自国の主流宗教を信仰する都市国家に[ICON_ENVOY]代表団を派遣するごとに、2つ[ICON_ENVOY]代表団としてカウントされる(主流宗教がなければならない。)</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ja_JP">
 			<Text>政府のワイルドカード政策スロットが1つ増える。[NEWLINE][NEWLINE]円形劇場が完成するたびに代表団を1つ得られる。</Text>
@@ -946,6 +946,27 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ja_JP">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
