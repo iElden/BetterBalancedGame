@@ -22,8 +22,8 @@ INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId)
     FROM Eras;
 
 -- Create Modifiers
-INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
-    SELECT 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType, 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY', 'BBG_PLAYER_IS_IN_' || EraType || '_REQUIREMENTS'
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId, RunOnce, Permanent)
+    SELECT 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType, 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY', 'BBG_PLAYER_IS_IN_' || EraType || '_REQUIREMENTS', 1, 1
     FROM Eras;
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
