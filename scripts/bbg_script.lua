@@ -283,20 +283,20 @@ function OnPillage(iUnitPlayerID :number, iUnitID :number, eImprovement :number,
 	end		
 end
 
-function OnTechBoost(playerID, iTechBoosted)
-	print("OnTechBoost",playerID, iTechBoosted)
-	local pPlayer = Players[playerID]
-	if (pPlayer == nil) or (iTechBoosted == nil) or (iTechBoosted < 0) then
-		return
-	end
-	local pConfig = PlayerConfigurations[playerID]
-	
-	if pConfig ~= nil then
-		if pConfig:GetLeaderTypeName() == "LEADER_HAMMURABI" then
-			ApplyHammurabiTrait(playerID, iTechBoosted)
-		end
-	end
-end
+-- function OnTechBoost(playerID, iTechBoosted)
+--	print("OnTechBoost",playerID, iTechBoosted)
+--	local pPlayer = Players[playerID]
+--	if (pPlayer == nil) or (iTechBoosted == nil) or (iTechBoosted < 0) then
+--		return
+--	end
+--	local pConfig = PlayerConfigurations[playerID]
+--
+--	if pConfig ~= nil then
+--		if pConfig:GetLeaderTypeName() == "LEADER_HAMMURABI" then
+--			ApplyHammurabiTrait(playerID, iTechBoosted)
+--		end
+--	end
+--end
 
 -- ===========================================================================
 --	Babylon
@@ -2258,7 +2258,7 @@ function Initialize()
 	GameEvents.OnPillage.Add(OnPillage)
 	
 	-- tech boost effect:
-	Events.TechBoostTriggered.Add(OnTechBoost);
+	-- Events.TechBoostTriggered.Add(OnTechBoost);
 end
 
 Initialize();
