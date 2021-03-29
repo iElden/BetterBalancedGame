@@ -106,6 +106,9 @@
 		<Criteria id="nfp_vietnam_kubilai">
 			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
 		</Criteria>
+		<Criteria id="nfp_portugal">
+			<ModInUse>FFDF4E79-DEE2-47BB-919B-F5739106627A</ModInUse>
+		</Criteria>
 		<Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
@@ -440,6 +443,12 @@
 			</Properties>
 			<File>sql/new_bbg_nfp_vietnam.sql</File>
 		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_portugal" criteria="nfp_portugal">
+			<Properties>
+				<LoadOrder>11640</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_portugal.sql</File>
+		</UpdateDatabase>
 			<UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -617,6 +626,7 @@
 		<File>sql/new_bbg_spain.sql</File>
 		<File>sql/new_bbg_buildings.sql</File>
 		<File>sql/new_bbg_spy.sql</File>
+		<File>sql/new_bbg_nfp_portugal.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
