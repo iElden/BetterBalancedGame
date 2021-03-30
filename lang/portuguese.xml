@@ -453,7 +453,7 @@
 			<Text>Unidades recrutadas ganham uma habilidade dando a eles +1 de [ICON_Movement] movimento. Custa 75% menos [ICON_GOLD] ouro e recursos estratégicos para melhorar unidades recrutadas. Se você recrutar tropas de uma cidade-estado, receberá 1 [ICON_ENVOY] emissário com aquela cidade-estado. +2 [ICON_Envoy] Emissários se você possuir uma construção de segundo nível no Edifício Administrativo.Unidades recrutadas recebem +3 de [ICON_Strength] Força de Combate. Tem acesso à unidade exclusiva Exército Negro quando pesquisar a tecnologia Castelos.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pt_BR">
-			<Text>Ao derrotar uma unidade inimiga recebe bônus de [ICON_SCIENCE] ciência igual a 25% da [ICON_Strength] força de combate da unidade derrotada. Cidades são imunes à fadiga de guerra. Todas as unidades militares se curam completamente quando o jogador capturar uma cidade com uma maravilha construída.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
 		</Replace>		
 		
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="pt_BR">
@@ -574,7 +574,7 @@
 			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="pt_BR">
 			<Text>+1 [ICON_AMENITIES] de Serviço de entretenimento por cada painel de Lago com um Huey Teocalli. +1 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura para cada painel de Lago no Império. Só pode ser construído em um painel de lago adjacente a terra firme.</Text>
@@ -725,7 +725,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Pode formar Frotas e Armadas mais cedo que o normal (Mercenários and Mercantilismo). [ICON_TradeRoute] Rotas comerciais entre diferentes continetes recebem [ICON_GOLD] Ouro por rotas com outras civilizações, e bônus de [ICON_FOOD] Alimento and [ICON_PRODUCTION] Produção por rotas entre suas próprias cidades. +2 Lealdade por turno por cidades com uma melhoria de Missão adjacente a um Centro de Cidade e que não esteja no continente de sua [ICON_Capital] Capital.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>30% de desconto em [ICON_FAITH] Fé para Missionários. Inquisidores podem remover Heresia uma vez a mais e removem 100% da presença de outras Religiões. Unidades de Combate tem um bônus de +4 [ICON_Strength] Força de Combate contra civilizações seguindo outras religiões.</Text>
@@ -813,7 +813,7 @@
 			<Text>Unidade da Era Clássica exclusiva da Georgia, substitui o Espadachim. Colinas concedem +5 [ICON_Strength] de Força de Combate bonus e requerem apenas 1 [ICON_Movement] de Movemento.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="pt_BR">
-			<Text>Matar uma unidade militar concede [ICON_FAITH] Fé igual a 50% da [ICON_STRENGTH] Força base da unidade. Cada [ICON_ENVOY] Emissário que você enviar a uma cidade-estado que siga sua religião majoritária conta como dois [ICON_ENVOY] emissários. (É necessário ter uma religião majoritária).</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="pt_BR">
@@ -1004,6 +1004,30 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

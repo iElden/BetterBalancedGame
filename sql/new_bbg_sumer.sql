@@ -29,9 +29,9 @@ VALUES	('FIRST_CIVILIZATION_FARM_FOOD',				'YieldType',					'YIELD_FOOD'),
 
 		('FIRST_CIVILIZATION_FARM_PROD',				'YieldType',					'YIELD_PRODUCTION'),
 		('FIRST_CIVILIZATION_FARM_PROD',				'Amount',						1),
--- This makes War Carts cost 120 gold in Online speed		
+-- This makes War Carts cost 120 gold in Online speed		Increase premium to 40->50
 		('FIRST_CIVILIZATION_WAR_CART_PREMIUM',			'UnitType',						'UNIT_SUMERIAN_WAR_CART'),
-		('FIRST_CIVILIZATION_WAR_CART_PREMIUM',			'Amount',						-40);
+		('FIRST_CIVILIZATION_WAR_CART_PREMIUM',			'Amount',						-50);
 
 INSERT INTO RequirementSets
 		(RequirementSetId,										RequirementSetType)
@@ -80,12 +80,12 @@ VALUES	('Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMP
 
 
 -- Sumerian War Carts are nerfed to 26 (BASE = 30)
--- 20-12-07 Hotfix: Nerf from 28->26
-UPDATE Units SET Combat=26 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
--- Sumerian War Carts are cost is dimished to 55 (BASE = 55)
+-- 20-12-07 Hotfix: Nerf from 28->26-->27 (Devries)
+UPDATE Units SET Combat=27 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+-- Sumerian War Carts are cost is dimished to 45 (BASE = 55)
 -- 20-12-07 Hotfix: Revert to 55 cost
-UPDATE Units SET Cost=55 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';	
-
+-- Beta Buff: Revert to 45 cost
+UPDATE Units SET Cost=45 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 
 -- 20-12-07 Hotfix: Increase war-cart strength vs. barbs
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES

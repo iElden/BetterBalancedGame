@@ -237,7 +237,7 @@
 			<Text>所有单位+25%经验值获取。[NEWLINE]在远古时代开始时获得一个战车（替代勇士）。[NEWLINE]占领蛮族哨站时获得部落村庄奖励，以及额外 [ICON_Gold] 金币。征用城邦单位费用降低一半。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>所有单位+25%经验值获取。[NEWLINE]在远古时代开始时获得一个战车（替代勇士）。[NEWLINE]占领蛮族哨站时获得部落村庄奖励，以及额外 [ICON_Gold] 金币。征用城邦单位费用降低一半。</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>城市中所有的露天资源（加成、战略、奢侈品）提供额外+1 [ICON_Production] 生产力。</Text>
@@ -361,15 +361,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>拥有驻军单位的城市每回合忠诚度+3；若驻扎军团或军队则忠诚度+5。如果已经解锁相关市政，用单位占领城市则可将其升级为军团或军队。伊坎达里的每个建筑提供+1 [ICON_CULTURE] 文化和+1 [ICON_GOLD] 金币。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>掠夺单元格时获得双倍产出。可以对盟友的敌人宣战而不增加好战度。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>掠夺单元格时获得双倍产出。同盟针对同一个敌人作战时可获得同盟点数。可以对盟友的敌人宣战而不增加好战度。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>掠夺单元格时获得双倍产出。同盟针对同一个敌人作战时可获得同盟点数。</Text>
-		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="zh_Hans_CN">
 			<Text>此处有龙黄金时代:[NEWLINE]新建城市+3 [ICON_Citizen] 人口。海军和水运单位+2 [ICON_Movement] 移动力。不在 [ICON_Capital] 首都大陆上的城市每回合+2忠诚度。</Text>
 		</Replace>
@@ -467,7 +458,7 @@
 			<Text>征集单位+1 [ICON_Movement] 移动力。升级征集单位花费的 [ICON_GOLD] 金币和资源减少75%。征集城邦单位时可在该城邦增加1名 [ICON_ENVOY] 使者。研究“城堡”科技后获得特色单位黑军，研究“军事学”科技后获得特色单位骠骑兵。[NEWLINE]征集单位获得+3 [ICON_Strength] 战斗力，若拥有二级市政广场建筑，则征集城邦单位时获得该城邦的1位 [ICON_Envoy] 使者。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>战斗胜利提供相当于被击败单位25% [ICON_Strength] 战斗力的 [ICON_Science] 科技值。城市不会产生厌战情绪。占领拥有世界奇观的城市时，所有的军事单位的体力值将完全恢复。</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
 		</Replace>		
 		
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="zh_Hans_CN">
@@ -721,7 +712,7 @@
         </Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>可更早构建舰队和无敌舰队（分别需要“雇佣兵”和“重商主义”）。不同大陆之间的 [ICON_TradeRoute] 贸易路线将获得以下加成：通往其他文明的贸易路线获得 [ICON_Gold] 金币加成；本国城市间的贸易路线获得 [ICON_Food] 食物和 [ICON_Production] 生产力加成。不在原 [ICON_Capital] 首都所在大陆上、且拥有与市中心相邻的传教团改良设施的城市每回合的忠诚度+2。</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>购买传教士获得花费的 [ICON_FAITH] 信仰值减少30%。审判官可额外进行一次“清除异教”，且能完全铲除其他宗教的势力。与信仰其他宗教的文明进行战斗时，单位获得+4 [ICON_Strength] 战斗力。</Text>
@@ -805,7 +796,7 @@
 			<Text>中世纪格鲁吉亚特色单位，取代剑客。 在丘陵地形战斗时+5 [ICON_Strength] 战斗力。不受丘陵地形的 [ICON_Movement] 移动力减益影响。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>战斗胜利后，可获得等同于被击杀单位 [ICON_Strength] 战斗力50%的 [ICON_Faith] 信仰值（标准速度下）。 您向每个信奉您主流宗教的城邦派遣的每一个 [ICON_ENVOY] 使者会被视为2个 [ICON_ENVOY] 使者。（需要主流宗教）</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="zh_Hans_CN">
@@ -1061,6 +1052,30 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>魅力为“迷人”及以上的单元格提供+1 [ICON_Faith] 信仰值。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

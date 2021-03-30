@@ -9,6 +9,10 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BYZANTIUM_COMBAT_HOLY_C
 -- Delete Byzantium religious spread (script will do it)
 DELETE FROM Modifiers WHERE ModifierId='BYZANTIUM_PRESSURE_KILLS';
 
+-- Reduce Tagma bonus to +2 (from +4)
+UPDATE ModifierArguments SET Value=2 WHERE ModifierId='TAGMA_COMBAT_STRENGTH' AND Name='Amount';
+UPDATE ModifierArguments SET Value=2 WHERE ModifierId='TAGMA_RELIGIOUS_COMBAT' AND Name='Amount';
+
 
 --==================
 -- Gaul
@@ -23,3 +27,21 @@ DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_GRANT_CULTURE_UNIT_TRAINED';
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='AMBIORIX_NEIGHBOR_COMBAT' and Name='Amount';
 -- remove ranged units from having kings combat bonus
 DELETE FROM TypeTags WHERE Type='ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS' AND Tag='CLASS_RANGED';
+
+-- 7/3/2021: Beta: Remove Apprenticeship free tech
+DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_OPPIDUM' AND ModifierId='OPPIDUM_GRANT_TECH_APPRENTICESHIP';
+
+-- Delay culture to bronze working
+UPDATE Modifiers SET OwnerRequirementSetId='BBG_PLAYER_HAS_BRONZE_WORKING_REQUIREMENTS' WHERE ModifierId='GAUL_MINE_CULTURE';
+
+INSERT OR IGNORE INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
+	('BBG_PLAYER_HAS_BRONZE_WORKING_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+
+INSERT OR IGNORE INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
+	('BBG_PLAYER_HAS_BRONZE_WORKING_REQUIREMENTS', 'BBG_PLAYER_HAS_BRONZE_WORKING_REQUIREMENT');
+
+INSERT OR IGNORE INTO Requirements(RequirementId , RequirementType) VALUES
+	('BBG_PLAYER_HAS_BRONZE_WORKING_REQUIREMENT' , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
+
+INSERT OR IGNORE INTO RequirementArguments(RequirementId , Name, Value) VALUES
+	('BBG_PLAYER_HAS_BRONZE_WORKING_REQUIREMENT' , 'TechnologyType', 'TECH_BRONZE_WORKING');
