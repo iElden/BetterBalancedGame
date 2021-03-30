@@ -182,7 +182,9 @@
 		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>利用宗教单位使得城市首次皈依你的宗教时，该城市的每1 [ICON_Citizen] 人口为你提供10 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
-
+		<Replace Tag="LOC_LEADER_TRAIT_MOHENJO_DARO_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>你所有的城市无视水源获得最高的 [ICON_Housing] 住房加成。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>相邻自然奇观或山脉，魅力值为“惊艳”的单元格+1 [ICON_SCIENCE] 科技值，研究天文学后额外+1 [ICON_SCIENCE] 科技值。相邻自然奇观或树林，魅力值为“惊艳”的单元格+1 [ICON_CULTURE] 文化值，完成启蒙运动市政后额外+1 [ICON_CULTURE] 文化值。如果一个城市拥有国家公园则该城市的所有单元格子+1魅力。</Text>
 		</Replace>
@@ -281,9 +283,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>生产所有海军近战单位+50% [ICON_PRODUCTION] 生产力，且海军近战单位可以掠夺海岸单元格。[NEWLINE][NEWLINE]建造圣地以及其建筑+50% [ICON_PRODUCTION] 生产力。 海洋单元格为圣地提供+1相邻加成。[NEWLINE][NEWLINE]圣地为相邻港口额外提供+2 [ICON_GOLD] 金币相邻加成。</Text>
 		</Replace>
-		<!---<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
-		</Replace>-->
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>生产所有海军近战单位+50% [ICON_PRODUCTION] 生产力，且海军近战单位可以掠夺海岸单元格。掠夺矿山除 [ICON_GOLD] 金币还将获得 [ICON_SCIENCE] 科技值。掠夺采石场，牧场，种植园除 [ICON_FAITH] 信仰值还将获得 [ICON_CULTURE] 文化值。[NEWLINE][NEWLINE]建造圣地时+50% [ICON_PRODUCTION] 生产力。 海洋单元格为圣地提供+1相邻加成。[NEWLINE][NEWLINE]圣地为相邻港口额外提供+2 [ICON_GOLD] 金币相邻加成。</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>该城市中训练的所有陆地单位+25%战斗经验值获取。[NEWLINE]探明后每回合提供+1 [ICON_RESOURCE_NITER] 硝石。</Text>
 		</Replace>
@@ -896,7 +898,7 @@
 			<Text>战斗单位处于信奉该宗教的外国城市境内时+7 [ICON_Strength] 战斗力</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>信仰此宗教的每座城市的每座圣地或剧院广场相应提供+1 [ICON_Faith] 信仰值或+1 [ICON_Culture] 文化值。</Text>
+			<Text>信仰此宗教的每座城市的每座圣地或剧院广场相应提供+2 [ICON_Faith] 信仰值或+2 [ICON_Culture] 文化值。</Text>
 		</Replace>
 		<!--<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>Religion spreads to cities 40% further away.</Text>
@@ -980,9 +982,6 @@
 		</Replace>				
 		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁“政治哲学”市政后 [ICON_VisLimited] 外交能见度比遇到的其他文明高1级。 解锁“城堡”科技后免费获得1个间谍（并增加1个间谍容量）。 所有间谍初始便可免费升级为探员。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>使所有海军近战单位均能发动海岸突袭，生产所有海军近战单位时+50% [ICON_Production] 生产力。 对矿山发动掠夺或海岸扫荡时除 [ICON_Gold] 金币外还将获得 [ICON_Science] 科技值。 对采石场、牧场、种植园和露营地发动掠夺或海岸扫荡时除 [ICON_Faith] 信仰值外还将获得 [ICON_Culture] 文化值。[NEWLINE][NEWLINE]圣地相邻浅海单元格+1相邻加成.[NEWLINE][NEWLINE]港口相邻圣地获得+2相邻加成。</Text>
 		</Replace>		
 		<!-- policies -->
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="zh_Hans_CN">
