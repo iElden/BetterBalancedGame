@@ -369,9 +369,14 @@
 			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
 		</Replace>
 		<!-- ========== MALI ========== -->
-		<!-- Correction traduction Firaxis : desert plat, pas terrain plat -->
 		<Replace Tag="LOC_TRAIT_LEADER_SAHEL_MERCHANTS_DESCRIPTION" Language="fr_FR">
 			<Text>Les [ICON_TradeRoute] routes commerciales internationales gagnent 1 unité d'[ICON_GOLD] or pour chaque case de désert plat de la ville d'origine. Capacité des [ICON_TradeRoute] routes commerciales +1 chaque fois que vous entrez dans un âge d'or.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SUGUBA_DESCRIPTION" Language="fr_FR">
+			<Text>Ce quartier exclusif au Mali, spécialisé dans la finance et le commerce, remplace la plateforme commerciale. Les unités, bâtiments et quartiers de cette ville sont 20 % moins chers à l'achat avec de l'[ICON_Gold] or et de la [ICON_Faith] foi. [NEWLINE][NEWLINE][ICON_Gold] Or +2 pour chaque lieu saint adjacent. [ICON_Gold] Or +2 si adjacent à un cours d'eau. [ICON_Gold] Or +1 toutes les 2 cases de quartier adjacentes.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SUGUBA_DESCRIPTION_ADJACENCY" Language="fr_FR">
+			<Text>Proximité : bonus d'[ICON_Gold] or important pour chaque lieu saint adjacent. Bonus d'[ICON_Gold] or important si adjacent à un cours d'eau. Bonus d'[ICON_Gold] or mineur pour chaque case de quartier adjacente.</Text>
 		</Replace>
 		<!-- ========== MAORI ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="fr_FR">
@@ -385,7 +390,7 @@
 			<Text>Unité de la Renaissance exclusive aux Mapuches qui remplace le Coursier. Chaque pillage coûte 1 [ICON_Movement] PM.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience de combat +25 % pour toutes les unités formées dans les villes possédant un [ICON_Governor] gouverneur. [ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or.</Text>
+			<Text>Expérience de combat +25 % pour toutes les unités formées dans les villes possédant un [ICON_Governor] gouverneur. [ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or ou héroïque.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un chemamull, exclusif aux Mapuches.[NEWLINE][NEWLINE]Fournit une quantité de [ICON_CULTURE] culture correspondant à 75% de l'attrait de la case. [ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 après avoir adopté la Fonction Publique. [ICON_TOURISM] Tourisme bonus après avoir recherché l'Aviation. Attrait minimum : époustouflant.</Text>
@@ -394,7 +399,7 @@
 			<Text>Toqui</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or.</Text>
+			<Text>[ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or ou héroïque.</Text>
 		</Replace>
 		<!-- ========== MONGOLIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="fr_FR">
@@ -554,6 +559,9 @@
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
 		</Replace>
+		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +1 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations et ne peut pas être construit sur une case adjacente au centre-ville.</Text>
+		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
 			<Text>Peut former plus tôt des régiments (dogme Mercenaires) et des armées (dogme Nationalisme). [ICON_STRENGTH] Puissance de combat de base +5 pour les régiments et armées au dogme Mobilisation.</Text>
@@ -620,6 +628,9 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +3 pour les unités militaires sur le territoire des villes alliées converties à cette religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Faith] Foi +1 pour les cases d'attrait charmant ou supérieur.</Text>
 		</Replace>
 		
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
@@ -720,7 +731,7 @@
 			<Text>Merveille naturelle occupant 3 cases. Les unités qui y pénètrent sont téléportées dans un océan lointain, mais les unités navales y gagnent la capacité "Courants mystérieux" ([ICON_Movement] PM +1).</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="fr_FR">
-			<Text>Merveille naturelle infranchissable occupant 3 cases. [ICON_Gold] Or +1 et [ICON_Culture] Culture +1 sur les cases adjacentes. Bonus de proximité majeur pour les places du théâtre et les plateformes commerciales.</Text>
+			<Text>Merveille naturelle infranchissable occupant 3 cases. [ICON_Gold] Or +1 et [ICON_Culture] Culture +1 sur les cases adjacentes.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle de deux cases se trouvant sur les côtes. [ICON_Food] Nourriture +3 et [ICON_Science] science +2. Donne un bonus de proximité majeur pour les campus.</Text>
@@ -782,6 +793,15 @@
 		
 		<!-- =============== G O U V E R N E M E N T S =============== -->
 		
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_OLIGARCHY_XP1" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +4 pour les unités de classe combat rapproché, anti-cavalerie et combat rapproché en mer.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_AUTOCRACY_ETHIOPIA" Language="fr_FR">
+			<Text>[ICON_Food][ICON_Production][Icon_Science][Icon_Culture][Icon_Faith][Icon_Gold] Rendements +1 dans le palais, dans chaque bâtiment de la place de la gouvernance et dans chaque bâtiment du quartier diplomatique.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="fr_FR">
+			<Text>[ICON_Housing] Habitations +1 pour chaque niveau de remparts. [ICON_CULTURE] Culture +2 pour les remparts de la Renaissance.</Text>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_MODIFIER_DESCRIPTION" Language="fr_FR">
 			<Text>+5 Puissance de Combat dû au Fascisme.</Text>
 		</Replace>
@@ -791,7 +811,7 @@
 		
 		<!-- Place de la gouvernance -->
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Amenities] Activités +1, [ICON_FOOD] Nourriture +3 et [ICON_Housing] Habitations +3 pour les villes avec un [ICON_Governor] gouverneur. [NEWLINE]Loyauté -2 dans les villes sans [ICON_Governor] Gouverneur.[NEWLINE]Octroie un titre de [Icon_Governor] Gouverneur.</Text>
+			<Text>[ICON_Amenities] Activités +1, [ICON_Food] Nourriture +3 et [ICON_Housing] Habitations +3 pour les villes avec un [ICON_Governor] gouverneur. [NEWLINE]Loyauté -2 dans les villes sans [ICON_Governor] Gouverneur.[NEWLINE]Octroie un titre de [Icon_Governor] Gouverneur.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="fr_FR">
 			<Text>Lever les troupes d'une cité-état coûte deux fois moins d'[ICON_Gold] or. [NEWLINE][ICON_Strength] Puissance de combat +4 pour les unités d'une cité-état si vous en êtes le suzerain (y compris pour les unités levées). [NEWLINE]Octroie un titre de [Icon_Governor] gouverneur. [NEWLINE] Octroie 2 [ICON_ENVOY] Emissaires et +2 Points d'Influence par tour.</Text>
@@ -1087,17 +1107,10 @@
 		<Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
 		</Replace>
+		<Replace Tag="LOC_GREAT_PERSON_INDIVIDUAL_IBN_KHALDUN_CAMPUS_HOUSING" Language="fr_FR">
+			<Text>[ICON_Housing] Habitations +2 et [ICON_AMENITIES] activités +1 pour le campus choisi. Augmente de 40% les avantages du bonheur non liés à la [ICON_Food] nourriture dans votre empire.</Text>
+		</Replace>
 
-
-		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +1 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations et ne peut pas être construit sur une case adjacente au centre-ville.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="fr_FR">
-			<Text>[ICON_Housing] Habitations +1 pour chaque niveau de remparts. [ICON_CULTURE] Culture +2 pour chaque remparts de la Renaissance</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +1 pour les cases d'attrait charmant ou supérieur.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="fr_FR">
 			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
 		</Replace>
