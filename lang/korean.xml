@@ -327,17 +327,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ko_KR">
 			<Text>도시에 주둔군을 유닛으로 배치하면 도시는 턴당 충성심 +3을 얻으며, 군단 또는 군대로 배치하면 도시는 턴당 충성심 +5를 얻습니다. 타 도시를 유닛으로 정복하면, 해당 유닛은 군단 또는 군대로 업그레이드됩니다(단, 올바른 사회 제도를 잠금 해제한 경우). 이칸다 특수지구 내부 건물들은 [ICON_Culture] 문화 +1, [ICON_Gold] 금 +1을 제공합니다.</Text>
 		</Replace>
-		<!--
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ko_KR">
-			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다.</Text>
-		</Replace>
-		-->
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="ko_KR">
 			<Text>여기 용이 있다 황금기:[NEWLINE]새로 건설한 도시는 [ICON_Citizen] 인구 +3을 획득한 채 시작합니다. 해상 및 승선 유닛에 [ICON_Movement] 이동력 +2를 제공합니다. 원래 [ICON_Capital] 수도의 대륙에 없는 도시에 턴당 충성심 +2를 제공합니다.</Text>
 		</Replace>
@@ -434,9 +423,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
             <Text>징병된 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +3 및 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
         </Replace>
-        <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
-            <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다. 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>
-        </Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ko_KR">
 			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 동원령 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +5를 제공합니다.</Text>
@@ -692,7 +681,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>일반 경우보다 더 빨리 선단(용병) 및 함대(중상주의)를 형성할 수 있습니다. 여러 대륙 간을 연결하는 [ICON_TradeRoute] 교역로는 다른 문명에 대한 교역로의 경우 보너스 [ICON_Gold] 금, 자체 도시 간 교역로의 경우 보너스 [ICON_Food] 식량 및 [ICON_Production] 생산력을 제공합니다. 원래 [ICON_Capital] 수도의 대륙이 아닌 도심부 근처에 전도관 시설이 있는 도시의 경우 턴당 충성심 +2가 제공됩니다.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>선교사의 구매 가격이 30% 감소합니다. 이단심문관이 이단 제거를 1번 더 할 수 있습니다. 이단심문관이 다른 종교를 100% 제거합니다. 다른 종교를 따르는 플레이어를 상대하는 경우 전투 유닛은 [ICON_Strength] 전투력 보너스 +4를 획득합니다.</Text>
@@ -771,8 +760,8 @@
         <Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ko_KR">
             <Text>검사를 대체하는 조지아 특유의 고전 시대 유닛입니다. 언덕 지형에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 언덕 지형에서 [ICON_Movement] 이동력 페널티가 없습니다.</Text>
 		</Replace>
-        <Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ko_KR">
-            <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 50%에 준하는 [ICON_Faith] 신앙이 제공됩니다. 문명의 대중 종교와 같은 종교를 믿는 도시 국가로 파견된 [ICON_ENVOY] 사절이 두 명의 [ICON_ENVOY] 사절로 계산됩니다(대중 종교 필수).</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
 		</Replace>
 		<!-- Germany -->
         <Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="ko_KR">
@@ -987,7 +976,7 @@
 			<Text>모든 유닛이 전투에서 +25% 추가 경험치를 획득합니다. 고대 시대 시작시 시작 유닛으로 전사가 아닌 수메르 전차를 받습니다.[NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>모든 유닛이 전투에서 +25% 추가 경험치를 획득합니다. 고대 시대 시작시 시작 유닛으로 전사가 아닌 수메르 전차를 받습니다.[NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="ko_KR">
 			<Text>야만인과 전투 시 [ICON_Strength] 유닛 전투력 +4.</Text>
@@ -1386,6 +1375,29 @@
 		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="ko_KR">
 			<Text>[COLOR:ResMilitaryLabelCS]지배[ENDCOLOR] 승리를 달성하기 위해서는 다른 모든 문명의 원래 [ICON_Capital] 수도를 정복해야 합니다.[NEWLINE][NEWLINE]따라서 강력한 군대를 보유하는 것이 좋습니다.</Text>
 		</Replace>
-		
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="ko_KR">
+			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

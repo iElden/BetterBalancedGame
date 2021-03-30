@@ -219,9 +219,9 @@
 			<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="pl_PL">
 				<Text>Unikalna budowla Gruzji. Zapewnia większą ochronę niż renesansowe mury przy niższym koszcie [ICON_PRODUCTION] produkcji. Zapewnia +3 do [ICON_TOURISM] turystyki po opracowaniu idei ochrony przyrody. Zapewnia +4 do [ICON_FAITH] wiary. Podczas złotej ery daje +100% do [ICON_TOURISM] turystyki i [ICON_FAITH] wiary.</Text>
 			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="pl_PL">
-				<Text>Zwycięskie bitwy dają [ICON_FAITH] wiarę w wysokości 50% siły pokonanej jednostki. Każdy [ICON_ENVOY] emisariusz wysłany do miasta-państwa, w którym przeważa twoja religia, liczy się podwójnie. (Wymagana przeważająca religia). </Text>
-			</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
+		</Replace>
 			<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna średniowieczna jednostka Gruzji. +5 do [ICON_STRENGTH] siły bojowej podczas walki na wzgórzach. Brak kar do [ICON_MOVEMENT] ruchu na polach ze wzgórzami.</Text>
 			</Replace>
@@ -353,9 +353,9 @@
 			<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="pl_PL">
 				<Text>Podbój miasta daje: +20% do [ICON_PRODUCTION] produkcji we wszystkich miastach przez 10 tur, [ICON_TechBoosted] eurekę za każdą dzielnicę wojskową i kampus w zdobytym mieście oraz [ICON_CivicBoosted] inspirację za każdą dzielnicę świątynną i kulturalną.</Text>
 			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pl_PL">
-				<Text>Bitwy dają punkty [ICON_SCIENCE] nauki równe 25% wartości [ICON_STRENGTH] siły pokonanej jednostki. Zmęczenie wojną nie wpływa na miasta. Wszystkie jednostki bojowe odzyskują pełnię zdrowia, gdy gracz przejmie miasto z cudem świata.</Text>
-			</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+		</Replace>
 			<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="pl_PL">
 				<Text>Dostępna wyłącznie dla Macedonii jednostka ciężkiej kawalerii zastępująca konnicę. +5 do [ICON_STRENGTH] siły bojowej, gdy na sąsiednim polu znajduje się wielki generał. +5 punktów wielkiego generała po zabiciu jednostki wroga. Rozpoczyna rozgrywkę z 1 darmowym awansem.</Text>
 			</Replace>
@@ -532,9 +532,9 @@
 			<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą wznosić misje, dostępne tylko dla Hiszpanii.[NEWLINE][NEWLINE]+2 do [ICON_FAITH] wiary. +2 do [ICON_FAITH] wiary, jeśli znajduje się na innym kontynencie niż twoja [ICON_CAPITAL] stolica.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki, jeżeli zostanie zbudowana obok kampusu. [NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia. Nie może zostać wzniesiona obok innej misji.</Text>
 			</Replace>
-			<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Możliwość budowy flot i armad wcześniej niż zwykle (najemnicy i merkantylizm). [ICON_TradeRoute] Zagraniczne szlaki handlowe biegnące przez wiele kontynentów otrzymują premię [ICON_GOLD] złota, zaś te, które łączą twoje własne miasta na różnych kontynentach – premię [ICON_FOOD] żywności i [ICON_PRODUCTION] produkcji. +2 do lojalności na turę dla miast, które mają misję w sąsiedztwie centrum i które nie znajdują się na kontynencie twojej pierwszej [ICON_CAPITAL] stolicy.</Text>
-			</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
+		</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>Misjonarze kosztują 30% mniej [ICON_FAITH] wiary. Inkwizytorzy mogą usuwać herezję jeden raz więcej. Eliminują 100% obecności innych religii. Jednostki bojowe otrzymują premię +4 do [ICON_STRENGTH] siły bojowej przeciw graczom wyznającym inne religie.</Text>
 			</Replace>
@@ -568,7 +568,7 @@
 			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pl_PL">
-			<Text>[COLOR_RED]To Translate :[ENDCOLOR]+25% Experience for all units. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 
 
@@ -1189,6 +1189,30 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="pl_PL">
 			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="pl_PL">
+			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

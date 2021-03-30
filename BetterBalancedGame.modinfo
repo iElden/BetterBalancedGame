@@ -1,19 +1,20 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40204">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40409">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4032">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4040">
 	<Properties>
-		<Name>Better Balanced Game 4.3.2</Name>
+		<Name>Better Balanced Game 4.4.0</Name>
 		<Description>
-			Live build of Better Balanced Game
+			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
-		<Authors>iElden, D. / Jack The Narrator, codenaugh, MarsLife(puj)</Authors>
-		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz</SpecialThanks>
+		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
+		<Version>4040</Version>
+		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	<!--
@@ -104,6 +105,9 @@
 		</Criteria>
 		<Criteria id="nfp_vietnam_kubilai">
 			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_portugal">
+			<ModInUse>FFDF4E79-DEE2-47BB-919B-F5739106627A</ModInUse>
 		</Criteria>
 		<Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
@@ -264,6 +268,10 @@
 			<File>sql/new_bbg_great_people.sql</File>
 			<File>sql/new_bbg_great_works.sql</File>
 			<File>sql/new_bbg_religion_belief.sql</File>
+			<File>sql/new_bbg_spain.sql</File>
+			<File>sql/new_bbg_buildings.sql</File>
+			<File>sql/new_bbg_spy.sql</File>
+
 			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
 		
@@ -434,6 +442,12 @@
 				<LoadOrder>11639</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_vietnam.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_portugal" criteria="nfp_portugal">
+			<Properties>
+				<LoadOrder>11640</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_portugal.sql</File>
 		</UpdateDatabase>
 			<UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
@@ -609,7 +623,10 @@
 		<File>sql/new_bbg_xp1_zulus.sql</File>
 		<File>sql/new_bbg_nfp_vietnam.sql</File>
 		<File>sql/new_bbg_xp2_government.sql</File>
-
+		<File>sql/new_bbg_spain.sql</File>
+		<File>sql/new_bbg_buildings.sql</File>
+		<File>sql/new_bbg_spy.sql</File>
+		<File>sql/new_bbg_nfp_portugal.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
@@ -627,6 +644,6 @@
 		<File>sql/victories/new_bbg_dv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_2.sql</File>
-		<File>sql/victories/new_bbg_new_domination.sql</File>							
+		<File>sql/victories/new_bbg_new_domination.sql</File>
 	</Files>
 </Mod>

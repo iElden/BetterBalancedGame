@@ -29,11 +29,11 @@ DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierI
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_BYPASS_OUTER_DEFENSE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
 UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
--- Georgia gets 50% faith kills instead of Protectorate War Bonus
+-- Georgia gets 50% faith kills (online) instead of Protectorate War Bonus
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '50');
+	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '100');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
 UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
