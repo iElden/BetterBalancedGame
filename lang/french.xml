@@ -32,6 +32,9 @@
 			<Text>Octroit une croyance supplémentaire à la fondation d'une Religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_Faith] Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
 		</Replace>
 		<!-- ========== GORGÔ ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="fr_FR">
+			<Text>Chaque victoire en combat rapporte une quantité de [ICON_Culture] culture égale à 50 % de la [ICON_Strength] puissance de combat de l'unité vaincue (en vitesse en ligne).</Text>
+		</Replace>
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_SCIENCE] Science +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou une montagne, doublé après avoir recherché l'Astronomie. [ICON_CULTURE] Culture +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou des bois, doublé au dogme des Lumières. Attrait +1 pour toutes les cases d'une ville dotée d'un parc national.</Text>
@@ -62,6 +65,16 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="fr_FR">
 			<Text>+5 Puissance de Combat en attaque sur continent étranger.</Text>
 		</Row>
+		<!-- ========== >ANGLETERRE ========== -->
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif à l'Angleterre remplaçant le port à moindres coûts, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 en cas de construction sur un continent étranger. [NEWLINE][ICON_TradeRoute] Routes commerciales +1.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
+		  <Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
+		</Replace>
 		<!-- ========== ARABIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="fr_FR">
 			<Text>Points de [ICON_GreatProphet] Prophète Illustre +1 par tour après avoir recherché l'Astrologie. Si l'avant-dernier [ICON_GreatProphet] prophète illustre est recruté alors que vous n'en possédez aucun, vous recevez automatiquement le dernier. [ICON_Science] Science +1 pour chaque ville étrangère ayant adopté la religion créée de l'Arabie.</Text>
@@ -111,6 +124,9 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_HIPPODROME_CULTURE" Language="fr_FR">
 			<Text>[ICON_Culture] Culture +{1_num} de la part de l'Hippodrome adjacent.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="fr_FR">
+			<Text>Unité du Moyen-âge exclusive à Basile II qui remplace le chevalier. [ICON_Strength] Puissance de combat ou [ICON_RELIGION] religieuse +2 pour les unités terrestres dans un rayon d'une case.</Text>
 		</Replace>
 		<!-- ========== CANADA ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="fr_FR">
@@ -283,6 +299,12 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +1 pour chaque unité adjacente (Roi des Éburons).</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_CULTURE] Culture +1 pour les mines une fois le Travail du Bronze découvert, qui offrent un bonus de proximité mineur à tous les quartiers et une bombe culturelle sur les territoires non possédés. Les quartiers spécialisés ne reçoivent pas de bonus de proximité mineur à côté d'un autre quartier et ces quartiers ne peuvent pas être adjacents au centre-ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif aux Gaulois remplaçant la zone industrielle à moindre coût et plus tôt dans la partie. Le quartier de l'oppidum peut être défendu par des attaques à distance. [NEWLINE][NEWLINE]Bonus de proximité : [ICON_Production] production +2 s'il est adjacent à une carrière ou une ressource stratégique.</Text>
 		</Replace>
 		<!-- ========== GÉORGIE ========== -->
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="fr_FR">
@@ -464,6 +486,10 @@
 		<!-- ========== POLOGNE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="fr_FR">
 			<Text>La religion fondée par la Pologne devient majoritaire dans une ville adjacente qui perd une case suite à la bombe culturelle polonaise. Les lieux saints reçoivent un bonus de foi standard pour les quartiers adjacents. Toutes les reliques offrent des bonus : [ICON_Faith] foi +2, [ICON_Culture] culture +2 et [ICON_Gold] or +4. Reçoit une Relique à la création et à la complétion d'une Religion.</Text>
+		</Replace>
+		<!-- ========== PORTUGAL ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="fr_FR">
+			<Text>Champ de vision +1 pour toutes les unités. [ICON_TradeRoute] Routes commerciales +1 quand vous entrez dans une nouvelle ère, ère antique incluse. Libre passage avec toutes les cité-état.</Text>
 		</Replace>
 		<!-- ========== PERSE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="fr_FR">
@@ -1109,31 +1135,6 @@
 		</Replace>
 		<Replace Tag="LOC_GREAT_PERSON_INDIVIDUAL_IBN_KHALDUN_CAMPUS_HOUSING" Language="fr_FR">
 			<Text>[ICON_Housing] Habitations +2 et [ICON_AMENITIES] activités +1 pour le campus choisi. Augmente de 40% les avantages du bonheur non liés à la [ICON_Food] nourriture dans votre empire.</Text>
-		</Replace>
-
-		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
