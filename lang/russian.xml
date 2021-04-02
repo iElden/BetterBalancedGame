@@ -137,7 +137,7 @@
 			<Text>Получает бонус к [ICON_SCIENCE] науке и [ICON_CULTURE] культуре в размере 10% от производства [ICON_FAITH] веры в городах, построенных на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="ru_RU">
-			<Text>Эфиопский уникальный легкий кавалерийский юнит эпохи Средневековья. Заменяет летучий отряд. Имеет + 1 к радиусу обзора, нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>	
+			<Text>Эфиопский уникальный легкий кавалерийский юнит эпохи Средневековья. Заменяет летучий отряд. Имеет повышенный обзор, нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>	
 		</Replace>
 		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Эфиопский уникальный легкий кавалерийский юнит эпохи Средневековья. Заменяет летучий отряд. Имеет повышенную боевую мощь и обзор. Нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>
@@ -500,13 +500,13 @@
 			<Text>Как первая цивилизация в истории человечества, шумеры сразу начинают блистать. Боевые колесницы и Зиккураты доступны с самого начала игры, а рост и развитие должны быть быстрыми благодаря Колыбели Цивализации. Гильгамеш будет строить боевые колесницы и нападать на варварские лагеря, чтобы воспользоваться своей способностью. Он также усеет берега ближайших рек зиккуратами, чтобы быстро повысить уровень [ICON_Science] науки, [ICON_Culture] культуры и даже [ICON_Faith] веры, при хорошем планировании городов.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ru_RU">
-			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
+			<Text>Во время войны с общим противником шумеры и их союзники делятся наградами за грабеж и полученным боевым опытом, если они находятся в пределах 5 клеток.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>+25% опыта для всех юнитов.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
+			<Text>Во время войны с общим противником шумеры и их союзники делятся наградами за грабеж и полученным боевым опытом, если они находятся в пределах 5 клеток.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Приобретение войск городов-государств стоит в два раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>Во время войны с общим противником шумеры и их союзники делятся наградами за грабеж и полученным боевым опытом, если они находятся в пределах 5 клеток. Союзники получают очки союза за войну с общим противником.[NEWLINE]Начинает игру с боевой колесницей (Древний мир).[NEWLINE]При захвате аванпоста варваров получает дополнительный бонус как при исследовании племенного поселения. Покупка войск городов-государств стоит в два раза дешевле.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Amenities] довольства от всех соседних с этим чудом озерных клеток. +1 [ICON_Food] пищи, +1 [ICON_Production] производства и +2 [ICON_CULTURE] культуры всем озерным клеткам в ваших городах. Может быть построено на озере рядом с землёй.</Text>
@@ -652,7 +652,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
+			<Text>Можно создавать флоты и армады раньше обычного (Наемники и Меркантилизм). Может создавать флоты и армады в городах с верфями.[NEWLINE][ICON_TradeRoute] Бонусы от межконтинентальных [ICON_TradeRoute] торговых путей в [ICON_Gold] золоте, если к другим цивилизациям; в [ICON_Food] пище и [ICON_Production] производстве, если внутри страны. +2 лояльности за ход, если рядом с центром города построена миссия, а сам город не находится на континенте, где расположена [ICON_Capital] столица.[NEWLINE]+25% [ICON_PRODUCTION] производства при постройке зданий в гавани.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Стоимость миссионеров снижена на 30%. Инквизиторы могут очищать от ереси на один раз больше. Инквизиторы ликвидируют присутствие других религий на 100%. боевые юниты получают + 4 [ICON_Strength] боевой мощи против игроков с другой религией.</Text>
@@ -802,7 +802,7 @@
 		</Replace>
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
+			<Text>Победа в бою дает [ICON_FAITH] веру в размере 50% от базовой [ICON_STRENGTH] боевой мощи побежденного врага (на сетевой скорости). Каждый ваш [ICON_ENVOY] посол в городе-государстве с вашей доминирующей религией считается за двух [ICON_ENVOY] послов. (Должна быть доминирующая религия).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительная универсальная ячейка политического курса при любом правительстве после открытия "Политической философии".[NEWLINE][NEWLINE]При постройке амфитеатра получает посла.</Text>
@@ -908,7 +908,7 @@
 		    <Text>Получает дополнительные клетки при основании города. +1 [ICON_Faith] веры в столице. +1 [ICON_Production] производство на клетках тундры.</Text>
 	  </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+			<Text>Победа в бою дает [ICON_Science] науку в размере 25% от [ICON_Strength] боевой мощи побежденного врага (на сетевой скорости). Города не получают усталости от войны. Все военные юниты полностью исцеляются при захвате города с чудом света.</Text>
 		</Replace>
     <Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ru_RU">
       <Text>Нанятые юниты получают +1 [ICON_Movement] очко перемещения и +3 [ICON_Strength] к боевой мощи. Улучшение нанятых юнитов стоит на 75% дешевле в [ICON_GOLD] золоте и ресурсах. При выкупе войск города-государства вы получаете в нем 1 [ICON_ENVOY] посла, 2 [ICON_ENVOY] посла если у вас есть второе здание в правительственной площади. Получает Черную Армию при открытии технологии "Замки".</Text>
@@ -1274,28 +1274,28 @@
     </Replace>
 
 		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+			<Text>Уникальный юнит Василия, заменяющий рыцаря. Наземные юниты в пределах 1 клетки от тагмы получают +2 к [ICON_Strength] боевой мощи или к [ICON_RELIGION] религиозной силе.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+			<Text>Рудники дают небольшой бонус соседним районам, культурный захват клеток без владельца и получают +1 [ICON_CULTURE] культуру после изучения Обработки бронзы. Специализированные районы не получают бонус за соседство с другими районами, а также не могут быть построены рядом с центром города.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+			<Text>Уникальный район Галии, заменяющий промышленную зону. Доступен раньше, дешевле в строительстве. Имеет дальнобойную атаку.[NEWLINE][NEWLINE]+2 [ICON_Production] производства за соседство с каменоломнями и стратегическими ресурсами.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>Уникальный район Англии, заменяющий гавань. Убирает штраф к [ICON_Movement] передвижению при погрузке/выгрузке юнитов на этой клетке.[NEWLINE][NEWLINE]+1 [ICON_Movement] очко перемещения всем морским юнитам, построенным на Верфях Королевского Флота[NEWLINE]+2 [ICON_Gold] золота при постройке на чужом континенте[NEWLINE]+1 [ICON_TradeRoute] доступный торговый путь.[NEWLINE]+1 [ICON_GREATADMIRAL] очко великого адмирала после постройки маяка</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>Уникальный район Англии, заменяющий гавань. Убирает штраф к [ICON_Movement] передвижению при погрузке/выгрузке юнитов на этой клетке.[NEWLINE][NEWLINE]+1 [ICON_Movement] очко перемещения всем морским юнитам, построенным на Верфях Королевского Флота[NEWLINE]+2 [ICON_Gold] золота и +4 лояльности при постройке на чужом континенте. Нельзя построить на рифе.[NEWLINE]+1 [ICON_GREATADMIRAL] очко великого адмирала после постройки маяка</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>Уникальный район Англии, заменяющий гавань. Убирает штраф к [ICON_Movement] передвижению при погрузке/выгрузке юнитов на этой клетке.[NEWLINE][NEWLINE]+1 [ICON_Movement] очко перемещения всем морским юнитам, построенным на Верфях Королевского Флота[NEWLINE]+2 [ICON_Gold] золота и +4 лояльности при постройке на чужом континенте. Нельзя построить на рифе.[NEWLINE]+1 [ICON_GREATADMIRAL] очко великого адмирала после постройки маяка</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+			<Text>Победа в бою дает [ICON_Culture] культуру в размере 50% от [ICON_Strength] боевой мощи побежденного врага. (на сетевой скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="ru_RU">
-			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
+			<Text>Все юниты получают +1 к обзору. +1 [ICON_TradeRoute] доступный торговый путь при вступлении в каждую новую эпоху. Открытые границы со всеми городами-государствами.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

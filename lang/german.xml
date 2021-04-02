@@ -136,13 +136,13 @@
 			<Text>Als erste entwickelte Zivilisation der Weltgeschichte, erleben die Sumerer eine frühe Blüte. Ihre Kriegswägen können vom ersten Zug an rekrutiert, ihre Ziggurats errichtet werden und dank der Fähigkeit 'Wiege der Zivilisation' habe die Sumerer das Potenzial für ein schnelles Wachstum. Gilgamesh wird früh Kriegswägen rekrutieren um Barbarenlager zu zerstören, damit er Nutzen aus der Fähigkeit 'Shūtur eli sharrī' ziehen kann ("König der Könige"). Er wird an den Läufen nahegelegener Flüsse Ziggurats errichten um früh mithilfe einer guten Stadtplanung in [ICON_Science] Wissenschaft, [ICON_Culture] Kultur und sogar [ICON_Faith] Glauben davonzuziehen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="de_DE">
-			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
+			<Text>Kann gegen jeden ohne Kriegstreiber-Mali den Krieg erklären, der mit Verbündeten bereits im Krieg liegt. Sobald Ihr im Krieg mit einem gemeinsamen Feind seid, Ihr und eure Verbündeten erhalten gleichermaßen Plünderbeute und Kampferfahrung, wenn entsprechende Einheiten Sumeriens und seiner Verbündeten nicht weiter als 5 Felder voneinander getrennt sind.[NEWLINE] Beginnt mit einem Kriegswagen in der Antike. [NEWLINE] Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
+			<Text>Kann gegen jeden ohne Kriegstreiber-Mali den Krieg erklären, der mit Verbündeten bereits im Krieg liegt. Sobald Ihr im Krieg mit einem gemeinsamen Feind seid, Ihr und eure Verbündeten erhalten gleichermaßen Plünderbeute und Kampferfahrung, wenn entsprechende Einheiten Sumeriens und seiner Verbündeten nicht weiter als 5 Felder voneinander getrennt sind.[NEWLINE] Beginnt mit einem Kriegswagen in der Antike. Sumerien erhält zusätzliche Allianzpunkte, wenn es mit seinen Verbündeten gemeinsam im Krieg gegen einen äußeren Feind liegt.[NEWLINE] Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>Sobald Ihr im Krieg mit einem gemeinsamen Feind seid, Ihr und eure Verbündeten erhalten gleichermaßen Plünderbeute und Kampferfahrung, wenn entsprechende Einheiten Sumeriens und seiner Verbündeten nicht weiter als 5 Felder voneinander getrennt sind.[NEWLINE] Beginnt mit einem Kriegswagen in der Antike. Sumerien erhält zusätzliche Allianzpunkte, wenn es mit seinen Verbündeten gemeinsam im Krieg gegen einen äußeren Feind liegt.[NEWLINE] Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="de_DE">
 			<Text>+4 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
@@ -452,7 +452,7 @@
 			[NEWLINE]Ausgehobene Einheiten von Stadtstaaten erhalten +3 [ICON_Strength] Kampfstärke.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit (auf Online-Geschwindigkeit). Städte erhalten keine Kriegsmüdigkeit. Alle Militäreinheiten heilen komplett, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
@@ -600,7 +600,7 @@
 			<Text>50 % Nachlass auf Ressourcen bei allen Einheiten-Verbesserungen.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="de_DE">
-			<Text>50 % Nachlass auf Gold und Ressourcen bei allen Einheiten-Verbesserungen.</Text>
+			<Text>50 % Nachlass auf Gold bei allen Einheiten-Verbesserungen. 50% Nachlass auf die Kosten an strategischen Ressourcen für die Produktion und die Verbesserung von Einheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_GreatProphet] Große-Persönlichkeit-Punkt des Typs "Großer Prophet" ro Runde nach Erforschung von Astrologie. Automatisch den letzten Großen Propheten erhalten, wenn der vorletzte beansprucht wurde (und nicht bereits ein Großer Prophet verdient wurde). +1 Wissenschaft für jede fremde Stadt mit Arabiens Religion.</Text>
@@ -697,7 +697,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
+			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Flotten und Armadas können in Städten mit Schiffswerften gebaut werden.[NEWLINE]Kontinente verbindende [ICON_TradeRoute] Handelswege erhalten einen [ICON_Gold] Gold-Bonus zu anderen Zivilisationen und [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse zu Euren eigenen Städten. +2 Loyalität pro Zug für Städte mit einer Mission neben ihren Stadtzentrum, welche nicht auf dem Kontinent Eurer [ICON_Capital] Hauptstadt liegen.[NEWLINE] +25% [ICON_Production] auf Geäbude im Hafen-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Missionare kosten 30% weniger [ICON_Faith] Glauben. Inquisitors können Ketzerei ein mal mehr entfernen und eliminieren 100% des Einflusses fremder Religionen. Militärsiche Einheiten erhalten +4 [ICON_Strength] Kampfstärke gegen Einheiten anderer Civilizationen mit fremder Mehrheitsreligion.</Text>
@@ -759,7 +759,7 @@
 		</Replace>
 		<!-- Babylon -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="de_DE">
-			<Text>Heureka gewähren 85% der benötigten [ICON_SCIENCE] Wissenschaft für Technologien. -50% [ICON_SCIENCE] Wissenschaft pro Zug.</Text>
+			<Text>Eure Heurekas [ICON_SCIENCE] erforschen gänzlich die betreffenden Technologien, wenn die vorherigen Technologien bereits erforscht worden sind. -50% [ICON_SCIENCE] Wissenschaft in Campus-Bezirken.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="de_DE">
 			<Text>Zusätzliches Territorium bei Stadtgründung. +1 [ICON_Faith] Glauben in Eurer Hauptstadt. +1 [ICON_Production] Produktion durch Tundra-Felder.</Text>
@@ -790,7 +790,7 @@
 			<Text>Georgische Spezialeinheit des Mittelalters. +5 [ICON_Strength] Kampfstärke beim Kampf in Hügel-Gelände. Kein Fortbewegungsmalus in Hügel-Gelände.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
+			<Text>Das Töten einer Einheit gewährt [ICON_FAITH] Glauben in Höhe von 50% der [ICON_STRENGTH] Basis-Kampfstärke der besiegten Einheit (auf Online-Geschwindigkeit). Jeder [ICON_ENVOY] Gesandte, den Ihr zu einem Stadtstaat Eurer Mehrheitsreligion sendet, zählt als zwei [ICON_ENVOY] Gesandte. (Benötigt eine Mehrheitsreligion).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="de_DE">
@@ -1010,7 +1010,7 @@
 			<Text>Ein einzigartiger Distrikt Vietnams der das Lager ersetzt. +1 [ICON_CULTURE] Kultur für jeden angrenzenden Bezirk. Nach Erforschung von 'Luftfahrt' erhaltet [ICON_TOURISM] in Höhe der erwirtschafteten [ICON_CULTURE] Kultur. Dieser Bezirk benötigt keine Bevölkerung, ist günstiger im Bau, kann nicht angrenzend an ein Stadtzentrum errichtet werden und zählt nicht als Spezialdistrikt.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_HOUSING] Wohnraum pro Ausbaustufe der Mauer. +2 [ICON_CULTURE] Kultur für jede Renaissance-Mauer.[ENDCOLOR]</Text>
+			<Text>+1 [ICON_HOUSING] Wohnraum pro Ausbaustufe der Mauer. +2 [ICON_CULTURE] Kultur für jede Renaissance-Mauer.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+1 Glauben [ICON_Faith] für Geländefelder mit einer Anziehungskraft von 'Bezaubernd' oder besser.</Text>
@@ -1075,7 +1075,7 @@
 			<Text>Voreingestelltes Firaxis Setting für Gathering Storm</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="de_DE">
-			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Gathering Storm:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, -25% Tourismus benötigt, um Auslandstouristen anzuziehen [NEWLINE]Diplomatiesieg: Erster Kongress im Mittelalter, erste Vergabe von Diplomatiesiegpunkten in der Renaissance [NEWLINE]Wissenschaftssieg: Leicht günstigere Projekte und eine geringe Reisezeit für die Exoplanet-Expedition.</Text>
+			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Gathering Storm:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, 25% weniger Tourismus benötigt, um Auslandstouristen anzuziehen [NEWLINE]Diplomatiesieg: Erster Kongress im Mittelalter, erste Vergabe von Diplomatiesiegpunkten in der Renaissance [NEWLINE]Wissenschaftssieg: Leicht günstigere Projekte und eine geringe Reisezeit für die Exoplanet-Expedition.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="de_DE">
 			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Rise and Fall:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, sogar noch weniger Tourismus benötigt, um Auslandstouristen anzuziehen. [NEWLINE]Diplomatiesieg: Erster Kongress und erste Vergabe von Diplomatiesiegpunkten im Mittelalter [NEWLINE]Wissenschaftssieg: Endet mit Marks-Kolonien.</Text>
@@ -1314,28 +1314,28 @@
 			<Text>Um einen [COLOR:ResMilitaryLabelCS]HERRSCHAFTS[ENDCOLOR] Sieg zu erzielen, müsst Ihr die ursprüngliche [ICON_Capital] Hauptstadt jeder anderen Zivilisation erobern.[NEWLINE][NEWLINE]Ein sarkes Militär ist äußert empfehlenswert</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+			<Text>Spezialeinheit des Mittelalters von Basilius II., die den Ritter ersetzt. Landeinheiten innerhalb von 1 Geländefeld erhalten +2 [ICON_Strength] Kampfstärke oder [ICON_RELIGION] religiöse Stärke.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+			<Text> Minen gewähren allen Bezirken einen kleinen Nachbarschaftsbonus, erzeugen einen Kulturschock auf herrenlosem Gebiet und erhalten +1 [ICON_CULTURE] Kultur ab der Erfoschung von Bronzebearbeitung. Spezialbezirke erhalten keinen kleinen Nachbarschaftsbonus, wenn sie an einen anderen Bezirk angrenzen, und sie dürfen nicht an das Stadtzentrum angrenzen.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+			<Text>Ein Bezirk, der ausschließlich Gallien zur Verfügung steht und günstiger sowie früher verfügbar ist als der Bezirk, den er ersetzt, das Industriegebiet. Der Oppidum-Bezirk kann verteidigt werden und verfügt über einen Fernangriff.[NEWLINE][NEWLINE]+2 Nachbarschaftsbonus auf die [ICON_Production] Produktion durch Steinbrüche und strategische Ressourcen.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>Ein einzigartiger Bezirk für Englands Herrschaft zur See. Ersetzt den Hafen-Distrikt und ist günstiger im Bau. Entfernt außerdem den [ICON_Movement] Bewegungsmalus für das Wassern auf und das Anlanden von diesem Geländefeld aus. Kann nur auf Küsten- oder Seefeldern angrenzend an Land errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_Movement] Fortbewegung für alle Einheiten, die in der Royal-Navy-Werft gebaut werden.[NEWLINE]+2 [ICON_Gold] Gold, wenn die Royal-Navy-Werft auf einem anderen Kontinent als dem eurer Hauptstadt errichtet wird.[NEWLINE]+1 [ICON_TradeRoute] Handelsrouten-Kapazität.[NEWLINE]+1 [ICON_GREATADMIRAL] Großer-Admiral-Punkte für den Leuchtturm.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>Ein einzigartiger Bezirk für Englands Herrschaft zur See. Ersetzt den Hafen-Distrikt und ist günstiger im Bau. Entfernt außerdem den [ICON_Movement] Bewegungsmalus für das Wassern auf und das Anlanden von diesem Geländefeld aus. Kann nur auf Küsten- oder Seefeldern angrenzend an Land errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_Movement] Fortbewegung für alle Einheiten, die in der Royal-Navy-Werft gebaut werden.[NEWLINE]+2 [ICON_Gold] Gold und +4 Loyalität, wenn die Royal-Navy-Werft auf einem anderen Kontinent als dem eurer Hauptstadt errichtet wird. Kann nicht auf einem Riff errichtet werden.[NEWLINE]+1 [ICON_GREATADMIRAL] Großer-Admiral-Punkte für den Leuchtturm.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>Ein einzigartiger Bezirk für Englands Herrschaft zur See. Ersetzt den Hafen-Distrikt und ist günstiger im Bau. Entfernt außerdem den [ICON_Movement] Bewegungsmalus für das Wassern auf und das Anlanden von diesem Geländefeld aus. Kann nur auf Küsten- oder Seefeldern angrenzend an Land errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_Movement] Fortbewegung für alle Einheiten, die in der Royal-Navy-Werft gebaut werden.[NEWLINE]+2 [ICON_Gold] Gold und +4 Loyalität, wenn die Royal-Navy-Werft auf einem anderen Kontinent als dem eurer Hauptstadt errichtet wird. Kann nicht auf einem Riff errichtet werden.[NEWLINE]+1 [ICON_GREATADMIRAL] Großer-Admiral-Punkte für den Leuchtturm.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 50% der [ICON_Strength] Kampfstärke der besiegten Einheit (auf Online-Geschwindigkeit).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="de_DE">
-			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
+			<Text>Einheiten erhalten +1 Sicht. +1 [ICON_TradeRoute] Handelsroutenkapazität beim Eintritt in ein neues Zeitalter. Offene Grenzen zu allen Stadtstaaten.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
