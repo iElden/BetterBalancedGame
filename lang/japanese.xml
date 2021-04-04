@@ -171,13 +171,13 @@
 			<Text>労働者が中国固有の改善である万里の長城を建設できるようになる。[NEWLINE][NEWLINE]1タイルにつき[ICON_PRODUCTION]生産力+1。このタイルで防衛するユニットの[ICON_Strength]戦闘力にボーナス。他の長城に隣接するごとに追加の[ICON_Gold]ゴールドを与える。テクノロジーツリーを進展させると[ICON_Culture]文化力および[ICON_Tourism]観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。災害によってのみ略奪されうる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が50%ではなく60%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
+			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が50%ではなく60%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1を建設された都市で生み出す。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
+			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1を建設された都市で生み出す。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
+			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1を建設された都市で生み出す。</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="ja_JP">
 			<Text>この都市に建設されている兵営の建造物1つごとに、陸上戦闘及び支援ユニットの[ICON_GOLD]ゴールドおよび[ICON_FAITH]信仰力による購入費用-10%。</Text>
