@@ -1,27 +1,18 @@
-<!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40409">
--->
-<!-- Codenaugh's ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
--->
-<!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4041">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be241" version="40400">
 	<Properties>
-		<Name>Better Balanced Game 4.4.1</Name>
+		<Name>Better Balanced Game 4.4-STATIC (build 0.3)</Name>
 		<Description>
-			Live build of Better Balanced Game.
+			Freeze build of Better Balanced Game that revert Firaxis update.
 		</Description>
-		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
-		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4040</Version>
-		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
+		<Teaser>Freeze build of Better Balanced Game that revert Firaxis update.</Teaser>
+		<Authors>iElden</Authors>
+		<Version>40400</Version>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
-	<!--
 	<Dependencies>
     	<Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
 	</Dependencies>
-	-->
+
 	<!-- can load only select files based on these requirements, if applied -->
 	<ActionCriteria>
 		<Criteria id="xp1">
@@ -274,7 +265,6 @@
 
 			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
-		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
 			<Properties>
 				<LoadOrder>11613</LoadOrder>
@@ -547,6 +537,13 @@
 			<File>sql/victories/new_bbg_cv.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
+
+		<UpdateDatabase id="bbg_static_forcing">
+			<Properties>
+				<LoadOrder>25000</LoadOrder>
+			</Properties>
+			<File>forcing.sql</File>
+		</UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -645,5 +642,6 @@
 		<File>sql/victories/new_bbg_rv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_2.sql</File>
 		<File>sql/victories/new_bbg_new_domination.sql</File>
+		<File>forcing.sql</File>
 	</Files>
 </Mod>
