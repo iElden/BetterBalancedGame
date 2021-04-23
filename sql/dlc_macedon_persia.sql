@@ -147,7 +147,8 @@ INSERT OR IGNORE INTO TraitModifiers
 -- Persia surprise war movement bonus nullified
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_FALLBABYLON_SURPRISE_MOVEMENT' and Name='Amount';
 -- Immortals defense buffed and ranged nerfed (since it is affected by oligarchy)
-UPDATE Units SET Combat=35, RangedCombat=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
+-- 23/04/2021: Now is Firaxis version
+-- UPDATE Units SET Combat=35, RangedCombat=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 
 
 

@@ -249,7 +249,7 @@
         </Replace>
 		<!-- ========== ESPAGNE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
+			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. Les [ICON_TradeRoute] routes commerciales entre plusieurs continents produisent davantage : plus d'[ICON_Gold] or pour les routes extérieures, plus de [ICON_Food] nourriture ou de [ICON_Production] production si elles sont intérieures. Loyauté +2 par tour pour les villes dotées d'une mission adjacente au centre-ville et situées sur un continent différent de celui de votre [ICON_Capital] capitale de départ. [NEWLINE][ICON_PRODUCTION] Production +25% pour les bâtiments du Port.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Coût en [ICON_FAITH] Foi des missionnaire réduit de 30%. Les Inquisiteurs peuvent éradiquer les hérétiques une fois supplémentaire et suppriment 100% de l'influence des autres religions. Les unités militaires recoivent +4 [ICON_Strength] Puissance de Combat face aux joueurs suivants une autre religion que la vôtre.</Text>
@@ -317,7 +317,7 @@
 			<Text>Unité de l'ère classique exclusive à la Géorgie qui remplace le Spadassin. [ICON_Strength] Puissance de combat +5 sur les cases de collines. Pas de pénalité de [ICON_Movement] mouvement sur les collines.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
+			<Text>Les victoires militaires génèrent une quantité de [ICON_FAITH] Foi égale à 50% de la [ICON_SRENGTH] Puissance de combat de l'unité vaincue (en vitesse en ligne). [ICON_Faith] Foi +100 % durant les 10 tours qui suivent une déclaration de guerre de protectorat. Chaque [ICON_ENVOY] émissaire envoyé dans une cité-état où votre religion est majoritaire compte double (doit posséder une religion dominante).</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +5 dans les collines. [NEWLINE][ICON_Bullet]Pas de pénalité de [ICON_Movement] PM sur les collines.</Text>
@@ -388,7 +388,7 @@
 			<Text>Vous recevez une amélioration pour chaque ville capturée : [ICON_PRODUCTION] Production +20 % dans toutes vos villes pendant 10 tours, un [ICON_TechBoosted] Eurêka ! pour chaque campement ou campus de la ville conquise, et une [ICON_CivicBoosted] inspiration pour chaque lieu saint ou place du théâtre.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+			<Text>Les victoires militaires génèrent une quantité de [ICON_SCIENCE] Science égale à 25% de la [ICON_SRENGTH] Puissance de combat de l'unité vaincue (en vitesse en ligne). Les villes ne génèrent pas d'usure de guerre. Toutes les unités militaires sont entièrement soignées si le joueur capture une ville dotée d'une merveille mondiale.</Text>
 		</Replace>
 		<!-- ========== MALI ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_SAHEL_MERCHANTS_DESCRIPTION" Language="fr_FR">
@@ -576,7 +576,7 @@
 			<Text>Expérience +25% pour toutes les unités. [NEWLINE]Débute la partie avec un Char de Guerre à la place d'un Guerrier. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>Débute la partie avec un Char de Guerre au lieu d'un Guerrier. [NEWLINE]En cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
 		</Replace>
 		<!-- ========== VIETNAM ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">

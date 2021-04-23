@@ -110,3 +110,7 @@ INSERT INTO ModifierArguments
 VALUES	('WAR_CART_COMBAT_STRENGTH_VS_BARBS_BBG', 'Amount', 4);
 
 -- Sumerian War Carts as a starting unit in Ancient is coded on the lua front
+
+-- 23/04/2021: Delete +5 when war common foe
+
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ATTACH_ALLIANCE_COMBAT_ADJUSTMENT';
