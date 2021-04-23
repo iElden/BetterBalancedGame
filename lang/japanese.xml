@@ -34,9 +34,6 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ja_JP">
 			<Text>この都市の[ICON_Citizen]人口1人につき[ICON_Gold]ゴールド+2、また（文明としての）交易路の上限+1。</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ja_JP">
-			<Text>ビザンチンに固有のカドリレームを代替する古典のユニット。攻撃範囲が広い。</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ja_JP">
 			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。他文明あるいは都市国家のユニットを撃破するごとに自文明の宗教が伝播されていく。（位階）</Text>
 		</Replace>
@@ -100,17 +97,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ja_JP"> <!-- Last update: 4.2.0-->
 			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ja_JP"> <!-- Last update: 4.2.0-->
-			<Text>[COLOR_RED]TO_TRANSLATE:Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
-		</Replace>
-		<!--
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ja_JP">
-			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+2、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ja_JP">
-			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+1、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
-		</Replace>
-		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ja_JP">
 			<Text>すべてのユニットの視界+1。軽騎兵の昇進がユニットのターンを終了しない。</Text>
 		</Replace>
@@ -185,13 +171,13 @@
 			<Text>労働者が中国固有の改善である万里の長城を建設できるようになる。[NEWLINE][NEWLINE]1タイルにつき[ICON_PRODUCTION]生産力+1。このタイルで防衛するユニットの[ICON_Strength]戦闘力にボーナス。他の長城に隣接するごとに追加の[ICON_Gold]ゴールドを与える。テクノロジーツリーを進展させると[ICON_Culture]文化力および[ICON_Tourism]観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。災害によってのみ略奪されうる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が50%ではなく60%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
+			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が50%ではなく60%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1を建設された都市で生み出す。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
+			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1を建設された都市で生み出す。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
+			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が40%ではなく50%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1を建設された都市で生み出す。</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="ja_JP">
 			<Text>この都市に建設されている兵営の建造物1つごとに、陸上戦闘及び支援ユニットの[ICON_GOLD]ゴールドおよび[ICON_FAITH]信仰力による購入費用-10%。</Text>
@@ -299,7 +285,7 @@
 		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="ja_JP">
 			<Text>ピンガラのいる都市につながる国内[ICON_TradeRoute]交易路から[ICON_SCIENCE]科学力+3。</Text>
 		</Row>
-		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ja_JP">
 			<Text>区域を攻撃する際に[ICON_Strength]戦闘力+10。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="ja_JP">
@@ -363,7 +349,7 @@
 			<Text>この都市の戦闘力+5、また攻囲を受けなくなる。</Text>
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="ja_JP">
-			<Text>9タイル以内の都市の自文明に対する忠誠心が毎ターン+4。</Text>
+			<Text>9タイル以内の都市の自文明に対する忠誠度が毎ターン+4。</Text>
 		</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ja_JP">
 			<Text>折衝者</Text>
@@ -409,13 +395,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ja_JP">
 			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ja_JP">
-			<Text>領土内から他の宗教の勢力を50%減少させ、他の宗教のユニットと神学戦争を始めることができる。</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>領土内から他の宗教の勢力を50%減少させ、他の宗教のユニットと神学戦争を始めることができる。</Text>
-		</Replace>
-
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ja_JP">
 			<Text>[COLOR_RED]TO_TRANSLATE: May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Mobilization Civic.</Text>
 		</Replace>
@@ -654,10 +633,7 @@
 			<Text>すべての陸上ユニットおよび宗教ユニットの[ICON_MOVEMENT]移動力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ja_JP">
-			<Text>劇場区域の建造物に対する[ICON_PRODUCTION]生産力+100%。[NEWLINE]自文明の都市にある傑作が、1つにつきその都市から9タイル以内にある他文明の都市に対して毎ターン忠誠心-1を与える。[NEWLINE]他文明の都市で反乱が起きた際、自文明が最もその都市に対する忠誠心圧力を与えていたならば、その都市は自由都市になる過程を経ずに直接自文明のものとなる。</Text>
-		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ja_JP">
-			<Text>防御施設と攻城ユニットに対する[ICON_PRODUCTION]生産力+100%。</Text>
+			<Text>劇場区域の建造物に対する[ICON_PRODUCTION]生産力+100%。[NEWLINE]自文明の都市にある傑作が、1つにつきその都市から9タイル以内にある他文明の都市に対して毎ターン忠誠度-1を与える。[NEWLINE]他文明の都市で反乱が起きた際、自文明が最もその都市に対する忠誠度圧力を与えていたならば、その都市は自由都市になる過程を経ずに直接自文明のものとなる。</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ja_JP">
 			<Text>隣接する劇場区域1つにつき[ICON_SCIENCE]科学力+{1_num}。</Text>
@@ -796,9 +772,6 @@
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ja_JP">
 			<Text>聖地と劇場区域では、それぞれ [ICON_Faith]+2、[ICON_Culture]+2。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="ja_JP">
-			<Text>この宗教の伝播距離が40%増加する。</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="ja_JP">
 			<Text>専門区域を持つ都市の快適性[ICON_Amenities]+1。</Text>
 		</Replace>
@@ -905,71 +878,468 @@
 			<Text>キャンパス内の建造物から得られる [ICON_SCIENCE] 科学力が増える。都市の [ICON_CITIZEN] 人口が15以上の場合+50%、区域が+3以上の隣接ボーナスを得ていると+50%。</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_FAITH] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+			<Text>劇場区域の建造物から追加の[ICON_CULTURE]文化力: 都市の[ICON_CITIZEN]人口が15以上の場合+50%、対象の区域の隣接ボーナスが3以上の場合+50%。</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Extra [ICON_CULTURE] Culture from buildings in Theater Squares: +50% if city [ICON_CITIZEN] population is 15 or higher, +50% if district has at least +3 adjacency bonus.</Text>
+			<Text>劇場区域の建造物から追加の[ICON_CULTURE]文化力: 都市の[ICON_CITIZEN]人口が15以上の場合+50%、対象の区域の隣接ボーナスが3以上の場合+50%。</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your districts on or next to Coast or Lake tiles provide +1 [ICON_Culture] Culture. +1 [ICON_Culture] Culture once Exploration reached.</Text>
+			<Text>沿岸・湖に隣接する区域から[ICON_Culture]文化力+1。探検の社会制度を発明後はさらに[ICON_Culture]文化力+1</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
+			<Text>交易ユニットが略奪されなくなる。</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your districts on or next to Coast or Lake tiles provide +1 [ICON_Culture] Culture. +1 [ICON_Culture] Culture once Exploration reached.</Text>
+			<Text>沿岸・湖に隣接する区域から[ICON_Culture]文化力+1。探検の社会制度を発明後はさらに[ICON_Culture]文化力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Your Trader units are immune to being plundered.</Text>
+			<Text>交易ユニットが略奪されなくなる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_Capital] Capital are 100% Loyal. Settlers gain +1 [ICON_Movement] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
+			<Text>筆記の技術に対する[ICON_TechBoosted]ひらめきを持った状態でゲームを開始する。自文明の[ICON_Capital]首都と同大陸にある沿岸の都市は常に忠誠度が100%となる。乗船中は開拓者の[ICON_Movement]移動力+1、視界+2。開拓者は乗船、下船時に[ICON_Movement]移動力ペナルティを受けない。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 [ICON_TradeRoute] Trade Route capacity with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them.</Text>
+			<Text>陶器の技術を開発後、[ICON_TradeRoute]交易路の上限+1。交易ユニットが自文明の都市から3タイル以内の中立地帯を通過することで自文明へと編入させる。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat units gain +3 [ICON_Strength] Combat Strength when within the borders of friendly cities that follow this Religion.</Text>
+			<Text>この宗教を信奉する都市の領域内にいるユニットの[ICON_Strength]戦闘力+3。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+			<Text>ジャングル・湿地・森林で戦闘するユニットの[ICON_Strength]戦闘力+2。そのようなタイルでターンを開始した場合、さらに[ICON_Movement]移動力+1。これらのボーナスは自文明の領土内では2倍になる。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+			<Text>ジャングル・湿地・森林で戦闘するユニットの[ICON_Strength]戦闘力+2。そのようなタイルでターンを開始した場合、さらに[ICON_Movement]移動力+1。これらのボーナスは自文明の領土内では2倍になる。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+			<Text>兵営を代替するベトナムに固有の区域。隣接する区域1つにつき[ICON_CULTURE]文化力+1。飛行機の技術を研究完了後、[ICON_CULTURE]文化力の算出に等しい[ICON_TOURISM]観光力を得る。この区域は建設に人口を必要とせず安価だが、都心に隣接することはできず、専門区域としてもカウントされない。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+			<Text>防壁のレベルに等しい[ICON_HOUSING]住宅を得る。ルネサンスの防壁1つごとに[ICON_CULTURE]文化力+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+			<Text>アピールが「素敵」以上のタイルから[ICON_Faith]信仰力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+			<Text>バシレイオス2世に固有の騎士を代替するユニット。タグマから1タイル以内の陸上ユニットは[ICON_Strength]戦闘力+2または[ICON_RELIGION]宗教戦闘力+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+			<Text>鉱山がすべての区域に対して小さな隣接ボーナスを与え、中立地帯に文化爆弾を発動し、青銅器の研究完了後は[ICON_CULTURE]文化力+1を産出する。専門区域が他の区域からの小さな隣接ボーナスを受けられず、都心に隣接することもできない。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+			<Text>ガリアに固有の工業地帯を代替する区域。元の区域より安価で早期に建設できるようになる。遠距離攻撃を行うことのできる防衛可能な区域。[NEWLINE][NEWLINE]石工所および戦略資源から隣接ボーナスとして[ICON_Production]生産力+2を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>イギリスに固有の港を代替する区域。元の区域より安価に建設できる。このタイルを使った乗船・下船時には[ICON_Movement]移動力のペナルティを受けない。陸地に隣接した沿岸または湖タイルにしか建設できない。[NEWLINE][NEWLINE]この区域で生産されたすべての海軍ユニットの[ICON_Movement]移動力+1。[NEWLINE]異大陸に建設された場合[ICON_Gold]ゴールド+2。[NEWLINE][ICON_TradeRoute]交易路の上限+1。[NEWLINE]灯台の建設完了後、毎ターン[ICON_GREATADMIRAL]大提督ポイント+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>イギリスに固有の港を代替する区域。元の区域より安価に建設できる。このタイルを使った乗船・下船時には[ICON_Movement]移動力のペナルティを受けない。陸地に隣接した沿岸または湖タイルにしか建設できない。[NEWLINE][NEWLINE]この区域で生産されたすべての海軍ユニットの[ICON_Movement]移動力+1。[NEWLINE]異大陸に建設された場合[ICON_Gold]ゴールド+2。[NEWLINE][ICON_TradeRoute]交易路の上限+1。[NEWLINE]灯台の建設完了後、毎ターン[ICON_GREATADMIRAL]大提督ポイント+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>イギリスに固有の港を代替する区域。元の区域より安価に建設できる。このタイルを使った乗船・下船時には[ICON_Movement]移動力のペナルティを受けない。陸地に隣接した沿岸または湖タイルにしか建設できない。[NEWLINE][NEWLINE]この区域で生産されたすべての海軍ユニットの[ICON_Movement]移動力+1。[NEWLINE]異大陸に建設された場合[ICON_Gold]ゴールド+2。[NEWLINE][ICON_TradeRoute]交易路の上限+1。[NEWLINE]灯台の建設完了後、毎ターン[ICON_GREATADMIRAL]大提督ポイント+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+			<Text>戦闘に勝利すると相手ユニットの[ICON_Strength]戦闘力の50%に等しい[ICON_Culture]文化力を得る。（速度オンラインにおいて）</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="ja_JP">
-			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
+			<Text>すべてのユニットの視界+1。新しい時代に入るごとに[ICON_TradeRoute]交易路の上限+1（太古時代を含む）。 すべての都市国家と国境開放された状態となる。</Text>
 		</Replace>
+
+		
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ja_JP">
+			<Text>河川に隣接する聖地の[ICON_FAITH]信仰力+2。河川と隣接している聖地がある都市の[ICON_Amenities]快適性+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ja_JP">
+			<Text>全都市で海軍ユニットに対する[ICON_Production]生産力+100%。工業地帯に隣接する沿岸にしか建設できない。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="ja_JP">
+			<Text>トキ</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="ja_JP">
+			<Text>マプチェ固有能力:黄金時代にある文明に対して[ICON_Strength]戦闘力+5。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="ja_JP">
+			<Text>蛮族との戦闘において[ICON_Strength]戦闘力+4。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_TradeRoute]国内交易路が起点となる都市に毎ターン+1の忠誠度を与える。[ICON_TradeRoute]国外交易路が[ICON_Culture]文化+2を与える。</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="ja_JP">
+			<Text>蛮族との戦闘において[ICON_Strength]戦闘力+10。</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="ja_JP">
+			<Text>攻城兵器</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="ja_JP">
+			<Text>太古・古典の攻城兵器に対する[ICON_Production]生産力+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="ja_JP">
+			<Text>During the Peloponnesian War, one hundred sieges were attempted and fifty-eight ended with the surrender of the besieged area.[NEWLINE]Alexander the Great's army successfully besieged many powerful cities during his conquests. Two of his most impressive achievements in siegecraft took place in the Siege of Tyre and the Siege of the Sogdian Rock. His engineers built a causeway that was originally 60 m (200 ft) wide and reached the range of his torsion-powered artillery, while his soldiers pushed siege towers housing stone throwers and light catapults to bombard the city walls.[NEWLINE] Most conquerors before him had found Tyre, a Phoenician island-city about 1 km from the mainland, impregnable. The Macedonians built a mole, a raised spit of earth across the water, by piling stones up on a natural land bridge that extended underwater to the island, and although the Tyrians rallied by sending a fire ship to destroy the towers, and captured the mole in a swarming frenzy, the city eventually fell to the Macedonians after a seven-month siege. In complete contrast to Tyre, Sogdian Rock was captured by stealthy attack. Alexander used commando-like tactics to scale the cliffs and capture the high ground, and the demoralized defenders surrendered. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="ja_JP">
+			<Text>榴弾</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="ja_JP">
+			<Text>ルネサンス以前の攻城兵器に対する[ICON_Production]生産力+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="ja_JP">
+			<Text>According to the story, around the year 1189 Iron Li developed a new method for hunting foxes which used a ceramic explosive to scare foxes into his nets. The explosive consisted of a ceramic bottle with a mouth, stuffed with gunpowder, and attached with a fuse. Explosive and net were placed at strategic points of places such as watering holes frequented by foxes, and when they got near enough, Iron Li would light the fuse, causing the ceramic bottle to explode and scaring the frightened foxes right into his nets. [NEWLINE]While a fanciful tale, it's not exactly certain why this would cause the development of the iron bomb, given the explosive was made using ceramics, and other materials such as bamboo or even leather would have done the same job, assuming they made a loud enough noise. Nonetheless, the iron bomb made its first appearance in 1221 at the siege of Qizhou (in modern Hubei province), and this time it would be the Jin who possessed the technological advantage. The Song commander Zhao Yurong survived and was able to relay his account for posterity. </Text>
+		</Replace>
+
+			
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="ja_JP">
+			<Text>蛮族</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_DESC" Language="ja_JP">
+			<Text>蛮族の湧き方を設定します。</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_NAME" Language="ja_JP">
+			<Text>標準</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_NAME" Language="ja_JP">
+			<Text>バランス</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="ja_JP">
+			<Text>怒りの蛮族</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="ja_JP">
+			<Text>蛮族なし</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_DESC" Language="ja_JP">
+			<Text>オリジナル設定</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_DESC" Language="ja_JP">
+			<Text>騎乗ユニットが15ターンよりまでに発生しません。蛮族の野営地の配置がプレイヤー間で均等になります。</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="ja_JP">
+			<Text>がんばって。</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="ja_JP">
+			<Text>蛮族なし。</Text>
+		</Replace>			
+		
+		
+		
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="ja_JP">
+			<Text>Requirements</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="ja_JP">
+			<Text>Define how soon the victory conditions would occur in-game.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_NAME" Language="ja_JP">
+			<Text>GS Balanced</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_NAME" Language="ja_JP">
+			<Text>RF Balanced</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Language="ja_JP">
+			<Text>Custom</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_NAME" Language="ja_JP">
+			<Text>Legacy BBG</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" Language="ja_JP">
+			<Text>Pre 4.0 BBG Settings: earliest possible for CV and DV, everything else is standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="ja_JP">
+			<Text>Default Firaxis Settings for GS</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="ja_JP">
+			<Text>Balance the condition around GS timing:[NEWLINE]CV: more culture/tourims per great works, less tourism required to attract tourist [NEWLINE]DV: first congress at Medieval Era, first diplomatic vote at Renaissance Era [NEWLINE]SV: Slight cheaper projects and smaller distance to travel.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="ja_JP">
+			<Text>Balance the condition around RF timing:[NEWLINE]CV: more culture/tourims per great works, even less tourism required to attract tourist [NEWLINE]DV: first congress and diplomatic vote at Medieval Era [NEWLINE]SV: Ends at Mars Colonies.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="ja_JP">
+			<Text>Balance each victory condition individualy</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="ja_JP">
+			<Text>Disable all victory conditions</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="ja_JP">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="ja_JP">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="ja_JP">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="ja_JP">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="ja_JP">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="ja_JP">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="ja_JP">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="ja_JP">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="ja_JP">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="ja_JP">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="ja_JP">
+			<Text>Early</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="ja_JP">
+			<Text>Earliest</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="ja_JP">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="ja_JP">
+			<Text>Off</Text>
+		</Replace>
+		
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="ja_JP">
+			<Text>Great works and artifacts are providing more tourism and culture</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="ja_JP">
+			<Text>Great works and artifacts are providing more tourism and culture[NEWLINE]Amount of tourism required is 25% lower</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Culture Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings: Religious pressure extents up to 10 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="ja_JP">
+			<Text>Religious pressure extents up to 12 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="ja_JP">
+			<Text>Religious pressure extents up to 13 tiles away</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Religious Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings: 250 turns (Online)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="ja_JP">
+			<Text>175 turns</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="ja_JP">
+			<Text>150 turns</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Score Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="ja_JP">
+			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules[NEWLINE]Mars Hydrophonics</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="ja_JP">
+			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Science Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="ja_JP">
+			<Text>First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Renaissance Era</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="ja_JP">
+			<Text>First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Medieval Era</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Diplomatic Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings: 66% of Emerged Lands</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="ja_JP">
+			<Text>60% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="ja_JP">
+			<Text>50% of Emerged Lands in your empire</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Territorial Victory</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="ja_JP">
+			<Text>Standard Firaxis Settings: All Capitals Captured</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="ja_JP">
+			<Text>No Conquest Victory</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="ja_JP">
+			<Text>Use your military and empire growth to your advantage to dominate the lands!</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="ja_JP">
+			<Text>% of emerged land controlled</Text>
+		</Replace>
+		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="ja_JP">
+			<Text>Territorial</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="ja_JP">
+			<Text>Territorial</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="ja_JP">
+			<Text>Territorial Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="ja_JP">
+			<Text>Territorial Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="ja_JP">
+			<Text>TERRITORIAL VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="ja_JP">
+			<Text>TERRITORIAL VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="ja_JP">
+			<Text>TERRITORIAL Progress</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="ja_JP">
+			<Text>To achieve a [COLOR:ResMilitaryLabelCS]TERRITORIAL[ENDCOLOR] victory, you need to expand your empire and conquer your foes to control the largest amount of emerged lands.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="ja_JP">
+			<Text>[NEWLINE][NEWLINE]Required amount of total emerged owned to win:  </Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="ja_JP">
+			<Text>Land tiles owned:</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="ja_JP">
+			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
+		</Replace>
+		
+		
+		<!-- Conquest legacy text -->
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="ja_JP">
+			<Text>Conquest</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="ja_JP">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="ja_JP">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="ja_JP">
+			<Text>Conquest Victory</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="ja_JP">
+			<Text>CONQUEST VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="ja_JP">
+			<Text>CONQUEST VICTORY</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="ja_JP">
+			<Text>Conquest Progress</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="ja_JP">
+			<Text>To achieve a [COLOR:ResMilitaryLabelCS]CONQUEST[ENDCOLOR] victory, you must conquer the original [ICON_Capital] Capital of every other civilization.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="ja_JP">
+			<Text>スペインに固有のマスケット兵を代替するルネサンス時代のユニット。同タイルに宗教ユニットが存在する場合[ICON_Strength]戦闘力+10。このユニットが都市を占領した、あるいは占領時に隣のタイルにいる場合、その都市がプレイヤーの宗教に即座に改宗する。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
+			<Text>徴用されたユニットの[ICON_Movement]移動力+1。徴用されたユニットのアップグレードにかかる[ICON_GOLD]ゴールドおよび資源-75%。都市国家からユニットを徴用した際、その都市国家に対して[ICON_ENVOY]代表団+1を得る。徴用されたユニットの[ICON_Strength]戦闘力+3。城の技術を研究完了した際に固有ユニットである黒軍を得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
+			<Text>ハンガリーに固有の騎兵を代替する産業時代のユニット。宗主国となっている都市国家ひとつにつき[ICON_Strength]戦闘力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="ja_JP">
+			<Text>隣接するツンドラ（平地）1つにつき聖地の[ICON_Faith]信仰力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ja_JP">
+			<Text>前提となる技術をすべて研究完了していれば[ICON_TechBoosted]ひらめきがブースト対象となる技術の研究を完了させる。キャンパスの[ICON_SCIENCE]科学力-50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ja_JP">
+			<Text>都市が建設された際に追加の領土を獲得する。[ICON_Faith]信仰力+1。ツンドラから[ICON_Production]生産力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>都市が建設された際に追加の領土を獲得する。[ICON_Faith]信仰力+1。ツンドラから[ICON_Production]生産力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="ja_JP">
+			<Text>文明のゆりかご</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ja_JP">
+			<Text>河川に隣接する農場の[ICON_Food]食糧産出+1。[NEWLINE]古代の帝国を発明後、ジッグラトの [ICON_Production]生産力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="ja_JP">
+			<Text>労働者がシュメール固有の改善であるジッグラトを建設できるようになる。[NEWLINE][NEWLINE]河川に隣接している場合[ICON_Housing]住宅+1、[ICON_Science]科学+2、[ICON_Culture]文化+1。2つの農場あるいは区域に隣接している場合[ICON_Faith]信仰力+1。[NEWLINE]丘陵および他のジッグラトの隣に建設することはできない。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="ja_JP">
+			<Text>エンキドゥの冒険</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="ja_JP">
+			<Text>The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
+		</Replace>	
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="ja_JP">
+			<Text>As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ja_JP">
+			<Text>自文明と同盟している文明が戦争状態にある文明に好戦性ペナルティを受けることなく宣戦布告をすることができる。同盟国と戦争している場合、その文明とは5タイル以内の経験値取得および略奪の報酬を共有する。[NEWLINE]太古時代からゲームを開始した場合、戦闘車を持った状態で開始する。[NEWLINE]蛮族の野営地を占領した際に追加の報酬を通常の[ICON_Gold]ゴールドに加えて得る。都市国家のユニットを徴用する際の費用が半分になる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>自文明と同盟している文明が戦争状態にある文明に好戦性ペナルティを受けることなく宣戦布告をすることができる。同盟国と戦争している場合、その文明とは5タイル以内の経験値取得および略奪の報酬を共有する。[NEWLINE]太古時代からゲームを開始した場合、戦闘車を持った状態で開始する。[NEWLINE]蛮族の野営地を占領した際に追加の報酬を通常の[ICON_Gold]ゴールドに加えて得る。都市国家のユニットを徴用する際の費用が半分になる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>同盟国と戦争している場合、その文明とは5タイル以内の経験値取得および略奪の報酬を共有する。[NEWLINE]太古時代からゲームを開始した場合、戦闘車を持った状態で開始する。[NEWLINE]蛮族の野営地を占領した際に追加の報酬を通常の[ICON_Gold]ゴールドに加えて得る。都市国家のユニットを徴用する際の費用が半分になる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>自文明と同盟している文明が戦争状態にある文明に好戦性ペナルティを受けることなく宣戦布告をすることができる。同盟国と戦争している場合、その文明とは5タイル以内の経験値取得および略奪の報酬を共有する。[NEWLINE]太古時代からゲームを開始した場合、戦闘車を持った状態で開始する。[NEWLINE]蛮族の野営地を占領した際に追加の報酬を通常の[ICON_Gold]ゴールドに加えて得る。都市国家のユニットを徴用する際の費用が半分になる。</Text>
+		</Replace>
+		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
+			<Text>+{1_num} 対黄金時代/英雄時代</Text>
+		</Row>
 	</LocalizedText>
 </GameData>
