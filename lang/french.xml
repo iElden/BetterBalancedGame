@@ -249,10 +249,13 @@
             <Text>Débloque la capacité de bâtisseur de construire un Sphynx, unique à l'Egypte.[NEWLINE][NEWLINE]+2 [ICON_Faith] Foi, +1 [ICON_Culture] Culture, et +1 Attrait.[NEWLINE][NEWLINE]+1 [ICON_Faith] Foi et +1 [ICON_CULTURE] Culture si adjacent à une merveille. +1 [ICON_FOOD] Nourriture et +1 [ICON_PRODUCTION] Production si construit sur un désert ou +1 [ICON_CULTURE] Culture si construit sur des plaines inondables.[NEWLINE][NEWLINE]Bonus de[ICON_CULTURE] Culture lorsque Service Diplomatique est découvert. Génère du[ICON_TOURISM] Tourisme après avoir recherché l'Aviation. Ne peut pas être construit à côté d'un autre Sphynx ou sur la Neige ou sur une Colline enneigée.</Text>
         </Replace>
 		<!-- ========== ESPAGNE ========== -->
-		<!--
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. Les [ICON_TradeRoute] routes commerciales entre plusieurs continents produisent davantage : plus d'[ICON_Gold] or pour les routes extérieures, plus de [ICON_Food] nourriture ou de [ICON_Production] production si elles sont intérieures. Loyauté +2 par tour pour les villes dotées d'une mission adjacente au centre-ville et situées sur un continent différent de celui de votre [ICON_Capital] capitale de départ. [NEWLINE][ICON_PRODUCTION] Production +25% pour les bâtiments du Port.</Text>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="fr_FR">
+			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. Les [ICON_TradeRoute] routes commerciales octroient [ICON_Gold] or +3, [ICON_Faith] foi +2 et [ICON_Production] production +1. Les [ICON_TradeRoute] routes commerciales entre plusieurs continents voient tous leurs rendements tripler. Les villes fondées hors de votre continent d'origine reçoivent +25 % de [ICON_Production] production pour la construction de quartiers, et un bâtisseur gratuit.[NEWLINE][ICON_PRODUCTION] Production +25% pour les bâtiments du Port.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. Les [ICON_TradeRoute] routes commerciales octroient [ICON_Gold] or +3, [ICON_Faith] foi +2 et [ICON_Production] production +1. Les [ICON_TradeRoute] routes commerciales entre plusieurs continents voient tous leurs rendements tripler. Les villes fondées hors de votre continent d'origine reçoivent +25 % de [ICON_Production] production pour la construction de quartiers, et un bâtisseur gratuit.[NEWLINE][ICON_PRODUCTION] Production +25% pour les bâtiments du Port.</Text>
+		</Replace>
+		<!--
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Coût en [ICON_FAITH] Foi des missionnaire réduit de 30%. Les Inquisiteurs peuvent éradiquer les hérétiques une fois supplémentaire et suppriment 100% de l'influence des autres religions. Les unités militaires recoivent +4 [ICON_Strength] Puissance de Combat face aux joueurs suivants une autre religion que la vôtre.</Text>
 		</Replace>-->
@@ -374,7 +377,11 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_FAITH] Foi +2 pour chaque route commerciale internationale envoyée ou reçue. La civilisation émettrice reçoit également 2 [ICON_FAITH] foi. [ICON_FAITH] Foi +3 et [ICON_AMENITIES] activités de loisirs +1 pour chaque ville dotée d'un aqueduc. [ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc.</Text>
-		</Replace>-->
+		</Replace>
+		-->
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Bonus de proximité majeur en [ICON_FAITH] Foi et [ICON_FOOD] Nourriture pour les lieux saints situés près d'une rivière. Leur construction déclenche une bombe culturelle. [ICON_Housing] Habitations +2 s'ils se trouvent sur une rivière.</Text>
+    	</Replace>
 		<!-- ========== MACÉDOINE ========== -->
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>+10 en cas de siège d'un quartier.</Text>
