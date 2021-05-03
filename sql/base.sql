@@ -667,7 +667,7 @@ INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 -- Missions cannot be placed next to each other
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
-UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
+UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions get bonus science at Enlightenment instead of cultural heritage
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
 -- Early Fleets moved to Mercenaries
