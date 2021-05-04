@@ -8,5 +8,5 @@
 --==============================================================================================
 
 UPDATE GlobalParameters SET Value='1' WHERE Name='SCIENCE_VICTORY_POINTS_REQUIRED';
-UPDATE Project SET Cost='1500' WHERE ProjectType='PROJECT_LAUNCH_EXOPLANET_EXPEDITION';
-UPDATE Project SET Cost='1500' WHERE ProjectType='PROJECT_LAUNCH_MARS_BASE';
+UPDATE Projects SET Cost='1500' WHERE ProjectType='PROJECT_LAUNCH_EXOPLANET_EXPEDITION';
+UPDATE Projects SET Cost='1500' WHERE ProjectType='PROJECT_LAUNCH_MARS_BASE';
