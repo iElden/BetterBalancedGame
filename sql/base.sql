@@ -667,7 +667,7 @@ INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 -- Missions cannot be placed next to each other
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
-UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
+UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions get bonus science at Enlightenment instead of cultural heritage
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
 -- Early Fleets moved to Mercenaries
@@ -1033,13 +1033,13 @@ UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
 UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
 -- Firaxis patch
 -- UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_PIKEMAN';
-UPDATE Units SET Combat=72 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
 	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
-
+UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
 
 
 --==============================================================
