@@ -976,9 +976,9 @@ INSERT OR IGNORE INTO Building_YieldChanges
 --==============================================================
 -- more points for techs and civics
 UPDATE ScoringLineItems SET Multiplier=4 WHERE LineItemType='LINE_ITEM_CIVICS';
-UPDATE ScoringLineItems SET Multiplier=3 WHERE LineItemType='LINE_ITEM_TECHS';
+UPDATE ScoringLineItems SET Multiplier=4 WHERE LineItemType='LINE_ITEM_TECHS';
 -- less points for wide, more for tall
-UPDATE ScoringLineItems SET Multiplier=2 WHERE LineItemType='LINE_ITEM_CITIES';
+UPDATE ScoringLineItems SET Multiplier=1 WHERE LineItemType='LINE_ITEM_CITIES';
 UPDATE ScoringLineItems SET Multiplier=2 WHERE LineItemType='LINE_ITEM_POPULATION';
 -- Wonders Provide +4 score instead of +15
 UPDATE ScoringLineItems SET Multiplier=4 WHERE LineItemType='LINE_ITEM_WONDERS';
