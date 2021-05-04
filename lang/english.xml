@@ -942,7 +942,7 @@
 		<!-- civilizations -->
 		<!-- BABYLON -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
-			<Text>[COLOR_RED] To translate: Your [ICON_TechBoosted] Eurekas complete the research of the boosted Technology if you have researched all the prerequisite Technologies. -50% [ICON_SCIENCE] Science on Campus district.</Text>
+			<Text>[ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
 		</Replace>
 		<!-- RUSSIA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="en_US">
