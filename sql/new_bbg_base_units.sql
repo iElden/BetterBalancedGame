@@ -14,3 +14,8 @@ UPDATE Units SET BaseMoves='4' WHERE  UnitType='UNIT_SUBMARINE';
 UPDATE Units SET BaseMoves='6' WHERE  UnitType='UNIT_DESTROYER';
 -- Base is 3
 UPDATE Units SET BaseMoves='5' WHERE  UnitType='UNIT_AIRCRAFT_CARRIER';
+
+
+
+--Garde Imperial Combat reduced from 70 to 68 to match UU being +3 of replacement
+UPDATE Units SET Combat="68" WHERE UnitType="UNIT_FRENCH_GARDE_IMPERIALE";
