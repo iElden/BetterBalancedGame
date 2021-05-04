@@ -4,8 +4,8 @@
 --==================
 -- America
 --==================
--- Reduce combat strength of mustangs due to them already having many extra combat bonuses over biplanes
-UPDATE Units SET Combat=90 , RangedCombat=90 WHERE UnitType='UNIT_AMERICAN_P51';
+-- Reduce combat strength of mustangs to match Fighter due to them already having many extra combat bonuses over biplanes
+UPDATE Units SET Combat=95 , RangedCombat=95 WHERE UnitType='UNIT_AMERICAN_P51';
 -- rough rider is a cav replacement, so should cost horses
 INSERT OR IGNORE INTO Units_XP2 (UnitType , ResourceCost)
 	VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 10);
