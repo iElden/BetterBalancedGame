@@ -1,23 +1,20 @@
-<!--
-Beta version: XYYZZ for BBG X.YY (build ZZ)
-Live version: XYYZ for BBG X.YY.Z
+<!-- BETA ModID
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40409">
 -->
-<!-- BETA ModID -->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40204">
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
-<!-- Elden's ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4010">
--->
+<!-- Elden's ModID-->
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4051">
 	<Properties>
-		<Name>Better Balanced Game 4.2.0 BETA (Build 4)</Name>
+		<Name>Better Balanced Game 4.5.1</Name>
 		<Description>
-			BETA build of BBG
+			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
-		<Authors>iElden, D. / Jack The Narrator, codenaugh, MarsLife(puj)</Authors>
-		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, WhySoHate, Ignasiuz</SpecialThanks>
+		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
+		<Version>4051</Version>
+		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	<!--
@@ -106,6 +103,12 @@ Live version: XYYZ for BBG X.YY.Z
 		<Criteria id="nfp_babylon">
 			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
 		</Criteria>
+		<Criteria id="nfp_vietnam_kubilai">
+			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_portugal">
+			<ModInUse>FFDF4E79-DEE2-47BB-919B-F5739106627A</ModInUse>
+		</Criteria>
 		<Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
@@ -165,6 +168,13 @@ Live version: XYYZ for BBG X.YY.Z
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		<Criteria id="TerritorialSetting_1">
+            <ConfigurationValueMatches>
+                <ConfigurationId>VICTORY_TRADITIONAL_DOMINATION</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
 		<Criteria id="GlobalSetting_1">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryMasterSlider</ConfigurationId>
@@ -206,7 +216,7 @@ Live version: XYYZ for BBG X.YY.Z
 		</UpdateText>
 		<UpdateDatabase id="bbg_frontend_custom_victory">
 			<Properties>
-				<LoadOrder>999</LoadOrder>
+				<LoadOrder>19999</LoadOrder>
 			</Properties>
             	<File>config/config.xml</File>
 				<File>config/config.sql</File>
@@ -235,7 +245,7 @@ Live version: XYYZ for BBG X.YY.Z
 		
 		<ReplaceUIScript id="bbg_worldranking">
 			<Properties>
-			<LoadOrder>9999</LoadOrder>
+			<LoadOrder>19999</LoadOrder>
 			<LuaContext>WorldRankings</LuaContext>
 			<LuaReplace>ui/replacements/worldrankings_bbg.lua</LuaReplace>
 			</Properties>
@@ -253,10 +263,15 @@ Live version: XYYZ for BBG X.YY.Z
 			<File>sql/new_bbg_catherine_black_queen.sql</File>	
 			<File>sql/new_bbg_england.sql</File>
 			<File>sql/new_bbg_sumer.sql</File>	
-			<File>sql/new_bbg_gilgamesh.sql</File>				
-			<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
+			<File>sql/new_bbg_gilgamesh.sql</File>
 			<File>sql/new_bbg_citystates.sql</File>
 			<File>sql/new_bbg_great_people.sql</File>
+			<File>sql/new_bbg_great_works.sql</File>
+			<File>sql/new_bbg_religion_belief.sql</File>
+			<File>sql/new_bbg_spain.sql</File>
+			<File>sql/new_bbg_buildings.sql</File>
+			<File>sql/new_bbg_spy.sql</File>
+
 			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
 		
@@ -303,6 +318,10 @@ Live version: XYYZ for BBG X.YY.Z
 			</Properties>
 			<File>sql/xp1__rise_and_fall.sql</File>
 			<File>sql/new_bbg_xp1_dutch.sql</File>
+			<File>sql/new_bbg_xp1_policies.sql</File>
+			<File>sql/new_bbg_xp1_cree.sql</File>
+			<File>sql/new_bbg_xp1_scotland.sql</File>
+			<File>sql/new_bbg_xp1_zulus.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_db_updates" criteria="xp2">
@@ -315,6 +334,7 @@ Live version: XYYZ for BBG X.YY.Z
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
+			<File>sql/new_bbg_xp2_government.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -411,25 +431,38 @@ Live version: XYYZ for BBG X.YY.Z
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
-				<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
+		<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
 			<Properties>
 				<LoadOrder>11638</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_babylon.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_vietnam_kubilai" criteria="nfp_vietnam_kubilai">
+			<Properties>
+				<LoadOrder>11639</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_vietnam.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_portugal" criteria="nfp_portugal">
+			<Properties>
+				<LoadOrder>11640</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_portugal.sql</File>
 		</UpdateDatabase>
 			<UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
             </Properties>
 			<Criteria>CVSetting_2</Criteria>
-            <File>sql/victories/new_bbg_cv_2.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
+			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
 		<UpdateDatabase id="VictoryCulturalSetting_1">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
             </Properties>
 			<Criteria>CVSetting_1</Criteria>
-            <File>sql/victories/new_bbg_cv_1.sql</File>
+            <File>sql/victories/new_bbg_cv.sql</File>
         </UpdateDatabase>
 		<UpdateDatabase id="VictoryScienceSetting_2">
             <Properties>
@@ -476,7 +509,14 @@ Live version: XYYZ for BBG X.YY.Z
             </Properties>
 			<Criteria>RVSetting_1</Criteria>
             <File>sql/victories/new_bbg_rv_1.sql</File>
-        </UpdateDatabase>	
+        </UpdateDatabase>
+		<UpdateDatabase id="VictoryTerritorialSetting_1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+			<Criteria>TerritorialSetting_1</Criteria>
+            <File>sql/victories/new_bbg_new_domination.sql</File>
+        </UpdateDatabase>
 		<UpdateDatabase id="GlobalVictorySetting_1">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -485,7 +525,7 @@ Live version: XYYZ for BBG X.YY.Z
             <File>sql/victories/new_bbg_rv_1.sql</File>
 			<File>sql/victories/new_bbg_dv_1.sql</File>
 			<File>sql/victories/new_bbg_sv_1.sql</File>
-			<File>sql/victories/new_bbg_cv_1.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
         </UpdateDatabase>	
 		<UpdateDatabase id="GlobalVictorySetting_2">
             <Properties>
@@ -495,6 +535,7 @@ Live version: XYYZ for BBG X.YY.Z
             <File>sql/victories/new_bbg_rv_2.sql</File>
 			<File>sql/victories/new_bbg_dv_2.sql</File>
 			<File>sql/victories/new_bbg_sv_2.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>	
 		<UpdateDatabase id="GlobalVictorySetting_BBG_Legacy">
@@ -503,8 +544,9 @@ Live version: XYYZ for BBG X.YY.Z
             </Properties>
 			<Criteria>GlobalSetting_BBG_Legacy</Criteria>
 			<File>sql/victories/new_bbg_dv_2.sql</File>
+			<File>sql/victories/new_bbg_cv.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
-        </UpdateDatabase>				
+        </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -571,10 +613,20 @@ Live version: XYYZ for BBG X.YY.Z
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
+		<File>sql/new_bbg_great_works.sql</File>
 		<File>sql/new_bbg_base_units.sql</File>
 		<File>sql/new_bbg_xp2_units.sql</File>
-
-		<File>sql/new_bbg_great_works_nfp_babylon.sql</File>
+		<File>sql/new_bbg_xp1_policies.sql</File>
+		<File>sql/new_bbg_religion_belief.sql</File>
+		<File>sql/new_bbg_xp1_cree.sql</File>
+		<File>sql/new_bbg_xp1_scotland.sql</File>
+		<File>sql/new_bbg_xp1_zulus.sql</File>
+		<File>sql/new_bbg_nfp_vietnam.sql</File>
+		<File>sql/new_bbg_xp2_government.sql</File>
+		<File>sql/new_bbg_spain.sql</File>
+		<File>sql/new_bbg_buildings.sql</File>
+		<File>sql/new_bbg_spy.sql</File>
+		<File>sql/new_bbg_nfp_portugal.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
@@ -587,11 +639,11 @@ Live version: XYYZ for BBG X.YY.Z
 		<File>sql/victories/new_bbg_cv_2.sql</File>
 		<File>sql/victories/new_bbg_sv_2.sql</File>
 		<File>sql/victories/new_bbg_dv_2.sql</File>
-		<File>sql/victories/new_bbg_cv_1.sql</File>
+		<File>sql/victories/new_bbg_cv.sql</File>
 		<File>sql/victories/new_bbg_sv_1.sql</File>
 		<File>sql/victories/new_bbg_dv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_2.sql</File>
-		<File>sql/victories/new_bbg_new_domination.sql</File>							
+		<File>sql/victories/new_bbg_new_domination.sql</File>
 	</Files>
 </Mod>

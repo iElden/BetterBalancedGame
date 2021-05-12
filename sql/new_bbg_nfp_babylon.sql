@@ -12,6 +12,12 @@ DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND Modi
 INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
     ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
 
+-- Beta 6/3/21 Now Handled by lua Free tech if you have the prerequisite and not gained from the team
+-- Live build 4.4 Don't include Babylon change
+-- DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
+
+-- Beta 6/3/21 Move decrease to District not the entire yield output
+-- UPDATE Modifiers SET ModifierType = 'MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER' WHERE ModifierId = 'TRAIT_SCIENCE_DECREASE';
 
 
 -- Babylon - Nalanda infinite technology re-suze fix.

@@ -9,7 +9,7 @@
 			<Text>Recebe paineis extras ao fundar cidades. +1 de [ICON_Faith] Fé no seu império. +1 de [ICON_Production] Produção de Tundra.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>[COLOR_RED]TO TRANSLATE: Extra territory upon founding cities. +1 [ICON_Faith] Faith for your Empire. +1 [ICON_Production] Production from Tundra.</Text>
+			<Text>Recebe paineis extras ao fundar cidades. +1 de [ICON_Faith] Fé no seu império. +1 de [ICON_Production] Produção de Tundra.</Text>
 		</Replace>
 		
 		<!-- MAPUCHE -->
@@ -156,12 +156,20 @@
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>+3 de [ICON_Favor] Favor diplomático. Alavancar unidades de Cidades Estado custa metade de [ICON_Gold] Ouro.[NEWLINE]Unidades de Cidades Estado gaham +4 de [ICON_Strength] Força de Combate se você é o Suzerano (inclui unidades alavancadas).[NEWLINE]Concede +1 [Icon_Governor] Título de Governador. +2 emissários e +2 pontos de emissário por turno.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="pt_BR"> <!-- Last update: 4.2.0-->
+			<Text>Permite ao Construtor construir um Campo de Golfe, melhoria única da Escócia.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Serviço, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e +1 de [ICON_CULTURE] Cultura se estiver adjacente a um distrito de Centro de Cidade. +1 [ICON_AMENITIES] Serviço e +1 de [ICON_CULTURE] Cultura se estiver adjacente a um distrito de Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicional à medida que avança nas Tecnologias e Cívicas. Não pode ser colocado em Deserto. Uma por cidade. Paineis com Campos de Golfe não podem ser trocados entre cidades. +1 de Apelo.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pt_BR"> <!-- Last update: 4.2.0-->
+			<Text>Permite ao Construtor construir um Campo de Golfe, melhoria única da Escócia.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Serviço, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e +1 de [ICON_CULTURE] Cultura se estiver adjacente a um distrito de Centro de Cidade. +1 [ICON_AMENITIES] Serviço e +1 de [ICON_CULTURE] Cultura se estiver adjacente a um distrito de Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicional à medida que avança nas Tecnologias e Cívicas. Não pode ser colocado em Deserto. Uma por cidade. Paineis com Campos de Golfe não podem ser trocados entre cidades. +1 de Apelo.</Text>
+		</Replace>
+		<!--
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="pt_BR">
 			<Text>Permite que o Construtor faça um Campo de Golfe, exclusivo da Escócia.[NEWLINE][NEWLINE]+2 de [ICON_AMENITIES] Serviços, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e  +1 de [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 de [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicionais à medida que avança pelas Árvores Cívica e Tecnológica. Não pode ser construído em Deserto. Um por cidade. Paineis com Campo de Golfe não podem ser trocados. +1 de Apelo.</Text>
 		</Replace>		
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pt_BR">
 			<Text>Permite que o Construtor faça um Campo de Golfe, exclusivo da Escócia.[NEWLINE][NEWLINE]+1 de [ICON_AMENITIES] Serviço, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e  +1 de [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 de [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicionais à medida que avança pelas Árvores Cívica e Tecnológica. Não pode ser construído em Deserto. Um por cidade. Paineis com Campo de Golfe não podem ser trocados. +1 de Apelo</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as unidades tem +1 de visão. Promover unidades de Cavalaria Leve não encerra o turno delas.</Text>
 		</Replace>
@@ -197,7 +205,7 @@
 			<Text>Rotas comerciais concedem +0.5 de [ICON_FAITH] por recurso na origem. Recursos concedem +1 de [ICON_FAITH] Fé. Pode comprar Museus arqueológicos e Arqueológos com [ICON_FAITH] Fé.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="pt_BR">
-			<Text>Recebe [ICON_SCIENCE] Ciência e [ICON_CULTURE] Cultura igual a 15% da sua geração de [ICON_FAITH] Fé em cidades fundadas em colinas.</Text>
+			<Text>Recebe [ICON_SCIENCE] Ciência e [ICON_CULTURE] Cultura igual a 10% da sua geração de [ICON_FAITH] Fé em cidades fundadas em colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="pt_BR">
 			<Text>Unidade exclusiva da Etiópia da Era Medieval. Tem visibilidade adicional e não recebe penalidade de [ICON_Movement] movimento em colinas, além de ganhar +4 de [ICON_STRENGTH] Força de Combate quando lutando em colinas.</Text>
@@ -248,7 +256,7 @@
 			<Text>Unidades de Combate terrestres e de Suporte são 10% mais baratas de comprar com  [ICON_GOLD] Ouro ou [ICON_FAITH] Fé pra cada construção do distrito de Acampamento na cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo da Fenícia que concentra a atividade naval na sua cidade. Substitui o Porto e é mais barato de construir. Deve ser construído em Paineis Costeiros  ou de Lago adjacentes à terra.[NEWLINE][NEWLINE]+25% de [ICON_PRODUCTION] Produção pra unidades navais e Colonos nessa cidade. Todas as unidades navais dentro da fronteira dessa cidade curam +100 PV a cada turno.</Text>
+			<Text>Um distrito exclusivo da Fenícia que concentra a atividade naval na sua cidade. Substitui o Porto e é mais barato de construir. Deve ser construído em Paineis Costeiros  ou de Lago adjacentes à terra.[NEWLINE][NEWLINE]+25% de [ICON_PRODUCTION] Produção pra unidades navais e Colonos nessa cidade.</Text>
 		</Replace>
 		<!-- replaced, alrdy in file -->
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="pt_BR">
@@ -445,11 +453,11 @@
 			<Text>Unidades recrutadas ganham uma habilidade dando a eles +1 de [ICON_Movement] movimento. Custa 75% menos [ICON_GOLD] ouro e recursos estratégicos para melhorar unidades recrutadas. Se você recrutar tropas de uma cidade-estado, receberá 1 [ICON_ENVOY] emissário com aquela cidade-estado. +2 [ICON_Envoy] Emissários se você possuir uma construção de segundo nível no Edifício Administrativo.Unidades recrutadas recebem +3 de [ICON_Strength] Força de Combate. Tem acesso à unidade exclusiva Exército Negro quando pesquisar a tecnologia Castelos.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pt_BR">
-			<Text>Ao derrotar uma unidade inimiga recebe bônus de [ICON_SCIENCE] ciência igual a 25% da [ICON_Strength] força de combate da unidade derrotada. Cidades são imunes à fadiga de guerra. Todas as unidades militares se curam completamente quando o jogador capturar uma cidade com uma maravilha construída.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
 		</Replace>		
 		
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="pt_BR">
-			<Text>Pode formar corporações (cívico de Mercenários) e exércitos (cívico de Nacionalismo) mais cedo. Exércitos e corporações recebem um adicional de +5 [ICON_STRENGTH] de força de combate ao pesquisar o cívico Nacionalismo.</Text>
+			<Text>Pode formar Corporações (na Cívica de Mercenários) e Exércitos (na Cívica de Nacionalismo) mais cedo que o normal. Recebe um adicional de +5 de [ICON_STRENGTH] Força de Combate pra ambas as Corporações e Exércitos na Cívica de Mobilização.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="pt_BR">
 			<Text>Unidade exclusiva dos húngaros da Era Industrial. +1 de [ICON_Strength] Força de Combate pra cada cidade estado da qual você é suserano.</Text>
@@ -467,7 +475,7 @@
 			<Text>Caneta, Pincel, e Voz: Recebe +1 de pontuação de Era a cada que vez você acionar uma [ICON_CivicBoosted] inspiração. +1 de pontuação de Era por construir uma edificação com um espaço para uma grande obra. Se escolhida no início de uma Era de Ouro, Inspirações concedem um adicional de 10% aos custos de cívico. Cada cidade recebe +2 de [ICON_CULTURE] cultura e +1 de [ICON_GOLD] ouro por cada distrito especializado.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pt_BR">
-			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +2 títulos de [Icon_Governor] governador.</Text>
+			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +1 títulos de [Icon_Governor] governador.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="pt_BR">
 			<Text>Um distrito exclusivo da Coreia que substitui o distrito de Campus. +2 de [ICON_SCIENCE] ciência de adjacência base, aumentando por cada duas minas adjacentes. Concede +1 de adjacência de [ICON_CULTURE] cultura a Teatros. Completar o distrito ativa explosão cultural.</Text>
@@ -566,7 +574,7 @@
 			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de Experiência pra todas as unidades. [NEWLINE]Começa com um Carro de Guerra na Era Antiga.[NEWLINE]Quando captura um Acampamento Bárbaro, recebe uma recompensa de Aldeia Tribal, além  do [ICON_Gold] Ouro. Paga metade do preço pra recrutar unidades de cidade-estado.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="pt_BR">
 			<Text>+1 [ICON_AMENITIES] de Serviço de entretenimento por cada painel de Lago com um Huey Teocalli. +1 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] Produção, +2 [ICON_CULTURE] Cultura para cada painel de Lago no Império. Só pode ser construído em um painel de lago adjacente a terra firme.</Text>
@@ -602,7 +610,7 @@
 			<Text>+1 [ICON_PRODUCTION] Produção para melhoria de Serraria. Desloqueia defesas Urbanas, concedendo automaticamente para todas as suas cidades 300 de força de Fortificação e permitindo ataques à distância. Todas as melhorias de Muralhas tornam-se obsoletas, assim como unidades de apoio a cerco (ariete e torre de cerco).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="pt_BR">
-			<Text>+1 [ICON_FOOD] Alimento painéis de Tundra. Em painéis de Neve e Tundra todas as Minas e Serrarias recebem +1 de [ICON_PRODUCTION] Produção, todos os acampamentos recebem +1 [ICON_FOOD] Alimento, e recursos estratégicos acumulam +100%.[NEWLINE][NEWLINE]Permite construir Fazendas em Painéis de Tundra, permite construir Fazendas em painéis de Tundra (Colinas).[NEWLINE][NEWLINE]O custo para a compra de de painéis de Neve, Neve(Colinas), Tundra e Tundra (colinas) é reduzido em 50%.[NEWLINE][NEWLINE]Cidades com Parques Nacionais recebem um extra de +8 [ICON_FOOD] Alimento e +8 [ICON_PRODUCTION] Produção por Turno.</Text>
+			<Text>+1 [ICON_FOOD] Alimento painéis de Tundra. Em painéis de Neve e Tundra todas as Minas e Serrarias recebem +1 de [ICON_PRODUCTION] Produção, todos os acampamentos recebem +1 [ICON_FOOD] Alimento, e recursos estratégicos acumulam +100%.[NEWLINE][NEWLINE]Permite construir Fazendas em Painéis de Tundra, permite construir Fazendas em painéis de Tundra (Colinas).[NEWLINE][NEWLINE]O custo para a compra de de painéis de Neve, Neve(Colinas), Tundra e Tundra (colinas) é reduzido em 50%.[NEWLINE][NEWLINE]Cidades com Parques Nacionais recebem um extra de +4 [ICON_FOOD] Alimento e +4 [ICON_PRODUCTION] Produção por Turno.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe 25% do custo em Produção de unidades militares terrestres em [ICON_FAITH] Fé ao produzir unidades.</Text>
@@ -717,7 +725,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Pode formar Frotas e Armadas mais cedo que o normal (Mercenários and Mercantilismo). [ICON_TradeRoute] Rotas comerciais entre diferentes continetes recebem [ICON_GOLD] Ouro por rotas com outras civilizações, e bônus de [ICON_FOOD] Alimento and [ICON_PRODUCTION] Produção por rotas entre suas próprias cidades. +2 Lealdade por turno por cidades com uma melhoria de Missão adjacente a um Centro de Cidade e que não esteja no continente de sua [ICON_Capital] Capital.</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes between multiple continents receive bonus [ICON_Gold] Gold for routes to other civilizations, and bonus [ICON_Food] Food and [ICON_Production] Production for routes between your own cities. +2 Loyalty per turn for cities with a Mission improvement adjacent to the City Center and not on your original [ICON_Capital] Capital's continent.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>30% de desconto em [ICON_FAITH] Fé para Missionários. Inquisidores podem remover Heresia uma vez a mais e removem 100% da presença de outras Religiões. Unidades de Combate tem um bônus de +4 [ICON_Strength] Força de Combate contra civilizações seguindo outras religiões.</Text>
@@ -805,7 +813,7 @@
 			<Text>Unidade da Era Clássica exclusiva da Georgia, substitui o Espadachim. Colinas concedem +5 [ICON_Strength] de Força de Combate bonus e requerem apenas 1 [ICON_Movement] de Movemento.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="pt_BR">
-			<Text>Matar uma unidade militar concede [ICON_FAITH] Fé igual a 50% da [ICON_STRENGTH] Força base da unidade. Cada [ICON_ENVOY] Emissário que você enviar a uma cidade-estado que siga sua religião majoritária conta como dois [ICON_ENVOY] emissários. (É necessário ter uma religião majoritária).</Text>
+			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="pt_BR">
@@ -954,6 +962,72 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="pt_BR">
 			<Text>[ICON_Science] Ciência extra nas edificações dos Campi: +50% se a [ICON_CITIZEN] população da cidade for 15 ou maior, +50% se o distrito tiver pelo menos +3 de bônus de adjacência.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="pt_BR">
+			<Text>[ICON_FAITH] Fé extra de edificações nos Locais Sagrados: +50% se a [ICON_CITIZEN] população da cidade for 15 ou maior, +50% se o distrito tiver pelo menos +3 de bônus de adjacência.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="pt_BR">
+			<Text>[ICON_CULTURE] Cultura extra de edificações nos Teatros: +50% se a [ICON_CITIZEN] população da cidade for 15 ou maior, +50% se o distrito tiver pelo menos +3 de bônus de adjacência.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="pt_BR">
+			<Text>Seus distritos em Costa ou Lago, ou adjacentes a esses paineis, dão +1 de [ICON_Culture] Cultura. +1 de [ICON_Culture] Cultura quando pesquisar Exploração.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="pt_BR">
+			<Text>Suas unidades de Comerciantes são imunes a serem saqueadas.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="pt_BR">
+			<Text>Seus distritos em Costa ou Lago, ou adjacentes a esses paineis, dão +1 de [ICON_Culture] Cultura. +1 de [ICON_Culture] Cultura quando pesquisar Exploração.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="pt_BR">
+			<Text>Suas unidades de Comerciantes são imunes a serem saqueadas.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="pt_BR">
+			<Text>Comece o jogo com a [ICON_TechBoosted] Eureca da Tecnologia de Escrita. Cidades costeiras fundadas pela Fenícia e localizadas no mesmo continente da [ICON_Capital] Capital são 100% leais. Colonos ganham +1 de [ICON_Movement] Movimento e +2 de alcance de visão quando embarcados. Colonos ignoram custos adicionais de [ICON_Movement] movimento pra embarcar e desembarcar.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="pt_BR">
+			<Text>+1 de capacidade de [ICON_TradeRoute] rota comercial com a tecnologia de Cerâmica. Paineis não reinvindicados dentro de um raio de 3 paineis de uma cidade cree caem sob controle dos crees quando um Comerciante se move pra eles pela primeira vez.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="pt_BR">
+			<Text>Unidades de combate ganham +3 de [ICON_Strength] Força de Combate quando estiverem dentro das bordas de cidades amigáveis que sigam essa Religião.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: +1 Faith [ICON_Faith] from tiles with Charming or better Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 [ICON_Strength] Combat Strength or [ICON_RELIGION] Religious Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="pt_BR">
+			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

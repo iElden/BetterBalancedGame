@@ -8,7 +8,8 @@
 --==============================================================================================
 -- Delete Base Initial Requirement
 
-
+ -- 02/05/2021: BugFix, delete double bonus
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_LAUTARO_ABILITY' AND ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_MAPUCHE_TOQUI' AND ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 
 INSERT OR IGNORE INTO Requirements
@@ -32,7 +33,8 @@ INSERT OR IGNORE INTO RequirementSets
 INSERT OR IGNORE INTO RequirementSetRequirements
 	(RequirementSetId , RequirementId)
 	VALUES
-	('MAPUCHE_TRAIT_REQUIREMENTS' , 		'REQUIRES_OPPONENT_IS_GOLDEN_AGE_REQUIREMENTS');	
+	('MAPUCHE_TRAIT_REQUIREMENTS' , 		'REQUIRES_OPPONENT_IS_GOLDEN_AGE_REQUIREMENTS'),
+	('MAPUCHE_TRAIT_REQUIREMENTS' , 		'OPPONENT_IS_FREE_CITY_REQUIREMENT'); -- 02/05/2021: Added Free cities
 	
 INSERT OR IGNORE INTO Modifiers
 	(ModifierId , ModifierType, Permanent)
