@@ -11,3 +11,7 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('MONARCHY_STARFORT_FAVOR', 'BuildingType', 'BUILDING_STAR_FORT'),
     ('MONARCHY_STARFORT_FAVOR', 'YieldType', 'YIELD_CULTURE'),
     ('MONARCHY_STARFORT_FAVOR', 'Amount', '2');
+
+-- merchant republic now 1311 instead of 1221
+UPDATE Government_SlotCounts SET NumSlots=3 WHERE GovernmentType = 'GOVERNMENT_MERCHANT_REPUBLIC' AND GovernmentSlotType = 'SLOT_ECONOMIC';
+UPDATE Government_SlotCounts SET NumSlots=1 WHERE GovernmentType = 'GOVERNMENT_MERCHANT_REPUBLIC' AND GovernmentSlotType = 'SLOT_DIPLOMATIC';

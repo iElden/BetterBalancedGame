@@ -118,8 +118,10 @@ UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 -- Inca
 --==========
 UPDATE Units SET RangedCombat=30 WHERE UnitType='UNIT_INCA_WARAKAQ';
-
-
+-- moved +1 mountain prod from game era to player era
+UPDATE Requirements SET RequirementType = 'REQUIREMENT_PLAYER_ERA_AT_LEAST' WHERE RequirementId = 'REQUIRES_ERA_ATLEASTEXPANSION_INDUSTRIAL';
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
+VALUES ('REQUIRES_ERA_ATLEASTEXPANSION_INDUSTRIAL', 'EraType', 'ERA_INDUSTRIAL');
 
 --==========
 -- India
@@ -423,12 +425,14 @@ INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType , Name , Description)
 INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
 	VALUES ('ABILITY_SIEGE_RANGED_DEFENSE', 'SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT');
 
--- -10 combat strength to all airplanes (P-51 change in America section)
-UPDATE Units SET Combat=70,  RangedCombat=65  WHERE UnitType='UNIT_BIPLANE';
-UPDATE Units SET Combat=90,  RangedCombat=90  WHERE UnitType='UNIT_FIGHTER';
-UPDATE Units SET Combat=100, RangedCombat=100 WHERE UnitType='UNIT_JET_FIGHTER';
-UPDATE Units SET Combat=75,  Bombard=100 	  WHERE UnitType='UNIT_BOMBER';
-UPDATE Units SET Combat=80,  Bombard=110      WHERE UnitType='UNIT_JET_BOMBER';
+-- -5 combat strength to all airplanes (P-51 change in America section)
+UPDATE Units SET Combat=Combat-5,  RangedCombat=RangedCombat-5  WHERE UnitType='UNIT_BIPLANE';
+UPDATE Units SET Combat=Combat-5,  RangedCombat=RangedCombat-5  WHERE UnitType='UNIT_FIGHTER';
+UPDATE Units SET Combat=Combat-5, RangedCombat=RangedCombat-5 WHERE UnitType='UNIT_JET_FIGHTER';
+UPDATE Units SET Combat=Combat-5,  Bombard=Bombard-5 	  WHERE UnitType='UNIT_BOMBER';
+UPDATE Units SET Combat=Combat-5,  Bombard=Bombard-5      WHERE UnitType='UNIT_JET_BOMBER';
+
+UPDATE Units Set RangedCombat=RangedCombat+5 WHERE UnitType='UNIT_BATTLESHIP';
 
 -- Military Engineers get tunnels at military science
 UPDATE Improvements SET PrereqTech='TECH_MILITARY_SCIENCE' WHERE ImprovementType='IMPROVEMENT_MOUNTAIN_TUNNEL';
