@@ -34,3 +34,6 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value)
 INSERT INTO TraitModifiers(TraitType, ModifierId)
     SELECT 'TRAIT_LEADER_JOAO_III', 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType
     FROM Eras;
+
+-- half cost UB
+UPDATE Buildings SET Cost=Cost/2 WHERE BuildingType='BUILDING_NAVIGATION_SCHOOL';

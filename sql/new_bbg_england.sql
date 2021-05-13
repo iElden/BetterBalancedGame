@@ -18,3 +18,6 @@ INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, OwnerRequirementSetId
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value) VALUES
 	('BBG_ADMIRAL_LIGHTHOUSE_DOCKYARD', 'GreatPersonClassType', 'GREAT_PERSON_CLASS_ADMIRAL'),
 	('BBG_ADMIRAL_LIGHTHOUSE_DOCKYARD', 'Amount', '1');
+
+-- nerf redcoat bonus on foreign continent
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='REDCOAT_FOREIGN_COMBAT';

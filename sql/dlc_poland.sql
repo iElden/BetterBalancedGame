@@ -8,6 +8,9 @@
 -- Poland's Winged Hussar moved to Divine Right
 -- 23/04/2021: revert to firaxis
 --UPDATE Units SET PrereqCivic='CIVIC_DIVINE_RIGHT' WHERE UnitType='UNIT_POLISH_HUSSAR';
+
+-- half cost UB
+UPDATE Buildings SET Cost=Cost/2 WHERE BuildingType='BUILDING_SUKIENNICE';
 -- Poland gets a relic when founding and completeing a religion
 --Grants Relic Upon Founding Religion
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , RunOnce , Permanent)

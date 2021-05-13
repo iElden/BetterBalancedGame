@@ -23,6 +23,8 @@ DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_WALLSPRODUCTION' AND Name='Amount';
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_STARFORTPRODUCTION' AND Name='Amount';
 
+-- move policy first to mobilization (from rapid deployment)
+UPDATE Policies SET PrereqCivic='CIVIC_MOBILIZATION' WHERE PolicyType='POLICY_MILITARY_FIRST';
 -- New Policies
 
 INSERT OR IGNORE INTO Types 

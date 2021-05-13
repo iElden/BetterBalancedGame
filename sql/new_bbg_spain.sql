@@ -29,6 +29,9 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value) VALUES
 	('BBG_SPAIN_BUILDING_PROD_BOOST' , 'DistrictType' , 'DISTRICT_HARBOR'),
 	('BBG_SPAIN_BUILDING_PROD_BOOST' , 'Amount'       , '25');
 
+-- reduce str to 55
+UPDATE Units SET Combat=55 WHERE UnitType='UNIT_SPANISH_CONQUISTADOR';
+
 -- Leader is Phillipe Requirement.
 INSERT OR IGNORE INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
 	('BBG_PLAYER_IS_SPAIN', 'REQUIREMENTSET_TEST_ANY');

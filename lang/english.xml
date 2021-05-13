@@ -62,7 +62,7 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="en_US">
 			<Text>Happy cities receive an additional +10% [ICON_SCIENCE] Science and [ICON_PRODUCTION] Production. Ecstatic cities receive an additional +15% [ICON_SCIENCE] Science and [ICON_PRODUCTION] Production. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities double those amounts.</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
 		</Replace>
@@ -92,7 +92,7 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when Amphitheater is completed.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="en_US">
 			<Text>Adjacency: Standard [ICON_Culture] Culture bonus for adjacent City Center. Standard [ICON_Culture] Culture bonus for each adjacent district. Major [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>
@@ -102,7 +102,7 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="en_US"> <!-- Last update: 4.2.0-->
 			<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="en_US"> <!-- Last update: 4.2.0-->
 			<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_AMENITIES] Amenity and +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
 		</Replace>
@@ -127,6 +127,12 @@
 		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
 		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="en_US">
 			<Text>Spanish unique Renaissance era unit that replaces the Musketman. +10 [ICON_Strength] Combat Strength when there is a religious unit in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION" Language="en_US">
+			<Text>French unique Industrial era melee unit. +5 [ICON_Strength] Combat Strength when fighting on your capital's continent. [ICON_GreatGeneral] Great General points for killing units.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="en_US">
+			<Text>English unique Industrial era unit when Victoria is their leader. +5 [ICON_Strength] Combat Strength when fighting on a continent other than that of your Capital Capital's. No disembark cost.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Rivers give +2 [ICON_FAITH] Faith adjacency to Holy Site Districts. +1 [ICON_Amenities] Amenities and +1 [ICON_Housing] Housing to cities if they have a Holy Site district adjacent to a River.</Text>
@@ -165,7 +171,7 @@
 			<Text>Spend Builder charges to complete 20% of the original district cost. +50% [ICON_PRODUCTION] Production towards land melee units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="en_US">
-			<Text>Non capital cities within 6 tiles of the [ICON_Capital] Capital gain +10% to all yields and when founded receive a builder. Other non capital cities receive -15% to all yields. +3 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_Capital] Capital.</Text>
+			<Text>Non capital cities within 6 tiles of the [ICON_Capital] Capital gain +10% to all yields and receive a builder once an Observatory is finished in that city. Other non capital cities receive -15% to all yields. +3 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_Capital] Capital.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_Capital] Capital (Ix Mutal Ajaw)</Text>
@@ -207,7 +213,7 @@
 
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Hacienda, unique to Gran Colombia.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, and +1 [Icon_Housing] Housing. +1 [ICON_Food] Food for every two adjacent Plantations (increased to every Plantation with Replaceable Parts). Plantations and Haciendas receive +1 [ICON_Production] Production for every two adjacent Haciendas (increased to every Hacienda with Rapid Deployment). Can only be built on Plains and Grassland.</Text>
-		</Replace>	
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Production] Production on the city's revealed resources.</Text>
 		</Replace>
@@ -286,7 +292,7 @@
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Culture] Culture for every 3 followers of this Religion in other civilizations.</Text>
 		</Replace>
-				
+
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_STRENGTH] against defensible districts.</Text>
 		</Row>
@@ -339,7 +345,7 @@
 			<Text>Hic Sunt Dracones: Gain +3 Era Score each time you discover a new Continent or natural wonder. Gain +1 Era Score each time you kill a non-Barbarian naval unit in combat. If chosen at the start of a Golden Age, +3 starting [ICON_Citizen] Population for newly settled cities. +2 [ICON_Movement] Movement for naval and embarked units. +2 Loyalty per turn for cities not on your original [ICON_Capital] Capital's continent. Renaissance through Modern Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="en_US">
-			<Text>+2 [ICON_Food] Food, +2 [ICON_Production] Production, and +4 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. +100% [ICON_PRODUCTION] Production to Archeaologists. Palace has slots for 5 Great Works.</Text>
+			<Text>+2 [ICON_Food] Food, +2 [ICON_Production] Production, and +4 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. +100% [ICON_PRODUCTION] Production to Archeaologists. Palace has slots for 5 Great Works. Get a free [ICON_GreatWork_Relic] Relic once you finish government plaza building.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="en_US">
 			<Text>Awards 1 [ICON_GreatWork_Relic] Relic and 3 [ICON_GreatWork_Relic] Relic slots. +100% [ICON_Tourism] Religious Tourism from this city. +1 [ICON_Food] Food, +1 [ICON_Production] Production, and +1 [ICON_Culture] Culture on all Tundra tiles for this city. Must be built adjacent to a City Center.</Text>
@@ -359,7 +365,7 @@
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE]Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%. +2 [ICON_RESOURCE_OIL] Oil per turn once discovered.</Text>
 		</Replace>
-		
+
 
 		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="en_US">
 			<Text>{LOC_GOVERNOR_THE_CARDINAL_NAME} is a Spiritual and Religious leader that can increase the [ICON_CULTURE] Cultural Significance and [ICON_Religion] Religious Fortitude of a city.</Text>
@@ -430,8 +436,8 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="en_US">
 			<Text>Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
-		</Replace>		
-		
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="en_US">
 			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Mobilization Civic.</Text>
 		</Replace>
@@ -488,7 +494,7 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +2 Appeal.[NEWLINE][NEWLINE]+1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production if built on Desert or +1 [ICON_CULTURE] Culture if built on Floodplains.[NEWLINE][NEWLINE]Additional [ICON_CULTURE] Culture once Diplomatic Service is discovered. Provides [ICON_TOURISM] Tourism after researching Flight. Cannot be built next to another Sphinx or on Snow or Snow Hills.</Text>
-		</Replace>				
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +1 Appeal. +1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production if built on Desert or +1 [ICON_CULTURE] Culture if built on Floodplains.[NEWLINE][NEWLINE]Additional [ICON_CULTURE] Culture once Diplomatic Service is discovered. Provides [ICON_TOURISM] Tourism after researching Flight. Cannot be built next to another Sphinx or on Snow or Snow Hills.</Text>
 		</Replace>
@@ -503,10 +509,10 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Pairidaeza, unique to Persia.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture and +2 [ICON_GOLD] Gold. +1 Appeal. +1 [ICON_CULTURE] Culture for each adjacent Holy Site, Campus, and Theater Square. +1 [ICON_GOLD] Gold for each adjacent Commercial Hub, Harbor, Industrial Zone, and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza.</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>All units get +3 [ICON_Strength] Combat Strength when attacking. +5 Loyalty per turn in occupied cities with a garrisoned unit. Declaring a Surprise War counts as a Formal War for the purposes of [ICON_STAT_GRIEVANCE] Grievances and warmongering.</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="en_US">
 			<Text>All units get +3 [ICON_Strength] Combat Strength when attacking. +5 Loyalty per turn in occupied cities with a garrisoned unit. Declaring a Surprise War counts as a Formal War for the purpose of warmongering and war weariness.</Text>
 		</Replace>
@@ -515,7 +521,7 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities. Additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for domestic trade routes as you progress through the Technology and Civic trees. Roads built in your territory are one level more advanced than usual.</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="en_US">
 			<Text>+10 Defense against ranged attacks.</Text>
 		</Replace>
@@ -524,16 +530,14 @@
 			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and is cheaper to build.[NEWLINE][NEWLINE]Accrues [ICON_GREATWRITER] Great Writer, [ICON_GREATArtist] Great Artist, and [ICON_GREATMusician] Great Musician Points in cities with a Theater Square. Your city border grows by one tile each time a Great Person is expended in this city.</Text>
 		</Replace>
 		-->
-		<!--
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
-			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
+			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +2 [ICON_Faith] Faith and +2 [ICON_Food] Food. Receives additional yields from adjacent districts. +1 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
 		</Replace>
-		-->
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
 			<Text>Earn 3 extra influence points per turn towards gaining envoys and pay half the usual cost to levy city-state units.[NEWLINE][NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold.</Text>
 		</Replace>
-		
+
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_CULTURE] Culture at Diplomatic Service. +1 [ICON_CULTURE] Culture and +1 [ICON_Science] Science at The Enlightenment. Cannot be built on Hills.</Text>
 		</Replace>
@@ -666,7 +670,7 @@
 		</Row>
 		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="en_US">
 			<Text>+{1_num} [ICON_CULTURE] Culture from the adjacent Seowon.</Text>
-		</Row>		
+		</Row>
 		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="en_US">
 			<Text>Mapuche unique Medieval Era unit that replaces the Courser. +1 [ICON_Movement] Movement and pillaging only costs 1 [ICON_Movement] Movement.</Text>
 		</Replace>
@@ -753,12 +757,18 @@
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Housing] Housing in coastal cities. Cattle get +1 [ICON_Production] Production. Pastures get +1 [ICON_Culture] Culture once Political Philosophy is unlocked. Building a Pasture triggers a Culture Bomb, claiming surrounding tiles. Campus, Commercial Hub, Holy Site, and Theater Square districts gain +1 to their yields in tiles with Charming Appeal, and +3 with Breathtaking Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct an Outback Station, unique to Australia.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production. +1 [ICON_Food] Food for each adjacent Pasture. +1 Appeal to adjacent tiles. Additional [ICON_FOOD] Food and [ICON_PRODUCTION] Production as you advance through the Technology and Civic Tree for adjacent Outback Stations and Pastures. Can only be built in Desert, Desert Hills, Grassland, and Plains tiles.</Text>
+		</Replace>
 		<!-- Aztec -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="en_US">
 			<Text>A building unique to the Aztecs. Provides an [ICON_Amenities] Amenity, +3 [ICON_CULTURE] Culture, and a [ICON_GreatGeneral] Great General Point.</Text>
 		</Replace>
 		<!-- China -->
-		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="en_US"> 
+		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="en_US">
 			<Text>Chinese unique unit that replaces the Crossbowman. +7 [ICON_Ranged] Ranged Strength when attacking adjacent enemy units.</Text>
 		</Replace>
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="en_US">
@@ -791,7 +801,7 @@
 		<!-- India -->
 		<!-- India (Chandra) -->
 		<!-- India (Gandhi) -->
-		
+
 		<!-- Japan -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="en_US">
 			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. Commercial Hubs do not receive bonuses from adjacent rivers.</Text>
@@ -803,7 +813,7 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Holy Sites are granted a Major adjacency in [ICON_FAITH] Faith and [ICON_FOOD] Food with Rivers, a Culture Bomb, and +2 [ICON_Housing] Housing if on a River.</Text>
+			<Text>Holy Sites receive a +2 adjacency bonus from Rivers, grant +2 Housing Housing if built next to a River, and trigger a Culture Bomb when built, claiming surrounding tiles.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="en_US">
@@ -829,8 +839,8 @@
 		</Row>
 		<!-- Norway -->
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="en_US">
-            <Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city and +1 [ICON_PRODUCTION] Production for each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
-        </Replace>
+			<Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city and +1 [ICON_PRODUCTION] Production for each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="en_US">
 			<Text>+15 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
@@ -912,7 +922,7 @@
 		<!---->
 		<!---->
 		<!--===============   W O N D E R S  (NATURAL)   ===============-->
-		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="en_US"> 
+		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="en_US">
 			<Text>Four tile natural wonder. It appears as Marsh and provides +2 [ICON_Food] Food, +2 [ICON_Culture] Culture, and +2 [ICON_Science] Science.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="en_US">
@@ -937,7 +947,7 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food and +1 [ICON_PRODUCTION] Production. Can only be built on valid resources.[NEWLINE][NEWLINE]If built on Luxury resources, the city will gain use of that resource.</Text>
 		</Replace>
-		
+
 		<!--===============   NEW BBG  ===============-->
 		<!-- civilizations -->
 		<!-- BABYLON -->
@@ -978,8 +988,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
 		</Replace>
-		
-		
+
+
 		<!-- leaders -->
 		<!-- GILGAMESH -->
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="en_US">
@@ -987,7 +997,7 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_CAPSULE_BODY" Language="en_US">
 			<Text>The King surpassing all Kings is a powerful leader with the ability to engage into early aggression or build a tall empire depending on the situation.</Text>
-		</Replace>	
+		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GILGAMESH_CHAPTER_DETAILED_BODY" Language="en_US">
 			<Text>As the first civilization in recorded history, Sumeria shines right out of the gate. Their War Carts and Ziggurats are buildable from the very first turn, and growth should be strong with The Cradle of Civilization ability. Gilgamesh will build War Carts and get out hunting Barbarian Camps early, so he can take advantage of his Shūtur eli sharrī ability ("Surpassing All Kings"). He will also scatter the edges of nearby Rivers with Ziggurats to push forward early in [ICON_Science] Science, [ICON_Culture] Culture and even [ICON_Faith] Faith with a good city planning.</Text>
 		</Replace>
@@ -1003,8 +1013,8 @@
 		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="en_US">
 			<Text>+4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.</Text>
 		</Replace>
-		
-		
+
+
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production toward Holy Site districts. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
 		</Replace>
@@ -1018,7 +1028,7 @@
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Strength] Unit Combat Strength when fighting Barbarians.</Text>
 		</Replace>
-		
+
 		<!-- new policies -->
 		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="en_US">
 			<Text>Siegecraft</Text>
@@ -1114,10 +1124,10 @@
 		</Replace>
 		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="en_US">
 			<Text>No Barbarians</Text>
-		</Replace>			
-		
-		
-		
+		</Replace>
+
+
+
 		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="en_US">
 			<Text>Requirements</Text>
 		</Replace>
@@ -1238,7 +1248,7 @@
 		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="en_US">
 			<Text>Off</Text>
 		</Replace>
-		
+
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="en_US">
 			<Text>Standard Firaxis Settings</Text>
 		</Replace>
@@ -1317,7 +1327,7 @@
 		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="en_US">
 			<Text>No Conquest Victory</Text>
 		</Replace>
-		
+
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="en_US">
 			<Text>Use your military and empire growth to your advantage to dominate the lands!</Text>
 		</Replace>
@@ -1357,8 +1367,8 @@
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="en_US">
 			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
 		</Replace>
-		
-		
+
+
 		<!-- Conquest legacy text -->
 		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="en_US">
 			<Text>Conquest</Text>

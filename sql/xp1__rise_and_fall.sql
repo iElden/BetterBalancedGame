@@ -138,8 +138,12 @@ DELETE FROM DiplomaticVisibilitySources WHERE VisibilitySourceType='SOURCE_TRADI
 DELETE FROM DiplomaticVisibilitySources_XP1 WHERE VisibilitySourceType='SOURCE_TRADING_POST_TRAIT';
 DELETE FROM ModifierArguments WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
 DELETE FROM Modifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
--- +100% production to Ordu
-UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
+
+--reduce keshig str and raise prod cost
+UPDATE Units SET Combat=30, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG';
+
+-- half cost UB
+UPDATE Buildings SET Cost=Cost/2 WHERE BuildingType='BUILDING_ORDU';
 
 
 --==================

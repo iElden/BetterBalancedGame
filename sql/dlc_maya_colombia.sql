@@ -30,6 +30,17 @@ DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIEND
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='MUTAL_NEAR_CAPITAL_COMBAT' AND Name='Amount';
 -- set citizen yields to same as other campuses
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType="DISTRICT_OBSERVATORY";
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
+VALUES ('REQUIRE_PLAYER_HAS_OBSERVATORY', 'REQUIREMENT_CITY_HAS_DISTRICT');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
+VALUES ('REQUIRE_PLAYER_HAS_OBSERVATORY', 'DistrictType', 'DISTRICT_OBSERVATORY');
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
+VALUES ('MAYA_FREE_BUILDER_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+VALUES ('MAYA_FREE_BUILDER_REQUIREMENTS', 'REQUIRES_OBJECT_6_TILES_FROM_CAPITAL_NOT_CAPITAL'),
+       ('MAYA_FREE_BUILDER_REQUIREMENTS', 'CITY_IS_ORIGINAL_OWNER_REQUIREMENTS_MAYA'),
+       ('MAYA_FREE_BUILDER_REQUIREMENTS', 'REQUIRE_PLAYER_HAS_OBSERVATORY');
+UPDATE Modifiers SET SubjectRequirementSetId = 'MAYA_FREE_BUILDER_REQUIREMENTS' WHERE ModifierId = 'TRAIT_LEADER_NEARBY_CITIES_GAIN_BUILDER';
 --- start biases ---
 -- after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
 INSERT OR REPLACE INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES

@@ -160,7 +160,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 DELETE FROM BuildingPrereqs WHERE Building='BUILDING_GRAND_BAZAAR';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_MARKET' WHERE CivUniqueBuildingType='BUILDING_GRAND_BAZAAR'; 
 UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
-UPDATE Buildings SET PrereqTech='TECH_CURRENCY', Cost=100 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
+UPDATE Buildings SET PrereqTech='TECH_CURRENCY', Cost=120 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 	VALUES ('BUILDING_GRAND_BAZAAR', 'MARKET_TRADE_ROUTE_CAPACITY');
 
@@ -306,7 +306,7 @@ UPDATE ModifierArguments SET Value='4' WHERE ModifierId='COLLECTIVIZATION_INTERN
 DELETE FROM BeliefModifiers WHERE ModifierId='RELIGIOUS_SETTLEMENTS_SETTLER';
 -- reeds and marshes works with all floodplains (see egypt for ReqArgs) and remains only 1 prod
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='LADY_OF_THE_REEDS_PRODUCTION2_MODIFIER' AND Name='Amount';
-INSERT OR IGNORE INTO RequirementSetRequirements 
+INSERT OR IGNORE INTO RequirementSetRequirements
     (RequirementSetId, RequirementId)
     VALUES
     ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_GRASSLAND'),

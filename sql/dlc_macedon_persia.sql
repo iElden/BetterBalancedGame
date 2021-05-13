@@ -60,6 +60,8 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 -- Hetairoi no longer a Horseman replacement
 DELETE FROM UnitReplaces WHERE CivUniqueUnitType='UNIT_MACEDONIAN_HETAIROI';
 
+-- half cost UB
+UPDATE Buildings SET Cost=Cost/2 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';
 
 --==================
 -- Persia
