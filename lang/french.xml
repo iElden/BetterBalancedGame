@@ -197,9 +197,10 @@
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coloo peut à nouveau recruter des personnages illustres =D -->
 			<Text>Ne peut ni construire des lieux saints, ni recruter de prophète illustre, ni fonder une religion. Adopte les croyances de toute religion qui s'est propagée à la majorité de ses villes. Reçoit un apôtre de la religion dominante de la ville lorsqu'il construit un mbanza ou une place du théâtre.</Text>
 		</Replace>
+		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="fr_FR">
 			<Text>En plus de la [ICON_Culture] culture habituelle, [ICON_Food] nourriture +2, [ICON_Production] production +2 et [ICON_Gold] or +4 pour chaque [ICON_GreatWork_Relic] relique, [ICON_GreatWork_Artifact] artefact et [ICON_GreatWork_Sculpture] chef-d'œuvre de sculpture. Points d'[ICON_GreatWriter] écrivain, d'[ICON_GreatArtist] artiste, de [ICON_GreatMusician] musicien et de [ICON_GreatMerchant] marchand illustre +50 %. [ICON_PRODUCTION] Production doublée pour la formation d'Archéologues. Un palais peut accueillir 5 chefs-d'œuvre.</Text>
-		</Replace>
+		</Replace>-->
 		<!-- ========== CORÉE ========== -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="fr_FR">
 			<Text>Destiné à la recherche scientifique, ce quartier exclusif à la Corée remplace le campus. [ICON_SCIENCE] Science +2. Octroie +1 [ICON_CULTURE] Culture aux Places du Théâtre adjacentes. Déclenche une bombe culturelle une fois construit. Doit être construit sur une colline.</Text>
