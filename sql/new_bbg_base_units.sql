@@ -16,4 +16,4 @@ UPDATE Units SET BaseMoves='6' WHERE  UnitType='UNIT_DESTROYER';
 UPDATE Units SET BaseMoves='5' WHERE  UnitType='UNIT_AIRCRAFT_CARRIER';
 
 -- Battleship Ranged Combat from 70 to 75
-UPDATE Units SET RangedCombat="75" WHERE UnitType="UNIT_BATTLESHIP";
+UPDATE Units SET Combat='65', RangedCombat='75' WHERE UnitType='UNIT_BATTLESHIP';
