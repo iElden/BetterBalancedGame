@@ -678,6 +678,8 @@ INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
 -- 15/05/2021: Delete free builder on foreign continent
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_TREASURE_FLEET' AND ModifierId='TRAIT_INTERCONTINENTAL_BUILDER';
+-- 15/05/2021: Conquistador to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='CONQUISTADOR_SPECIFIC_UNIT_COMBAT' AND Name='Amount';
 
 --==============================================================
 --******			  G O V E R N M E N T S				  ******
