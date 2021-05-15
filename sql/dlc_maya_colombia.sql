@@ -58,6 +58,9 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 -- Delete StartBiasTerrain
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAYA';
 
+-- 15/05/2021: Delete free builder
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_MUTAL' AND ModifierId='TRAIT_LEADER_NEARBY_CITIES_GAIN_BUILDER';
+
 --==================
 -- City-States
 --==================
