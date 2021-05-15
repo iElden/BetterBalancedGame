@@ -301,16 +301,14 @@ UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE Tr
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
 -- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
---INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
---	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
---
---INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
---	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
---
---INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
---	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
---
---UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
+
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
+
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 
 
 --==================
