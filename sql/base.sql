@@ -676,7 +676,8 @@ UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AN
 -- 30% discount on missionaries
 INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
-
+-- 15/05/2021: Delete free builder on foreign continent
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_TREASURE_FLEET' AND ModifierId='TRAIT_INTERCONTINENTAL_BUILDER';
 
 --==============================================================
 --******			  G O V E R N M E N T S				  ******
