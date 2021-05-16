@@ -81,7 +81,8 @@ INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType) VAL
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
 	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
-
+-- Rough Rider ability to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS' AND Name='Amount';
 
 --==================
 -- Arabia
