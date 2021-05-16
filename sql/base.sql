@@ -455,7 +455,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 -- Norway
 --==================
 -- Berserker
-UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER'
+UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
 -- Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
