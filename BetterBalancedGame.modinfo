@@ -271,6 +271,7 @@
 			<File>sql/new_bbg_spain.sql</File>
 			<File>sql/new_bbg_buildings.sql</File>
 			<File>sql/new_bbg_spy.sql</File>
+			<File>sql/new_bbg_brazil.sql</File>
 
 			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
@@ -627,6 +628,7 @@
 		<File>sql/new_bbg_buildings.sql</File>
 		<File>sql/new_bbg_spy.sql</File>
 		<File>sql/new_bbg_nfp_portugal.sql</File>
+		<File>sql/new_bbg_brazil.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
