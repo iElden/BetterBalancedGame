@@ -56,13 +56,9 @@
 			<Text>Après le dogme des Guildes, chaque ville peut construire un quartier de plus, au-delà du seuil imposé par la [ICON_Citizen] population.</Text>
 		</Replace>
 		<!-- ========== AMÉRIQUE ========== -->
-		<!--
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive à l'Amérique de Theodore Roosevelt, cette unité de l'ère industrielle remplace la Cavalerie, a un coût d'entretien réduit et génère de la [ICON_Culture] culture lorsqu'elle élimine des unités sur le continent de sa [ICON_Capital] capitale. [ICON_Strength] Puissance de combat +5 en cas de combat sur une colline.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat bonus pour les unités militaires :[NEWLINE]+5 en défense sur leur continent d'origine[NEWLINE]+5 en attaque sur un continent étranger.[NEWLINE]Attrait +1 pour toutes les cases d'une ville possédant un parc national. Apparition de l'unité exclusive des Rough Riders une fois la Science Militaire recherchée.</Text>
-		</Replace>-->
+      		<Text>Exclusive à l'Amérique de Theodore Roosevelt, cette unité de l'ère industrielle a un coût d'entretien réduit et génère de la [ICON_Culture] culture lorsqu'elle élimine des unités sur le continent de sa [ICON_Capital] capitale. [ICON_Strength] Puissance de combat +5 en cas de combat sur une colline.</Text>
+    	</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_EXPANSION2_DESCRIPTION" Language="fr_FR">
       		<Text>Bâtiment exclusif à l'Amérique. [ICON_Tourism] Tourisme de la ville vers les autres civilisations +50 % à l'entrée dans l'ère moderne.</Text>
     	</Replace>
@@ -80,8 +76,11 @@
 			<Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
-		  <Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
+			<Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à l'Angleterre de Victoria, cette unité de l'ère industrielle remplaçant l'infanterie de ligne a un coût de débarquement nul. [ICON_Strength] Puissance de combat +5 sur un continent autre que celui de votre capitale.</Text>
+    	</Replace>
 		<!-- ========== ARABIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="fr_FR">
 			<Text>Points de [ICON_GreatProphet] Prophète Illustre +1 par tour après avoir recherché l'Astrologie. Si l'avant-dernier [ICON_GreatProphet] prophète illustre est recruté alors que vous n'en possédez aucun, vous recevez automatiquement le dernier. [ICON_Science] Science +1 pour chaque ville étrangère ayant adopté la religion créée de l'Arabie.</Text>
@@ -193,7 +192,7 @@
 			<Text>Débloque la compétence de bâtisseur permettant de construire une hacienda, un bâtiment exclusif à la Grande Colombie.[NEWLINE][NEWLINE][ICON_GOLD] Or +2, [ICON_PRODUCTION] Production +1 et [Icon_Housing] Habitations +1. [ICON_Food] Nourriture +1 toutes les 2 cases de plantations adjacentes (augmente pour chaque plantation après la découverte des pièces détachées). [ICON_Production] Production +1 pour les plantations et les haciendas, toutes les 2 haciendas adjacentes (passe à chaque hacienda adjacente après la découverte du déploiement rapide). Ne peut être construite que sur une case de plaine plate ou de prairie plate.</Text>
 		</Replace>
 		<!-- ========== CONGO ========== -->
-		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coloo peut à nouveau recruter des personnages illustres =D -->
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coach peut à nouveau recruter des personnages illustres =D -->
 			<Text>Ne peut ni construire des lieux saints, ni recruter de prophète illustre, ni fonder une religion. Adopte les croyances de toute religion qui s'est propagée à la majorité de ses villes. Reçoit un apôtre de la religion dominante de la ville lorsqu'il construit un mbanza ou une place du théâtre.</Text>
 		</Replace>
 		<!--
@@ -414,12 +413,6 @@
 			<Text>Unité de la Renaissance exclusive aux Mapuches qui remplace le Coursier. Chaque pillage coûte 1 [ICON_Movement] PM.</Text>
 		</Replace>
 		<!--
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience de combat +25 % pour toutes les unités formées dans les villes possédant un [ICON_Governor] gouverneur. [ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or ou héroïque.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un chemamull, exclusif aux Mapuches.[NEWLINE][NEWLINE]Fournit une quantité de [ICON_CULTURE] culture correspondant à 75% de l'attrait de la case. [ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 après avoir adopté la Fonction Publique. [ICON_TOURISM] Tourisme bonus après avoir recherché l'Aviation. Attrait minimum : époustouflant.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="fr_FR">
 			<Text>Toqui</Text>
 		</Replace>-->
