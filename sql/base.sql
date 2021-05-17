@@ -81,7 +81,8 @@ INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType) VAL
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
 	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
-
+-- Rough Rider ability to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS' AND Name='Amount';
 
 --==================
 -- Arabia
@@ -290,6 +291,8 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
 -- Sea Dog available at Exploration now
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_ENGLISH_SEADOG';
 
+-- 15/05/2021: redcoast ability to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='REDCOAT_FOREIGN_COMBAT' AND Name='Amount';
 
 --==================
 -- France
@@ -301,17 +304,18 @@ UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE Tr
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
 -- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
---INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
---	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
---
---INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
---	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
---
---INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
---	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
---
---UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
 
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
+
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+
+UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+-- Garde imperial to +5 on continent (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='GARDE_CONTINENT_COMBAT' AND Name='Amount';
 
 --==================
 -- Germany
@@ -450,9 +454,10 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 --==================
 -- Norway
 --==================
--- Berserker no longer gets +10 on attack and -5 on defense... simplified to be base on defense and +15 on attack
--- UPDATE ModifierArguments SET Value='15' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
--- UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
+-- Berserker
+UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
 -- Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
 UPDATE Units SET PrereqTech=NULL , PrereqCivic='CIVIC_FEUDALISM' WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
@@ -675,7 +680,10 @@ UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AN
 -- 30% discount on missionaries
 INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
-
+-- 15/05/2021: Delete free builder on foreign continent
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_TREASURE_FLEET' AND ModifierId='TRAIT_INTERCONTINENTAL_BUILDER';
+-- 15/05/2021: Conquistador to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='CONQUISTADOR_SPECIFIC_UNIT_COMBAT' AND Name='Amount';
 
 --==============================================================
 --******			  G O V E R N M E N T S				  ******
