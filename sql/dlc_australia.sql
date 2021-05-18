@@ -12,6 +12,10 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_CITADELCIVILIZAT
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='TurnsActive';
 
+-- 18/05/2021: UI can be build on hill
+INSERT INTO Improvement_ValidTerrains(ImprovementType, TerrainType) VALUES
+    ('IMPROVEMENT_OUTBACK_STATION', 'TERRAIN_GRASS_HILLS'),
+    ('IMPROVEMENT_OUTBACK_STATION', 'TERRAIN_PLAINS_HILLS');
 
 --==============================================================
 --******				START BIASES					  ******
