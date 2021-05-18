@@ -113,6 +113,10 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 UPDATE Units SET Combat=53 WHERE UnitType='UNIT_ARABIAN_MAMLUK';
 -- 18/05/2021: Madrasa cost to 175
 UPDATE Buildings SET Cost=175 WHERE BuildingType='BUILDING_MADRASA';
+-- Holy site and Campus got standard adjacency for district
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_HOLYSITE_ADJACENCYFAITH'),
+    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_CAMPUS_ADJACENCYSCIENCE');
 
 --==================
 -- China
