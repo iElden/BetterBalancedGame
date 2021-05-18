@@ -370,7 +370,7 @@ INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
 -- Greece (Gorgo)
 --==================
 
--- 37/03/2021 Give Gorgo 50% culture online speed
+-- 27/03/2021 Give Gorgo 50% culture online speed
 UPDATE ModifierArguments SET Value=100 WHERE ModifierId='UNIQUE_LEADER_CULTURE_KILLS' AND Name='PercentDefeatedStrength';
 
 --==================
