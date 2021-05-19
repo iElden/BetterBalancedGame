@@ -242,6 +242,8 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , Sec
 	('NOBEL_PRIZE_FACTORY_BOOST'    , 'BuildingType' , 'BUILDING_FACTORY'    , null , null),
 	('NOBEL_PRIZE_FACTORY_BOOST'    , 'Amount'       , '50'                  , null , null);
 
+-- Queens Bibliotheque can be build with other t2 gouv
+DELETE FROM MutuallyExclusiveBuildings WHERE Building='BUILDING_QUEENS_BIBLIOTHEQUE' OR MutuallyExclusiveBuildings='BUILDING_QUEENS_BIBLIOTHEQUE';
 
 
 --==============================================================
