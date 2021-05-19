@@ -17,6 +17,20 @@ INSERT INTO Improvement_ValidTerrains(ImprovementType, TerrainType) VALUES
     ('IMPROVEMENT_OUTBACK_STATION', 'TERRAIN_GRASS_HILLS'),
     ('IMPROVEMENT_OUTBACK_STATION', 'TERRAIN_PLAINS_HILLS');
 
+-- 18/05/2021: More production for pasture at Guild.
+-- /!\ PLAYER_HAS_GUILDS_REQUIREMENTS is define is base.sql for Germany /!\
+INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId, SubjectRequirementSetId) VALUES
+    ('BBG_AUSTRALIA_PASTURE_PRODUCTION', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'PLAYER_HAS_GUILDS_REQUIREMENTS', NULL),
+    ('BBG_AUSTRALIA_PASTURE_PRODUCTION_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', NULL, 'PLOT_HAS_PASTURE_REQUIREMENTS');
+
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_AUSTRALIA_PASTURE_PRODUCTION', 'ModifierId', 'BBG_AUSTRALIA_PASTURE_PRODUCTION_MODIFIER'),
+    ('BBG_AUSTRALIA_PASTURE_PRODUCTION_MODIFIER', 'YieldType', 'YIELD_PRODUCTION'),
+    ('BBG_AUSTRALIA_PASTURE_PRODUCTION_MODIFIER', 'Amount', '1');
+
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_LAND_DOWN_UNDER', 'BBG_AUSTRALIA_PASTURE_PRODUCTION');
+
 --==============================================================
 --******				START BIASES					  ******
 --==============================================================
