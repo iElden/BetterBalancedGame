@@ -97,9 +97,10 @@
 	 -->
 	<DomainValues>
 		<Row Domain="BBGBarbsSetting" Value="0" Name="BBG_FRONT_BARB_SETTING_0_NAME" Description="BBG_FRONT_BARB_SETTING_0_DESC" SortIndex="10"/>
-		<Row Domain="BBGBarbsSetting" Value="1" Name="BBG_FRONT_BARB_SETTING_1_NAME" Description="BBG_FRONT_BARB_SETTING_1_DESC" SortIndex="20"/>
-		<Row Domain="BBGBarbsSetting" Value="2" Name="BBG_FRONT_BARB_SETTING_2_NAME" Description="BBG_FRONT_BARB_SETTING_2_DESC" SortIndex="30"/>
-		<Row Domain="BBGBarbsSetting" Value="-1" Name="BBG_FRONT_BARB_SETTING_OFF_NAME" Description="BBG_FRONT_BARB_SETTING_OFF_DESC" SortIndex="40"/>
+		<Row Domain="BBGBarbsSetting" Value="3" Name="BBG_FRONT_BARB_SETTING_3_NAME" Description="BBG_FRONT_BARB_SETTING_3_DESC" SortIndex="20"/>
+		<Row Domain="BBGBarbsSetting" Value="1" Name="BBG_FRONT_BARB_SETTING_1_NAME" Description="BBG_FRONT_BARB_SETTING_1_DESC" SortIndex="30"/>
+		<Row Domain="BBGBarbsSetting" Value="2" Name="BBG_FRONT_BARB_SETTING_2_NAME" Description="BBG_FRONT_BARB_SETTING_2_DESC" SortIndex="40"/>
+		<Row Domain="BBGBarbsSetting" Value="-1" Name="BBG_FRONT_BARB_SETTING_OFF_NAME" Description="BBG_FRONT_BARB_SETTING_OFF_DESC" SortIndex="50"/>
 		
 		<Row Domain="BBGVictorySpeedSliderRange" Value="0" Name="BBG_FRONT_MASTER_SETTING_0_NAME" Description="BBG_FRONT_MASTER_SETTING_0_DESC" SortIndex="10"/>
 		<Row Domain="BBGVictorySpeedSliderRange" Value="1" Name="BBG_FRONT_MASTER_SETTING_1_NAME" Description="BBG_FRONT_MASTER_SETTING_1_DESC" SortIndex="20"/>
@@ -139,6 +140,7 @@
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="0" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="0" />
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="1" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="2" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="1" />
+		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="3" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="-1" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="1" />
 		
 		<Row SourceGroup="Game" SourceId="VictoryCulturalSetting" SourceValue="0" TargetGroup="Game" TargetId="VICTORY_CULTURE" TargetValue="1"  />
