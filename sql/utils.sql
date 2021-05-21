@@ -1,0 +1,23 @@
+-- Author: iElden
+-- /!\ THIS FILE IS NOT INCLUDED IN MODINFO /!\
+
+CREATE TABLE BBGUtils_Units(
+    Unit TEXT NOT NULL,
+    LandType TEXT
+);
+
+INSERT INTO BBGUtils_Units(UnitClass, LandType) VALUES
+    ('CLASS_RECON', 'LAND'),
+    ('CLASS_MELEE', 'LAND'),
+    ('CLASS_RANGED', 'LAND'),
+    ('CLASS_SIEGE', 'LAND'),
+    ('CLASS_HEAVY_CAVALRY', 'LAND'),
+    ('CLASS_RANGED_CAVALRY', 'LAND'),
+    ('CLASS_LIGHT_CAVALRY', 'LAND'),
+    ('CLASS_ANTI_CAVALRY', 'LAND'),
+    ('CLASS_HEAVY_CHARIOT', 'LAND'),
+    ('CLASS_LIGHT_CHARIOT', 'LAND'),
+    ('CLASS_NAVAL_MELEE', 'NAVAL'),
+    ('CLASS_NAVAL_RANGED', 'NAVAL'),
+    ('CLASS_NAVAL_RAIDER', 'NAVAL'),
+    ('CLASS_AIRCRAFT', 'AIR');
