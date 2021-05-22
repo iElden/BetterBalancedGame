@@ -660,8 +660,8 @@ end
 -- ===========================================================================
 --	Barbarians
 -- ===========================================================================
-local iBarbs_Original_Weight = 0.50;
-local iBarbs_Naval_Weight = 0.30;
+local iBarbs_Original_Weight = 0.55;
+local iBarbs_Naval_Weight = 0.4;
 local iBarbs_Minimum_Horse_Turn = 15;
 
 function Check_Barbarians()
@@ -710,14 +710,7 @@ end
 
 function AddBarbCamps()
 	print("		AddBarbCamps()")			
-	local seed = Game.GetCurrentGameTurn()
-	math.randomseed(seed)
-	local rng_table = {}
-	for i=1, Game.GetCurrentGameTurn() do
-		rng_table[i] = math.random(1,100)
-	end
-	local rng = rng_table[Game.GetCurrentGameTurn()]
-	rng = rng / 100
+	local rng = TerrainBuilder.GetRandomNumber(100,"Barb Type")/100
 	local iCount = Map.GetPlotCount();
 	local validPlots = {};
 	local currentTurn = Game.GetCurrentGameTurn()
@@ -1060,14 +1053,7 @@ function PlaceOriginalBarbCamps()
 			for i, playerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
 				if Players[playerID] ~= nil then
 					if (Players[playerID]:IsMajor()) and PlayerConfigurations[playerID]:GetLeaderTypeName() ~= "LEADER_SPECTATOR" then
-							local seed = Game.GetCurrentGameTurn()
-							math.randomseed(seed)
-							local rng_table = {}
-							for i=1, Game.GetCurrentGameTurn() do
-								rng_table[i] = math.random(1,100)
-							end
-							local rng = rng_table[Game.GetCurrentGameTurn()]
-							rng = rng / 100
+						local rng = TerrainBuilder.GetRandomNumber(100,"Barb Placement")/100
 						if rng < iBarbs_Original_Weight then
 							for j, plotTable in ipairs(validPlots) do
 								if plotTable.id == playerID then
