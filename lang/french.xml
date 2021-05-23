@@ -426,7 +426,7 @@
 			<Text>[ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or ou héroïque.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAUTARO_ABILITY_DESCRIPTION_ALT" Language="fr_FR">
-      		<Text>[ICON_Strength] Puissance de combat +5 lors d'une guerre contre des villes libres ou des civilisations en âge d'or ou âge héroïque. Éliminer une unité ennemie alors qu'elle se trouve sur le territoire d'une ville ennemie fait perdre 20 points de loyauté à cette ville, 40 si la civilisation vit un âge d'or ou un âge héroïque.</Text>
+      		<Text>[ICON_Strength] Puissance de combat +5 lors d'une guerre contre des villes libres ou des civilisations en âge d'or ou âge héroïque. Éliminer une unité ennemie alors qu'elle se trouve sur le territoire d'une ville ennemie fait perdre 15 points de loyauté à cette ville, 30 si la civilisation vit un âge d'or ou un âge héroïque.</Text>
     	</Replace>
 		<!-- ========== MONGOLIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="fr_FR">
@@ -450,7 +450,7 @@
 			<Text>Les unités peuvent traverser les cases d'océan une fois la technologie de Construction Navale découverte. Les unités navales de combat rapproché se soignent lorsqu'elles se situent en territoire neutre. L'embarquement et le débarquement des unités ne consomment pas de [ICON_Movement] PM.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive à la Norvège, cette unité de l'ère médiévale reçoit +2 [ICON_Movement] PM lorsqu'elle commence en territoire ennemi ou lorsqu'elle est embarquée. [ICON_Strength] Puissance de combat +15 en attaque. Peut être acheté contre de la foi.</Text>
+			<Text>Exclusive à la Norvège, cette unité de combat rapproché offensive de l'ère médiévale remplaçe l'homme d'armes et reçoit +2 [ICON_Movement] PM lorsqu'elle commence en territoire ennemi. [ICON_Strength] Puissance de combat réduite à 40, mais +10 en attaque. [NEWLINE]Peut être acheté contre de la foi.</Text>
 		</Replace>
 		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="fr_FR">
 			<Text> [ICON_Gold] Or +{1_num} (lieux saints).</Text>
@@ -581,7 +581,7 @@
 			<Text>Expérience +25% pour toutes les unités. [NEWLINE]Débute la partie avec un Char de Guerre à la place d'un Guerrier. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débute la partie avec un Char de Guerre au lieu d'un Guerrier. [NEWLINE]En cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
+			<Text>Débute la partie avec un Char de Guerre au lieu d'un Guerrier. [NEWLINE][ICON_STRENGTH] Puissance de Combat +1, +2 ou +3 en fonction du niveau de votre alliance la plus avancée. [NEWLINE][NEWLINE]En cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
 		</Replace>
 		<!-- ========== VIETNAM ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">
