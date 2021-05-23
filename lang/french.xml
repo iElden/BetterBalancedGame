@@ -1006,6 +1006,12 @@
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="fr_FR">
 			<Text>Octroie un espion gratuit si vous jouez la France. Bonus de [ICON_Culture] culture pour la Grande Muraille quand plusieurs segments sont adjacents.</Text>
 		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_SIEGE_TACTICS" Language="fr_FR">
+      		<Text>Possédez 2 trébucheh.</Text>
+    	</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_REPLACEABLE_PARTS" Language="fr_FR">
+      		<Text>Possédez 3 infanteries de ligne.</Text>
+    	</Replace>
 		
 		<!-- =============== D O G M E S =============== -->
 		
