@@ -90,7 +90,7 @@
 			<Text>Les Campus et les Lieux Saints recoivent un bonus de proximité standard de la part des autres quartiers. [NEWLINE][NEWLINE]Le lieu de culte de votre Religion peut être acheté par n'importe quel joueur pour 10% de son coût normal en [ICON_Faith] Foi. Cet édifice augmente de 20 % la [ICON_Science] science, la [ICON_Faith] foi et la [ICON_Culture] culture générées par les villes arabes.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MADRASA_DESCRIPTION" Language="fr_FR">
-      		<Text>Bâtiment exclusif à l'Arabie qui remplace l'Université à moindres coûts et se débloque à Théologie. Bonus de [ICON_Faith] foi équivalent au bonus de proximité du campus.</Text>
+      		<Text>Bâtiment exclusif à l'Arabie qui remplace l'Université et se débloque à Théologie. Bonus de [ICON_Faith] foi équivalent au bonus de proximité du campus.</Text>
     	</Replace>
 		<!-- ========== AUSTRALIE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="fr_FR">
@@ -104,7 +104,7 @@
     	</Replace>
 		<!-- ========== AZTEQUES ========== -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="fr_FR">
-      		<Text>Bâtiment exclusif aux Aztèques. [NEWLINE][ICON_Amenities] Activités +1, [ICON_CULTURE] culture +3 et points de [ICON_GreatGeneral] général illustre +1. [NEWLINE][ICON_Amenities] Activités +1 supplémentaire pour chaque Centre-ville dans un rayon de 6 cases. [NEWLINE][ICON_TOURISM] Tourisme +1 une fois le dogme de la conservation atteint.</Text> 
+      		<Text>Bâtiment exclusif aux Aztèques qui remplace l'Arena. [NEWLINE][ICON_Amenities] Activités +1 et [ICON_CULTURE] Culture +1 pour chaque Centre-ville dans un rayon de 6 cases. [NEWLINE]Points de [ICON_GreatGeneral] Général illustre +1. [NEWLINE][ICON_TOURISM] Tourisme +1 une fois le dogme de la conservation atteint.</Text> 
     	</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="fr_FR">
 			<Text>Vous pouvez dépenser des charges de bâtisseur pour compléter 20 % du coût initial du quartier. [ICON_PRODUCTION] Production +50% pour les unités de combat rapproché.</Text>
