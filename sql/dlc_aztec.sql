@@ -16,7 +16,7 @@ INSERT OR IGNORE INTO TraitModifiers VALUES
 
 -- Aztec Tlachtli Unique Building is now slightly cheaper and is +3 Culture instead of +2 Faith/+1 Culture
 DELETE FROM Building_YieldChanges WHERE BuildingType='BUILDING_TLACHTLI' AND YieldType='YIELD_FAITH';
-UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_TLACHTLI';
+UPDATE Building_YieldChanges SET YieldChange=1 WHERE BuildingType='BUILDING_TLACHTLI';
 -- 19/05/2021: Tlachtli is 1 AoE amenity.
 UPDATE Buildings SET Cost=100, Entertainment=1, RegionalRange=6 WHERE BuildingType='BUILDING_TLACHTLI';
 
