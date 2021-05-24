@@ -328,7 +328,7 @@ INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , Yie
 	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
 	VALUES ('Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
-UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' , RequiresAdjacentBonusOrLuxury = 0 , RequiresRiver = 1 , SameAdjacentValid = 1 WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+UPDATE Improvements SET Housing='1', PreReqCivic='CIVIC_FEUDALISM', RequiresAdjacentBonusOrLuxury = 0, RequiresRiver = 0, SameAdjacentValid = 1 WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 -- Garde imperial to +5 on continent (from +10)
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='GARDE_CONTINENT_COMBAT' AND Name='Amount';
 
