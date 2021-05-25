@@ -100,10 +100,10 @@
 			<Text>[ICON_Production] Production +50% pour 10 tours après avoir libéré une ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Rendements +1, pas +2 pour les cases charmantes -->
-			<Text>[ICON_Housing] Habitations +3 pour les villes côtières. Les pâturages déclenchent une bombe culturelle. Rendements +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre situés sur des cases à l'attrait charmant, +3 si l'attrait est époustouflant.</Text>
+			<Text>[ICON_Housing] Habitations +3 pour les villes côtières. Les pâturages déclenchent une bombe culturelle. Rendements +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre situés sur des cases à l'attrait charmant, +3 si l'attrait est époustouflant. [NEWLINE][ICON_PRODUCTION] Production +1 pour les pâturages.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION" Language="fr_FR">
-      		<Text>Débloque la compétence de bâtisseur permettant de construire un élevage de l'Outback, exclusif à l'Australie. [NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1. [NEWLINE][ICON_Food] Nourriture +1 pour chaque pâturage adjacent. [NEWLINE][ICON_PRODUCTION] Production +1 aux pâturages adjacents aux Guildes et à Moteur à Vapeur. [NEWLINE][ICON_PRODUCTION] Production +1 toutes les deux Stations de l'Outback adjacentes à Moteur à Vapeur. [NEWLINE][ICON_FOOD]Nourriture +1 toutes les deux Stations de l'Outback adjacentes à Déploiement Rapide. [NEWLINE][NEWLINE]Ne peut être construit que dans un désert, une prairie ou une plaine.</Text>
+      		<Text>Débloque la compétence de bâtisseur permettant de construire un élevage de l'Outback, exclusif à l'Australie. [NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1. [NEWLINE][ICON_Food] Nourriture +1 pour chaque pâturage adjacent. [NEWLINE][ICON_PRODUCTION] Production +1 aux pâturages adjacents à Moteur à Vapeur. [NEWLINE][ICON_PRODUCTION] Production +1 toutes les deux Stations de l'Outback adjacentes à Moteur à Vapeur. [NEWLINE][ICON_FOOD]Nourriture +1 toutes les deux Stations de l'Outback adjacentes à Déploiement Rapide. [NEWLINE][NEWLINE]Ne peut être construit que dans un désert, une prairie ou une plaine.</Text>
     	</Replace>
 		<!-- ========== AZTEQUES ========== -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="fr_FR">
@@ -496,7 +496,7 @@
 			<Text>La religion fondée par la Pologne devient majoritaire dans une ville adjacente qui perd une case suite à la bombe culturelle polonaise. Les lieux saints reçoivent un bonus de foi standard pour les quartiers adjacents. Toutes les reliques offrent des bonus : [ICON_Faith] foi +2, [ICON_Culture] culture +2 et [ICON_Gold] or +4. Reçoit une Relique à la création et à la complétion d'une Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION" Language="fr_FR">
-      		<Text>Exclusive à la Pologne, cette unité de la Renaissance s'obtient à Église Réformée et a la même puissance qu'un cuirassier, qu'elle remplace. Elle repousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts additionnels.</Text>
+      		<Text>Exclusive à la Pologne, cette unité de la Renaissance s'obtient à Église Réformée et remplace le Cuirassier. Elle repousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts additionnels.</Text>
     	</Replace>
 		<!-- ========== PORTUGAL ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="fr_FR">
