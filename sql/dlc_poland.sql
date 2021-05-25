@@ -6,7 +6,7 @@
 -- Poland
 --==================
 -- 19/05/2021: Poland's Winged Hussar
-UPDATE Units SET PrereqCivic='CIVIC_REFORMED_CHURCH' WHERE UnitType='UNIT_POLISH_HUSSAR';
+UPDATE Units SET Combat=60, PrereqCivic='CIVIC_REFORMED_CHURCH' WHERE UnitType='UNIT_POLISH_HUSSAR';
 -- Poland gets a relic when founding and completeing a religion
 --Grants Relic Upon Founding Religion
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , RunOnce , Permanent)
