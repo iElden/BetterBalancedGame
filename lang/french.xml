@@ -35,11 +35,11 @@
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="fr_FR">
       		<Text>Chaque victoire en combat rapporte une quantité de [ICON_Culture] Culture égale à 50 % de la [ICON_Strength] puissance de combat de l'unité vaincue (en vitesse en ligne). [NEWLINE][ICON_Strength] Puissance de combat +1 pour chaque emplacement de doctrine militaire dans votre gouvernement.</Text>
     	</Replace>
-		<Replace Tag="LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="fr_FR">
       		<Text>[ICON_Strength] Puissance de combat +1 pour chaque emplacement de doctrine militaire dans votre gouvernement.</Text>
 		</Replace>
-		<Replace Tag="LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC" Language="fr_FR">
-			<Text>+{1_Value} dû aux emplacements de doctrine militaire.</Text>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="fr_FR">
+			<Text>Slots de doctrine militaire : +{1_Value}.</Text>
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
@@ -970,6 +970,12 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="fr_FR">
             <Text>+7 [ICON_Strength] Puissance de Combat en attaquant des unités de Mêlée ou de Combat à Distance.</Text>
         </Replace>
+		<Replace Tag="LOC_COMBAT_PREVIEW_DAMAGED_UNIT_DESC" Language="fr_FR">
+      		<Text>Unité blessée : [COLOR_RED]{1_Value}[ENDCOLOR].</Text>
+    	</Replace>
+		<Replace Tag="LOC_ABILITY_OLIGARCHY_MELEE_BUFF_MODIFIER_DESCRIPTION" Language="fr_FR">
+      		<Text>Oligarchie : +4.</Text>
+    	</Replace>
 		
 		<!-- Correction traduction Firaxis : unités navales d'Assaut en mer, pas de combat rapproché -->
 		<Replace Tag="LOC_POLICY_LETTERS_OF_MARQUE_DESCRIPTION" Language="fr_FR">
