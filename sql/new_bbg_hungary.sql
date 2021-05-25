@@ -40,7 +40,7 @@ INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
         'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
 
 INSERT INTO ModifierArguments(ModifierId, Name, Value)
-    SELECT 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType, 'Amount', '1'
+    SELECT 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType, 'Amount', '2'
     FROM Leaders
     WHERE InheritFrom IN
         ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',

@@ -7,4 +7,4 @@
 --******				RV: FAST SETTINGS 	 			 ******
 --==============================================================================================
 
-UPDATE GlobalParameters SET Value='12' WHERE ResolutionType='RELIGION_SPREAD_ADJACENT_CITY_DISTANCE';
+UPDATE GlobalParameters SET Value='12' WHERE Name='RELIGION_SPREAD_ADJACENT_CITY_DISTANCE';
