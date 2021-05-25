@@ -35,11 +35,11 @@
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="fr_FR">
       		<Text>Chaque victoire en combat rapporte une quantité de [ICON_Culture] Culture égale à 50 % de la [ICON_Strength] puissance de combat de l'unité vaincue (en vitesse en ligne). [NEWLINE][ICON_Strength] Puissance de combat +1 pour chaque emplacement de doctrine militaire dans votre gouvernement.</Text>
     	</Replace>
-		<Replace Tag="LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="fr_FR">
       		<Text>[ICON_Strength] Puissance de combat +1 pour chaque emplacement de doctrine militaire dans votre gouvernement.</Text>
 		</Replace>
-		<Replace Tag="LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC" Language="fr_FR">
-			<Text>+{1_Value} dû aux emplacements de doctrine militaire.</Text>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="fr_FR">
+			<Text>Slots de doctrine militaire : +{1_Value}.</Text>
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
@@ -104,7 +104,7 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION" Language="fr_FR">
       		<Text>Débloque la compétence de bâtisseur permettant de construire un élevage de l'Outback, exclusif à l'Australie. [NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1. [NEWLINE][ICON_Food] Nourriture +1 pour chaque pâturage adjacent. [NEWLINE][ICON_PRODUCTION] Production +1 aux pâturages adjacents aux Guildes et à Moteur à Vapeur. [NEWLINE][ICON_PRODUCTION] Production +1 toutes les deux Stations de l'Outback adjacentes à Moteur à Vapeur. [NEWLINE][ICON_FOOD]Nourriture +1 toutes les deux Stations de l'Outback adjacentes à Déploiement Rapide. [NEWLINE][NEWLINE]Ne peut être construit que dans un désert, une prairie ou une plaine.</Text>
-    	</Replace>
+    </Replace>
 		<!-- ========== AZTEQUES ========== -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="fr_FR">
       		<Text>Bâtiment exclusif aux Aztèques qui remplace l'Arena. [NEWLINE][ICON_Amenities] Activités +1 et [ICON_CULTURE] Culture +1 pour chaque Centre-ville dans un rayon de 6 cases. [NEWLINE]Points de [ICON_GreatGeneral] Général illustre +1. [NEWLINE][ICON_TOURISM] Tourisme +1 une fois le dogme de la conservation atteint.</Text> 
@@ -496,8 +496,8 @@
 			<Text>La religion fondée par la Pologne devient majoritaire dans une ville adjacente qui perd une case suite à la bombe culturelle polonaise. Les lieux saints reçoivent un bonus de foi standard pour les quartiers adjacents. Toutes les reliques offrent des bonus : [ICON_Faith] foi +2, [ICON_Culture] culture +2 et [ICON_Gold] or +4. Reçoit une Relique à la création et à la complétion d'une Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION" Language="fr_FR">
-      		<Text>Exclusive à la Pologne, cette unité de la Renaissance s'obtient à Église Réformée et a la même puissance qu'un cuirassier, qu'elle remplace. Elle repousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts additionnels.</Text>
-    	</Replace>
+      <Text>Exclusive à la Pologne, cette unité de la Renaissance s'obtient à Église Réformée et remplace le Cuirassier. Elle repousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts additionnels.</Text>
+    </Replace>
 		<!-- ========== PORTUGAL ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="fr_FR">
 			<Text>Champ de vision +1 pour toutes les unités. [ICON_TradeRoute] Routes commerciales +1 quand vous entrez dans une nouvelle ère, ère antique incluse. Libre passage avec toutes les cité-état.</Text>
@@ -973,6 +973,12 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="fr_FR">
             <Text>+7 [ICON_Strength] Puissance de Combat en attaquant des unités de Mêlée ou de Combat à Distance.</Text>
         </Replace>
+		<Replace Tag="LOC_COMBAT_PREVIEW_DAMAGED_UNIT_DESC" Language="fr_FR">
+      		<Text>Unité blessée : [COLOR_RED]{1_Value}[ENDCOLOR].</Text>
+    	</Replace>
+		<Replace Tag="LOC_ABILITY_OLIGARCHY_MELEE_BUFF_MODIFIER_DESCRIPTION" Language="fr_FR">
+      		<Text>Oligarchie : +4.</Text>
+    	</Replace>
 		
 		<!-- Correction traduction Firaxis : unités navales d'Assaut en mer, pas de combat rapproché -->
 		<Replace Tag="LOC_POLICY_LETTERS_OF_MARQUE_DESCRIPTION" Language="fr_FR">
