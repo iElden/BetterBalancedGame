@@ -5,9 +5,8 @@
 --==================
 -- Poland
 --==================
--- Poland's Winged Hussar moved to Divine Right
--- 23/04/2021: revert to firaxis
---UPDATE Units SET PrereqCivic='CIVIC_DIVINE_RIGHT' WHERE UnitType='UNIT_POLISH_HUSSAR';
+-- 19/05/2021: Poland's Winged Hussar
+UPDATE Units SET PrereqCivic='CIVIC_REFORMED_CHURCH' WHERE UnitType='UNIT_POLISH_HUSSAR';
 -- Poland gets a relic when founding and completeing a religion
 --Grants Relic Upon Founding Religion
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , RunOnce , Permanent)

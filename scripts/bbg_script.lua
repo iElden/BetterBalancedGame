@@ -32,6 +32,7 @@
 --include "bbg_stateutils"
 --include "bbg_unitcommands"
 
+include("SupportFunctions");
 -- ===========================================================================
 --	Constants
 -- ===========================================================================
@@ -660,8 +661,9 @@ end
 -- ===========================================================================
 --	Barbarians
 -- ===========================================================================
-local iBarbs_Original_Weight = 0.55;
-local iBarbs_Naval_Weight = 0.4;
+local iBarbs_Original_Weight = 0.50;
+local iBarbs_Spawn_Chance = 0.75;
+local iBarbs_Naval_Weight = 0.30;
 local iBarbs_Minimum_Horse_Turn = 15;
 
 function Check_Barbarians()
@@ -699,8 +701,15 @@ function Check_Barbarians()
 	if BarbsSetting == 2 then
 		maxCamps = maxCamps * 3
 	end
+	if BarbsSetting == 3 then
+		maxCamps = math.max(maxCamps  - 2, 1)
+		iBarbs_Spawn_Chance = iBarbs_Spawn_Chance * 0.66
+	end
 		
-	if currentCamps < maxCamps then
+	local rng = RandRange(1, 100, "BBG - Check_Barbarians()");
+	rng = rng / 100	
+		
+	if currentCamps < maxCamps and rng < iBarbs_Spawn_Chance then
 		print("Total Camp",currentCamps,maxCamps,"Will Add a Barb Camp")
 		AddBarbCamps()
 		else
@@ -710,13 +719,16 @@ end
 
 function AddBarbCamps()
 	print("		AddBarbCamps()")			
-	local rng = TerrainBuilder.GetRandomNumber(100,"Barb Type")/100
+	local rng = RandRange(1, 100, "BBG - AddBarbCamps()");
+	rng = rng / 100
 	local iCount = Map.GetPlotCount();
 	local validPlots = {};
 	local currentTurn = Game.GetCurrentGameTurn()
 	local startTurn = GameConfiguration.GetStartTurn()
+	local BarbsSetting = GameConfiguration.GetValue("BARBS_SETTING")
 	local bNaval = true
 	if rng < iBarbs_Naval_Weight then
+		if BarbsSetting ~= 3 or currentTurn > startTurn + iBarbs_Minimum_Horse_Turn then
 		-- Coastal
 		-- Any Coastal tiles at least 5 plots away from anyone
 		for plotIndex = 0, iCount-1, 1 do
@@ -795,6 +807,7 @@ function AddBarbCamps()
 			end		
 		end
 		
+		end
 		
 		
 		else
@@ -868,7 +881,7 @@ function AddBarbCamps()
 			
 			--Now Check there is no Horses nearby do it would not turn as a Horse camp
 		
-			if bValid == true and currentTurn > startTurn + 14 then
+			if bValid == true and currentTurn > startTurn + iBarbs_Minimum_Horse_Turn then
 				for i = 1, 36 do
 					local plotScanned = GetAdjacentTiles(pPlot, i)
 					if plotScanned ~= nil then
@@ -968,9 +981,12 @@ function CountBarbCamps()
 end
 
 function PlaceOriginalBarbCamps()
+	
+	local BarbsSetting = GameConfiguration.GetValue("BARBS_SETTING")
 	local base = PlayerManager.GetAliveMajorsCount()
 	base = tonumber(base)
 	local placed_camps = 0
+	print("PlaceOriginalBarbCamps()",base,BarbsSetting)
 	if base > 0 then
 		local iCount = Map.GetPlotCount();
 		local validPlots = {};
@@ -984,8 +1000,6 @@ function PlaceOriginalBarbCamps()
 			if pPlot:IsWater() or pPlot:IsImpassable() or pPlot:IsNaturalWonder() or pPlot:GetOwner() ~= -1 then
 				bValidTerrain = false
 			end
-			
-			
 			
 			
 			-- Assign Players
@@ -1042,7 +1056,7 @@ function PlaceOriginalBarbCamps()
 			
 			-- Insert 
 			if bValid == true then
-				--print("Barbs: Valid Plot!",pPlot:GetX(), pPlot:GetY())
+				--print("Barbs: Valid Plot!",pPlot:GetX(), pPlot:GetY(),id)
 				local tmp = {plot = pPlot, id = iTargetID, team = Players[iTargetID]:GetTeam()} 
 				table.insert(validPlots, tmp)
 			end
@@ -1053,9 +1067,12 @@ function PlaceOriginalBarbCamps()
 			for i, playerID in ipairs(PlayerManager.GetAliveMajorIDs()) do
 				if Players[playerID] ~= nil then
 					if (Players[playerID]:IsMajor()) and PlayerConfigurations[playerID]:GetLeaderTypeName() ~= "LEADER_SPECTATOR" then
-						local rng = TerrainBuilder.GetRandomNumber(100,"Barb Placement")/100
+							local rng = RandRange(1, 100, "BBG - Place Original Camp()");
+							rng = rng / 100
+						--print("Barbs: Valid Plot!",playerID,rng)
 						if rng < iBarbs_Original_Weight then
 							for j, plotTable in ipairs(validPlots) do
+								--print("Barbs: Valid Plot!",j,plotTable.id)
 								if plotTable.id == playerID then
 									local pPlot = plotTable.plot
 									-- Only place Improvement

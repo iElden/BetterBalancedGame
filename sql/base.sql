@@ -81,7 +81,8 @@ INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType) VAL
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
 	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
-
+-- Rough Rider ability to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS' AND Name='Amount';
 
 --==================
 -- Arabia
@@ -108,7 +109,17 @@ INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType)
 INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD' , 'TechnologyType' , 'TECH_ASTROLOGY');
 
-
+-- 18/05/2021: Mamluk 53 strengh
+UPDATE Units SET Combat=53 WHERE UnitType='UNIT_ARABIAN_MAMLUK';
+-- 18/05/2021: Madrasa cost to 175
+-- UPDATE Buildings SET Cost=175 WHERE BuildingType='BUILDING_MADRASA';
+-- Holy site and Campus got standard adjacency for district
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_HOLYSITE_ADJACENCYFAITH'),
+    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_CAMPUS_ADJACENCYSCIENCE');
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId) VALUES
+    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'District_Science'),
+    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'District_Faith');
 
 --==================
 -- China
@@ -290,6 +301,8 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
 -- Sea Dog available at Exploration now
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_ENGLISH_SEADOG';
 
+-- 15/05/2021: redcoast ability to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='REDCOAT_FOREIGN_COMBAT' AND Name='Amount';
 
 --==================
 -- France
@@ -300,18 +313,24 @@ UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE Tr
 UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_SPIES_START_PROMOTED';
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
+delete from Improvement_Adjacencies where ImprovementType = 'IMPROVEMENT_CHATEAU' and YieldChangeId = 'Chateau_River';
 -- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
---INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
---	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
---
---INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
---	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
---
---INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
---	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
---
---UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
-
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_GOLD' , '0');
+UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_CHATEAU' AND YieldType='YIELD_GOLD'; 
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Gold');
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+	VALUES ('Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+UPDATE Improvements SET Housing='1', PreReqCivic='CIVIC_FEUDALISM', RequiresAdjacentBonusOrLuxury = 0, RequiresRiver = 0, SameAdjacentValid = 1 WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+-- Garde imperial to +5 on continent (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='GARDE_CONTINENT_COMBAT' AND Name='Amount';
 
 --==================
 -- Germany
@@ -366,7 +385,7 @@ INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
 -- Greece (Gorgo)
 --==================
 
--- 37/03/2021 Give Gorgo 50% culture online speed
+-- 27/03/2021 Give Gorgo 50% culture online speed
 UPDATE ModifierArguments SET Value=100 WHERE ModifierId='UNIQUE_LEADER_CULTURE_KILLS' AND Name='PercentDefeatedStrength';
 
 --==================
@@ -445,14 +464,54 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'UnitType', 'UNIT_ARCHAEOLOGIST'),
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'Amount', '100');
 
+-- Grant relic on each gov plaza building.
+INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, OwnerRequirementSetId) VALUES
+    ('BBG_KONGO_RELIC_GOVBUILDING_TALL', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_TALL_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_WIDE', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_WIDE_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_CONQUEST', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_CONQUEST_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_FAITH', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_FAITH_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_CITYSTATES', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_CITYSTATES_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_SPIES', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_SPIES_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_SCIENCE', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_SCIENCE_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_CULTURE', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_CULTURE_REQUIREMENTS'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_MILITARY', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_MILITARY_REQUIREMENTS');
 
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_KONGO_RELIC_GOVBUILDING_TALL', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_WIDE', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_CONQUEST', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_FAITH', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_CITYSTATES', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_SPIES', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_SCIENCE', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_CULTURE', 'Amount', '1'),
+    ('BBG_KONGO_RELIC_GOVBUILDING_MILITARY', 'Amount', '1');
+
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_TALL'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_WIDE'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_CONQUEST'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_FAITH'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_CITYSTATES'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_SPIES'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_SCIENCE'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_CULTURE'),
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_KONGO_RELIC_GOVBUILDING_MILITARY');
+
+-- Put back writer point.
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_NKISI', 'TRAIT_DOUBLE_WRITER_POINTS');
+
+-- +4 faith for each sculture and artifact
+UPDATE ModifierArguments SET Value='4' WHERE Name='YieldChange' AND ModifierId IN ('TRAIT_GREAT_WORK_FAITH_SCULPTURE', 'TRAIT_GREAT_WORK_FAITH_ARTIFACT');
 
 --==================
 -- Norway
 --==================
--- Berserker no longer gets +10 on attack and -5 on defense... simplified to be base on defense and +15 on attack
--- UPDATE ModifierArguments SET Value='15' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
--- UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
+-- Berserker
+UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
 -- Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
 UPDATE Units SET PrereqTech=NULL , PrereqCivic='CIVIC_FEUDALISM' WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
@@ -667,7 +726,7 @@ INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 -- Missions cannot be placed next to each other
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
-UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
+UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions get bonus science at Enlightenment instead of cultural heritage
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
 -- Early Fleets moved to Mercenaries
@@ -675,7 +734,10 @@ UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AN
 -- 30% discount on missionaries
 INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
-
+-- 15/05/2021: Delete free builder on foreign continent
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_TREASURE_FLEET' AND ModifierId='TRAIT_INTERCONTINENTAL_BUILDER';
+-- 15/05/2021: Conquistador to +5 (from +10)
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='CONQUISTADOR_SPECIFIC_UNIT_COMBAT' AND Name='Amount';
 
 --==============================================================
 --******			  G O V E R N M E N T S				  ******
@@ -1009,7 +1071,7 @@ UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_SCYTHI
 --UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_SUMERIA';
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_FRANCE';
 -- t4 feature mechanics
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_KONGO' AND FeatureType='FEATURE_JUNGLE';
+UPDATE StartBiasFeatures SET Tier=3 WHERE CivilizationType='CIVILIZATION_KONGO' AND FeatureType='FEATURE_JUNGLE';
 -- t4 terrain mechanics
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_GRASS_HILLS';
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_PLAINS_HILLS';
@@ -1033,13 +1095,13 @@ UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
 UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
 -- Firaxis patch
 -- UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_PIKEMAN';
-UPDATE Units SET Combat=72 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
 	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
-
+UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
 
 
 --==============================================================

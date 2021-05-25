@@ -82,6 +82,9 @@
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à l'Angleterre de Victoria, cette unité de l'ère industrielle remplaçant l'infanterie de ligne a un coût de débarquement nul. [ICON_Strength] Puissance de combat +5 sur un continent autre que celui de votre capitale.</Text>
+    	</Replace>
 		<!-- ========== ARABIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="fr_FR">
 			<Text>Points de [ICON_GreatProphet] Prophète Illustre +1 par tour après avoir recherché l'Astrologie. Si l'avant-dernier [ICON_GreatProphet] prophète illustre est recruté alors que vous n'en possédez aucun, vous recevez automatiquement le dernier. [NEWLINE][ICON_Science] Science +1 pour chaque ville étrangère ayant adopté la religion créée de l'Arabie.</Text>
@@ -473,7 +476,7 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="fr_FR">
       		<Text>Aménagement antique constructible dans une plaine plate, une prairie plate, une plaine innondable ou un désert.[NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et [ICON_Faith] Foi +2 .[NEWLINE][NEWLINE]Les quartiers adjacents octroient des rendements bonus :[NEWLINE][ICON_Food] Nourriture +2 si adjacente à un centre-ville.[NEWLINE][ICON_SCIENCE] Science +2 par Campus adjacent.[NEWLINE][ICON_PRODUCTION] Production +2 par Zone Industrielle adjacente.[NEWLINE][ICON_CULTURE] Culture +2 par Place du Théâtre adjacente.[NEWLINE][ICON_FAITH] Foi +2 par Lieu Saint adjacent.[NEWLINE][ICON_GOLD] Or +2 par Plateforme Commerciale ou Port adjacent. [NEWLINE][NEWLINE]Deux pyramides ne peuvent pas être adjacentes.</Text>
-    </Replace>
+        </Replace>
 		<!-- ========== PAYS-BAS ========= -->
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un polder, exclusif aux Pays-Bas.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1. [ICON_PRODUCTION] Production +1. [ICON_Housing] Habitations +0,5. [ICON_FOOD] Nourriture +1 si adjacent à un autre polder. Bonus de [ICON_PRODUCTION] production, bonus [ICON_GOLD] d'or et bonus de [ICON_FOOD] nourriture à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Doit être placé sur une case de côte ou de lac adjacente à au moins deux cases de terre franchissables. Le coût en [ICON_Movement] PM de la case passe à 3.</Text>
