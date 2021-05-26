@@ -1100,6 +1100,9 @@
 		<Replace Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="en_US">
 			<Text>Raging</Text>
 		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_3_NAME" Language="en_US">
+			<Text>Civilized</Text>
+		</Replace>
 		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="en_US">
 			<Text>No Barbarians</Text>
 		</Replace>
@@ -1111,6 +1114,9 @@
 		</Replace>
 		<Replace Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="en_US">
 			<Text>May God have mercy for your soul.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_3_DESC" Language="en_US">
+			<Text>Cavalry Tribes and Naval Tribes would not appear before turn 15. [NEWLINE]Less Camps are appearing on the map. [NEWLINE]Camps placement are balanced between players.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="en_US">
 			<Text>No Barbarians</Text>

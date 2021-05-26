@@ -140,6 +140,8 @@ DELETE FROM ModifierArguments WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBIL
 DELETE FROM Modifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
 -- +100% production to Ordu
 UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
+-- Keshig
+UPDATE Units SET RangedCombat=40, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG';
 
 
 --==================
