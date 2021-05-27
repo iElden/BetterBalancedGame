@@ -1145,10 +1145,10 @@
 			<Text>Default Firaxis Settings for GS</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="en_US">
-			<Text>Balance the condition around GS timing:[NEWLINE]CV: more culture/tourims per great works, less tourism required to attract tourist [NEWLINE]DV: first congress at Medieval Era, first diplomatic vote at Renaissance Era [NEWLINE]SV: Slight cheaper projects and smaller distance to travel.</Text>
+			<Text>Balance the condition around GS timing:[NEWLINE]CV: more culture/tourims per great works, less tourism required to attract tourist [NEWLINE]DV: first congress at Medieval Era, first diplomatic vote at Renaissance Era [NEWLINE]SV: Slightly cheaper projects and faster research for late techs.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="en_US">
-			<Text>Balance the condition around RF timing:[NEWLINE]CV: more culture/tourims per great works, even less tourism required to attract tourist [NEWLINE]DV: first congress and diplomatic vote at Medieval Era [NEWLINE]SV: Ends at Mars Colonies.</Text>
+			<Text>Balance the condition around RF timing:[NEWLINE]CV: more culture/tourims per great works, even less tourism required to attract tourist [NEWLINE]DV: first congress and diplomatic vote at Medieval Era [NEWLINE]SV: Much cheaper projects and faster research for late techs.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="en_US">
 			<Text>Balance each victory condition individualy</Text>
@@ -1278,10 +1278,10 @@
 			<Text>Standard Firaxis Settings</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="en_US">
-			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules[NEWLINE]Mars Hydrophonics</Text>
+			<Text>Quicker setting with cheaper projects and future techs faster to research</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="en_US">
-			<Text>Science victory requires: [NEWLINE]Mars Reactor[NEWLINE]Mars Habitation modules</Text>
+			<Text>Quickest setting with cheaper projects and future techs faster to research</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="en_US">
 			<Text>No Science Victory</Text>
