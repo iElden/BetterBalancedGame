@@ -3,22 +3,15 @@
 -- ===========================================================================
 -- Includes
 -- ===========================================================================
-include("WorldRankings");
 
-BASE_ViewScience = ViewScience;
-BASE_PopulateScienceInstance = PopulateScienceInstance;
-BASE_PopulateScienceProgressMeters = PopulateScienceProgressMeters;
-BASE_PopulateScienceTeamInstance = PopulateScienceTeamInstance;
---BASE_GetNextStepForScienceProject = GetNextStepForScienceProject;
-local xp2 = false
+
 
 if Modding.IsModActive("4873eb62-8ccc-4574-b784-dda455e74e68") == true then
 	include("WorldRankings_Expansion2")
-	xp2 = true
-	XP2_ViewScience = ViewScience;
-	XP2_PopulateScienceInstance = PopulateScienceInstance;
-	XP2_PopulateScienceTeamInstance = PopulateScienceTeamInstance;
-	XP2_PopulateScienceProgressMeters = PopulateScienceProgressMeters;
+	print("WorldRankings for BBG XP2")
+	else
+	include("WorldRankings");
+	print("WorldRankings for BBG")	
 end
 
 
@@ -43,25 +36,6 @@ local SIZE_OVERALL_TOP_PLAYER_ICON:number = 48;
 local SIZE_OVERALL_PLAYER_ICON:number = 36;
 local SIZE_OVERALL_BG_HEIGHT:number = 100;
 local SIZE_OVERALL_INSTANCE:number = 40;
-
-local SPACE_PORT_DISTRICT_INFO:table = GameInfo.Districts["DISTRICT_SPACEPORT"];
-local EARTH_SATELLITE_PROJECT_INFOS:table = {
-	GameInfo.Projects["PROJECT_LAUNCH_EARTH_SATELLITE"]
-};
-local MOON_LANDING_PROJECT_INFOS:table = {
-	GameInfo.Projects["PROJECT_LAUNCH_MOON_LANDING"]
-};
-local MARS_COLONY_PROJECT_INFOS:table = { 
-	GameInfo.Projects["PROJECT_LAUNCH_MARS_REACTOR"],
-	GameInfo.Projects["PROJECT_LAUNCH_MARS_HABITATION"],
-	GameInfo.Projects["PROJECT_LAUNCH_MARS_HYDROPONICS"]
-};
-
-local SCIENCE_PROJECTS:table = {
-	EARTH_SATELLITE_PROJECT_INFOS,
-	MOON_LANDING_PROJECT_INFOS,
-	MARS_COLONY_PROJECT_INFOS
-};
 
 
 
@@ -107,49 +81,6 @@ function PopulateOverallInstance(instance:table, victoryType:string, typeText:st
 	end
 	
 end
-
-function ViewScience()
-	
-	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
-		XP2_ViewScience()
-		else
-		BASE_ViewScience()
-	end
-	
-end
-
-function PopulateScienceProgressMeters(instance:table, progressData:table)
-
-	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
-		XP2_PopulateScienceProgressMeters(instance, progressData)
-		else
-		BASE_PopulateScienceProgressMeters(instance, progressData)
-	end
-end
-
-function PopulateScienceInstance(instance:table, pPlayer:table)
-
-	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
-		XP2_PopulateScienceInstance(instance, pPlayer)
-		else
-		BASE_PopulateScienceInstance(instance, pPlayer)
-	end
-end
-
-function PopulateScienceTeamInstance(instance:table, pPlayer:table)
-
-	if xp2 == true and (GameConfiguration.GetValue("VictoryScienceSetting") == 0 or GameConfiguration.GetValue("VictoryScienceSetting") == 1 ) then
-		XP2_PopulateScienceTeamInstance(instance, pPlayer)
-		else
-		BASE_PopulateScienceTeamInstance(instance, pPlayer)
-	end
-end
-
-
-
-
-
-
 
 function PopulateTabs()
 

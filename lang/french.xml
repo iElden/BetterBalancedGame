@@ -14,7 +14,7 @@
 		</Replace>
 		<!-- ========== CATHERINE DE MEDICIS ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="fr_FR">
-			<Text>Une fois la Philosophie politique débloquée, dispose d'un niveau de [ICON_VisLimited] visibilité diplomatique de plus que la normale avec chaque civilisation rencontrée.</Text>
+			<Text>Une fois la Philosophie politique atteinte, dispose d'un niveau de [ICON_VisLimited] visibilité diplomatique de plus que la normale avec chaque civilisation rencontrée.</Text>
 		</Replace>
 		<!-- ========== CATHERINE DE MEDICIS AU BAL MASQUÉ OHÉ OHÉ ========== -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="fr_FR">
@@ -33,7 +33,13 @@
 		</Replace>
 		<!-- ========== GORGÔ ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="fr_FR">
-			<Text>Chaque victoire en combat rapporte une quantité de [ICON_Culture] culture égale à 50 % de la [ICON_Strength] puissance de combat de l'unité vaincue (en vitesse en ligne).</Text>
+      		<Text>Chaque victoire en combat rapporte une quantité de [ICON_Culture] Culture égale à 50 % de la [ICON_Strength] puissance de combat de l'unité vaincue (en vitesse en ligne). [NEWLINE][ICON_Strength] Puissance de combat +1 pour chaque emplacement de doctrine militaire dans votre gouvernement.</Text>
+    	</Replace>
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_Strength] Puissance de combat +1 pour chaque emplacement de doctrine militaire dans votre gouvernement.</Text>
+		</Replace>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="fr_FR">
+			<Text>Slots de doctrine militaire : +{1_Value}.</Text>
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
@@ -41,8 +47,15 @@
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT TEXAS RANGER ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat bonus pour les unités militaires :[NEWLINE]+5 en défense sur leur continent d'origine[NEWLINE]+5 en attaque sur un continent étranger. Les émissaires envoyés vers les cités-états avec lesquelles vous avez une [ICON_TradeRoute] route commerciale comptent pour deux. Le Rough Rider, unité exclusive, est débloqué avec la Science militaire.</Text>
+			<Text>[ICON_Strength] Puissance de combat bonus pour les unités militaires :[NEWLINE]+5 en défense sur leur continent d'origine[NEWLINE]+5 en attaque sur un continent étranger. [NEWLINE]Les émissaires envoyés vers les cités-états avec lesquelles vous avez une [ICON_TradeRoute] route commerciale comptent pour deux. Le Rough Rider, unité exclusive, remplace le Cuirassier.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à l'Amérique de Theodore Roosevelt, cette unité de l'ère industrielle remplaçant le cuirassier a un coût d'entretien réduit et génère de la [ICON_Culture] culture lorsqu'elle élimine des unités sur le continent de sa [ICON_Capital] capitale. [ICON_Strength] Puissance de combat +5 en cas de combat sur une colline.</Text>
+    	</Replace>
+		<!-- ========== VICTORIA ========== -->
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à l'Angleterre de Victoria, cette unité de l'ère industrielle remplaçant l'infanterie de ligne a un coût de débarquement nul. [ICON_Strength] Puissance de combat +5 sur un continent autre que celui de votre capitale.</Text>
+    	</Replace>
 		<!-- =============== C I V I L I S A T I O N S =============== -->
 		
 		<!-- ========== ALLEMAGNE ========== -->
@@ -50,15 +63,9 @@
 			<Text>Après le dogme des Guildes, chaque ville peut construire un quartier de plus, au-delà du seuil imposé par la [ICON_Citizen] population.</Text>
 		</Replace>
 		<!-- ========== AMÉRIQUE ========== -->
-		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive à l'Amérique de Theodore Roosevelt, cette unité de l'ère industrielle remplace la Cavalerie, a un coût d'entretien réduit et génère de la [ICON_Culture] culture lorsqu'elle élimine des unités sur le continent de sa [ICON_Capital] capitale. [ICON_Strength] Puissance de combat +5 en cas de combat sur une colline.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat bonus pour les unités militaires :[NEWLINE]+5 en défense sur leur continent d'origine[NEWLINE]+5 en attaque sur un continent étranger.[NEWLINE]Attrait +1 pour toutes les cases d'une ville possédant un parc national. Apparition de l'unité exclusive des Rough Riders une fois la Science Militaire recherchée.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif à l'Amérique. [ICON_Tourism] Tourisme de la ville vers les autres civilisations +50 % dans l'ère moderne.</Text>
-		</Replace>
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>Bâtiment exclusif à l'Amérique. [ICON_Tourism] Tourisme de la ville vers les autres civilisations +50 % à l'entrée dans l'ère moderne.</Text>
+    	</Replace>
 		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="fr_FR">
 			<Text>+5 Puissance de Combat en défense sur continent d'origine.</Text>
 		</Replace>
@@ -73,26 +80,35 @@
 			<Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
-		  <Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
+			<Text>Quartier exclusif à l'Angleterre remplaçant le port, destiné à accueillir les activités navales de votre ville. Annule la pénalité de [ICON_Movement] mouvement en cas d'embarquement ou de débarquement depuis cette case. Doit être construit sur une côte ou un lac adjacent à la terre ferme. [NEWLINE][NEWLINE][ICON_Movement] PM +1 pour toutes les unités navales issues du port militaire. [NEWLINE][ICON_Gold] Or +2 et loyauté +4 par tour en cas de construction sur un continent étranger. Ne peut pas être construit sur un récif.[NEWLINE]+1 point d' [ICON_GREATADMIRAL] Amiral illustre par tour pour les Phares.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à l'Angleterre de Victoria, cette unité de l'ère industrielle remplaçant l'infanterie de ligne a un coût de débarquement nul. [ICON_Strength] Puissance de combat +5 sur un continent autre que celui de votre capitale.</Text>
+    	</Replace>
 		<!-- ========== ARABIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="fr_FR">
-			<Text>Points de [ICON_GreatProphet] Prophète Illustre +1 par tour après avoir recherché l'Astrologie. Si l'avant-dernier [ICON_GreatProphet] prophète illustre est recruté alors que vous n'en possédez aucun, vous recevez automatiquement le dernier. [ICON_Science] Science +1 pour chaque ville étrangère ayant adopté la religion créée de l'Arabie.</Text>
+			<Text>Points de [ICON_GreatProphet] Prophète Illustre +1 par tour après avoir recherché l'Astrologie. Si l'avant-dernier [ICON_GreatProphet] prophète illustre est recruté alors que vous n'en possédez aucun, vous recevez automatiquement le dernier. [NEWLINE][ICON_Science] Science +1 pour chaque ville étrangère ayant adopté la religion créée de l'Arabie.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="fr_FR">
-			<Text>Le lieu de culte de la religion choisie peut être acheté par n'importe quel joueur pour un dixième de son coût normal en [ICON_Faith] foi. Cet édifice est amélioré pour augmenter de 20 % la [ICON_Science] science, la [ICON_Faith] foi et la [ICON_Culture] culture générées par les villes arabes.</Text>
+			<Text>Les Campus et les Lieux Saints recoivent un bonus de proximité standard de la part des autres quartiers. [NEWLINE][NEWLINE]Le lieu de culte de votre Religion peut être acheté par n'importe quel joueur pour 10% de son coût normal en [ICON_Faith] Foi. Cet édifice augmente de 20 % la [ICON_Science] science, la [ICON_Faith] foi et la [ICON_Culture] culture générées par les villes arabes.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_MADRASA_DESCRIPTION" Language="fr_FR">
+      		<Text>Bâtiment exclusif à l'Arabie qui remplace l'Université et se débloque à Théologie. Bonus de [ICON_Faith] foi équivalent au bonus de proximité du campus.</Text>
+    	</Replace>
 		<!-- ========== AUSTRALIE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour 10 tours après avoir libéré une ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Rendements +1, pas +2 pour les cases charmantes -->
-			<Text>[ICON_Housing] Habitations +3 pour les villes côtières. Les pâturages déclenchent une bombe culturelle. Rendements +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre situés sur des cases à l'attrait charmant, +3 si l'attrait est époustouflant.</Text>
+			<Text>[ICON_Housing] Habitations +3 pour les villes côtières. Les pâturages déclenchent une bombe culturelle. Rendements +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre situés sur des cases à l'attrait charmant, +3 si l'attrait est époustouflant.[NEWLINE][ICON_PRODUCTION] Production +1 pour les pâturages.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION" Language="fr_FR">
+      		<Text>Débloque la compétence de bâtisseur permettant de construire un élevage de l'Outback, exclusif à l'Australie. [NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1. [NEWLINE][ICON_Food] Nourriture +1 pour chaque pâturage adjacent. [NEWLINE][ICON_PRODUCTION] Production +1 aux pâturages adjacents aux Guildes et à Moteur à Vapeur. [NEWLINE][ICON_PRODUCTION] Production +1 toutes les deux Stations de l'Outback adjacentes à Moteur à Vapeur. [NEWLINE][ICON_FOOD]Nourriture +1 toutes les deux Stations de l'Outback adjacentes à Déploiement Rapide. [NEWLINE][NEWLINE]Ne peut être construit que dans un désert, une prairie ou une plaine.</Text>
+    </Replace>
 		<!-- ========== AZTEQUES ========== -->
-		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif aux Aztèques. [ICON_Amenities] Activités +1, [ICON_CULTURE] culture +3 et points de [ICON_GreatGeneral] général illustre +1.</Text>
-		</Replace>
+		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="fr_FR">
+      		<Text>Bâtiment exclusif aux Aztèques qui remplace l'Arena. [NEWLINE][ICON_Amenities] Activités +1 et [ICON_CULTURE] Culture +1 pour chaque Centre-ville dans un rayon de 6 cases. [NEWLINE]Points de [ICON_GreatGeneral] Général illustre +1. [NEWLINE][ICON_TOURISM] Tourisme +1 une fois le dogme de la conservation atteint.</Text> 
+    	</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="fr_FR">
 			<Text>Vous pouvez dépenser des charges de bâtisseur pour compléter 20 % du coût initial du quartier. [ICON_PRODUCTION] Production +50% pour les unités de combat rapproché.</Text>
 		</Replace>
@@ -112,6 +128,12 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION" Language="fr_FR">
 			<Text>Bonus de proximité +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre adjacents à une forêt tropicale. [NEWLINE] Les cases de forêt tropicale dans votre territoire appliquent un attrait de +1 sur les cases adjacentes, au lieu de l'habituel -1. </Text>
 		</Replace>
+		<Replace Tag="LOC_DISTRICT_WATER_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>Ce quartier exclusif au Brésil remplace le parc aquatique et ne compte pas dans la limitation de quartiers en fonction de la population. [NEWLINE][ICON_Amenities] Activités +2. Débloque également le projet Carnaval, qui confère 1 [ICON_Amenities] activité quand il est en cours, ainsi que des points de [ICON_GreatPerson] personnage illustre une fois achevé. Ne peut pas être construit dans une ville possédant un carnaval de rue, ni sur un récif.</Text>
+    	</Replace>
+    	<Replace Tag="LOC_DISTRICT_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>Ce quartier exclusif au Brésil remplace le complexe de loisirs et ne compte pas dans la limitation de quartiers en fonction de la population. [NEWLINE][ICON_Amenities] Activités +2. Débloque également le projet Carnaval, qui confère 1 [ICON_Amenities] activité bonus quand il est en cours, ainsi que des points de [ICON_GreatPerson] personnage illustre une fois achevé. Ne peut pas être construit dans une ville possédant déjà Copacabana.</Text>
+    	</Replace>
 		<!-- ========== BYZANCE ========== -->
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +2 pour chaque ville sainte convertie à votre religion, et la religion byzantine se propage aux villes voisines quand une unité d'une civilisation majeure est vaincue (taxis).</Text>
@@ -129,19 +151,18 @@
 			<Text>Unité du Moyen-âge exclusive à Basile II qui remplace le chevalier. [ICON_Strength] Puissance de combat ou [ICON_RELIGION] religieuse +2 pour les unités terrestres dans un rayon d'une case.</Text>
 		</Replace>
 		<!-- ========== CANADA ========== -->
-		<!--
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="fr_FR">
-			<Text>Permet de construire des fermes sur les cases de toundra. Après l'adoption du Génie Civil, les fermes peuvent être construites sur des cases de colline de toundra.[NEWLINE][ICON_FOOD] Nourriture + 1 pour toutes les cases de Toundra.[NEWLINE]Sur toutes les cases de neige et de toundra : [ICON_PRODUCTION] production +1 pour les mines et les scieries, [ICON_FOOD] nourriture +1 pour les camps, et le taux d'accumulation de ressources stratégiques augmente de 100 %. Réduit le coût d'achat de ce type de cases de 50 %.[NEWLINE][NEWLINE] Les villes avec un Parc National génèrent 4 [ICON_FOOD] Nourriture et 4 [ICON_PRODUCTION] Production supplémentaires par tour.</Text>
-		</Replace>
+      		<Text>[ICON_FOOD] Nourriture +1 pour les Centre-villes dans la toundra. Permet de construire des fermes sur les cases de toundra.[NEWLINE][NEWLINE]Sur les cases de neige et de toundra :[NEWLINE][ICON_PRODUCTION] Production +2 pour les mines et les scieries.[NEWLINE][ICON_FOOD] Nourriture +2 pour les camps et les fermes. [NEWLINE]Taux d'accumulation de ressources stratégiques doublé.[NEWLINE]Coût d'achat de ce type de cases réduit de 50 %.</Text>
+    	</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive au Canada, cette unité de l'ère moderne peut créer un parc national. [ICON_Strength] Puissance de combat +5 lors des combats dans un rayon de 4 cases autour d'un parc national, et +10 si ce parc national vous appartient.</Text>
+			<Text>Exclusive au Canada, cette unité de l'ère moderne peut créer un parc national. [ICON_Strength] Puissance de combat +5 lors des combats dans un rayon de 4 cases autour d'un parc national, porté à +10 si ce parc national vous appartient.</Text>
 		</Replace>
 		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>Puissance de combat +{1_Amount} dans un rayon de 4 cases autours d'un parc national.</Text>
 		</Replace>
 		<Replace Tag="LOC_OWNER_PARK_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>Puissance de combat +{1_Amount} dans un rayon de 4 cases autour d'un parc national de ce joueur.</Text>
-		</Replace>-->
+		</Replace>
 		<!-- ========== CHINE ========== -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Chine, cette unité d'attaque à distance remplace l'Arbalétrier. [ICON_Ranged] Puissance d'attaque à distance +7 en cas d'attaque sur une unité ennemie adjacente.</Text>
@@ -187,38 +208,35 @@
 			<Text>Débloque la compétence de bâtisseur permettant de construire une hacienda, un bâtiment exclusif à la Grande Colombie.[NEWLINE][NEWLINE][ICON_GOLD] Or +2, [ICON_PRODUCTION] Production +1 et [Icon_Housing] Habitations +1. [ICON_Food] Nourriture +1 toutes les 2 cases de plantations adjacentes (augmente pour chaque plantation après la découverte des pièces détachées). [ICON_Production] Production +1 pour les plantations et les haciendas, toutes les 2 haciendas adjacentes (passe à chaque hacienda adjacente après la découverte du déploiement rapide). Ne peut être construite que sur une case de plaine plate ou de prairie plate.</Text>
 		</Replace>
 		<!-- ========== CONGO ========== -->
-		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coloo peut à nouveau recruter des personnages illustres =D -->
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coach peut à nouveau recruter des personnages illustres =D -->
 			<Text>Ne peut ni construire des lieux saints, ni recruter de prophète illustre, ni fonder une religion. Adopte les croyances de toute religion qui s'est propagée à la majorité de ses villes. Reçoit un apôtre de la religion dominante de la ville lorsqu'il construit un mbanza ou une place du théâtre.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="fr_FR">
-			<Text>En plus de la [ICON_Culture] culture habituelle, [ICON_Food] nourriture +2, [ICON_Production] production +2 et [ICON_Gold] or +4 pour chaque [ICON_GreatWork_Relic] relique, [ICON_GreatWork_Artifact] artefact et [ICON_GreatWork_Sculpture] chef-d'œuvre de sculpture. Points d'[ICON_GreatWriter] écrivain, d'[ICON_GreatArtist] artiste, de [ICON_GreatMusician] musicien et de [ICON_GreatMerchant] marchand illustre +50 %. [ICON_PRODUCTION] Production doublée pour la formation d'Archéologues. Un palais peut accueillir 5 chefs-d'œuvre.</Text>
-		</Replace>
+      		<Text>En plus des rendements habituels :[NEWLINE] [ICON_Food] Nourriture +2, [ICON_Production] Production +2 et [ICON_Gold] Or +4 pour les [ICON_GreatWork_Relic] Reliques, [ICON_GreatWork_Artifact] Artefacts et [ICON_GreatWork_Sculpture] Sculptures. [NEWLINE][ICON_FAITH] Foi +1 pour les [ICON_GreatWork_Relic] Reliques. [NEWLINE][ICON_FAITH] Foi +4 pour les [ICON_GreatWork_Artifact] Artefacts et les [ICON_GreatWork_Sculpture] Sculptures. [NEWLINE][NEWLINE]Votre palais peut accueillir 5 chefs-d'œuvre. Vous obtenez une [ICON_GreatWork_Relic] Relique gratuite à chaque bâtiment de la Place de la Gouvernance construit. [NEWLINE][NEWLINE]Points d'[ICON_GreatWriter] écrivain, d'[ICON_GreatArtist] artiste, de [ICON_GreatMusician] musicien et de [ICON_GreatMerchant] marchand illustre +50 %.</Text>
+    	</Replace>
 		<!-- ========== CORÉE ========== -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="fr_FR">
-			<Text>Destiné à la recherche scientifique, ce quartier exclusif à la Corée remplace le campus. [ICON_SCIENCE] Science +2. Octroie +1 [ICON_CULTURE] Culture aux Places du Théâtre adjacentes. Déclenche une bombe culturelle une fois construit. Doit être construit sur une colline.</Text>
+			<Text>Destiné à la recherche scientifique, ce quartier exclusif à la Corée remplace le campus mais ne reçoit pas leurs bonus de proximité habituels : [NEWLINE][NEWLINE][ICON_SCIENCE] Science +2, mais -1 pour chaque quartier adjacent, à l'exception des Places du théâtre. [NEWLINE][ICON_SCIENCE] Science +1 toutes les deux mines adjacentes. [NEWLINE]Les Places du Théâtre reçoivent un bonus de proximité standard de la part des Seowons. [NEWLINE][NEWLINE]Déclenche une bombe culturelle une fois construit. Doit être construit sur une colline.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION" Language="fr_FR">
+      		<Text>Les mines reçoivent +1 [ICON_SCIENCE] Science pour chaque Seowon adjacent. [NEWLINE]Les fermes reçoivent +1 [ICON_FOOD] Nourriture pour chaque Seowon adjacent.</Text>
+    	</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="fr_FR">
-			<Text>Proximité : [ICON_SCIENCE] Science +1 toutes les deux mines adjacentes. [ICON_SCIENCE] science -1 pour chaque quartier adjacent, à l'exception des Places du Théâtre, qui octroient +1 [ICON_SCIENCE] Science. Octroie également +1 [ICON_CULTURE] Culture aux Places du Théâtre adjacentes.</Text>
+			<Text>Proximité : [ICON_SCIENCE] Science +1 toutes les deux mines adjacentes. [ICON_SCIENCE] science -1 pour chaque quartier adjacent, à l'exception des Places du Théâtre. Les Places du Théâtre reçoivent un bonus de proximité standard de la part des Seowons.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="fr_FR">
-			<Text>+{1_num} [ICON_Science] Science de la part des Places du Théâtre adjacentes.</Text>
+			<Text>Places du théâtre adjacentes : +{1_num} [ICON_Science] Science.</Text>
 		</Row>
 		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="fr_FR">
-			<Text>+{1_num} [ICON_CULTURE] Culture de la part des Seowon adjacents.</Text>
+			<Text>Seowon adjacents : +{1_num} [ICON_CULTURE] Culture.</Text>
 		</Row>
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="fr_FR">
 			<Text>[ICON_SCIENCE] Science bonus +{1_num}.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="fr_FR">
-			<Text>[ICON_SCIENCE] Science bonus +{1_num} de la part {1_Num : plural 1?de la mine adjacente; other?des mines adjacentes;}.</Text>
+			<Text>[ICON_SCIENCE] Science bonus +{1_num} de la part des mines adjacentes.</Text>
 		</Row>
 		<!-- ========== CRIS ========== -->
-		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive au peuple Cri, cette unité de l'Antiquité remplace les éclaireurs. Unité de reconnaissance puissante. [ICON_Movement] Déplacement rapide dans les bois et forêts tropicales.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="fr_FR">
-			<Text>Déplacement rapide dans les bois et forêts tropicales.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="fr_FR">
 			<Text>Capacité de [ICON_TradeRoute] Routes commerciales +1 au moment de découvrir la poterie. Les cases inoccupées se trouvant à 3 cases ou moins d'une ville Cri se retrouvent en sa possession lorsqu'un négociant s'installe dans la ville pour la première fois.</Text>
 		</Replace>
@@ -249,22 +267,18 @@
             <Text>Débloque la capacité de bâtisseur de construire un Sphynx, unique à l'Egypte.[NEWLINE][NEWLINE]+2 [ICON_Faith] Foi, +1 [ICON_Culture] Culture, et +1 Attrait.[NEWLINE][NEWLINE]+1 [ICON_Faith] Foi et +1 [ICON_CULTURE] Culture si adjacent à une merveille. +1 [ICON_FOOD] Nourriture et +1 [ICON_PRODUCTION] Production si construit sur un désert ou +1 [ICON_CULTURE] Culture si construit sur des plaines inondables.[NEWLINE][NEWLINE]Bonus de[ICON_CULTURE] Culture lorsque Service Diplomatique est découvert. Génère du[ICON_TOURISM] Tourisme après avoir recherché l'Aviation. Ne peut pas être construit à côté d'un autre Sphynx ou sur la Neige ou sur une Colline enneigée.</Text>
         </Replace>
 		<!-- ========== ESPAGNE ========== -->
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="fr_FR">
-			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. Les [ICON_TradeRoute] routes commerciales octroient [ICON_Gold] or +3, [ICON_Faith] foi +2 et [ICON_Production] production +1. Les [ICON_TradeRoute] routes commerciales entre plusieurs continents voient tous leurs rendements doubler. Les villes fondées hors de votre continent d'origine reçoivent +25 % de [ICON_Production] production pour la construction de quartiers, et un bâtisseur gratuit.[NEWLINE][ICON_PRODUCTION] Production +25% pour les bâtiments du Port.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. Les [ICON_TradeRoute] routes commerciales octroient [ICON_Gold] or +3, [ICON_Faith] foi +2 et [ICON_Production] production +1. Les [ICON_TradeRoute] routes commerciales entre plusieurs continents voient tous leurs rendements doubler. Les villes fondées hors de votre continent d'origine reçoivent +25 % de [ICON_Production] production pour la construction de quartiers, et un bâtisseur gratuit.[NEWLINE][ICON_PRODUCTION] Production +25% pour les bâtiments du Port.</Text>
+			<Text>Possibilité de constituer des flottes au dogme des Mercenaires et des armadas au dogme du Mercantilisme, qui sont constructibles dans les villes disposants d'un chantier naval. [NEWLINE][ICON_Gold] Or +3, [ICON_Faith] Foi +2 et [ICON_Production] Production +1 pour vos [ICON_TradeRoute] Routes commerciales, qui voient tous leurs rendements doubler quand elles relient deux continents différents. [NEWLINE]Les villes fondées hors de votre continent d'origine reçoivent +25 % de [ICON_Production] Production pour la construction de quartiers.</Text>
 		</Replace>
-		<!--
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Coût en [ICON_FAITH] Foi des missionnaire réduit de 30%. Les Inquisiteurs peuvent éradiquer les hérétiques une fois supplémentaire et suppriment 100% de l'influence des autres religions. Les unités militaires recoivent +4 [ICON_Strength] Puissance de Combat face aux joueurs suivants une autre religion que la vôtre.</Text>
-		</Replace>-->
+			<Text>[ICON_Strength]Puissance de combat +5 face aux joueurs suivants une autre religion que la vôtre. [NEWLINE]Coût en [ICON_FAITH] Foi des missionnaire réduit de 30%. Les Inquisiteurs peuvent éradiquer les hérétiques une fois supplémentaire et suppriment 100% de l'influence des autres religions.</Text>
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une mission, exclusive à l'Espagne.[NEWLINE][NEWLINE][ICON_Faith] Foi +2. [ICON_Faith] Foi +2, [ICON_PRODUCTION] Production +1 et [ICON_FOOD] Nourriture +1 en cas de construction sur un continent différent de votre [ICON_Capital] capitale. [ICON_Science] Science +1 pour chaque campus et lieu saint adjacent. [ICON_SCIENCE] Science +2 après avoir adopté les Lumières. [ICON_HOUSING] Habitations +1 en cas de construction sur le continent de votre capitale. Ne peut pas être construite adjacente à une autre Mission.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire une mission, exclusive à l'Espagne.[NEWLINE][NEWLINE][ICON_Faith] Foi +2. [NEWLINE][ICON_Faith] Foi +2, [ICON_FOOD] Nourriture +1, [ICON_PRODUCTION] Production +1 et [ICON_HOUSING] Habitations +1 hors du continent de votre [ICON_Capital] Capitale. [NEWLINE][ICON_SCIENCE] Science +2 aux Lumières. [NEWLINE][ICON_Science] Science +1 pour chaque campus et lieu saint adjacent. [NEWLINE][NEWLINE]Deux missions ne peuvent pas être adjacentes.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une mission, exclusive à l'Espagne.[NEWLINE][NEWLINE][ICON_Faith] Foi +2. [ICON_Faith] Foi +2 en cas de construction sur un autre continent que celui de votre [ICON_Capital] capitale.[NEWLINE][NEWLINE][ICON_Science] Science +2 si adjacente à un campus.[NEWLINE][NEWLINE][ICON_Science] Science +2 avoir adopté les Lumières. [ICON_HOUSING] Habitations +1 en cas de construction sur le continent de votre capitale. Ne peut pas être construite adjacente à une autre Mission.</Text>
-		</Replace>
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à l'Espagne, cette unité de la Renaissance remplace le mousquetaire. [ICON_Strength] Puissance de combat +5 à une case de portée d'une autre unité religieuse. Si le conquistador capture une ville ou est adjacent à elle lors de sa capture, il la convertit automatiquement à la religion dominante de sa civilisation.</Text>
+    	</Replace>
 		<!-- ========== ÉTHIOPIE ========== -->
 		<!-- Correction traduction Firaxis : +1 base, pas +2 -->
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="fr_FR">
@@ -289,16 +303,15 @@
 			<Text>Pas de pénalité de mouvement dans les collines et [ICON_STRENGTH] Puissance de combat +4 dans les collines.</Text>
 		</Replace>
 		<!-- ========== FRANCE ========== -->
-		<!--
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un castel, exclusif à la France. [NEWLINE][NEWLINE][ICON_Culture] Culture +2. Attrait +1. [ICON_Culture] Culture +1 pour chaque merveille adjacente (puis +2 une fois l'aviation recherchée). [ICON_Gold] Or +1 et [ICON_Food] Nourriture +1 pour chaque ressource de luxe adjacente. +1 [ICON_HOUSING] Habitations après avoir adopté la Féodalité. Octroie du [ICON_Tourism] tourisme une fois l'aviation recherchée. Ne peut être construit que sur une case adjacente à une rivière.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire un castel, exclusif à la France. [NEWLINE][NEWLINE][ICON_HOUSING] Habitations +1. Attrait +1. [NEWLINE][ICON_Culture] Culture +2 et [ICON_Gold] Or +1. [NEWLINE][ICON_Culture] Culture +1 pour chaque Merveille adjacente, porté à +2 à Aviation. [NEWLINE][ICON_Food] Nourriture +1 pour chaque ressource de luxe adjacente. [NEWLINE][NEWLINE]Doit être placé sur une case adjacente à une ressource bonus ou une ressource de luxe. Construction impossible sur une case adjacente à un autre castel. [NEWLINE]Octroie du [ICON_Tourism] tourisme une fois l'aviation recherchée.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un castel, exclusif à la France. [NEWLINE][NEWLINE][ICON_Culture] Culture +2. Attrait +1. [ICON_Culture] Culture +1 pour chaque merveille adjacente (puis +2 une fois l'aviation recherchée). [ICON_Gold] Or +1 et [ICON_Food] Nourriture +1 pour chaque ressource de luxe adjacente. +1 [ICON_HOUSING] Habitations après avoir adopté la Féodalité. Octroie du [ICON_Tourism] tourisme une fois l'aviation recherchée. Ne peut être construit que sur une case adjacente à une rivière.</Text>
-		</Replace>-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="fr_FR">
 			<Text>Reçoit un espion gratuit (et la possibilité d'en accueillir plus) quand les Châteaux sont découverts. Tous les espions commencent agents, avec une promotion gratuite. [ICON_Production] Production +20 % pour la construction de merveilles du Moyen-âge, de la Renaissance et de l'ère industrielle. [ICON_Tourism] Tourisme +50 % pour toutes les merveilles, quelle que soit l'ère.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à la France, cette unité de combat rapproché de l'ère industrielle remplaçant l'infanterie de ligne voit sa [ICON_Strength] puissance de combat augmenter de 5 points sur le continent de sa capitale et génère des points de [ICON_GreatGeneral] général illustre à chaque ennemi tué.</Text>
+    	</Replace>
 		<!-- ========== GAULE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +1 pour les unités de combat rapproché et anti-cavalerie pour chaque unité adjacente.</Text>
@@ -314,23 +327,14 @@
 		</Replace>
 		<!-- ========== GÉORGIE ========== -->
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="fr_FR">
-			<Text>Bâtiment exclusif à la Géorgie. Défense plus importante que les remparts Antiques. [ICON_TOURISM] Tourisme +1 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +4. [ICON_TOURISM] Tourisme et [ICON_FAITH] foi doublés lors d'un âge d'or.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif à la Géorgie qui remplace les Remparts Antiques. [ICON_TOURISM] Tourisme +1 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +4. </Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="fr_FR">
-			<Text>Unité de l'ère classique exclusive à la Géorgie qui remplace le Spadassin. [ICON_Strength] Puissance de combat +5 sur les cases de collines. Pas de pénalité de [ICON_Movement] mouvement sur les collines.</Text>
+			<Text>Bâtiment exclusif à la Géorgie qui remplace les Murs Antiques avec une défense supérieure. [NEWLINE][ICON_Faith] Foi +4. [NEWLINE][ICON_TOURISM] Tourisme +1 au dogme de la Conservation. [NEWLINE][ICON_FAITH] Foi et [ICON_TOURISM] Tourisme doublés lors d'un âge d'or.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="fr_FR">
-			<Text>Les victoires militaires génèrent une quantité de [ICON_FAITH] Foi égale à 50% de la [ICON_SRENGTH] Puissance de combat de l'unité vaincue (en vitesse en ligne). [ICON_Faith] Foi +100 % durant les 10 tours qui suivent une déclaration de guerre de protectorat. Chaque [ICON_ENVOY] émissaire envoyé dans une cité-état où votre religion est majoritaire compte double (doit posséder une religion dominante).</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +5 dans les collines. [NEWLINE][ICON_Bullet]Pas de pénalité de [ICON_Movement] PM sur les collines.</Text>
-		</Replace>
+      		<Text>Les victoires militaires octroient un bonus en [ICON_FAITH] foi équivalent à 50 % de la puissance de combat de l'unité vaincue (en vitesse en ligne). [NEWLINE][NEWLINE]Si votre religion est dominante dans votre empire, chaque [ICON_ENVOY] émissaire envoyé dans une cité-état où votre religion est majoritaire compte double.</Text>
+    	</Replace>
 		<!-- ========== GRÈCE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="fr_FR">
-			<Text>Un emplacement de doctrine Joker supplémentaire pour tous les types de gouvernement. [NEWLINE][NEWLINE]Reçoit un émissaire à chaque fois q'un amphithéâtre est achevé.</Text>
+			<Text>Une fois la philosophie politique atteinte, gagne un emplacement de doctrine Joker supplémentaire pour tous les types de gouvernement. [NEWLINE][NEWLINE]Reçoit un émissaire à chaque fois q'un amphithéâtre est achevé.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="fr_FR">
 			<Text>Quartier exclusif à la Grèce remplaçant la place du théâtre à moindres coûts, destiné à accueillir les sites culturels de la ville. Vous recevez un [ICON_Envoy] émissaire lorsque vous y construisez un amphithéâtre. [NEWLINE] Bonus de [ICON_Culture] Culture +1 pour chaque quartier adjacent. Bonus de [ICON_Culture] Culture +1 si adjacent au centre-ville. [ICON_Culture] Bonus de culture +2 pour chaque merveille adjacente. [NEWLINE]Ne peut être construite que sur une colline.</Text>
@@ -352,7 +356,7 @@
 			<Text>Les unités levées depuis une cité-état gagnent une capacité qui leur octroie +3 [ICON_Strength] Puissance de Combat et +1 [ICON_Movement] PM. Améliorer des unités levées coûte 75 % d'[ICON_GOLD] or et de ressources en moins. Si vous levez les troupes d'une cité-état, vous y recevez 1 [ICON_ENVOY] émissaire. Les châteaux débloquent l'Armée noire, une unité exclusive.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="fr_FR">			
-			<Text>Exclusive à la Hongrie, cette unité de l'ère industrielle remplace la cavalerie. [ICON_Strength] Puissance de combat +1 pour chaque cité-état dont vous êtes le suzerain.</Text>
+			<Text>Exclusive à la Hongrie, cette unité de l'ère industrielle remplace la cavalerie. [ICON_Strength] Puissance de combat +2 pour chaque cité-état dont vous êtes le suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PEARL_DANUBE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_PRODUCTION] Production +50 % pour les quartiers et bâtiments construits adjacents au centre-ville, mais de l'autre côté d'un cours d'eau par rapport à celui-ci.</Text>
@@ -365,27 +369,22 @@
 			<Text>Débloque la compétence de bâtisseur permettant de construire un puits à degrés, exclusif à l'Inde. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1, [ICON_FAITH] foi +1 et [ICON_Housing] habitations +1. [ICON_Faith] Foi +1 si adjacent à un lieu saint. [ICON_Food] Nourriture +1 pour chaque ferme adjacente. Construction impossible sur une colline ou adjacent à un autre puits à degrés.</Text>
 		</Replace>
 		<!-- ========== KHMERS ========== -->
-		<!--
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +{1_num} (rivières).</Text>
-		</Row>
-		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif aux Khmers qui remplace le temple, sans lequel vous ne pourrez pas acheter d'apôtres ou d'inquisiteurs contre de la [ICON_Faith] foi. Octroie un missionnaire à sa construction si vous avez fondé une religion.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive aux Khmers, cette unité de siège de l'ère classique remplace la catapulte et peut se déplacer et tirer dans le même tour, en plus d'exercer une zone de contrôle.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FAITH] Foi +2 pour chaque route commerciale internationale envoyée ou reçue. La civilisation émettrice reçoit également 2 [ICON_FAITH] foi. [ICON_FAITH] Foi +3 et [ICON_AMENITIES] activités de loisirs +1 pour chaque ville dotée d'un aqueduc. [ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc.</Text>
-		</Replace>
-		-->
+		<Replace Tag="LOC_BUILDING_PRASAT_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_FAITH] Foi +6. Bâtiment exclusif aux Khmers, sans lequel vous ne pourrez pas acheter d'apôtres ou d'inquisiteurs contre de la [ICON_Faith] foi. Remplace le temple. [ICON_Culture] Culture +0.3 pour chaque [ICON_CITIZEN] citoyen dans la ville. Une fois l'aviation découverte, [ICON_Tourism] Tourisme +10 dans la ville si elle possède au moins [ICON_CITIZEN] 10 habitants et [ICON_Tourism] Tourisme +20 dans la ville si elle possède au moins [ICON_CITIZEN] 20 habitants.</Text>
+    	</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_FAITH] Foi +0.5 pour chaque [ICON_CITIZEN] citoyen et [ICON_AMENITIES] activités +1 dans les villes possédant un aqueduc. [NEWLINE][ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc. [NEWLINE][ICON_FAITH] Foi +1 pour les fermes adjacents à un lieu saint.</Text>
+    	</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Bonus de proximité majeur en [ICON_FAITH] Foi et [ICON_FOOD] Nourriture pour les lieux saints situés près d'une rivière. Leur construction déclenche une bombe culturelle. [ICON_Housing] Habitations +2 s'ils se trouvent sur une rivière.</Text>
+      		<Text>Bonus de proximité majeur pour les lieux saints situés sur une rivière. [ICON_Housing] Habitations +2 et [ICON_FOOD] Nourriture +2 s'ils se trouvent sur une rivière. Leur construction déclenche une bombe culturelle</Text>
     	</Replace>
 		<!-- ========== MACÉDOINE ========== -->
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>+10 en cas de siège d'un quartier.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_HYPASPIST_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_Strength] Puissance de combat +10 en cas de siège d'un quartier.[NEWLINE][ICON_Bullet] Bonus de soutien +50 %.</Text>
+    	</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Macédoine, cette unité de combat rapproché remplace le spadassin. [ICON_Strength] Puissance de combat +10 en cas de siège d'un quartier. Bonus de soutien +50 %.</Text>
 		</Replace>
@@ -399,7 +398,7 @@
 			<Text>Vous recevez une amélioration pour chaque ville capturée : [ICON_PRODUCTION] Production +20 % dans toutes vos villes pendant 10 tours, un [ICON_TechBoosted] Eurêka ! pour chaque campement ou campus de la ville conquise, et une [ICON_CivicBoosted] inspiration pour chaque lieu saint ou place du théâtre.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="fr_FR">
-			<Text>Les victoires militaires génèrent une quantité de [ICON_SCIENCE] Science égale à 25% de la [ICON_SRENGTH] Puissance de combat de l'unité vaincue (en vitesse en ligne). Les villes ne génèrent pas d'usure de guerre. Toutes les unités militaires sont entièrement soignées si le joueur capture une ville dotée d'une merveille mondiale.</Text>
+			<Text>Les victoires militaires génèrent une quantité de [ICON_SCIENCE] Science égale à 25% de la [ICON_STRENGTH] Puissance de combat de l'unité vaincue (en vitesse en ligne). Les villes ne génèrent pas d'usure de guerre. Toutes les unités militaires sont entièrement soignées si le joueur capture une ville dotée d'une merveille mondiale.</Text>
 		</Replace>
 		<!-- ========== MALI ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_SAHEL_MERCHANTS_DESCRIPTION" Language="fr_FR">
@@ -423,12 +422,6 @@
 			<Text>Unité de la Renaissance exclusive aux Mapuches qui remplace le Coursier. Chaque pillage coûte 1 [ICON_Movement] PM.</Text>
 		</Replace>
 		<!--
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience de combat +25 % pour toutes les unités formées dans les villes possédant un [ICON_Governor] gouverneur. [ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or ou héroïque.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un chemamull, exclusif aux Mapuches.[NEWLINE][NEWLINE]Fournit une quantité de [ICON_CULTURE] culture correspondant à 75% de l'attrait de la case. [ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 après avoir adopté la Fonction Publique. [ICON_TOURISM] Tourisme bonus après avoir recherché l'Aviation. Attrait minimum : époustouflant.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="fr_FR">
 			<Text>Toqui</Text>
 		</Replace>-->
@@ -436,7 +429,7 @@
 			<Text>[ICON_Strength] Puissance de combat +5 contre les civilisations qui vivent un âge d'or ou héroïque.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAUTARO_ABILITY_DESCRIPTION_ALT" Language="fr_FR">
-      		<Text>[ICON_Strength] Puissance de combat +5 lors d'une guerre contre des villes libres ou des civilisations en âge d'or ou âge héroïque. Éliminer une unité ennemie alors qu'elle se trouve sur le territoire d'une ville ennemie fait perdre 20 points de loyauté à cette ville, 40 si la civilisation vit un âge d'or ou un âge héroïque.</Text>
+      		<Text>[ICON_Strength] Puissance de combat +5 lors d'une guerre contre des villes libres ou des civilisations en âge d'or ou âge héroïque. Éliminer une unité ennemie alors qu'elle se trouve sur le territoire d'une ville ennemie fait perdre 15 points de loyauté à cette ville, 30 si la civilisation vit un âge d'or ou un âge héroïque.</Text>
     	</Replace>
 		<!-- ========== MONGOLIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="fr_FR">
@@ -444,14 +437,11 @@
 		</Replace>
 		<!-- ========== MAYA ========== -->
 		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases de votre [ICON_Capital] capitale (Ix Mutal Ajaw).</Text>
+			<Text>[ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases de votre [ICON_Capital] capitale.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="fr_FR">
-			<Text>Rendements des villes dans un rayon de 6 cases autour de la [ICON_Capital] capitale +10%. Rendements des autres villes -15%. [ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases autour de la [ICON_Capital] capitale.</Text>
+			<Text>Tous les rendements sont augmentés de 10 % dans les villes situées dans un rayon de 6 cases autour de votre [ICON_Capital] Capitale. Les autres villes voient tous leur rendements diminués de 15 %. [ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases autour de la [ICON_Capital] capitale.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="fr_FR">
-      		<Text>Rendements des villes dans un rayon de 6 cases autour de la [ICON_Capital] capitale +10%, et octroie un bâtisseur gratuit à la fondation. Rendements des autres villes -15 %. [ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases autour de la [ICON_Capital] capitale.</Text>
-    	</Replace>
 		<!-- ========== NORVÈGE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
@@ -463,7 +453,7 @@
 			<Text>Les unités peuvent traverser les cases d'océan une fois la technologie de Construction Navale découverte. Les unités navales de combat rapproché se soignent lorsqu'elles se situent en territoire neutre. L'embarquement et le débarquement des unités ne consomment pas de [ICON_Movement] PM.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive à la Norvège, cette unité de l'ère médiévale reçoit +2 [ICON_Movement] PM lorsqu'elle commence en territoire ennemi ou lorsqu'elle est embarquée. [ICON_Strength] Puissance de combat +15 en attaque. Peut être acheté contre de la foi.</Text>
+			<Text>Exclusive à la Norvège, cette unité de combat rapproché offensive de l'ère médiévale remplaçe l'homme d'armes et reçoit +2 [ICON_Movement] PM lorsqu'elle commence en territoire ennemi. [ICON_Strength] Puissance de combat réduite à 40, mais +10 en attaque. [NEWLINE]Peut être acheté contre de la foi.</Text>
 		</Replace>
 		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="fr_FR">
 			<Text> [ICON_Gold] Or +{1_num} (lieux saints).</Text>
@@ -484,13 +474,12 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience + 30 % pour les unités d'attaque à distance. Les mines construites sur des ressources stratégiques fournissent + 1 unité de [ICON_Production] production, et celles sur des ressources bonus et de luxe + 2 unités d'[ICON_Gold] or.</Text>
 		</Replace>
-		<!--
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="fr_FR">
-			<Text>Aménagement débloqué avec la découverte de la maçonnerie et devant être construit sur un désert, une colline désertique, une plaine inondable, une plaine ou une prairie. [ICON_Faith] Foi + 1. Les quartiers adjacents octroient des rendements bonus. [ICON_Food] Nourriture +2 si la pyramide est adjacente à un centre-ville. Pour tous les autres quartiers octroyant des bonus de proximité : rendement approprié +2 si ce quartier est adjacent.</Text>
-		</Replace>-->
+      		<Text>Aménagement antique constructible dans une plaine plate, une prairie plate, une plaine innondable ou un désert.[NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et [ICON_Faith] Foi +2 .[NEWLINE][NEWLINE]Les quartiers adjacents octroient des rendements bonus :[NEWLINE][ICON_Food] Nourriture +2 si adjacente à un centre-ville.[NEWLINE][ICON_SCIENCE] Science +2 par Campus adjacent.[NEWLINE][ICON_PRODUCTION] Production +2 par Zone Industrielle adjacente.[NEWLINE][ICON_CULTURE] Culture +2 par Place du Théâtre adjacente.[NEWLINE][ICON_FAITH] Foi +2 par Lieu Saint adjacent.[NEWLINE][ICON_GOLD] Or +2 par Plateforme Commerciale ou Port adjacent. [NEWLINE][NEWLINE]Deux pyramides ne peuvent pas être adjacentes.</Text>
+        </Replace>
 		<!-- ========== PAYS-BAS ========= -->
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un polder, exclusif aux Pays-Bas.[NEWLINE][NEWLINE] [ICON_FOOD] Nourriture +1. [ICON_PRODUCTION] Production +1. [ICON_Housing] Habitations +0,5. [ICON_FOOD] Nourriture +1 si adjacent à un autre polder. Bonus de [ICON_PRODUCTION] production, bonus [ICON_GOLD] d'or et bonus de [ICON_FOOD] nourriture à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Doit être placé sur une case de côte ou de lac adjacente à au moins deux cases de terre franchissables. Le coût en [ICON_Movement] PM de la case passe à 3.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire un polder, exclusif aux Pays-Bas.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1. [ICON_PRODUCTION] Production +1. [ICON_Housing] Habitations +0,5. [ICON_FOOD] Nourriture +1 si adjacent à un autre polder. Bonus de [ICON_PRODUCTION] production, bonus [ICON_GOLD] d'or et bonus de [ICON_FOOD] nourriture à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Doit être placé sur une case de côte ou de lac adjacente à au moins deux cases de terre franchissables. Le coût en [ICON_Movement] PM de la case passe à 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="fr_FR">
 			<Text>Loyauté +2 par tour pour la ville de départ de vos [ICON_TradeRoute] routes commerciales intérieures. [ICON_Culture] Culture +2 pour les [ICON_TradeRoute] routes commerciales vers ou en provenance de villes étrangères.</Text>
@@ -506,6 +495,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="fr_FR">
 			<Text>La religion fondée par la Pologne devient majoritaire dans une ville adjacente qui perd une case suite à la bombe culturelle polonaise. Les lieux saints reçoivent un bonus de foi standard pour les quartiers adjacents. Toutes les reliques offrent des bonus : [ICON_Faith] foi +2, [ICON_Culture] culture +2 et [ICON_Gold] or +4. Reçoit une Relique à la création et à la complétion d'une Religion.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      <Text>Exclusive à la Pologne, cette unité de la Renaissance s'obtient à Église Réformée et remplace le Cuirassier. Elle repousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts additionnels.</Text>
+    </Replace>
 		<!-- ========== PORTUGAL ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="fr_FR">
 			<Text>Champ de vision +1 pour toutes les unités. [ICON_TradeRoute] Routes commerciales +1 quand vous entrez dans une nouvelle ère, ère antique incluse. Libre passage avec toutes les cité-état.</Text>
@@ -530,26 +522,22 @@
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="fr_FR">
 			<Text>Après avoir débloqué le Code juridique, toutes les villes commencent avec un Monument gratuit à leur fondation.</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif à Rome, remplaçant l'aqueduc à moindres coûts et favorisant la croissance démographique. [NEWLINE][ICON_Culture] Culture +1 tous les deux quartiers adjacents. [NEWLINE] Achemine de l'eau douce depuis une rivière, un lac, une oasis ou une montagne adjacente. Les villes dépourvues d'eau douce reçoivent un bonus de 6 [ICON_Housing] habitations, tandis que les villes en possédant ne reçoivent que 2 [ICON_Housing] habitations supplémentaires. Dans les deux cas, les thermes offrent un bonus de 2 [ICON_Housing] habitations et une [ICON_Amenities] activité. Doivent être adjacents au centre-ville.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif à Rome, remplaçant l'aqueduc à moindres coûts et favorisant la croissance démographique. [NEWLINE][ICON_Culture] Culture +1 tous les deux quartiers adjacents. [NEWLINE]Achemine de l'eau douce depuis une rivière, un lac, une oasis ou une montagne adjacente. Les villes dépourvues d'eau douce reçoivent un bonus de 6 [ICON_Housing] habitations, tandis que les villes en possédant ne reçoivent que 2 [ICON_Housing] habitations supplémentaires. [ICON_Amenities] Activités +1 si construit sur une case adjacente à une fissure géothermique. Dans tous les cas, les thermes offrent un bonus de 2 [ICON_Housing] habitations et une [ICON_Amenities] activité. Évite les pertes de [ICON_Food] nourriture en cas de sécheresse. Doit être construit sur une case adjacente au centre-ville.</Text>
+			<Text>Quartier exclusif à Rome, remplaçant l'aqueduc à moindres coûts et favorisant la croissance démographique. [NEWLINE][NEWLINE][ICON_Culture] Culture +1 tous les deux quartiers adjacents. [NEWLINE][ICON_Housing] Habitations +2 et [ICON_Amenities] Activités +1. [NEWLINE][NEWLINE]Octroie tous les autres bonus standards de l'Aqueduc.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif à Rome, remplaçant l'aqueduc à moindres coûts et favorisant la croissance démographique. [NEWLINE][ICON_Culture] Culture +1 tous les deux quartiers adjacents. [NEWLINE]Achemine de l'eau douce depuis une rivière, un lac, une oasis ou une montagne adjacente. Les villes dépourvues d'eau douce reçoivent un bonus de 6 [ICON_Housing] habitations, tandis que les villes en possédant ne reçoivent que 2 [ICON_Housing] habitations supplémentaires. [ICON_Amenities] Activités +1 si construits sur une case adjacente à une fissure géothermique. Dans tous les cas, les thermes offrent un bonus de 2 [ICON_Housing] habitations et une [ICON_Amenities] activité. Évite les pertes de [ICON_Food] nourriture en cas de sécheresse. Doit être construit sur une case adjacente au centre-ville. Les ingénieurs militaires peuvent dépenser une charge pour achever 20 % de la construction de thermes.</Text>
+			<Text>Quartier exclusif à Rome, remplaçant l'aqueduc à moindres coûts et favorisant la croissance démographique. [NEWLINE][NEWLINE][ICON_Culture] Culture +1 tous les deux quartiers adjacents. [NEWLINE][ICON_Housing] Habitations +2 et [ICON_Amenities] Activités +1. [NEWLINE][NEWLINE]Octroie tous les autres bonus standards de l'Aqueduc.</Text>
 		</Replace>
 		<!-- ========== RUSSIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Le territoire des villes nouvellement fondées est plus vaste. [ICON_Faith] Foi +1 par tour.[ICON_Production] Production +1 sur chaque case de toundra. Les unités sont insensibles au blizzard. Les unités des civilisations en guerre avec la Russie reçoivent +100 % des dégâts infligés par les blizzards sur le territoire russe.</Text>
+			<Text>Le territoire des villes nouvellement fondées est plus vaste de 5 cases. [NEWLINE][NEWLINE]Votre Empire génère 1 de [ICON_Faith] Foi par tour. [NEWLINE][ICON_Production] Production +1 pour toutes les cases de toundra. [NEWLINE][NEWLINE]Les unités sont insensibles au blizzard. Les unités des civilisations en guerre avec la Russie reçoivent +100 % des dégâts infligés par les blizzards sur le territoire russe.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Russie, cette unité de l'ère industrielle qui remplace la Cavalerie peut se déplacer après l'attaque s'il lui reste des [ICON_Movement] PM. [ICON_Strength] Puissance de combat +5 sur les cases de son territoire ou adjacentes.</Text>
 		</Replace>
-		<!--
-		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif à la Russie remplaçant le lieu saint à moindres coûts, destiné à accueillir les activités religieuses de votre ville. Accumule des points d' [ICON_GREATWRITER] écrivain illustre, d' [ICON_GREATArtist] artiste illustre et de [ICON_GREATMusician] musicien illustre dans les villes également équipées d'une place du théâtre.[NEWLINE][NEWLINE]Les frontières de celle-ci s'étendent d'une case à chaque personnage illustre utilisé dans la ville.</Text>
-		</Replace>-->
+    	<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="fr_FR">
+      		<Text>Quartier exclusif à la Russie remplaçant le lieu saint à moindres coûts, destiné à accueillir les activités religieuses de votre ville. [NEWLINE][NEWLINE]Les frontières de celle-ci s'étendent d'une case à chaque personnage illustre utilisé dans la ville. La Laure génère [ICON_GreatWriter] +1 point d'écrivain illustre avec un Temple et [ICON_GreatArtist] +1 point d'artiste illustre avec un Lieu de Culte.</Text>
+    	</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="fr_FR">
 			<Text>Le territoire des villes nouvellement fondées est plus vaste. [ICON_Production] production +1 pour la toundra.</Text>
 		</Replace>
@@ -558,7 +546,7 @@
 			<Text>Les unités de cavalerie peuvent être achetées avec de la [ICON_FAITH] Foi</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une kourgane, exclusive à la Scythie. [NEWLINE][NEWLINE][ICON_Faith] Foi +1. [ICON_Gold] Or +1. [ICON_Faith] Foi +1 et [ICON_PRODUCTION] production +1 pour chaque pâturage adjacent.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire une kourgane, exclusive à la Scythie. [NEWLINE][NEWLINE][ICON_Faith] Foi +1 et [ICON_Gold] Or +3. [NEWLINE][ICON_Faith] Foi +1 (porté à +2 à Étriers) et [ICON_PRODUCTION] Production +1 pour chaque pâturage adjacent. [NEWLINE]Génère du [ICON_TOURISM] tourisme par le biais de la [ICON_FAITH] foi après la découverte de l'aviation. Construction impossible sur une colline.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Scythie, cette unité d'attaque à distance de l'ère classique possède 4 [ICON_Movement] PM et une [ICON_Range] portée de 2.</Text>
@@ -596,7 +584,7 @@
 			<Text>Expérience +25% pour toutes les unités. [NEWLINE]Débute la partie avec un Char de Guerre à la place d'un Guerrier. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débute la partie avec un Char de Guerre au lieu d'un Guerrier. [NEWLINE]En cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
+			<Text>Débute la partie avec un Char de Guerre au lieu d'un Guerrier. [NEWLINE][ICON_STRENGTH] Puissance de Combat +1, +2 ou +3 en fonction du niveau de votre alliance la plus avancée. [NEWLINE][NEWLINE]En cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Ses alliances génèrent des points d'alliance en cas de guerre contre un ennemi commun. [NEWLINE]Quand vous capturez un Camp Barbare, vous recevez une récompense de Village Tribal en plus du bonus d'[ICON_Gold]Or habituel. Le coût de lévée des cités-états est diminué de moitié.</Text>
 		</Replace>
 		<!-- ========== VIETNAM ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="fr_FR">
@@ -605,17 +593,13 @@
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +1 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations et ne peut pas être construit sur une case adjacente au centre-ville, et ne génère pas de [ICON_GreatPerson] points de personnages illustres.</Text>
-		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
-			<Text>Peut former plus tôt des régiments (dogme Mercenaires) et des armées (dogme Nationalisme). [ICON_STRENGTH] Puissance de combat de base +5 pour les régiments et armées au dogme Mobilisation.</Text>
+			<Text>Peut former des régiments à Mercenaires et des armées à Nationalisme. [ICON_STRENGTH] Puissance de combat de base +5 pour les régiments et les armées à Mobilisation.</Text>
 		</Replace>
-		<!--
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_CULTURE] Culture +1 et Or [ICON_GOLD] +1 pour chaque bâtiment construit dans un Ikanda. Les villes possédant une unité en garnison reçoivent 3 points de loyauté par tour, ou 5 points en cas de régiment ou d'armée. Pour transformer une unité en régiment ou en armée, envoyez-la conquérir une ville après avoir débloqué le dogme correspondant.</Text>
-		</Replace>-->
+		<Replace Tag="LOC_DISTRICT_IKANDA_DESCRIPTION" Language="fr_FR">
+      		<Text>Quartier exclusif aux Zoulous remplaçant le campement. [NEWLINE][ICON_Housing] Habitations +1. Les bâtiments de l'Ikanda reçoivent [ICON_GOLD] Or +2 et [ICON_Culture] Culture +1. [NEWLINE][NEWLINE]Une fois les prérequis dogmatiques et technologiques atteints, les régiments et armées peuvent être créés. Création plus rapide de régiments et d'armées.</Text>
+    	</Replace>
 		
 		<!-- =============== P A N T H É O N S =============== -->
 		
@@ -989,7 +973,21 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="fr_FR">
             <Text>+7 [ICON_Strength] Puissance de Combat en attaquant des unités de Mêlée ou de Combat à Distance.</Text>
         </Replace>
+		<Replace Tag="LOC_COMBAT_PREVIEW_DAMAGED_UNIT_DESC" Language="fr_FR">
+      		<Text>Unité blessée : [COLOR_RED]{1_Value}[ENDCOLOR].</Text>
+    	</Replace>
+		<Replace Tag="LOC_ABILITY_OLIGARCHY_MELEE_BUFF_MODIFIER_DESCRIPTION" Language="fr_FR">
+      		<Text>Oligarchie : +4.</Text>
+    	</Replace>
 		
+		<!-- Correction traduction Firaxis : unités navales d'Assaut en mer, pas de combat rapproché -->
+		<Replace Tag="LOC_POLICY_LETTERS_OF_MARQUE_DESCRIPTION" Language="fr_FR">
+			<Text>Unités navales d'Assaut en mer : [ICON_Production] production +100 %, [ICON_Movement] PM +2. Rendement doublé lors du pillage de route commerciale. [NEWLINE]MAIS : [ICON_TradeRoute] routes commerciales -2.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_CREEPING_ATTACK_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_Strength] Puissance de combat +14 contre les unités navales d'Assaut en mer.</Text>
+    	</Replace>
+
 		<!-- Correction traduction Firaxis suite à la mise à jour de Juin 2019 -->
 		<Replace Tag="LOC_ABILITY_ENABLE_WALL_PROMOTION_CLASS_ATTACK_DESCRIPTION" Language="fr_FR">
 			<Text>Sur une case adjacente à une ville ennemie, les unités de combat rapproché et anti-cavalerie peuvent endommager ses remparts. N'affecte que les remparts Antiques. Inefficace contre les défenses urbaines.</Text>
@@ -1001,6 +999,10 @@
 		<Replace Tag="LOC_ABILITY_MEDIC_HEAL_DESCRIPTION" Language="fr_FR">
 			<Text>Guérison en retranchement augmentée de 20 PV pour les unités du joueur dans un rayon d'une case.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GREAT_PERSON_INDIVIDUAL_IMHOTEP_PRODUCTION_ANCIENT_CLASSICAL" Language="fr_FR">
+      		<Text>[ICON_Production] Production +87 pour la construction de merveilles, porté à 175 si la merveille est de l'Antiquité ou de l'ère classique (en vitesse en ligne).</Text>
+    	</Replace>
 		
 		<!-- =============== T E C H N O L O G I E S =============== -->
 		
@@ -1013,6 +1015,12 @@
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="fr_FR">
 			<Text>Octroie un espion gratuit si vous jouez la France. Bonus de [ICON_Culture] culture pour la Grande Muraille quand plusieurs segments sont adjacents.</Text>
 		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_SIEGE_TACTICS" Language="fr_FR">
+      		<Text>Possédez 2 trébucheh.</Text>
+    	</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_REPLACEABLE_PARTS" Language="fr_FR">
+      		<Text>Possédez 3 infanteries de ligne.</Text>
+    	</Replace>
 		
 		<!-- =============== D O G M E S =============== -->
 		
@@ -1043,6 +1051,10 @@
 		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Culture] Culture bonus pour les bâtiments des places du théâtre : +50 % si la ville compte au moins 15 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
 		</Replace>
+		<!-- Correction firaxis : quartier => quartier résidentiel -->
+		<Replace Tag="LOC_POLICY_PUBLIC_TRANSPORT_DESCRIPTION_XP2" Language="fr_FR">
+      		<Text>[ICON_Food] Nourriture +3 et [ICON_Production] production +1 pour les quartiers résidentiels d'un attrait charmant, et +1 supplémentaire pour chaque rendement si le quartier est époustouflant. [ICON_Gold] Or +1 pour tous les quartiers résidentiels.</Text>
+    	</Replace>
 		
 		<!-- Nouvelles cartes d'unités de Siège -->
 		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="fr_FR">
@@ -1072,12 +1084,7 @@
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Blablablabla. </Text>
 		</Replace>
-		
-		<!-- Correction traduction Firaxis : unités navales d'Assaut en mer, pas de combat rapproché -->
-		<Replace Tag="LOC_POLICY_LETTERS_OF_MARQUE_DESCRIPTION" Language="fr_FR">
-			<Text>Unités navales d'Assaut en mer : [ICON_Production] production +100 %, [ICON_Movement] PM +2. Rendement doublé lors du pillage de route commerciale. [NEWLINE]MAIS : [ICON_TradeRoute] routes commerciales -2.</Text>
-		</Replace>
-		
+
 		<!-- =============== C I T É S - É T A T S =============== -->
 		
 		<Replace Tag="LOC_LEADER_TRAIT_TARUGA_DESCRIPTION" Language="fr_FR">
@@ -1121,32 +1128,32 @@
 		
 		<!-- Campement, port, aérodrome -->
 		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. [ICON_RESOURCE_COAL] Charbon +1 par tour.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans l'aérodrome.[ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
 		</Replace>
 		<!-- Autres -->
 		<Replace Tag="LOC_DISTRICT_AQUEDUCT_DESCRIPTION" Language="fr_FR">
 			<Text>Quartier fournissant de l'eau douce à la ville, depuis une rivière, un lac, un oasis ou une montagne adjacent. [NEWLINE][ICON_Housing] Habitations +4 pour les villes sans eau. [NEWLINE][ICON_Housing] Habitations +3 pour les villes cotières sans eau douce. [NEWLINE][ICON_Housing] Habitations +2 pour les villes avec eau douce. [NEWLINE]Doit être adjacent au centre-ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_AQUEDUCT_ALT_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier fournissant à la ville une source d'eau douce s'il est adjacent à une rivière, un lac, une oasis ou une montagne. [NEWLINE][ICON_Housing] Habitations +4 pour les villes sans eau. [NEWLINE][ICON_Housing] Habitations +3 pour les villes cotières sans eau douce. [NEWLINE][ICON_Housing] Habitations +2 pour les villes avec eau douce. [NEWLINE][ICON_Amenities] Activités +1 si construit sur une case adjacente à une fissure géothermique. Évite les pertes de [ICON_Food] nourriture en cas de sécheresse. Les ingénieurs militaires peuvent dépenser une charge pour achever 20 % de la construction d'un aqueduc.</Text>
+			<Text>Quartier fournissant à la ville une source d'eau douce depuis une rivière, un lac, une oasis ou une montagne adjacente. [NEWLINE][ICON_Housing] Habitations +4 pour les villes sans eau. [NEWLINE][ICON_Housing] Habitations +3 pour les villes cotières sans eau douce. [NEWLINE][ICON_Housing] Habitations +2 pour les villes avec eau douce. [NEWLINE][ICON_Amenities] Activités +1 si construit sur une case adjacente à une fissure géothermique. Évite les pertes de [ICON_Food] nourriture en cas de sécheresse. Les ingénieurs militaires peuvent dépenser une charge pour achever 20 % de la construction d'un aqueduc.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 [ICON_PRODUCTION] Production +1. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et [ICON_PRODUCTION] Production +1. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire des Aquacultures. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 par ressource maritime adjacente. Doit être construite sur la côte.</Text>

@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40409">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40526">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4051">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4052">
 	<Properties>
-		<Name>Better Balanced Game 4.5.1</Name>
+		<Name>Better Balanced Game 4.5.2</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
-		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
+		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4051</Version>
+		<Version>4052</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -271,6 +271,8 @@
 			<File>sql/new_bbg_spain.sql</File>
 			<File>sql/new_bbg_buildings.sql</File>
 			<File>sql/new_bbg_spy.sql</File>
+			<File>sql/new_bbg_brazil.sql</File>
+			<File>sql/new_bbg_gorgo.sql</File>
 
 			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
@@ -627,6 +629,8 @@
 		<File>sql/new_bbg_buildings.sql</File>
 		<File>sql/new_bbg_spy.sql</File>
 		<File>sql/new_bbg_nfp_portugal.sql</File>
+		<File>sql/new_bbg_brazil.sql</File>
+		<File>sql/new_bbg_gorgo.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
