@@ -941,163 +941,163 @@
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="pt_BR">
 			<Text>Desabilita todas as condições de vitória</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Early</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Earliest</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Early</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Earliest</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Early</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Earliest</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Early</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Earliest</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Early</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Earliest</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Early</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Earliest</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Off</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
@@ -1154,181 +1154,181 @@
 		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="pt_BR">
 			<Text>Configuração padrão da Firaxis</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Renaissance Era</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: First Congress at Medieval Era[NEWLINE]First Diplomatic Vote at Medieval Era</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: No Diplomatic Victory</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard Firaxis Settings: 66% of Emerged Lands</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: 60% of Emerged Lands in your empire</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: 50% of Emerged Lands in your empire</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: No Territorial Victory</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Standard Firaxis Settings: All Capitals Captured</Text>
 		</Replace>
-		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="en_US">
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: No Conquest Victory</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Use your military and empire growth to your advantage to dominate the lands!</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: % of emerged land controlled</Text>
 		</Replace>
-		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="en_US">
+		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Territorial</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Territorial</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="en_US">
+		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Territorial Victory</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Territorial Victory</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: TERRITORIAL VICTORY</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: TERRITORIAL VICTORY</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: TERRITORIAL Progress</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: To achieve a [COLOR:ResMilitaryLabelCS]TERRITORIAL[ENDCOLOR] victory, you need to expand your empire and conquer your foes to control the largest amount of emerged lands.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: [NEWLINE][NEWLINE]Required amount of total emerged owned to win:  </Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Land tiles owned:</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Conquest</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="en_US">
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Conquest Victory</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="en_US">
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Conquest Victory</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="en_US">
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Conquest Victory</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="en_US">
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: CONQUEST VICTORY</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: CONQUEST VICTORY</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
 			<Text>[COLOR_RED]TO TRANSLATE: Conquest Progress</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="en_US">
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="pt_BR">
 			<!-- BBG-TRANSLATION-CHECKER-NOTES
 					- This tag has no translation yet
 			-->
