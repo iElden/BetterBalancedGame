@@ -338,7 +338,7 @@
 			<Text>여기 용이 있다: 새로운 대륙이나 자연경관을 발견할 때마다 시대 점수 +3을 얻습니다. 전투에서 야만인 외의 해상 유닛을 처치할 때마다 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 새로 건설한 도시에서 시작 [ICON_Citizen] 인구 +3을 얻습니다. 해상 및 승선한 유닛이 [ICON_Movement] 이동력 +2를 얻습니다. 원래 [ICON_Capital] 수도의 대륙에 없는 도시가 턴당 충성심 +2를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="ko_KR">
-			<Text>각 [ICON_GreatWork_Relic] 성유물, [ICON_GreatWork_Artifact] 유물, [ICON_GreatWork_Sculpture] 조각상 걸작 예술품에서 일반적으로 받는 [ICON_Culture] 문화 외에 추가로 [ICON_Food] 식량 +2, [ICON_Production] 생산력 +2, [ICON_Gold] 금 +4가 제공되며, [ICON_GreatWork_Relic] 성유물에는 [ICON_FAITH] 신앙 +1, [ICON_GreatWork_Artifact] 유물 및 [ICON_GreatWork_Sculpture] 조각상에는 [ICON_FAITH] 신앙 +4를 제공합니다. [NEWLINE][ICON_GreatWriter] 위대한 작가, [ICON_GreatArtist] 위대한 예술가, [ICON_GreatMusician] 위대한 음악가 및 [ICON_GreatMerchant] 위대한 상인 점수를 +50% 더 받습니다. 고고학자를 생산할 때 [ICON_Production] 생산력 +100%를 제공합니다. 궁전은 걸작 슬롯 5개를 가지고 있습니다.</Text>
+			<Text>각 정부 청사 특수지구 내 건물을 지을 때 마다 [ICON_GreatWork_Relic] 성유물을 제공합니다. 각 [ICON_GreatWork_Relic] 성유물, [ICON_GreatWork_Artifact] 유물, [ICON_GreatWork_Sculpture] 조각상 걸작 예술품에서 일반적으로 받는 [ICON_Culture] 문화 외에 추가로 [ICON_Food] 식량 +2, [ICON_Production] 생산력 +2, [ICON_Gold] 금 +4가 제공되며, [ICON_GreatWork_Relic] 성유물에는 [ICON_FAITH] 신앙 +1, [ICON_GreatWork_Artifact] 유물 및 [ICON_GreatWork_Sculpture] 조각상에는 [ICON_FAITH] 신앙 +4를 제공합니다. [NEWLINE][ICON_GreatWriter] 위대한 작가, [ICON_GreatArtist] 위대한 예술가, [ICON_GreatMusician] 위대한 음악가 및 [ICON_GreatMerchant] 위대한 상인 점수를 +50% 더 받습니다. 고고학자를 생산할 때 [ICON_Production] 생산력 +100%를 제공합니다. 궁전은 걸작 슬롯 5개를 가지고 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="ko_KR">
 			<Text>무료 [ICON_GreatWork_Relic] 성유물 1개를 받으며, 빈 [ICON_GreatWork_Relic] 성유물 걸작 슬롯 3개를 가지고 있습니다. 이 도시에서 [ICON_Tourism] 종교 관광 +100%를 획득합니다. 이 도시의 모든 툰드라 타일에 [ICON_Food] 식량 +1, [ICON_Production] 생산력 +1, [ICON_Culture] 문화 +1을 제공합니다. 도심부 옆에 지어야 합니다.</Text>
@@ -666,7 +666,7 @@
 			<Text>현대 시대의 대공 지원 유닛입니다. 무기에서 1타일 범위까지 공중 공격에 대한 방어를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ko_KR">
-			<Text>캐나다 특유의 현대 시대 유닛입니다. 국립공원을 조성할 수 있습니다. 국립공원 4타일 이내에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 본인이 소유한 국립공원 4타일 이내에서 전투 시 추가 [ICON_Strength] 전투력 +5를 획득합니다.</Text>
+			<Text>캐나다 특유의 현대 시대 유닛입니다. 국립공원 2곳을 설립할 수 있습니다. 국립공원 4타일 이내에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 본인이 소유한 국립공원 4타일 이내에서 전투 시 추가 [ICON_Strength] 전투력 +5를 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="ko_KR">
 			<Text>스파이 유닛 1개를 추가로 생성할 수 있는 능력을 제공합니다. 제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
@@ -675,10 +675,10 @@
 			<Text>제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ko_KR">
-			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다.</Text>
+			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2, [ICON_HOUSING] 주거공간 +1을 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 샤토에 인접하게 지을 수 없습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다.</Text>
+			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2, [ICON_HOUSING] 주거공간 +1을 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 샤토에 인접하게 지을 수 없습니다.</Text>
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="ko_KR">
@@ -740,7 +740,7 @@
         </Replace>
 		<!-- Arabia -->
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ko_KR">
-			<Text>캠퍼스 및 성지 특수지구는 인접 특수지구로부터 일반적인(+1) 인접 보너스를 획득합니다. 해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
+			<Text>캠퍼스 및 성지 특수지구는 인접 특수지구로부터 일반적인 인접 보너스를 획득합니다. 해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="ko_KR">
@@ -840,7 +840,7 @@
 		<!-- Persia -->
 		<!-- Poland -->
         <Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="ko_KR">
-            <Text>폴란드의 문화 폭탄으로 타일을 잃은 인접 도시는 폴란드의 대중 종교로 개종됩니다. 성지는 인접 특수지구로부터 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]모든 성유물은 [ICON_Faith] 신앙 +2, [ICON_Culture] 문화 +2 및 [ICON_Gold] 금 +4를 제공합니다. 종교를 창시하거나 완성할 때 무료로 성유물을 하나 받습니다.</Text>
+            <Text>폴란드의 문화 폭탄으로 타일을 잃은 인접 도시는 폴란드의 대중 종교로 개종됩니다. 성지는 인접 특수지구로부터 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]모든 [ICON_GreatWork_Relic] 성유물은 [ICON_Faith] 신앙 +2, [ICON_Culture] 문화 +2 및 [ICON_Gold] 금 +4를 제공합니다. 종교를 창시하거나 완성할 때 무료로 [ICON_GreatWork_Relic] 성유물을 하나 받습니다.</Text>
         </Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ko_KR">
