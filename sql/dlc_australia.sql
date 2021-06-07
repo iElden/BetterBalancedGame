@@ -17,6 +17,9 @@ INSERT INTO Improvement_ValidTerrains(ImprovementType, TerrainType) VALUES
     ('IMPROVEMENT_OUTBACK_STATION', 'TERRAIN_GRASS_HILLS'),
     ('IMPROVEMENT_OUTBACK_STATION', 'TERRAIN_PLAINS_HILLS');
 
+-- 07/06/2021: UI now give appeal
+UPDATE Improvements SET Appeal=1 WHERE ImprovementType='IMPROVEMENT_OUTBACK_STATION';
+
 -- 18/05/2021: More production for pasture at Guild.
 -- /!\ PLAYER_HAS_GUILDS_REQUIREMENTS is define is base.sql for Germany /!\
 INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId, SubjectRequirementSetId) VALUES
