@@ -1420,6 +1420,9 @@
 		<Row Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="en_US">
 			<Text>Military policy slot : +{1_Value}.</Text>
 		</Row>
+		<Row Tag="BBG_GORGO_ALHAMBRA_COMBAT_BONUS" Language="en_US">
+			<Text>Military policy slot from Alhambra: +{1_Value}.</Text>
+		</Row>
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="en_US">
       		<Text>English unique Industrial era unit when Victoria is their leader that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital's. No disembark cost.</Text>
     	</Replace>
