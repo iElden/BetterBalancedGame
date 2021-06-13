@@ -5,7 +5,7 @@
 			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards libraries, workshops, universities, and factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
-			<Text>+2 [ICON_Faith] Faith and +2 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
+			<Text> +2 [ICON_Faith] Faith and +2 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
 			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
@@ -178,7 +178,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="en_US">
-			<Text>Breathtaking tiles adjacent to either a Natural Wonder or a Mountain receive +1 [ICON_SCIENCE] Science, and an additional +1 [ICON_SCIENCE] Science after researching Astronomy. Breathtaking tiles adjacent to either a Wonder or Woods receive +1 [ICON_CULTURE] Culture, and an additional +1 [ICON_CULTURE] Culture after finishing the Enlightenment Civic. All tiles in a city with a National Park are +1 Appeal.</Text>
+			<Text>Breathtaking tiles adjacent to either a Natural Wonder or a Mountain receive +1 [ICON_SCIENCE] Science, doubled after researching Astronomy. Breathtaking tiles adjacent to either a Natural Wonder or Woods receive +1 [ICON_CULTURE] Culture, doubled after completing the Enlightenment Civic. All tiles in a city with a National Park receive +1 Appeal.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="en_US">
 			<Text>Increases Healing of your units by +10 within the borders of cities that follow your religion.</Text>
@@ -246,7 +246,7 @@
 			<Text>Earn a Comandante General when the game enters a new era. May not recruit [ICON_GreatGeneral] Great Generals.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="en_US">
-			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
+			<Text>+50% [ICON_PRODUCTION] Production to Naval Melee Units. Naval Melee units can perform coastal raids.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
 		</Replace>
 		<!---<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
@@ -561,7 +561,7 @@
 			<Text>+1 [ICON_Production] Production from the Lumber Mill improvement. Unlocks Urban Defenses, giving all of your cities an automatic 300 Fortification Strength and the ability to perform a ranged attack. All previous wall improvements become obsolete and siege support units are no longer effective.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
-			<Text>City in toundra get +1 [ICON_Food] Food.[NEWLINE]Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Mines provide +2 [ICON_PRODUCTION] Production, Lumber Mills provide +2 [ICON_PRODUCTION] Production, Camps provide +2 [ICON_FOOD] Food, Farms provide +2 [ICON_FOOD] Food, and strategic resource accumulation rate is +100%. Reduces the purchase cost of tiles in these terrain types by 50%.</Text>
+			<Text>City Centers in Tundra receive +1 [ICON_Food] Food.[NEWLINE][NEWLINE]Farms can be constructed in Tundra. After Civil Engineering is unlocked, Farms can be built on Tundra Hills. Improvements in Tundra and Snow receive the following bonuses: Mines and Lumber Mills +2 [ICON_PRODUCTION] Production, Farms and Camps +2 [ICON_FOOD] Food. Receive double the normal accumulation rate for Strategic Resources improved in tundra and snow. -50% of the normal cost to purchase Snow and Tundra tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
 			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
@@ -679,10 +679,10 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="en_US">
-			<Text>May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes receive +3 [ICON_Gold] Gold, +2 [ICON_Faith] Faith, and +1 [ICON_Production] Production. [ICON_TradeRoute] Trade Routes between multiple continents receive double these numbers. Cities not on your original Capital’s continent receive +25% [ICON_Production] Production towards districts.[NEWLINE]Production +25% towards harbor buildings.</Text>
+			<Text>May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][NEWLINE][ICON_TradeRoute] Trade Routes receive +3 [ICON_Gold] Gold, +2 [ICON_Faith] Faith, and +1 [ICON_Production] Production. [ICON_TradeRoute] Trade Routes between multiple continents receive double these numbers. Cities not on your original Capital’s continent receive +25% [ICON_Production] Production towards districts.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][ICON_TradeRoute] Trade Routes receive +3 [ICON_Gold] Gold, +2 [ICON_Faith] Faith, and +1 [ICON_Production] Production. [ICON_TradeRoute] Trade Routes between multiple continents receive double these numbers. Cities not on your original Capital’s continent receive +25% [ICON_Production] Production towards districts.[NEWLINE]Production +25% towards harbor buildings.</Text>
+			<Text>May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism). Can create fleet and armada faster in cities with a shipyard.[NEWLINE][NEWLINE][ICON_TradeRoute] Trade Routes receive +3 [ICON_Gold] Gold, +2 [ICON_Faith] Faith, and +1 [ICON_Production] Production. [ICON_TradeRoute] Trade Routes between multiple continents receive double these numbers. Cities not on your original Capital’s continent receive +25% [ICON_Production] Production towards districts.[NEWLINE]Production +25% towards harbor buildings.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="en_US">
@@ -737,11 +737,11 @@
 		</Replace>
 		<!-- Arabia -->
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
-			<Text>Campuses and Holy Sites receive a standard proximity bonus from other districts.[NEWLINE]The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.</Text>
+			<Text>Campuses and Holy Sites receive a standard Adjacency bonus from other districts.[NEWLINE][NEWLINE]The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="en_US">		<!-- Correction de la traduction officielle : Rendements +1, pas +2 pour les cases charmantes -->
-			<Text>+3 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +1 in tiles with Charming Appeal, +3 in Breathtaking.[NEWLINE][ICON_PRODUCTION] Production +1 for pastures.</Text>
+			<Text>+3 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Campuses, Commercial Hubs, Holy Sites and Theater Squares receive +1 Adjacency in tiles with Charming Appeal, +3 in Breathtaking.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production for Pastures.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
@@ -966,7 +966,7 @@
 			<Text>The Cradle of Civilization</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
-			<Text>Farms get +1 [ICON_Food] Food when adjacent to a River . [NEWLINE]Farms get +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
+			<Text>Farms receive +1 [ICON_Food] Food when adjacent to a River, and an additional +1 [ICON_Production] Production if adjacent to a Ziggurat after discovering Early Empire. </Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+1 [ICON_Housing] Housing.+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. +1 [ICON_Faith] Faith if next to a District or Two Farms. [NEWLINE]Cannot be built on Hills or Adjacent to another Ziggurat.</Text>
@@ -991,7 +991,7 @@
 			<Text>[COLOR_RED]To Translate: May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles.  Their Alliances gain Alliance Points for being at war with a common foe.[NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>[ICON_STRENGTH] Combat Strength +1, +2 or +3 depending on the level of your most advanced alliance.[NEWLINE]When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE]Starts with a War-Cart for the Ancient Era.[NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+			<Text>Military Units receive bonus [ICON_STRENGTH] Combat Strength equal to the level of your most advanced Alliance (maxiumum 3).[NEWLINE][NEWLINE]When at war with a common foe, they and their allies share pillage rewards and combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe. [NEWLINE][NEWLINE]Begin the game with a War-Cart (instead of a Warrior) in the Ancient Era.[NEWLINE][NEWLINE]When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="en_US">
 			<Text>+4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.</Text>
@@ -999,7 +999,7 @@
 		
 		
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production toward Holy Site districts. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
+			<Text>+50% [ICON_PRODUCTION] Production to Naval Melee Units. Naval Melee units can perform coastal raids. Receive additional yields from pillaging or performing coastal raids: [ICON_SCIENCE] Science from Mines, [ICON_CULTURE] Culture from Quarries, Pastures, Plantations, and Camps.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production toward Holy Site districts. Holy Sites receive a standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors receive a Major Adjacency bonus from Holy Sites.</Text>
 		</Replace>
 
 		<!-- dutch -->
@@ -1406,10 +1406,10 @@
 			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE][NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn from Lighthouses built in this district.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="en_US">
-			<Text>Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. (on Online Speed)[NEWLINE][ICON_Strength] Combat Strength +1 for each Military policy slot in your government.</Text>
+			<Text>Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit (on Online Speed).[NEWLINE][NEWLINE] +1 [ICON_Strength] Combat Strength for each Military policy slot in your government.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="en_US">
 			<Text>All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
