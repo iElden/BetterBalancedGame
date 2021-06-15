@@ -5,3 +5,6 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRIEU_UNFRIENDLY_COMBAT
 -- UPDATE District_Adjacencies SET YieldChangeId='District_Culture_Standard' WHERE DistrictType='DISTRICT_THANH';
 
 UPDATE Units SET BaseMoves=2 WHERE UnitType='UNIT_VIETNAMESE_VOI_CHIEN';
+
+--Update citizen yield to match BBG Change
+UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' AND DistrictType="DISTRICT_THANH";
