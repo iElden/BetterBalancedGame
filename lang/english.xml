@@ -225,7 +225,7 @@
 			<Text>Three tile natural wonder. Units that enter it are teleported to an ocean far away, but naval units that do so earn the ability 'Mysterious Currents' (+1 [ICON_Movement] Movement).</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="en_US">
-			<Text>Three tile impassable natural wonder. Provides +1 [ICON_Gold] Gold and +1 [ICON_Culture] Culture to adjacent tiles. Major adjacency bonus to Theater Square and Commercial Hub districts.</Text>
+			<Text>Three tile impassable natural wonder. Provides +1 [ICON_Gold] Gold and +1 [ICON_Culture] Culture to adjacent tiles. Trade routes sent from cities that own at least one tile of Paititi generate +3 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_PRODUCTION] Production for Floodplain and Volcanic Soil tiles in the city. The city’s improvements, buildings, and districts cannot be damaged by Environmental Effects.</Text>
@@ -522,7 +522,7 @@
 			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and cheaper to build.[NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is expended in this city. The Lavra provides +1 [ICON_GreatWriter] Great Writer point per turn with a Temple and +1 [ICON_GreatArtist] Great Artist point per turn with a Worship building.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
-			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
+			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts: +2 [ICON_Food] Food for the city center, +2 of the appropriate yield for all other districts that provide yields.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
@@ -561,7 +561,7 @@
 			<Text>+1 [ICON_Production] Production from the Lumber Mill improvement. Unlocks Urban Defenses, giving all of your cities an automatic 300 Fortification Strength and the ability to perform a ranged attack. All previous wall improvements become obsolete and siege support units are no longer effective.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
-			<Text>City in toundra get +1 [ICON_Food] Food.[NEWLINE]Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Mines provide +2 [ICON_PRODUCTION] Production, Lumber Mills provide +2 [ICON_PRODUCTION] Production, Camps provide +2 [ICON_FOOD] Food, Farms provide +2 [ICON_FOOD] Food, and strategic resource accumulation rate is +100%. Reduces the purchase cost of tiles in these terrain types by 50%.</Text>
+			<Text>City Centers in tundra receive +1 [ICON_Food] Food.[NEWLINE]Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. When constructed on any Snow or Tundra tile, Mines provide +2 [ICON_PRODUCTION] Production, Lumber Mills provide +2 [ICON_PRODUCTION] Production, Camps provide +2 [ICON_FOOD] Food, Farms provide +2 [ICON_FOOD] Food, and strategic resource accumulation rate is +100%. Reduces the purchase cost of tiles in these terrain types by 50%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
 			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
@@ -834,7 +834,7 @@
 		<!-- Persia -->
 		<!-- Poland -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
-			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics provide bonus Faith (+2), Culture (+2) and Gold (+4). Recieve a Relic upon founding and completing a Religion.</Text>
+			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics generate an additional +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, and +4 [ICON_Gold] Gold. Recieve a Relic when founding and when completing a Religion.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="en_US">
@@ -843,10 +843,10 @@
 		<!-- Scotland -->
 		<!-- Scythia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="en_US">
-			<Text>May purchase Light, Heavy, and Ranged Cavalry units with [ICON_FAITH] Faith</Text>
+			<Text>May purchase Light, Heavy, and Ranged Cavalry units with [ICON_FAITH] Faith.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+1 [ICON_Faith] Faith and +1 [ICON_Gold] Gold. An additional +1 [ICON_Faith] Faith and +1 [ICON_PRODUCTION] Production for each adjacent Pasture.[NEWLINE]Provides [ICON_TOURISM] Tourism from [ICON_FAITH] Faith after researching Flight. Cannot be built on Hills.</Text>
+			<Text>Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+1 [ICON_Faith] Faith and +3 [ICON_Gold] Gold. An additional +1 [ICON_Faith] Faith and +1 [ICON_PRODUCTION] Production for each adjacent Pasture, increasing to +2 [ICON_Faith] Faith per pasture at Stirrups.[NEWLINE]Provides [ICON_TOURISM] Tourism from [ICON_FAITH] Faith after researching Flight.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="en_US">
 			<Text>Scythian unique Classical Era ranged unit with 4 [ICON_Movement] Movement and a [ICON_Range] Range of 2.</Text>
