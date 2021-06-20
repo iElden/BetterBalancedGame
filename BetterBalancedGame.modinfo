@@ -1,19 +1,19 @@
-<!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40536">
--->
+<!-- BETA ModID-->
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40600">
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
-<!-- Elden's ModID-->
+<!-- Elden's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4054">
+-->
 	<Properties>
-		<Name>Better Balanced Game 4.5.4</Name>
+		<Name>Better Balanced Game 4.6.0 BETA (build 0)</Name>
 		<Description>
-			Live build of Better Balanced Game.
+			Beta build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4054</Version>
+		<Version>40600</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -196,6 +196,49 @@
                 <Value>5</Value>
             </ConfigurationValueMatches>
         </Criteria>
+		<!-- BETA -->
+		<Criteria id="BETA_FEATURE_TERRAIN_CRITERIA">
+            <ConfigurationValueMatches>
+                <ConfigurationId>BETA_FEATURE_TERRAIN</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="BETA_LIMES_CRITERIA">
+            <ConfigurationValueMatches>
+                <ConfigurationId>BETA_LIMES</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="BETA_MAX_FORTIFY_CRITERIA">
+            <ConfigurationValueMatches>
+                <ConfigurationId>BETA_MAX_FORTIFY</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="BETA_NAVAL_PROD_CRITERIA">
+            <ConfigurationValueMatches>
+                <ConfigurationId>BETA_NAVAL_PROD</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="BETA_NO_SUPPORT_RANGE_CRITERIA">
+            <ConfigurationValueMatches>
+                <ConfigurationId>BETA_NO_SUPPORT_RANGE</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="BETA_SUPPORT_CRITERIA">
+            <ConfigurationValueMatches>
+                <ConfigurationId>BETA_SUPPORT</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
 	</ActionCriteria>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -213,6 +256,7 @@
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
+			<File>lang/beta.xml</File>
 		</UpdateText>
 		<UpdateDatabase id="bbg_frontend_custom_victory">
 			<Properties>
@@ -241,6 +285,7 @@
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
+			<File>lang/beta.xml</File>
 		</UpdateText>
 		
 		<ReplaceUIScript id="bbg_worldranking">
@@ -558,6 +603,50 @@
 				<File>ui/replacements/endgamemenu_bbg.lua</File>
 				<File>ui/replacements/endgamemenu.xml</File>
 		</ImportFiles>
+
+		<!-- BETA -->
+		<UpdateDatabase id="bbg_db_BETA_FEATURE_TERRAIN">
+            <Properties>
+                <LoadOrder>21010</LoadOrder>
+            </Properties>
+			<Criteria>BETA_FEATURE_TERRAIN_CRITERIA</Criteria>
+			<File>sql/beta/features_terrains.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="bbg_db_BETA_LIMES">
+            <Properties>
+                <LoadOrder>21020</LoadOrder>
+            </Properties>
+			<Criteria>BETA_LIMES_CRITERIA</Criteria>
+			<File>sql/beta/limes.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="bbg_db_BETA_MAX_FORTIFY">
+            <Properties>
+                <LoadOrder>21030</LoadOrder>
+            </Properties>
+			<Criteria>BETA_MAX_FORTIFY_CRITERIA</Criteria>
+			<File>sql/beta/max_fortify.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="bbg_db_BETA_NAVAL_PROD">
+            <Properties>
+                <LoadOrder>21040</LoadOrder>
+            </Properties>
+			<Criteria>BETA_NAVAL_PROD_CRITERIA</Criteria>
+			<File>sql/beta/naval_prod.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="bbg_db_BETA_NO_SUPPORT_RANGE">
+            <Properties>
+                <LoadOrder>21050</LoadOrder>
+            </Properties>
+			<Criteria>BETA_NO_SUPPORT_RANGE_CRITERIA</Criteria>
+			<File>sql/beta/no_support_for_ranged.sql</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="bbg_db_BETA_SUPPORT">
+            <Properties>
+                <LoadOrder>21060</LoadOrder>
+            </Properties>
+			<Criteria>BETA_SUPPORT_CRITERIA</Criteria>
+			<File>sql/beta/support_bonus.sql</File>
+        </UpdateDatabase>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -649,5 +738,14 @@
 		<File>sql/victories/new_bbg_rv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_2.sql</File>
 		<File>sql/victories/new_bbg_new_domination.sql</File>
+
+		<!-- BETA -->
+		<File>lang/beta.xml</File>
+		<File>sql/beta/features_terrains.sql</File>
+		<File>sql/beta/limes.sql</File>
+		<File>sql/beta/max_fortify.sql</File>
+		<File>sql/beta/naval_prod.sql</File>
+		<File>sql/beta/no_support_for_ranged.sql</File>
+		<File>sql/beta/support_bonus.sql</File>
 	</Files>
 </Mod>
