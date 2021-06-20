@@ -224,7 +224,7 @@
 		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ko_KR">
 			<Text>3타일 자연경관입니다. 이 지역에 들어오는 유닛은 멀리 떨어진 바다로 순간 이동합니다. 하지만 해상 유닛의 경우 '신비한 해류' 능력([ICON_Movement] 이동력 +1)을 얻습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ko_KR">
+		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ko_KR"> <!-- PAITITI HASNT BEEN CHANGED -->
 			<Text>통과할 수 없는 3타일 자연경관입니다. 인접 타일에 [ICON_Gold] 금 +1과 [ICON_Culture] 문화 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ko_KR">
@@ -489,7 +489,7 @@
 			<Text>도시 성장을 위한 로마 특유의 특수지구입니다. 송수로 특수지구를 대체하며 건설 비용이 더 낮습니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Culture] 문화 +1을 획득합니다.[NEWLINE][NEWLINE]인접한 강, 호수, 오아시스 또는 산으로부터 이 도시에 담수 원천을 제공합니다. 담수를 확보하지 못한 도시에는 [ICON_Housing] 주거공간을 최대 6만큼 제공합니다. 하지만 이미 담수를 확보한 도시에는 [ICON_Housing] 주거공간 +2를 제공합니다. 목욕탕은 위와 관계없이 추가 보너스[ICON_Housing] 주거공간 +2 및 [ICON_Amenities] 쾌적도 +1을 제공합니다. 도심부 옆에 지어야 합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2을 제공합니다.[NEWLINE][NEWLINE]불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
+			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2를 제공합니다.[NEWLINE][NEWLINE]불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
 		</Replace>				
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
 			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
@@ -525,7 +525,7 @@
 			<Text>종교 활동이 진행되는 러시아 특유의 특수지구입니다. 성지 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]이 도시에서 위인이 사용되어 사라질 때마다 도시 경계가 1타일 씩 증가합니다. 대수도원은 사원을 보유한 경우 턴당 [ICON_GreatWriter] 위대한 작가 점수 +1, 예배 건물을 보유한 경우 턴당 [ICON_GreatArtist] 위대한 예술가 점수 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ko_KR">
-			<Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원, 평원 또는 초원에 지어야 하는 시설입니다. [ICON_FOOD] 식량 +1, [ICON_Faith] 신앙 +2를 제공합니다. 인근 특수지구에서 추가 생산량을 획득합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구의 경우 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다. 다른 누비아 피라미드 옆에 지을 수 없습니다.</Text>
+			<Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원, 평원 또는 초원에 지어야 하는 시설입니다. [ICON_FOOD] 식량 +1, [ICON_Faith] 신앙 +2를 제공합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구에 대해 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다. 다른 누비아 피라미드 옆에 지을 수 없습니다.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ko_KR">
@@ -540,7 +540,7 @@
 			<Text>우에이 테오칼리의 1타일 범위 내에 있는 각 호수 타일마다 유흥에 의한 [ICON_Amenities] 쾌적도 +1을 제공합니다. 플레이어 제국에 있는 각 호수 타일은 [ICON_Food] 식량 +1, [ICON_Production] 생산력 +1, [ICON_CULTURE] 문화 +2를 제공합니다. 육지 옆 호수 타일에 지어야 합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_MODIFIER_DESCRIPTION" Language="ko_KR">
-			<Text>파시즘으로부터 전투력 +5</Text>
+			<Text>파시즘으로부터 전투력 +5.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_DESCRIPTION" Language="ko_KR">
 			<Text>파시즘 정부로부터 [ICON_Strength] 전투력 +5.</Text>
@@ -750,7 +750,7 @@
 			<Text>이전 10턴 중 도시를 해방했다면 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION" Language="ko_KR">
-			<Text>호주 특유의 아웃백 목장을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_FOOD] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 제공합니다. 인접한 목장마다 [ICON_Food] 식량 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 인접 아웃백 목장 및 목장에 추가 [ICON_FOOD] 식량 및 [ICON_PRODUCTION] 생산력을 제공합니다. 사막, 초원 및 평원 타일에만 지을 수 있습니다.</Text>
+			<Text>호주 특유의 아웃백 목장을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_FOOD] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 제공합니다. 매력도 +1을 제공합니다. 인접한 목장마다 [ICON_Food] 식량 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 인접 아웃백 목장 및 목장에 추가 [ICON_FOOD] 식량 및 [ICON_PRODUCTION] 생산력을 제공합니다. 사막, 초원 및 평원 타일에만 지을 수 있습니다.</Text>
 		</Replace>
 		<!-- Aztec -->
         <Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ko_KR"> <!-- new add -->
@@ -1424,16 +1424,19 @@
 			<Text>영국 특유의 해상활동용 특수지구입니다. 항만 특수지구를 대체합니다. 이 타일에서 승선 또는 하선할 경우 [ICON_Movement] 이동력 페널티가 없습니다. 육지 옆 해안 또는 호수 지형에 지어야 합니다.[NEWLINE][NEWLINE]기지창에서 생성된 모든 해상 유닛에 [ICON_Movement] 이동력 +1을 제공합니다.[NEWLINE]타 대륙에 건설할 경우 턴당 [ICON_Gold] 금 +2 및 충성심 +4를 제공합니다. 산호초 위에 지을 수 없습니다.[NEWLINE]등대 건물이 있을 시 [ICON_GreatAdmiral] 위대한 제독 점수 +1점을 추가로 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ko_KR">
-			<Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 50%에 준하는 [ICON_Culture] 문화가 제공됩니다(온라인 속도 기준). 슬롯에 장착된 군사 정책마다 [ICON_Strength] 전투력 +1이 적용됩니다.</Text>
+			<Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 50%에 준하는 [ICON_Culture] 문화가 제공됩니다(온라인 속도 기준). 보유한 군사 정책 슬롯마다 [ICON_Strength] 전투력 +1이 적용됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="ko_KR">
 			<Text>모든 유닛이 시야 +1을 얻습니다. 새 시대애 도달할 때마다 [ICON_TradeRoute] 교역로 최대치가 +1 증가합니다(고대 시대 포함). 모든 도시 국가와 국경 개방 협정을 맺습니다.</Text>
 		</Replace>
 		<Row Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="ko_KR">
-      		<Text>현재 정부의 슬롯에 장착된 군사 정책마다 [ICON_Strength] 전투력 +1을 제공합니다.</Text>
+      		<Text>현재 정부의 군사 정책 슬롯마다 [ICON_Strength] 전투력 +1을 제공합니다.</Text>
 		</Row>
 		<Row Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="ko_KR">
-			<Text>슬롯에 장착된 군사 정책에게서 +{1_Value}</Text>
+			<Text>군사 정책 슬롯에서 +{1_Value}</Text>
+		</Row>
+		<Row Tag="BBG_GORGO_ALHAMBRA_COMBAT_BONUS" Language="ko_KR">
+			<Text>알함브라 궁전의 군사 정책 슬롯에서 +{1_Value}.</Text>
 		</Row>
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="ko_KR">
       		<Text>전열보병을 대체하는 빅토리아가 지도자일 때의 영국 특유의 산업 시대 유닛입니다. 플레이어 수도가 위치한 대륙이 아닌 타 대륙에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 유닛 하선에 대한 별도 이동력이 소모되지 않습니다.</Text>
@@ -1466,5 +1469,11 @@
     	<Replace Tag="LOC_DISTRICT_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="ko_KR">
       		<Text>브라질 특유의 특수지구입니다. 이 특수지구는 인구 조건이 없습니다. 유흥단지 특수지구를 대체하고, [ICON_Amenities] 쾌적도 +2를 제공합니다. 또한, 카니발 프로젝트를 잠금 해제합니다. 카니발 프로젝트는 진행 중에 [ICON_Amenities] 쾌적도 +1을 제공하고, 완료 시 다양한 [ICON_GreatPerson] 위인 점수를 제공합니다. 코파카바나가 있는 도시에는 지을 수 없습니다.</Text>
     	</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_EXPANSION2_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>산업 활동을 위한 독일 특유의 특수지구입니다. 산업구역 특수지구를 대체하며 건설 비용이 훨씬 저렴합니다.[NEWLINE][NEWLINE]인접한 각 상업 중심지, 송수로, 운하 및 댐 특수지구마다 [ICON_Production] 생산력 +2를 획득합니다. 인접한 각 자원당 [ICON_Production] 생산력 +1을 획득합니다. 인접한 특수지구 타일 2개당 [ICON_Production] 생산력 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ko_KR"> <!-- new add -->
+			<Text>인접도: 상업 중심지, 송수로, 운하 및 댐 특수지구 근처에 있으면 [ICON_Production] 생산력이 크게 증가합니다. 각 인접 자원에 대한 일반적인 [ICON_Production] 생산력 보너스 및 인접한 특수지구 타일에 대한 약간의 [ICON_Production] 생산력 보너스를 획득합니다.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
