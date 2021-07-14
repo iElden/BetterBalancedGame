@@ -1,6 +1,8 @@
-
 -- Give sewers +1 amenity
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_SEWER';
+
+-- Green District cost same as other district (from 81)
+UPDATE Districts SET Cost=54 WHERE DistrictType IN ('DISTRICT_CANAL', 'DISTRICT_DAM');
 
 -- Commercial hub buildings buff :
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_BANK';
