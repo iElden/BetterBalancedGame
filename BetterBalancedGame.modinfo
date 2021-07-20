@@ -302,7 +302,6 @@
 			</Properties>
 			<File>sql/base.sql</File>
 			<File>sql/new_bbg_base_units.sql</File>
-			<File>sql/new_bbg_religion.sql</File>
 			<File>sql/new_bbg_policies.sql</File>
 			<File>sql/new_bbg_mother_russia.sql</File>
 			<File>sql/new_bbg_catherine_black_queen.sql</File>	
@@ -312,7 +311,7 @@
 			<File>sql/new_bbg_citystates.sql</File>
 			<File>sql/new_bbg_great_people.sql</File>
 			<File>sql/new_bbg_great_works.sql</File>
-			<File>sql/new_bbg_religion_belief.sql</File>
+			<File>sql/new_bbg_belief.sql</File>
 			<File>sql/new_bbg_spain.sql</File>
 			<File>sql/new_bbg_buildings.sql</File>
 			<File>sql/new_bbg_spy.sql</File>
@@ -685,7 +684,6 @@
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
 		<File>sql/nfp_byzantium_gaul.sql</File>
-		<File>sql/new_bbg_religion.sql</File>
 		<File>sql/new_bbg_policies.sql</File>
 		<File>sql/new_bbg_catherine_magnificient.sql</File>
 		<File>sql/new_bbg_catherine_black_queen.sql</File>		
@@ -708,7 +706,7 @@
 		<File>sql/new_bbg_base_units.sql</File>
 		<File>sql/new_bbg_xp2_units.sql</File>
 		<File>sql/new_bbg_xp1_policies.sql</File>
-		<File>sql/new_bbg_religion_belief.sql</File>
+		<File>sql/new_bbg_belief.sql</File>
 		<File>sql/new_bbg_xp1_cree.sql</File>
 		<File>sql/new_bbg_xp1_scotland.sql</File>
 		<File>sql/new_bbg_xp1_zulus.sql</File>
