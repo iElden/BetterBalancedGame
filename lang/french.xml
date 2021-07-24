@@ -616,16 +616,16 @@
 			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] et [ICON_RESOURCE_MAIZE].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="fr_FR">
-			<Text>Expansion des frontières 50 % plus rapide.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 3 cases gratuite à la fondation de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expansion des frontières 50 % plus rapide.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 3 cases gratuite à la fondation de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez 25% de la puissance de combat de base d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.</Text>
+			<Text>Vous recevez 40% du cout en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.[NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez 25% de la puissance de combat de base d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.</Text>
+			<Text>Vous recevez 40% du cout en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.[NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +1 pour les cases de Marais, d'Oasis et de Plaines Innondables de tout types.</Text>
@@ -643,7 +643,7 @@
 			<Text>[ICON_Production] Production +1 et [ICON_Faith] Foi +1 pour les carrières.</Text>
 		</Replace>		
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +2 et [ICON_GOLD] Or +2 pour les mines construites sur des ressources de luxe et bonus.</Text>
+			<Text>[ICON_Faith] Foi +3 et [ICON_GOLD] Or +3 pour les mines construites sur des ressources de luxe et bonus.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_FAITH] Foi +4 pour les fissures géothermiques et les sols volcaniques.</Text>
@@ -698,6 +698,9 @@
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +6 pour toutes les merveilles mondiales.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>Points de [ICON_GreatPerson] personnage illustre +1 pour les lieux saints (prophète), les bibliothèques (scientifique) les amphithéâtre (écrivain) et les ateliers (ingénieur).</Text>
+    	</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
 			<Text>Chaque lieu saint ou place du théâtre d'une ville convertie à cette religion fournit respectivement [ICON_Faith] foi +2 ou [ICON_Culture] culture +2.</Text>
 		</Replace>
@@ -794,6 +797,9 @@
 		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_SCIENCE] Science +20 % et [ICON_PRODUCTION] production +10 % dans toutes les villes. Ces rendements sont doublés dans les villes possédant au moins 5 cases exploitables de Toundra. Doit être construite sur une case de Neige ou de Toundra, près d'un campus abritant un laboratoire de recherche.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_ETEMENANKI_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_SCIENCE] Science +1 et [ICON_PRODUCTION] Production +1 pour toutes les cases de marais dans votre empire et les cases de plaines inondables de votre ville.[NEWLINE][NEWLINE]Doit être construite sur une case de plaines inondables ou de marais.</Text>
+    	</Replace>
 		
 		<!-- =============== E N G A G E M E N T S =============== -->
 		
@@ -1164,7 +1170,12 @@
 		<Replace Tag="LOC_GREAT_PERSON_INDIVIDUAL_IBN_KHALDUN_CAMPUS_HOUSING" Language="fr_FR">
 			<Text>[ICON_Housing] Habitations +2 et [ICON_AMENITIES] activités +1 pour le campus choisi. Augmente de 40% les avantages du bonheur non liés à la [ICON_Food] nourriture dans votre empire.</Text>
 		</Replace>
-
+		<Replace Tag="LOC_BBG_BUILDING_BANK_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_GOLD] Or +2 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_GOLD] Or +4 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +2 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville</Text>
+		</Replace>
 
 		<!-- Front End -->
 		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="fr_FR">
