@@ -877,19 +877,6 @@ INSERT OR IGNORE INTO RequirementSetRequirements
 	VALUES 
 	('PLOT_HAS_FERTILITY_TAG_FOOD_REQUIREMENTS'       , 'REQUIRES_PLOT_HAS_TAG_FERTILITY_FOOD');
 UPDATE BeliefModifiers SET ModifierID='FERTILITY_RITES_TAG_FOOD' WHERE BeliefType='BELIEF_FERTILITY_RITES' AND ModifierID='FERTILITY_RITES_GROWTH';
--- Initiation Rites gives 25% faith for each military land unit produced
-INSERT OR IGNORE INTO Modifiers 
-	(ModifierId                                         , ModifierType                                                , SubjectRequirementSetId)
-	VALUES
-	('INITIATION_RITES_FAITH_YIELD_CPL_MOD'             , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'                       , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
-	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_UNIT_COST'            , NULL                                );
-INSERT OR IGNORE INTO ModifierArguments 
-	(ModifierId                                         , Name                       , Value)
-	VALUES
-	('INITIATION_RITES_FAITH_YIELD_CPL_MOD'             , 'ModifierId'                , 'INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD' ),
-	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'YieldType'                 , 'YIELD_FAITH'                                   ),
-	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'UnitProductionPercent'     , '25'                                            );
-UPDATE BeliefModifiers SET ModifierID='INITIATION_RITES_FAITH_YIELD_CPL_MOD' WHERE BeliefType='BELIEF_INITIATION_RITES' AND ModifierID='INITIATION_RITES_FAITH_DISPERSAL';
 -- Sacred Path +1 Faith Holy Site adjacency now applies to both Woods and Rainforest
 INSERT OR IGNORE INTO BeliefModifiers 
 	(BeliefType                   , ModifierId)
