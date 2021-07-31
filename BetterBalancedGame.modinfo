@@ -382,6 +382,7 @@
 			<File>sql/new_bbg_citystates_xp2.sql</File>
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
 			<File>sql/new_bbg_xp2_government.sql</File>
+			<File>sql/new_bbg_improvement.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -720,6 +721,7 @@
 		<File>sql/new_bbg_brazil.sql</File>
 		<File>sql/new_bbg_gorgo.sql</File>
 		<File>sql/new_bbg_ottoman.sql</File>
+		<File>sql/new_bbg_improvement.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
