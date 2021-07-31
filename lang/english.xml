@@ -73,10 +73,10 @@
 			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], and [ICON_RESOURCE_MAIZE] tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="en_US">
-			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 3 free tiles on foundation.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 3 free tiles on foundation.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="en_US">
 			<Text>All cities start with an additional City Center building after unlocking Code of Laws. (Starts with a Monument building in the Ancient era).</Text>

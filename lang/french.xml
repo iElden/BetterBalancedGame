@@ -616,10 +616,10 @@
 			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] et [ICON_RESOURCE_MAIZE].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 3 cases gratuite à la fondation de la ville.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 2 cases gratuite à la fondation de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 3 cases gratuite à la fondation de la ville.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 2 cases gratuite à la fondation de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="fr_FR">
 			<Text>Vous recevez 40% du cout en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.[NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
