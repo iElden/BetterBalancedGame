@@ -10,7 +10,7 @@
 -- 4.6.0: SV balance
 
 -- Future tech are now not random.
-UPDATE Technologies_XP2 SET HiddenUntilPrereqComplete=0 WHERE TechnologyType="TECH_FUTURE_TECH";
+UPDATE Technologies_XP2 SET HiddenUntilPrereqComplete=0 WHERE TechnologyType='TECH_FUTURE_TECH';
 UPDATE Technologies_XP2 SET RandomPrereqs=0, HiddenUntilPrereqComplete=0;
 UPDATE Technologies SET UITreeRow=1 WHERE TechnologyType='TECH_SMART_MATERIALS';
 UPDATE Technologies SET UITreeRow=2 WHERE TechnologyType='TECH_PREDICTIVE_SYSTEMS';

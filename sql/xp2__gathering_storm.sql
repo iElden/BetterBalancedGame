@@ -583,8 +583,8 @@ INSERT OR IGNORE INTO Resource_ValidFeatures (ResourceType , FeatureType)
 	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
 
 -- citizen yields
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' AND DistrictType="DISTRICT_COTHON";
-UPDATE District_CitizenYieldChanges SET YieldChange=4 WHERE YieldType='YIELD_GOLD' AND DistrictType="DISTRICT_SUGUBA";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' AND DistrictType='DISTRICT_COTHON';
+UPDATE District_CitizenYieldChanges SET YieldChange=4 WHERE YieldType='YIELD_GOLD' AND DistrictType='DISTRICT_SUGUBA';
 
 -- GATHERING STORM WAR GOSSIP --
 DELETE FROM Gossips WHERE GossipType='GOSSIP_MAKE_DOW';
@@ -596,9 +596,9 @@ UPDATE Improvements SET PrereqTech='TECH_REFINING' WHERE ImprovementType='IMPROV
 --==============================================================
 --******				C O N G R E S S	  			  	  ******
 --==============================================================
-DELETE FROM ModifierArguments WHERE ModifierId="APPLY_RES_UNIT_COMBAT_DEBUFF";
+DELETE FROM ModifierArguments WHERE ModifierId='APPLY_RES_UNIT_COMBAT_DEBUFF';
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	("APPLY_RES_UNIT_COMBAT_DEBUFF","ModifierId", "WC_RES_UNIT_COMBAT_DEBUFF");
+	('APPLY_RES_UNIT_COMBAT_DEBUFF','ModifierId', 'WC_RES_UNIT_COMBAT_DEBUFF');
 
 --==============================================================
 --******				G O V E R N O R S				  ******
@@ -614,15 +614,15 @@ UPDATE GovernorPromotionModifiers SET GovernorPromotionType='GOVERNOR_PROMOTION_
 -- nerf bishop to +50% outgoing pressure
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CARDINAL_BISHOP_PRESSURE' AND Name='Amount';
 -- move Moksha's abilities
-UPDATE GovernorPromotions SET Level=2, Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT';
-UPDATE GovernorPromotions SET Level=1, Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD';
-UPDATE GovernorPromotions SET Level=2, Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_PATRON_SAINT';
+UPDATE GovernorPromotions SET Level=2, 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT';
+UPDATE GovernorPromotions SET Level=1, 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD';
+UPDATE GovernorPromotions SET Level=2, 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_PATRON_SAINT';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion) VALUES
 	('GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD', 'GOVERNOR_PROMOTION_CARDINAL_BISHOP');
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_PATRON_SAINT';
 -- Curator moved to last moksha ability
 UPDATE GovernorPromotionSets SET GovernorType='GOVERNOR_THE_CARDINAL' WHERE GovernorPromotion='GOVERNOR_PROMOTION_MERCHANT_CURATOR';
-UPDATE GovernorPromotions SET Column=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_MERCHANT_CURATOR';
+UPDATE GovernorPromotions SET 'Column'=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_MERCHANT_CURATOR';
 DELETE FROM GovernorPromotionPrereqs WHERE GovernorPromotionType='GOVERNOR_PROMOTION_MERCHANT_CURATOR';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion)
 	VALUES
@@ -630,18 +630,18 @@ INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGov
 		('GOVERNOR_PROMOTION_MERCHANT_CURATOR', 'GOVERNOR_PROMOTION_CARDINAL_PATRON_SAINT');
 -- Move +1 Culture to Moksha
 UPDATE GovernorPromotionSets SET GovernorType='GOVERNOR_THE_CARDINAL' WHERE GovernorPromotion='GOVERNOR_PROMOTION_EDUCATOR_CONNOISSEUR';
-UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_CONNOISSEUR';
+UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_CONNOISSEUR';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion) VALUES
 	('GOVERNOR_PROMOTION_EDUCATOR_CONNOISSEUR', 'GOVERNOR_PROMOTION_CARDINAL_BISHOP');
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_EDUCATOR_CONNOISSEUR' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT' AND PrereqGovernorPromotion='GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD';
 
 -- 2020/12/21 - Moved Moska Citadel fix from new_bbg_nfp_babylon.sql here (was 25)
 -- Related to https://github.com/iElden/BetterBalancedGame/issues/48
-UPDATE ModifierArguments SET Value=24 WHERE ModifierId="CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS" AND Name="BuildingProductionPercent";
+UPDATE ModifierArguments SET Value=24 WHERE ModifierId='CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS' AND Name='BuildingProductionPercent';
 
 
 -- move Pingala's 100% GPP to first on left ability
-UPDATE GovernorPromotions SET Level=1, Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_GRANTS';
+UPDATE GovernorPromotions SET Level=1, 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_GRANTS';
 DELETE FROM GovernorPromotionPrereqs WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_GRANTS' OR PrereqGovernorPromotion='GOVERNOR_PROMOTION_EDUCATOR_GRANTS';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion)
 	VALUES
@@ -659,14 +659,14 @@ INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('GOVERNOR_PROMOTION_EDUCATOR_TR
 INSERT OR IGNORE INTO GovernorPromotionSets (GovernorType, GovernorPromotion)
 	VALUES
 		('GOVERNOR_THE_EDUCATOR', 'GOVERNOR_PROMOTION_EDUCATOR_TRADE_BBG');
-INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, Column, BaseAbility)
+INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, 'Column', BaseAbility)
 	VALUES
 		('GOVERNOR_PROMOTION_EDUCATOR_TRADE_BBG', 'LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME', 'LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION', 2, 2, 0);
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId)
 	VALUES
 		('GOVERNOR_PROMOTION_EDUCATOR_TRADE_BBG', 'EDUCATOR_SCIENCE_FROM_DOMESTIC_TRADE_BBG');
 DELETE FROM GovernorPromotionPrereqs WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_SPACE_INITIATIVE';
-UPDATE GovernorPromotions SET Column=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_SPACE_INITIATIVE';
+UPDATE GovernorPromotions SET 'Column'=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_SPACE_INITIATIVE';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion)
 	VALUES
 		('GOVERNOR_PROMOTION_EDUCATOR_TRADE_BBG', 'GOVERNOR_PROMOTION_EDUCATOR_RESEARCHER'),
@@ -683,7 +683,7 @@ INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('EDUCATOR_DOUBLE_CAMPUS_ADJ_BBG
 INSERT OR IGNORE INTO GovernorPromotionSets (GovernorType, GovernorPromotion)
 	VALUES
 		('GOVERNOR_THE_EDUCATOR', 'EDUCATOR_DOUBLE_CAMPUS_ADJ_BBG');
-INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, Column, BaseAbility)
+INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, 'Column', BaseAbility)
 	VALUES
 		('EDUCATOR_DOUBLE_CAMPUS_ADJ_BBG', 'LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME', 'LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION', 2, 0, 0);
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId)
@@ -725,7 +725,7 @@ INSERT OR IGNORE INTO GovernorPromotionModifiers VALUES
 -- new 1st on left promo for Amani
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('GOVERNOR_PROMOTION_NEGOTIATOR_BBG', 'KIND_GOVERNOR_PROMOTION');
 INSERT OR IGNORE INTO GovernorPromotionSets (GovernorType, GovernorPromotion) VALUES ('GOVERNOR_THE_AMBASSADOR', 'GOVERNOR_PROMOTION_NEGOTIATOR_BBG');
-INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, Column)
+INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, 'Column')
 	VALUES
 		('GOVERNOR_PROMOTION_NEGOTIATOR_BBG', 'LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME', 'LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION', 1, 0);
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId)
@@ -752,7 +752,7 @@ DELETE FROM GovernorPromotions WHERE GovernorPromotionType='GOVERNOR_PROMOTION_A
 -- Correct Amani's Spies promo
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion) VALUES
 		('GOVERNOR_PROMOTION_LOCAL_INFORMANTS', 'GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE');
-UPDATE GovernorPromotions SET Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_LOCAL_INFORMANTS';
+UPDATE GovernorPromotions SET 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_LOCAL_INFORMANTS';
 
 
 -- Reyna's new 3rd level right ability
@@ -764,7 +764,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('MANAGER_DISTRICT_GOLD_DISCOUNT_BBG', 'Amount', '50');
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('GOVERNOR_PROMOTION_MANAGER_BBG', 'KIND_GOVERNOR_PROMOTION');
 INSERT OR IGNORE INTO GovernorPromotionSets (GovernorType, GovernorPromotion) VALUES ('GOVERNOR_THE_MERCHANT', 'GOVERNOR_PROMOTION_MANAGER_BBG');
-INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, Column)
+INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, 'Column')
 	VALUES
 		('GOVERNOR_PROMOTION_MANAGER_BBG', 'LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME', 'LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION', 3, 2);
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId)
@@ -822,11 +822,11 @@ INSERT OR IGNORE INTO GovernorPromotionPrereqs ( GovernorPromotionType, PrereqGo
 	( 'GOVERNOR_PROMOTION_EMBRASURE', 'GOVERNOR_PROMOTION_GARRISON_COMMANDER' ),
 	( 'GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER', 'GOVERNOR_PROMOTION_DEFENSE_LOGISTICS' ),
 	( 'GOVERNOR_PROMOTION_AIR_DEFENSE_INITIATIVE', 'GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER' );
-UPDATE GovernorPromotions SET Column=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
-UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_VERTICAL_INTEGRATION';
-UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EMBRASURE';
-UPDATE GovernorPromotions SET Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
-UPDATE GovernorPromotions SET Column=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_AIR_DEFENSE_INITIATIVE';
+UPDATE GovernorPromotions SET 'Column'=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
+UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_VERTICAL_INTEGRATION';
+UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EMBRASURE';
+UPDATE GovernorPromotions SET 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
+UPDATE GovernorPromotions SET 'Column'=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_AIR_DEFENSE_INITIATIVE';
 
 
 -- Liang
@@ -845,7 +845,7 @@ DELETE FROM GovernorPromotionPrereqs WHERE GovernorPromotionType='GOVERNOR_PROMO
 INSERT OR IGNORE INTO GovernorPromotionPrereqs ( GovernorPromotionType, PrereqGovernorPromotion ) VALUES
 	( 'GOVERNOR_PROMOTION_ZONING_COMMISSIONER', 'GOVERNOR_PROMOTION_PARKS_RECREATION' ),
 	( 'GOVERNOR_PROMOTION_ZONING_COMMISSIONER', 'GOVERNOR_PROMOTION_WATER_WORKS' );
-UPDATE GovernorPromotions SET Level=3, Column=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_ZONING_COMMISSIONER';
+UPDATE GovernorPromotions SET Level=3, 'Column'=1 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_ZONING_COMMISSIONER';
 
 -- +1 food on every resource
 DELETE FROM GovernorPromotionModifiers WHERE GovernorPromotionType='GOVERNOR_PROMOTION_AQUACULTURE';
@@ -865,7 +865,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
 	VALUES ('AGRICULTURE_FOOD_BBG_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_VISIBLE_RESOURCE');
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('AGRICULTURE_PROMOTION_BBG', 'KIND_GOVERNOR_PROMOTION');
 INSERT OR IGNORE INTO GovernorPromotionSets (GovernorType, GovernorPromotion) VALUES ('GOVERNOR_THE_BUILDER', 'AGRICULTURE_PROMOTION_BBG');
-INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, Column)
+INSERT OR IGNORE INTO GovernorPromotions (GovernorPromotionType, Name, Description, Level, 'Column')
 	VALUES ('AGRICULTURE_PROMOTION_BBG', 'LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME', 'LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION', 1, 2);
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId)
 	VALUES ('AGRICULTURE_PROMOTION_BBG', 'AGRICULTURE_FOOD_BBG');
@@ -880,7 +880,7 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='WATER_WORKS_
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='WATER_WORKS_AQUEDUCT_HOUSING' AND Name='Amount';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromotion) VALUES
 	('GOVERNOR_PROMOTION_WATER_WORKS', 'AGRICULTURE_PROMOTION_BBG');
-UPDATE GovernorPromotions SET Level=2, Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_WATER_WORKS';
+UPDATE GovernorPromotions SET Level=2, 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_WATER_WORKS';
 
 -- better parks
 UPDATE Improvement_YieldChanges SET YieldChange=3 WHERE ImprovementType='IMPROVEMENT_CITY_PARK' AND YieldType='YIELD_CULTURE';
@@ -903,7 +903,7 @@ DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_CITY_PA
 DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_CITY_PARK' AND TerrainType='TERRAIN_TUNDRA_HILLS';
 UPDATE Improvements SET OnePerCity=1 WHERE ImprovementType='IMPROVEMENT_CITY_PARK';
 -- move parks
-UPDATE GovernorPromotions SET Level=2, Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_PARKS_RECREATION';
+UPDATE GovernorPromotions SET Level=2, 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_PARKS_RECREATION';
 DELETE FROM GovernorPromotionPrereqs WHERE GovernorPromotionType='GOVERNOR_PROMOTION_PARKS_RECREATION';
 INSERT OR IGNORE INTO GovernorPromotionPrereqs ( GovernorPromotionType, PrereqGovernorPromotion ) VALUES
 	( 'GOVERNOR_PROMOTION_PARKS_RECREATION', 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE' );

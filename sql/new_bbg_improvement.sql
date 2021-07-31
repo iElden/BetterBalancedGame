@@ -28,8 +28,8 @@ INSERT INTO ImprovementModifiers(ImprovementType, ModifierID) VALUES
 INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, SubjectRequirementSetId) VALUES
     ('BBG_PLANTATION_PROD_FLAT_TILE', 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS', 0, 0, 'BBG_PLOT_IS_FLAT');
 INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
-    ('BBG_GEOTHERMAL_GENERATE_POWER_SYNTHETIC', 'Amount', '1'),
-    ('BBG_GEOTHERMAL_GENERATE_POWER_SYNTHETIC', 'YieldType', 'YIELD_PRODUCTION');
+    ('BBG_PLANTATION_PROD_FLAT_TILE', 'Amount', '1'),
+    ('BBG_PLANTATION_PROD_FLAT_TILE', 'YieldType', 'YIELD_PRODUCTION');
 INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
 	('BBG_PLOT_IS_FLAT', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES

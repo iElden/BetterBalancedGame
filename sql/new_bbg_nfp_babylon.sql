@@ -25,23 +25,23 @@ INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
 --  This was the initial cause of the problem.  
 --   The context was destroyed when suzerain was lost, and recreated when suzerain was gained.  
 --   Moving the context to the Game instance solves this problem.
-DELETE FROM TraitModifiers WHERE ModifierId="MINOR_CIV_NALANDA_FREE_TECHNOLOGY";
+DELETE FROM TraitModifiers WHERE ModifierId='MINOR_CIV_NALANDA_FREE_TECHNOLOGY';
 
 -- We don't care about these modifiers anymore, they are connected to the TraitModifier
-DELETE FROM Modifiers WHERE ModifierId="MINOR_CIV_NALANDA_FREE_TECHNOLOGY_MODIFIER";
-DELETE FROM Modifiers WHERE ModifierId="MINOR_CIV_NALANDA_FREE_TECHNOLOGY";
+DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_NALANDA_FREE_TECHNOLOGY_MODIFIER';
+DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_NALANDA_FREE_TECHNOLOGY';
 
 -- Attach the modifier to check for improvement to each player
 INSERT INTO Modifiers 
 	(ModifierId, ModifierType)
 	VALUES
-	('MINOR_CIV_NALANDA_MAHAVIHARA', "MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER");
+	('MINOR_CIV_NALANDA_MAHAVIHARA', 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER');
 
 -- Modifier to actually check if the improvement is built, only done once
 INSERT INTO Modifiers 
 	(ModifierId, ModifierType, OwnerRequirementSetId, RunOnce, Permanent)
 	VALUES
-	('MINOR_CIV_NALANDA_MAHAVIHARA_TECH_ON_FIRST_BUILD', "MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY", "PLAYER_HAS_MAHAVIHARA", 1, 1);
+	('MINOR_CIV_NALANDA_MAHAVIHARA_TECH_ON_FIRST_BUILD', 'MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY', 'PLAYER_HAS_MAHAVIHARA', 1, 1);
 
 INSERT INTO ModifierArguments
     (ModifierId, Name, Type, Value)
@@ -61,11 +61,11 @@ INSERT INTO GameModifiers
 
 -- THESE ARE THE VALUE FIRAXIS INTENDED
 -- 10%
--- UPDATE ModifierArguments SET Value=60 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+-- UPDATE ModifierArguments SET Value=60 WHERE ModifierId='MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING' AND Name='BuildingProductionPercent';
 
 -- 2020/12/20 - Ayutthaya Culture buff (10% => 20%)
 -- 20%
-UPDATE ModifierArguments SET Value=30 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING" AND Name="BuildingProductionPercent";
+UPDATE ModifierArguments SET Value=30 WHERE ModifierId='MINOR_CIV_AYUTTHAYA_CULTURE_COMPLETE_BUILDING' AND Name='BuildingProductionPercent';
 
 -- Scenario: Building momument on Online speed with 30 production code
 -- BuildingProductionPercent    Faith   Percentage
@@ -86,7 +86,7 @@ UPDATE ModifierArguments SET Value=30 WHERE ModifierId="MINOR_CIV_AYUTTHAYA_CULT
 -- 2020/12/19 - Add Mahavihara faith adjacencies for Lavra as well as Holy Site
 -- https://github.com/iElden/BetterBalancedGame/issues/51
 INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict)
-    VALUES ("Mahavihara_Lavra_Faith", "Placeholder","YIELD_FAITH", 1, 1, "DISTRICT_LAVRA");
+    VALUES ('Mahavihara_Lavra_Faith', 'Placeholder','YIELD_FAITH', 1, 1, 'DISTRICT_LAVRA');
 
 INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
-    VALUES ("IMPROVEMENT_MAHAVIHARA","Mahavihara_Lavra_Faith");
+    VALUES ('IMPROVEMENT_MAHAVIHARA','Mahavihara_Lavra_Faith');

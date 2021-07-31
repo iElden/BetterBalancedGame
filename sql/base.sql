@@ -624,8 +624,8 @@ UPDATE District_GreatPersonPoints SET PointsPerTurn=1 WHERE DistrictType='DISTRI
 UPDATE Units SET Combat=62 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
 
 -- 2020/12/15 - Found in 4.1.2: Fix corner case where Cossacks don't work on borders
-UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId="COSSACK_LOCAL_COMBAT";
-UPDATE Modifiers SET OwnerRequirementSetId="COSSACK_PLOT_IS_OWNER_OR_ADJACENT_REQUIREMENTS" WHERE ModifierId="COSSACK_LOCAL_COMBAT";
+UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='COSSACK_LOCAL_COMBAT';
+UPDATE Modifiers SET OwnerRequirementSetId='COSSACK_PLOT_IS_OWNER_OR_ADJACENT_REQUIREMENTS' WHERE ModifierId='COSSACK_LOCAL_COMBAT';
 
 -- 23/04/2021 iElden: Applied Firaxis patch
 -- Lavra district does not acrue Great Person Points unless city has a theater
@@ -1508,17 +1508,17 @@ INSERT OR IGNORE INTO Resource_YieldChanges (ResourceType, YieldType, YieldChang
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 
 -- Citizen specialists give +1 main yield
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_ACROPOLIS";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_CAMPUS";
-UPDATE District_CitizenYieldChanges SET YieldChange=4 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_COMMERCIAL_HUB";
-UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_ENCAMPMENT";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_HANSA";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_HARBOR";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType="DISTRICT_HOLY_SITE";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_INDUSTRIAL_ZONE";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType="DISTRICT_LAVRA";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType='DISTRICT_ACROPOLIS';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType='DISTRICT_CAMPUS';
+UPDATE District_CitizenYieldChanges SET YieldChange=4 WHERE YieldType='YIELD_GOLD' 			AND DistrictType='DISTRICT_COMMERCIAL_HUB';
+UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType='DISTRICT_ENCAMPMENT';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType='DISTRICT_HANSA';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType='DISTRICT_HARBOR';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType='DISTRICT_HOLY_SITE';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType='DISTRICT_INDUSTRIAL_ZONE';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType='DISTRICT_LAVRA';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType='DISTRICT_ROYAL_NAVY_DOCKYARD';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType='DISTRICT_THEATER';
 
 
 --****		REQUIREMENTS		****--
