@@ -321,13 +321,13 @@ INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , Yi
 	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_GOLD' , '0');
 UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_CHATEAU' AND YieldType='YIELD_GOLD'; 
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
+	VALUES ('IMPROVEMENT_CHATEAU' , 'BBG_Chateau_Luxury_Food');
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Gold');
+	VALUES ('IMPROVEMENT_CHATEAU' , 'BBG_Chateau_Luxury_Gold');
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
-	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+	VALUES ('BBG_Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
-	VALUES ('Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+	VALUES ('BBG_Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 UPDATE Improvements SET Housing='1', PreReqCivic='CIVIC_FEUDALISM', RequiresAdjacentBonusOrLuxury = 0, RequiresRiver = 0, SameAdjacentValid = 0 WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 -- Garde imperial to +5 on continent (from +10)
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='GARDE_CONTINENT_COMBAT' AND Name='Amount';
@@ -396,9 +396,9 @@ UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVE
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id='20';
 -- Stepwells get +1 food per adajacent farm
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
-	VALUES ('STEPWELL_FOOD', 'Placeholder', 'YIELD_FOOD', 1, 1, 'IMPROVEMENT_FARM');
+	VALUES ('BBG_STEPWELL_FOOD', 'Placeholder', 'YIELD_FOOD', 1, 1, 'IMPROVEMENT_FARM');
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
-	VALUES ('IMPROVEMENT_STEPWELL', 'STEPWELL_FOOD');
+	VALUES ('IMPROVEMENT_STEPWELL', 'BBG_STEPWELL_FOOD');
 DELETE FROM ImprovementModifiers WHERE ModifierId='STEPWELL_FARMADJACENCY_FOOD';
 
 
@@ -544,24 +544,24 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='STAVE_CHURCH_FAITHWOODS
 -- +2 gold harbor adjacency if adjacent to holy sites
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
-    ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE'),
-    ('District_HS_Gold_Negative' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '-2' , '1' , 'DISTRICT_HOLY_SITE');
+    ('BBG_District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE'),
+    ('BBG_District_HS_Gold_Negative' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '-2' , '1' , 'DISTRICT_HOLY_SITE');
 INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
     VALUES
-    ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive'),
-    ('DISTRICT_HARBOR' , 'District_HS_Gold_Negative');
+    ('DISTRICT_HARBOR' , 'BBG_District_HS_Gold_Positive'),
+    ('DISTRICT_HARBOR' , 'BBG_District_HS_Gold_Negative');
 INSERT OR IGNORE INTO ExcludedAdjacencies (YieldChangeId , TraitType)
     VALUES
-    ('District_HS_Gold_Negative' , 'TRAIT_LEADER_MELEE_COASTAL_RAIDS');
+    ('BBG_District_HS_Gold_Negative' , 'TRAIT_LEADER_MELEE_COASTAL_RAIDS');
 
 -- INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
 --     VALUES
---     ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
+--     ('BBG_District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
 -- INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 --     VALUES
---     ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive');
+--     ('DISTRICT_HARBOR' , 'BBG_District_HS_Gold_Positive');
 -- INSERT OR IGNORE INTO ExcludedAdjacencies 
--- 	SELECT DISTINCT TraitType, 'District_HS_Gold_Positive'
+-- 	SELECT DISTINCT TraitType, 'BBG_District_HS_Gold_Positive'
 -- 	FROM (SELECT * FROM LeaderTraits WHERE TraitType LIKE 'TRAIT_LEADER_%' GROUP BY LeaderType) 
 -- 	WHERE LeaderType!='LEADER_HARDRADA' AND TraitType!='TRAIT_LEADER_MAJOR_CIV';
 
@@ -674,9 +674,9 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY
 UPDATE Units SET Range=2, Cost=70 WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
 -- Adjacent Pastures now give +1 production in addition to faith
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_KURGAN' , 'KURGAN_PASTURE_PRODUCTION');
+	VALUES ('IMPROVEMENT_KURGAN' , 'BBG_KURGAN_PASTURE_PRODUCTION');
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentImprovement)
-	VALUES ('KURGAN_PASTURE_PRODUCTION' , 'Placeholder' , 'YIELD_PRODUCTION' , 1 , 1 , 'IMPROVEMENT_PASTURE');
+	VALUES ('BBG_KURGAN_PASTURE_PRODUCTION' , 'Placeholder' , 'YIELD_PRODUCTION' , 1 , 1 , 'IMPROVEMENT_PASTURE');
 INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
 	VALUES ('IMPROVEMENT_KURGAN' , 'YIELD_PRODUCTION' , 0);
 INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType) VALUES

@@ -71,19 +71,19 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='BaseDistrict_Science';
 INSERT OR IGNORE INTO Adjacency_YieldChanges
 	(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
-	VALUES ('Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
+	VALUES ('BBG_Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
 INSERT OR IGNORE INTO District_Adjacencies
 	(DistrictType , YieldChangeId)
-	VALUES ('DISTRICT_SEOWON', 'Mine_Science');
+	VALUES ('DISTRICT_SEOWON', 'BBG_Mine_Science');
 -- seowon gets +1 adjacency from theater squares instead of -1
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
 	VALUES
-	('Theater_Science' , 'LOC_DISTRICT_SEOWON_THEATER_BONUS' , 'YIELD_SCIENCE' , '1' , '1' , 'DISTRICT_THEATER'),
-	('Seowon_Culture'  , 'LOC_DISTRICT_THEATER_SEOWON_BONUS' , 'YIELD_CULTURE' , '1' , '1' , 'DISTRICT_SEOWON' );
+	('BBG_Theater_Science' , 'LOC_DISTRICT_SEOWON_THEATER_BONUS' , 'YIELD_SCIENCE' , '1' , '1' , 'DISTRICT_THEATER'),
+	('BBG_Seowon_Culture'  , 'LOC_DISTRICT_THEATER_SEOWON_BONUS' , 'YIELD_CULTURE' , '1' , '1' , 'DISTRICT_SEOWON' );
 INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 	VALUES
-	('DISTRICT_SEOWON'  , 'Theater_Science'),
-	('DISTRICT_THEATER' , 'Seowon_Culture' );
+	('DISTRICT_SEOWON'  , 'BBG_Theater_Science'),
+	('DISTRICT_THEATER' , 'BBG_Seowon_Culture' );
 -- Seowon bombs
 INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_THREE_KINGDOMS' , 'TRAIT_SEOWON_BOMB');
@@ -155,9 +155,9 @@ UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVE
 -- Golf Course extra housing moved to Urbanization
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
-	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
+	VALUES ('BBG_GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
+	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'BBG_GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
 -- Golf Course gets extra yields a bit earlier
 INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
 	VALUES ('204' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_GOLD' , '1' , 'CIVIC_THE_ENLIGHTENMENT');
