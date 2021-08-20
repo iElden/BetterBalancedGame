@@ -650,9 +650,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
 			<Text>+100% [ICON_PRODUCTION] Production to Theater Square Buildings. Great Works in Eleanor’s cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="en_US">
-			<Text>+100% [ICON_Production] Production toward Siege units and walls.</Text>
-		</Replace>-->
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward walls.</Text>
+		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="en_US">
 			<Text>+{1_num} [ICON_Science] Science from the adjacent Theater Square.</Text>
 		</Row>

@@ -1453,5 +1453,10 @@
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="fr_FR">
 			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
 		</Replace>
+
+		<!-- Débrouille toi Priz pour ranger tout ça-->
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50% pour les bâtiments de défense.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

@@ -1,12 +1,15 @@
 -- Author: iElden
 
--- Delete old gorgo ability
+UPDATE ModifierArguments SET Value='0.5' WHERE ModifierId='GORGO_POLICY_SLOT_COMBAT_BONUS';
 
-DELETE FROM TraitModifiers WHERE TraitType='CULTURE_KILLS_TRAIT' AND ModifierId='UNIQUE_LEADER_CULTURE_KILLS_GRANT_ABILITY';
-
+/*
 -- ================================
 -- Military power by red card slot.
 -- ================================
+
+-- Delete old gorgo ability
+-- DELETE FROM TraitModifiers WHERE TraitType='CULTURE_KILLS_TRAIT' AND ModifierId='UNIQUE_LEADER_CULTURE_KILLS_GRANT_ABILITY';
+
 -- Create Modifier for each gouvernments
 INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId)
     SELECT 'BBG_GIVE_MODIFIER_GORGO_' || GovernmentType, 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY', 'BBG_PLAYER_IS_GORGO'
@@ -90,3 +93,5 @@ INSERT INTO Requirements(RequirementId , RequirementType) VALUES
 
 INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
 	('BBG_PLAYER_IS_GORGO_REQUIREMENT' , 'LeaderType', 'LEADER_GORGO');
+
+ */
