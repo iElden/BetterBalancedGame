@@ -3,11 +3,19 @@
 -- Grand Bazaar buff
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
 UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_GRAND_BAZAAR' AND YieldType='YIELD_GOLD';
+-- Grand Bazaar same ability than bank
 INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES
     ('BUILDING_GRAND_BAZAAR', 'BBG_BANK_TRADEROUTE_FROM_DOMESTIC'),
     ('BUILDING_GRAND_BAZAAR', 'BBG_BANK_TRADEROUTE_TO_DOMESTIC'),
     ('BUILDING_GRAND_BAZAAR', 'BBG_BANK_TRADEROUTE_FROM_INTERNATIONAL'),
     ('BUILDING_GRAND_BAZAAR', 'BBG_BANK_TRADEROUTE_TO_INTERNATIONAL');
+-- Grand Bazaar traderoute capacity
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_GRAND_BAZAAR_TRADEROUTE_CAPACITY', 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_GRAND_BAZAAR_TRADEROUTE_CAPACITY', 'Amount', '1');
+INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES
+    ('BUILDING_GRAND_BAZAAR', 'BBG_GRAND_BAZAAR_TRADEROUTE_CAPACITY');
 
 -- Give one title governor
 INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, SubjectRequirementSetId) VALUES
