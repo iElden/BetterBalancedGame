@@ -1,8 +1,5 @@
 -- Author: iElden
 
-UPDATE ModifierArguments SET Value='0.5' WHERE ModifierId='GORGO_POLICY_SLOT_COMBAT_BONUS';
-
-/*
 -- ================================
 -- Military power by red card slot.
 -- ================================
@@ -93,5 +90,3 @@ INSERT INTO Requirements(RequirementId , RequirementType) VALUES
 
 INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
 	('BBG_PLAYER_IS_GORGO_REQUIREMENT' , 'LeaderType', 'LEADER_GORGO');
-
- */
