@@ -1,9 +1,18 @@
 
+-- UD Trigger culture bomb
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_THANH_CULTURE_BOMB', 'MODIFIER_ALL_PLAYERS_ADD_CULTURE_BOMB_TRIGGER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_THANH_CULTURE_BOMB', 'DistrictType', 'DISTRICT_THANH'),
+    ('BBG_THANH_CULTURE_BOMB', 'CaptureOwnedTerritory', '0');
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_DISTRICT_THANH', 'BBG_THANH_CULTURE_BOMB');
+
+-- Nerf UA
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='TRIEU_FRIENDLY_COMBAT' AND Name='Amount';
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRIEU_UNFRIENDLY_COMBAT' AND Name='Amount';
 
--- UPDATE District_Adjacencies SET YieldChangeId='District_Culture_Standard' WHERE DistrictType='DISTRICT_THANH';
-
+-- Nerf PM of UU
 UPDATE Units SET BaseMoves=2 WHERE UnitType='UNIT_VIETNAMESE_VOI_CHIEN';
 
 --Update citizen yield to match BBG Change

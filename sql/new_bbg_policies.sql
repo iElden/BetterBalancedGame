@@ -16,6 +16,9 @@ UPDATE Government_SlotCounts SET NumSlots=2 WHERE GovernmentType='GOVERNMENT_MER
 -- Buff Discipline +5 -> +10
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCOMBAT' AND Name='Amount';
 
+-- Bastillon ""bugfix"" (Value is doubled, so put 2*+3 instead of 2*+5)
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BASTIONS_RANGEDSTRIKE' AND Name='Amount';
+
 -- LIMES
 -- Limes doesn't Obsolete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
@@ -27,7 +30,6 @@ DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_STARFORTPRODUCTION' AND Name='Amount';
 
 -- New Policies
-
 INSERT INTO Types(Type, Kind) VALUES
 	('POLICY_SIEGE', 'KIND_POLICY'),
 	('POLICY_HARD_SHELL_EXPLOSIVES', 'KIND_POLICY'),

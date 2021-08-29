@@ -33,7 +33,7 @@ INSERT INTO TechnologyPrereqs(Technology, PrereqTech) VALUES
     ('TECH_PREDICTIVE_SYSTEMS', 'TECH_NANOTECHNOLOGY');
 
 -- Science ministery up
-UPDATE ModifierArguments SET Value=5 WHERE ModifierId='GOV_PROJECT_ABILITY' AND Name='Amount';
+UPDATE ModifierArguments SET Value=3 WHERE ModifierId='GOV_PROJECT_ABILITY' AND Name='Amount';
 
 -- Production cost adjustments
 UPDATE Districts SET Cost=1600 WHERE DistrictType='DISTRICT_SPACEPORT';
