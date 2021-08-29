@@ -5,7 +5,7 @@
 -- ================================
 
 -- Delete old gorgo ability
--- DELETE FROM TraitModifiers WHERE TraitType='CULTURE_KILLS_TRAIT' AND ModifierId='UNIQUE_LEADER_CULTURE_KILLS_GRANT_ABILITY';
+DELETE FROM TraitModifiers WHERE TraitType='CULTURE_KILLS_TRAIT' AND ModifierId='UNIQUE_LEADER_CULTURE_KILLS_GRANT_ABILITY';
 
 -- Create Modifier for each gouvernments
 INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId)
