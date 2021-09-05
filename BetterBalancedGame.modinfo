@@ -196,6 +196,7 @@
                 <Value>5</Value>
             </ConfigurationValueMatches>
         </Criteria>
+	</ActionCriteria>
 
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
 	<FrontEndActions>
@@ -561,6 +562,7 @@
 				<File>ui/replacements/endgamemenu_bbg.lua</File>
 				<File>ui/replacements/endgamemenu.xml</File>
 		</ImportFiles>
+	</InGameActions>
 
 	<!-- defines file dependencies -->
 	<Files>
