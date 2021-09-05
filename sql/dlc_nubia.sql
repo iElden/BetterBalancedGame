@@ -31,8 +31,8 @@ UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_IndustrialZone
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_TheaterAdjacency';
 -- Nubian Pyramid -1 food (to avoid +4 foods tile)
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_PYRAMID' AND YieldType='YIELD_FOOD';
--- 24/08/2021 Pyramid buildable from start of the game
-UPDATE Improvements SET PrereqTech=NULL WHERE ImprovementType='IMPROVEMENT_PYRAMID';
+-- 05/09/2021 Pyramid moved to craftsmanship
+UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_CRAFTSMANSHIP' WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 
 --==============================================================
 --******				START BIASES					  ******
