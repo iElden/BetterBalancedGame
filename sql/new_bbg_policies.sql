@@ -20,6 +20,10 @@ UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCO
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BASTIONS_RANGEDSTRIKE' AND Name='Amount';
 
 -- LIMES
+-- Limes to 50%
+UPDATE ModifierArguments SET Value='50' WHERE Name='Amount' AND ModifierId IN (
+    SELECT ModifierId FROM PolicyModifiers WHERE PolicyType='POLICY_LIMES'
+);
 -- Limes doesn't Obsolete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 
