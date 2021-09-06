@@ -4,7 +4,7 @@
 
 -- Teddy-BM get vietnam ability to plant wood
 INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
-    ('LEADER_T_ROOSEVELT', 'TRAIT_PLANT_MEDIEVAL_WOODS');
+    ('TRAIT_LEADER_ANTIQUES_AND_PARKS', 'TRAIT_PLANT_MEDIEVAL_WOODS');
 
 
 -- Codenaugh's BM modification
