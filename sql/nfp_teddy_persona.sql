@@ -1,6 +1,13 @@
 --==================
 -- America
 --==================
+
+-- Teddy-BM get vietnam ability to plant wood
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_LEADER_ANTIQUES_AND_PARKS', 'TRAIT_PLANT_MEDIEVAL_WOODS');
+
+
+-- Codenaugh's BM modification
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='TRAIT_ANTIQUES_AND_PARKS_CULTURE_FORESTS_OR_WONDERS' AND Name='Amount';
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='TRAIT_ANTIQUES_AND_PARKS_SCIENCE_NATIONAL_WONDERS_OR_MOUNTAINS' AND Name='Amount';
 

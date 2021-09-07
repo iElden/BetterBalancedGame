@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40536">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40610">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4056">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4060">
 	<Properties>
-		<Name>Better Balanced Game 4.5.6</Name>
+		<Name>Better Balanced Game 4.6.0</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4056</Version>
+		<Version>4060</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -197,7 +197,7 @@
             </ConfigurationValueMatches>
         </Criteria>
 	</ActionCriteria>
-	
+
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
 	<FrontEndActions>
 		<UpdateText id="bbg_pregame_text_updates">
@@ -259,7 +259,6 @@
 			</Properties>
 			<File>sql/base.sql</File>
 			<File>sql/new_bbg_base_units.sql</File>
-			<File>sql/new_bbg_religion.sql</File>
 			<File>sql/new_bbg_policies.sql</File>
 			<File>sql/new_bbg_mother_russia.sql</File>
 			<File>sql/new_bbg_catherine_black_queen.sql</File>	
@@ -269,12 +268,13 @@
 			<File>sql/new_bbg_citystates.sql</File>
 			<File>sql/new_bbg_great_people.sql</File>
 			<File>sql/new_bbg_great_works.sql</File>
-			<File>sql/new_bbg_religion_belief.sql</File>
+			<File>sql/new_bbg_belief.sql</File>
 			<File>sql/new_bbg_spain.sql</File>
 			<File>sql/new_bbg_buildings.sql</File>
 			<File>sql/new_bbg_spy.sql</File>
 			<File>sql/new_bbg_brazil.sql</File>
 			<File>sql/new_bbg_gorgo.sql</File>
+			<File>sql/new_bbg_china.sql</File>
 
 			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
@@ -335,10 +335,13 @@
 			<File>sql/xp2__gathering_storm.sql</File>
 			<File>sql/new_bbg_xp2_units.sql</File>
 			<File>sql/new_bbg_hungary.sql</File>
+			<File>sql/new_bbg_ottoman.sql</File>
 			<File>sql/new_bbg_sumer_xp2.sql</File>
 			<File>sql/new_bbg_citystates_xp2.sql</File>
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
 			<File>sql/new_bbg_xp2_government.sql</File>
+			<File>sql/new_bbg_improvement.sql</File>
+			<File>sql/new_bbg_disasters.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -446,6 +449,7 @@
 				<LoadOrder>11639</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_vietnam.sql</File>
+			<File>sql/new_bbg_kublai.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_nfp_portugal" criteria="nfp_portugal">
 			<Properties>
@@ -561,7 +565,7 @@
 				<File>ui/replacements/endgamemenu.xml</File>
 		</ImportFiles>
 	</InGameActions>
-	
+
 	<!-- defines file dependencies -->
 	<Files>
 		<File>scripts/bbg_script.lua</File>
@@ -599,7 +603,6 @@
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
 		<File>sql/nfp_byzantium_gaul.sql</File>
-		<File>sql/new_bbg_religion.sql</File>
 		<File>sql/new_bbg_policies.sql</File>
 		<File>sql/new_bbg_catherine_magnificient.sql</File>
 		<File>sql/new_bbg_catherine_black_queen.sql</File>		
@@ -622,7 +625,7 @@
 		<File>sql/new_bbg_base_units.sql</File>
 		<File>sql/new_bbg_xp2_units.sql</File>
 		<File>sql/new_bbg_xp1_policies.sql</File>
-		<File>sql/new_bbg_religion_belief.sql</File>
+		<File>sql/new_bbg_belief.sql</File>
 		<File>sql/new_bbg_xp1_cree.sql</File>
 		<File>sql/new_bbg_xp1_scotland.sql</File>
 		<File>sql/new_bbg_xp1_zulus.sql</File>
@@ -634,6 +637,11 @@
 		<File>sql/new_bbg_nfp_portugal.sql</File>
 		<File>sql/new_bbg_brazil.sql</File>
 		<File>sql/new_bbg_gorgo.sql</File>
+		<File>sql/new_bbg_ottoman.sql</File>
+		<File>sql/new_bbg_improvement.sql</File>
+		<File>sql/new_bbg_china.sql</File>
+		<File>sql/new_bbg_kublai.sql</File>
+		<File>sql/new_bbg_disasters.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>

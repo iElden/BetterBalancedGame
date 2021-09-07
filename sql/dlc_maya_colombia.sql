@@ -29,7 +29,7 @@ DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIEND
 -- reduce combat bonus to 3 from 5
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='MUTAL_NEAR_CAPITAL_COMBAT' AND Name='Amount';
 -- set citizen yields to same as other campuses
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType="DISTRICT_OBSERVATORY";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType='DISTRICT_OBSERVATORY';
 --- start biases ---
 -- after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
 INSERT OR REPLACE INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES

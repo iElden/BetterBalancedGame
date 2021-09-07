@@ -22,16 +22,17 @@ INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
 	('IMPROVEMENT_PYRAMID' , 'TERRAIN_GRASS');
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 -- Nubian Pyramid gets double adjacency yields
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CityCenterAdjacency";
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CampusAdjacency";
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CommercialHubAdjacency";
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_HarborAdjacency";
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_HolySiteAdjacency";
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_IndustrialZoneAdjacency";
-UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_TheaterAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_CityCenterAdjacency';
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_CampusAdjacency';
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_CommercialHubAdjacency';
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_HarborAdjacency';
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_HolySiteAdjacency';
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_IndustrialZoneAdjacency';
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='Pyramid_TheaterAdjacency';
 -- Nubian Pyramid -1 food (to avoid +4 foods tile)
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_PYRAMID' AND YieldType='YIELD_FOOD';
-
+-- 05/09/2021 Pyramid moved to craftsmanship
+UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_CRAFTSMANSHIP' WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 
 --==============================================================
 --******				START BIASES					  ******

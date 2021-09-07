@@ -34,3 +34,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value)
 INSERT INTO TraitModifiers(TraitType, ModifierId)
     SELECT 'TRAIT_LEADER_JOAO_III', 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType
     FROM Eras;
+
+
+-- === Etemenanki ===
+UPDATE ModifierArguments SET Value=1 WHERE ModifierId='ETEMENANKI_SCIENCE_MARSH' AND Name='Amount';

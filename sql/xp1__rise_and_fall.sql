@@ -31,13 +31,7 @@ DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierI
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
 UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
 -- Georgia gets 50% faith kills (online) instead of Protectorate War Bonus
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '100');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
-UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
+UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_LEADER_FAITH_KILLS' AND Name='PercentDefeatedStrength';
 
 
 --==================
@@ -77,19 +71,19 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='BaseDistrict_Science';
 INSERT OR IGNORE INTO Adjacency_YieldChanges
 	(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
-	VALUES ('Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
+	VALUES ('BBG_Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
 INSERT OR IGNORE INTO District_Adjacencies
 	(DistrictType , YieldChangeId)
-	VALUES ('DISTRICT_SEOWON', 'Mine_Science');
+	VALUES ('DISTRICT_SEOWON', 'BBG_Mine_Science');
 -- seowon gets +1 adjacency from theater squares instead of -1
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
 	VALUES
-	('Theater_Science' , 'LOC_DISTRICT_SEOWON_THEATER_BONUS' , 'YIELD_SCIENCE' , '1' , '1' , 'DISTRICT_THEATER'),
-	('Seowon_Culture'  , 'LOC_DISTRICT_THEATER_SEOWON_BONUS' , 'YIELD_CULTURE' , '1' , '1' , 'DISTRICT_SEOWON' );
+	('BBG_Theater_Science' , 'LOC_DISTRICT_SEOWON_THEATER_BONUS' , 'YIELD_SCIENCE' , '1' , '1' , 'DISTRICT_THEATER'),
+	('BBG_Seowon_Culture'  , 'LOC_DISTRICT_THEATER_SEOWON_BONUS' , 'YIELD_CULTURE' , '1' , '1' , 'DISTRICT_SEOWON' );
 INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 	VALUES
-	('DISTRICT_SEOWON'  , 'Theater_Science'),
-	('DISTRICT_THEATER' , 'Seowon_Culture' );
+	('DISTRICT_SEOWON'  , 'BBG_Theater_Science'),
+	('DISTRICT_THEATER' , 'BBG_Seowon_Culture' );
 -- Seowon bombs
 INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_THREE_KINGDOMS' , 'TRAIT_SEOWON_BOMB');
@@ -161,9 +155,9 @@ UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVE
 -- Golf Course extra housing moved to Urbanization
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
-	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
+	VALUES ('BBG_GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
+	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'BBG_GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
 -- Golf Course gets extra yields a bit earlier
 INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
 	VALUES ('204' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_GOLD' , '1' , 'CIVIC_THE_ENLIGHTENMENT');
@@ -406,8 +400,8 @@ INSERT OR IGNORE INTO GovernorPromotionModifiers
 	VALUES
 	('GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS', 'SURPLUS_LOGISTICS_TRADE_ROUTE_PROD');
 -- switch Magnus' level 2 promos
-UPDATE GovernorPromotions SET Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
-UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
+UPDATE GovernorPromotions SET 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
+UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
 
@@ -504,8 +498,8 @@ UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 
 -- citizen yields
-UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_IKANDA";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_SEOWON";
+UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType='DISTRICT_IKANDA';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType='DISTRICT_SEOWON';
 
 -- Offshore Oil can be improved at Plastics
 UPDATE Improvements SET PrereqTech='TECH_PLASTICS' WHERE ImprovementType='IMPROVEMENT_OFFSHORE_OIL_RIG';

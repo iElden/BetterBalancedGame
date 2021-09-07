@@ -751,7 +751,7 @@
 		</Row>
 		<!-- Mapuche -->
 		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
-			<Text>[COLOR_RED]TO TRANSLATE: +{1_num} vs. Golden/Heroic Age</Text>
+			<Text>+{1_num} 対黄金時代/英雄時代</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ja_JP">
 			<Text>総督 [ICON_Governor]が着任した都市で訓練されたすべてのユニットについて、戦闘で得る経験値+25%黄金時代に入っている文明に対する戦闘力[ICON_Strength]+5。</Text>
@@ -1338,8 +1338,5 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ja_JP">
 			<Text>自文明と同盟している文明が戦争状態にある文明に好戦性ペナルティを受けることなく宣戦布告をすることができる。同盟国と戦争している場合、その文明とは5タイル以内の経験値取得および略奪の報酬を共有する。[NEWLINE]太古時代からゲームを開始した場合、戦闘車を持った状態で開始する。[NEWLINE]蛮族の野営地を占領した際に追加の報酬を通常の[ICON_Gold]ゴールドに加えて得る。都市国家のユニットを徴用する際の費用が半分になる。</Text>
 		</Replace>
-		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
-			<Text>+{1_num} 対黄金時代/英雄時代</Text>
-		</Row>
 	</LocalizedText>
 </GameData>
