@@ -213,6 +213,7 @@
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
+			<File>lang/italian.xml</File>
 		</UpdateText>
 		<UpdateDatabase id="bbg_frontend_custom_victory">
 			<Properties>
@@ -241,6 +242,7 @@
 			<File>lang/portuguese.xml</File>
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
+			<File>lang/italian.xml</File>
 		</UpdateText>
 		
 		<ReplaceUIScript id="bbg_worldranking">
@@ -577,6 +579,7 @@
 		<File>lang/portuguese.xml</File>
         <File>lang/german.xml</File>
 		<File>lang/chinese.xml</File>
+		<File>lang/italian.xml</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>
