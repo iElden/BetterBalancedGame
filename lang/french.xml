@@ -43,7 +43,7 @@
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_SCIENCE] Science +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou une montagne, doublé après avoir recherché l'Astronomie. [ICON_CULTURE] Culture +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou des bois, doublé au dogme des Lumières. Attrait +1 pour toutes les cases d'une ville dotée d'un parc national.</Text>
+			<Text>[ICON_SCIENCE] Science +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou une montagne, doublé après avoir recherché l'Astronomie. [ICON_CULTURE] Culture +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou des bois, doublé au dogme des Lumières. Attrait +1 pour toutes les cases d'une ville dotée d'un parc national. Le dogme des foires médiévales permet de planter des bois.</Text>
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT TEXAS RANGER ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
@@ -179,14 +179,17 @@
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire la Grande Muraille, exclusive à la Chine. [NEWLINE][NEWLINE]Améliore la  [ICON_Strength] puissance défensive. [ICON_PRODUCTION] Production +1. [ICON_Gold] Or bonus si adjacente à d'autres segments. [ICON_Culture] Culture et [ICON_Tourism] tourisme supplémentaires à mesure que vous progressez dans l'arbre des technologies. Doit être construite sur une ligne longeant la frontière de votre empire. Peut uniquement être pillée (jamais détruite) par les catastrophes naturelles.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Lors de la construction de merveilles de l'antiquité et de l'ère classique, vous pouvez utiliser des charges de bâtisseur pour compléter 15 % de leur coût initial.[NEWLINE]Les canaux sont débloqués avec la maçonnerie.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="fr_FR">
-			<Text>Les [ICON_TechBoosted] Eurêka ! et les [ICON_CivicBoosted] inspirations fournissent 60 % des dogmes et des technologies, plutôt que 50 %.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture et [ICON_PRODUCTION] Production +1 pour chaque Merveille mondiale construite dans vos villes. Terminer la construction d'une merveille octroie un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] inspiration aléatoires de l'ère de la merveille, si disponibles.</Text>
+			<Text>Les [ICON_TechBoosted] Eurêka ! et les [ICON_CivicBoosted] inspirations fournissent 50 % des dogmes et des technologies, plutôt que 40 %. Chaque fois qu'une merveille est achevée, octroie un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] inspiration aléatoires de l'ère de la merveille, si disponibles.[NEWLINE]Les batisseurs ont 1 charge supplémentaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="fr_FR">
-			<Text>Les [ICON_TechBoosted] Eurêka ! et les [ICON_CivicBoosted] inspirations fournissent 50 % des dogmes et des technologies, plutôt que 40 %.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture et [ICON_PRODUCTION] Production +1 pour chaque Merveille mondiale construite dans vos villes. Terminer la construction d'une merveille octroie un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] inspiration aléatoires de l'ère de la merveille, si disponibles.</Text>
+			<Text>Les [ICON_TechBoosted] Eurêka ! et les [ICON_CivicBoosted] inspirations fournissent 50 % des dogmes et des technologies, plutôt que 40 %. Chaque fois qu'une merveille est achevée, octroie un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] inspiration aléatoires de l'ère de la merveille, si disponibles.[NEWLINE]Les batisseurs ont 1 charge supplémentaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Les [ICON_TechBoosted] Eurêka ! et les [ICON_CivicBoosted] inspirations fournissent 50 % des dogmes et des technologies, plutôt que 40 %.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture et [ICON_PRODUCTION] Production +1 pour chaque Merveille mondiale construite dans vos villes. Terminer la construction d'une merveille octroie un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] inspiration aléatoires de l'ère de la merveille, si disponibles.</Text>
+			<Text>Les [ICON_TechBoosted] Eurêka ! et les [ICON_CivicBoosted] inspirations fournissent 50 % des dogmes et des technologies, plutôt que 40 %. Chaque fois qu'une merveille est achevée, octroie un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] inspiration aléatoires de l'ère de la merveille, si disponibles.[NEWLINE]Les batisseurs ont 1 charge supplémentaire.</Text>
 		</Replace>
 		<!-- ========== COLOMBIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="fr_FR">
@@ -334,7 +337,10 @@
     	</Replace>
 		<!-- ========== GRÈCE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="fr_FR">
-			<Text>Une fois la philosophie politique atteinte, gagne un emplacement de doctrine Joker supplémentaire pour tous les types de gouvernement. [NEWLINE][NEWLINE]Reçoit un émissaire à chaque fois q'un amphithéâtre est achevé.</Text>
+			<Text>Une fois la philosophie politique atteinte, gagne un emplacement de doctrine Joker supplémentaire pour tous les types de gouvernement.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_CULTURE] Culture +5 % par cité-état dont vous êtes le suzerain.[NEWLINE]Reçoit un émissaire à chaque fois q'un amphithéâtre est achevé.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="fr_FR">
 			<Text>Quartier exclusif à la Grèce remplaçant la place du théâtre à moindres coûts, destiné à accueillir les sites culturels de la ville. Vous recevez un [ICON_Envoy] émissaire lorsque vous y construisez un amphithéâtre. [NEWLINE] Bonus de [ICON_Culture] Culture +1 pour chaque quartier adjacent. Bonus de [ICON_Culture] Culture +1 si adjacent au centre-ville. [ICON_Culture] Bonus de culture +2 pour chaque merveille adjacente. [NEWLINE]Ne peut être construite que sur une colline.</Text>
@@ -475,14 +481,14 @@
 			<Text>Expérience + 30 % pour les unités d'attaque à distance. Les mines construites sur des ressources stratégiques fournissent + 1 unité de [ICON_Production] production, et celles sur des ressources bonus et de luxe + 2 unités d'[ICON_Gold] or.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="fr_FR">
-      		<Text>Aménagement antique constructible dans une plaine plate, une prairie plate, une plaine innondable ou un désert.[NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et [ICON_Faith] Foi +2 .[NEWLINE][NEWLINE]Les quartiers adjacents octroient des rendements bonus :[NEWLINE][ICON_Food] Nourriture +2 si adjacente à un centre-ville.[NEWLINE][ICON_SCIENCE] Science +2 par Campus adjacent.[NEWLINE][ICON_PRODUCTION] Production +2 par Zone Industrielle adjacente.[NEWLINE][ICON_CULTURE] Culture +2 par Place du Théâtre adjacente.[NEWLINE][ICON_FAITH] Foi +2 par Lieu Saint adjacent.[NEWLINE][ICON_GOLD] Or +2 par Plateforme Commerciale ou Port adjacent. [NEWLINE][NEWLINE]Deux pyramides ne peuvent pas être adjacentes.</Text>
+      		<Text>Aménagement antique constructible dans une plaine plate, une prairie plate, une plaine innondable ou un désert.[NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et [ICON_Faith] Foi +2 .[NEWLINE][NEWLINE]Les quartiers adjacents octroient des rendements bonus :[NEWLINE][ICON_Food] Nourriture +2 si adjacente à un centre-ville.[NEWLINE][ICON_SCIENCE] Science +2 par Campus adjacent.[NEWLINE][ICON_PRODUCTION] Production +2 par Zone Industrielle adjacente.[NEWLINE][ICON_CULTURE] Culture +2 par Place du Théâtre adjacente.[NEWLINE][ICON_FAITH] Foi +2 par Lieu Saint adjacent.[NEWLINE][ICON_GOLD] Or +2 par Plateforme Commerciale ou Port adjacent. [NEWLINE][NEWLINE]Deux pyramides ne peuvent pas être adjacentes.</Text>
         </Replace>
 		<!-- ========== PAYS-BAS ========= -->
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un polder, exclusif aux Pays-Bas.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1. [ICON_PRODUCTION] Production +1. [ICON_Housing] Habitations +0,5. [ICON_FOOD] Nourriture +1 si adjacent à un autre polder. Bonus de [ICON_PRODUCTION] production, bonus [ICON_GOLD] d'or et bonus de [ICON_FOOD] nourriture à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Doit être placé sur une case de côte ou de lac adjacente à au moins deux cases de terre franchissables. Le coût en [ICON_Movement] PM de la case passe à 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="fr_FR">
-			<Text>Loyauté +2 par tour pour la ville de départ de vos [ICON_TradeRoute] routes commerciales intérieures. [ICON_Culture] Culture +2 pour les [ICON_TradeRoute] routes commerciales vers ou en provenance de villes étrangères.</Text>
+			<Text>Loyauté +2 par tour pour la ville de départ de vos [ICON_TradeRoute] routes commerciales intérieures. [ICON_Culture] Culture +2 pour vous pour chaque [ICON_TradeRoute] routes commerciales vers ou en provenance de villes étrangères, [ICON_CULTURE] Culture +1 pour votre partenaire.</Text>
 		</Replace>
 		<!-- ========== PHENICIE ========= -->
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="fr_FR">
@@ -553,7 +559,7 @@
 		</Replace>
 		<!-- ========== SUÈDE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="fr_FR">
-			<Text>La Suède gagne 25 [ICON_Favor] faveurs diplomatiques lorsqu'elle obtient un personnage illustre (en vitesse en ligne). [NEWLINE] Les usines génèrent 1 point d'[ICON_GreatEngineer] ingénieur illustre supplémentaire et les universités 1 point de [ICON_GreatScientist] savant illustre supplémentaire. [ICON_PRODUCTION] Production +50% pour la construction des ateliers, usines, bibliothèques et universités. [NEWLINE] La présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de l'ère industrielle.</Text>
+			<Text>La Suède gagne 25 [ICON_Favor] faveurs diplomatiques lorsqu'elle obtient un personnage illustre (en vitesse en ligne). [NEWLINE] Les usines génèrent 1 point d'[ICON_GreatEngineer] ingénieur illustre supplémentaire et les universités 1 point de [ICON_GreatScientist] savant illustre supplémentaire. [ICON_PRODUCTION] Production +50% pour la construction des ateliers, usines, bibliothèques et universités. [NEWLINE] La présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de l'ère industrielle.[NEWLINE][ICON_PRODUCTION] Production +50 % pour les bâtiments de la place de la gouvernance.</Text>
 		</Replace>
 		<!-- ========== SUMER ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="fr_FR">
@@ -592,6 +598,9 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +2 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations, ne peut pas être construit sur une case adjacente au centre-ville, et ne génère pas de [ICON_GreatPerson] points de personnages illustres.[NEWLINE]Déclanche une bombe culturelle, capturant les cases neutre.</Text>
 		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
@@ -1049,13 +1058,16 @@
 			<Text>[ICON_Strength] Puissance de combat +10 contre les barbares.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Science] Science bonus pour les bâtiments des campus : +50 % si la ville compte au moins 15 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
+			<Text>[ICON_Science] Science bonus pour les bâtiments des campus : +50 % si la ville compte au moins 13 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi bonus pour les bâtiments des lieux saints : +50 % si la ville compte au moins 15 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
+			<Text>[ICON_Faith] Foi bonus pour les bâtiments des lieux saints : +50 % si la ville compte au moins 13 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Culture] Culture bonus pour les bâtiments des places du théâtre : +50 % si la ville compte au moins 15 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
+			<Text>[ICON_Culture] Culture bonus pour les bâtiments des places du théâtre : +50 % si la ville compte au moins 13 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Gold] Or bonus des bâtiments des plateformes commerciales : +50 % si 13 [ICON_CITIZEN] citoyens ou plus, +50 % si bonus de proximité +4 ou plus.</Text>
 		</Replace>
 		<!-- Correction firaxis : quartier => quartier résidentiel -->
 		<Replace Tag="LOC_POLICY_PUBLIC_TRANSPORT_DESCRIPTION_XP2" Language="fr_FR">
@@ -1067,7 +1079,7 @@
 			<Text>Artisanat obsidional</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +50% pour les unités de siège des ères Antiques et Classiques.</Text>
+			<Text>[ICON_Production] Production +50% pour les unités de siège des ères Antiques, Classiques et Médiévales.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Blablablabla.</Text>
@@ -1172,6 +1184,9 @@
 		</Replace>
 		<Replace Tag="LOC_BBG_BUILDING_BANK_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_GOLD] Or +2 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif aux Ottomans. Accumulez une ressource stratégique supplémentaire pour chaque type de ressource stratégique aménagée dans cette ville. [ICON_Amenities] Activités +1 pour chaque ressource de luxe aménagée dans cette ville.[NEWLINE][ICON_GOLD] Or +2 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville[NEWLINE]+1 Capacité de [ICON_TRADEROUTE] route commercial.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_GOLD] Or +4 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +2 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville</Text>
@@ -1457,6 +1472,15 @@
 		<!-- Débrouille toi Priz pour ranger tout ça-->
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour les bâtiments de défense.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="fr_FR">
+			<Text>Octroie un emplacement de doctrine économique supplémentaire sous n'importe quel gouvernement. Déclenche un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] Inspiration aléatoires lors de la première ouverture d'un [ICON_TradingPost] comptoir commercial dans une ville d'une autre civilisation.[NEWLINE][ICON_SCIENCE] Science +1 et [ICON_CULTURE] Culture +1 pour chaque route commerciale internationnale.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PLANTATION_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire des plantations. [NEWLINE][NEWLINE][ICON_Gold] Or +2[NEWLINE][ICON_Production] Production +1 si construite sur une case plate.[NEWLINE]Ne peut être construite que sur une ressource valide. [NEWLINE][NEWLINE]Construite sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GEOTHERMAL_PLANT_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire une centrale géothermique. [NEWLINE][NEWLINE][ICON_Science] Science +1. [ICON_Production] Production +2. [ICON_Power] Électricité +3 par tour.[NEWLINE][ICON_Science] Science +1, [ICON_Power] Électricité +3 par tour une fois les matériaux synthétique découvert.[NEWLINE]Doit être construit sur une fissure géothermique.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
