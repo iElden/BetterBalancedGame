@@ -16,34 +16,23 @@ UPDATE ModifierArguments SET Value='1' WHERE ModifierId='TRAIT_INTERCONTINENTAL_
 -- ==== MISSIONS ====
 -- missions get +1 housing on home continent
 INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES
-	('BBG_REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT', 'REQUIREMENT_PLOT_IS_OWNER_CAPITAL_CONTINENT');
+	('REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT_BBG', 'REQUIREMENT_PLOT_IS_OWNER_CAPITAL_CONTINENT');
 INSERT OR IGNORE INTO RequirementSets VALUES
-	('BBG_PLOT_CAPITAL_CONTINENT_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+	('PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT OR IGNORE INTO RequirementSetRequirements VALUES
-	('BBG_PLOT_CAPITAL_CONTINENT_REQUIREMENTS', 'BBG_REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT');
-INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId) VALUES
-    ('BBG_MISSION_HOMECONTINENT_HOUSING' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'BBG_PLOT_CAPITAL_CONTINENT_REQUIREMENTS'),
-    ('BBG_MISSION_HOMECONTINENT_FOOD' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS', 'BBG_PLOT_CAPITAL_CONTINENT_REQUIREMENTS');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)VALUES
-    ('BBG_MISSION_HOMECONTINENT_HOUSING' , 'Amount' , '1'),
-    ('BBG_MISSION_HOMECONTINENT_FOOD' , 'YieldType', 'YIELD_FOOD'),
-    ('BBG_MISSION_HOMECONTINENT_FOOD' , 'Amount', '1');
-INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId) VALUES
-    ('IMPROVEMENT_MISSION' , 'BBG_MISSION_HOMECONTINENT_HOUSING'),
-    ('IMPROVEMENT_MISSION' , 'BBG_MISSION_HOMECONTINENT_FOOD');
+	('PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG', 'REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT_BBG');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('MISSION_HOMECONTINENT_HOUSING_BBG' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('MISSION_HOMECONTINENT_HOUSING_BBG' , 'Amount' , 1);
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_MISSION' , 'MISSION_HOMECONTINENT_HOUSING_BBG');
 -- Missions cannot be placed next to each other
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
 UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
--- Missions get bonus science at +1 at Enlightenment instead of +2 at cultural heritage
-UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT', BonusYieldChange=1 WHERE Id='17';
--- Change missions Yield
-DELETE FROM ImprovementModifiers WHERE ImprovementType='IMPROVEMENT_MISSION' AND ModifierID IN ('MISSION_NEWCONTINENT_FAITH', 'MISSION_NEWCONTINENT_FOOD');
-DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_MISSION' AND YieldChangeId='Mission_Science_HolySite';
-INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict) VALUES
-    ('BBG_Mission_Faith_HS', 'placeholder', 'YIELD_FAITH', 1, 1, 'DISTRICT_HOLY_SITE');
-INSERT INTO Improvement_Adjacencies(ImprovementType, YieldChangeId) VALUES
-    ('IMPROVEMENT_MISSION', 'BBG_Mission_Faith_HS');
+-- Missions get bonus science at Enlightenment instead of cultural heritage
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
 
 
 
