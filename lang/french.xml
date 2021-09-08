@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
 
@@ -40,6 +40,10 @@
 		</Replace>
 		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="fr_FR">
 			<Text>Slots de doctrine militaire : +{1_Value}.</Text>
+		</Replace>
+		<!-- ========== KUBILAI KHAN ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="fr_FR">
+			<Text>Octroie un emplacement de doctrine économique supplémentaire sous n'importe quel gouvernement. Déclenche un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] Inspiration aléatoires lors de la première ouverture d'un [ICON_TradingPost] comptoir commercial dans une ville d'une autre civilisation.[NEWLINE][ICON_SCIENCE] Science +1 et [ICON_CULTURE] Culture +1 pour les routes commerciales internationnales.</Text>
 		</Replace>
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
@@ -552,7 +556,7 @@
 			<Text>Les unités de cavalerie peuvent être achetées avec de la [ICON_FAITH] Foi</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une kourgane, exclusive à la Scythie. [NEWLINE][NEWLINE][ICON_Faith] Foi +1 et [ICON_Gold] Or +3. [NEWLINE][ICON_Faith] Foi +1 (porté à +2 à Étriers) et [ICON_PRODUCTION] Production +1 pour chaque pâturage adjacent. [NEWLINE]Génère du [ICON_TOURISM] tourisme par le biais de la [ICON_FAITH] foi après la découverte de l'aviation. Construction impossible sur une colline.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire une kourgane, exclusive à la Scythie. [NEWLINE][NEWLINE][ICON_Faith] Foi +1 et [ICON_Gold] Or +3. [NEWLINE][ICON_Faith] Foi +1 (porté à +2 à Étriers) et [ICON_PRODUCTION] Production +1 pour chaque pâturage adjacent. [NEWLINE]Génère du [ICON_TOURISM] tourisme par le biais de la [ICON_FAITH] foi après la découverte de l'aviation.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Scythie, cette unité d'attaque à distance de l'ère classique possède 4 [ICON_Movement] PM et une [ICON_Range] portée de 2.</Text>
@@ -600,7 +604,7 @@
 			<Text>[ICON_Strength] Puissance de combat +2 pour les unités combattant dans les forêts tropicales, les marais et les bois. [ICON_Movement] +1 PM si elles commencent le tour dans une forêt tropicale, des marais ou des bois. Ces bonus sont doublés si la case se trouve dans votre territoire.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +2 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations, ne peut pas être construit sur une case adjacente au centre-ville, et ne génère pas de [ICON_GreatPerson] points de personnages illustres.[NEWLINE]Déclanche une bombe culturelle, capturant les cases neutre.</Text>
+			<Text>Quartier exclusif au Vietnam remplaçant le campement à moindre coût. [ICON_CULTURE] Culture +2 pour chaque quartier adjacent. Une fois l'aviation découverte, fournit autant de [ICON_TOURISM] tourisme que de [ICON_CULTURE] culture. Ce quartier n'est pas spécialisé, ne nécessite pas d'habitations, ne peut pas être construit sur une case adjacente au centre-ville, et ne génère pas de [ICON_GreatPerson] points de personnages illustres. [NEWLINE]Déclenche une bombe culturelle, capturant les cases neutres adjacentes.</Text>
 		</Replace>
 		<!-- ========== ZOULOUX ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
@@ -625,16 +629,16 @@
 			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] et [ICON_RESOURCE_MAIZE].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 2 cases gratuite à la fondation de la ville.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% pour les colons. [NEWLINE]Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25% pour les colons.[NEWLINE]Expansion des frontières 50 % plus rapide et 2 cases gratuite à la fondation de la ville.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% pour les colons. [NEWLINE]Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez 40% du cout en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.[NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
+			<Text>Vous recevez 40% du coût en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une. [NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez 40% du cout en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.[NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
+			<Text>Vous recevez 40% du coût en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une. [NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +1 pour les cases de Marais, d'Oasis et de Plaines Innondables de tout types.</Text>
@@ -672,6 +676,9 @@
 		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +1 pour les cases d'attrait charmant ou supérieur.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="fr_FR">
+      		<Text>Points de [ICON_GreatPerson] personnage illustre +1 pour les lieux saints (prophète), les bibliothèques (scientifique) les amphithéâtres (écrivain) et les ateliers (ingénieur).</Text>
+    	</Replace>
 		
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="fr_FR">
@@ -707,9 +714,6 @@
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +6 pour toutes les merveilles mondiales.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="fr_FR">
-      		<Text>Points de [ICON_GreatPerson] personnage illustre +1 pour les lieux saints (prophète), les bibliothèques (scientifique) les amphithéâtre (écrivain) et les ateliers (ingénieur).</Text>
-    	</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
 			<Text>Chaque lieu saint ou place du théâtre d'une ville convertie à cette religion fournit respectivement [ICON_Faith] foi +2 ou [ICON_Culture] culture +2.</Text>
 		</Replace>
@@ -1067,19 +1071,22 @@
 			<Text>[ICON_Culture] Culture bonus pour les bâtiments des places du théâtre : +50 % si la ville compte au moins 13 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +3.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Gold] Or bonus des bâtiments des plateformes commerciales : +50 % si 13 [ICON_CITIZEN] citoyens ou plus, +50 % si bonus de proximité +4 ou plus.</Text>
+			<Text>[ICON_Gold] Or bonus des bâtiments des plateformes commerciales : +50 % si la ville compte au moins 13 [ICON_CITIZEN] citoyens, +50 % si le quartier a un bonus de proximité d'au moins +4.</Text>
 		</Replace>
 		<!-- Correction firaxis : quartier => quartier résidentiel -->
 		<Replace Tag="LOC_POLICY_PUBLIC_TRANSPORT_DESCRIPTION_XP2" Language="fr_FR">
       		<Text>[ICON_Food] Nourriture +3 et [ICON_Production] production +1 pour les quartiers résidentiels d'un attrait charmant, et +1 supplémentaire pour chaque rendement si le quartier est époustouflant. [ICON_Gold] Or +1 pour tous les quartiers résidentiels.</Text>
     	</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50% pour les bâtiments de défense.</Text>
+		</Replace>
 		
 		<!-- Nouvelles cartes d'unités de Siège -->
 		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="fr_FR">
 			<Text>Artisanat obsidional</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +50% pour les unités de siège des ères Antiques, Classiques et Médiévales.</Text>
+			<Text>[ICON_Production] Production +50% pour les unités de siège de l'ère Antique, Classique et Médiévale.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Blablablabla.</Text>
@@ -1173,6 +1180,12 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et [ICON_PRODUCTION] Production +1. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PLANTATION_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire des plantations. [NEWLINE][NEWLINE][ICON_Gold] Or +2. [NEWLINE][ICON_Production] Production +1 si construite sur une case plate.[NEWLINE]Ne peut être construite que sur une ressource valide. [NEWLINE][NEWLINE]Construite sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GEOTHERMAL_PLANT_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire une centrale géothermique. [NEWLINE][NEWLINE][ICON_Science] Science +1. [ICON_Production] Production +2. [ICON_Power] Électricité +3 par tour.[NEWLINE][ICON_Science] Science +1 et [ICON_Power] Électricité +3 par tour une fois les Matériaux Synthétiques découverts.[NEWLINE]Doit être construit sur une fissure géothermique.</Text>
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire des Aquacultures. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 par ressource maritime adjacente. Doit être construite sur la côte.</Text>
 		</Replace>
@@ -1183,13 +1196,13 @@
 			<Text>[ICON_Housing] Habitations +2 et [ICON_AMENITIES] activités +1 pour le campus choisi. Augmente de 40% les avantages du bonheur non liés à la [ICON_Food] nourriture dans votre empire.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_BUILDING_BANK_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_GOLD] Or +2 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville</Text>
+			<Text>[ICON_GOLD] Or +2 pour les [ICON_TRADEROUTE] routes commerciales à l'origine de cette ville. [NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commerciales à destination de cette ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif aux Ottomans. Accumulez une ressource stratégique supplémentaire pour chaque type de ressource stratégique aménagée dans cette ville. [ICON_Amenities] Activités +1 pour chaque ressource de luxe aménagée dans cette ville.[NEWLINE][ICON_GOLD] Or +2 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville[NEWLINE]+1 Capacité de [ICON_TRADEROUTE] route commercial.</Text>
+			<Text>Bâtiment exclusif aux Ottomans. Accumulez une ressource stratégique supplémentaire pour chaque type de ressource stratégique aménagée dans cette ville. [ICON_Amenities] Activités +1 pour chaque ressource de luxe aménagée dans cette ville.[NEWLINE][ICON_GOLD] Or +2 pour les [ICON_TRADEROUTE] routes commerciales à l'origine de cette ville. [NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commerciales à destination de cette ville. [NEWLINE]+1 Capacité de [ICON_TRADEROUTE] route commercial.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_GOLD] Or +4 pour chaque [ICON_TRADEROUTE] routes commerciale à l'origine de cette ville[NEWLINE][ICON_GOLD] Or +2 pour les [ICON_TRADEROUTE] routes commercial à destination de cette ville</Text>
+			<Text>[ICON_GOLD] Or +4 pour les [ICON_TRADEROUTE] routes commerciales à l'origine de cette ville. [NEWLINE][ICON_GOLD] Or +2 pour les [ICON_TRADEROUTE] routes commerciales à destination de cette ville.</Text>
 		</Replace>
 
 		<!-- Front End -->
@@ -1467,20 +1480,6 @@
 		</Replace>
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="fr_FR">
 			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
-		</Replace>
-
-		<!-- Débrouille toi Priz pour ranger tout ça-->
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +50% pour les bâtiments de défense.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="fr_FR">
-			<Text>Octroie un emplacement de doctrine économique supplémentaire sous n'importe quel gouvernement. Déclenche un [ICON_TechBoosted] Eurêka ! et une [ICON_CivicBoosted] Inspiration aléatoires lors de la première ouverture d'un [ICON_TradingPost] comptoir commercial dans une ville d'une autre civilisation.[NEWLINE][ICON_SCIENCE] Science +1 et [ICON_CULTURE] Culture +1 pour chaque route commerciale internationnale.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_PLANTATION_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire des plantations. [NEWLINE][NEWLINE][ICON_Gold] Or +2[NEWLINE][ICON_Production] Production +1 si construite sur une case plate.[NEWLINE]Ne peut être construite que sur une ressource valide. [NEWLINE][NEWLINE]Construite sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GEOTHERMAL_PLANT_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une centrale géothermique. [NEWLINE][NEWLINE][ICON_Science] Science +1. [ICON_Production] Production +2. [ICON_Power] Électricité +3 par tour.[NEWLINE][ICON_Science] Science +1, [ICON_Power] Électricité +3 par tour une fois les matériaux synthétique découvert.[NEWLINE]Doit être construit sur une fissure géothermique.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
