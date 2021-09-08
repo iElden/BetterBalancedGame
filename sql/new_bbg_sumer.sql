@@ -70,13 +70,13 @@ VALUES	('IMPROVEMENT_ZIGGURAT',		'YIELD_FAITH',					0);
 -- +1 faith for every 2 adjacent farms. +1 faith for each adjacent District.
 INSERT INTO Improvement_Adjacencies
 		(ImprovementType,				YieldChangeId)
-VALUES	('IMPROVEMENT_ZIGGURAT',		'Ziggurat_Faith_Farm'),
-		('IMPROVEMENT_ZIGGURAT',		'Ziggurat_Faith_District');
+VALUES	('IMPROVEMENT_ZIGGURAT',		'BBG_Ziggurat_Faith_Farm'),
+		('IMPROVEMENT_ZIGGURAT',		'BBG_Ziggurat_Faith_District');
 
 INSERT INTO Adjacency_YieldChanges
 		(ID,							Description,	YieldType,			YieldChange,	TilesRequired,	AdjacentImprovement,	OtherDistrictAdjacent)
-VALUES	('Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMPROVEMENT_FARM',		0),
-		('Ziggurat_Faith_District',		'Placeholder',	'YIELD_FAITH',		1,				1,				NULL,					1);
+VALUES	('BBG_Ziggurat_Faith_Farm',			'Placeholder',	'YIELD_FAITH',		1,				2,				'IMPROVEMENT_FARM',		0),
+		('BBG_Ziggurat_Faith_District',		'Placeholder',	'YIELD_FAITH',		1,				1,				NULL,					1);
 
 
 -- Sumerian War Carts are nerfed to 26 (BASE = 30)
