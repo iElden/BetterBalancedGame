@@ -88,13 +88,13 @@
 			<Text>Begin the game in an Ocean tile. Gain +1 [ICON_Citizen] Population when settling your first city. The Palace receives +3 [ICON_HOUSING] Housing and +1 [ICON_AMENITIES] Amenity. +2 [ICON_SCIENCE] Science and +2 [ICON_CULTURE] Culture per turn before you settle your first city.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when Amphitheater is completed.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder, Entertainment Complex, and Water Park. Can only be built on Hills.</Text>
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder, Entertainment Complex, and Water Park. Can only be built on Hills.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when Amphitheater is completed.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when Amphitheater is completed.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="en_US">
 			<Text>Adjacency: Standard [ICON_Culture] Culture bonus for adjacent City Center. Standard [ICON_Culture] Culture bonus for each adjacent district. Major [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
@@ -784,7 +784,7 @@
 			<Text>One extra Wildcard policy slot in any government.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION" Language="en_US">
-			<Text>+5% [ICON_Culture] Culture per city-state you are the Suzerain of.[NEWLINE]Receive an envoy each time an Amphitheater is completed.</Text>
+			<Text>+5% [ICON_Culture] Culture per city-state you are the Suzerain of.[NEWLINE]Awards 1 [ICON_Envoy] envoy when an Amphitheater is completed.</Text>
 		</Replace>
 		<!-- Greece (Gorgo) -->
 		<!-- India -->
