@@ -88,13 +88,13 @@
 			<Text>해양 타일 위에서 게임을 시작합니다. 첫 도시를 건설할 때 [ICON_Citizen] 인구 +1을 얻습니다. 궁전이 [ICON_HOUSING] 주거공간 +3과 [ICON_AMENITIES] 쾌적도 +1을 얻습니다. 첫 도시를 건설하기 전에 턴당 [ICON_SCIENCE] 과학 +2와 [ICON_CULTURE] 문화 +2를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형 극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의, 유흥단지 및 워터 파크에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의, 유흥단지 및 워터 파크에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형 극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형 극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ko_KR">
 			<Text>인접효과: 인접 도심부마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 인접 특수지구마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 인접 불가사의마다 상당한 [ICON_Culture] 문화 보너스를 부여합니다. 언덕에만 지을 수 있습니다.</Text>
@@ -193,10 +193,10 @@
             <Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산력 +1을 제공합니다. [ICON_Strength] 방어력이 증가합니다. 서로 연결된 만리장성 타일에는 [ICON_Gold] 금 보너스를 제공합니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Culture] 문화 및 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다. 자연재해로 인해 약탈당할 수 있지만, 파괴되지는 않습니다.</Text>
         </Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 50%가 아닌 60%의 상승효과를 제공합니다. 불가사의를 완성하면 가능한 경우 해당 불가사의 시대의 무작위 [ICON_TechBoosted] 유레카 및 [ICON_CivicBoosted] 영감을 얻습니다. 완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량 +1, [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 50%가 아닌 60%의 상승효과를 제공합니다. 불가사의를 완성하면 가능한 경우 해당 불가사의 시대의 무작위 [ICON_TechBoosted] 유레카 및 [ICON_CivicBoosted] 영감을 얻습니다. [NEWLINE]건설자에게 1회의 추가 건설 횟수가 부여됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다. 불가사의를 완성하면 가능한 경우 해당 불가사의 시대의 무작위 [ICON_TechBoosted] 유레카 및 [ICON_CivicBoosted] 영감을 얻습니다. 완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량 +1, [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다. 불가사의를 완성하면 가능한 경우 해당 불가사의 시대의 무작위 [ICON_TechBoosted] 유레카 및 [ICON_CivicBoosted] 영감을 얻습니다. [NEWLINE]건설자에게 1회의 추가 건설 횟수가 부여됩니다.</Text>
 		</Replace>
 		<!-- <Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ko_KR"> DUPLICATED, MAN
 			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다. 불가사의를 완성하면 가능한 경우 해당 불가사의 시대의 무작위 [ICON_TechBoosted] 유레카 및 [ICON_CivicBoosted] 영감을 얻습니다. 완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량 +1, [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
@@ -790,7 +790,7 @@
 			<Text>모든 정부에 와일드카드 정책 슬롯이 1개 더 추가됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION" Language="ko_KR">
-			<Text>플레이어가 종주국인 도시 국가 당 [ICON_Culture] 문화 +5%를 제공합니다.[NEWLINE]원형 극장 건물을 건설시 [ICON_Envoy] 사절 1명을 획득합니다.</Text>
+			<Text>플레이어가 종주국인 도시 국가 당 [ICON_Culture] 문화 +5%를 제공합니다.[NEWLINE] 원형 극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.</Text>
 		</Replace>
 		<!-- Greece (Gorgo) -->
 		<!-- India -->
@@ -1496,7 +1496,7 @@
 			<Text>이 도시에서 출발하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +2, 이 도시로 향하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="ko_KR">
-			<Text>오스만 특유의 건물입니다. 이 도시에서 개발된 전략 자원 유형별로 추가 전략 자원 1개가 축적됩니다. 이 도시에서 사치 자원을 개발할 때마다 [ICON_AMENITIES] 쾌적도 1을 얻습니다. [NEWLINE]이 도시에서 출발하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +2, 이 도시로 향하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +1을 얻습니다.[NEWLINE] 추가 [ICON_TRADEROUTE] 교역로 +1.</Text>
+			<Text>오스만 특유의 건물입니다. 이 도시에서 개발된 전략 자원 유형별로 추가 전략 자원 1개가 축적됩니다. 이 도시에서 사치 자원을 개발할 때마다 [ICON_AMENITIES] 쾌적도 1을 얻습니다. [NEWLINE]이 도시에서 출발하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +2, 이 도시로 향하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +1을 얻습니다. [NEWLINE][ICON_TradeRoute] 교역로 최대치가 +1 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 출발하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +4, 이 도시로 향하는 [ICON_TRADEROUTE] 교역로에 [ICON_GOLD] 금 +2를 얻습니다.</Text>
@@ -1515,6 +1515,12 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ko_KR">
 			<Text>베트남 특유의 특수지구이며 주둔지를 대체합니다. 인접한 특수지구마다 [ICON_CULTURE] 문화 +2를 얻습니다. 비행을 연구하면 [ICON_CULTURE] 문화 생산량에 해당하는 [ICON_TOURISM] 관광을 얻습니다. 이 특수지구는 인구 조건이 없고, 건설 비용이 저렴하며, 도심부 인근에 건설할 수 없고, [ICON_GreatPerson] 위인 점수를 제공하지 않으며, 전문 특수지구가 아닙니다. [NEWLINE]인접한 중립 타일에 문화 폭탄을 투여합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>고대 및 고전 시대 불가사의를 건설하는 경우 건설자의 건설 횟수를 소진하여 원래 불가사의 비용의 15%를 기여할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>고대 및 고전 시대 불가사의를 건설하는 경우 건설자의 건설 횟수를 소진하여 원래 불가사의 비용의 15%를 기여할 수 있습니다. 석조기술로 운하가 잠금 해제됩니다.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
