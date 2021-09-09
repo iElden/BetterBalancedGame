@@ -4,9 +4,7 @@
 
 -- Create new district traderoute yield
 INSERT INTO District_TradeRouteYields(DistrictType, YieldType, YieldChangeAsOrigin, YieldChangeAsDomesticDestination, YieldChangeAsInternationalDestination) VALUES
-    ('DISTRICT_AERODROME', 'YIELD_PRODUCTION', 0.0, 1.0, 1.0),
-    ('DISTRICT_PRESERVE', 'YIELD_FOOD', 0.0, 1.0, 0.0),
-    ('DISTRICT_PRESERVE', 'YIELD_FAITH', 0.0, 0.0, 1.0);
+    ('DISTRICT_AERODROME', 'YIELD_PRODUCTION', 0.0, 1.0, 1.0);
 
 -- Green District cost same as other district (from 81)
 UPDATE Districts SET Cost=54 WHERE DistrictType IN ('DISTRICT_CANAL', 'DISTRICT_DAM');

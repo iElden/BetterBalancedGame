@@ -109,6 +109,10 @@
 		<Criteria id="nfp_portugal">
 			<ModInUse>FFDF4E79-DEE2-47BB-919B-F5739106627A</ModInUse>
 		</Criteria>
+		<Criteria id="xp2_and_maya_colombia">
+			<ModInUse>4873EB62-8CCC-4574-B784-DDA455E74E68</ModInUse>
+			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+		</Criteria>
 		<Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
@@ -341,7 +345,6 @@
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
 			<File>sql/new_bbg_xp2_government.sql</File>
 			<File>sql/new_bbg_improvement.sql</File>
-			<File>sql/new_bbg_disasters.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -450,12 +453,19 @@
 			</Properties>
 			<File>sql/new_bbg_nfp_vietnam.sql</File>
 			<File>sql/new_bbg_kublai.sql</File>
+			<File>sql/new_bbg_buildings_preserve.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_nfp_portugal" criteria="nfp_portugal">
 			<Properties>
 				<LoadOrder>11640</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_portugal.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_xp2_and_maya_colombia" criteria="xp2_and_maya_colombia">
+			<Properties>
+				<LoadOrder>11640</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_disasters.sql</File>
 		</UpdateDatabase>
 			<UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
@@ -633,6 +643,7 @@
 		<File>sql/new_bbg_xp2_government.sql</File>
 		<File>sql/new_bbg_spain.sql</File>
 		<File>sql/new_bbg_buildings.sql</File>
+		<File>sql/new_bbg_buildings_preserve.sql</File>
 		<File>sql/new_bbg_spy.sql</File>
 		<File>sql/new_bbg_nfp_portugal.sql</File>
 		<File>sql/new_bbg_brazil.sql</File>

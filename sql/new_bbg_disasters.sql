@@ -40,6 +40,7 @@ UPDATE RandomEvent_Damages SET Percentage=50 WHERE DamageType='IMPROVEMENT_DESTR
 UPDATE RandomEvent_Damages SET Percentage=75 WHERE DamageType='IMPROVEMENT_DESTROYED' AND RandomEventType='RANDOM_EVENT_KRAKATOA_MEGACOLOSSAL'; -- From: 80
 
 -- Delay heavy chariot on meteors
+-- REQUIRE DLC Gran Colombia to boot !
 INSERT INTO GoodyHutSubTypes(GoodyHut, SubTypeGoodyHut, Description, Weight, ModifierID) VALUES
     ('METEOR_GOODIES', 'METEOR_GRANT_TWO_TECH_BOOSTS', 'LOC_BBG_METOR_GOODIES_FREE_TECH_DESC', 1, 'GOODY_SCIENCE_GRANT_TWO_TECH_BOOSTS');
 UPDATE GoodyHutSubTypes SET Weight=99, Turn=30 WHERE GoodyHut='METEOR_GOODIES' AND SubTypeGoodyHut='METEOR_GRANT_GOODIES';
