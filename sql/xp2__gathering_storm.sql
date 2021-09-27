@@ -532,7 +532,9 @@ UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILI
 UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VOLCANO_CATASTROPHIC';
 UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VOLCANO_MEGACOLOSSAL';
 UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_VOLCANO_TRIGGERED';
-
+-- BBS Wonder
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_KRAKATOA_CATASTROPHIC';
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN' AND RandomEventType='RANDOM_EVENT_KRAKATOA_MEGACOLOSSAL';
 
 
 --==============================================================
