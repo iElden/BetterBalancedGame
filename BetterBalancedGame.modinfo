@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40620">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40630">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4062">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4063">
 	<Properties>
-		<Name>Better Balanced Game 4.6.2</Name>
+		<Name>Better Balanced Game 4.6.3</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4062</Version>
+		<Version>4063</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -110,7 +110,7 @@
 			<ModInUse>FFDF4E79-DEE2-47BB-919B-F5739106627A</ModInUse>
 		</Criteria>
 		<Criteria id="xp2_and_maya_colombia">
-			<ModInUse>4873EB62-8CCC-4574-B784-DDA455E74E68</ModInUse>
+			<ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
 		</Criteria>
 		<Criteria id="CVSetting_2">
@@ -463,11 +463,11 @@
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_and_maya_colombia" criteria="xp2_and_maya_colombia">
 			<Properties>
-				<LoadOrder>11640</LoadOrder>
+				<LoadOrder>11641</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_disasters.sql</File>
 		</UpdateDatabase>
-			<UpdateDatabase id="VictoryCulturalSetting_2">
+		<UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
             </Properties>
