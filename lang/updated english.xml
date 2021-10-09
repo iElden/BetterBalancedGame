@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+
+		<!-- https://github.com/iElden/BetterBalancedGame -->
+
+		<!-- Author : robarsegh -->
+
+		<!-- =============== D U P L I C A T E === L E A D E R S =============== -->
+
+		<!-- ========== ELEANOR OF AQUITAINE ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
+			<Text>100% [ICON_Production] Production towards Theater Square districts. Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.</Text>
+		</Replace>
+		<!-- ========== CATHERINE DE MEDICIS (BLACK QUEEN) ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="en_US">
+			<Text>Gains 1 additional level of [ICON_VisLimited] Diplomatic Visibility over every civilization that she meets at Political Philosophy.</Text>
+		</Replace>
+		<!-- ========== CATHERINE DE MEDICIS (MAGNIFICENCE) ========== -->
+		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
+			<Text>Once finished, this project yields 40 [ICON_Culture] and 40 [ICON_Tourism] (on Online speed) based on the number of excess of Luxury resources France possesses.</Text>
+		</Replace>
+		<!-- ========== CHANDRAGUPTA ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="en_US">
+			<Text>+1 movement to land military units and religious units.</Text>
+		</Replace>
+		<!-- ========== GANDHI ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Gains an additional belief when founding a religion. +1 [ICON_Movement] Movement to Settlers and Builders. +5 [ICON_Faith] Faith and +1 [ICON_Favor] Diplomatic Favor for each civilization met (including Inida) that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
+			<Text>Gains an additional belief when founding a religion. +1 [ICON_Movement] Movement to Settlers and Builders. +5 [ICON_Faith] Faith for each civilization met (including Inida) that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
+		</Replace>
+		<!-- ========== GORGO ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="en_US">
+			<Text>Combat victories provide [ICON_Culture] equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). [NEWLINE]+1 [ICON_Strength] Combat Strength for each Military Policy slot in your government.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Strength] Combat Strength for each Military Policy slots in your government.</Text>
+		</Replace>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="en_US">
+			<Text>Military Policy slots : +{1_Value}.</Text>
+		</Replace>
+		<!-- ========== KUBILAI KHAN ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="en_US">
+			<Text>Gain an additional Economic Policy slot in any government. Trigger a [ICON_TechBoosted] Eureka and an [ICON_CivicBoosted] Inspiration when placing a [ICON_TradingPost] in a foreign city. [NEWLINE]International [ICON_TradeRoute] Trade Routes receive +1 [ICON_Science] and +1 [ICON_Culture].</Text>
+		</Replace>
+		<!-- ========== TEDDY ROOSEVELT (BULL MOOSE) ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="en_US">
+			<Text>Breathtaking tiles to either a Natural Wonder or a Mountain receive +1 [ICON_SCIENCE] Science, doubled at Astrology. Breathtaking tiles adjacent to a Wonder or Woods receive +1 [ICON_CULTURE] Culture, doubled at The Enlightenment. All tiles in a city with a National Park gain +1 Appeal. Allows Builders to plant Woods (second-growth) at Medieval Faires.</Text>
+		</Replace>
+		<!-- ========== TEDDY ROOSEVELT (ROUGH RIDER) ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength when defending on the continent of your [ICON_Capital] Capital. +5 [ICON_Strength] Combat Strength when attacking on a foreign continent. [NEWLINE][ICON_Envoy] Envoys sent to City-States you have a [ICON_TradeRoute] Trade Route to count as two [ICON_Envoy] Envoys. Gain the Rough Rider unique unit at Ballistics.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>American unique Industrial era unit when Teddy Roosevelt is their leader that replaces the Cuirassier. Combat victories on the continent of your [ICON_Capital] provide [ICON_Culture]. +5 [ICON_Strength] Combat Strength when fighting on Hills. Lower maintenance cost.</Text>
+		</Replace>
+		<!-- ========== VICTORIA ========== -->
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="en_US">
+			<Text>English unique Industrial era unit when Victoria is their leader that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on a foreign continent. Ignores the additional [ICON_Movement] Movement cost from disembarking.</Text>
+		</Replace>
+
+		<!-- =============== C I V I L I S A T I O N S =============== -->
+
+		<!-- ========== ALLEMAGNE ========== -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="en_US">
+			<Text>Après le dogme des Guildes, chaque ville peut construire un quartier de plus, au-delà du seuil imposé par la [ICON_Citizen] population.</Text>
+		</Replace>
+		<!-- ========== AMÉRIQUE ========== -->
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations when the game enters the Modern era.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength when defending on the continent of your [ICON_Capital] Capital.</Text>
+		</Replace>
+		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength when attacking on a foreign continent.</Text>
+		</Row>
+		<!-- ========== ENGLAND ========== -->
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="en_US">
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Removes the [ICON_Movement] penalty from embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement to all naval units trained in this city.[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent.+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE][NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn from Lighthouses built in this district.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="en_US">
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Removes the [ICON_Movement] penalty from embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land. Cannot be built on Reef.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement to all naval units trained in this city.[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent.+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE][NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn from Lighthouses built in this district.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Removes the [ICON_Movement] penalty from embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land. Cannot be built on Reef.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement to all naval units trained in this city.[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent.[NEWLINE][NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn from Lighthouses built in this district.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="en_US">
+			<Text>English unique Industrial era unit when Victoria is their leader that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on a foreign continent. Ignores the additional [ICON_Movement] Movement cost from disembarking.</Text>
+		</Replace>
+		<!-- ========== ARABIA ========== -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_GreatProphet] Great Prophet point per turn at Astrology. Automatically receive the final [ICON_GreatProphet] when the next-to-last one is claimed (if you have not earned a [ICON_GreatProphet] Great Prophet already).+1 [ICON_Science] per turn for each foreign city following Arabia's Religion</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
+			<Text>Campuses and Holy Sites receive a standard adjacency bonus from adjacent districts. [NEWLINE][NEWLINE]The worship building for your Religion can be bought by any player for one-tenth of the usual [ICON_Faith] Faith cost. This worship building is enhanced to add 20% of the [ICON_Science] Science, [ICON_Culture] Culture and [ICON_Faith] Faith output of Arabian cities.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MADRASA_DESCRIPTION" Language="en_US">
+			<Text>A building unique to Arabia that replaces the University. Unlocked at Theology. Bonus [ICON_Faith] Faith equal to the adjacency bonus of the Campus district.</Text>
+		</Replace>
