@@ -1432,6 +1432,9 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAI
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType='DISTRICT_ROYAL_NAVY_DOCKYARD';
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType='DISTRICT_THEATER';
 
+-- Free amenity on new city
+UPDATE GlobalParameters SET Value=1 WHERE Name='CITY_AMENITIES_FOR_FREE';
+UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_PALACE';
 
 --****		REQUIREMENTS		****--
 INSERT OR IGNORE INTO Requirements
