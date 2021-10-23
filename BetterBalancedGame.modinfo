@@ -279,8 +279,6 @@
 			<File>sql/new_bbg_brazil.sql</File>
 			<File>sql/new_bbg_gorgo.sql</File>
 			<File>sql/new_bbg_china.sql</File>
-
-			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
