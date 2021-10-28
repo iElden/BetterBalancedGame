@@ -113,13 +113,18 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 UPDATE Units SET Combat=53 WHERE UnitType='UNIT_ARABIAN_MAMLUK';
 -- 18/05/2021: Madrasa cost to 175
 -- UPDATE Buildings SET Cost=175 WHERE BuildingType='BUILDING_MADRASA';
--- Holy site and Campus got standard adjacency for district
-INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_HOLYSITE_ADJACENCYFAITH'),
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_CAMPUS_ADJACENCYSCIENCE');
-INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId) VALUES
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'District_Science'),
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'District_Faith');
+
+-- Campus and Holy Site +1 if adjacant to each other
+INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
+    ('BBG_Campus_Arabia_HS', 'BBG_LOC_CAMPUS_ARABIA_HS', 'YIELD_SCIENCE', 1, 'DISTRICT_HOLY_SITE'),
+    ('BBG_HS_Arabia_Campus', 'BBG_LOC_HS_ARABIA_CAMPUS', 'YIELD_FAITH', 1, 'DISTRICT_CAMPUS');
+INSERT INTO District_Adjacencies(DistrictType, YieldChangeId) VALUES
+    ('DISTRICT_CAMPUS', 'BBG_Campus_Arabia_HS'),
+    ('DISTRICT_HOLY_SITE', 'BBG_HS_Arabia_Campus');
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
+    SELECT TraitType, 'BBG_Campus_Arabia_HS' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
+    SELECT TraitType, 'BBG_HS_Arabia_Campus' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
 
 --==================
 -- China
