@@ -311,6 +311,8 @@ UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADD_POPULATION', NewOn
 -- Monumentality discount reduced from 30% to 10%
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
+-- Monumentality builder nerf to 1 PM from 2
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_GA_MOVEMENT' AND Name='Amount';
 -- Pen and Brush gives +2 Culture and +1 Gold per District
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
