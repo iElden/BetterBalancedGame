@@ -332,8 +332,6 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_
 --==============================================================
 -- revert for Firaxis patch (25/02/2021)
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='GOV_TALL_AMENITY_BUFF' AND Name='Amount';
--- audience chamber +1 gov title
--- UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOV_BUILDING_TALL_GRANT_GOVERNOR_POINTS' AND Name='Delta';
 -- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType , ModifierId)
 	VALUES ('BUILDING_GOV_TALL' , 'GOV_TALL_FOOD_BUFF');
@@ -362,23 +360,19 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'StartEra' , 'ERA_ANCIENT'    ),
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'EndEra'   , 'ERA_INFORMATION'),
 	('GOV_CONQUEST_REDUCED_MAINTENANCE' , 'Amount'   , '1'              );
--- Foreign Ministry gets +2 influence per turn and 2 envoys
-INSERT OR IGNORE INTO BuildingModifiers 
-    (BuildingType            , ModifierId)
-    VALUES 
-    ('BUILDING_GOV_CITYSTATES' , 'GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'),
-	('BUILDING_GOV_CITYSTATES' , 'FOREIGN_MINISTRY_ENVOYS');
-INSERT OR IGNORE INTO Modifiers 
-    (ModifierId                                 , ModifierType)
-    VALUES 
-    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN'),
-	('FOREIGN_MINISTRY_ENVOYS'					, 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
-INSERT OR IGNORE INTO ModifierArguments 
-    (ModifierId                                 , Name                      , Value)
-    VALUES 
-    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'Amount'                  , '2'),
-	('FOREIGN_MINISTRY_ENVOYS'					, 'Amount'					, '2');
 
+-- Foreign Ministry gets +2 influence per turn and 2 envoys
+INSERT OR IGNORE INTO BuildingModifiers(BuildingType, ModifierId) VALUES
+    ('BUILDING_GOV_CITYSTATES', 'GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'),
+	('BUILDING_GOV_CITYSTATES', 'FOREIGN_MINISTRY_ENVOYS');
+INSERT OR IGNORE INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD', 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN'),
+	('FOREIGN_MINISTRY_ENVOYS', 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
+INSERT OR IGNORE INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD', 'Amount', '2'),
+	('FOREIGN_MINISTRY_ENVOYS', 'Amount', '2');
+-- Foreign Ministry only 1 diplomatic favour
+UPDATE ModifierArguments SET Value='1'WHERE ModifierId='GOVCITYSTATES_ADJUST_FAVOR' AND Name='Amount';
 
 
 --==============================================================
