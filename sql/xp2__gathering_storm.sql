@@ -10,8 +10,7 @@ UPDATE Units SET Combat=95, RangedCombat=95 WHERE UnitType='UNIT_AMERICAN_P51';
 INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost)
 	VALUES ('UNIT_AMERICAN_ROUGH_RIDER', 10);
 UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
--- double diplo favour for each wildcard
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_WILD_CARD_FAVOR' AND Name='Amount';
+
 
 --==================
 -- Arabia
@@ -23,6 +22,28 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_WILD_CARD_FAVOR' 
 --==================
 -- Canada
 --==================
+-- INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
+--	VALUES
+--	('TRAIT_LEADER_LAST_BEST_WEST', 'TUNDRA_EXTRA_FOOD_CPLMOD'           ),
+--	('TRAIT_LEADER_LAST_BEST_WEST', 'TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'     ),
+--	('TRAIT_LEADER_LAST_BEST_WEST', 'NATIONAL_PARK_FOOD_YIELDS_CPLMOD'   ),
+--	('TRAIT_LEADER_LAST_BEST_WEST', 'NATIONAL_PARK_PROD_YIELDS_CPLMOD'   );
+--INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId, OwnerRequirementSetId)
+--	VALUES
+--	('TUNDRA_EXTRA_FOOD_CPLMOD', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'PLOT_HAS_TUNDRA_REQUIREMENTS', NULL),
+--	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'PLOT_HAS_TUNDRA_HILLS_REQUIREMENTS', NULL),
+--	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD', 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE', 'CITY_HAS_NATIONAL_PARK_REQUREMENTS', NULL),
+--	('NATIONAL_PARK_PROD_YIELDS_CPLMOD', 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE', 'CITY_HAS_NATIONAL_PARK_REQUREMENTS', NULL);
+--INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
+--	VALUES
+--	('TUNDRA_EXTRA_FOOD_CPLMOD', 'YieldType', 'YIELD_FOOD'      ),
+--	('TUNDRA_EXTRA_FOOD_CPLMOD', 'Amount', '1'               ),
+--	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD', 'YieldType', 'YIELD_FOOD'      ),
+--	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD', 'Amount', '1'               ),
+--	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD', 'YieldType', 'YIELD_FOOD'      ),
+--	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD', 'Amount', '4'               ),
+--	('NATIONAL_PARK_PROD_YIELDS_CPLMOD', 'YieldType', 'YIELD_PRODUCTION'),
+--	('NATIONAL_PARK_PROD_YIELDS_CPLMOD', 'Amount', '4'               );
 -- 15/05/2021 : Canada +1 food per city center
 INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId) VALUES
     ('BBG_TOUNDRA_CITY_EXTRA_FOOD', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'PLOT_IS_TUNDRA_CITY_REQUIREMENTS'),
@@ -48,12 +69,8 @@ INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
     ('TRAIT_LEADER_LAST_BEST_WEST', 'BBG_TOUNDRA_CITY_EXTRA_FOOD'),
     ('TRAIT_LEADER_LAST_BEST_WEST', 'BBG_TOUNDRA_HILLS_CITY_EXTRA_FOOD');
 
--- Double diplo favour
-UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_TOURISM_INTO_FAVOR' AND Name='Tourism';
-
 -- Hockey rink at Civil Service
 UPDATE Improvements SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ICE_HOCKEY_RINK';
-
 -- Mounties get a base combat buff and combat buff from nearby parks radius increased
 UPDATE Units SET Combat=70, Cost=360 WHERE UnitType='UNIT_CANADA_MOUNTIE';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_PARK_REQUIREMENT'       AND Name='MaxDistance';
@@ -243,9 +260,6 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 
 -- Queens Bibliotheque can be build with other t2 gouv
 DELETE FROM MutuallyExclusiveBuildings WHERE Building='BUILDING_QUEENS_BIBLIOTHEQUE' OR MutuallyExclusiveBuilding='BUILDING_QUEENS_BIBLIOTHEQUE';
-
--- Double diplo favour when recruiting a great people : to 50 from 25 (Online Speed)
-UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_GREATPERSON_FAVOR_MODIFIER' AND Name='Amount';
 
 -- 29/08/2021: +50% Production toward Gov plaza buildings
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
