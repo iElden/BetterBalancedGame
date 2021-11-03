@@ -256,7 +256,14 @@
 			<LuaReplace>ui/replacements/worldrankings_bbg.lua</LuaReplace>
 			</Properties>
 		</ReplaceUIScript>
-		
+
+		<UpdateDatabase id="bbg_preload_db_updated">
+			<Properties>
+				<LoadOrder>11611</LoadOrder>
+			</Properties>
+			<File>sql/_utils.sql</File>
+		</UpdateDatabase>
+
 		<UpdateDatabase id="bbg_base_db_updates">
 			<Properties>
 				<LoadOrder>11612</LoadOrder>
@@ -588,6 +595,7 @@
         <File>lang/german.xml</File>
 		<File>lang/chinese.xml</File>
 		<File>lang/italian.xml</File>
+		<File>sql/_utils.sql</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>

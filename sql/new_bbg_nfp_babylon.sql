@@ -2,19 +2,32 @@
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
 
+-- Eureka to 75% (from 100%)
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
     ('BBG_TRAIT_BABYLON_EUREKA', 'MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST');
-
 INSERT INTO ModifierArguments(ModifierId, Name, Value, Extra) VALUES
-    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '45', '-1');
-
+    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '35', '-1');
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
 INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
     ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
 
--- =====================================
--- ===           CITY STATES         ===
--- =====================================
+-- Science +1% per technology unlocked.
+INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId)
+    SELECT 'BBG_BABYLON_SCIENCE_' || TechnologyType, 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER', 'BBG_UTILS_PLAYER_HAS_' || TechnologyType
+    FROM Technologies;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_BABYLON_SCIENCE_' || TechnologyType, 'YieldType', 'YIELD_SCIENCE'
+    FROM Technologies;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_BABYLON_SCIENCE_' || TechnologyType, 'Amount', '1'
+    FROM Technologies;
+INSERT INTO TraitModifiers(TraitType, ModifierId)
+    SELECT 'TRAIT_CIVILIZATION_BABYLON', 'BBG_BABYLON_SCIENCE_' || TechnologyType
+    FROM Technologies;
+
+--==============================================================
+--******			         CITY-STATES                  ******
+--==============================================================
 
 -- Babylon - Nalanda infinite technology re-suze fix.
 -- Remove the trait modifier from the Nalanda Minor
