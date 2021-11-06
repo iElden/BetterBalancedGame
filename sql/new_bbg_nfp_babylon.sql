@@ -25,6 +25,18 @@ INSERT INTO TraitModifiers(TraitType, ModifierId)
     SELECT 'TRAIT_CIVILIZATION_BABYLON', 'BBG_BABYLON_SCIENCE_' || TechnologyType
     FROM Technologies;
 
+-- Babylon don't get Eureka boost from Free Inquiry
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements(RequirementId, RequirementType) VALUES
+    ('PLAYER_IS_NOT_BABYLON', 'REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT');
+INSERT INTO RequirementArguments(RequirementId, Name, Value) VALUES
+    ('PLAYER_IS_NOT_BABYLON', 'TraitType', 'TRAIT_CIVILIZATION_BABYLON');
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON', 'PLAYER_IS_NOT_BABYLON'),
+    ('PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON', 'REQUIRES_PLAYER_HAS_GOLDEN_AGE');
+UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON' WHERE ModifierId='COMMEMORATION_SCIENTIFIC_GA_BOOSTS';
+
 --==============================================================
 --******			         CITY-STATES                  ******
 --==============================================================
