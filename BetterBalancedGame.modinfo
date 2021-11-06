@@ -199,6 +199,12 @@
                 <Group>Game</Group>
                 <Value>5</Value>
             </ConfigurationValueMatches>
+			<!-- Beta -->
+			<ConfigurationValueMatches>
+                <ConfigurationId>BETA_BAN_TRADE_TREATY</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
         </Criteria>
 	</ActionCriteria>
 
@@ -579,6 +585,14 @@
 				<File>ui/replacements/endgamemenu_bbg.lua</File>
 				<File>ui/replacements/endgamemenu.xml</File>
 		</ImportFiles>
+		<!-- Beta -->
+		<UpdateDatabase id="bbg_db_BETA_BAN_TRADE_TREATY">
+            <Properties>
+                <LoadOrder>21020</LoadOrder>
+            </Properties>
+			<Criteria>BETA_BAN_TRADE_TREATY</Criteria>
+			<File>sql/beta/ban_trade_treaty.sql</File>
+        </UpdateDatabase>
 	</InGameActions>
 
 	<!-- defines file dependencies -->
@@ -677,5 +691,7 @@
 		<File>sql/victories/new_bbg_rv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_2.sql</File>
 		<File>sql/victories/new_bbg_new_domination.sql</File>
+
+		<File>sql/beta/ban_trade_treaty.sql</File>
 	</Files>
 </Mod>
