@@ -1,4 +1,9 @@
 
+-- Portugal only get +50% gold (instead of all yield)
+-- old value: "YIELD_PRODUCTION, YIELD_FOOD, YIELD_SCIENCE, YIELD_CULTURE, YIELD_GOLD, YIELD_FAITH"
+UPDATE ModifierArguments SET Value='YIELD_GOLD' WHERE ModifierId='TRAIT_INTERNATIONAL_TRADE_GAIN_ALL_YIELDS' AND Name='YieldType';
+-- old value: "50, 50, 50, 50, 50, 50"
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_INTERNATIONAL_TRADE_GAIN_ALL_YIELDS' AND Name='Amount';
 
 -- Remove trade route on meet
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_JOAO_III' AND ModifierId='TRAIT_JOAO_TRADE_ROUTE_ON_MEET';
