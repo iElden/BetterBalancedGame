@@ -199,8 +199,8 @@
                 <Group>Game</Group>
                 <Value>5</Value>
             </ConfigurationValueMatches>
-			<!-- Beta -->
 		</Criteria>
+		<!-- Beta -->
 		<Criteria id="BETA_BAN_TRADE_TREATY_SETTING">
 			<ConfigurationValueMatches>
                 <ConfigurationId>BETA_BAN_TRADE_TREATY</ConfigurationId>
