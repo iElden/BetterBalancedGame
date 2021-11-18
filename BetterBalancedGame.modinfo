@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40630">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40640">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4063">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4064">
 	<Properties>
-		<Name>Better Balanced Game 4.6.3</Name>
+		<Name>Better Balanced Game 4.6.4</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4063</Version>
+		<Version>4064</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -198,6 +198,14 @@
                 <ConfigurationId>VictoryMasterSlider</ConfigurationId>
                 <Group>Game</Group>
                 <Value>5</Value>
+            </ConfigurationValueMatches>
+		</Criteria>
+		<!-- Beta -->
+		<Criteria id="BETA_BAN_TRADE_TREATY_SETTING">
+			<ConfigurationValueMatches>
+                <ConfigurationId>BETA_BAN_TRADE_TREATY</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
 	</ActionCriteria>
@@ -574,6 +582,14 @@
 				<File>ui/replacements/endgamemenu_bbg.lua</File>
 				<File>ui/replacements/endgamemenu.xml</File>
 		</ImportFiles>
+		<!-- Beta -->
+		<UpdateDatabase id="bbg_db_BETA_BAN_TRADE_TREATY">
+            <Properties>
+                <LoadOrder>21020</LoadOrder>
+            </Properties>
+			<Criteria>BETA_BAN_TRADE_TREATY_SETTING</Criteria>
+			<File>sql/beta/ban_trade_treaty.sql</File>
+        </UpdateDatabase>
 	</InGameActions>
 
 	<!-- defines file dependencies -->
@@ -671,5 +687,7 @@
 		<File>sql/victories/new_bbg_rv_1.sql</File>
 		<File>sql/victories/new_bbg_rv_2.sql</File>
 		<File>sql/victories/new_bbg_new_domination.sql</File>
+
+		<File>sql/beta/ban_trade_treaty.sql</File>
 	</Files>
 </Mod>

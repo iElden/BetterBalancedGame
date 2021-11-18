@@ -1498,5 +1498,12 @@
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Vietnam which replaces the Encampment. +2 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, does not provide [ICON_GreatPerson] Great People points, and is not a specialty district.[NEWLINE]Trigger a cultural bomb that capture neutral tiles.</Text>
 		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="en_US">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="en_US">
+            <Text>Temporary option :[NEWLINE]Remove the Trade Treaty Resolution from World Congress.[NEWLINE](This Resolution is gonna be edited in BBG 4.7 and this option will be delete)</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>
