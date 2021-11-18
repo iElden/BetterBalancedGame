@@ -200,6 +200,8 @@
                 <Value>5</Value>
             </ConfigurationValueMatches>
 			<!-- Beta -->
+		</Criteria>
+		<Criteria id="BETA_BAN_TRADE_TREATY_SETTING">
 			<ConfigurationValueMatches>
                 <ConfigurationId>BETA_BAN_TRADE_TREATY</ConfigurationId>
                 <Group>Game</Group>
@@ -585,7 +587,7 @@
             <Properties>
                 <LoadOrder>21020</LoadOrder>
             </Properties>
-			<Criteria>BETA_BAN_TRADE_TREATY</Criteria>
+			<Criteria>BETA_BAN_TRADE_TREATY_SETTING</Criteria>
 			<File>sql/beta/ban_trade_treaty.sql</File>
         </UpdateDatabase>
 	</InGameActions>
