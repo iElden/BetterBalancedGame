@@ -25,6 +25,19 @@ UPDATE Districts SET Cost=54 WHERE DistrictType IN ('DISTRICT_CANAL', 'DISTRICT_
 -- Give sewers +1 amenity
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_SEWER';
 
+
+-- Workshop cost less and give more production
+UPDATE Buildings SET Cost=160 WHERE BuildingType='BUILDING_WORKSHOP';
+UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_WORKSHOP' AND YieldType='YIELD_PRODUCTION';
+
+-- Factory
+UPDATE Buildings SET Cost=290 WHERE BuildingType IN ('BUILDING_FACTORY', 'BUILDING_ELECTRONICS_FACTORY');
+-- UPDATE Buildings SET PrereqTech='TECH_MASS_PRODUCTION' WHERE BuildingType='BUILDING_FACTORY';
+
+-- Coal Powerplant
+UPDATE Buildings SET Cost=330 WHERE BuildingType='BUILDING_COAL_POWER_PLANT';
+
+
 -- Commercial hub buildings buff :
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_BANK';
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_STOCK_EXCHANGE';
