@@ -2,11 +2,11 @@
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
 
--- Eureka to 75% (from 100%)
+-- Eureka to 65% (from 100%)
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
     ('BBG_TRAIT_BABYLON_EUREKA', 'MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST');
 INSERT INTO ModifierArguments(ModifierId, Name, Value, Extra) VALUES
-    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '35', '-1');
+    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '25', '-1');
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
 INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
     ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
