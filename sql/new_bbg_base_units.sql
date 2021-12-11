@@ -18,6 +18,8 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 -- Move man at arms to military tactics
 UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
 
+UPDATE Units SET Combat=36 WHERE UnitType='UNIT_SWORDSMAN';
+
 -- Jack the Ripper proposal (31/12/2020) to boost Naval Movement
 -- Base is 3, Resource cost / Maintenance is 1 in GS
 UPDATE Units SET BaseMoves=4 WHERE  UnitType='UNIT_SUBMARINE';
