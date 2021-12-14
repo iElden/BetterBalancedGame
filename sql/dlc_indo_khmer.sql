@@ -23,6 +23,15 @@ UPDATE ModifierArguments SET Value='0.5' WHERE ModifierId='BARAYS_FAITH_POPULATI
 -- 15/05/2021: Khmer get 0.3 Culture per pop in cities with Prasat
 UPDATE ModifierArguments SET Value='0.3' WHERE ModifierId='PRASAT_CULTURE_POPULATION' AND Name='Amount';
 
+--==================
+-- Indonesia
+--==================
+
+INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement) VALUES
+    ('BBG_KampungFaithFishing', 'LOC_BBG_KAMPUNG_FAITH_SEA_RESSOURCES', 'YIELD_FAITH', 1, 1, 'IMPROVEMENT_FISHING_BOATS');
+INSERT INTO Improvement_Adjacencies(ImprovementType, YieldChangeId) VALUES
+    ('IMPROVEMENT_KAMPUNG', 'BBG_KampungFaithFishing');
+
 --==============================================================
 --******				START BIASES					  ******
 --==============================================================
