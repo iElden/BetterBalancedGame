@@ -27,6 +27,9 @@ UPDATE ModifierArguments SET Value='50' WHERE Name='Amount' AND ModifierId IN (
 -- Limes doesn't Obsolete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 
+-- Move infantry card
+UPDATE Policies SET PrereqCivic='CIVIC_MOBILIZATION' WHERE PolicyType='POLICY_MILITARY_FIRST';
+
 -- Nerf Limes +100 -> +50 to production / voted against ? BASE Game
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_TSIKHEPRODUCTION' AND Name='Amount';
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_CASTLEPRODUCTION' AND Name='Amount';
