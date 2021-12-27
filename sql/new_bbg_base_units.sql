@@ -42,6 +42,9 @@ UPDATE Units SET Combat=90 WHERE UnitType='UNIT_MECHANIZED_INFANTRY';
 UPDATE Units SET Combat=140, AntiAirCombat=120 WHERE UnitType='UNIT_GIANT_DEATH_ROBOT';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='GDR_AA_DEFENSE' AND Name='Amount';
 
+--=== RECON UNITS ===--
+-- 1 sight after ranger
+UPDATE Units SET BaseSightRange=3 WHERE UnitType IN ('UNIT_RANGER', 'UNIT_SPEC_OPS');
 
 -- 05/09/2021: Ranged unit don't get support bonus
 INSERT INTO Types(Type, Kind) VALUES
