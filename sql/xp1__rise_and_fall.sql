@@ -142,7 +142,7 @@ UPDATE Units SET RangedCombat=40, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG
 -- Scotland
 --==================
 -- Highlander gets +10 combat strength (defense)
-UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
+UPDATE Units SET Combat=65, RangedCombat=70 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
 -- happy and ecstatic percentages increased
 UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
 UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
