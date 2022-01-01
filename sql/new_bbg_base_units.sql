@@ -43,6 +43,24 @@ UPDATE Units SET Combat=90 WHERE UnitType='UNIT_MECHANIZED_INFANTRY';
 UPDATE Units SET Combat=140, AntiAirCombat=120 WHERE UnitType='UNIT_GIANT_DEATH_ROBOT';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='GDR_AA_DEFENSE' AND Name='Amount';
 
+--=== RECON UNITS ===--
+-- 1 sight after ranger
+UPDATE Units SET BaseSightRange=3 WHERE UnitType IN ('UNIT_RANGER', 'UNIT_SPEC_OPS');
+-- Upgrade ReconUnit strengh
+UPDATE Units SET Combat=25, RangedCombat=35 WHERE UnitType='UNIT_SKIRMISHER'; -- +5/+5
+UPDATE Units SET Combat=55, RangedCombat=65 WHERE UnitType='UNIT_RANGER'; -- +10/+5
+UPDATE Units SET Combat=65, RangedCombat=75 WHERE UnitType='UNIT_SPEC_OPS'; -- +10/+10
+-- Reduce Ambush Strength to 15 (from 20)
+UPDATE ModifierArguments SET Value='15' WHERE ModifierId='AMBUSH_INCREASED_COMBAT_STRENGTH';
+-- Merge SpyGlass and Sentry promotion
+UPDATE UnitPromotionModifiers SET UnitPromotionType='PROMOTION_SENTRY' WHERE ModifierId='SPYGLASS_BONUS_SIGHT';
+-- Create new Promotion : Endurance, +2 PM
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_PROMOTION_ENDURANCE', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_PROMOTION_ENDURANCE', 'Amount', '2');
+INSERT INTO UnitPromotionModifiers(UnitPromotionType, ModifierId) VALUES
+    ('PROMOTION_SPYGLASS', 'BBG_PROMOTION_ENDURANCE');
 
 -- 05/09/2021: Ranged unit don't get support bonus
 INSERT INTO Types(Type, Kind) VALUES
