@@ -7,6 +7,12 @@
 --==================
 --UPDATE UnitAbilityModifiers SET ModifierId='RANGER_IGNORE_FOREST_MOVEMENT_PENALTY' WHERE UnitAbilityType='ABILITY_CREE_OKIHTCITAW';
 
+-- Add Ressource Bias
+INSERT INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_CREE', 'RESOURCE_CATTLE', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_HORSES', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_SHEEP', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_DEER', '4');
 
 --==================
 -- Egypt
@@ -440,20 +446,18 @@ UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE
 --******				START BIASES					  ******
 --==============================================================
 -- UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
+UPDATE StartBiasResources SET Tier=4 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
 -- UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
-INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
-	VALUES
-	('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 4),
-	('CIVILIZATION_GEORGIA' , 'TERRAIN_GRASS_HILLS' , 4);
+INSERT INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_STONE', '4'),
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_MARBLE', '4'),
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_GYPSUM', '4');
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_GRASS_HILLS';
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_PLAINS_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_DESERT_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
-DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_TUNDRA_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType IN ('TERRAIN_DESERT_HILLS', 'TERRAIN_TUNDRA_HILLS');
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN');
 
 
 

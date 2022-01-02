@@ -3,7 +3,7 @@
 
 -- Spain got coastal bias again
 INSERT INTO StartBiasTerrains(CivilizationType, TerrainType, Tier) VALUES
-    ('CIVILIZATION_SPAIN', 'TERRAIN_COAST', 2);
+    ('CIVILIZATION_SPAIN', 'TERRAIN_COAST', 1);
 
 -- Give x2 yield instead of x3
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_INTERCONTINENTAL_INTERNATIONAL_FAITH' AND Name='Amount';

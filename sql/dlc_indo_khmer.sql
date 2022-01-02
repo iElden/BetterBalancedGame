@@ -36,4 +36,4 @@ INSERT INTO Improvement_Adjacencies(ImprovementType, YieldChangeId) VALUES
 --******				START BIASES					  ******
 --==============================================================
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_INDONESIA' AND TerrainType='TERRAIN_COAST';
-UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_KHMER';
+UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_KHMER';

@@ -11,6 +11,8 @@ INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost)
 	VALUES ('UNIT_AMERICAN_ROUGH_RIDER', 10);
 UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_AMERICA' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN');
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_AMERICA' AND TerrainType IN ('TERRAIN_GRASS_MOUNTAIN', 'TERRAIN_PLAINS_MOUNTAIN');
 
 --==================
 -- Arabia
@@ -75,9 +77,6 @@ UPDATE Improvements SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE Improvement
 UPDATE Units SET Combat=70, Cost=360 WHERE UnitType='UNIT_CANADA_MOUNTIE';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_PARK_REQUIREMENT'       AND Name='MaxDistance';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_OWNER_PARK_REQUIREMENT' AND Name='MaxDistance';
-
--- No snow start Bias
-DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType IN ('TERRAIN_SNOW_HILLS', 'TERRAIN_SNOW');
 
 --==================
 -- DIDO
@@ -488,18 +487,17 @@ UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HOLY_WATERS_HEALING_MO
 --******				START BIASES					  ******
 --==============================================================
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_PHOENICIA' AND TerrainType='TERRAIN_COAST';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_SNOW_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_SNOW';
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS';
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT_HILLS';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType IN ('TERRAIN_SNOW_HILLS', 'TERRAIN_SNOW');
+UPDATE StartBiasFeatures SET Tier=2 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS';
+UPDATE StartBiasFeatures SET Tier=2 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND';
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_HUNGARY';
-UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=3 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=3 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN', 'TERRAIN_SNOW_MOUNTAIN');
 
 
 
