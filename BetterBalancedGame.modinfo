@@ -201,14 +201,14 @@
             </ConfigurationValueMatches>
 		</Criteria>
 			<!-- Beta -->
-		<Criteria id="bbg_db_BETA_BAN_TRADE_TREATY">
+		<Criteria id="Criteria_BETA_BAN_TRADE_TREATY">
 			<ConfigurationValueMatches>
                 <ConfigurationId>BETA_BAN_TRADE_TREATY</ConfigurationId>
                 <Group>Game</Group>
                 <Value>1</Value>
             </ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="bbg_db_BETA_MONU_NERF">
+		<Criteria id="Criteria_BETA_MONU_NERF">
 			<ConfigurationValueMatches>
                 <ConfigurationId>BETA_MONU_NERF</ConfigurationId>
                 <Group>Game</Group>
@@ -599,14 +599,14 @@
             <Properties>
                 <LoadOrder>21020</LoadOrder>
             </Properties>
-			<Criteria>BETA_BAN_TRADE_TREATY</Criteria>
+			<Criteria>Criteria_BETA_BAN_TRADE_TREATY</Criteria>
 			<File>sql/beta/ban_trade_treaty.sql</File>
         </UpdateDatabase>
 		<UpdateDatabase id="bbg_db_BETA_MONU_NERF">
             <Properties>
                 <LoadOrder>21020</LoadOrder>
             </Properties>
-			<Criteria>BETA_BAN_TRADE_TREATY</Criteria>
+			<Criteria>Criteria_BETA_MONU_NERF</Criteria>
 			<File>sql/beta/monu_nerf.sql</File>
         </UpdateDatabase>
 	</InGameActions>
