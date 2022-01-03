@@ -12,4 +12,4 @@ UPDATE Parameters SET Visible=0 WHERE Key2 IN ('RULESET_STANDARD', 'RULESET_EXPA
 -- Beta
 INSERT INTO Parameters(ParameterId, Name, Description, Domain, DefaultValue, ConfigurationGroup, ConfigurationId, GroupId, SortIndex) VALUES
     ('BETA_BAN_TRADE_TREATY', 'LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME', 'LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC', 'bool', '1', 'Game', 'BETA_BAN_TRADE_TREATY', 'AdvancedOptions', '20000'),
-    ('BETA_MONU_NERF', 'LOC_BBG_FRONT_BETA_MONU_NERF_NAME', 'LOC_BBG_FRONT_BETA_MONU_NERF_DESC', 'bool', '1', 'Game', 'BETA_MONU_NERF', 'AdvancedOptions', '20010');
+    ('BETA_MONU_NERF', 'LOC_BBG_FRONT_BETA_MONU_NERF_NAME', 'LOC_BBG_FRONT_BETA_MONU_NERF_DESC', 'bool', '0', 'Game', 'BETA_MONU_NERF', 'AdvancedOptions', '20010');
