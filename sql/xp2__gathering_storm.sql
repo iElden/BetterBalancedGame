@@ -729,6 +729,8 @@ UPDATE ModifierArguments SET Value=24 WHERE ModifierId='CARDINAL_CITADEL_OF_GOD_
 
 -- 2021-01-07: Moksha - Moved Faith generation from promote 0 to 2R:
 UPDATE GovernorPromotionModifiers SET GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT';
+-- Up promote to 3 faith since it's later in tree.
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT' AND Name='Amount';
 
 
 -- move Pingala's 100% GPP to first on left ability
