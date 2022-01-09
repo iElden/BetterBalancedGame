@@ -10,7 +10,7 @@
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_FIRST_CIVILIZATION';
 
 -- Start Bias
-INSERT INTO StartBiasFeatures(CivilizationType, TerrainType, Tier) VALUES
+INSERT INTO StartBiasFeatures(CivilizationType, FeatureType, Tier) VALUES
     ('CIVILIZATION_SUMERIA', 'FEATURE_FLOODPLAINS_PLAINS', '4'),
     ('CIVILIZATION_SUMERIA', 'FEATURE_FLOODPLAINS_GRASSLAND', '4');
 
