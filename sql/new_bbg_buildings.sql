@@ -34,6 +34,13 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
 INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES
     ('BUILDING_PAGODA', 'BBG_PAGODA_INFLUENCE');
 
+-- Grandmaster Chapel only faith buy in owned city. (XP1)
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('BBG_CITY_WAS_FOUNDED', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('BBG_CITY_WAS_FOUNDED', 'REQUIRES_CITY_WAS_FOUNDED');
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_CITY_WAS_FOUNDED' WHERE ModifierId LIKE 'GOV_FAITH_PURCHASE_%';
+
 -- Workshop cost less and give more production
 UPDATE Buildings SET Cost=160 WHERE BuildingType='BUILDING_WORKSHOP';
 UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_WORKSHOP' AND YieldType='YIELD_PRODUCTION';
