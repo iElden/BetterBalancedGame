@@ -3,21 +3,23 @@
 --	AUTHOR:  iElden, D. / Jack The Narrator
 --	PURPOSE: Database modifications by new BBG
 ------------------------------------------------------------------------------
---==============================================================================================
---******				P O L I C I E S					  ******
---==============================================================================================
 
+--- === Government ===
 -- Government slot
 UPDATE Government_SlotCounts SET NumSlots=1 WHERE GovernmentType='GOVERNMENT_MERCHANT_REPUBLIC' AND GovernmentSlotType='SLOT_DIPLOMATIC';
 UPDATE Government_SlotCounts SET NumSlots=2 WHERE GovernmentType='GOVERNMENT_MERCHANT_REPUBLIC' AND GovernmentSlotType='SLOT_WILDCARD';
 
--- Existing Policies Adjustments
--- DISICPLINE
+-- === Existing Policies Adjustments ===
 -- Buff Discipline +5 -> +10
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCOMBAT' AND Name='Amount';
 
 -- Bastillon ""bugfix"" (Value is doubled, so put 2*+3 instead of 2*+5)
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BASTIONS_RANGEDSTRIKE' AND Name='Amount';
+
+-- Praeorium give +4 Loyalty (from +2)
+UPDATE ModifierArguments SET Value='4' WHERE ModifierId='PRAETORIUM_GOVERNORIDENTITY' AND Name='Amount';
+-- Communications Office give 2 Loyalty per governor promotion (from +1)
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMUNICATIONS_OFFICE_GOVERNOR_IDENTITY_PER_TITLE' AND Name='Amount';
 
 -- LIMES
 -- Limes to 50%
@@ -36,7 +38,7 @@ UPDATE Policies SET PrereqCivic='CIVIC_MOBILIZATION' WHERE PolicyType='POLICY_MI
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_WALLSPRODUCTION' AND Name='Amount';
 --UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIMES_STARFORTPRODUCTION' AND Name='Amount';
 
--- New Policies
+-- === New Policies ===
 INSERT INTO Types(Type, Kind) VALUES
 	('POLICY_SIEGE', 'KIND_POLICY'),
 	('POLICY_HARD_SHELL_EXPLOSIVES', 'KIND_POLICY'),
