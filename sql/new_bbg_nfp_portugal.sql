@@ -1,4 +1,9 @@
 
+-- Portugal UI (Feitora) nerf
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRADE_GOLD_FROM_FEITORIA' AND Name='Amount';
+
+-- Nau can build only 1 Feitora
+UPDATE Units SET BuildCharges=1 WHERE UnitType='UNIT_PORTUGUESE_NAU';
 
 -- Remove trade route on meet
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_JOAO_III' AND ModifierId='TRAIT_JOAO_TRADE_ROUTE_ON_MEET';
