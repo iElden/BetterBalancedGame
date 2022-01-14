@@ -409,6 +409,8 @@ INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
 INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('BBG_GIVE_SETTLER_MOUVMENT_ABILITY', 'AbilityType', 'BBG_SETTLER_MOUVMENT_ABILITY'),
     ('BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER', 'Amount', '1');
+INSERT INTO GovernorPromotionModifiers(GovernorPromotionType, ModifierId) VALUES
+    ('GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION', 'BBG_GIVE_SETTLER_MOUVMENT_ABILITY');
 -- switch Magnus' level 2 promos
 UPDATE GovernorPromotions SET 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
 UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
