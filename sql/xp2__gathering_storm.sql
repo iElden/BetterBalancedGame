@@ -126,13 +126,10 @@ INSERT INTO TmpEldenEleonore(DistrictType, YieldType) VALUES
 
 -- Create and attach modifier to Eleanor
 INSERT INTO TraitModifiers(TraitType, ModifierId)
-    SELECT 'TRAIT_LEADER_ELEANOR_LOYALTY', 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType
-    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
-INSERT INTO Modifiers(ModifierId, ModifierType)
-    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType, 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'
+    SELECT 'TRAIT_LEADER_ELEANOR_LOYALTY', 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER'
     FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
 INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId, Permanent)
-    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'MODIFIER_SINGLE_CITY_ADJUST_GREATWORK_YIELD', 'BBG_CITY_HAS_' || DistrictType, 1
+    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD', 'BBG_CITY_HAS_' || DistrictType, 1
     FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
 
 -- Create District Requirements
@@ -151,9 +148,6 @@ INSERT INTO RequirementArguments(RequirementId , Name, Value)
 
 -- Set Modifiers Arguments to correct value
 INSERT INTO ModifierArguments(ModifierId, Name, Value)
-    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType, 'ModifierId', 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER'
-    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
-INSERT INTO ModifierArguments(ModifierId, Name, Value)
     SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'GreatWorkObjectType', GreatWorkObjectType
     FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
 INSERT INTO ModifierArguments(ModifierId, Name, Value)
@@ -165,25 +159,18 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value)
 
 -- Fix Anshan bug with Eleanor
 INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
-    ('BBG_PLAYER_DONT_HAVE_ELEANOR_BONUS_ALREADY_APPLIED', 'REQUIREMENTSET_TEST_ANY'),
     ('BBG_PLAYER_IS_NOT_ELEANOR', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
     ('BBG_PLAYER_IS_NOT_ELEANOR', 'BBG_PLAYER_IS_NOT_ELEANOR_ENGLAND_REQUIREMENT'),
-    ('BBG_PLAYER_IS_NOT_ELEANOR', 'BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT'),
-    ('BBG_PLAYER_DONT_HAVE_ELEANOR_BONUS_ALREADY_APPLIED', 'BBG_PLAYER_IS_NOT_ELEANOR_REQUIREMENT'),
-    ('BBG_PLAYER_DONT_HAVE_ELEANOR_BONUS_ALREADY_APPLIED', 'BBG_CITY_DONT_HAVE_CAMPUS_REQUIREMENT');
+    ('BBG_PLAYER_IS_NOT_ELEANOR', 'BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT');
 INSERT INTO Requirements(RequirementId , RequirementType, Inverse) VALUES
     ('BBG_PLAYER_IS_NOT_ELEANOR_ENGLAND_REQUIREMENT', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1),
-    ('BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1),
-    ('BBG_PLAYER_IS_NOT_ELEANOR_REQUIREMENT', 'REQUIREMENT_REQUIREMENTSET_IS_MET', 0),
-    ('BBG_CITY_DONT_HAVE_CAMPUS_REQUIREMENT', 'REQUIREMENT_CITY_HAS_DISTRICT', 1);
+    ('BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1);
 INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
-    ('BBG_PLAYER_IS_NOT_ELEANOR_REQUIREMENT', 'RequirementSetId', 'BBG_PLAYER_IS_NOT_ELEANOR'),
     ('BBG_PLAYER_IS_NOT_ELEANOR_ENGLAND_REQUIREMENT', 'LeaderType', 'LEADER_ELEANOR_ENGLAND'),
-    ('BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT', 'LeaderType', 'LEADER_ELEANOR_FRANCE'),
-    ('BBG_CITY_DONT_HAVE_CAMPUS_REQUIREMENT', 'DistrictType', 'DISTRICT_CAMPUS');
+    ('BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT', 'LeaderType', 'LEADER_ELEANOR_FRANCE');
 
-UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLAYER_DONT_HAVE_ELEANOR_BONUS_ALREADY_APPLIED' WHERE ModifierId IN
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLAYER_IS_NOT_ELEANOR' WHERE ModifierId IN
     ('MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE', 'MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE', 'MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE');
 
 DROP TABLE TmpEldenEleonore;
