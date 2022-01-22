@@ -28,7 +28,9 @@ UPDATE ModifierArguments SET Value='0.3' WHERE ModifierId='PRASAT_CULTURE_POPULA
 --==================
 
 INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement) VALUES
-    ('BBG_KampungFaithFishing', 'LOC_BBG_KAMPUNG_FAITH_SEA_RESSOURCES', 'YIELD_FAITH', 1, 1, 'IMPROVEMENT_FISHING_BOATS');
+    ('BBG_KampungFaithFishing', 'Placeholder', 'YIELD_FAITH', 1, 1, 'IMPROVEMENT_FISHING_BOATS');
+INSERT INTO Improvement_YieldChanges(ImprovementType, YieldType, YieldChange) VALUES
+    ('IMPROVEMENT_KAMPUNG', 'YIELD_FAITH', 0);
 INSERT INTO Improvement_Adjacencies(ImprovementType, YieldChangeId) VALUES
     ('IMPROVEMENT_KAMPUNG', 'BBG_KampungFaithFishing');
 
