@@ -1545,7 +1545,7 @@
 			<Text>Settlers trained in the city do not consume a [ICON_Citizen] Population and get +1 [ICON_Movement] Movement.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="en_US">
-			<Text>Allows city to purchase districts with [ICON_FAITH] Faith. +2 [ICON_Faith] Faith for every specialty district in this city.</Text>
+			<Text>Allows city to purchase districts with [ICON_FAITH] Faith.[NEWLINE]+2 [ICON_Faith] Faith for every specialty district in this city.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="en_US">
 			<Text>Grants the ability to buy land units with [ICON_Faith] Faith in owned city.[NEWLINE]Pillaging Improvements and Districts provides bonus [ICON_Faith] Faith.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
