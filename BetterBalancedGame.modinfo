@@ -602,13 +602,6 @@
 			<Criteria>Criteria_BETA_BAN_TRADE_TREATY</Criteria>
 			<File>sql/beta/ban_trade_treaty.sql</File>
         </UpdateDatabase>
-		<UpdateDatabase id="bbg_db_BETA_MONU_NERF">
-            <Properties>
-                <LoadOrder>21020</LoadOrder>
-            </Properties>
-			<Criteria>Criteria_BETA_MONU_NERF</Criteria>
-			<File>sql/beta/monu_nerf.sql</File>
-        </UpdateDatabase>
 	</InGameActions>
 
 	<!-- defines file dependencies -->
@@ -709,6 +702,5 @@
 		<File>sql/victories/new_bbg_new_domination.sql</File>
 
 		<File>sql/beta/ban_trade_treaty.sql</File>
-		<File>sql/beta/monu_nerf.sql</File>
 	</Files>
 </Mod>
