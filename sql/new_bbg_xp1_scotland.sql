@@ -4,7 +4,10 @@
 UPDATE Improvements SET PrereqCivic='CIVIC_GUILDS' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 
 -- Golfcourse nerf
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='GOLFCOURSE_AMENITY' AND Name='Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='GOLFCOURSE_AMENITIES' AND Name='Amount';
+
+-- Firaxis bugfix: Golf course have 2 modifiers : GOLFCOURSE_AMENITIES and GOLFCOURSE_AMENITY.
+DELETE FROM ImprovementModifiers WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND ModifierId='GOLFCOURSE_AMENITY';
 
 -- Golfcourse +1 amenity if next entertainment complex
 INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId) VALUES

@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be230" version="40640">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be231" version="40710">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4064">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4070">
 	<Properties>
-		<Name>Better Balanced Game 4.6.4</Name>
+		<Name>Better Balanced Game 4.7.0</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4064</Version>
+		<Version>4070</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -200,10 +200,17 @@
                 <Value>5</Value>
             </ConfigurationValueMatches>
 		</Criteria>
-		<!-- Beta -->
-		<Criteria id="BETA_BAN_TRADE_TREATY_SETTING">
+			<!-- Beta -->
+		<Criteria id="Criteria_BETA_BAN_TRADE_TREATY">
 			<ConfigurationValueMatches>
                 <ConfigurationId>BETA_BAN_TRADE_TREATY</ConfigurationId>
+                <Group>Game</Group>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="Criteria_BETA_MONU_NERF">
+			<ConfigurationValueMatches>
+                <ConfigurationId>BETA_MONU_NERF</ConfigurationId>
                 <Group>Game</Group>
                 <Value>1</Value>
             </ConfigurationValueMatches>
@@ -264,7 +271,14 @@
 			<LuaReplace>ui/replacements/worldrankings_bbg.lua</LuaReplace>
 			</Properties>
 		</ReplaceUIScript>
-		
+
+		<UpdateDatabase id="bbg_preload_db_updated">
+			<Properties>
+				<LoadOrder>11611</LoadOrder>
+			</Properties>
+			<File>sql/_utils.sql</File>
+		</UpdateDatabase>
+
 		<UpdateDatabase id="bbg_base_db_updates">
 			<Properties>
 				<LoadOrder>11612</LoadOrder>
@@ -287,8 +301,6 @@
 			<File>sql/new_bbg_brazil.sql</File>
 			<File>sql/new_bbg_gorgo.sql</File>
 			<File>sql/new_bbg_china.sql</File>
-
-			<File>sql/victories/new_bbg_new_domination.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
@@ -587,7 +599,7 @@
             <Properties>
                 <LoadOrder>21020</LoadOrder>
             </Properties>
-			<Criteria>BETA_BAN_TRADE_TREATY_SETTING</Criteria>
+			<Criteria>Criteria_BETA_BAN_TRADE_TREATY</Criteria>
 			<File>sql/beta/ban_trade_treaty.sql</File>
         </UpdateDatabase>
 	</InGameActions>
@@ -606,6 +618,7 @@
         <File>lang/german.xml</File>
 		<File>lang/chinese.xml</File>
 		<File>lang/italian.xml</File>
+		<File>sql/_utils.sql</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>

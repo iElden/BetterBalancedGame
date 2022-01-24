@@ -11,6 +11,8 @@ INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost)
 	VALUES ('UNIT_AMERICAN_ROUGH_RIDER', 10);
 UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_AMERICA' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN');
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_AMERICA' AND TerrainType IN ('TERRAIN_GRASS_MOUNTAIN', 'TERRAIN_PLAINS_MOUNTAIN');
 
 --==================
 -- Arabia
@@ -76,9 +78,6 @@ UPDATE Units SET Combat=70, Cost=360 WHERE UnitType='UNIT_CANADA_MOUNTIE';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_PARK_REQUIREMENT'       AND Name='MaxDistance';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_OWNER_PARK_REQUIREMENT' AND Name='MaxDistance';
 
--- No snow start Bias
-DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType IN ('TERRAIN_SNOW_HILLS', 'TERRAIN_SNOW');
-
 --==================
 -- DIDO
 --==================
@@ -107,17 +106,74 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 --==========
 -- ELEANOR
 --==========
-INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
-	VALUES
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
 	('TRAIT_LEADER_ELEANOR_LOYALTY', 'THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD');
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId, OwnerRequirementSetId)
-	VALUES
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId, OwnerRequirementSetId) VALUES
 	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION', NULL, NULL);
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD', 'DistrictType', 'DISTRICT_THEATER'),
-	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD', 'Amount', '100'                     );
+	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD', 'Amount', '100');
 
+CREATE TABLE TmpEldenEleonore(DistrictType PRIMARY KEY NOT NULL, YieldType NOT NULL);
+INSERT INTO TmpEldenEleonore(DistrictType, YieldType) VALUES
+    ('DISTRICT_NEIGHBORHOOD', 'YIELD_FOOD'),
+    ('DISTRICT_INDUSTRIAL_ZONE', 'YIELD_PRODUCTION'),
+    ('DISTRICT_COMMERCIAL_HUB', 'YIELD_GOLD'),
+    ('DISTRICT_HARBOR', 'YIELD_GOLD'),
+    ('DISTRICT_CAMPUS', 'YIELD_SCIENCE'),
+    ('DISTRICT_THEATER', 'YIELD_CULTURE'),
+    ('DISTRICT_HOLY_SITE', 'YIELD_FAITH');
+
+-- Create and attach modifier to Eleanor
+INSERT INTO TraitModifiers(TraitType, ModifierId)
+    SELECT 'TRAIT_LEADER_ELEANOR_LOYALTY', 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER'
+    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId, Permanent)
+    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD', 'BBG_CITY_HAS_' || DistrictType, 1
+    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
+
+-- Create District Requirements
+INSERT INTO RequirementSets(RequirementSetId , RequirementSetType)
+    SELECT 'BBG_CITY_HAS_' || DistrictType, 'REQUIREMENTSET_TEST_ALL'
+    FROM TmpEldenEleonore;
+INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId)
+    SELECT 'BBG_CITY_HAS_' || DistrictType, 'BBG_CITY_HAS_' || DistrictType || '_REQUIREMENT'
+    FROM TmpEldenEleonore;
+INSERT INTO Requirements(RequirementId , RequirementType)
+    SELECT 'BBG_CITY_HAS_' || DistrictType || '_REQUIREMENT', 'REQUIREMENT_CITY_HAS_DISTRICT'
+    FROM TmpEldenEleonore;
+INSERT INTO RequirementArguments(RequirementId , Name, Value)
+    SELECT 'BBG_CITY_HAS_' || DistrictType || '_REQUIREMENT', 'DistrictType', DistrictType
+    FROM TmpEldenEleonore;
+
+-- Set Modifiers Arguments to correct value
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'GreatWorkObjectType', GreatWorkObjectType
+    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'YieldType', YieldType
+    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_ELEONORE_' || GreatWorkObjectTypes.GreatWorkObjectType || '_' || DistrictType || '_MODIFIER', 'YieldChange', '2'
+    FROM TmpEldenEleonore CROSS JOIN GreatWorkObjectTypes;
+
+-- Fix Anshan bug with Eleanor
+INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
+    ('BBG_PLAYER_IS_NOT_ELEANOR', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
+    ('BBG_PLAYER_IS_NOT_ELEANOR', 'BBG_PLAYER_IS_NOT_ELEANOR_ENGLAND_REQUIREMENT'),
+    ('BBG_PLAYER_IS_NOT_ELEANOR', 'BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT');
+INSERT INTO Requirements(RequirementId , RequirementType, Inverse) VALUES
+    ('BBG_PLAYER_IS_NOT_ELEANOR_ENGLAND_REQUIREMENT', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1),
+    ('BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1);
+INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
+    ('BBG_PLAYER_IS_NOT_ELEANOR_ENGLAND_REQUIREMENT', 'LeaderType', 'LEADER_ELEANOR_ENGLAND'),
+    ('BBG_PLAYER_IS_NOT_ELEANOR_FRANCE_REQUIREMENT', 'LeaderType', 'LEADER_ELEANOR_FRANCE');
+
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLAYER_IS_NOT_ELEANOR' WHERE ModifierId IN
+    ('MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE', 'MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE', 'MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE');
+
+DROP TABLE TmpEldenEleonore;
 
 --==========
 -- FRANCE
@@ -144,7 +200,7 @@ UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 --==========
 -- Inca
 --==========
-UPDATE Units SET RangedCombat=30 WHERE UnitType='UNIT_INCA_WARAKAQ';
+UPDATE Units SET Combat=25, RangedCombat=40 WHERE UnitType='UNIT_INCA_WARAKAQ';
 
 -- 24/05/2021: Change era from game to personal.
 UPDATE Requirements SET RequirementType='REQUIREMENT_PLAYER_ERA_AT_LEAST' WHERE RequirementId='REQUIRES_ERA_ATLEASTEXPANSION_INDUSTRIAL';
@@ -197,10 +253,28 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
 --==================
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_KUPES_VOYAGE' AND ModifierId='BUILDER_PRESETTLEMENT';
 UPDATE Modifiers SET SubjectRequirementSetId='UNIT_IS_DOMAIN_LAND' WHERE ModifierId='TRAIT_MAORI_MANA_OCEAN';
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 	('VARU_ADJACENT_AT_WAR_REQUIREMENTS', 'REQUIRES_UNIT_IS_DOMAIN_LAND');
 -- UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 
+-- Delay bonus production
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('BBG_PLOT_HAS_FOREST_EARLY_EMPIRE', 'REQUIREMENTSET_TEST_ALL'),
+    ('BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('BBG_PLOT_HAS_FOREST_EARLY_EMPIRE', 'BBG_PLAYER_HAS_EARLY_EMPIRE_REQUIREMENT'),
+    ('BBG_PLOT_HAS_FOREST_EARLY_EMPIRE', 'PLOT_IS_FOREST_REQUIREMENT'),
+    ('BBG_PLOT_HAS_FOREST_EARLY_EMPIRE', 'REQUIRES_PLOT_HAS_NO_IMPROVEMENT'),
+    ('BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE', 'BBG_PLAYER_HAS_EARLY_EMPIRE_REQUIREMENT'),
+    ('BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE', 'PLOT_IS_JUNGLE_REQUIREMENT'),
+    ('BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE', 'REQUIRES_PLOT_HAS_NO_IMPROVEMENT');
+INSERT INTO Requirements(RequirementId, RequirementType) VALUES
+    ('BBG_PLAYER_HAS_EARLY_EMPIRE_REQUIREMENT', 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments(RequirementId, Name, Value) VALUES
+    ('BBG_PLAYER_HAS_EARLY_EMPIRE_REQUIREMENT', 'CivicType', 'CIVIC_EARLY_EMPIRE');
+
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLOT_HAS_FOREST_EARLY_EMPIRE' WHERE ModifierId='TRAIT_MAORI_PRODUCTION_WOODS';
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE' WHERE ModifierId='TRAIT_MAORI_PRODUCTION_RAINFOREST';
 
 
 --==================
@@ -362,10 +436,6 @@ INSERT OR IGNORE INTO RequirementSetRequirements
     VALUES
     ('PLOT_HAS_REEDS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_FLOODPLAINS_GRASSLAND'),
     ('PLOT_HAS_REEDS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_FLOODPLAINS_PLAINS');
--- more faith for fire goddess and no district dmg from eruptions
-UPDATE ModifierArguments SET Value='4' WHERE ModifierId='GODDESS_OF_FIRE_FEATURES_FAITH_MODIFIER' AND Name='Amount';
-
-
 
 --==============================================================
 --******				 RELIGIOUS						  ******
@@ -427,18 +497,17 @@ UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HOLY_WATERS_HEALING_MO
 --******				START BIASES					  ******
 --==============================================================
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_PHOENICIA' AND TerrainType='TERRAIN_COAST';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_SNOW_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_SNOW';
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS';
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT_HILLS';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_MALI' AND TerrainType='TERRAIN_DESERT';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType='TERRAIN_TUNDRA';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_CANADA' AND TerrainType IN ('TERRAIN_SNOW_HILLS', 'TERRAIN_SNOW');
+UPDATE StartBiasFeatures SET Tier=2 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS';
+UPDATE StartBiasFeatures SET Tier=2 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND';
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_HUNGARY';
-UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=3 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=3 WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_INCA' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN', 'TERRAIN_SNOW_MOUNTAIN');
 
 
 
@@ -565,20 +634,6 @@ INSERT OR IGNORE INTO PolicyModifiers (PolicyType, ModifierId)
 	('POLICY_RETINUES', 'PROFESSIONAL_ARMY_RESOURCE_DISCOUNT_CPLMOD'),
 	('POLICY_FORCE_MODERNIZATION', 'PROFESSIONAL_ARMY_RESOURCE_DISCOUNT_CPLMOD');
 -- get +1 resource when revealed (niter and above only)
-INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
-	VALUES
-	('PLAYER_CAN_SEE_NITER_CPLMOD', 	'REQUIREMENTSET_TEST_ALL'),
-	('PLAYER_CAN_SEE_COAL_CPLMOD', 	'REQUIREMENTSET_TEST_ALL'),
-	('PLAYER_CAN_SEE_ALUMINUM_CPLMOD', 	'REQUIREMENTSET_TEST_ALL'),
-	('PLAYER_CAN_SEE_OIL_CPLMOD', 	'REQUIREMENTSET_TEST_ALL'),
-	('PLAYER_CAN_SEE_URANIUM_CPLMOD', 	'REQUIREMENTSET_TEST_ALL');
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
-	VALUES
-	('PLAYER_CAN_SEE_NITER_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_NITER'),
-	('PLAYER_CAN_SEE_COAL_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_COAL'),
-	('PLAYER_CAN_SEE_ALUMINUM_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_ALUMINUM'),
-	('PLAYER_CAN_SEE_OIL_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_OIL'),
-	('PLAYER_CAN_SEE_URANIUM_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_URANIUM');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES
 	('NITER_BASE_AMOUNT_MODIFIER', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_NITER_CPLMOD'),
@@ -668,6 +723,11 @@ UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_
 -- Related to https://github.com/iElden/BetterBalancedGame/issues/48
 UPDATE ModifierArguments SET Value=24 WHERE ModifierId='CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS' AND Name='BuildingProductionPercent';
 
+-- 2021-01-07: Moksha - Moved Faith generation from promote 0 to 2R:
+UPDATE GovernorPromotionModifiers SET GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT';
+-- Up promote to 3 faith since it's later in tree.
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT' AND Name='Amount';
+
 
 -- move Pingala's 100% GPP to first on left ability
 UPDATE GovernorPromotions SET Level=1, 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_GRANTS';
@@ -725,14 +785,6 @@ INSERT OR IGNORE INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGov
 
 -- Amani's changed 1st right ability
 DELETE FROM GovernorPromotionModifiers WHERE GovernorPromotionType='GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE';
-INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
-	VALUES
-	('PLAYER_CAN_SEE_HORSES_CPLMOD', 	'REQUIREMENTSET_TEST_ALL'),
-	('PLAYER_CAN_SEE_IRON_CPLMOD', 	'REQUIREMENTSET_TEST_ALL');
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
-	VALUES
-	('PLAYER_CAN_SEE_HORSES_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_HORSES'),
-	('PLAYER_CAN_SEE_IRON_CPLMOD', 'REQUIRES_PLAYER_CAN_SEE_IRON');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES
 	('HORSES_BASE_AMOUNT_MODIFIER', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_HORSES_CPLMOD'),

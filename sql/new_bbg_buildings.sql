@@ -25,6 +25,34 @@ UPDATE Districts SET Cost=54 WHERE DistrictType IN ('DISTRICT_CANAL', 'DISTRICT_
 -- Give sewers +1 amenity
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_SEWER';
 
+-- Pagoda: 1 Influance instead of 1 diplo favour
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PAGODA' AND ModifierId='PAGODA_ADJUST_FAVOR';
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_PAGODA_INFLUENCE', 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_PAGODA_INFLUENCE', 'Amount', '1');
+INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES
+    ('BUILDING_PAGODA', 'BBG_PAGODA_INFLUENCE');
+
+-- Grandmaster Chapel only faith buy in owned city. (XP1)
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('BBG_CITY_WAS_FOUNDED', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('BBG_CITY_WAS_FOUNDED', 'REQUIRES_CITY_WAS_FOUNDED');
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_CITY_WAS_FOUNDED' WHERE ModifierId LIKE 'GOV_FAITH_PURCHASE_%';
+
+-- Workshop cost less and give more production
+UPDATE Buildings SET Cost=160 WHERE BuildingType='BUILDING_WORKSHOP';
+UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_WORKSHOP' AND YieldType='YIELD_PRODUCTION';
+
+-- Factory
+UPDATE Buildings SET Cost=290 WHERE BuildingType IN ('BUILDING_FACTORY', 'BUILDING_ELECTRONICS_FACTORY');
+-- UPDATE Buildings SET PrereqTech='TECH_MASS_PRODUCTION' WHERE BuildingType='BUILDING_FACTORY';
+
+-- Coal Powerplant
+UPDATE Buildings SET Cost=330 WHERE BuildingType='BUILDING_COAL_POWER_PLANT';
+
+
 -- Commercial hub buildings buff :
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_BANK';
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_STOCK_EXCHANGE';

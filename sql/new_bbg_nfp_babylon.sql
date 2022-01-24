@@ -2,23 +2,44 @@
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
 
+-- Eureka to 65% (from 100%)
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
     ('BBG_TRAIT_BABYLON_EUREKA', 'MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST');
-
 INSERT INTO ModifierArguments(ModifierId, Name, Value, Extra) VALUES
-    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '45', '-1');
-
+    ('BBG_TRAIT_BABYLON_EUREKA', 'Amount', '25', '-1');
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
 INSERT INTO TraitModifiers(TraitType, ModifierID) VALUES
     ('TRAIT_CIVILIZATION_BABYLON', 'BBG_TRAIT_BABYLON_EUREKA');
 
--- Beta 6/3/21 Now Handled by lua Free tech if you have the prerequisite and not gained from the team
--- Live build 4.4 Don't include Babylon change
--- DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_BABYLON' AND ModifierID='TRAIT_EUREKA_INCREASE';
+-- Science +1% per technology unlocked.
+INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId)
+    SELECT 'BBG_BABYLON_SCIENCE_' || TechnologyType, 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER', 'BBG_UTILS_PLAYER_HAS_' || TechnologyType
+    FROM Technologies;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_BABYLON_SCIENCE_' || TechnologyType, 'YieldType', 'YIELD_SCIENCE'
+    FROM Technologies;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_BABYLON_SCIENCE_' || TechnologyType, 'Amount', '1'
+    FROM Technologies;
+INSERT INTO TraitModifiers(TraitType, ModifierId)
+    SELECT 'TRAIT_CIVILIZATION_BABYLON', 'BBG_BABYLON_SCIENCE_' || TechnologyType
+    FROM Technologies;
 
--- Beta 6/3/21 Move decrease to District not the entire yield output
--- UPDATE Modifiers SET ModifierType = 'MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER' WHERE ModifierId = 'TRAIT_SCIENCE_DECREASE';
+-- Babylon don't get Eureka boost from Free Inquiry
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements(RequirementId, RequirementType) VALUES
+    ('PLAYER_IS_NOT_BABYLON', 'REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT');
+INSERT INTO RequirementArguments(RequirementId, Name, Value) VALUES
+    ('PLAYER_IS_NOT_BABYLON', 'TraitType', 'TRAIT_CIVILIZATION_BABYLON');
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON', 'PLAYER_IS_NOT_BABYLON'),
+    ('PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON', 'REQUIRES_PLAYER_HAS_GOLDEN_AGE');
+UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_GOLDEN_AGE_AND_NOT_BABYLON' WHERE ModifierId='COMMEMORATION_SCIENTIFIC_GA_BOOSTS';
 
+--==============================================================
+--******			         CITY-STATES                  ******
+--==============================================================
 
 -- Babylon - Nalanda infinite technology re-suze fix.
 -- Remove the trait modifier from the Nalanda Minor

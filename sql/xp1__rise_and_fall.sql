@@ -7,6 +7,12 @@
 --==================
 --UPDATE UnitAbilityModifiers SET ModifierId='RANGER_IGNORE_FOREST_MOVEMENT_PENALTY' WHERE UnitAbilityType='ABILITY_CREE_OKIHTCITAW';
 
+-- Add Ressource Bias
+INSERT INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_CREE', 'RESOURCE_CATTLE', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_HORSES', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_SHEEP', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_DEER', '4');
 
 --==================
 -- Egypt
@@ -142,12 +148,7 @@ UPDATE Units SET RangedCombat=40, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG
 -- Scotland
 --==================
 -- Highlander gets +10 combat strength (defense)
-UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
--- happy and ecstatic percentages increased
-UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
+UPDATE Units SET Combat=65, RangedCombat=70 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
 -- Golf Course moved to Games and Recreation
 -- UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 -- Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center
@@ -385,20 +386,31 @@ INSERT OR IGNORE INTO ModifierArguments
 -- Victor combat bonus reduced to +3
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='GARRISON_COMMANDER_ADJUST_CITY_COMBAT_BONUS' AND Name='Amount';
 -- Magnus' Surplus Logistics gives +2 production in addition to the food
-INSERT OR IGNORE INTO Modifiers
-	(ModifierId , ModifierType)
-	VALUES
-	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD' , 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
-INSERT OR IGNORE INTO ModifierArguments
-	(ModifierId , Name , Value)
-	VALUES
+INSERT OR IGNORE INTO Modifiers(ModifierId, ModifierType) VALUES
+	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
+INSERT OR IGNORE INTO ModifierArguments(ModifierId, Name, Value) VALUES
 	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'Amount', '2'),
 	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'Domestic', '1'),
 	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'YieldType', 'YIELD_PRODUCTION');
-INSERT OR IGNORE INTO GovernorPromotionModifiers
-	(GovernorPromotionType, ModifierId)
-	VALUES
+INSERT OR IGNORE INTO GovernorPromotionModifiers(GovernorPromotionType, ModifierId) VALUES
 	('GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS', 'SURPLUS_LOGISTICS_TRADE_ROUTE_PROD');
+-- Magnus provision give 1 PM to Settler.
+INSERT INTO Types(Type, Kind) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'KIND_ABILITY');
+INSERT INTO TypeTags(Type, Tag) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'CLASS_SETTLER');
+INSERT INTO UnitAbilities(UnitAbilityType, Name, Description, Inactive) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'BBG_SETTLER_MOUVMENT_ABILITY_NAME', 'BBG_SETTLER_MOUVMENT_ABILITY_DESC', 1);
+INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER');
+INSERT INTO Modifiers(ModifierId, ModifierType, Permanent) VALUES
+    ('BBG_GIVE_SETTLER_MOUVMENT_ABILITY', 'MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS', 0),
+    ('BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT', 1);
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_GIVE_SETTLER_MOUVMENT_ABILITY', 'AbilityType', 'BBG_SETTLER_MOUVMENT_ABILITY'),
+    ('BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER', 'Amount', '1');
+INSERT INTO GovernorPromotionModifiers(GovernorPromotionType, ModifierId) VALUES
+    ('GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION', 'BBG_GIVE_SETTLER_MOUVMENT_ABILITY');
 -- switch Magnus' level 2 promos
 UPDATE GovernorPromotions SET 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
 UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
@@ -440,20 +452,18 @@ UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE
 --******				START BIASES					  ******
 --==============================================================
 -- UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
+UPDATE StartBiasResources SET Tier=4 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
 -- UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
-INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
-	VALUES
-	('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 4),
-	('CIVILIZATION_GEORGIA' , 'TERRAIN_GRASS_HILLS' , 4);
+INSERT INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_STONE', '4'),
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_MARBLE', '4'),
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_GYPSUM', '4');
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_GRASS_HILLS';
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_PLAINS_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_DESERT_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
-DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_TUNDRA_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType IN ('TERRAIN_DESERT_HILLS', 'TERRAIN_TUNDRA_HILLS');
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN');
 
 
 

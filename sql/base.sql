@@ -113,13 +113,18 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 UPDATE Units SET Combat=53 WHERE UnitType='UNIT_ARABIAN_MAMLUK';
 -- 18/05/2021: Madrasa cost to 175
 -- UPDATE Buildings SET Cost=175 WHERE BuildingType='BUILDING_MADRASA';
--- Holy site and Campus got standard adjacency for district
-INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_HOLYSITE_ADJACENCYFAITH'),
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_ADJACENT_DISTRICTS_CAMPUS_ADJACENCYSCIENCE');
-INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId) VALUES
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'District_Science'),
-    ('TRAIT_CIVILIZATION_LAST_PROPHET', 'District_Faith');
+
+-- Campus and Holy Site +1 if adjacant to each other
+INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
+    ('BBG_Campus_Arabia_HS', 'BBG_LOC_CAMPUS_ARABIA_HS', 'YIELD_SCIENCE', 1, 'DISTRICT_HOLY_SITE'),
+    ('BBG_HS_Arabia_Campus', 'BBG_LOC_HS_ARABIA_CAMPUS', 'YIELD_FAITH', 1, 'DISTRICT_CAMPUS');
+INSERT INTO District_Adjacencies(DistrictType, YieldChangeId) VALUES
+    ('DISTRICT_CAMPUS', 'BBG_Campus_Arabia_HS'),
+    ('DISTRICT_HOLY_SITE', 'BBG_HS_Arabia_Campus');
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
+    SELECT TraitType, 'BBG_Campus_Arabia_HS' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
+    SELECT TraitType, 'BBG_HS_Arabia_Campus' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
 
 --==================
 -- China
@@ -296,6 +301,8 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
     VALUES ('PLAYER_HAS_GUILDS_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_GUILDS');
 UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WHERE ModifierId='TRAIT_EXTRA_DISTRICT_EACH_CITY';
 
+-- Update Start Bias
+UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_GERMANY';
 
 --==================
 -- Greece
@@ -458,6 +465,8 @@ UPDATE ModifierArguments SET Value='4' WHERE Name='YieldChange' AND ModifierId I
 --==================
 -- Norway
 --==================
+-- Can only heal on coast tile
+UPDATE Modifiers SET SubjectRequirementSetId='LONGSHIP_PLOT_IS_COAST' WHERE ModifierId='MELEE_SHIP_HEAL_NEUTRAL';
 -- Berserker
 UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
@@ -534,18 +543,13 @@ INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'              );
---	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'              );
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null);
---	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null)
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'Amount'       , '50'                 , null , null);
---	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
---	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'Amount'       , '50'                 , null , null);
-
 
 --==================
 -- Rome
@@ -699,11 +703,11 @@ INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSe
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value) VALUES
-('RIVER_GODDESS_HOLY_SITE_FAITH_BBG', 'ModifierId', 'RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG'),
-('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'Amount' , '2'),
-('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'DistrictType' , 'DISTRICT_HOLY_SITE'),
-('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'YieldType' , 'YIELD_FAITH'),
-('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'Description' , 'LOC_DISTRICT_HOLY_SITE_RIVER_FAITH');
+    ('RIVER_GODDESS_HOLY_SITE_FAITH_BBG', 'ModifierId', 'RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG'),
+    ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'Amount' , '1'),
+    ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'DistrictType' , 'DISTRICT_HOLY_SITE'),
+    ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'YieldType' , 'YIELD_FAITH'),
+    ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'Description' , 'LOC_DISTRICT_HOLY_SITE_RIVER_FAITH');
 INSERT OR IGNORE INTO BeliefModifiers VALUES
 	('BELIEF_RIVER_GODDESS', 'RIVER_GODDESS_HOLY_SITE_FAITH_BBG');
 -- city patron buff
@@ -976,14 +980,12 @@ UPDATE ScoringLineItems SET Multiplier=1 WHERE LineItemType='LINE_ITEM_ERA_CONVE
 -- t1 take up essential coastal spots first
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_ENGLAND' AND TerrainType='TERRAIN_COAST';
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_NORWAY' AND TerrainType='TERRAIN_COAST';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_JAPAN' AND TerrainType='TERRAIN_COAST';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
+UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA';
 -- t2 must haves
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_JAPAN' AND TerrainType='TERRAIN_COAST';
-
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA';
+UPDATE StartBiasFeatures SET Tier=2 WHERE CivilizationType='CIVILIZATION_BRAZIL' AND FeatureType='FEATURE_JUNGLE';
 -- t3 identities
-UPDATE StartBiasFeatures SET Tier=3 WHERE CivilizationType='CIVILIZATION_BRAZIL' AND FeatureType='FEATURE_JUNGLE';
-UPDATE StartBiasFeatures SET Tier=3 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_SCYTHIA' AND ResourceType='RESOURCE_HORSES';
 -- t4 river mechanics
 --UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_SUMERIA';
@@ -994,14 +996,14 @@ UPDATE StartBiasFeatures SET Tier=3 WHERE CivilizationType='CIVILIZATION_KONGO' 
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_GRASS_HILLS';
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_PLAINS_HILLS';
 -- t4 resource mechanics
-INSERT OR IGNORE INTO StartBiasResources (CivilizationType , ResourceType , Tier)
-	VALUES
+INSERT OR IGNORE INTO StartBiasResources (CivilizationType , ResourceType , Tier) VALUES
 	('CIVILIZATION_SCYTHIA' , 'RESOURCE_SHEEP'  , 4),
 	('CIVILIZATION_SCYTHIA' , 'RESOURCE_CATTLE' , 4);
 -- t5 last resorts
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_DESERT_HILLS';
 UPDATE StartBiasFeatures SET Tier=5 WHERE CivilizationType='CIVILIZATION_KONGO' AND FeatureType='FEATURE_FOREST';
+UPDATE StartBiasFeatures SET Tier=5 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS';
+-- Delete bad bias
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType IN ('TERRAIN_TUNDRA_HILLS', 'TERRAIN_DESERT_HILLS');
 
 
 --==============================================================
@@ -1432,6 +1434,9 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAI
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType='DISTRICT_ROYAL_NAVY_DOCKYARD';
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType='DISTRICT_THEATER';
 
+-- Free amenity on new city
+UPDATE GlobalParameters SET Value=1 WHERE Name='CITY_AMENITIES_FOR_FREE';
+UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_PALACE';
 
 --****		REQUIREMENTS		****--
 INSERT OR IGNORE INTO Requirements

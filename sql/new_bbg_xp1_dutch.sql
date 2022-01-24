@@ -19,5 +19,5 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
 INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
     ('TRAIT_RADIO_ORANJE', 'BBG_CULTURE_TO_INTERNATIONAL_TRADE_ROUTES');
 
-UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
+UPDATE StartBiasRivers SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
+UPDATE StartBiasTerrains SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';

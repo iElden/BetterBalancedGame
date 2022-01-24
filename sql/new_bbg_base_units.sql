@@ -15,8 +15,9 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 	('GRAPE_SHOT_REQUIREMENTS',	'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
 
--- Move man at arms to military tactics
-UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
+-- Melee changes
+UPDATE Units SET Combat=46, PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
+UPDATE Units SET Combat=36 WHERE UnitType='UNIT_SWORDSMAN';
 
 -- Jack the Ripper proposal (31/12/2020) to boost Naval Movement
 -- Base is 3, Resource cost / Maintenance is 1 in GS
@@ -42,11 +43,28 @@ UPDATE Units SET Combat=90 WHERE UnitType='UNIT_MECHANIZED_INFANTRY';
 UPDATE Units SET Combat=140, AntiAirCombat=120 WHERE UnitType='UNIT_GIANT_DEATH_ROBOT';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='GDR_AA_DEFENSE' AND Name='Amount';
 
+--=== RECON UNITS ===--
+-- 1 sight after ranger
+UPDATE Units SET BaseSightRange=3 WHERE UnitType IN ('UNIT_RANGER', 'UNIT_SPEC_OPS');
+-- Upgrade ReconUnit strengh
+UPDATE Units SET Combat=25, RangedCombat=35 WHERE UnitType='UNIT_SKIRMISHER'; -- +5/+5
+UPDATE Units SET Combat=55, RangedCombat=65 WHERE UnitType='UNIT_RANGER'; -- +10/+5
+UPDATE Units SET Combat=65, RangedCombat=75 WHERE UnitType='UNIT_SPEC_OPS'; -- +10/+10
+-- Reduce Ambush Strength to 15 (from 20)
+UPDATE ModifierArguments SET Value='15' WHERE ModifierId='AMBUSH_INCREASED_COMBAT_STRENGTH';
+-- Merge SpyGlass and Sentry promotion
+UPDATE UnitPromotionModifiers SET UnitPromotionType='PROMOTION_SENTRY' WHERE ModifierId='SPYGLASS_BONUS_SIGHT';
+-- Create new Promotion : Endurance, +2 PM
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_PROMOTION_ENDURANCE', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_PROMOTION_ENDURANCE', 'Amount', '2');
+INSERT INTO UnitPromotionModifiers(UnitPromotionType, ModifierId) VALUES
+    ('PROMOTION_SPYGLASS', 'BBG_PROMOTION_ENDURANCE');
 
 -- 05/09/2021: Ranged unit don't get support bonus
 INSERT INTO Types(Type, Kind) VALUES
     ('BBG_ABILITY_NO_SUPPORT_BONUS', 'KIND_ABILITY');
-
 INSERT INTO TypeTags(Type, Tag) VALUES
     ('BBG_ABILITY_NO_SUPPORT_BONUS', 'CLASS_NAVAL_RAIDER'),
     ('BBG_ABILITY_NO_SUPPORT_BONUS', 'CLASS_NAVAL_RANGED'),
@@ -56,12 +74,9 @@ INSERT INTO TypeTags(Type, Tag) VALUES
 
 INSERT INTO UnitAbilities(UnitAbilityType, Name, Description) VALUES
     ('BBG_ABILITY_NO_SUPPORT_BONUS', 'LOC_BBG_ABILITY_NO_SUPPORT_BONUS_NAME', 'LOC_BBG_ABILITY_NO_SUPPORT_BONUS_DESC');
-
 INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId) VALUES
     ('BBG_ABILITY_NO_SUPPORT_BONUS', 'BBG_NO_SUPPORT_BONUS_MODIFIER');
-
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
     ('BBG_NO_SUPPORT_BONUS_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_SUPPORT_BONUS_MODIFIER');
-
 INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('BBG_NO_SUPPORT_BONUS_MODIFIER', 'Percent', '-100');
