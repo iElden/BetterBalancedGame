@@ -1214,5 +1214,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="pl_PL">
 			<Text>[COLOR_RED]TO_TRANSLATE: All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
 		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="pl_PL">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>

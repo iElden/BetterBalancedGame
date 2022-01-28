@@ -16,9 +16,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Получает дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] очко перемещения. +5 [ICON_Faith] веры и +1 [ICON_Favor] очко мирового влияния в ход за каждую известную цивилизацию, включая Индию, которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ru_RU">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ru_RU">
 			<Text>50% скидка в [ICON_GOLD] золоте на покупку районов и зданий в городе.</Text>
-		</Row>
+		</Replace>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Святилища и храмы дают каждый +3 [ICON_FOOD] пищи и +1 [ICON_HOUSING] жилье.</Text>
@@ -262,9 +262,9 @@
     <Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
         <Text>Уникальное здание кхмеров, которое заменяет храм. При постройке здания дает бесплатно одного миссионера (если основана религия). Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру.</Text>
     </Replace>
-		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ru_RU">
         <Text>+10 [ICON_STRENGTH] против защищенных районов.</Text>
-    </Row>
+    </Replace>
     <Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
         <Text>Монументальность – золотой век:[NEWLINE]Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
     </Replace>
@@ -295,9 +295,9 @@
 		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="ru_RU">
 			<Text>+5 к боевой мощи в защите на родном континенте.</Text>
 		</Replace>
-		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ru_RU">
 			<Text>+5 к боевой мощи в атаке на чужом континенте.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_DISTRICT_IKANDA_DESCRIPTION" Language="ru_RU">
       		<Text>Уникальный район Зулусов заменяет военный лагерь. Даёт +1 [ICON_Housing] жилья. После открытия соответствующих технологий (наёмники, национализм), можно строить корпуса и армии. Здания в иканде получают +2 [ICON_GOLD] золота и +1 [ICON_CULTURE] культуры. Ускоренное производство корпусов и армий.</Text>
     	</Replace>
@@ -337,45 +337,45 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ru_RU">
 			<Text>15% увеличение [ICON_Science] Науки, вырабатываемой этим городом.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ru_RU">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ru_RU">
 			<Text>Общие Знания</Text>
-		</Row>
-    <Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="ru_RU">
+		</Replace>
+    <Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="ru_RU">
       <Text>Внутренние [ICON_TradeRoute] торговые пути к городу с Пингалой дают +3 [ICON_SCIENCE] науки.</Text>
-    </Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ru_RU">
+    </Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ru_RU">
 			<Text>Эврика</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ru_RU">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ru_RU">
 			<Text>Удваивает бонус соседства с кампусом в этом городе.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="ru_RU">
 			<Text>Дает дополнительную единицу, ранее изученного, Стратегического Ресурса за ход.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="ru_RU">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="ru_RU">
 			<Text>Посредник</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="ru_RU">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="ru_RU">
 			<Text>Город не может быть взят в Осаду. Увеличивает защиту городского гарнизона на 5.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="ru_RU">
 			<Text>Все города, в радиусе 9 клеток, получают 4 лояльности в ход в пользу вашей цивилизации.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ru_RU">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ru_RU">
 			<Text>Дилер</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ru_RU">
 			<Text>Стратегические ресурсы в этом городе не требуются для создания ресурсозависимых юнитов.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ru_RU">
 			<Text>+4 [ICON_Production] Производства и +4 [ICON_POWER] Энергии, вырабатываемой в этом городе угольными, нефтяными или атомными электростанциями.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ru_RU">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ru_RU">
 			<Text>Сельское Хозяйство</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="ru_RU">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="ru_RU">
 			<Text>+1 [ICON_FOOD] Пищи на каждом известном ресурсе в этом городе.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="ru_RU">
 			<Text>Первоклассное жилье</Text>
 		</Replace>
@@ -578,9 +578,9 @@
 		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="ru_RU">
 			<Text>Священные места получают +1 к [ICON_Faith] вере за каждые соседние клетки с лесом или джунглями.</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ru_RU">
+		<Replace Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ru_RU">
 			<Text>+{1_num} [ICON_Faith] веры от соседн{1_Num : plural 1?ей клетки; other?их клеток;} с лесом.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный венгерский юнит Средневековья. Заменяет летучие отряды. +2 [ICON_Strength] боевой мощи за каждый соседний мобилизованный юнит.</Text>
 		</Replace>
@@ -626,12 +626,12 @@
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ru_RU">
 			<Text>+50% [ICON_Production] к производству стен.</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ru_RU">
+		<Replace Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ru_RU">
 			<Text>+{1_num} к [ICON_Science] науке за каждую соседнюю театральную площадь.</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ru_RU">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ru_RU">
 			<Text>+{1_num} к [ICON_CULTURE] культуре за каждый соседний совон.</Text>
-		</Row>		
+		</Replace>		
 		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный средневековый юнит Мапуче, который заменяет летучего всадника. +1 к [ICON_Movement] перемещению и разграбление клеток стоит 1 [ICON_Movement] ОП.</Text>
 		</Replace>
@@ -662,19 +662,19 @@
     </Replace>
 		<!--======  LATEST VERSION  ======-->
 		<!-- Khmer -->
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ru_RU">
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ru_RU">
 			<Text>+{1_num} [ICON_Faith] веры от реки.</Text>
-		</Row>
+		</Replace>
 		<!-- Norway -->
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ru_RU">
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ru_RU">
 			<Text>+{1_num} [ICON_Faith] веры от берега.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ru_RU">
 			<Text>Юниты могут пересекать океан после изучения кораблестроения. Морские юниты ближнего боя могут восстанавливать здоровье на нейтральной территории. Юниты не требуют затрат [ICON_Movement] очков передвижения на высадку на море и с моря.</Text>
 		</Replace>
-		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ru_RU">
 			<Text>+{1_num} [ICON_Gold] золота от священного места рядом.</Text>
-		</Row>
+		</Replace>
 		<!-- Macedon -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ru_RU">
 			<Text>При захвате города: +20% [ICON_PRODUCTION] производства во всех городах на 10 ходов, а также [ICON_TechBoosted] эврика за каждый военный лагерь и кампус в захваченном городе и [ICON_CivicBoosted] вдохновение за каждое священное место и театральную площадь.</Text>
@@ -730,13 +730,13 @@
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ru_RU">
 			<Text>+{1_num} [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ru_RU">
+		<Replace Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ru_RU">
 			<Text>+{1_num} [ICON_SCIENCE] к науке за {1_Num : plural 1?рудники; other?рудники;} рядом.</Text>
-		</Row>
+		</Replace>
 		<!-- Mapuche -->
-		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ru_RU">
+		<Replace Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ru_RU">
 			<Text>+{1_num} против золотого/героического века</Text>
-		</Row>
+		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ru_RU">
 			<Text>Все дальнобойные получают  на 30% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
@@ -855,12 +855,12 @@
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="ru_RU"> 
 			<Text>Уникальный китайский юнит Средневековья, заменяющий арбалетчиков. +7 [ICON_Ranged] к мощи выстрела по соседним юнитам.</Text>
 		</Replace>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="ru_RU">
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="ru_RU">
 			<Text>В яблочко!</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="ru_RU">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="ru_RU">
 			<Text>+7 [ICON_Strength] к боевой мощи по соседним юнитам.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="ru_RU">
 			<Text>+10 [ICON_Strength] к боевой мощи при атаке.</Text>
 		</Replace>
@@ -1305,15 +1305,15 @@
 		<!--
 			Все новые строки. Требуется сверка, во избежание повторов.
 		-->
-		<Row Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="ru_RU">
       		<Text>[ICON_Strength] +1 боевоей мощи за каждый слот Военного политического курса вашего правительства</Text>
-		</Row>
-		<Row Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="ru_RU">
+		</Replace>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="ru_RU">
 			<Text>Слот военной политики : +{1_Value}.</Text>
-		</Row>
-		<Row Tag="BBG_GORGO_ALHAMBRA_COMBAT_BONUS" Language="ru_RU">
+		</Replace>
+		<Replace Tag="BBG_GORGO_ALHAMBRA_COMBAT_BONUS" Language="ru_RU">
 			<Text>Слот военной политики от Альгамбры: +{1_Value}.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="ru_RU">
       		<Text>Уникальный английский юнит промышленной эры, заменяющий линейную пехоту. Доступен, если Англией управляет Виктория. +5 [ICON_Strength] боевой мощи в сражении на континенте отличном от континента столицы. Нет затрат ОП на высадку.</Text>
     	</Replace>
@@ -1375,5 +1375,9 @@
 		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное [ICON_Gold] золото от построек в центре коммерции: +50% если [ICON_CITIZEN] население города 13 или выше, +50% если район имеет не менее +4 бонус соседства.</Text>
 		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ru_RU">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>
