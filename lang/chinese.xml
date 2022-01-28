@@ -1246,78 +1246,78 @@
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>越南特色区域，替代“军营”。每与1个区域相邻，则+2 [ICON_CULTURE] 文化值。研究完“飞行”科技后，将获得与 [ICON_CULTURE] 文化值产量相等的 [ICON_TOURISM] 旅游业绩。此区域不需要人口、建造花费更低、无法建在市中心旁，不提供 [ICON_GreatPerson] 伟人点数，也并非特色区域。[NEWLINE][NEWLINE]建成后对相邻无主单元格施放文化炸弹。</Text>
 		</Replace>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>该城市购买建筑和区域（若可以）花费的 [ICON_GOLD] 金币减半。</Text>
-		</Row>
-		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>对阵区域防御时+10 [ICON_STRENGTH] 战斗力。</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>此处为终点的 [ICON_TradeRoute] 国内贸易路线提供 +3 [ICON_SCIENCE] 科技。</Text>
-		</Row>
-		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>在首都不同大陆上作战时+5战斗力。</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME" Language="zh_Hans_CN">
 			<Text>共享知识</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME" Language="zh_Hans_CN">
 			<Text>尤里卡</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>该城市的学院相邻加成翻倍。</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME" Language="zh_Hans_CN">
 			<Text>谈判者</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>该城市不能被围攻，+5城市防御。</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME" Language="zh_Hans_CN">
 			<Text>交易者</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME" Language="zh_Hans_CN">
 			<Text>农业发展</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>城市中所有的露天资源（加成、战略、奢侈品）提供额外+1 [ICON_FOOD] 食物。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_Faith] 信仰值相邻加成，来自相邻的树林和雨林 {1_Num : plural 1?tile; other?tiles;}。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="zh_Hans_CN">
 			<Text>相邻剧院广场区域提供+{1_num} [ICON_Science] 科技值。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="zh_Hans_CN">
 			<Text>相邻书院区域提供+{1_num} [ICON_CULTURE] 文化值。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_Faith] 信仰，来自相邻河流。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_Faith] 信仰，来自相邻海岸和湖泊单元格。</Text>
-		</Row>
-		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_Gold] 金币，来自相邻圣地。</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="zh_Hans_CN">
 			<Text>弹丸</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>在进攻相邻单位时 +7 [ICON_Ranged] 远程攻击。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_MINE_SCIENCE" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_SCIENCE] 科技值，来自相邻的矿山 {1_Num : plural 1?Mines; other?Mines;}。</Text>
-		</Row>
-		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="zh_Hans_CN">
 			<Text>+{1_num} 战斗力，因对阵处于黄金/英雄时代的文明</Text>
-		</Row>
-		<Row Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>从你当前政体中的每一张军事槽位获得+1 [ICON_Strength] 战斗力。</Text>
-		</Row>
-		<Row Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="zh_Hans_CN">
+		</Replace>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="zh_Hans_CN">
 			<Text>军事槽位：+{1_Value}</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KAMPUNG_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁建造者建造印度尼西亚特色改良设施“甘榜屋”的能力。[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] 生产力、+1 [ICON_Housing] 住房。每个相邻渔船+1 [ICON_FOOD] 食物、+1 [ICON_FAITH] 信仰。解锁更多科技和市政后可获得更多 [ICON_PRODUCTION] 生产力、 [ICON_Housing] 住房和 [ICON_TOURISM] 旅游业绩。必须建造在靠近海洋资源的海岸或湖泊单元格上。</Text>
 		</Replace>
