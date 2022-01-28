@@ -1337,5 +1337,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="de_DE">
 			<Text>Einheiten erhalten +1 Sicht. +1 [ICON_TradeRoute] Handelsroutenkapazität beim Eintritt in ein neues Zeitalter. Offene Grenzen zu allen Stadtstaaten.</Text>
 		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="de_DE">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>

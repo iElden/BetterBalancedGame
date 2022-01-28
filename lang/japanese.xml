@@ -1338,5 +1338,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ja_JP">
 			<Text>自文明と同盟している文明が戦争状態にある文明に好戦性ペナルティを受けることなく宣戦布告をすることができる。同盟国と戦争している場合、その文明とは5タイル以内の経験値取得および略奪の報酬を共有する。[NEWLINE]太古時代からゲームを開始した場合、戦闘車を持った状態で開始する。[NEWLINE]蛮族の野営地を占領した際に追加の報酬を通常の[ICON_Gold]ゴールドに加えて得る。都市国家のユニットを徴用する際の費用が半分になる。</Text>
 		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ja_JP">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>

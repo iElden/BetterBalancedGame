@@ -1557,11 +1557,11 @@
 			<Text>+1 Influence Point per turn.</Text>
 		</Replace>
 		<!-- Beta -->
-		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="en_US">
+		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME">
             <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
-        </Replace>
-		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="en_US">
+        </Row>
+		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC">
             <Text>Temporary option :[NEWLINE]Remove the Trade Treaty Resolution from World Congress.[NEWLINE](This Resolution is gonna be edited in BBG 4.8 and this option will be delete)</Text>
-        </Replace>
+        </Row>
 	</LocalizedText>
 </GameData>

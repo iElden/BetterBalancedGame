@@ -1454,5 +1454,9 @@
    		<Replace Tag="LOC_DISTRICT_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="it_IT">
      		<Text>Un distretto esclusivo del Brasile non specializzato che quindi non consuma slot popolazione per i distretti. Sostituisce il Quartiere dei divertimenti, fornendo +2 [ICON_Amenities] Attrattiva. Inoltre sblocca il progetto Carnevale, che fornisce +1 [ICON_Amenities] Attrattiva aggiuntiva durante la sua costruzione e una quantità di punti [ICON_GreatPerson] Grande Personaggio di vario tipo una volta completato. Non può essere costruito in una città con una Copacabana.</Text>
    		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="it_IT">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>

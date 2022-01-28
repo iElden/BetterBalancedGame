@@ -1375,5 +1375,9 @@
 		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное [ICON_Gold] золото от построек в центре коммерции: +50% если [ICON_CITIZEN] население города 13 или выше, +50% если район имеет не менее +4 бонус соседства.</Text>
 		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ru_RU">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>
