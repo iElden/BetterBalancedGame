@@ -2,13 +2,13 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards libraries, workshops, universities, and factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
 			<Text> +3 [ICON_Faith] Faith and +3 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="en_US">
-      		<Text>[ICON_GreatPerson] Great people points +1 for Holy Site (prophet), campus (scientist) amphiteaters (writer) and industrial zone (engineer).</Text>
+      		<Text>[ICON_GreatPerson] +1 Great Person points for each Holy Site (prophet), Campus (scientist), Amphiteater (writer) and Industrial Zone (engineer).</Text>
     	</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
 			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
@@ -75,10 +75,10 @@
 			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], and [ICON_RESOURCE_MAIZE] tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="en_US">
-			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
+			<Text>+25% [ICON_PRODUCTION] Production towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
+			<Text>+25% [ICON_PRODUCTION] Production towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="en_US">
 			<Text>All cities start with an additional City Center building after unlocking Code of Laws. (Starts with a Monument building in the Ancient era).</Text>
@@ -437,10 +437,10 @@
 		</Replace>		
 		
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="en_US">
-			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. Gain an additional +3 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Nationalism Civic, up to +5 [ICON_STRENGTH] Base Combat Strength at Mobilization Civic.</Text>
+			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. Gain an additional +3 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at the Nationalism Civic, up to +5 [ICON_STRENGTH] Base Combat Strength at the Mobilization Civic.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
-			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +2 [ICON_Strength] Combat Strength for every city-state where you are suzerain.</Text>
+			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +2 [ICON_Strength] Combat Strength for every city-state of which you are suzerain.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_FAITH] Faith, and +1 [ICON_Housing] Housing. +1 [ICON_Faith] Faith if adjacent to a Holy Site district. +1 [ICON_Food] Food for each adjacent Farm. Cannot be built on Hills or adjacent to another Stepwell.</Text>
@@ -524,7 +524,7 @@
 			<Text>+10 Defense against ranged attacks.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and cheaper to build.[NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is expended in this city. The Lavra provides +1 [ICON_GreatWriter] Great Writer point per turn with a Temple and +1 [ICON_GreatArtist] Great Artist point per turn with a Worship building.</Text>
+			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and cheaper to build.[NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is used in one of this cities districts. The Lavra provides +1 [ICON_GreatWriter] Great Writer point per turn with a Temple and +1 [ICON_GreatArtist] Great Artist point per turn with a Worship building.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
 			<Text>Improvement that unlocks with Craftsmanship and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts: +2 [ICON_Food] Food for the city center, [NEWLINE]+2 [ICON_SCIENCE] Science per adjacent Campus.[NEWLINE]+2 [ICON_PRODUCTION] Production per adjacent Industrial Zone .[NEWLINE]+2 [ICON_CULTURE] Culture per adjacent Theater Square.[NEWLINE]+2 [ICON_FAITH] Faith per adjacent Holy Site.[NEWLINE]+2 [ICON_GOLD] Gold per adjacent Commercial Hub and Harbor.[NEWLINE][NEWLINE]Can't be build next to another pyramid.</Text>
@@ -650,7 +650,7 @@
 			<Text>All land combat and religious units receive +1 [ICON_Movement] Movement.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
-			<Text>+100% [ICON_PRODUCTION] Production to Theater Square Buildings. Great Works in Eleanor’s cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.[NEWLINE][NEWLINE]Great works recieve additionnal yields depending on district built in this city:[NEWLINE] +2 [ICON_SCIENCE] Science if Campus is built.[NEWLINE] +2 [ICON_CULTURE] Culture if Theater square is built.[NEWLINE] +2 [ICON_GOLD] Gold if Harbor or Commercial Hub is built.[NEWLINE] +2 [ICON_FAITH] Faith if Holy Site is built.[NEWLINE] +2 [ICON_PRODUCTION] Production if Industrial Zone is built.[NEWLINE] +2 [ICON_FOOD] Food if Neighborhood is built.[NEWLINE](Can't receive other bonus yield on great work by city-states)</Text>
+			<Text>+100% [ICON_PRODUCTION] Production to Theater Square Buildings. Great Works in Eleanor’s cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.[NEWLINE][NEWLINE]Great Works receive additionnal yields depending on the districts built in this city:[NEWLINE] +2 [ICON_SCIENCE] Science if a Campus is built.[NEWLINE] +2 [ICON_CULTURE] Culture if a Theater Square is built.[NEWLINE] +2 [ICON_GOLD] Gold if a Harbor or a Commercial Hub is built.[NEWLINE] +2 [ICON_FAITH] Faith if a Holy Site is built.[NEWLINE] +2 [ICON_PRODUCTION] Production if a Industrial Zone is built.[NEWLINE] +2 [ICON_FOOD] Food if a Neighborhood is built.[NEWLINE](Can't receive other bonus yields on great works by city-states)</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production toward walls.</Text>
@@ -951,7 +951,7 @@
 		<!-- civilizations -->
 		<!-- BABYLON -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
-			<Text>[ICON_TechBoosted] Eurekas provide 65% of the [ICON_SCIENCE] Science for technologies. Start with -50% [ICON_SCIENCE] Science per turn, each tech completed give +1% science.[NEWLINE]Can't receive Eureka boost from Free Inquiry dedication.</Text>
+			<Text>[ICON_TechBoosted] Eurekas provide 65% of the [ICON_SCIENCE] Science for technologies. Start the game with -50% [ICON_SCIENCE] Science per turn, but each tech completed will grant +1% extra science.[NEWLINE]Can't receive Eureka boosts from Free Inquiry dedication.</Text>
 		</Replace>
 		<!-- RUSSIA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="en_US">
@@ -1498,19 +1498,19 @@
 			<Text>+6 City [ICON_Strength] Defense Strength. +6 City [ICON_Ranged] Ranged Strength.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Vietnam which replaces the Encampment. +2 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, does not provide [ICON_GreatPerson] Great People points, and is not a specialty district.[NEWLINE]Trigger a cultural bomb that capture neutral tiles.</Text>
+			<Text>A district unique to Vietnam which replaces the Encampment. +2 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, does not provide [ICON_GreatPerson] Great People points, and is not a specialty district.[NEWLINE]Triggers a Culture Bomb that captures neutral, adjacent tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KAMPUNG_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Kampung, unique to Indonesia.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing. +1 [ICON_FOOD] Food and +1 [ICON_FAITH] Faith for each adjacent Fishing Boat. Additional [ICON_PRODUCTION] Production, [ICON_Housing] Housing, and  [ICON_TOURISM] Tourism as you advance through the Technology and Civics Tree. Must be placed on a Coast or Lake tile adjacent to a sea resource.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION" Language="en_US">
-			<Text>Begin the game with the Sailing and Shipbuilding technologies unlocked and with the ability to enter Ocean tiles. Embarked units gain +2 [ICON_Movement] Movement. Unimproved Woods and Rainforest are +1 [ICON_PRODUCTION] Production once Early Empire is researched. Additional +1 [ICON_PRODUCTION] Production from Mercantilism and +2 [ICON_PRODUCTION] Production from Conservation. Fishing Boats provide +1 [ICON_FOOD] Food and a Culture Bomb to adjacent tiles. Resources cannot be harvested. [ICON_GreatWriter] Great Writers cannot be earned.</Text>
+			<Text>Begin the game with the Sailing and Shipbuilding technologies unlocked and with the ability to enter Ocean tiles. Embarked units gain +2 [ICON_Movement] Movement. Unimproved Woods and Rainforest gain +1 [ICON_PRODUCTION] Production once Early Empire is researched. Additional +1 [ICON_PRODUCTION] Production from Mercantilism and +2 [ICON_PRODUCTION] Production from Conservation. Fishing Boats provide +1 [ICON_FOOD] Food and a Culture Bomb to adjacent tiles. Resources cannot be harvested. [ICON_GreatWriter] Great Writers cannot be earned.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FEITORIA_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Nau ability to construct a Feitoria, unique to Portugal.[NEWLINE][NEWLINE]Provides +4 [ICON_Gold] Gold and +1 [ICON_Production] Production. Trade routes sent to this city from Portugal gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. Can only be built adjacent to Luxury or Bonus resources in territory belonging to other Civilizations or City-States that you have Open Borders with. Must be built on a Coast or Lake tile adjacent to land and not adjacent to another Feitoria. Feitorias cannot be removed. </Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION" Language="en_US">
-			<Text>Portuguese unique naval melee unit that replaces the Caravel. Starts with 1 free Promotion and is less maintenance. Has one charge to build Feitoria.</Text>
+			<Text>Portuguese unique naval melee unit that replaces the Caravel. Starts with 1 free Promotion and is less maintenance. Has one charge to build a Feitoria.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_PRAETORIUM_DESCRIPTION" Language="en_US">
 			<Text>[ICON_Governor] Governors provide +4 Loyalty per turn to their city.</Text>
@@ -1520,13 +1520,13 @@
 		</Replace>
 		<!-- base wording : All improved [ICON_RESOURCE_HORSES] Horses and [ICON_RESOURCE_IRON] Iron resources yield 1 additional resource per turn.-->
 		<Replace Tag="LOC_POLICY_EQUESTRIAN_ORDERS_DESCRIPTION" Language="en_US">
-			<Text>Yield 2 additional [ICON_RESOURCE_HORSES] Horses and [ICON_RESOURCE_IRON] Iron resources per turn. +1 for each improved resources of this type.</Text>
+			<Text>Gain 2 additional [ICON_RESOURCE_HORSES] Horses and [ICON_RESOURCE_IRON] Iron resources per turn. Also gain +1 additional one for each improved resources of this type.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_DRILL_MANUALS_DESCRIPTION" Language="en_US">
-			<Text>Yield 2 additional [ICON_RESOURCE_NITER] Niter and [ICON_RESOURCE_COAL] Coal resources per turn. +1 for each improved resources of this type.</Text>
+			<Text>Gain 2 additional [ICON_RESOURCE_NITER] Niter and [ICON_RESOURCE_COAL] Coal resources per turn. Also gain +1 additional one for each improved resources of this type.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_RESOURCE_MANAGEMENT_DESCRIPTION_XP2" Language="en_US">
-			<Text>Yield 2 additional [ICON_RESOURCE_ALUMINUM] Aluminum and [ICON_RESOURCE_OIL] Oil resources per turn. +1 for each improved resources of this type.</Text>
+			<Text>Gain 2 additional [ICON_RESOURCE_ALUMINUM] Aluminum and [ICON_RESOURCE_OIL] Oil resources per turn. Also gain +1 additional one for each improved resources of this type.</Text>
 		</Replace>
 		<!-- Recon Promote tree -->
 		<Replace Tag="LOC_PROMOTION_SENTRY_DESCRIPTION" Language="en_US">
@@ -1542,13 +1542,13 @@
 			<Text>+15 [ICON_Strength] Combat Strength in all situations.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION_DESCRIPTION" Language="en_US">
-			<Text>Settlers trained in the city do not consume a [ICON_Citizen] Population and get +1 [ICON_Movement] Movement.</Text>
+			<Text>Settlers trained in the city do not consume a [ICON_Citizen] Population and gain +1 [ICON_Movement] Movement.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="en_US">
 			<Text>Allows city to purchase districts with [ICON_FAITH] Faith.[NEWLINE]+2 [ICON_Faith] Faith for every specialty district in this city.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="en_US">
-			<Text>Grants the ability to buy land units with [ICON_Faith] Faith in owned city.[NEWLINE]Pillaging Improvements and Districts provides bonus [ICON_Faith] Faith.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
+			<Text>Grants the ability to buy land units with [ICON_Faith] Faith in all owned cities.[NEWLINE]Pillaging Improvements and Districts provides bonus [ICON_Faith] Faith.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="en_US">
