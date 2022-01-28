@@ -1368,12 +1368,12 @@
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>获得在自己建立的城市用 [ICON_Faith] 信仰值购买陆地单位的能力。[NEWLINE]掠夺改良设施和区域可提供 [ICON_Faith] 信仰值加成。[NEWLINE]奖励1个 [Icon_Governor] 总督头衔。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>允许建造宝塔（+3 [ICON_Faith] 信仰值、每回合影响力点数+1）。</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>每回合影响力点数+3。</Text>
-		</Replace>
+        <Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>允许建造宝塔（+3 [ICON_Faith] 信仰值、每回合影响力点数+1）。</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>每回合影响力点数+1。</Text>
+        </Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="zh_Hans_CN">
             <Text>[COLOR_GREEN]禁止“贸易条约”议会[ENDCOLOR]</Text>
