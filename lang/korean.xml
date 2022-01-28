@@ -1574,12 +1574,12 @@
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="ko_KR">
 			<Text>본인이 지은 도시에서 [ICON_Faith] 신앙으로 지상 유닛을 구입할 수 있는 능력을 부여합니다.[NEWLINE]시설 및 특수지구 약탈 시 [ICON_Faith] 신앙 보너스를 제공합니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>파고다([ICON_Faith] 신앙 +3, 턴마다 우호도 점수 +1)를 건설할 수 있게 됩니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>턴마다 우호도 점수 +1을 얻습니다.</Text>
-		</Replace>
+        <Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>파고다([ICON_Faith] 신앙 +3, 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +1)를 건설할 수 있게 됩니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +1을 얻습니다.</Text>
+        </Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ko_KR">
             <Text>[COLOR_GREEN]'무역 정책' 안건 제거[ENDCOLOR]</Text>
