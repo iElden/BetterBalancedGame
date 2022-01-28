@@ -8,7 +8,7 @@
 			<Text>사치 자원과 보너스 자원 위에 건설된 광산에서 [ICON_Faith] 신앙 +3, [ICON_GOLD] 금 +3을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>성지(선지자), 도서관이 있는 캠퍼스(과학자), 원형 극장이 있는 극장가(작가) 및 작업장이 있는 산업 단지(기술자)에서 해당 [ICON_GreatPerson] 위인 점수 +1을 획득합니다.</Text>
+			<Text>성지(선지자), 캠퍼스(과학자), 원형 극장이 있는 극장가(작가) 및 산업 단지(기술자)에서 해당 [ICON_GreatPerson] 위인 점수 +1을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
@@ -63,9 +63,11 @@
         <Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="ko_KR">
             <Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE]인접한 언덕마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 자연재해로 인해서만 약탈당할 수 있으며 파괴되지 않습니다. 다른 암굴 교회에 인접하지 않은 언덕 또는 화산토에만 건설할 수 있습니다.</Text>
         </Replace>
+		<!-- 4.7.0: Reverted to Firaxis.
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
 			<Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
-		</Replace>		
+		</Replace>	
+		-->	
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
 		</Replace>
@@ -79,7 +81,7 @@
 			<Text>개척자 생산 시 [ICON_PRODUCTION] 생산력 +25%를 부여합니다. 영토 확장 속도가 50% 증가하며, 도시를 세울 때 추가 영토를 2타일 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ko_KR">
-			<Text>법전 사회 제도를 획득한 후에 새로 건설된 도시가 추가적인 도심부 건물을 가지고 시작합니다. (고대 시대부터 시작할 경우 기념비 건물을 가지고 시작)</Text>
+			<Text>법전 사회 제도를 획득하면 모든 도시가 추가적인 도심부 건물을 가지고 시작합니다. (고대 시대부터 시작할 경우 기념비 건물을 가지고 시작)</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="ko_KR">
 			<Text>네덜란드 특유 시설물인 간척지를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_FOOD] 식량 +1, [ICON_Production] 생산력 +1, [ICON_Housing] 주거공간 +0.5를 제공합니다. 다른 간척지 시설에 인접해 있으면 [ICON_FOOD] 식량 +1을 추가 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 금, [ICON_FOOD] 식량이 추가됩니다. 2개 이상의 지나갈 수 있는 지상 타일에 인접한 해안이나 호수에 배치해야 합니다. 타일의 [ICON_Movement] 이동 비용이 3으로 증가합니다.</Text>
@@ -132,10 +134,10 @@
 			<Text>머스킷병을 대체하는 스페인 특유의 르네상스 시대 유닛입니다. 종교 유닛 근처 1타일 내에 있으면 [ICON_Strength] 전투력 +5를 획득합니다. 이 유닛이 도시를 점령하거나 도시를 점령할 때 바로 옆에 있으면, 도시가 자동으로 콩키스타도르 플레이어의 대중 종교로 개종 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>강에 인접한 성지 특수지구에서 +2의 [ICON_FAITH] 신앙 인접 보너스를 제공합니다. 강에 인접한 성지 특수지구가 있는 도시에 [ICON_Amenities] 쾌적도 +1 및 [ICON_Housing] 주거공간 +1을 제공합니다.</Text>
+			<Text>강에 인접한 성지 특수지구에서 +1의 [ICON_FAITH] 신앙 인접 보너스를 제공합니다. 강에 인접한 성지 특수지구가 있는 도시에 [ICON_Amenities] 쾌적도 +1 및 [ICON_Housing] 주거공간 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ko_KR">
-			<Text>강에 인접한 성지 특수지구에서 +2의 [ICON_FAITH] 신앙 인접 보너스를 제공합니다. 강에 인접한 성지 특수지구가 있는 도시에 [ICON_Amenities] 쾌적도 +1을 제공합니다.</Text>
+			<Text>강에 인접한 성지 특수지구에서 +1의 [ICON_FAITH] 신앙 인접 보너스를 제공합니다. 강에 인접한 성지 특수지구가 있는 도시에 [ICON_Amenities] 쾌적도 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ko_KR">
 			<Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. [ICON_TradeRoute] 교역로를 보유한 도시 국가에 보낸 한 명 사절이 두 명의 [ICON_Envoy] 사절로 계산됩니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
@@ -303,7 +305,7 @@
 		  </Replace>
 		  
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
-			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다. 이 도시의 각 전문 특수지구마다 [ICON_Faith] 신앙 +2를 얻습니다.</Text>
+			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ko_KR">
 			<Text>채석장에서 [ICON_Production] 생산력 +1, [ICON_Faith] 신앙 +1을 획득합니다.</Text>
@@ -435,7 +437,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ko_KR">
-			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 동원령 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +5를 제공합니다.</Text>
+			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 민족주의 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +3을 제공하며, 동원령 사회 제도를 획득하면 전투력 제공 수치가 +5로 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
 			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 헝가리가 종주국인 도시국가마다 [ICON_Strength] 전투력 +2를 획득합니다.</Text>
@@ -504,7 +506,7 @@
 			<Text>국내 [ICON_TradeRoute] 교역로에서 [ICON_Food] 식량 +4 및 [ICON_Production] 생산력 +4.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ko_KR">
-			<Text>지열 열하 및 화산토에서 [ICON_Faith] 신앙 +4를 획득합니다.</Text>
+			<Text>지열 열하 및 화산토에서 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="ko_KR">
 			<Text>페르시아 특유의 파이리다에자를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_CULTURE] 문화 +1 및 [ICON_GOLD] 금 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 성지, 캠퍼스 또는 극장가마다 [ICON_CULTURE] 문화 +1을 제공합니다. 인접한 상업 중심지, 항만, 산업구역 또는 도심부마다 [ICON_GOLD] 금 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 추가 [ICON_Culture] 문화 및 [ICON_Tourism] 관광을 제공합니다. 설원, 툰드라, 설원 언덕, 툰드라 언덕 위에 또는 다른 파이리다에자 옆에 지을 수 없습니다.</Text>
@@ -651,7 +653,7 @@
             <Text>모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력이 1 증가합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ko_KR">
-			<Text>도시의 극장가 건물 건설에 대한 [ICON_Production] 생산력 +100%를 제공합니다. 엘레오노르의 도시에 있는 각 걸작 때문에 9타일 내의 외국 타일에서 턴당 충성심 -1이 발생합니다. 충성심을 잃어 다른 문명을 떠났고 현재 엘레오노르의 문명에서 가장 많은 턴당 충성심을 얻고 있는 문명은 자유 도시 단계를 생략하고 이 문명에 합류할 수 있습니다.</Text>
+			<Text>도시의 극장가 건물 건설에 대한 [ICON_Production] 생산력 +100%를 제공합니다. 엘레오노르의 도시에 있는 각 걸작마다 9타일 내의 외국 타일에서 턴당 충성심 -1이 발생합니다. 충성심을 잃어 다른 문명을 떠났고 현재 엘레오노르의 문명에서 가장 많은 턴당 충성심을 얻고 있는 문명은 자유 도시 단계를 생략하고 이 문명에 합류할 수 있습니다.[NEWLINE][NEWLINE]걸작을 보유한 도시의 특수 지구 종류에 따라 걸작이 추가 산출을 제공합니다:[NEWLINE][ICON_BULLET]캠퍼스에서 [ICON_SCIENCE] 과학 +2.[NEWLINE][ICON_BULLET]극장가에서 [ICON_CULTURE] 문화 +2.[NEWLINE][ICON_BULLET]상업 중심지 혹은 항만에서 [ICON_GOLD] 금 +2.[NEWLINE][ICON_BULLET]성지에서 [ICON_FAITH] 신앙 +2.[NEWLINE][ICON_BULLET]산업 단지에서 [ICON_PRODUCTION] 생산력 +2.[NEWLINE][ICON_BULLET]주택가에서 [ICON_FOOD] 식량 +2.[NEWLINE][NEWLINE]더이상 걸작에 추가 산출을 주는 도시국가 보너스를 받을 수 없습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ko_KR">
             <Text>방어 건물 건설에 대한 [ICON_Production] 생산력 +50%.</Text>
@@ -702,7 +704,7 @@
 			<Text>성지 특수지구는 인접한 해안 타일에서 [ICON_Faith] 신앙 +{1_num}을 획득합니다.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ko_KR">
-			<Text>유닛은 조선 기술 연구 후 해양 타일로 이동할 수 있게 됩니다. 해상 근접 유닛은 중립 지역에서 체력을 회복할 수 있습니다. 유닛은 승선 또는 하선 시, 추가 [ICON_Movement] 이동 비용이 들지 않습니다.</Text>
+			<Text>유닛은 조선 기술 연구 후 해양 타일로 이동할 수 있게 됩니다. 해상 근접 유닛은 중립 해안 지역에서 체력을 회복할 수 있습니다. 유닛은 승선 또는 하선 시, 추가 [ICON_Movement] 이동 비용이 들지 않습니다.</Text>
 		</Replace>
 		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ko_KR">
 			<Text>인접한 성지 특수지구에서 [ICON_Gold] 금 +{1_num}.</Text>
@@ -743,7 +745,7 @@
         </Replace>
 		<!-- Arabia -->
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ko_KR">
-			<Text>캠퍼스 및 성지 특수지구는 인접 특수지구로부터 일반적인 인접 보너스를 획득합니다. 해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
+			<Text>캠퍼스는 성지 특수지구로부터, 성지는 캠퍼스 특수지구로부터 일반적인 인접 보너스를 획득합니다. 해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="ko_KR">
@@ -955,7 +957,7 @@
 		<!-- civilizations -->
 		<!-- BABYLON -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_TechBoosted] 유레카는 기술에 85%의 [ICON_SCIENCE] 과학 상승효과를 제공합니다. 턴당 [ICON_SCIENCE] 과학이 -50% 감소합니다.</Text>
+			<Text>[ICON_TechBoosted] 유레카는 기술에 65%의 [ICON_SCIENCE] 과학 상승효과를 제공합니다. 턴당 [ICON_SCIENCE] 과학이 -50% 감소한 채로 시작하며, 연구된 기술의 숫자마다 턴당 [ICON_SCIENCE] 과학이 +1% 증가합니다.[NEWLINE]자유 탐구 황금기 보너스로부터 추가적인 유레카 과학 상승효과 보너스를 받지 못합니다.</Text>
 		</Replace>
 		<!-- RUSSIA -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="ko_KR">
@@ -965,6 +967,12 @@
 			<Text>도시를 세울 때 추가 영토를 얻습니다. 수도에 [ICON_Faith] 신앙 +1을 제공합니다. 도심부 타일을 제외한 툰드라에서 [ICON_Production] 생산력 +1을 제공합니다. 유닛이 눈보라에서 피해를 받지 않습니다. 러시아와 전쟁 중인 문명은 러시아 영토에서 눈보라에 +100% 유닛 피해를 받습니다.</Text>
 		</Replace>
 		<!-- CHINA -->
+		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>고대 및 고전 시대 불가사의를 건설하는 경우 건설자의 건설 횟수를 소진하여 원래 불가사의 비용의 15%를 기여할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>고대 및 고전 시대 불가사의를 건설하는 경우 건설자의 건설 횟수를 소진하여 원래 불가사의 비용의 15%를 기여할 수 있습니다. 석조기술로 운하가 잠금 해제됩니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다. 불가사의를 완성하면 가능한 경우 해당 불가사의 시대의 무작위 [ICON_TechBoosted] 유레카 및 [ICON_CivicBoosted] 영감을 얻습니다. [NEWLINE]건설자에게 1회의 추가 건설 횟수가 부여됩니다.</Text>
 		</Replace>
@@ -1011,13 +1019,13 @@
 			<Text>역사서에 처음 모습을 드러낸 수메르 문명은 시작부터 찬란한 빛을 발합니다. 수메르의 전차와 지구라트는 첫 턴부터 생산 가능하며, 문명의 요람 능력으로 초반에 높은 인구 성장을 노릴 수 있습니다. 길가메시는 초반에 전차를 생산하고 밖으로 나가 야만인 주둔지를 사냥함으로서 자신의 '모든 왕을 능가함' 능력을 활용할 수 있습니다. 또한 그는 인접한 강의 가장자리 곳곳에 지구라트를 건설하여 초반부터 [ICON_Science] 과학과 [ICON_Culture] 문화, [ICON_FAITH] 신앙 및 좋은 도시 계획을 추구합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ko_KR">
-			<Text>자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다. 공통의 적과 전쟁 중인 경우 자신과 자신의 동맹국은 5타일 이내 전투에서 약탈 보상과 전투 경험치를 공유합니다. [NEWLINE]고대 시대 시작시 시작 유닛으로 전사가 아닌 수메르 전차를 받습니다.[NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
+			<Text>자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다. 공통의 적과 전쟁 중인 경우 자신과 자신의 동맹국은 5타일 이내 전투에서 약탈 보상과 전투 경험치를 공유합니다. [NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다. 공통의 적과 전쟁 중인 경우 자신과 자신의 동맹국은 5타일 이내 전투에서 약탈 보상과 전투 경험치를 공유합니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다. [NEWLINE]고대 시대 시작시 시작 유닛으로 전사가 아닌 수메르 전차를 받습니다.[NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
+			<Text>자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다. 공통의 적과 전쟁 중인 경우 자신과 자신의 동맹국은 5타일 이내 전투에서 약탈 보상과 전투 경험치를 공유합니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다. [NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>활성화된 가장 높은 동맹 레벨만큼 [ICON_STRENGTH] 전투력을 얻습니다(1~3레벨). 공통의 적과 전쟁 중인 경우 자신과 자신의 동맹국은 5타일 이내 전투에서 약탈 보상과 전투 경험치를 공유합니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다. [NEWLINE]고대 시대 시작시 시작 유닛으로 전사가 아닌 수메르 전차를 받습니다.[NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
+			<Text>활성화된 가장 높은 동맹 레벨만큼 [ICON_STRENGTH] 전투력을 얻습니다(1~3레벨). 공통의 적과 전쟁 중인 경우 자신과 자신의 동맹국은 5타일 이내 전투에서 약탈 보상과 전투 경험치를 공유합니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다. [NEWLINE]야만인 전초기지를 점령할 때 평상시 받는 [ICON_Gold] 금 보상 외에도 부족 마을 보상을 함께 받습니다. 도시 국가의 유닛 징병에 드는 비용이 절반이 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="ko_KR">
 			<Text>야만인과 전투 시 [ICON_Strength] 유닛 전투력 +4.</Text>
@@ -1516,11 +1524,62 @@
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="ko_KR">
 			<Text>베트남 특유의 특수지구이며 주둔지를 대체합니다. 인접한 특수지구마다 [ICON_CULTURE] 문화 +2를 얻습니다. 비행을 연구하면 [ICON_CULTURE] 문화 생산량에 해당하는 [ICON_TOURISM] 관광을 얻습니다. 이 특수지구는 인구 조건이 없고, 건설 비용이 저렴하며, 도심부 인근에 건설할 수 없고, [ICON_GreatPerson] 위인 점수를 제공하지 않으며, 전문 특수지구가 아닙니다. [NEWLINE]인접한 중립 타일에 문화 폭탄을 투여합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION" Language="ko_KR"> <!-- new add -->
-			<Text>고대 및 고전 시대 불가사의를 건설하는 경우 건설자의 건설 횟수를 소진하여 원래 불가사의 비용의 15%를 기여할 수 있습니다.</Text>
+		<Replace Tag="LOC_IMPROVEMENT_KAMPUNG_DESCRIPTION" Language="ko_KR">
+			<Text>인도네시아 특유의 캄풍을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산력 +1과 [ICON_Housing] 주거공간 +1을 제공합니다. 인접한 어선에 [ICON_FOOD] 식량 +1, [ICON_FAITH] 신앙 +1을 제공합니다. 기술 발전표와 사회 제도표의 진전에 따라 추가 [ICON_PRODUCTION] 생산력, [ICON_Housing] 주거공간과 [ICON_TOURISM] 관광을 제공합니다. 해양 자원과 인접한 해안 또는 호수 타일에 배치되어야 합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="ko_KR"> <!-- new add -->
-			<Text>고대 및 고전 시대 불가사의를 건설하는 경우 건설자의 건설 횟수를 소진하여 원래 불가사의 비용의 15%를 기여할 수 있습니다. 석조기술로 운하가 잠금 해제됩니다.</Text>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION" Language="ko_KR">
+			<Text>항해 및 조선 기술이 잠금 해제된 상태에서 게임을 시작하며 해양 타일에 진입할 수 있습니다. 승선한 유닛이 [ICON_Movement] 이동력 +2를 얻습니다. 초기 제국 사회 제도를 보유하면 미개발 숲과 열대우림에서 [ICON_PRODUCTION] 생산력 +1을 얻습니다. 중상주의로부터 [ICON_PRODUCTION] 생산력 +1, 보존 사회 제도로부터 [ICON_PRODUCTION] 생산력 +2를 추가로 얻습니다. 어선이 인접 타일에 [ICON_FOOD] 식량 +1과 문화 폭탄을 제공합니다. 자원을 채집할 수 없습니다. [ICON_GreatWriter] 위대한 작가를 획득할 수 없습니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FEITORIA_DESCRIPTION" Language="ko_KR">
+			<Text>포르투갈 특유 건물인 포르투갈 교역소를 건설할 수 있는 나우 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Gold] 금 +4와 [ICON_Production] 생산력 +1을 제공합니다. 포르투갈에서 이 도시로 보낸 교역로가 [ICON_GOLD] 금 +2와 [ICON_PRODUCTION] 생산력 +1을 얻습니다. 국경을 개방한 다른 문명이나 도시 국가에 속한 영토 내 사치 자원 또는 보너스 자원 인근에만 건설할 수 있습니다. 육지 옆에 있고 인근에 다른 포르투갈 교역소가 없는 해안 또는 호수 타일에 건설해야 합니다. 포르투갈 교역소는 제거할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION" Language="ko_KR">
+			<Text>캐러벨을 대체하는 포르투갈 특유의 해상 근접 유닛입니다. 무료 진급 1을 갖추고 시작하며 유지 비용이 낮습니다. 포르투갈 교역소 하나를 건설할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_PRAETORIUM_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Governor] 총독은 정착 도시에 턴당 충성심 +4.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_COMMUNICATIONS_OFFICE_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Governor] 총독은 자신의 도시에 턴당 [ICON_Governor] 총독이 보유한 진급 수마다 충성심 +2를 제공합니다.</Text>
+		</Replace>
+		<!-- base wording : All improved [ICON_RESOURCE_HORSES] Horses and [ICON_RESOURCE_IRON] Iron resources yield 1 additional resource per turn.-->
+		<Replace Tag="LOC_POLICY_EQUESTRIAN_ORDERS_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_RESOURCE_HORSES] 말과 [ICON_RESOURCE_IRON] 철 자원을 매턴 2개씩 제공합니다. 개발된 모든 [ICON_RESOURCE_HORSES] 말과 [ICON_RESOURCE_IRON] 철 자원에서 턴당 1의 추가 자원이 생산됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_DRILL_MANUALS_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_RESOURCE_NITER] 질산칼륨과 [ICON_RESOURCE_COAL] 석탄 자원을 매턴 2개씩 제공합니다. 개발된 모든 [ICON_RESOURCE_NITER] 질산칼륨과 [ICON_RESOURCE_COAL] 석탄 자원에서 턴당 1의 추가 자원이 생산됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_RESOURCE_MANAGEMENT_DESCRIPTION_XP2" Language="ko_KR">
+			<Text>[ICON_RESOURCE_ALUMINUM] 알루미늄과 [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다. 개발된 모든 [ICON_RESOURCE_ALUMINUM] 알루미늄과 [ICON_RESOURCE_OIL] 석유 자원에서 턴당 1의 추가 자원이 생산됩니다.</Text>
+		</Replace>
+		<!-- Recon Promote tree -->
+		<Replace Tag="LOC_PROMOTION_SENTRY_DESCRIPTION" Language="ko_KR">
+			<Text>시야 범위 +1. 숲 및 정글을 관통해 볼 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SPYGLASS_NAME" Language="ko_KR">
+			<Text>지구력</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SPYGLASS_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Movement] 이동력 +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_AMBUSH_DESCRIPTION" Language="ko_KR">
+			<Text>모든 상황에서 [ICON_Strength] 전투력 +15.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 생산된 개척자는 생산시 [ICON_Citizen] 인구를 소모하지 않으며 [ICON_Movement] 이동력이 +1 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="ko_KR">
+			<Text>도시에서 [ICON_FAITH] 신앙으로 특수지구를 구매할 수 있습니다. [NEWLINE]이 도시의 각 전문 특수지구마다 [ICON_Faith] 신앙 +3을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="ko_KR">
+			<Text>본인이 지은 도시에서 [ICON_Faith] 신앙으로 지상 유닛을 구입할 수 있는 능력을 부여합니다.[NEWLINE]시설 및 특수지구 약탈 시 [ICON_Faith] 신앙 보너스를 제공합니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1.</Text>
+		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ko_KR">
+            <Text>[COLOR_GREEN]'무역 정책' 안건 제거[ENDCOLOR]</Text>
+        </Replace>
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="ko_KR">
+            <Text>임시 옵션:[NEWLINE]'무역 정책' 세계 의회 안건을 게임에서 제거합니다.[NEWLINE](BBG 4.8에서 해당 안건은 수정될 것입니다.)</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>
