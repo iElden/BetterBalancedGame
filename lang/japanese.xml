@@ -13,9 +13,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5、[ICON_Favor]外交的支持+1。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ja_JP">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ja_JP">
 			<Text>この都市における建造物と（可能であれば）区域の購入[ICON_GOLD]費用-50%。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>神殿と寺院からそれぞれ[ICON_FOOD]食糧+3、[ICON_HOUSING]住宅+1。</Text>
 		</Replace>
@@ -258,9 +258,9 @@
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="ja_JP">
 			<Text>他文明に存在するこの宗教の信徒3人ごとに[ICON_Culture]文化力+1。</Text>
 		</Replace>
-		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ja_JP">
+		<Replace Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ja_JP">
 			<Text>防衛可能な区域に対して[ICON_STRENGTH]戦闘力+10。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="ja_JP">
 			<Text>戦闘準備！ 黄金時代:[NEWLINE]好戦性ペナルティが通常に比べて-75%となる特殊な開戦事由が解禁される。この開戦事由は非難声明を出した後すぐに使用できる。軍事ユニットに対する[ICON_Production]生産力+15%。都市に対する軍事ユニットの[ICON_Strength]戦闘力+10。</Text>
 		</Replace>
@@ -282,9 +282,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="ja_JP">
 			<Text>城の研究を完了すると無償のスパイ（および追加のスパイ枠）を獲得する。すべてのスパイが生産時に無償の昇進を獲得する。中世、ルネサンス、産業時代の遺産に対して[ICON_Production]生産力+20%。すべての時代の遺産の[ICON_Tourism]観光力+50%。</Text>
 		</Replace>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="ja_JP">
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="ja_JP">
 			<Text>ピンガラのいる都市につながる国内[ICON_TradeRoute]交易路から[ICON_SCIENCE]科学力+3。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ja_JP">
 			<Text>区域を攻撃する際に[ICON_Strength]戦闘力+10。</Text>
 		</Replace>
@@ -294,9 +294,9 @@
 		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="ja_JP">
 			<Text>自大陸で防衛する際にユニットの[ICON_Strength]戦闘力+5。</Text>
 		</Replace>
-		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ja_JP">
+		<Replace Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ja_JP">
 			<Text>異大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ja_JP">
 			<Text>ユニットが駐留している都市は毎ターン忠誠度+3を得る。軍団あるいは大軍団が駐留している場合は毎ターン忠誠度+5を得る。対応する社会制度が発明されている場合、都市を征服したユニットは軍団あるいは大軍団にアップグレードされる。固有建造物のイカンダが[ICON_CULTURE]文化力+1、[ICON_GOLD]ゴールド+1を供給する。</Text>
 		</Replace>
@@ -330,42 +330,42 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ja_JP">
 			<Text>この都市が産出する[ICON_Science]科学力+15%。</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ja_JP">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ja_JP">
 			<Text>知識の共有</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ja_JP">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ja_JP">
 			<Text>ひらめき</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ja_JP">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ja_JP">
 			<Text>この都市におけるキャンパスの隣接ボーナス+100%。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="ja_JP">
 			<Text>自文明が発見している戦略資源が毎ターン1つ供給される。</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="ja_JP">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="ja_JP">
 			<Text>交渉人</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="ja_JP">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="ja_JP">
 			<Text>この都市の戦闘力+5、また攻囲を受けなくなる。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="ja_JP">
 			<Text>9タイル以内の都市の自文明に対する忠誠度が毎ターン+4。</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ja_JP">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ja_JP">
 			<Text>折衝者</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ja_JP">
 			<Text>この都市では戦略資源を必要とするユニットの生産に対応する資源を必要としなくなる。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ja_JP">
 			<Text>この都市の石炭・石油・原子力発電所から供給される[ICON_Production]生産力+4、[ICON_POWER]電力+4。</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ja_JP">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ja_JP">
 			<Text>農耕</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="ja_JP">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="ja_JP">
 			<Text>都市の各資源から[ICON_FOOD]食糧+1。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="ja_JP">
 			<Text>住宅バブル</Text>
 		</Replace>
@@ -590,9 +590,9 @@
 		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="ja_JP">
 			<Text>聖地が隣接する森林およびジャングルから [ICON_Faith] 信仰力+1を得る。</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ja_JP">
+		<Replace Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ja_JP">
 			<Text>隣接する森林1つにつき [ICON_Faith] 信仰力+1。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ja_JP">
 			<Text>コーサーの代替となるハンガリー固有のユニット。隣接する徴用されたユニット1つにつき [ICON_Strength] 戦闘力+2。</Text>
 		</Replace>
@@ -635,12 +635,12 @@
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ja_JP">
 			<Text>劇場区域の建造物に対する[ICON_PRODUCTION]生産力+100%。[NEWLINE]自文明の都市にある傑作が、1つにつきその都市から9タイル以内にある他文明の都市に対して毎ターン忠誠度-1を与える。[NEWLINE]他文明の都市で反乱が起きた際、自文明が最もその都市に対する忠誠度圧力を与えていたならば、その都市は自由都市になる過程を経ずに直接自文明のものとなる。</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ja_JP">
+		<Replace Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ja_JP">
 			<Text>隣接する劇場区域1つにつき[ICON_SCIENCE]科学力+{1_num}。</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ja_JP">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ja_JP">
 			<Text>隣接する書院1つにつき[ICON_CULTURE]文化力+{1_num}。</Text>
-		</Row>		
+		</Replace>		
 		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ja_JP">
 			<Text>コーサーに取ってかわるマプチェ固有のユニット。[NEWLINE][ICON_MOVEMENT]移動力が通常より1多く、略奪に[ICON_MOVEMENT]移動力を1しか消費しない。</Text>
 		</Replace>
@@ -671,19 +671,19 @@
 		</Replace>
 		<!--======  LATEST VERSION  ======-->
 		<!-- Khmer -->
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ja_JP">
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ja_JP">
 			<Text>川タイルが隣接していることにより{1_num}[ICON_Faith]</Text>
-		</Row>
+		</Replace>
 		<!-- Norway -->
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ja_JP">
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ja_JP">
 			<Text>隣接する沿岸/湖タイルに１つにつき{1_num} [ICON_Faith]信仰力+1。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ja_JP">
 			<Text>造船」を研究するとユニットが外洋航行能力を得る。海洋近接戦闘ユニットが中立地帯で回復するようになる。乗船時と下船時に追加の[ICON_Movement]移動コストがかからなくなる。</Text>
 		</Replace>
-		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ja_JP">
+		<Replace Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ja_JP">
 			<Text>隣接する聖地タイル1つごとに+{1_num} [ICON_Gold]</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ja_JP">
             <Text>ノルウェー固有の建造物。[ICON_FAITH]信仰力を使って使徒と審問官を購入するのに必要。この都市の資源タイルに[ICON_FAITH]信仰力+1。この都市内の沿岸資源タイルごとに[ICON_PRODUCTION]生産力+1。</Text>
         </Replace>
@@ -746,13 +746,13 @@
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ja_JP">
 			<Text>隣接ボーナスとして+{1_num} [ICON_SCIENCE]。</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ja_JP">
+		<Replace Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ja_JP">
 			<Text>隣接ボーナスとして改善された2つの鉱山につき+{1_num} [ICON_SCIENCE]科学力（要訂正）</Text>
-		</Row>
+		</Replace>
 		<!-- Mapuche -->
-		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
+		<Replace Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="ja_JP">
 			<Text>+{1_num} 対黄金時代/英雄時代</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ja_JP">
 			<Text>総督 [ICON_Governor]が着任した都市で訓練されたすべてのユニットについて、戦闘で得る経験値+25%黄金時代に入っている文明に対する戦闘力[ICON_Strength]+5。</Text>
 		</Replace>
@@ -853,12 +853,12 @@
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="ja_JP"> 
 			<Text>連弩兵を代替する中国固有ユニット。隣接する敵のユニットを攻撃時に[ICON_Ranged] 遠隔戦闘力+7。</Text>
 		</Replace>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="ja_JP">
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="ja_JP">
 			<Text>キャノンボール！</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="ja_JP">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="ja_JP">
 			<Text>攻撃時に [ICON_Strength] 戦闘力+7。</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="ja_JP">
 			<Text>攻撃時に [ICON_Strength] 戦闘力+15。</Text>
 		</Replace>
