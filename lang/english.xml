@@ -1550,6 +1550,12 @@
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="en_US">
 			<Text>Grants the ability to buy land units with [ICON_Faith] Faith in all owned cities.[NEWLINE]Pillaging Improvements and Districts provides bonus [ICON_Faith] Faith.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Allows construction of Pagodas (+3 [ICON_Faith] Faith, +1 Influence Point per turn).</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+1 Influence Point per turn.</Text>
+		</Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="en_US">
             <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
