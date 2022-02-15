@@ -362,8 +362,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="pl_PL">
 			<Text>Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+1 [ICON_Faith] Faith and +3 [ICON_Gold] Gold. An additional +1 [ICON_Faith] Faith and +1 [ICON_PRODUCTION] Production for each adjacent Pasture, increasing to +2 [ICON_Faith] Faith per pasture at Stirrups.[NEWLINE]Provides [ICON_TOURISM] Tourism from [ICON_FAITH] Faith after researching Flight.</Text>
-
-			<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść kurhan, dostępny tylko w Scytii.[NEWLINE][NEWLINE]+1 do [ICON_FAITH] wiary i +3 do [ICON_GOLD] złota. Dodatkowo +1 do [ICON_FAITH] wiary i +1 do [ICON_PRODUCTION] produkcji za każde sąsiadujące pastwisko (dodatkowe +1 do [ICON_PRODUCTION] produkcji po wynalezieniu technologii strzemion).[NEWLINE]Zapewnia [ICON_TOURISM] turystykę od [ICON_FAITH] wiary po wynalezieniu technologii lotu.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="pl_PL">
 			<Text>Może zakupić jednostki lekkiej, ciężkiej kawalerii oraz łuczników konnych za [ICON_FAITH] wiarę</Text>
@@ -1307,86 +1305,86 @@
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="pl_PL">
 			<Text>+1 względów dyplomatycznych na turę.</Text>
 		</Replace>
-		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="en_US">
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="pl_PL">
 			<Text>[COLOR_RED]TO TRANSLATE: The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
 		</Replace>
-		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="pl_PL">
+		<Replace Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="pl_PL">
 			<Text>+5 do ataku na obcym kontynencie.</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="pl_PL">
 			<Text>+7 do [ICON_RANGE] siły ataku dystansowego, gdy atakuje przyległe jednostki.</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="pl_PL">
 			<Text>Cannonball!</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="pl_PL">
 			<Text>+{1_num} [ICON_FAITH] wiary za sąsiedztwo z rzeką.</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_MINE_SCIENCE" Language="pl_PL">
 			<Text>+{1_num} do [ICON_SCIENCE] nauki za sąsiedztwo z przyległych {1_Num : plural 1?Mines; other?Mines;}.</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="pl_PL">
 			<Text>+{1_num} do [ICON_SCIENCE] nauki za sąsiedztwo dzielnicy kulturalnej.</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="pl_PL">
 			<Text>+{1_num} do [ICON_CULTURE] kultury za sąsiedztwo seowonu.</Text>
-		</Row>
-		<Row Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_MAPUCHE_COMBAT_BONUS_TOQUI_VS_GOLDEN_AGE_CIV" Language="pl_PL">
 			<Text>+{1_num} przeciwko złotemu/heroicznemu wiekowi</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="pl_PL">
 			<Text>+{1_num} do [ICON_FAITH] wiary na wodach przybrzeżnych.</Text>
-		</Row>
-		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="pl_PL">
 			<Text>+{1_num} [ICON_FAITH] wiary za sąsiadujące każde sąsiadujące pole z lasem.</Text>
-		</Row>
-		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="pl_PL">
 			<Text>+{1_num} [ICON_Gold] Gold from the adjacent Holy Site.</Text>
-		</Row>
-		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="pl_PL">
 			<Text>+10 [ICON_STRENGTH] against defensible districts.</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION" Language="pl_PL">
 			<Text>Miasto nie może być oblężone i zyskuje +5 do siły obrony miasta.</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME" Language="pl_PL">
 			<Text>Negocjator</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION" Language="pl_PL">
 			<Text>+1 do [ICON_FOOD] żywności na odkrytych zasobach miasta.</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME" Language="pl_PL">
 			<Text>Rolnictwo</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION" Language="pl_PL">
 			<Text>Podwójna premia za sąsiedztwo kampusu w tym mieście.</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME" Language="pl_PL">
 			<Text>Eureka</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="pl_PL">
 			<Text>Krajowe [ICON_TradeRoute] szlaki handlowe do miasta w którym użęduje Pingala dają +3 do [ICON_SCIENCE] Science.</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME" Language="pl_PL">
 			<Text>Dzielenie się wiedzą</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="pl_PL">
 			<Text>50% zniżki obejmującej [ICON_GOLD] złoto na wszystkie budunki i dzielnice w mieście.</Text>
-		</Row>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME" Language="pl_PL">
 			<Text>Sprzedawca</Text>
-		</Row>
-		<Row Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION" Language="pl_PL">
 			<Text>+1 do [ICON_STRENGTH] siły bojowej za każdą aktywną doktrynę wojskową.</Text>
-		</Row>
-		<Row Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="pl_PL">
+		</Replace>
+		<Replace Tag="BBG_GORGO_GOVERNMENT_COMBAT_BONUS" Language="pl_PL">
 			<Text>Miejsca na doktrynę wojskową : +{1_Value}.</Text>
-		</Row>
-		<Row Tag="BBG_GORGO_ALHAMBRA_COMBAT_BONUS" Language="pl_PL">
+		</Replace>
+		<Replace Tag="BBG_GORGO_ALHAMBRA_COMBAT_BONUS" Language="pl_PL">
 			<Text>Miejsca na doktrynę wojskową od ALhambry: +{1_Value}.</Text>
-		</Row>
-		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="pl_PL">
+		</Replace>
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="pl_PL">
 			<Text>Temporary option :[NEWLINE]Remove the Trade Treaty Resolution from World Congress.[NEWLINE](This Resolution is gonna be edited in BBG 4.8 and this option will be delete)</Text>
-		</Row>
+		</Replace>
 	</LocalizedText>
 </GameData>
