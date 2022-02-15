@@ -7,7 +7,7 @@
 		<!-- Author : Priz -->
 		
 		<!-- =============== D I R I G E A N T S === M U L T I P L E S =============== -->
-		
+
 		<!-- ========== ALIENOR D'AQUITAINE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_PRODUCTION] Production +100% pour les bâtiments de la Place du Théâtre. Loyauté -1 par tour dans les villes étrangères pour chaque chef-d'œuvre présent dans l'une des villes d'Aliénor, dans un rayon de 9 cases. Une ville qui quitte une autre civilisation suite à une perte de loyauté et dont la majeure partie de la loyauté provient de la civilisation d'Aliénor rejoint directement celle-ci sans passer par le statut de ville libre.[NEWLINE][NEWLINE]Les chefs-d'œuvre reçoivent des rendements supplémentaires en fonction des quartiers présents dans la ville :[NEWLINE][ICON_SCIENCE]Science +2 pour un campus.[NEWLINE][ICON_CULTURE]Culture +2 pour une place du théâtre.[NEWLINE][ICON_GOLD]Or +2 pour un port ou une plateforme commerciale.[NEWLINE][ICON_FAITH]Foi +2 pour un lieu saint.[NEWLINE][ICON_PRODUCTION]Production +2 pour une zone industrielle.[NEWLINE][ICOn_FOOD]Nourriture +2 pour un quartier résidentiel.[NEWLINE]Le bonus de suzerain d'Anshan ne peut pas être utilisé par Aliénor.</Text>
@@ -744,6 +744,9 @@
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Les autels et les temples octroient +3 [ICON_FOOD] nourriture et +1 [ICON_HOUSING] habitation chacun.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_GOLD] Or +2 pour vos [ICON_TradeRoute] routes commerciales internationales depuis des villes dotées d'un lieu saint, et +2 supplémentaires pour chaque bâtiment dans ce lieu saint.</Text>
+		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
 		
@@ -775,7 +778,7 @@
 			<Text>Merveille naturelle infranchissable de deux cases pouvant apparaître sur les côtes. [ICON_Science] Science +2 et [ICON_FOOD] nourriture +1 pour les cases adjacentes.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="fr_FR">
-			<Text>Merveille naturelle d'une case prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_Science] science +2, [ICON_Faith] foi +4 et source d'eau douce.</Text>
+			<Text>Merveille naturelle d'une case prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_Science] science +2, [ICON_Faith] foi +5 et source d'eau douce.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle de quatre cases prenant la forme d'un marais. [ICON_FAITH] Foi +2, [ICON_Food] nourriture +2 et [ICON_PRODUCTION] production +2.</Text>
@@ -799,7 +802,7 @@
 			<Text>[ICON_ENVOY] Émissaires +1 lorsque vous construisez une merveille dans cette ville, dont une apadana. [NEWLINE][NEWLINE]Doit être construite adjacente à votre [ICON_CAPITAL] capitale.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +100% pour les unités navales dans toutes vos villes. Doit être construit sur côte adjacente à une zone industrielle.</Text>
+			<Text>[ICON_Production] Production +100% pour les unités navales dans toutes vos villes. Doit être construit en eau peu profonde et adjacent à une zone industrielle.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="fr_FR">
 			<Text>Augmente la croissance de toutes les villes de 15 %. Doivent être construits près d'une rivière. [ICON_HOUSING] Habitations +2 dans la ville de construction. [ICON_HOUSING] Habitations +1 dans toutes les autres villes dans un rayon de 6 cases.</Text>
@@ -1112,6 +1115,9 @@
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour les bâtiments de défense.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_MARKET_ECONOMY_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Culture] Culture et [ICON_Science] Science +2 pour vos [ICON_TradeRoute] routes commerciales internationales, ainsi que [ICON_Gold] Or +1 par ressource de luxe ou stratégique aménagée à destination.</Text>
+		</Replace>
 		
 		<!-- Nouvelles cartes d'unités de Siège -->
 		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="fr_FR">
@@ -1195,7 +1201,10 @@
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
 			<Text>Le prix en [ICON_GOLD] Or et en [ICON_FAITH] Foi des unités militaires ou de soutien terrestres baisse de 10 % par bâtiment du campement construit dans cette ville.</Text>
-		</Replace>	
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_VATICAN_CITY_DESCRIPTION" Language="fr_FR">
+			<Text>Lorsque vous activez un [ICON_GreatPerson] personnage illustre, il génère 400 points de pression religieuse pour la religion que vous avez fondée (ou dominante) dans les villes dans un rayon de 6 cases.</Text>
+		</Replace>
 		
 		<!-- =============== D I V E R S =============== -->
 		
