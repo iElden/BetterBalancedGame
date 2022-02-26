@@ -48,6 +48,33 @@ def main():
     fd.close()
     return None
 
+def get_all_entries(et : ElementTree.ElementTree):
+    root = et.getroot()
+    return [i.attrib["Tag"] for i in root[0]]
+
+def get_diff_between_new_english_and_old(en, nen):
+    set_en = set(get_all_entries(en))
+    set_nen = set(get_all_entries(nen))
+    print("nen - en = ", set_nen - set_en)
+    print("en - nen = ", set_en - set_nen)
+    return set_en - set_nen
+
+def get_query_from_tag(tag, et):
+    root = et.getroot()
+    for i in root[0]:
+        if i.attrib['Tag'] == tag:
+            return i.tag
+
+def main_get_xml_diff_new_en_old():
+    result = ""
+    en = ElementTree.parse("../lang/english.xml")
+    nen = ElementTree.parse("../lang/new_english.xml")
+    s = get_diff_between_new_english_and_old(en, nen)
+    for i in s:
+        q = get_query_from_tag(i, en)
+        result += f"""\t\t<{q} Tag="{i}">\n\t\t\t<Text>{get_text(i, en)}</Text>\n\t\t</{q}>\n"""
+    print(result)
+
 
 if __name__ == '__main__':
-    main()
+    main_get_xml_diff_new_en_old()
