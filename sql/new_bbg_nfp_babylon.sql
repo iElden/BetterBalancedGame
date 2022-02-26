@@ -2,6 +2,9 @@
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
 
+-- Remove free envoy on first district without free building.
+DELETE FROM TraitModifiers WHERE ModifierId IN ('TRAIT_FREE_ENVOY_WHEN_DISTRICT_MADE', 'TRAIT_FREE_ENVOY_WHEN_DISTRICT_MADE_SPECIFIC') AND TraitType='TRAIT_LEADER_HAMMURABI';
+
 -- Eureka to 65% (from 100%)
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
     ('BBG_TRAIT_BABYLON_EUREKA', 'MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST');
