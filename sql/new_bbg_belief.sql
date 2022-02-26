@@ -74,3 +74,23 @@ UPDATE ModifierArguments SET Value='2' WHERE Name='Amount' AND ModifierId IN ('S
 
 -- Synagogue to 7 Faith:
 UPDATE Building_YieldChanges SET YieldChange=7 WHERE BuildingType='BUILDING_SYNAGOGUE' AND YieldType='YIELD_FAITH';
+
+-- Jesuit Education give 15% discount on campus and theater purchase.
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
+    SELECT 'BBG_GIVER_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_RELIGION_REQUIREMENTS'
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_GIVER_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'ModifierId', 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO Modifiers(ModifierId, ModifierType)
+    SELECT 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PURCHASE_COST'
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'BuildingType', BuildingType
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'Amount', '15'
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO BeliefModifiers(BeliefType, ModifierID)
+    SELECT 'BELIEF_JESUIT_EDUCATION', 'BBG_GIVER_PURCHASE_CHEAPER_' || Buildings.BuildingType
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
