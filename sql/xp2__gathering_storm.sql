@@ -721,9 +721,6 @@ UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_
 -- Related to https://github.com/iElden/BetterBalancedGame/issues/48
 UPDATE ModifierArguments SET Value=24 WHERE ModifierId='CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS' AND Name='BuildingProductionPercent';
 
--- 2021-01-07: Moksha - Moved Faith generation from promote 0 to 2R:
-UPDATE GovernorPromotionModifiers SET GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT';
-
 
 -- move Pingala's 100% GPP to first on left ability
 UPDATE GovernorPromotions SET Level=1, 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_EDUCATOR_GRANTS';
