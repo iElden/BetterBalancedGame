@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be231" version="40720">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be231" version="40732">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4072">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4073">
 	<Properties>
-		<Name>Better Balanced Game 4.7.2</Name>
+		<Name>Better Balanced Game 4.7.3</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4072</Version>
+		<Version>4073</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>

@@ -25,7 +25,7 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
 INSERT INTO BeliefModifiers(BeliefType, ModifierID) VALUES
     ('BELIEF_DIVINE_SPARK', 'BBG_DIVINE_SPARK_ENGINEER');
 
--- Religious settlement: +25% production towards settler and 3 free tiles
+-- Religious settlement: +20% production towards settler and 3 free tiles
 INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId) VALUES
     ('BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD', 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER', 'PLAYER_HAS_PANTHEON_REQUIREMENTS'),
     ('BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD_MODIFIER', 'MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION', NULL),
@@ -35,13 +35,13 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD', 'ModifierId', 'BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD_MODIFIER'),
     ('BBG_RELIGIOUS_SETTLEMENT_TILE_GRAB', 'ModifierId', 'BBG_RELIGIOUS_SETTLEMENT_TILE_GRAB_MODIFIER'),
     ('BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD_MODIFIER', 'UnitType', 'UNIT_SETTLER'),
-    ('BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD_MODIFIER', 'Amount', '25'),
+    ('BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD_MODIFIER', 'Amount', '20'),
     ('BBG_RELIGIOUS_SETTLEMENT_TILE_GRAB_MODIFIER', 'Amount', '2');
 INSERT INTO BeliefModifiers(BeliefType, ModifierID) VALUES
     ('BELIEF_RELIGIOUS_SETTLEMENTS', 'BBG_RELIGIOUS_SETTLEMENT_SETTLER_PROD'),
     ('BELIEF_RELIGIOUS_SETTLEMENTS', 'BBG_RELIGIOUS_SETTLEMENT_TILE_GRAB');
 
--- Initiation Rites gives 25% faith for each military land unit produced
+-- Initiation Rites gives 30% faith for each military land unit produced
 INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, SubjectRequirementSetId) VALUES
     ('INITIATION_RITES_FAITH_YIELD_CPL_MOD', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 0, 0, 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
     ('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD', 'MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_UNIT_COST', 0, 0, NULL),
@@ -50,7 +50,7 @@ INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, SubjectRequi
 INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('INITIATION_RITES_FAITH_YIELD_CPL_MOD' , 'ModifierId', 'INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'),
     ('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD', 'YieldType', 'YIELD_FAITH'),
-    ('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD', 'UnitProductionPercent', '40'),
+    ('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD', 'UnitProductionPercent', '30'),
     ('BBG_INITIATION_RITES_FREE_WARRIOR', 'ModifierId', 'BBG_INITIATION_RITES_FREE_WARRIOR_MODIFIER'),
     ('BBG_INITIATION_RITES_FREE_WARRIOR_MODIFIER', 'UnitType', 'UNIT_WARRIOR'),
     ('BBG_INITIATION_RITES_FREE_WARRIOR_MODIFIER', 'Amount', '2'),
@@ -60,6 +60,41 @@ INSERT INTO BeliefModifiers(BeliefType, ModifierID) VALUES
     ('BELIEF_INITIATION_RITES', 'INITIATION_RITES_FAITH_YIELD_CPL_MOD'),
     ('BELIEF_INITIATION_RITES', 'BBG_INITIATION_RITES_FREE_WARRIOR');
 
+-- God of forge: 25 => 30%
+UPDATE ModifierArguments SET Value='30' WHERE ModifierId='GOD_OF_THE_FORGE_UNIT_ANCIENT_CLASSICAL_PRODUCTION_MODIFIER' AND Name='Amount';
+
 -- RELIGIONS BELIEF --
 -- DOF nerf
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='DEFENDER_OF_FAITH_COMBAT_BONUS_MODIFIER' AND Name='Amount';
+-- Crusade nerf to +5
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='JUST_WAR_COMBAT_BONUS_MODIFIER' AND Name='Amount';
+
+-- Stewardship to +2/+2
+UPDATE ModifierArguments SET Value='2' WHERE Name='Amount' AND ModifierId IN ('STEWARDSHIP_SCIENCE_DISTRICTS_MODIFIER', 'STEWARDSHIP_GOLD_DISTRICTS_MODIFIER');
+
+-- Synagogue to 7 Faith:
+UPDATE Building_YieldChanges SET YieldChange=7 WHERE BuildingType='BUILDING_SYNAGOGUE' AND YieldType='YIELD_FAITH';
+
+-- Jesuit Education give 15% discount on campus and theater purchase.
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
+    SELECT 'BBG_GIVER_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_RELIGION_REQUIREMENTS'
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_GIVER_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'ModifierId', 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO Types(Type, Kind) VALUES
+    ('BBG_MODIFIER_CITY_ADJUST_BUILDING_PURCHASE_COST', 'KIND_MODIFIER');
+INSERT INTO DynamicModifiers(ModifierType, CollectionType, EffectType) VALUES
+    ('BBG_MODIFIER_CITY_ADJUST_BUILDING_PURCHASE_COST', 'COLLECTION_OWNER', 'EFFECT_ADJUST_BUILDING_PURCHASE_COST');
+INSERT INTO Modifiers(ModifierId, ModifierType)
+    SELECT 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'BBG_MODIFIER_CITY_ADJUST_BUILDING_PURCHASE_COST'
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'BuildingType', BuildingType
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_PURCHASE_CHEAPER_' || Buildings.BuildingType, 'Amount', '15'
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
+INSERT INTO BeliefModifiers(BeliefType, ModifierID)
+    SELECT 'BELIEF_JESUIT_EDUCATION', 'BBG_GIVER_PURCHASE_CHEAPER_' || Buildings.BuildingType
+    FROM Buildings WHERE PrereqDistrict IN ('DISTRICT_CAMPUS', 'DISTRICT_THEATER');
