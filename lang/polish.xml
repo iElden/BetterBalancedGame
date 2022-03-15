@@ -155,7 +155,7 @@
 			<Text>Unikalna budowla Gruzji. Zapewnia większą ochronę niż renesansowe mury przy niższym koszcie [ICON_PRODUCTION] produkcji. Zapewnia +3 do [ICON_TOURISM] turystyki po opracowaniu idei ochrony przyrody. Zapewnia +3 do [ICON_FAITH] wiary. Podczas złotej ery daje +100% do [ICON_TOURISM] turystyki i [ICON_FAITH] wiary.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="pl_PL">
-			<Text>[COLOR_RED]TO_TRANSLATE: Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit&#39;s base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
+			<Text>Pokonywanie jednostki zapewnia [ICON_FAITH] wiarę równą 50% [ICON_STRENGTH] siły bojowej pokonanej jednostki (na prędkości sieciowej). Każdy [ICON_ENVOY] emisariusz, którego wysyłasz do państwa-miasta, w którym dominująca religia jest również twoją dominującą religią liczy się podwójnie. </Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="pl_PL">
 			<Text>Po odblokowaniu idei gildii, każde miasto może budować o jedną dzielnicę więcej niż zwykle (powyżej zwykłego limitu wynikającego z wielkości [ICON_Citizen] populacji).</Text>
@@ -248,7 +248,7 @@
 			<Text>Podbój miasta daje: +20% do [ICON_PRODUCTION] produkcji we wszystkich miastach przez 10 tur, [ICON_TechBoosted] eurekę za każdą dzielnicę wojskową i kampus w zdobytym mieście oraz [ICON_CivicBoosted] inspirację za każdą dzielnicę świątynną i kulturalną.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="pl_PL">
-			<Text>[COLOR_RED]TO_TRANSLATE: Combat victories provide [ICON_Science] Science equal to 25% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
+			<Text>Pokonanie jednostki zapewnia [ICON_SCIENCE] naukę równą 25% [ICON_STRENGTH] siły bojowej pokonanej jednostki (sieciowa prędkość gry). Miasta nie mogą być zmęczone wojną. Wszystkie jednostki militarne zostają uzdrowione po przejęciu miasta z cudem świata. </Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="pl_PL">
 			<Text>Dostępna wyłącznie dla Macedonii jednostka ciężkiej kawalerii zastępująca konnicę. +5 do [ICON_STRENGTH] siły bojowej, gdy na sąsiednim polu znajduje się wielki generał. +5 punktów wielkiego generała po zabiciu jednostki wroga. Rozpoczyna rozgrywkę z 1 darmowym awansem.</Text>
@@ -815,7 +815,7 @@
 			<Text>Wszystkie jednostki otrzymują +1 wizji. +1 do ilości [ICON_TradeRoute] szlaków handlowych podczas przechodzenia do nowej ery(łącznie z starożytnością). Otwarte granice z każdym państwem-miastem. </Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="pl_PL">
-			<Text>[COLOR_GREEN]Zablokuj sojusze ekonomiczne[ENDCOLOR]</Text>
+			<Text>[COLOR_GREEN]BAN TRADE TREATY[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="pl_PL">
 			<Text>+1 punkt [ICON_GreatPerson] wielkiego człowieka dzięki dzielnicom świątynnym (prorok), kampusom (naukowiec), dzielnicom kulturalnym z amfiteatrem (pisarz) i dzielnicom przemysłowym (inżynier).</Text>
@@ -926,7 +926,7 @@
 			<Text>Niech Bóg cię błogosławi.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_BARB_SETTING_3_DESC" Language="pl_PL">
-			<Text>Barbarzyńskie obozy kawalerii i morskie obozy nie pojawiają się przed 15 turą.[NEWLINE]Na mapie jest mniej obozów.[NEWLINE]Rozmieszczenie obozów jest zbalansowane między graczami.</Text>
+			<Text>Barbarzyńskie obozy kawalerii i morskie obozy nie pojawiają się przed 15 turą. Na mapie jest mniej obozów.[NEWLINE] Rozmieszczenie obozów jest zbalansowane między graczami.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="pl_PL">
 			<Text>Brak barbarzyńców</Text>
@@ -959,10 +959,10 @@
 			<Text>Standardowe ustawienia Gathering Storm</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="pl_PL">
-			<Text>Zbalansowane ustawienia warunków pod Gathering Storm:[NEWLINE]Więcej kultury/turystyki za Wielkie Dzieła, mniej turystyki wymagane by przyciągnąć turystę.[NEWLINE]Pierwszy kongres podczas epoki średniowiecza, pierwsze głosowanie dyplomatyczne podczas epoki renesansu.[NEWLINE]Lekko tańsze projekty i szybsze opracowywanie późniejszych technologii.</Text>
+			<Text>Zbalansowane ustawienia warunków pod Gathering Storm:[NEWLINE] Więcej kultury/turystyki za Wielkie Dzieła, mniej turystyki wymagane by przyciągnąć turystę.[NEWLINE] Pierwszy kongres podczas epoki średniowiecza, pierwsze głosowanie dyplomatyczne podczas epoki renesansu.[NEWLINE]Lekko tańsze projekty i szybsze opracowywanie późniejszych technologii.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="pl_PL">
-			<Text>Zbalansowane ustawienia warunków pod Rise and Fall:[NEWLINE]Więcej kultury/turystyki za Wielkie Dzieła, mniej turystyki wymagane by przyciągnąć turystę.[NEWLINE]Pierwszy kongres i głosowanie dyplomatyczne podczas epoki średniowiecza.[NEWLINE]Bardzo tanie projekty i szybsze opracowywanie późniejszych technologii.</Text>
+			<Text>Zbalansowane ustawienia warunków pod Rise and Fall:[NEWLINE] Więcej kultury/turystyki za Wielkie Dzieła, mniej turystyki wymagane by przyciągnąć turystę.[NEWLINE] Pierwszy kongres i głosowanie dyplomatyczne podczas epoki średniowiecza.[NEWLINE]Bardzo tanie projekty i szybsze opracowywanie późniejszych technologii.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="pl_PL">
 			<Text>Wszystkie warunki wygranej są zbalansowane.</Text>
@@ -977,10 +977,10 @@
 			<Text>Standardowe</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="pl_PL">
-			<Text>Wcześnie</Text>
+			<Text>Łatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="pl_PL">
-			<Text>Najwcześniej</Text>
+			<Text>Najłatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
@@ -989,10 +989,10 @@
 			<Text>Standardowe</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="pl_PL">
-			<Text>Wcześnie</Text>
+			<Text>Łatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="pl_PL">
-			<Text>Najwcześniej</Text>
+			<Text>Najłatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
@@ -1001,10 +1001,10 @@
 			<Text>Standardowe</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="pl_PL">
-			<Text>Wcześnie</Text>
+			<Text>Łatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="pl_PL">
-			<Text>Najwcześniej</Text>
+			<Text>Najłatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
@@ -1013,10 +1013,10 @@
 			<Text>Standardowe</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="pl_PL">
-			<Text>Wcześnie</Text>
+			<Text>Łatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="pl_PL">
-			<Text>Najwcześniej</Text>
+			<Text>Najłatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
@@ -1025,10 +1025,10 @@
 			<Text>Standardowe</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="pl_PL">
-			<Text>Wcześnie</Text>
+			<Text>Łatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="pl_PL">
-			<Text>Najwcześniej</Text>
+			<Text>Najłatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
@@ -1037,10 +1037,10 @@
 			<Text>Standardowe</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="pl_PL">
-			<Text>Wcześnie</Text>
+			<Text>Łatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="pl_PL">
-			<Text>Najwcześniej</Text>
+			<Text>Najłatwiej</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
@@ -1058,7 +1058,7 @@
 			<Text>Wielkie Dzieła i artefakty zapewniają więcej kultury i turystyki.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="pl_PL">
-			<Text>Wielkie Dzieła i artefakty zapewniają więcej kultury i turystyki.[NEWLINE]Wymagana wartość turystyki jest zmniejszona o 25%.</Text>
+			<Text>Wielkie Dzieła i artefakty zapewniają więcej kultury i turystyki.[NEWLINE] Wymagana wartość turystyki jest zmniejszona o 25%.</Text>
 		</Replace>
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="pl_PL">
 			<Text>Zwycięstwo kulturowe jest wyłączone.</Text>
