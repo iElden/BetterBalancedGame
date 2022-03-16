@@ -1547,6 +1547,25 @@
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="fr_FR">
 			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
 		</Replace>
+		<!-- Je met tout le bordel ici, faudra le ranger du coup -->
+		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="fr_FR">
+      		<Text>Permet la construction de synagogues ([ICON_Faith] foi +7).</Text>
+    	</Replace>
+    	<Replace Tag="LOC_BELIEF_STEWARDSHIP_DESCRIPTION" Language="fr_FR">
+      		<Text>Chaque campus ou plateforme commerciale d'une ville convertie à cette religion fournit respectivement [ICON_Science] science +2 ou [ICON_Gold] or +2.</Text>
+	    </Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Chaque campus ou plateforme commerciale d'une ville convertie à cette religion fournit respectivement [ICON_Science] science +2 ou [ICON_Gold] or +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION" Language="fr_FR">
+     		 <Text>Permet d'acheter des bâtiments pour le campus et la place du théâtre avec de la [ICON_Faith] foi. Réduit le coût d'achat des bâtiments du campus et de la place de théatre de 15%.</Text>
+  		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="fr_FR">
+      		<Text>Peut déplacer sa [ICON_Capital] capitale d'origine vers une ville fondée par ses soins et disposant d'un cothon en menant à terme un projet exclusif dans cette ville. Capacité des [ICON_TradeRoute] routes commerciales +1 pour chacun des bâtiments de la place de la gouvernance. [ICON_Production] Production +50% pour les quartiers de la ville disposant de la place de la gouvernance.</Text>
+    	</Replace>
+		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à la Grèce, cette unité de combat anti-cavalerie de l'Antiquité remplace le lancier. [ICON_Strength] Puissance de combat +7 si adjacente à un autre hoplite ou plus.</Text>
+    	</Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="fr_FR">
             <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
