@@ -112,7 +112,7 @@
 			<Text>Un edificio exclusivo de los aztecas. Proporciona +1 a Servicios [ICON_Amenities] y +1 a Cultura [ICON_Culture] a cada ciudad en un radio de 6 casillas.[NEWLINE] +1 punto de Gran general [ICON_GreatGeneral] por turno.</Text>
     	</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="es_ES">
-			<Text>Gasta cargas de Constructor para completar el 20% del coste original del distrito. +50% a la Producción [ICON_PRODUCTION] de unidades terrestres Cuerpo a cuerpo.</Text>
+			<Text>Gasta cargas de Constructor para completar el 30% del coste original del distrito. +50% a la Producción [ICON_PRODUCTION] de unidades terrestres Cuerpo a cuerpo.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION" Language="es_ES">
 			<Text>Los recursos de lujo de su territorio otorgan Servicios [ICON_Amenities] a 2 ciudades extra. +1 a la Fuerza de combate [ICON_Strength] de las unidades militares (al atacar) por cada recurso de lujo diferente mejorado en tierras aztecas.</Text>
@@ -358,7 +358,7 @@
 			<Text>Unidad exclusiva húngara de la Edad Media que sustituye al Corcel. +2 a la Fuerza de combate [ICON_Strength] por cada unidad adyacente reclutada.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="es_ES">
-			<Text>Las unidades reclutadas obtienen +1 al Movimiento [ICON_Movement] y +3 a la Fuerza de combate [ICON_Strength]. Mejorar las unidades reclutadas cuesta un 75% menos de Oro [ICON_GOLD] y de recursos. Si reclutas tropas de una Ciudad-estado recibes 1 Enviado [ICON_ENVOY] en esa Ciudad-estado. Obtiene la unidad exclusiva Ejército Negro al investigar la tecnología Castillos.</Text>
+			<Text>Las unidades reclutadas obtienen +1 al Movimiento [ICON_Movement] y +3 a la Fuerza de combate [ICON_Strength]. Mejorar las unidades reclutadas cuesta un 75% menos de Oro [ICON_GOLD] y de recursos. Si reclutas tropas de una Ciudad-estado recibes 1 Enviado [ICON_ENVOY] en esa Ciudad-estado. Obtiene la unidad exclusiva Ejército Negro al investigar la tecnología Castillos. Obtiene un espacio adicional de política diplomática.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="es_ES">			
 			<Text>Unidad exclusiva húngara de la Revolución Industrial que sustituye a la Caballería. +2 a la Fuerza de combate [ICON_Strength] por cada Ciudad-estado de la que seas suzerano.</Text>
@@ -629,6 +629,9 @@
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="es_ES">
 			<Text>+1 punto de Gran personaje [ICON_GreatPerson] por Campamento (General), Puerto (Almirante) y Centro comercial (Mercader).</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="es_ES">
+			<Text>+30% a la Producción [ICON_Production] de unidades militares antiguas y clásicas.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="es_ES">
 			<Text>1+ a Alimentos [ICON_FOOD] en casillas con [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE] y [ICON_RESOURCE_WHEAT].</Text>
 		</Replace>
@@ -636,16 +639,16 @@
 			<Text>Cuando se elige recibes un Constructor en la capital. 1+ a Alimentos [ICON_FOOD] en casillas con [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] y [ICON_RESOURCE_MAIZE].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="es_ES">
-			<Text>+25% a la Producción [ICON_PRODUCTION] de Colonos.[NEWLINE]Las fronteras se expanden un 50% más rápido y las ciudades nuevas obtienen dos casillas gratis al fundarse.</Text>
+			<Text>+20% a la Producción [ICON_PRODUCTION] de Colonos.[NEWLINE]Las fronteras se expanden un 50% más rápido y las ciudades nuevas obtienen dos casillas gratis al fundarse.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>+25% a la Producción [ICON_PRODUCTION] de Colonos.[NEWLINE]Las fronteras se expanden un 50% más rápido y las ciudades nuevas obtienen dos casillas gratis al fundarse.</Text>
+			<Text>+20% a la Producción [ICON_PRODUCTION] de Colonos.[NEWLINE]Las fronteras se expanden un 50% más rápido y las ciudades nuevas obtienen dos casillas gratis al fundarse.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="es_ES">
-			<Text>Se obtiene Fe [ICON_FAITH] igual al 40% de la Producción de unidades militares terrestres cuando se entrenan.[NEWLINE]Tu capital obtiene 2 Guerreros.</Text>
+			<Text>Se obtiene Fe [ICON_FAITH] igual al 30% de la Producción [ICON_PRODUCTION] de unidades militares terrestres cuando se entrenan.[NEWLINE]Tu capital obtiene 2 Guerreros.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Se obtiene Fe [ICON_FAITH] igual al 40% de la Producción de unidades militares terrestres cuando se entrenan.[NEWLINE]Tu capital obtiene 2 Guerreros.</Text>
+			<Text>Se obtiene Fe [ICON_FAITH] igual al 30% de la Producción [ICON_PRODUCTION] de unidades militares terrestres cuando se entrenan.[NEWLINE]Tu capital obtiene 2 Guerreros.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+1 a la Producción [ICON_Production] en Pantanos, Oasis y Terrenos de aluvión.</Text>
@@ -695,7 +698,7 @@
 			<Text>Los Lugares sagrados obtienen +1 a Fe [ICON_Faith] por casillas planas de Tundra adyacentes.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="es_ES">
-			<Text>Las unidades militares obtienen +7 a la Fuerza de combate [ICON_Strength] dentro de las fronteras de ciudades extranjeras que siguen esta religión.</Text>
+			<Text>Las unidades militares obtienen +5 a la Fuerza de combate [ICON_Strength] dentro de las fronteras de ciudades extranjeras que siguen esta religión.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="es_ES">
 			<Text>+1 a Servicios [ICON_Amenities] en ciudades con un distrito especializado.</Text>
@@ -734,7 +737,7 @@
 			<Text>+2 a Cultura [ICON_Culture]. No puede ser saqueado por desastres naturales.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="es_ES">
-			<Text>+10 a la Curación de unidades dentro de las fronteras de ciudades que sigan tu religión.</Text>
+			<Text>+20 a la Curación de unidades dentro de las fronteras de ciudades que sigan tu religión.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+2 de Oro [ICON_GOLD] por cada ciudad que siga esta religión.</Text>
@@ -929,13 +932,13 @@
 		</Replace>
 		<!-- Moksha -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="es_ES">
-			<Text>+15% a la Cultura [ICON_Culture] que genera la ciudad y la presión religiosa a las ciudades adyacentes es un 100% más fuerte desde esta ciudad.</Text>
+			<Text>+15% a la Cultura [ICON_Culture] que genera la ciudad y la presión religiosa a las ciudades adyacentes es un 100% más fuerte. +2 a Fe [ICON_FAITH] por cada distrito.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="es_ES">
 			<Text>{LOC_GOVERNOR_THE_CARDINAL_NAME} es un líder religioso y espiritual que puede incrementar la relevancia Cultural [ICON_CULTURE] y aumentar la Fuerza religiosa de una ciudad [ICON_Religion].</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="es_ES">
-			<Text>Permite a la ciudad comprar distritos con Fe [ICON_FAITH]. [NEWLINE]+2 a Fe [ICON_Faith] por cada distrito especializado en la ciudad.</Text>
+			<Text>Permite a la ciudad comprar distritos con Fe [ICON_FAITH].</Text>
 		</Replace>
 		<!-- Amani -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="es_ES">
@@ -1258,6 +1261,24 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+1 punto de influencia por turno</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="es_ES">
+			<Text>Permite la construcción de Sinagogas (+7 a Fe [ICON_Faith])</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_DESCRIPTION" Language="es_ES">
+			<Text>Cada distrito de Campus o de Centro comercial de una ciudad que siga esta religión proporcionan +2 a Ciencia [ICON_Science] o +2 de Oro [ICON_Gold], respectivamente.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Cada distrito de Campus o de Centro comercial de una ciudad que siga esta religión proporcionan +2 a Ciencia [ICON_Science] o +2 de Oro [ICON_Gold], respectivamente.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION" Language="es_ES">
+			<Text>Puedes comprar edificios de los distritos de Campus y de Teatro con Fe [ICON_Faith]. 15% de descuento en la compra de los edificios del Campus y del Teatro.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="es_ES">
+			<Text>Puede trasladar la Capital [ICON_Capital] original a cualquier ciudad que tenga un Cothon y que haya fundado, completando un proyecto exclusivo en esa ciudad. +1 a la capacidad de Rutas comerciales [ICON_TradeRoute] por cada edificio de la Plaza de gobierno. +50% a la Producción [ICON_Production] de distritos en la ciudad con la Plaza de gobierno.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="es_ES">
+			<Text>Unidad anticaballería exclusiva de la Grecia de la Antigüedad que sustituye al Lancero. +7 a la Fuerza de combate [ICON_Strength] si hay al menos un Hoplita adyacente.</Text>
 		</Replace>
 		
 		<!-- Front End -->
