@@ -7,7 +7,7 @@
 		<!-- Author : Priz -->
 		
 		<!-- =============== D I R I G E A N T S === M U L T I P L E S =============== -->
-		
+
 		<!-- ========== ALIENOR D'AQUITAINE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_PRODUCTION] Production +100% pour les bâtiments de la Place du Théâtre. Loyauté -1 par tour dans les villes étrangères pour chaque chef-d'œuvre présent dans l'une des villes d'Aliénor, dans un rayon de 9 cases. Une ville qui quitte une autre civilisation suite à une perte de loyauté et dont la majeure partie de la loyauté provient de la civilisation d'Aliénor rejoint directement celle-ci sans passer par le statut de ville libre.[NEWLINE][NEWLINE]Les chefs-d'œuvre reçoivent des rendements supplémentaires en fonction des quartiers présents dans la ville :[NEWLINE][ICON_SCIENCE]Science +2 pour un campus.[NEWLINE][ICON_CULTURE]Culture +2 pour une place du théâtre.[NEWLINE][ICON_GOLD]Or +2 pour un port ou une plateforme commerciale.[NEWLINE][ICON_FAITH]Foi +2 pour un lieu saint.[NEWLINE][ICON_PRODUCTION]Production +2 pour une zone industrielle.[NEWLINE][ICOn_FOOD]Nourriture +2 pour un quartier résidentiel.[NEWLINE]Le bonus de suzerain d'Anshan ne peut pas être utilisé par Aliénor.</Text>
@@ -114,7 +114,7 @@
       		<Text>Bâtiment exclusif aux Aztèques qui remplace l'Arena. [NEWLINE][ICON_Amenities] Activités +1 et [ICON_CULTURE] Culture +1 pour chaque Centre-ville dans un rayon de 6 cases. [NEWLINE]Points de [ICON_GreatGeneral] Général illustre +1. [NEWLINE][ICON_TOURISM] Tourisme +1 une fois le dogme de la conservation atteint.</Text> 
     	</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="fr_FR">
-			<Text>Vous pouvez dépenser des charges de bâtisseur pour compléter 20 % du coût initial du quartier. [ICON_PRODUCTION] Production +50% pour les unités de combat rapproché.</Text>
+			<Text>Vous pouvez dépenser des charges de bâtisseur pour compléter 30 % du coût initial du quartier. [ICON_PRODUCTION] Production +50% pour les unités de combat rapproché.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION" Language="fr_FR">
 			<Text>Les ressources de luxe sur son territoire fournissent une [ICON_Amenities] activité à deux villes supplémentaires. [ICON_Strength] Puissance de combat en attaque +1 pour les unités militaires pour chaque ressource de luxe différente aménagée en territoire aztèque.</Text>
@@ -360,7 +360,7 @@
 			<Text>Exclusive à la Hongrie, cette unité du Moyen-âge remplace le coursier. [ICON_Strength] Puissance de combat +2 pour chaque unité mobilisée adjacente.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="fr_FR">
-			<Text>Les unités levées depuis une cité-état gagnent une capacité qui leur octroie +3 [ICON_Strength] Puissance de Combat et +1 [ICON_Movement] PM. Améliorer des unités levées coûte 75 % d'[ICON_GOLD] or et de ressources en moins. Si vous levez les troupes d'une cité-état, vous y recevez 1 [ICON_ENVOY] émissaire. Les châteaux débloquent l'Armée noire, une unité exclusive.</Text>
+			<Text>Les unités levées depuis une cité-état gagnent une capacité qui leur octroie +3 [ICON_Strength] Puissance de Combat et +1 [ICON_Movement] PM. Améliorer des unités levées coûte 75 % d'[ICON_GOLD] or et de ressources en moins. Si vous levez les troupes d'une cité-état, vous y recevez 1 [ICON_ENVOY] émissaire. Les châteaux débloquent l'Armée noire, une unité exclusive.[NEWLINE]Vous recevez un empalcement de doctrine diplomatique suplémentaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="fr_FR">			
 			<Text>Exclusive à la Hongrie, cette unité de l'ère industrielle remplace la cavalerie. [ICON_Strength] Puissance de combat +2 pour chaque cité-état dont vous êtes le suzerain.</Text>
@@ -638,16 +638,16 @@
 			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] et [ICON_RESOURCE_MAIZE].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25% pour les colons. [NEWLINE]Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</Text>
+			<Text>[ICON_PRODUCTION] Production +20% pour les colons. [NEWLINE]Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25% pour les colons. [NEWLINE]Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</Text>
+			<Text>[ICON_PRODUCTION] Production +20% pour les colons. [NEWLINE]Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez 40% du coût en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une. [NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
+			<Text>Vous recevez 30% du coût en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une. [NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez 40% du coût en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une. [NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
+			<Text>Vous recevez 30% du coût en production d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une. [NEWLINE]Votre capitale reçoit 2 Guerriers.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +1 pour les cases de Marais, d'Oasis et de Plaines Innondables de tout types.</Text>
@@ -688,6 +688,9 @@
 		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="fr_FR">
       		<Text>Points de [ICON_GreatPerson] personnage illustre +1 pour les lieux saints (prophète), les campus (scientifique), les places du théâtre (écrivain) et les zones industrielles (ingénieur).</Text>
     	</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +30% pour les unités militaires antiques et de l'ère classique.</Text>
+		</Replace>
 		
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="fr_FR">
@@ -697,7 +700,7 @@
 			<Text>[ICON_Faith] Foi +1 pour les lieux saints adjacents à des cases de toundra plate.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +7 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
+			<Text>[ICON_Strength] Puissance de combat +5 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Amenities] Activités +1 dans les villes abritant un quartier spécialisé.</Text>
@@ -736,13 +739,16 @@
 			<Text>+2 [ICON_CULTURE] Culture. Pillage impossible par les catastrophes naturelles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="fr_FR">
-			<Text>Guérison +10 pour toutes vos unités se trouvant dans le territoire d'une ville où votre religion est majoritaire.</Text>
+			<Text>Guérison +20 pour toutes vos unités se trouvant dans le territoire d'une ville où votre religion est majoritaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_GOLD] Or +2 pour chaque ville convertie à cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Les autels et les temples octroient +3 [ICON_FOOD] nourriture et +1 [ICON_HOUSING] habitation chacun.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_GOLD] Or +2 pour vos [ICON_TradeRoute] routes commerciales internationales depuis des villes dotées d'un lieu saint, et +2 supplémentaires pour chaque bâtiment dans ce lieu saint.</Text>
 		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
@@ -775,7 +781,7 @@
 			<Text>Merveille naturelle infranchissable de deux cases pouvant apparaître sur les côtes. [ICON_Science] Science +2 et [ICON_FOOD] nourriture +1 pour les cases adjacentes.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="fr_FR">
-			<Text>Merveille naturelle d'une case prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_Science] science +2, [ICON_Faith] foi +4 et source d'eau douce.</Text>
+			<Text>Merveille naturelle d'une case prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_Science] science +2, [ICON_Faith] foi +5 et source d'eau douce.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle de quatre cases prenant la forme d'un marais. [ICON_FAITH] Foi +2, [ICON_Food] nourriture +2 et [ICON_PRODUCTION] production +2.</Text>
@@ -799,7 +805,7 @@
 			<Text>[ICON_ENVOY] Émissaires +1 lorsque vous construisez une merveille dans cette ville, dont une apadana. [NEWLINE][NEWLINE]Doit être construite adjacente à votre [ICON_CAPITAL] capitale.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +100% pour les unités navales dans toutes vos villes. Doit être construit sur côte adjacente à une zone industrielle.</Text>
+			<Text>[ICON_Production] Production +100% pour les unités navales dans toutes vos villes. Doit être construit en eau peu profonde et adjacent à une zone industrielle.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="fr_FR">
 			<Text>Augmente la croissance de toutes les villes de 15 %. Doivent être construits près d'une rivière. [ICON_HOUSING] Habitations +2 dans la ville de construction. [ICON_HOUSING] Habitations +1 dans toutes les autres villes dans un rayon de 6 cases.</Text>
@@ -928,13 +934,13 @@
 		</Replace>
 		<!-- Moksha -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Culture] Culture générée par la ville +15 %. La pression religieuse de cette ville envers les autres villes est 100 % plus forte.</Text>
+			<Text>[ICON_Culture] Culture générée par la ville +15 %. La pression religieuse de cette ville envers les autres villes est 100 % plus forte. [ICON_FAITH] Foi +2 pour chaque quartier spécialisé dans la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="fr_FR">
 			<Text>Leader religieux et spirituel, il peut renforcer le rayonnement [ICON_CULTURE] culturel et la puissance [ICON_Religion] théologique dans une ville. {LOC_GOVERNOR_THE_CARDINAL_NAME} est la lumière de la [ICON_FAITH] foi qui brille sur votre empire.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="fr_FR">
-			<Text>Permet à la ville d'acheter des quartiers avec de la [ICON_FAITH] foi. [ICON_FAITH] Foi +2 pour chaque quartier spécialisé dans la ville.</Text>
+			<Text>Permet à la ville d'acheter des quartiers avec de la [ICON_FAITH] foi.</Text>
 		</Replace>
 		<!-- Amani -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="fr_FR">
@@ -1112,6 +1118,9 @@
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour les bâtiments de défense.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_MARKET_ECONOMY_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Culture] Culture et [ICON_Science] Science +2 pour vos [ICON_TradeRoute] routes commerciales internationales, ainsi que [ICON_Gold] Or +1 par ressource de luxe ou stratégique aménagée à destination.</Text>
+		</Replace>
 		
 		<!-- Nouvelles cartes d'unités de Siège -->
 		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="fr_FR">
@@ -1195,7 +1204,10 @@
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
 			<Text>Le prix en [ICON_GOLD] Or et en [ICON_FAITH] Foi des unités militaires ou de soutien terrestres baisse de 10 % par bâtiment du campement construit dans cette ville.</Text>
-		</Replace>	
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_VATICAN_CITY_DESCRIPTION" Language="fr_FR">
+			<Text>Lorsque vous activez un [ICON_GreatPerson] personnage illustre, il génère 400 points de pression religieuse pour la religion que vous avez fondée (ou dominante) dans les villes dans un rayon de 6 cases.</Text>
+		</Replace>
 		
 		<!-- =============== D I V E R S =============== -->
 		
@@ -1535,6 +1547,25 @@
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="fr_FR">
 			<Text>The world recognizes your absolute domination, for you built an empire on which the sun never sets.</Text>
 		</Replace>
+		<!-- Je met tout le bordel ici, faudra le ranger du coup -->
+		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="fr_FR">
+      		<Text>Permet la construction de synagogues ([ICON_Faith] foi +7).</Text>
+    	</Replace>
+    	<Replace Tag="LOC_BELIEF_STEWARDSHIP_DESCRIPTION" Language="fr_FR">
+      		<Text>Chaque campus ou plateforme commerciale d'une ville convertie à cette religion fournit respectivement [ICON_Science] science +2 ou [ICON_Gold] or +2.</Text>
+	    </Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Chaque campus ou plateforme commerciale d'une ville convertie à cette religion fournit respectivement [ICON_Science] science +2 ou [ICON_Gold] or +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION" Language="fr_FR">
+     		 <Text>Permet d'acheter des bâtiments pour le campus et la place du théâtre avec de la [ICON_Faith] foi. Réduit le coût d'achat des bâtiments du campus et de la place de théatre de 15%.</Text>
+  		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="fr_FR">
+      		<Text>Peut déplacer sa [ICON_Capital] capitale d'origine vers une ville fondée par ses soins et disposant d'un cothon en menant à terme un projet exclusif dans cette ville. Capacité des [ICON_TradeRoute] routes commerciales +1 pour chacun des bâtiments de la place de la gouvernance. [ICON_Production] Production +50% pour les quartiers de la ville disposant de la place de la gouvernance.</Text>
+    	</Replace>
+		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="fr_FR">
+      		<Text>Exclusive à la Grèce, cette unité de combat anti-cavalerie de l'Antiquité remplace le lancier. [ICON_Strength] Puissance de combat +7 si adjacente à un autre hoplite ou plus.</Text>
+    	</Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="fr_FR">
             <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>

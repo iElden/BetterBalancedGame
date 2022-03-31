@@ -75,10 +75,10 @@
             <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀, [ICON_RESOURCE_WHEAT] 밀 및 [ICON_RESOURCE_MAIZE] 옥수수 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="ko_KR">
-			<Text>개척자 생산 시 [ICON_PRODUCTION] 생산력 +25%를 부여합니다. 영토 확장 속도가 50% 증가하며, 도시를 세울 때 추가 영토를 2타일 얻습니다.</Text>
+			<Text>개척자 생산 시 [ICON_PRODUCTION] 생산력 +20%를 부여합니다. 영토 확장 속도가 50% 증가하며, 도시를 세울 때 추가 영토를 2타일 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>개척자 생산 시 [ICON_PRODUCTION] 생산력 +25%를 부여합니다. 영토 확장 속도가 50% 증가하며, 도시를 세울 때 추가 영토를 2타일 얻습니다.</Text>
+			<Text>개척자 생산 시 [ICON_PRODUCTION] 생산력 +20%를 부여합니다. 영토 확장 속도가 50% 증가하며, 도시를 세울 때 추가 영토를 2타일 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ko_KR">
 			<Text>법전 사회 제도를 획득하면 모든 도시가 추가적인 도심부 건물을 가지고 시작합니다. (고대 시대부터 시작할 경우 기념비 건물을 가지고 시작)</Text>
@@ -167,7 +167,7 @@
 			<Text>언덕에서 이동 시 이동력 페널티를 받지 않습니다. 언덕에서 [ICON_Strength] 전투력 +4를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="ko_KR">
-			<Text>건설자의 건설 횟수를 소진하여 특수지구 원래 비용의 20%를 기여합니다. 지상 근접 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +50%를 제공합니다.</Text>
+			<Text>건설자의 건설 횟수를 소진하여 특수지구 원래 비용의 30%를 기여합니다. 지상 근접 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="ko_KR">
 		  <Text>[ICON_Capital] 수도 6타일 이내의 비수도 도시들의 모든 생산량이 +10% 증가합니다. 다른 비수도 도시들의 모든 생산량에는 -15%가 적용됩니다. [ICON_Capital] 수도 6타일 이내의 유닛에 [ICON_Strength] 전투력 +3을 부여합니다.</Text>
@@ -186,7 +186,7 @@
 			<Text>자연경관 또는 산맥 근처에 있는 놀라운 매력도 타일이 [ICON_SCIENCE] 과학 +1을 얻습니다. 천문학 기술 연구 완료시 추가로 [ICON_SCIENCE] 과학 +1을 얻습니다. 불가사의 또는 숲 근처에 있는 놀라운 매력도 타일이 [ICON_CULTURE] 문화 +1을 얻습니다. 계몽주의 사회 제도 완료시 추가로 [ICON_CULTURE] 문화 +1을 얻습니다. [NEWLINE]국립공원이 있는 도시의 모든 타일이 매력도 +1을 얻습니다. 중세 시장 사회제도를 완료하면, 건설자가 숲(이차림)을 심을 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ko_KR">
-			<Text>플레이어의 종교를 믿는 도시 영토 내 유닛에게 치유 효과가 +10 증가합니다.</Text>
+			<Text>플레이어의 종교를 믿는 도시 영토 내 유닛에게 치유 효과가 +20 증가합니다.</Text>
 		</Replace>
         <Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ko_KR">
             <Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산력 +1을 제공합니다. [ICON_Strength] 방어력이 증가합니다. 서로 연결된 만리장성 타일에는 [ICON_Gold] 금 보너스를 제공합니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Culture] 문화 및 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다.</Text>
@@ -305,7 +305,7 @@
 		  </Replace>
 		  
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
-			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다.</Text>
+			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다. 이 도시의 각 전문 특수지구마다 [ICON_Faith] 신앙 +2를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ko_KR">
 			<Text>채석장에서 [ICON_Production] 생산력 +1, [ICON_Faith] 신앙 +1을 획득합니다.</Text>
@@ -430,7 +430,7 @@
 			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
 		</Replace>-->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
-            <Text>징병된 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +3 및 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+            <Text>징병된 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +3 및 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다. 외교 정책 슬롯이 1개 더 추가됩니다.</Text>
         </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
 			<Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다(온라인 속도 기준). 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>
@@ -572,10 +572,10 @@
             <Text>툰드라에 위치한 도심부에 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕, 툰드라 언덕에서 모든 광산이 [ICON_PRODUCTION] 생산력 +2를, 제재소에서 [ICON_PRODUCTION] 생산력 +2를, 야영지에서 [ICON_FOOD] 식량 +2를, 농장에서 [ICON_FOOD] 식량 +2를 제공하며, 전략 자원 누적률은 +100% 증가합니다. 또한 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
-            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 40%에 준하는 [ICON_FAITH] 신앙이 제공됩니다. 이 교리를 채택하면 수도에 전사 유닛 2기를 제공합니다.</Text>
+            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 30%에 준하는 [ICON_FAITH] 신앙이 제공됩니다. 이 교리를 채택하면 수도에 전사 유닛 2기를 제공합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
-            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 40%에 준하는 [ICON_FAITH] 신앙이 제공됩니다. 이 교리를 채택하면 수도에 전사 유닛 2기를 제공합니다.</Text>
+            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 30%에 준하는 [ICON_FAITH] 신앙이 제공됩니다. 이 교리를 채택하면 수도에 전사 유닛 2기를 제공합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ko_KR">
 			<Text>성공적으로 달에 인간을 상륙시켰습니다! 플레이어의 턴당 [ICON_Science] 과학 생산량의 5배인 [ICON_Culture] 문화 보너스를 일회성으로 부여하며, 과학 승리로의 두 번째 단계를 표시합니다.</Text>
@@ -729,6 +729,9 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="ko_KR">
 			<Text>주둔지(장군), 항만(제독) 및 상업 중심지(상인) 특수지구로부터 해당 [ICON_GreatPerson] 위인 점수 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ko_KR">
+			<Text>고대 및 고전 시대 군사 유닛 생성에 대한 [ICON_Production] 생산력 +30%를 제공합니다.</Text>
 		</Replace>
 		<!---->
 		<!---->
@@ -892,7 +895,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +7을 획득합니다.</Text>
+			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +5를 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ko_KR">
 			<Text>이 종교를 믿는 도시의 각 성지 또는 극장가 특수지구에서 [ICON_Faith] 신앙 +2 또는[ICON_Culture] 문화 +2를 제공합니다.</Text>
@@ -1569,7 +1572,7 @@
 			<Text>이 도시에서 생산된 개척자는 생산시 [ICON_Citizen] 인구를 소모하지 않으며 [ICON_Movement] 이동력이 +1 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="ko_KR">
-			<Text>도시에서 [ICON_FAITH] 신앙으로 특수지구를 구매할 수 있습니다. [NEWLINE]이 도시의 각 전문 특수지구마다 [ICON_Faith] 신앙 +3을 얻습니다.</Text>
+			<Text>도시에서 [ICON_FAITH] 신앙으로 특수지구를 구매할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="ko_KR">
 			<Text>본인이 지은 도시에서 [ICON_Faith] 신앙으로 지상 유닛을 구입할 수 있는 능력을 부여합니다.[NEWLINE]시설 및 특수지구 약탈 시 [ICON_Faith] 신앙 보너스를 제공합니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1.</Text>
@@ -1580,6 +1583,30 @@
         <Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="ko_KR">
             <Text>턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +1을 얻습니다.</Text>
         </Replace>
+		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="ko_KR">
+			<Text>회당( [ICON_Faith] 신앙 +7)을 건설할 수 있게 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_DESCRIPTION" Language="ko_KR">
+			<Text>이 종교를 따르는 도시에 각 캠퍼스 또는 상업 중심지 특수지구는 각각의 [ICON_Science] 과학 +2 또는 [ICON_Gold] 금 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 종교를 따르는 도시에 각 캠퍼스 또는 상업 중심지 특수지구는 각각의 [ICON_Science] 과학 +2 또는 [ICON_Gold] 금 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION" Language="ko_KR">
+			<Text>캠퍼스와 극장가 특수지구 내 건물을 [ICON_Faith] 신앙으로 구매할 수 있습니다. 해당 건물의 구매 비용이 15% 감소합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="ko_KR">
+			<Text>해당 도시에서 특유의 프로젝트를 완료하여 코톤이 있는 도시로 원래 [ICON_Capital] 수도를 이전할 수 있습니다. 각 정부 청사 내 건물에 대해 [ICON_TradeRoute] 교역로 최대치 +1을 제공합니다. 정부 청사가 있는 도시의 특수지구에 대한 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="ko_KR">
+			<Text>창병을 대체하는 그리스 특유의 고대 시대 대기병 유닛입니다. 장갑보병이 서로 인접한 경우, 각 장갑보병은 [ICON_Strength] 전투력 +7을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HAMMURABI_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>전문 특수지구를 처음 건설할 때마다 해당 전문 특수지구에서 현재 건설할 수 있는 가장 낮은 [ICON_PRODUCTION] 생산력 비용의 건물을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HAMMURABI_XP1_DESCRIPTION" Language="ko_KR"> <!-- new add -->
+			<Text>정부 청사를 제외하고 전문 특수지구를 처음 건설할 때마다 해당 지구에서 현재 건설할 수 있는 가장 낮은 [ICON_PRODUCTION] 생산력 비용 건물을 얻습니다.</Text>
+		</Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ko_KR">
             <Text>[COLOR_GREEN]'무역 정책' 안건 제거[ENDCOLOR]</Text>

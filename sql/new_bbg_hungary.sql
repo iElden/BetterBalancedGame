@@ -1,6 +1,15 @@
+-- by: iElden
 
-
+-- Levy combat to +3
 UPDATE ModifierArguments SET VALUE='3' WHERE ModifierId='RAVEN_LEVY_COMBAT' AND Name='Amount';
+
+-- Add Green Card
+INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId) VALUES
+    ('BBG_ADDITIONAL_GREEN_CARD', 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER', 'PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_ADDITIONAL_GREEN_CARD', 'GovernmentSlotType', 'SLOT_DIPLOMATIC');
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_PEARL_DANUBE', 'BBG_ADDITIONAL_GREEN_CARD');
 
 -- Huszar +1 by suzed city-states
 INSERT INTO Requirements(RequirementId, RequirementType)

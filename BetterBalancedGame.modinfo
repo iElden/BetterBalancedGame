@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be231" version="40710">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be231" version="40742">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4071">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4074">
 	<Properties>
-		<Name>Better Balanced Game 4.7.1</Name>
+		<Name>Better Balanced Game 4.7.4</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4071</Version>
+		<Version>4074</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -233,6 +233,7 @@
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
 			<File>lang/italian.xml</File>
+			<File>lang/spanish.xml</File>
 		</UpdateText>
 		<UpdateDatabase id="bbg_frontend_custom_victory">
 			<Properties>
@@ -262,6 +263,7 @@
             <File>lang/german.xml</File>
 			<File>lang/chinese.xml</File>
 			<File>lang/italian.xml</File>
+			<File>lang/spanish.xml</File>
 		</UpdateText>
 		
 		<ReplaceUIScript id="bbg_worldranking">
@@ -618,6 +620,7 @@
         <File>lang/german.xml</File>
 		<File>lang/chinese.xml</File>
 		<File>lang/italian.xml</File>
+		<File>lang/spanish.xml</File>
 		<File>sql/_utils.sql</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>

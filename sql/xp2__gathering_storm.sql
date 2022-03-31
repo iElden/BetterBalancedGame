@@ -296,15 +296,13 @@ UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 
 
-
 --==================
--- Sumeria
+-- Scythia
 --==================
-/* REVERT TO BASE GAME
-INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost) VALUES
-	('UNIT_SUMERIAN_WAR_CART', 10);
-
-*/
+-- Scythian horse cost 5 online speed
+INSERT INTO Units_XP2(UnitType, ResourceCost) VALUES
+	('UNIT_SCYTHIAN_HORSE_ARCHER', 10);
+UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
 
 --==================
 -- Sweden
@@ -491,7 +489,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements VALUES
 UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
 
 -- Updated this value to match the description text
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='20' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
 
 --==============================================================
 --******				START BIASES					  ******
@@ -722,11 +720,6 @@ UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_
 -- 2020/12/21 - Moved Moska Citadel fix from new_bbg_nfp_babylon.sql here (was 25)
 -- Related to https://github.com/iElden/BetterBalancedGame/issues/48
 UPDATE ModifierArguments SET Value=24 WHERE ModifierId='CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS' AND Name='BuildingProductionPercent';
-
--- 2021-01-07: Moksha - Moved Faith generation from promote 0 to 2R:
-UPDATE GovernorPromotionModifiers SET GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT';
--- Up promote to 3 faith since it's later in tree.
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CARDINAL_BISHOP_FAITH_DISTRICT' AND Name='Amount';
 
 
 -- move Pingala's 100% GPP to first on left ability

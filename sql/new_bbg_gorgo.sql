@@ -1,5 +1,8 @@
 -- Author: iElden
 
+-- Greek hoplite ability to +7
+UPDATE ModifierArguments SET Value='7' WHERE ModifierId='HOPLITE_NEIGHBOR_COMBAT_MODIFIER' AND Name='Amount';
+
 -- ================================
 -- Military power by red card slot.
 -- ================================

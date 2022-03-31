@@ -65,10 +65,10 @@
 			<Text>选择后即可在 [ICON_Capital] 首都中获得一个建造者，每一个有 [ICON_RESOURCE_CATTLE] 、 [ICON_RESOURCE_RICE] 、和 [ICON_RESOURCE_WHEAT] 的单元格+1 [ICON_FOOD] 食物。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>生产开拓者时+25% [ICON_PRODUCTION] 生产力。[NEWLINE]边界扩张速度提升50%。[NEWLINE]建立新城市时获得额外两格领土。</Text>
+			<Text>生产开拓者时+20% [ICON_PRODUCTION] 生产力。[NEWLINE]边界扩张速度提升50%。[NEWLINE]建立新城市时获得额外两格领土。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>生产开拓者时+25% [ICON_PRODUCTION] 生产力。[NEWLINE]边界扩张速度提升50%。[NEWLINE]建立新城市时获得额外两格领土。</Text>
+			<Text>生产开拓者时+20% [ICON_PRODUCTION] 生产力。[NEWLINE]边界扩张速度提升50%。[NEWLINE]建立新城市时获得额外两格领土。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>在法典研究完毕后建立的所有城市带有一个额外的市中心建筑。（远古时代是纪念碑）。</Text>
@@ -140,7 +140,7 @@
 			<Text>在丘陵上移动时无 [ICON_Movement] 移动力减益、战斗时+4 [ICON_STRENGTH] 战斗力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>使用建造者劳动力来推进20%的区域建设进程。生产陆地近战单位时+50% [ICON_PRODUCTION] 生产力。</Text>
+			<Text>使用建造者劳动力来推进30%的区域建设进程。生产陆地近战单位时+50% [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="zh_Hans_CN">
 			<Text> [ICON_Capital] 首都6个单元格范围内的非首都城市所有产出+10%。其他非首都城市所有产出-15%。[ICON_Capital] 首都6个单元格范围内的单位+3 [ICON_Strength] 战斗力。</Text>
@@ -161,7 +161,7 @@
 			<Text>相邻自然奇观或山脉，魅力值为“惊艳”的单元格+1 [ICON_SCIENCE] 科技值，研究天文学后额外+1 [ICON_SCIENCE] 科技值。相邻自然奇观或树林，魅力值为“惊艳”的单元格+1 [ICON_CULTURE] 文化值，完成启蒙运动市政后额外+1 [ICON_CULTURE] 文化值。[NEWLINE]如拥有国家公园，城市的所有单元格+1魅力。[NEWLINE]拥有“中世纪集市”市政后即可栽种树林。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>你的宗教单位在信仰你宗教的城市境内的生命值回复量+10。</Text>
+			<Text>你的所有单位在信仰你宗教的城市境内的生命值回复量+20。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁建造者建造中国特色改良设施长城的能力。[NEWLINE][NEWLINE]每段长城+1 [ICON_PRODUCTION] 生产力。提升 [ICON_Strength] 防御力。如果与其他分段相邻，将获得 [ICON_Gold] 金币加成。随着科技进步，若与其他长城相邻，所有分段将获得 [ICON_Culture] 文化和 [ICON_Tourism] 旅游业绩加成。必须沿着帝国的边界线建造。</Text>
@@ -290,7 +290,7 @@
 			<Text>雄伟壮丽：每修建1座新特色区域则+1时代得分。在黄金时代开始时选择此着力点后，所有建造者+2 [ICON_Movement] 移动力。可用 [ICON_Faith] 信仰值购买平民单位。用 [ICON_FAITH] 信仰值和 [ICON_GOLD] 金币建造者和开拓者的费用降低10%。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>该城市每回合产出的 [ICON_Culture] 文化值+15%，对相邻城市的宗教压力+100%。</Text>
+			<Text>该城市每回合产出的 [ICON_Culture] 文化值+15%，对相邻城市的宗教压力+100%。城市中的每个特色区域提供+2 [ICON_Faith] 信仰值。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>采石场+1 [ICON_Production] 生产力和+1 [ICON_Faith] 信仰值。</Text>
@@ -365,7 +365,7 @@
 			<Text>没有特色区域的城市修建第一个特色区域时+50% [ICON_Production] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>征集单位+1 [ICON_Movement] 移动力，+3 [ICON_Strength] 战斗力。升级征集单位花费的 [ICON_GOLD] 金币和资源减少75%。征集城邦单位时可在该城邦增加1名 [ICON_ENVOY] 使者。研究“城堡”科技后获得特色单位黑军。</Text>
+			<Text>征集单位+1 [ICON_Movement] 移动力，+3 [ICON_Strength] 战斗力。升级征集单位花费的 [ICON_GOLD] 金币和资源减少75%。征集城邦单位时可在该城邦增加1名 [ICON_ENVOY] 使者。研究“城堡”科技后获得特色单位黑军。除酋邦外，每种政体可获得一个额外的外交政策槽位。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>战斗胜利获得被击败单位25% [ICON_Strength] 战斗力的 [ICON_Science] 科技值。城市不会产生厌战情绪。占领拥有世界奇观的城市时，所有的军事单位的体力值将完全恢复。</Text>
@@ -500,10 +500,10 @@
 			<Text>冻土城市的市中心获得+1 [ICON_Food] 食物。[NEWLINE] 可以在冻土平原上建造农场。解锁“土木工程”市政后可以在冻土丘陵上建造农场。冻土，冻土丘陵，雪地，雪地丘陵上的矿山和伐木场提供+2 [ICON_PRODUCTION] 生产力，农场和营地提供+2 [ICON_FOOD] 食物，战略资源的积累速度加快100%。购买冻土、冻土丘陵、雪地和雪地单元格的价格只需要原来的50%。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>生产陆地非平民单位时获得相当于该单位生产力40%的 [ICON_FAITH] 信仰值。[NEWLINE]选择后即可在首都中获得2个勇士。</Text>
+			<Text>生产陆地非平民单位时获得相当于该单位生产力30%的 [ICON_FAITH] 信仰值。[NEWLINE]选择后即可在首都中获得2个勇士。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>生产陆地非平民单位时获得相当于该单位生产力40%的 [ICON_FAITH] 信仰值。[NEWLINE]选择后即可在首都中获得2个勇士。</Text>
+			<Text>生产陆地非平民单位时获得相当于该单位生产力30%的 [ICON_FAITH] 信仰值。[NEWLINE]选择后即可在首都中获得2个勇士。</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="zh_Hans_CN">
 			<Text>你已经成功完成载人登月计划！您获得相当于您 [ICON_Science] 科技值5倍的 [ICON_Culture] 文化值奖励。您向科技胜利迈向了第二步。</Text>
@@ -634,6 +634,9 @@
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>从军营（大将军）、商业中心（大商人）、港口（大航海家）处获得的 [ICON_GreatPerson] 伟人点数+1。</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>为远古和古典军事单位+30% [ICON_Production] 生产力。</Text>
+		</Replace>
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>泰迪·罗斯福作为领袖时的的工业时代美国特色单位，取代骑兵。在 [ICON_Capital] 首都所处大陆击杀敌人后可获得 [ICON_Culture] 文化值。丘陵作战时+5 [ICON_Strength] 战斗力。维护费较低。</Text>
 		</Replace>
@@ -698,7 +701,7 @@
 			<Text>斯基泰古典时代特色单位。[ICON_Range] 射程为2， [ICON_Movement] 移动力为4。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>战斗单位处于信奉该宗教的外国城市境内时+7 [ICON_Strength] 战斗力</Text>
+			<Text>战斗单位处于信奉该宗教的外国城市境内时+5 [ICON_Strength] 战斗力</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>信仰此宗教的每座城市的每座圣地或剧院广场相应提供+2 [ICON_Faith] 信仰值或+2 [ICON_Culture] 文化值。</Text>
@@ -1363,7 +1366,7 @@
 			<Text>城市中生产的开拓者不计入 [ICON_Citizen] 人口，并且+1 [ICON_Movement] 移动力。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>城市可用 [ICON_Faith] 信仰值购买区域。 [NEWLINE]城市中的每个特色区域提供+2 [ICON_Faith] 信仰值。</Text>
+			<Text>城市可用 [ICON_Faith] 信仰值购买区域。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>获得在自己建立的城市用 [ICON_Faith] 信仰值购买陆地单位的能力。[NEWLINE]掠夺改良设施和区域可提供 [ICON_Faith] 信仰值加成。[NEWLINE]奖励1个 [Icon_Governor] 总督头衔。</Text>
@@ -1374,6 +1377,24 @@
         <Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
             <Text>每回合影响力点数+1。</Text>
         </Replace>
+		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>允许建造犹太教堂（+7 [ICON_Faith] 信仰值）。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>信仰此宗教的每座城市的每座学院或商业中心相应提供+2 [ICON_Science] 科技值或+2 [ICON_Gold] 金币。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>信仰此宗教的每座城市的每座学院或商业中心相应提供+2 [ICON_Science] 科技值或+2 [ICON_Gold] 金币。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>可以使用 [ICON_Faith] 信仰值购买学院和剧院广场建筑。使用 [ICON_Faith] 信仰值购买学院和剧院广场建筑时费用减少15%。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>在城市中完成特色项目后，可将原始 [ICON_Capital] 首都迁至任意拥有U型港的城市（必须为本方建立）。每个市政广场建筑+1 [ICON_TradeRoute] 贸易路线容量。在拥有市政广场的城市中建造区域时+50% [ICON_Production] 生产力。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>远古时代希腊特色抗骑兵单位，替代枪兵。如与至少一个重装步兵相邻，则+7 [ICON_Strength] 战斗力。</Text>
+		</Replace>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="zh_Hans_CN">
             <Text>[COLOR_GREEN]禁止“贸易条约”议会[ENDCOLOR]</Text>
