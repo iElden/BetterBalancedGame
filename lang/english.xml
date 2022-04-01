@@ -1579,7 +1579,7 @@
 		</Replace>
 		<!-- April Fool 2022 -->
 		<Row Tag="BBG_GAMEMODE_BABYLON_NAME" Language="en_US">
-			<Text>BBG EXPANDED</Text>
+			<Text>April Fool 2022</Text>
 		</Row>
 		<Row Tag="BBG_GAMEMODE_BABYLON_DESCRIPTION" Language="en_US">
 			<Text>Discover a new experience of multiplayer. PERFECTLY Balanced and shorter.</Text>
