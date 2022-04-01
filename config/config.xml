@@ -29,7 +29,7 @@
 		<!-- Barbarian -->
 		<Row ParameterId="BarbariansSetting" Name="BBG_FRONT_BARBARIANS_SETTING_NAME" Description="BBG_FRONT_BARBARIANS_SETTING_DESC" Domain="BBGBarbsSetting" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="BARBS_SETTING" GroupId="AdvancedOptions" SortIndex="2010" />
 		<!-- Gamemode -->
-		<Row ParameterId="BBG_GAMEMODE_BABYLON" Name="BBG_GAMEMODE_BABYLON_NAME" Description="BBG_GAMEMODE_BABYLON_DESCRIPTION" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="BBG_GAMEMODE_BABYLON" NameArrayConfigurationId="GAMEMODES_ENABLED_NAMES" GroupId="GameModes" SortIndex="210"  SupportsSinglePlayer="1" Visible="1" />
+		<Row ParameterId="BBG_GAMEMODE_BABYLON" Name="BBG_GAMEMODE_BABYLON_NAME" Description="BBG_GAMEMODE_BABYLON_DESCRIPTION" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="BBG_GAMEMODE_BABYLON" NameArrayConfigurationId="GAMEMODES_ENABLED_NAMES" GroupId="GameModes" SortIndex="210"  SupportsSinglePlayer="1" Visible="0" />
 	</Parameters>
 
 	<!-- <GameModeItems>
