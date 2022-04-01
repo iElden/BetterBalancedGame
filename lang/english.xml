@@ -1577,6 +1577,13 @@
 		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="en_US">
 			<Text>Greek unique Ancient era anti-cavalry unit that replaces the Spearman. +7 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit.</Text>
 		</Replace>
+		<!-- April Fool 2022 -->
+		<Row Tag="BBG_GAMEMODE_BABYLON_NAME" Language="en_US">
+			<Text>BBG EXPANDED</Text>
+		</Row>
+		<Row Tag="BBG_GAMEMODE_BABYLON_DESCRIPTION" Language="en_US">
+			<Text>Discover a new experience of multiplayer. PERFECTLY Balanced and shorter.</Text>
+		</Row>
 		<!-- Beta -->
 		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="en_US">
             <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
