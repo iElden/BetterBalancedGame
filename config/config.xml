@@ -143,6 +143,9 @@
 	</DomainValues>
 		
 	<ConfigurationUpdates>
+		<Row SourceGroup="Game" SourceId="BBG_GAMEMODE_BABYLON" SourceValue="1" TargetGroup="Game" TargetId="NO_DUPLICATE_CIVILIZATIONS" TargetValue="0" />
+		<Row SourceGroup="Game" SourceId="BBG_GAMEMODE_BABYLON" SourceValue="1" TargetGroup="Game" TargetId="NO_DUPLICATE_LEADERS" TargetValue="0" />
+
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="0" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="0" />
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="1" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="BARBS_SETTING" SourceValue="2" TargetGroup="Game" TargetId="GAME_NO_BARBARIANS" TargetValue="1" />
