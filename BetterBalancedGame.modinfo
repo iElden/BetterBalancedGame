@@ -249,9 +249,10 @@
 			<Properties>
 				<LoadOrder>19999</LoadOrder>
 			</Properties>
-            	<File>config/config.xml</File>
-				<File>config/config.sql</File>
-        </UpdateDatabase>										   
+			<File>config/config.xml</File>
+			<File>config/config.sql</File>
+			<File>config/april_fool_2022_config.sql</File>
+        </UpdateDatabase>
 	</FrontEndActions>
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
@@ -739,5 +740,6 @@
 
 		<File>sql/april_fool.sql</File>
 		<File>lang/april_fool.xml</File>
+		<File>config/april_fool_2022_config.sql</File>
 	</Files>
 </Mod>
