@@ -71,10 +71,10 @@
 			<Text>Дает бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] и [ICON_RESOURCE_MAIZE].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="ru_RU">
-			<Text>+25%[ICON_PRODUCTION] к производству Поселенцев.[NEWLINE]Границы расширяются на 50% быстрее новые города получают дополнительные 2 клетки при основании.</Text>
+			<Text>+20% [ICON_PRODUCTION] к производству Поселенцев.[NEWLINE]Границы расширяются на 50% быстрее новые города получают дополнительные 2 клетки при основании.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>+25%[ICON_PRODUCTION] к производству Поселенцев.[NEWLINE]Границы расширяются на 50% быстрее новые города получают дополнительные 2 клетки при основании.</Text>
+			<Text>+20% [ICON_PRODUCTION] к производству Поселенцев.[NEWLINE]Границы расширяются на 50% быстрее новые города получают дополнительные 2 клетки при основании.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ru_RU">
 			<Text>После открытия свода законов все города при основании получают дополнительное здание в центре города. (В Древнем мире это монумент).</Text>
@@ -153,7 +153,7 @@
 			<Text>Нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="ru_RU">
-			<Text>Может израсходовать заряд строителя для компенсации 20% полной стоимости района. +50% к [ICON_PRODUCTION] производству при создании наземных юнитов ближнего боя.</Text>
+			<Text>Может израсходовать заряд строителя для компенсации 30% полной стоимости района. +50% к [ICON_PRODUCTION] производству при создании наземных юнитов ближнего боя.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="ru_RU">
 			<Text>Города, не являющиеся столицами и находящиеся в пределах 6 клеток от [ICON_Capital] столицы, получают +10% ко всем доходам. Остальные нестоличные города получают -15% ко всем доходам. +3 [ICON_Strength] к боевой мощи юнитов в пределах 6 клеток от [ICON_Capital] столицы.</Text>
@@ -171,7 +171,7 @@
         <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +1 к [ICON_SCIENCE] науке. Бонус удваивается после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Бонус удваивается после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу. Можно сажать леса после открытия средневековых ярморок.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ru_RU">
-			<Text>+10 к лечению на клетках города, обращенного в вашу религию.</Text>
+			<Text>+20 к лечению на клетках города, обращенного в вашу религию.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ru_RU">
         <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
@@ -181,7 +181,8 @@
 		</Replace>
 		<!-- CHINA -->
 		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>При строительстве древних и классических чудес можно потратить заряд рабочего для получения 15% производства чуда.[NEWLINE]Каналы становятся доступны после исследования каменной кладки.</Text>
+			<Text>При строительстве чудес Древнего Мира и Античности можно потратить заряд рабочего для получения 15% производства чуда.[NEWLINE]Каналы становятся доступны после исследования каменной кладки.</Text>
+
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ru_RU">
 			<Text>[ICON_TechBoosted] Озарения и [ICON_CivicBoosted] вдохновения дают 60% к получению социальных институтов и технологий вместо 50%. После постройки чуда получает случайное [ICON_TechBoosted] ускорение и [ICON_CivicBoosted] вдохновение эпохи данного чуда, если такие доступны.[NEWLINE]Рабочие получают дополнительный заряд. Построенные чудеса света дают +1 [ICON_FOOD] пищи +1 [ICON_PRODUCTION] производства городу</Text>
@@ -280,7 +281,7 @@
 			<Text>К оружию!: Каждый уничтоженный в бою корпус, кроме варваров, прибавляет 1 очко к счету эпохи, а уничтоженная армия - 2 очка. Если выбрано в начале золотого века, дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
-			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 100%.</Text>
+			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 100%. +2 [ICON_Faith] веры за каждый район.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ru_RU">
 			<Text>+1 к [ICON_Production] производству и +1 [ICON_Faith] веры от каменоломен.</Text>
@@ -542,10 +543,10 @@
 			<Text>Центр города в тундре получает +1 [ICON_Food] пищи.[NEWLINE][NEWLINE]Можно строить фермы в тундре. После открытия Строительной инженерии, фермы можно строить на тундровых холмах. На клетках снега и тундры (в том числе с холмами): рудники и лесопилки +2 [ICON_PRODUCTION] производства, фермы и лагеря +2 [ICON_FOOD] пищи. Удваивает скорость накопления стратегических ресурсов. Стоимость приобретения клеток с тундрой и снегом снижается на 50%.</Text>
 		</Replace>
     <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
-        <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 40% от стоимости постройки.[NEWLINE]В столице появятся 2 воина.</Text>
+        <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 30% от стоимости постройки.[NEWLINE]В столице появятся 2 воина.</Text>
     </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="ru_RU">
-        <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 40% от стоимости постройки.[NEWLINE]В столице появятся 2 воина</Text>
+        <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 30% от стоимости постройки.[NEWLINE]В столице появятся 2 воина</Text>
     </Replace>
     <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
         <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
@@ -709,12 +710,15 @@
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_GreatPerson] очко великих людей в каждом военном лагере (генералы), гавани (адмиралы) и центре коммерции (торговцы).</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ru_RU">
+			<Text>+30% [ICON_Production] к производству военных юнитов Древнего Мира и Античности.</Text>			
+		</Replace>
 		<!-- -->
 		<!-- -->
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
-			<Text>Военные юниты получают +7 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
+			<Text>Военные юниты получают +5 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">
@@ -909,7 +913,7 @@
 			<Text>Победа в бою дает [ICON_Science] науку в размере 25% от [ICON_Strength] боевой мощи побежденного врага (на сетевой скорости). Города не получают усталости от войны. Все военные юниты полностью исцеляются при захвате города с чудом света.</Text>
 		</Replace>
     <Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ru_RU">
-      <Text>Нанятые юниты получают +1 [ICON_Movement] очко перемещения и +3 [ICON_Strength] к боевой мощи. Улучшение нанятых юнитов стоит на 75% дешевле в [ICON_GOLD] золоте и ресурсах. При выкупе войск города-государства вы получаете в нем 1 [ICON_ENVOY] посла. Получает Черную Армию при открытии технологии "Замки".</Text>
+		<Text>Нанятые юниты получают +1 [ICON_Movement] очко перемещения и +3 [ICON_Strength] к боевой мощи. Улучшение нанятых юнитов стоит на 75% дешевле в [ICON_GOLD] золоте и ресурсах. При выкупе войск города-государства вы получаете в нем 1 [ICON_ENVOY] посла. Получает Черную Армию при открытии технологии "Замки". Дополнительный слот дипломатечской политики</Text>
     </Replace>
     <Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="ru_RU">
       <Text>
@@ -1422,7 +1426,7 @@
 			<Text>Поселенцы созданные в этом городе не расходуют [ICON_Citizen] Жителей и получают +1 [ICON_Movement] Очко Передвижения.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет преобретать районы за [ICON_FAITH] Веру.[NEWLINE]+2 [ICON_Faith] Веры за каждый специальный район в этом городе.</Text>
+			<Text>Позволяет преобретать районы за [ICON_FAITH] Веру.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_FAITH_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет преобретать наземные юниты за [ICON_Faith] Веру в городах основанных игроком.[NEWLINE]Разграбление улучшений и районов даёт бонусную [ICON_Faith] Веру.[NEWLINE]Даёт +1 [Icon_Governor] Губернаторский Титул.</Text>
@@ -1433,6 +1437,31 @@
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+1 Очко Влияния в ход.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строить синагоги (+7 [ICON_Faith] веры).</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_DESCRIPTION" Language="ru_RU">
+			<Text>Кампусы и центры коммерции в городе с этой религией дают по +2 [ICON_Science] науки науки или +2 [ICON_Gold] золота соответственно.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STEWARDSHIP_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Кампусы и центры коммерции в городе с этой религией дают по +2 [ICON_Science] науки науки или +2 [ICON_Gold] золота соответственно.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет покупать здания в кампусах и театральных районах за [ICON_Faith] веру. Стоимость покупки снижена на 15%. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="ru_RU">
+			<Text>Может перенести первоначальную [ICON_Capital] столицу в любой основанный карфагенянами город, в котором есть котон, выполнив в этом городе уникальный проект. +1 к максимуму [ICON_TradeRoute] торговых путей за каждое здание в правительственной площади. +50% [ICON_Production] производства при строительстве районов в городе с площадью правительства.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный греческий юнит Древнего мира, заменяющий копейщика. +7 [ICON_Strength] к боевой мощи, если есть хотя бы один соседний отряд гоплитов.</Text>
+		</Replace>
+		<!-- April Fool 2022 -->
+		<Row Tag="BBG_GAMEMODE_BABYLON_NAME" Language="ru_RU">
+			<Text>April Fool 2022</Text>
+		</Row>
+		<Row Tag="BBG_GAMEMODE_BABYLON_DESCRIPTION" Language="ru_RU">
+			<Text>Откройте для себя новый опыт многопользовательской игры. ИДЕАЛЬНО сбалансированный и короче.</Text>
+		</Row>
 		<!-- Beta -->
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="ru_RU">
             <Text>[COLOR_GREEN]Договор о запрете торговли [ENDCOLOR]</Text>
