@@ -1410,6 +1410,21 @@ INSERT OR IGNORE INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChang
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
+--Nuke Scaling Cost
+INSERT OR IGNORE INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_NUKE_SCALING_COST', 'MODIFIER_PLAYER_CITIES_ADJUST_PROJECT_PRODUCTION'),
+    ('BBG_THERMONUKE_SCALING_COST', 'MODIFIER_PLAYER_CITIES_ADJUST_PROJECT_PRODUCTION');
+
+INSERT OR IGNORE INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_NUKE_SCALING_COST', 'ProjectType', 'PROJECT_BUILD_NUCLEAR_DEVICE'),
+    ('BBG_NUKE_SCALING_COST', 'Amount', '-5'),
+    ('BBG_THERMONUKE_SCALING_COST', 'ProjectType', 'PROJECT_BUILD_THERMONUCLEAR_DEVICE'),
+    ('BBG_THERMONUKE_SCALING_COST', 'Amount', '-5');
+
+INSERT OR IGNORE INTO ProjectCompletionModifiers(ProjectType, ModifierId) VALUES
+	('PROJECT_BUILD_NUCLEAR_DEVICE', 'BBG_NUKE_SCALING_COST'),
+	('PROJECT_BUILD_THERMONUCLEAR_DEVICE', 'BBG_THERMONUKE_SCALING_COST');
+
 -- chancery science from captured spies increased
 UPDATE ModifierArguments SET Value='200' WHERE ModifierId='CHANCERY_COUNTERYSPY_SCIENCE' AND Name='Amount';
 -- oil can be found on flat plains
