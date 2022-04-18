@@ -39,6 +39,7 @@ UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints
 -- Georgia gets 50% faith kills (online) instead of Protectorate War Bonus
 UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_LEADER_FAITH_KILLS' AND Name='PercentDefeatedStrength';
 
+
 --==================
 -- India (Chandra)
 --==================
