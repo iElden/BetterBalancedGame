@@ -909,7 +909,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
 -- Religious Unity gives 2 envoys instead of 1
-update ModifierArguments set value = 2 where ModifierId = 'RELIGIOUS_UNITY_ENVOY_ON_ADOPTION' and name = 'Amount';
+update ModifierArguments set value = 2 where ModifierId = 'RELIGIOUS_UNITY_ENVOY_ON_ADOPTION' and name = 'Enable';
 -- Warrior Monks +5 Combat Strength
 -- 23/04/2021: Implemented by Firaxis
 -- UPDATE Units SET Combat=40 WHERE UnitType='UNIT_WARRIOR_MONK';
