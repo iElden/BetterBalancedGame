@@ -478,6 +478,8 @@ UPDATE RequirementArguments SET Value='TERRAIN_TUNDRA' WHERE RequirementId='REQU
 -- St. Basil gives 1 relic
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_ST_BASILS_CATHEDRAL', 'WONDER_GRANT_RELIC_BBG');
+--Matterhorn +2 down from +3
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId = 'ALPINE_TRAINING_COMBAT_HILLS' AND Name='Amount';
 
 
 
