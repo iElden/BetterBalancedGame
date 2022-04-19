@@ -925,6 +925,14 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
     VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_FOLLOWS_RELIGION');
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
+-- Papal Primacy gives +1 faith per envoy
+insert into BeliefModifiers (BeliefType, ModifierID)
+values ('BELIEF_PAPAL_PRIMACY', 'PAPAL_PRIMACY_FAITH_PER_ENVOY');
+insert into Modifiers (ModifierId, ModifierType)
+values ('PAPAL_PRIMACY_FAITH_PER_ENVOY', 'MODIFIER_PLAYER_ADJUST_YIELD_CHANGE_PER_USED_INFLUENCE_TOKEN');
+insert into ModifierArguments (ModifierId, Name, Value)
+values ('PAPAL_PRIMACY_FAITH_PER_ENVOY', 'Amount', 1),
+('PAPAL_PRIMACY_FAITH_PER_ENVOY', 'YieldType', 'YIELD_FAITH');
 -- Warrior Monks +5 Combat Strength
 -- 23/04/2021: Implemented by Firaxis
 -- UPDATE Units SET Combat=40 WHERE UnitType='UNIT_WARRIOR_MONK';
