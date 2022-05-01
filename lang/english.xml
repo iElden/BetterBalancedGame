@@ -1452,7 +1452,7 @@
       		<Text>English unique Industrial era unit when Victoria is their leader that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital's. No disembark cost.</Text>
     	</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_EXPANSION2_DESCRIPTION" Language="en_US">
-      		<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations when the game enters the Modern era.</Text>
+			<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations in the Modern era.</Text>
     	</Replace>
 		<Replace Tag="LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION" Language="en_US">
       		<Text>French unique Industrial era melee unit that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on your capital's continent. [ICON_GreatGeneral] Great General points for killing units.</Text>
