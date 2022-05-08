@@ -269,6 +269,9 @@ UPDATE ModifierArguments SET Value='40' WHERE ModifierId='MINOR_CIV_PRESLAV_BARR
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
+UPDATE CommemorationTypes SET MaximumGameEra='ERA_INDUSTRIAL' WHERE CommemorationType IN ('COMMEMORATION_EXPLORATION', 'COMMEMORATION_ECONOMIC');
+UPDATE CommemorationTypes SET MinimumGameEra='ERA_MODERN' WHERE CommemorationType IN ('COMMEMORATION_TOURISM', 'COMMEMORATION_ESPIONAGE');
+
 -- To Arms +10 vs cities
 INSERT OR IGNORE INTO CommemorationModifiers (CommemorationType, ModifierId)
     VALUES ('COMMEMORATION_MILITARY', 'COMMEMORATION_MILITARY_GA_ATTACK_CITIES');
