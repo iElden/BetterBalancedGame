@@ -25,6 +25,18 @@ UPDATE Districts SET Cost=54 WHERE DistrictType IN ('DISTRICT_CANAL', 'DISTRICT_
 -- Give sewers +1 amenity
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_SEWER';
 
+-- Watermill no longer give food on "farmable" resources.
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_WATER_MILL' AND
+    ModifierId IN ('WATERMILL_ADDRICEFOOD', 'WATERMILL_ADDWHEATYIELD', 'WATERMILL_ADDMAIZEYIELD');
+-- Watermill give 1 production towards farm
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+    ('BBG_WATERMILL_PRODUCTION_FARM', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'PLOT_HAS_FARM_REQUIREMENTS');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_WATERMILL_PRODUCTION_FARM', 'YieldType', 'YIELD_PRODUCTION'),
+    ('BBG_WATERMILL_PRODUCTION_FARM', 'Amount', '1');
+INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES
+    ('BUILDING_WATER_MILL', 'BBG_WATERMILL_PRODUCTION_FARM');
+
 -- Pagoda: 1 Influance instead of 1 diplo favour
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PAGODA' AND ModifierId='PAGODA_ADJUST_FAVOR';
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
