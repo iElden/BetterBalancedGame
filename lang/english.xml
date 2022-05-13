@@ -2,13 +2,16 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor (on Standard speed) when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_QUEENS_BIBLIOTHEQUE_DESCRIPTION" Language="en_US">
+			<Text>A building unique to Sweden. This building provides 2 slots of [ICON_GreatWork_WRITING] Writing, [ICON_GreatWork_MUSIC] Music, and any type of [ICON_GreatWork_Landscape] Art. This building is not mutually exclusive with other buildings in Government Plaza.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
 			<Text> +3 [ICON_Faith] Faith and +3 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="en_US">
-      		<Text>[ICON_GreatPerson] +1 Great Person points for each Holy Site (prophet), Campus (scientist), Amphiteater (writer) and Industrial Zone (engineer).</Text>
+      		<Text>[ICON_GreatPerson] +1 Great Person points for each Holy Site (Prophet), Campus (Scientist), Amphiteater (Writer) and Industrial Zone (Engineer).</Text>
     	</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
 			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
@@ -51,7 +54,7 @@
 			<Text>Units receive +2 [ICON_Strength] Combat Strength or [ICON_Religion] Religious Strength for each Holy City converted to Byzantium's Religion (including Byzantium's Holy City). Byzantium's Religion is spread to nearby cities when an enemy civilization or city-state unit is defeated. +1 [ICON_GreatProphet] Great Prophet point from cities with a Holy Site district.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="en_US">
-			<Text>+3 Influence Points per turn. When this civilization captures or kills an enemy Spy, receive 200 [ICON_Science] Science (on Standard Speed) for every level of the enemy Spy.</Text>
+			<Text>+3 Influence Points per turn. When this civilization captures or kills an enemy Spy, receive 200 [ICON_Science] Science (on Standard speed) for every level of the enemy Spy.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="en_US">
@@ -69,10 +72,10 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
+			<Text>+1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE] Cattle, [ICON_RESOURCE_RICE] Rice, and [ICON_RESOURCE_WHEAT] Wheat tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], and [ICON_RESOURCE_MAIZE] tiles.</Text>
+			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE] Cattle, [ICON_RESOURCE_RICE] Rice, [ICON_RESOURCE_WHEAT] Wheat, and [ICON_RESOURCE_MAIZE] Maize tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="en_US">
 			<Text>+20% [ICON_PRODUCTION] Production towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
@@ -90,13 +93,13 @@
 			<Text>Begin the game in an Ocean tile. Gain +1 [ICON_Citizen] Population when settling your first city. The Palace receives +3 [ICON_HOUSING] Housing and +1 [ICON_AMENITIES] Amenity. +2 [ICON_SCIENCE] Science and +2 [ICON_CULTURE] Culture per turn before you settle your first city.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder, Entertainment Complex, and Water Park. Can only be built on Hills.</Text>
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district. Additional +1 [ICON_Culture] Culture bonus for adjacent City Center, +2 [ICON_Culture] Culture bonus for each adjacent wonder, Entertainment Complex, and Water Park. Can only be built on Hills.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district. Additional +1 [ICON_Culture] Culture bonus for adjacent City Center, +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district. Additional +1 [ICON_Culture] Culture bonus for adjacent City Center, +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="en_US">
 			<Text>Adjacency: Standard [ICON_Culture] Culture bonus for adjacent City Center. Standard [ICON_Culture] Culture bonus for each adjacent district. Major [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
@@ -260,7 +263,7 @@
 			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]+1 [ICON_RESOURCE_NITER] Niter per turn once discovered.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed). +1 [ICON_RESOURCE_NITER] Niter per turn once discovered.</Text>
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard speed). +1 [ICON_RESOURCE_NITER] Niter per turn once discovered.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="en_US">
 			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.</Text>
@@ -361,7 +364,7 @@
 			<Text>+50% combat experience for air units trained in this city. +2 air unit slots in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked. +2 [ICON_RESOURCE_ALUMINUM] Aluminum per turn once discovered.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE]Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%. +2 [ICON_RESOURCE_OIL] Oil per turn once discovered.</Text>
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard speed).[NEWLINE]Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%. +2 [ICON_RESOURCE_OIL] Oil per turn once discovered.</Text>
 		</Replace>
 		
 
@@ -415,6 +418,9 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="en_US">
 			<Text>Can construct the City Park improvement on flat land in the city once Games and Recreation is unlocked. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CITY_PARK_DESCRIPTION" Language="en_US">
+			<Text>A [ICON_Governor] Governor unique improvement that can be built in a city with a Surveyor Governor with the Parks and Recreation promotion. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal to adjacent tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct Fisheries.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 additional [ICON_Food] Food if adjacent to a sea resource. Must be built on a coastal plot.</Text>
@@ -786,7 +792,7 @@
 		</Replace>
 		<!-- Greece -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="en_US">
-			<Text>One extra Wildcard policy slot in any government.</Text>
+			<Text>One extra Wildcard policy slot in any government after discovering Political Philosophy civic.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION" Language="en_US">
 			<Text>+5% [ICON_Culture] Culture per city-state you are the Suzerain of.[NEWLINE]Awards 1 [ICON_Envoy] envoy when an Amphitheater is completed.</Text>
@@ -851,6 +857,9 @@
 			<Text>All Ranged units gain +30% combat experience. Mines over strategic resources provide +1 [ICON_Production] Production. Mines over bonus and luxury resources provide +2 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<!-- Persia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities, additional +2 gold from Banking and Economic technologies, +2 culture from Medieval Faires and Urbanization civics. Roads built in your territory are one level more advanced than usual.</Text>
+		</Replace>
 		<!-- Poland -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
 			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics generate an additional +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, and +4 [ICON_Gold] Gold. Recieve a Relic when founding and when completing a Religion.</Text>
@@ -948,6 +957,9 @@
 		<!-- coastal tiles -->
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food and +1 [ICON_PRODUCTION] Production. Can only be built on valid resources.[NEWLINE][NEWLINE]If built on Luxury resources, the city will gain use of that resource.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="en_US">
+			<Text>You receive +40 Loyalty per turn in all cities.</Text>
 		</Replace>
 		
 		<!--===============   NEW BBG  ===============-->
@@ -1425,16 +1437,16 @@
 			<Text>A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="en_US">
-			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district and cheaper to build. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold as adjacency when built on a foreign continent[NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="en_US">
-			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold as adjacency and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn for lighthouse</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE][NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn from Lighthouses built in this district.</Text>
+			<Text>A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+2 [ICON_Gold] Gold as adjacency and +4 Loyalty per turn when built on a foreign continent. Cannot be built on Reef.[NEWLINE][NEWLINE]+1 [ICON_GREATADMIRAL] Great Admiral point per turn from Lighthouses built in this district.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="en_US">
-			<Text>Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit (on Online Speed).[NEWLINE][NEWLINE] +1 [ICON_Strength] Combat Strength for each Military policy slot in your government.</Text>
+			<Text>Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit (on Online speed).[NEWLINE][NEWLINE] +1 [ICON_Strength] Combat Strength for each Military policy slot in your government.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="en_US">
 			<Text>All units receive +1 sight. +1 [ICON_TradeRoute] Trade Route capacity when entering a new era (ancient era included). Open Borders with all city-states.</Text>
@@ -1452,7 +1464,7 @@
       		<Text>English unique Industrial era unit when Victoria is their leader that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital's. No disembark cost.</Text>
     	</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_EXPANSION2_DESCRIPTION" Language="en_US">
-      		<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations when the game enters the Modern era.</Text>
+      		<Text>Building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations who reached the Modern era</Text>
     	</Replace>
 		<Replace Tag="LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION" Language="en_US">
       		<Text>French unique Industrial era melee unit that replaces the Line Infantry. +5 [ICON_Strength] Combat Strength when fighting on your capital's continent. [ICON_GreatGeneral] Great General points for killing units.</Text>
