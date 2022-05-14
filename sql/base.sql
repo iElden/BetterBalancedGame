@@ -1404,6 +1404,8 @@ INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_CRATER_LAKE' AND YieldType='YIELD_SCIENCE'; 
 INSERT OR IGNORE INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_GALAPAGOS', 'YIELD_FOOD', 1);
+--Causeway +3 down from +5
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='SPEAR_OF_FIONN_ADJUST_COMBAT_STRENGTH' AND Name='Amount';
 
 
 
@@ -1420,6 +1422,9 @@ INSERT OR IGNORE INTO Resource_YieldChanges (ResourceType, YieldType, YieldChang
 	VALUES ('RESOURCE_INCENSE', 'YIELD_FOOD', 1);
 -- add 1 production to fishing boat improvement
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
+
+--Mele vs Anticav +10 instead of +5
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='ANTI_SPEAR' AND Name='Amount';
 
 -- Citizen specialists give +1 main yield
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType='DISTRICT_ACROPOLIS';
