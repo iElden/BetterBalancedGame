@@ -1613,20 +1613,5 @@
 		<Replace Tag="LOC_GREAT_PERSON_GRANT_LOTSO_SCIENCE" Language="en_US">
 			<Text>Grants 1000 [ICON_SCIENCE] Science and [ICON_CULTURE] Culture (on Standard speed). Can only be activated on Campus in other civilization.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="en_US">
-			<Text>Atomic era anti-air support unit. Provides cover from air attacks up to 1 hex away from the weapon. +5 [ICON_Strength] Combat Strength for each adjacent anti-air unit as Support Bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_MOBILE_SAM_DESCRIPTION" Language="en_US">
-			<Text>Information era anti-air support unit. Provides cover from air and nuclear attacks up to 1 hex away from the weapon. +5 [ICON_Strength] Combat Strength for each adjacent anti-air unit as Support Bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_BIPLANE_DESCRIPTION" Language="en_US">
-			<Text>First air combat unit, available in the Modern era. +5 [ICON_Strength] Combat Strength for each adjacent air unit as Support Bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_FIGHTER_DESCRIPTION" Language="en_US">
-			<Text>Atomic era Biplane upgrade. +5 [ICON_Strength] Combat Strength for each adjacent air unit as Support Bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_JET_FIGHTER_DESCRIPTION" Language="en_US">
-			<Text>Information era Fighter upgrade. +5 [ICON_Strength] Combat Strength for each adjacent air unit as Support Bonus.</Text>
-		</Replace>
 	</LocalizedText>
 </GameData>
