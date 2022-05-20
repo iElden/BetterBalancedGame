@@ -146,7 +146,7 @@
 			<Text>+25% combat experience for all naval units trained in this city. Allows Fleets and Armadas to be trained directly. Fleet and Armada training costs reduced 25%.  +2 [ICON_GOLD] Gold on all Coast tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
-			<Text>When complete, this project awards 40 [ICON_CULTURE] Culture and 40 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
+			<Text>France unique project when Catherine Magnificence is their leader. Available with Medieval Faires civic to any city with a Theater Square.[NEWLINE]When complete, this project awards 40 [ICON_CULTURE] Culture and 40 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
 		</Replace>
 		<!---<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
 			<Text>Ethiopia’s International Trade Routes grant +0.5 [ICON_Faith] Faith per resource at the origin. Resources provide +1 [ICON_Faith] Faith. Can purchase Archaeological Museums and Archaeologists with [ICON_Faith] Faith.</Text>
