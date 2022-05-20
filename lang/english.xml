@@ -1593,7 +1593,7 @@
 			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor (on Standard speed) when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_QUEENS_BIBLIOTHEQUE_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Sweden. This building provides 2 slots of [ICON_GreatWork_WRITING] Writing, [ICON_GreatWork_MUSIC] Music, and any type of [ICON_GreatWork_Landscape] Art. This building is not mutually exclusive with other buildings in Government Plaza.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
+			<Text>A building unique to Sweden. Provides 2 slots of [ICON_GreatWork_WRITING] Writing, [ICON_GreatWork_MUSIC] Music, and any type of [ICON_GreatWork_Landscape] Art. This building is not mutually exclusive with other buildings in Government Plaza.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CITY_PARK_DESCRIPTION" Language="en_US">
 			<Text>A [ICON_Governor] Governor unique improvement that can be built in a city with a Surveyor Governor with the Parks and Recreation promotion. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal to adjacent tiles.</Text>
@@ -1612,6 +1612,9 @@
 		</Replace>
 		<Replace Tag="LOC_GREAT_PERSON_GRANT_LOTSO_SCIENCE" Language="en_US">
 			<Text>Grants 1000 [ICON_SCIENCE] Science and [ICON_CULTURE] Culture (on Standard speed). Can only be activated on Campus in other civilization.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_MILITARY_TRADITION_DESCRIPTION" Language="en_US">
+			<Text>Grants flanking and support combat bonuses to all combat units except land ranged and naval ranged units.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
