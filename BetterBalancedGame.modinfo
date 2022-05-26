@@ -378,6 +378,7 @@
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
 			<File>sql/new_bbg_xp2_government.sql</File>
 			<File>sql/new_bbg_improvement.sql</File>
+			<File>sql/new_bbg_xp2_world_congress.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -717,6 +718,7 @@
 		<File>sql/new_bbg_china.sql</File>
 		<File>sql/new_bbg_kublai.sql</File>
 		<File>sql/new_bbg_disasters.sql</File>
+		<File>sql/new_bbg_xp2_world_congress.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
