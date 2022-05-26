@@ -1,0 +1,12 @@
+-- by: iElden
+
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_TRADE_TREATY_DOMESTIC_TRADE_ROUTE_GOLD', 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_DOMESTIC');
+
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_TRADE_TREATY_DOMESTIC_TRADE_ROUTE_GOLD', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_TRADE_TREATY_DOMESTIC_TRADE_ROUTE_GOLD', 'Amount', '4'),
+    ('BBG_TRADE_TREATY_DOMESTIC_TRADE_ROUTE_GOLD', 'Intercontinental', '0');
+
+INSERT INTO ResolutionEffects(ResolutionEffectId, ResolutionType, WhichEffect, ModifierId) VALUES
+    (28, 'WC_RES_TRADE_TREATY', 2, 'BBG_TRADE_TREATY_DOMESTIC_TRADE_ROUTE_GOLD');
