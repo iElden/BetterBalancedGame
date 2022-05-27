@@ -1616,5 +1616,14 @@
 		<Replace Tag="LOC_CIVIC_MILITARY_TRADITION_DESCRIPTION" Language="en_US">
 			<Text>Grants flanking and support combat bonuses to all combat units except land ranged and naval ranged units.</Text>
 		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_COMBAT_7_CHAPTER_CONTENT_PARA_4" Language="en_US">
+			<Text>Flanking and Support bonuses: Outmaneuvering the enemy as well as making sure units in the field are supported by their counterparts is important in order to insure victory in the field. In Civilization VI we simulate this with the Flanking and Support bonuses. Once a player has completed the Military Tradition civic, their military is considered advanced enough in order to benefit from these bonuses.[NEWLINE][NEWLINE]Flanking: If an enemy melee unit is surrounded by 2 or more adjacent friendly melee units during an attack, it is considered flanked, granting a +2 combat bonus to the melee attacker for each additional flanking melee unit.[NEWLINE][NEWLINE]Support: When defending against an enemy melee attack, a defending unit ([COLOR_RED]except land ranged and naval ranged - Better Balanced Game[ENDCOLOR]) can gain a +2 combat bonus for every adjacent friendly unit.[NEWLINE][NEWLINE]Air and anti-air units gain combat strength for each adjacent unit. It is similar to support combat bonus but they do not need Military Tradition civic to get this bonus.[NEWLINE][NEWLINE]Air units gain +5 combat bonus for every adjacent deployed air unit when defending.[NEWLINE][NEWLINE]Anti-air units gain +5 combat bonus for every adjacent unit that has anti-air ability.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_CULTURE_DETAILS_DOMESTIC_TOURISTS" Language="en_US">
+			<Text>Your [COLOR:ResCultureLabelCS]DOMESTIC TOURISTS[ENDCOLOR] represent the tourists from your civilization that are currently happy vacationing within your borders. You need to generate 100 [ICON_CULTURE] Culture to get 1 Domestic Tourist.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_CULTURE_DETAILS_VISITING_TOURISTS" Language="en_US">
+			<Text>Your [COLOR:ResCultureLabelCS]VISITING TOURISTS[ENDCOLOR] represent the number of citizens you've attracted from the [COLOR:ResCultureLabelCS]DOMESTIC TOURIST[ENDCOLOR] pools of other civilizations. You need to accumulate [ICON_TOURISM] Tourism equal 150 times starting amount of civilizations to attract 1 Visiting Tourist from other civilization.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
