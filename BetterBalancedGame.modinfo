@@ -200,6 +200,13 @@
                 <Value>5</Value>
             </ConfigurationValueMatches>
 		</Criteria>
+		<Criteria id="OnlineGameSpeed">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>GameSpeeds</ConfigurationId>
+				<Value>GAMESPEED_ONLINE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
 			<!-- Beta -->
 		<Criteria id="Criteria_BETA_BAN_TRADE_TREATY">
 			<ConfigurationValueMatches>
@@ -218,8 +225,8 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="Gamemode_Babylon">
+			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
 			<ConfigurationValueMatches>
-				<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
 				<Group>Game</Group>
 				<ConfigurationId>BBG_GAMEMODE_BABYLON</ConfigurationId>
 				<Value>1</Value>
@@ -605,6 +612,12 @@
 			<File>sql/victories/new_bbg_cv.sql</File>
 			<File>sql/victories/new_bbg_cv_2.sql</File>
         </UpdateDatabase>
+		<UpdateDatabase id="online_game_speed_base" criteria="OnlineGameSpeed">
+            <Properties>
+                <LoadOrder>11700</LoadOrder>
+            </Properties>
+			<File>sql/speed_scaling_base.sql</File>
+        </UpdateDatabase>
 		
 		<UpdateIcons id="bbg_Icons">
 			<File>data/new_bbg_icons.xml</File>
@@ -719,6 +732,7 @@
 		<File>sql/new_bbg_kublai.sql</File>
 		<File>sql/new_bbg_disasters.sql</File>
 		<File>sql/new_bbg_xp2_world_congress.sql</File>
+		<File>sql/speed_scaling_base.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>
