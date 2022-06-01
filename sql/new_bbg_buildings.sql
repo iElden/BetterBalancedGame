@@ -64,6 +64,36 @@ UPDATE Buildings SET Cost=290 WHERE BuildingType IN ('BUILDING_FACTORY', 'BUILDI
 -- Coal Powerplant
 UPDATE Buildings SET Cost=330 WHERE BuildingType='BUILDING_COAL_POWER_PLANT';
 
+-- Colosseum
+
+-- Jabel Barkal
+
+-- Chichen Itza
+
+-- Hagia Sophia
+
+-- Kotoku-in
+
+-- Meenakshi Temple
+
+-- Mont St. Michel
+
+-- University of Sankore
+
+-- Great Zimbabwe
+
+-- Orszaghaz
+
+-- Taj Mahal
+
+-- Torre de Belem
+
+-- Amundsen-Scott Research Station
+
+-- Golden Gate Bridge
+
+-- BioSphere
+
 
 -- Commercial hub buildings buff :
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_BANK';
