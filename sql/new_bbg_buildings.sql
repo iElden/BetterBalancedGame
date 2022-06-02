@@ -64,35 +64,54 @@ UPDATE Buildings SET Cost=290 WHERE BuildingType IN ('BUILDING_FACTORY', 'BUILDI
 -- Coal Powerplant
 UPDATE Buildings SET Cost=330 WHERE BuildingType='BUILDING_COAL_POWER_PLANT';
 
--- Colosseum
+--=============
+--== WONDERS ==
+--=============
 
--- Jabel Barkal
+-- Colosseum - reduce culture to 1 (from 2)
 
--- Chichen Itza
 
--- Hagia Sophia
+-- Jabel Barkal - Increase strategics ressource storage by 20 (online speed).
 
--- Kotoku-in
 
--- Meenakshi Temple
+-- Chichen Itza - Culture +1 for all jungle in the empire.
 
--- Mont St. Michel
 
--- University of Sankore
+-- Hagia Sophia - Religious pressure +200% for this city.
+
+
+-- Kotoku-in - Increase strength of player warrior Monk.
+
+
+-- Meenakshi Temple - Religious pressure +50% in Empire? (TODO: Check if Guru can heal Warrior Monk => Should)
+
+
+-- Mont St. Michel - Awards a relic.
+
+
+-- University of Sankore - Increase trade route yield given by wonder.
+
 
 -- Great Zimbabwe
 
+
 -- Orszaghaz
+
 
 -- Taj Mahal
 
--- Torre de Belem
 
--- Amundsen-Scott Research Station
+-- Torre de Belem - Remove free building to avoid conflict with dummy.
+
+
+-- Amundsen-Scott Research Station - +1 Science per snow tile in the city. Citizen can work snow tile for 3 science.
+
 
 -- Golden Gate Bridge
 
--- BioSphere
+
+-- BioSphere - Drastically reduce polution (making player generating more diplomatic favour by pollution modifier).
+
 
 
 -- Commercial hub buildings buff :
