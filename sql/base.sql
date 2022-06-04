@@ -1440,6 +1440,12 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CUL
 UPDATE GlobalParameters SET Value=1 WHERE Name='CITY_AMENITIES_FOR_FREE';
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_PALACE';
 
+-- Seaside Ressort buildable on hills
+INSERT INTO Improvement_ValidTerrains(ImprovementType, TerrainType) VALUES
+    ('IMPROVEMENT_BEACH_RESORT', 'TERRAIN_GRASS_HILLS'),
+    ('IMPROVEMENT_BEACH_RESORT', 'TERRAIN_PLAINS_HILLS'),
+    ('IMPROVEMENT_BEACH_RESORT', 'TERRAIN_DESERT_HILLS');
+
 --****		REQUIREMENTS		****--
 INSERT OR IGNORE INTO Requirements
 	(RequirementId , RequirementType)
@@ -1458,7 +1464,7 @@ INSERT OR IGNORE INTO RequirementArguments
 
 -- 2022-06-04 -- Add Scientific Theory as Prereq for Steam Power
 INSERT INTO TechnologyPrereqs (Technology, PrereqTech)
-	VALUES ("TECH_STEAM_POWER", "TECH_SCIENTIFIC_THEORY");
+	VALUES ('TECH_STEAM_POWER', 'TECH_SCIENTIFIC_THEORY');
 
 -- This is simply a visual change which makes the tech paths slighly more understandable (the dotted lines)
-UPDATE Technologies SET UITreeRow=-3 WHERE TechnologyType="TECH_INDUSTRIALIZATION";
+-- UPDATE Technologies SET UITreeRow=-3 WHERE TechnologyType='TECH_INDUSTRIALIZATION';
