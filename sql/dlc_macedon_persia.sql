@@ -35,14 +35,14 @@ INSERT OR IGNORE INTO GreatPersonIndividualBirthModifiers
 	FROM (SELECT * FROM GreatPersonIndividuals WHERE GreatPersonClassType='GREAT_PERSON_CLASS_GENERAL');
 
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HYPASPIST_SIEGE_BONUS' AND Name='Amount';
--- 25% Science from kills
+-- 25% Science from kills (online speed)
 INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_LEADER_TO_WORLDS_END', 'SCIENCE_ON_KILLS_BBG');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('SCIENCE_ON_KILLS_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES
-		('SCIENCE_ON_KILLS_BBG', 'PercentDefeatedStrength', '25'),
+		('SCIENCE_ON_KILLS_BBG', 'PercentDefeatedStrength', '50'),
 		('SCIENCE_ON_KILLS_BBG', 'YieldType', 'YIELD_SCIENCE');
 -- +20% Production for 10 turns after conquering a city
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
@@ -68,15 +68,15 @@ DELETE FROM UnitReplaces WHERE CivUniqueUnitType='UNIT_MACEDONIAN_HETAIROI';
 INSERT OR IGNORE INTO Adjacency_YieldChanges
 	(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict)
 	VALUES
-	('PAIRIDAEZA_CAMPUSADJACENCY', 'Placeholder', 'YIELD_CULTURE', 1, 1, 'DISTRICT_CAMPUS'),
-	('PAIRIDAEZA_INDUSTRIALADJACENCY', 'Placeholder', 'YIELD_GOLD', 1, 1, 'DISTRICT_INDUSTRIAL_ZONE'),
-	('PAIRIDAEZA_HARBORADJACENCY', 'Placeholder', 'YIELD_GOLD', 1, 1, 'DISTRICT_HARBOR');
+	('BBG_PAIRIDAEZA_CAMPUSADJACENCY', 'Placeholder', 'YIELD_CULTURE', 1, 1, 'DISTRICT_CAMPUS'),
+	('BBG_PAIRIDAEZA_INDUSTRIALADJACENCY', 'Placeholder', 'YIELD_GOLD', 1, 1, 'DISTRICT_INDUSTRIAL_ZONE'),
+	('BBG_PAIRIDAEZA_HARBORADJACENCY', 'Placeholder', 'YIELD_GOLD', 1, 1, 'DISTRICT_HARBOR');
 INSERT OR IGNORE INTO Improvement_Adjacencies
 	(ImprovementType, YieldChangeId)
 	VALUES
-	('IMPROVEMENT_PAIRIDAEZA', 'PAIRIDAEZA_CAMPUSADJACENCY'),
-	('IMPROVEMENT_PAIRIDAEZA', 'PAIRIDAEZA_INDUSTRIALADJACENCY'),
-	('IMPROVEMENT_PAIRIDAEZA', 'PAIRIDAEZA_HARBORADJACENCY');
+	('IMPROVEMENT_PAIRIDAEZA', 'BBG_PAIRIDAEZA_CAMPUSADJACENCY'),
+	('IMPROVEMENT_PAIRIDAEZA', 'BBG_PAIRIDAEZA_INDUSTRIALADJACENCY'),
+	('IMPROVEMENT_PAIRIDAEZA', 'BBG_PAIRIDAEZA_HARBORADJACENCY');
 -- internal trades routes scaling
 
 INSERT OR IGNORE INTO RequirementSets
@@ -146,8 +146,8 @@ INSERT OR IGNORE INTO TraitModifiers
 	('TRAIT_LEADER_FALL_BABYLON', 'TRAIT_FALLBABYLON_COMBAT_BONUS');
 -- Persia surprise war movement bonus nullified
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_FALLBABYLON_SURPRISE_MOVEMENT' and Name='Amount';
--- Immortals defense buffed and ranged nerfed (since it is affected by oligarchy)
-UPDATE Units SET Combat=35, RangedCombat=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
+-- Immortals to 36 to match swordsman up.
+UPDATE Units SET Combat=36 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 
 
 

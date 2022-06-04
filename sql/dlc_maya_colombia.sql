@@ -29,24 +29,25 @@ DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIEND
 -- reduce combat bonus to 3 from 5
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='MUTAL_NEAR_CAPITAL_COMBAT' AND Name='Amount';
 -- set citizen yields to same as other campuses
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType="DISTRICT_OBSERVATORY";
--- start biases: after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_CITRUS';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COFFEE';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COCOA';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COTTON';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_DYES';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_SILK';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_SPICES';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_SUGAR';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_TEA';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_TOBACCO';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_WINE';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_INCENSE';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_OLIVES';
-UPDATE StartBiasResources SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_BANANAS';
-UPDATE StartBiasTerrains  SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAYA' AND TerrainType='TERRAIN_GRASS';
-UPDATE StartBiasTerrains  SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAYA' AND TerrainType='TERRAIN_PLAINS';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType='DISTRICT_OBSERVATORY';
+--- start biases ---
+-- after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
+INSERT OR REPLACE INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_MAYA', 'RESOURCE_CITRUS', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_COFFEE', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_COCOA', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_COTTON', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_DYES', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_SILK', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_SPICES', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_SUGAR', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_TEA', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_TOBACCO', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_WINE', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_INCENSE', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_OLIVES', 3),
+    ('CIVILIZATION_MAYA', 'RESOURCE_BANANAS', 4);
+
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_GYPSUM';
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_JADE';
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_MARBLE';
@@ -54,7 +55,11 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_SALT';
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_IVORY';
 
+-- Delete StartBiasTerrain
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAYA';
 
+-- 15/05/2021: Delete free builder
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_MUTAL' AND ModifierId='TRAIT_LEADER_NEARBY_CITIES_GAIN_BUILDER';
 
 --==================
 -- City-States

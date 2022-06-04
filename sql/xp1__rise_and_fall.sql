@@ -7,6 +7,12 @@
 --==================
 --UPDATE UnitAbilityModifiers SET ModifierId='RANGER_IGNORE_FOREST_MOVEMENT_PENALTY' WHERE UnitAbilityType='ABILITY_CREE_OKIHTCITAW';
 
+-- Add Ressource Bias
+INSERT INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_CREE', 'RESOURCE_CATTLE', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_HORSES', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_SHEEP', '4'),
+    ('CIVILIZATION_CREE', 'RESOURCE_DEER', '4');
 
 --==================
 -- Egypt
@@ -19,24 +25,19 @@ INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES ('ABILITY_ALPINE_TRAINING', 'C
 -- Georgia
 --==================
 -- Georgian Khevsur unit becomes sword replacement
-UPDATE Units SET Combat=35, Cost=100, Maintenance=2, PrereqTech='TECH_IRON_WORKING', StrategicResource='RESOURCE_IRON' WHERE UnitType='UNIT_GEORGIAN_KHEVSURETI';
-UPDATE ModifierArguments SET Value='5' WHERE ModifierId='KHEVSURETI_HILLS_BUFF' AND Name='Amount';
-INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
-	VALUES ('UNIT_GEORGIAN_KHEVSURETI', 'UNIT_SWORDSMAN');
+-- 23/04/2021: Firaxis patch
+--UPDATE Units SET Combat=35, Cost=100, Maintenance=2, PrereqTech='TECH_IRON_WORKING', StrategicResource='RESOURCE_IRON' WHERE UnitType='UNIT_GEORGIAN_KHEVSURETI';
+--UPDATE ModifierArguments SET Value='5' WHERE ModifierId='KHEVSURETI_HILLS_BUFF' AND Name='Amount';
+--INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
+--	VALUES ('UNIT_GEORGIAN_KHEVSURETI', 'UNIT_SWORDSMAN');
 -- Georgia Tsikhe changed to a stronger Ancient Wall replacement instead of a Renaissance Wall replacement
 DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_MELEE_ATTACK_OUTER_DEFENSES';
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_BYPASS_OUTER_DEFENSE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
 UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
--- Georgia gets 50% faith kills instead of Protectorate War Bonus
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '50');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
-UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
+-- Georgia gets 50% faith kills (online) instead of Protectorate War Bonus
+UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_LEADER_FAITH_KILLS' AND Name='PercentDefeatedStrength';
 
 
 --==================
@@ -76,19 +77,19 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='BaseDistrict_Science';
 INSERT OR IGNORE INTO Adjacency_YieldChanges
 	(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
-	VALUES ('Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
+	VALUES ('BBG_Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
 INSERT OR IGNORE INTO District_Adjacencies
 	(DistrictType , YieldChangeId)
-	VALUES ('DISTRICT_SEOWON', 'Mine_Science');
+	VALUES ('DISTRICT_SEOWON', 'BBG_Mine_Science');
 -- seowon gets +1 adjacency from theater squares instead of -1
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
 	VALUES
-	('Theater_Science' , 'LOC_DISTRICT_SEOWON_THEATER_BONUS' , 'YIELD_SCIENCE' , '1' , '1' , 'DISTRICT_THEATER'),
-	('Seowon_Culture'  , 'LOC_DISTRICT_THEATER_SEOWON_BONUS' , 'YIELD_CULTURE' , '1' , '1' , 'DISTRICT_SEOWON' );
+	('BBG_Theater_Science' , 'LOC_DISTRICT_SEOWON_THEATER_BONUS' , 'YIELD_SCIENCE' , '1' , '1' , 'DISTRICT_THEATER'),
+	('BBG_Seowon_Culture'  , 'LOC_DISTRICT_THEATER_SEOWON_BONUS' , 'YIELD_CULTURE' , '1' , '1' , 'DISTRICT_SEOWON' );
 INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 	VALUES
-	('DISTRICT_SEOWON'  , 'Theater_Science'),
-	('DISTRICT_THEATER' , 'Seowon_Culture' );
+	('DISTRICT_SEOWON'  , 'BBG_Theater_Science'),
+	('DISTRICT_THEATER' , 'BBG_Seowon_Culture' );
 -- Seowon bombs
 INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_THREE_KINGDOMS' , 'TRAIT_SEOWON_BOMB');
@@ -110,10 +111,10 @@ INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CAVALRY' WHERE Unit='UNIT_MAPUCHE_MALON_RAIDER';
 DELETE FROM UnitAbilityModifiers WHERE ModifierId='MALON_RAIDER_TERRITORY_COMBAT_BONUS';
 -- Chemamull Unique Improvement gets +1 Production (another at Civil Service Civic)
-INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
-	VALUES ('IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , 1);
-INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
-	VALUES ('203' , 'IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , '1' , 'CIVIC_CIVIL_SERVICE');
+--INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+--	VALUES ('IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , 1);
+--INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
+--	VALUES ('203' , 'IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , '1' , 'CIVIC_CIVIL_SERVICE');
 
 -- 20/12/14 Chemamull's now allowed on volcanic soil
 INSERT OR IGNORE INTO Improvement_ValidFeatures (ImprovementType, FeatureType)
@@ -129,7 +130,8 @@ UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DE_ZEVE
 --=========
 --Mongolia
 --=========
-INSERT OR IGNORE INTO TypeTags VALUES ('ABILITY_GENGHIS_KHAN_CAVALRY_BONUS', 'CLASS_MONGOLIAN_KESHIG');
+-- 23/04/2021 : Fixed by Firaxis
+--INSERT OR IGNORE INTO TypeTags VALUES ('ABILITY_GENGHIS_KHAN_CAVALRY_BONUS', 'CLASS_MONGOLIAN_KESHIG');
 -- No longer receives +1 diplo visibility for trading post
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
 DELETE FROM DiplomaticVisibilitySources WHERE VisibilitySourceType='SOURCE_TRADING_POST_TRAIT';
@@ -138,28 +140,25 @@ DELETE FROM ModifierArguments WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBIL
 DELETE FROM Modifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
 -- +100% production to Ordu
 UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
+-- Keshig
+UPDATE Units SET RangedCombat=40, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG';
 
 
 --==================
 -- Scotland
 --==================
 -- Highlander gets +10 combat strength (defense)
-UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
--- happy and ecstatic percentages increased
-UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
+UPDATE Units SET Combat=65, RangedCombat=70 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
 -- Golf Course moved to Games and Recreation
-UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
+-- UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 -- Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_CULTURE';
 -- Golf Course extra housing moved to Urbanization
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
-	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
+	VALUES ('BBG_GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
+	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'BBG_GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
 -- Golf Course gets extra yields a bit earlier
 INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
 	VALUES ('204' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_GOLD' , '1' , 'CIVIC_THE_ENLIGHTENMENT');
@@ -173,65 +172,65 @@ INSERT OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , Yiel
 
 -- alpine training from matterhorn bugfix
 INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES ('ABILITY_ALPINE_TRAINING', 'CLASS_WAR_CART');
-/* REVERT TO BASE GAME
+-- REVERT TO BASE GAME
 -- extra +3 envoys points per turn
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'Amount', '3');
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
-	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN');
-INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_FIRST_CIVILIZATION', 'SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE');
+--INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
+--	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'Amount', '3');
+--INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
+--	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN');
+--INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
+--	VALUES ('TRAIT_CIVILIZATION_FIRST_CIVILIZATION', 'SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE');
 
-*/
+
 --==================
 -- Zulu
 --==================
 -- impi come at stirrips like pikemen
-UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_ZULU_IMPI';
+-- UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_ZULU_IMPI';
 -- +1 culture and +1 gold for each encampment building
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
-	('ZULU_BARRACKS_CULTURE_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_BARRACKS_GOLD_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_STABLE_CULTURE_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_STABLE_GOLD_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_ARMORY_CULTURE_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_ARMORY_GOLD_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_ACADEMY_CULTURE_BBG',  'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
-	('ZULU_ACADEMY_GOLD_BBG',  'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('ZULU_BARRACKS_CULTURE_BBG', 'BuildingType', 'BUILDING_BARRACKS'),
-	('ZULU_BARRACKS_CULTURE_BBG', 'YieldType', 'YIELD_CULTURE'),
-	('ZULU_BARRACKS_CULTURE_BBG', 'Amount', '1'),
-	('ZULU_BARRACKS_GOLD_BBG',    'BuildingType', 'BUILDING_BARRACKS'),
-	('ZULU_BARRACKS_GOLD_BBG',    'YieldType', 'YIELD_GOLD'),
-	('ZULU_BARRACKS_GOLD_BBG',    'Amount', '1'),
-	('ZULU_STABLE_CULTURE_BBG',   'BuildingType', 'BUILDING_STABLE'),
-	('ZULU_STABLE_CULTURE_BBG',   'YieldType', 'YIELD_CULTURE'),
-	('ZULU_STABLE_CULTURE_BBG',   'Amount', '1'),
-	('ZULU_STABLE_GOLD_BBG',      'BuildingType', 'BUILDING_STABLE'),
-	('ZULU_STABLE_GOLD_BBG',      'YieldType', 'YIELD_GOLD'),
-	('ZULU_STABLE_GOLD_BBG',      'Amount', '1'),
-	('ZULU_ARMORY_CULTURE_BBG',   'BuildingType', 'BUILDING_ARMORY'),
-	('ZULU_ARMORY_CULTURE_BBG',   'YieldType', 'YIELD_CULTURE'),
-	('ZULU_ARMORY_CULTURE_BBG',   'Amount', '1'),
-	('ZULU_ARMORY_GOLD_BBG',      'BuildingType', 'BUILDING_ARMORY'),
-	('ZULU_ARMORY_GOLD_BBG',      'YieldType', 'YIELD_GOLD'),
-	('ZULU_ARMORY_GOLD_BBG',      'Amount', '1'),
-	('ZULU_ACADEMY_CULTURE_BBG',  'BuildingType', 'BUILDING_MILITARY_ACADEMY'),
-	('ZULU_ACADEMY_CULTURE_BBG',  'YieldType', 'YIELD_CULTURE'),
-	('ZULU_ACADEMY_CULTURE_BBG',  'Amount', '1'),
-	('ZULU_ACADEMY_GOLD_BBG',     'BuildingType', 'BUILDING_MILITARY_ACADEMY'),
-	('ZULU_ACADEMY_GOLD_BBG',     'YieldType', 'YIELD_GOLD'),
-	('ZULU_ACADEMY_GOLD_BBG',     'Amount', '1');
-INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_BARRACKS_CULTURE_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_BARRACKS_GOLD_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_STABLE_CULTURE_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_STABLE_GOLD_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ARMORY_CULTURE_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ARMORY_GOLD_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ACADEMY_CULTURE_BBG'),
-	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ACADEMY_GOLD_BBG');
+--INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
+--	('ZULU_BARRACKS_CULTURE_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_BARRACKS_GOLD_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_STABLE_CULTURE_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_STABLE_GOLD_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_ARMORY_CULTURE_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_ARMORY_GOLD_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_ACADEMY_CULTURE_BBG',  'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+--	('ZULU_ACADEMY_GOLD_BBG',  'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE');
+--INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+--	('ZULU_BARRACKS_CULTURE_BBG', 'BuildingType', 'BUILDING_BARRACKS'),
+--	('ZULU_BARRACKS_CULTURE_BBG', 'YieldType', 'YIELD_CULTURE'),
+--	('ZULU_BARRACKS_CULTURE_BBG', 'Amount', '1'),
+--	('ZULU_BARRACKS_GOLD_BBG',    'BuildingType', 'BUILDING_BARRACKS'),
+--	('ZULU_BARRACKS_GOLD_BBG',    'YieldType', 'YIELD_GOLD'),
+--	('ZULU_BARRACKS_GOLD_BBG',    'Amount', '1'),
+--	('ZULU_STABLE_CULTURE_BBG',   'BuildingType', 'BUILDING_STABLE'),
+--	('ZULU_STABLE_CULTURE_BBG',   'YieldType', 'YIELD_CULTURE'),
+--	('ZULU_STABLE_CULTURE_BBG',   'Amount', '1'),
+--	('ZULU_STABLE_GOLD_BBG',      'BuildingType', 'BUILDING_STABLE'),
+--	('ZULU_STABLE_GOLD_BBG',      'YieldType', 'YIELD_GOLD'),
+--	('ZULU_STABLE_GOLD_BBG',      'Amount', '1'),
+--	('ZULU_ARMORY_CULTURE_BBG',   'BuildingType', 'BUILDING_ARMORY'),
+--	('ZULU_ARMORY_CULTURE_BBG',   'YieldType', 'YIELD_CULTURE'),
+--	('ZULU_ARMORY_CULTURE_BBG',   'Amount', '1'),
+--	('ZULU_ARMORY_GOLD_BBG',      'BuildingType', 'BUILDING_ARMORY'),
+--	('ZULU_ARMORY_GOLD_BBG',      'YieldType', 'YIELD_GOLD'),
+--	('ZULU_ARMORY_GOLD_BBG',      'Amount', '1'),
+--	('ZULU_ACADEMY_CULTURE_BBG',  'BuildingType', 'BUILDING_MILITARY_ACADEMY'),
+--	('ZULU_ACADEMY_CULTURE_BBG',  'YieldType', 'YIELD_CULTURE'),
+--	('ZULU_ACADEMY_CULTURE_BBG',  'Amount', '1'),
+--	('ZULU_ACADEMY_GOLD_BBG',     'BuildingType', 'BUILDING_MILITARY_ACADEMY'),
+--	('ZULU_ACADEMY_GOLD_BBG',     'YieldType', 'YIELD_GOLD'),
+--	('ZULU_ACADEMY_GOLD_BBG',     'Amount', '1');
+--INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_BARRACKS_CULTURE_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_BARRACKS_GOLD_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_STABLE_CULTURE_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_STABLE_GOLD_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ARMORY_CULTURE_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ARMORY_GOLD_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ACADEMY_CULTURE_BBG'),
+--	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ACADEMY_GOLD_BBG');
 -- Zulu get corps/armies bonus at nationalism
 INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
     VALUES ('PLAYER_HAS_NATIONALISM_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
@@ -241,8 +240,8 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
     VALUES ('REQUIRES_PLAYER_HAS_NATIONALISM' , 'CivicType' , 'CIVIC_NATIONALISM');
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES ('PLAYER_HAS_NATIONALISM_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_NATIONALISM');
-UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_CORPS_COMBAT_STRENGTH';
-UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_ARMIES_COMBAT_STRENGTH';
+--UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_CORPS_COMBAT_STRENGTH';
+--UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_ARMIES_COMBAT_STRENGTH';
 
 
 
@@ -330,8 +329,10 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_
 --==============================================================
 --******				G O V E R N M E N T				  ******
 --==============================================================
+-- revert for Firaxis patch (25/02/2021)
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='GOV_TALL_AMENITY_BUFF' AND Name='Amount';
 -- audience chamber +1 gov title
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOV_BUILDING_TALL_GRANT_GOVERNOR_POINTS' AND Name='Delta';
+-- UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOV_BUILDING_TALL_GRANT_GOVERNOR_POINTS' AND Name='Delta';
 -- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType , ModifierId)
 	VALUES ('BUILDING_GOV_TALL' , 'GOV_TALL_FOOD_BUFF');
@@ -385,23 +386,34 @@ INSERT OR IGNORE INTO ModifierArguments
 -- Victor combat bonus reduced to +3
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='GARRISON_COMMANDER_ADJUST_CITY_COMBAT_BONUS' AND Name='Amount';
 -- Magnus' Surplus Logistics gives +2 production in addition to the food
-INSERT OR IGNORE INTO Modifiers
-	(ModifierId , ModifierType)
-	VALUES
-	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD' , 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
-INSERT OR IGNORE INTO ModifierArguments
-	(ModifierId , Name , Value)
-	VALUES
+INSERT OR IGNORE INTO Modifiers(ModifierId, ModifierType) VALUES
+	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
+INSERT OR IGNORE INTO ModifierArguments(ModifierId, Name, Value) VALUES
 	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'Amount', '2'),
 	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'Domestic', '1'),
 	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'YieldType', 'YIELD_PRODUCTION');
-INSERT OR IGNORE INTO GovernorPromotionModifiers
-	(GovernorPromotionType, ModifierId)
-	VALUES
+INSERT OR IGNORE INTO GovernorPromotionModifiers(GovernorPromotionType, ModifierId) VALUES
 	('GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS', 'SURPLUS_LOGISTICS_TRADE_ROUTE_PROD');
+-- Magnus provision give 1 PM to Settler.
+INSERT INTO Types(Type, Kind) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'KIND_ABILITY');
+INSERT INTO TypeTags(Type, Tag) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'CLASS_SETTLER');
+INSERT INTO UnitAbilities(UnitAbilityType, Name, Description, Inactive) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'BBG_SETTLER_MOUVMENT_ABILITY_NAME', 'BBG_SETTLER_MOUVMENT_ABILITY_DESC', 1);
+INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId) VALUES
+    ('BBG_SETTLER_MOUVMENT_ABILITY', 'BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER');
+INSERT INTO Modifiers(ModifierId, ModifierType, Permanent) VALUES
+    ('BBG_GIVE_SETTLER_MOUVMENT_ABILITY', 'MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS', 0),
+    ('BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT', 1);
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_GIVE_SETTLER_MOUVMENT_ABILITY', 'AbilityType', 'BBG_SETTLER_MOUVMENT_ABILITY'),
+    ('BBG_SETTLER_MOUVMENT_ABILITY_MODIFIER', 'Amount', '1');
+INSERT INTO GovernorPromotionModifiers(GovernorPromotionType, ModifierId) VALUES
+    ('GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION', 'BBG_GIVE_SETTLER_MOUVMENT_ABILITY');
 -- switch Magnus' level 2 promos
-UPDATE GovernorPromotions SET Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
-UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
+UPDATE GovernorPromotions SET 'Column'=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
+UPDATE GovernorPromotions SET 'Column'=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
 
@@ -440,20 +452,18 @@ UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE
 --******				START BIASES					  ******
 --==============================================================
 -- UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
-UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
+UPDATE StartBiasResources SET Tier=4 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
 -- UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
-INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
-	VALUES
-	('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 4),
-	('CIVILIZATION_GEORGIA' , 'TERRAIN_GRASS_HILLS' , 4);
+INSERT INTO StartBiasResources(CivilizationType, ResourceType, Tier) VALUES
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_STONE', '4'),
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_MARBLE', '4'),
+    ('CIVILIZATION_GEORGIA', 'RESOURCE_GYPSUM', '4');
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_GRASS_HILLS';
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_PLAINS_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_DESERT_HILLS';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
-UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
-DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_TUNDRA_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType IN ('TERRAIN_DESERT_HILLS', 'TERRAIN_TUNDRA_HILLS');
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
+UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
+DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType IN ('TERRAIN_DESERT_MOUNTAIN', 'TERRAIN_TUNDRA_MOUNTAIN');
 
 
 
@@ -491,7 +501,6 @@ UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR_HOLLOW' AND YieldType='YIELD_FOOD';
 
 
-
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
@@ -499,8 +508,8 @@ UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 
 -- citizen yields
-UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_IKANDA";
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_SEOWON";
+UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType='DISTRICT_IKANDA';
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType='DISTRICT_SEOWON';
 
 -- Offshore Oil can be improved at Plastics
 UPDATE Improvements SET PrereqTech='TECH_PLASTICS' WHERE ImprovementType='IMPROVEMENT_OFFSHORE_OIL_RIG';

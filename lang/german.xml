@@ -1,100 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Nahkampf- und Fernkampfeinheiten an Land, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem schon eine Kaserne ist.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Nahkampf- und Fernkampfeinheiten an Land, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem schon eine Kaserne ist.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +1 Lufteinheit-Platz im Flugplatz-Bezirk. </Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. +1 [ICON_Food] Nahrung auf allen Küsten-Geländefeldern dieser Stadt. </Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. [ICON_Production] Produktionsbonus in Höhe des Nachbarschaftsbonus des Hafenbezirks.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. +1 [ICON_Food] Nahrung auf allen Küsten-Geländefeldern dieser Stadt. +2 [ICON_Housing] Wohnraum, wenn diese Stadt an die Küste angrenzt. +1 [ICON_Handelsweg] Handelsweg-Kapazität, wenn diese Stadt noch nicht über ein Marktgebäude verfügt.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. [ICON_Production] Produktionsbonus in Höhe des Nachbarschaftsbonus des Hafenbezirks. +1 Produktion [ICON_Proudction] für alle nicht modernisierten Küsten- und See-Geländefelder dieser Stadt. </Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude von Makedonien. +50 % Kampferfahrung für alle Landnahkampf- und -Fernkampfeinheiten, und Hetairoi, die in dieser Stadt ausgebildet werden. Erhalt von +25 % Wissenschaft gemessen an den Kosten der Einheit, wenn in dieser Stadt eine militärische Einheit erschaffen wird.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude der Mongolei. Gewährt eine Fähigkeit, die in dieser Stadt ausgebildeter schwerer und leichter Kavallerie +1 Fortbewegung ermöglicht. +50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden. Kann nicht in einem Lager mit Kaserne gebaut werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude der Mongolei. Gewährt eine Fähigkeit, die in dieser Stadt ausgebildeter schwerer und leichter Kavallerie +1 Fortbewegung ermöglicht. +50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lager mit Kaserne gebaut werden.</Text>
-		</Replace>
-
-		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Kaserne</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Stallungen</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Waffenkammer</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Militärakademie</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Leuchtturm</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Schiffswerft</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Seehafen</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Hangar</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+75% Kampferfahrung durch Flugplatz</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kamfperfahrung durch Basilikoi Paides.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Ordu.</Text>
-		</Replace>
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="de_DE">
 			<Text>+10 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
 		</Replace>
 		
-		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="de_DE">
-            <Text>Zur Sicherung der Loyalität in eurem Reich erhaltet ihr +40 Loyalität in allen Städten.</Text>
-        </Replace>
-		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="de_DE">
-			<Text>Religiöse Verbreitung eliminiert 25% des existierenden Drucks durch andere Religionen in der Zielstadt.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="de_DE">
-			<Text>Die religiöse Verbreitung hat in den Städten anderer Zivilisationen die doppelte Stärke.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="de_DE">
-			<Text>+10 [ICON_Religion] religiöse Stärke im theologischen Kampf.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
-			<Text>Kampfeinheiten erhalten +5 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
+			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="de_DE">
 			<Text>Schweden erhält 50 [ICON_Favor] diplomatische Gunst, wenn es eine Große Persönlichkeit verdient (auf Standardgeschwindigkeit). Schweden erhält +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt durch Fabriken und +1 [ICON_GreatScientist] Großer-Wissenschafter-Punkt durch Universitäten. Außerdem erhält Schweden +50% [ICON_Production] auf Bibliotheken, Werkstätten, Universitäten und Fabriken. Wenn Schweden mit im Spiel ist,beginnen im Industriezeitalter drei zusätzliche einzigartige Weltkongress-Wettkämpfe.</Text>
@@ -116,7 +28,7 @@
 			<Text>Schreine und Tempel bringen je +3 [ICON_Food] Nahrung und +1 [ICON_Housing] Wohnraum.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="de_DE">
-			<Text>Nahkampf-, Kavallerie-Abwehr- und Fernkampfeinheiten erhalten +2 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit.</Text>
+			<Text>Nahkampf-, Kavallerie-Abwehr- und Fernkampfeinheiten erhalten +1 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet +1 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit (King of the Eburones)</Text>
@@ -143,7 +55,7 @@
 			<Text>+3 Einflusspunkte pro Runde. Wenn diese Zivilisation einen feindlichen Spion gefangen nimmt oder tötet, erhält sie 200 [ICON_Science] Wissenschaft (auf Standard-Geschwindigkeit) pro Stufe des feindlichen Spions. .</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+3 [ICON_GOLD]für jede Stadt mit dieser Religion.</Text>
+			<Text>+2 [ICON_GOLD]für jede Stadt mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] Tourismus durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln oder Vulkanerde gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
@@ -170,7 +82,7 @@
 			<Text>Alle Städte starten mit einem zusätzlichen Stadtzentrum-Gebäude, sobald die Ausrichtung Gesetzgebung freigeschaltet worden ist. (Beginnt mit einem Monument in der Antike).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Koog, die einzigartige Modernisierung der Niederlande, zu bauen..[NEWLINE][NEWLINE]+1 [ICON_FOOD] Nahrung, +1 [ICON_Production] Produktion, und +0.5 [ICON_Housing] Wohnraum. +1 [ICON_FOOD] Nahrung, wenn er an eine Koog-Modernisierung angrenzt. Zusätzlich [ICON_PRODUCTION] Produktion, [ICON_GOLD] Gold, und [ICON_FOOD] Nahrung für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Muss auf einem Küsten- oder See-Geländefeld gebaut werden, das an zwei oder mehr passierbare Land-Geländefelder angrenzt. Erhöht die [ICON_Movement] Fortbewegungskosten des Geländefelds auf 3.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Koog, die einzigartige Modernisierung der Niederlande, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Nahrung, +1 [ICON_Production] Produktion, und +0.5 [ICON_Housing] Wohnraum. +1 [ICON_FOOD] Nahrung, wenn er an eine Koog-Modernisierung angrenzt. Zusätzlich [ICON_PRODUCTION] Produktion, [ICON_GOLD] Gold, und [ICON_FOOD] Nahrung für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Muss auf einem Küsten- oder See-Geländefeld gebaut werden, das an 2 oder mehr passierbare Land-Geländefelder angrenzt. Erhöht die [ICON_Movement] Fortbewegungskosten des Geländefelds auf 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="de_DE">
 			<Text>Beginnt das Spiel in einem Ozean-Geländefeld. Erhaltet +1 [ICON_Citizen] Bewohner beim Ansieden der ersten Stadt. Der Palast erhält +3 [ICON_HOUSING] Wohnraum and +1 [ICON_AMENITIES] Annehmlichkeit. +2 [ICON_SCIENCE] Wissenschaft and +2 [ICON_CULTURE] Kultur pro Runde, bevor ihr Eure erste Stadt gründet.</Text>
@@ -191,12 +103,20 @@
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+3 [ICON_Favor] Diplomatische Gunst. Das Ausheben des Militärs von Stadtsstaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärke-Bonus sofern Ihr der Suzerän des Stadtstaates seid (inklusive ausgehobene Einheiten).[NEWLINE]Gewährt +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte and +2 Einflusspunkte pro Runde Gesandte in Stadtstaaten.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE"> <!-- Last update: 4.2.0-->
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold  und +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_AMENITIES] Annehmlichkeit und +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE"> <!-- Last update: 4.2.0-->
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_AMENITIES] Annehmlichkeit und +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
+		</Replace>
+		<!--
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_AMENITIES] Annehmlichkeiten, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="de_DE">
 			<Text>Wiege der Zivilisation</Text>
 		</Replace>
@@ -216,14 +136,17 @@
 			<Text>Als erste entwickelte Zivilisation der Weltgeschichte, erleben die Sumerer eine frühe Blüte. Ihre Kriegswägen können vom ersten Zug an rekrutiert, ihre Ziggurats errichtet werden und dank der Fähigkeit 'Wiege der Zivilisation' habe die Sumerer das Potenzial für ein schnelles Wachstum. Gilgamesh wird früh Kriegswägen rekrutieren um Barbarenlager zu zerstören, damit er Nutzen aus der Fähigkeit 'Shūtur eli sharrī' ziehen kann ("König der Könige"). Er wird an den Läufen nahegelegener Flüsse Ziggurats errichten um früh mithilfe einer guten Stadtplanung in [ICON_Science] Wissenschaft, [ICON_Culture] Kultur und sogar [ICON_Faith] Glauben davonzuziehen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="de_DE">
-			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
+			<Text>Kann gegen jeden ohne Kriegstreiber-Mali den Krieg erklären, der mit Verbündeten bereits im Krieg liegt. Sobald Ihr im Krieg mit einem gemeinsamen Feind seid, Ihr und eure Verbündeten erhalten gleichermaßen Plünderbeute und Kampferfahrung, wenn entsprechende Einheiten Sumeriens und seiner Verbündeten nicht weiter als 5 Felder voneinander getrennt sind.[NEWLINE] Beginnt mit einem Kriegswagen in der Antike. [NEWLINE] Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
+			<Text>Kann gegen jeden ohne Kriegstreiber-Mali den Krieg erklären, der mit Verbündeten bereits im Krieg liegt. Sobald Ihr im Krieg mit einem gemeinsamen Feind seid, Ihr und eure Verbündeten erhalten gleichermaßen Plünderbeute und Kampferfahrung, wenn entsprechende Einheiten Sumeriens und seiner Verbündeten nicht weiter als 5 Felder voneinander getrennt sind.[NEWLINE] Beginnt mit einem Kriegswagen in der Antike. Sumerien erhält zusätzliche Allianzpunkte, wenn es mit seinen Verbündeten gemeinsam im Krieg gegen einen äußeren Feind liegt.[NEWLINE] Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+25% Erfahrung für alle EInheiten. [NEWLINE]Startet mit einem Kriegswagen in der Antike.[NEWLINE]Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
-		</Replace>		
+			<Text>Sobald Ihr im Krieg mit einem gemeinsamen Feind seid, Ihr und eure Verbündeten erhalten gleichermaßen Plünderbeute und Kampferfahrung, wenn entsprechende Einheiten Sumeriens und seiner Verbündeten nicht weiter als 5 Felder voneinander getrennt sind.[NEWLINE] Beginnt mit einem Kriegswagen in der Antike. Sumerien erhält zusätzliche Allianzpunkte, wenn es mit seinen Verbündeten gemeinsam im Krieg gegen einen äußeren Feind liegt.[NEWLINE] Erhalte eine Stammesdorf-Belohnung bei der Eroberung eines Barbarenlagers zusätzlich zum üblichen [ICON_Gold] Gold. Zahle nur die Hälfte der üblichen Kosten, um die Einheiten von Stadtstaaten auszuheben.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="de_DE">
+			<Text>+4 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
+		</Replace>	
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="de_DE">
 			<Text>Alle Einheiten haben +1 Sichtweite. Die Beförderung von leichter Kavallarie beendet nicht ihre Runde.</Text>
 		</Replace>
@@ -232,6 +155,10 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Erlaubt Handwerkern eine Mission, die einzigartige Modernisierung Spaniens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben. +2 [ICON_Faith] Glauben, +1 [ICON_PRODUCTION] Produktion, and +1 [ICON_FOOD] Nahrung wenn auf einem anderen Kontinent als Eure [ICON_Capital] Hauptstadt. +1 [ICON_HOUSING] Wohnraum wenn auf Eurem Heimatkontinent.[NEWLINE][NEWLINE]+1 [ICON_Science] Wissenschaft für jeden benachbarten Campus- und Heilige-Stätte-Bezirk. +2 Wissenschaft ab der Ausrichtung 'Aufklärung'. Kann nicht neben einer anderen Mission errichtet werden.</Text>
+		</Replace>
+		<!-- 2020/12/19 Added the text in parenthesis about majority religion-->
+		<Replace Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION" Language="de_DE">
+			<Text>Spanische Spezialeinheit der Renaissance. Ersetzt den Musketier. +10 [ICON_Strength] Kampfstärke mit religiösen Einheiten auf demselben Geländefeld. Nimmt diese Einheit eine Stadt ein, oder ist sie neben einer Stadt positioniert, während diese eingenommen wird, wird die Religion des Konquistador-Spielers automatisch als vorherrschende Religion eingeführt.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_Faith] Glauben Nachbarschaftsbonus für den Heilige-Stätte-Bezirk durch Flüsse. +1 [ICON_Amenities] Annehmlichkeit und +1 [ICON_Housing] Wohnraum für Städte, deren Heilige-Stätte-Bezirk an einen Fluss angrenzt.</Text>
@@ -246,16 +173,16 @@
 			<Text>Einheiten erhalten +5 [ICON_Strength] Kampfstärke bei Verteidigung auf ihrem Heimatkontinent und bei Angriff auf jedem fremden Kontinent. +1 Anziehungskraft für alle Geländefelder einer Stadt mit einem Nationalpark. Erhaltet die Spezialeinheit Rough Rider durch die Technologie 'Militärwissenschaft'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. Die Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
+			<Text>+25 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. Die Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="de_DE">
-			<Text>Bei Abschluss gewährt dieses Projekt 25 [ICON_CULTURE] Kultur und 25 [ICON_TOURISM] Tourismus (auf Standardgeschwindigkeit) basierend auf der Zahl überschüssiger Luxusgüter in Besitz Frankreichs</Text>
+			<Text>Bei Abschluss gewährt dieses Projekt 40 [ICON_CULTURE] Kultur und 40 [ICON_TOURISM] Tourismus (auf Standardgeschwindigkeit) basierend auf der Zahl überschüssiger Luxusgüter in Besitz Frankreichs</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="de_DE">
 			<Text>Äthiopiens internationale Handelswege gewähren +0.5 [ICON_Faith] Glauben pro Ressource am Ausgangsort. Verbesserte Ressourcen liefern +1 [ICON_Faith] Glauben. Kauf von Archäologischen Museen und Archäologen mit [ICON_Faith] Glauben möglich.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="de_DE">
-			<Text>Erhaltet [ICON_SCIENCE] Wissenschaft und [ICON_CULTURE] Kultur in Höhe von 15% Eurer [ICON_FAITH] Glaubensgenerierung in Städten, die auf Hügeln gegründet wurden. Einheiten erhalten +4 [ICON_Strength] Kampfstärke auf Hügeln.</Text>
+			<Text>Erhaltet [ICON_SCIENCE] Wissenschaft und [ICON_CULTURE] Kultur in Höhe von 10% Eurer [ICON_FAITH] Glaubensgenerierung in Städten, die auf Hügeln gegründet wurden.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="de_DE">
 			<Text>Äthiopische Leichte Kavallerie-Spezialeinheit des Mittelalters. Verfügt über bessere Sicht, erhält keinen [ICON_Movement] Fortbewegungsmalus für die Fortbewegung auf Hügeln, und verfügt über +4 [ICON_Strength] Kampfstärke auf Hügeln.</Text>
@@ -278,7 +205,9 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder, das in Küstengebieten gefunden werden kann und +3 [ICON_Food] Nahrung und +2 [ICON_Science] Wissenschaft bietet. Gewährt einen großen Nachbarschaftbonus für angrenzende Campus-Bezirke.	</Text>
 		</Replace>
-
+		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="de_DE">
+			<Text>Wenn Ihr eine religiöse Einheit erstmals zur Bekehrung einer Stadt einsetzt, erhaltet Ihr  10 [ICON_SCIENCE] Wissenschaft pro [ICON_Citizen] Bevölkerung der Stadt (bei Standardgeschwindigkeit.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="de_DE">
 			<Text>Atemberaubende Geländefelder, die entweder an ein Naturwunder oder einen Berg angrenzen, erhalten +1 [ICON_SCIENCE] Wissenschaft, und zusätzlich +1 [ICON_SCIENCE] Wissenschaft nach der Erforschung von 'Astronomie'. Atemberaubende Geländefelder, die entweder an ein Naturwunder oder an Wälder angrenzen, erhalten +1 [ICON_CULTURE] Kultur, und zusätzlich +1 [ICON_CULTURE] Kultur nach dem Erlangen der Ausrichtung 'Aufklärung'. Alle Felder in Städten mit einen Nationalpark haben +1 Anziehungskraft.</Text>
 		</Replace>
@@ -292,19 +221,19 @@
 			<Text>Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion pro Segment. Steigert die [ICON_Strength] Verteidigung. Bonus auf [ICON_Gold] Gold, wenn sie sich neben weiteren Segmenten befindet. Zusätzliche [ICON_Culture] Kultur und [ICON_Tourism] Tourismus wenn Ihr Fortschritte beim Technologiebaum für angrenzende Segmente erzielt. Muss in einer Linie entlang der Grenzen Eures Reichs gebaut werden. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Inspirationen bieten 60% der Ausrichtungen und Technologien anstatt 50%.[NEWLINE][NEWLINE]Errichtete Wunder bieten ihren Städten +1 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +1 [ICON_FAITH] Glauben, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Wissenschaft, and +1 [ICON_CULTURE] Kultur.</Text>
+			<Text>[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Inspirationen bieten 60% der Ausrichtungen und Technologien anstatt 50%.[NEWLINE][NEWLINE]Errichtete Wunder bieten ihren Städten +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Inspirationen bieten 50% der Ausrichtungen und Technologien anstatt 40%.[NEWLINE][NEWLINE]Errichtete Wunder bieten ihren Städten +1 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +1 [ICON_FAITH] Glauben, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Wissenschaft, and +1 [ICON_CULTURE] Kultur.</Text>
+			<Text>[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Inspirationen bieten 50% der Ausrichtungen und Technologien anstatt 40%.[NEWLINE][NEWLINE]Errichtete Wunder bieten ihren Städten +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Inspirationen bieten 50% der Ausrichtungen und Technologien anstatt 40%.[NEWLINE][NEWLINE]Errichtete Wunder bieten ihren Städten +1 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +1 [ICON_FAITH] Glauben, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Wissenschaft, and +1 [ICON_CULTURE] Kultur.</Text>
+			<Text>[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Inspirationen bieten 50% der Ausrichtungen und Technologien anstatt 40%.[NEWLINE][NEWLINE]Errichtete Wunder bieten ihren Städten +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="de_DE">
-			<Text>Land-Kampf- oder Unterstützungseinheiten kosten 20 % weniger mit [ICON_GOLD] Gold oder [ICON_FAITH] Glauben für jedes Lagerbezirksgebäude in der Stadt.</Text>
+			<Text>Land-Kampf- oder Unterstützungseinheiten kosten 10 % weniger mit [ICON_GOLD] Gold oder [ICON_FAITH] Glauben für jedes Lagerbezirksgebäude in der Stadt.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Phönizien zur Verfügung stehender Bezirk für Marine-Aktivitäten in Eurer Stadt. Ersetzt den Hafenbezirk und ist günstiger im Bau. Muss an Küste oder See-Geländefeldern neben Land gebaut werden.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Produktion für Marineeinheiten und Siedler in dieser Stadt. Alle verwundeten Marineeinheiten innerhalb der Stadtgrenzen regenerieren 100 Trefferpunkte pro Runde.</Text>
+			<Text>Ein ausschließlich Phönizien zur Verfügung stehender Bezirk für Marine-Aktivitäten in Eurer Stadt. Ersetzt den Hafenbezirk und ist günstiger im Bau. Muss an Küste oder See-Geländefeldern neben Land gebaut werden.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Produktion für Marineeinheiten und Siedler in dieser Stadt.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="de_DE">
@@ -339,6 +268,12 @@
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="de_DE">
 			<Text>+1 Sichtweite für alle Einheiten (Ejército Patriota)</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="de_DE">
+			<Text>Großkolumbianische Spezialeinheit des Industriezeitalters, welche die Kavallerie ersetzt. Niedrige Unterhaltskosten. +2 [ICON_Strength] Kampfstärke für jeden angrenzenden Llanero. Wird in Reichweite eines Comandante General, der seine Ruhestand-Fähigkeit aktiviert, vollständig geheilt.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_Strength] Kampfstärke für jeden angrenzenden Llanero.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet einen Commandante General beim Eintritt in ein neues Zeitalter. Kann keinen [ICON_GreatGeneral] Großen General erhalten.</Text>
 		</Replace>
@@ -346,16 +281,16 @@
 			<Text>Erhaltet einen Commandante General beim Eintritt in ein neues Zeitalter. Kann keinen [ICON_GreatGeneral] Großen General erhalten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="de_DE">
-			<Text>All naval melee units get +50% [ICON_PRODUCTION] Production and can raid the coast.[NEWLINE][NEWLINE]Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
+			<Text>Gewährt Küstenraubzüge und +50 % [ICON_PRODUCTION] Produktion für alle Nahkampf-Marineeinheiten.[NEWLINE][NEWLINE]Heilige Stätten und deren Gebäude erhalten einen Bonus von +50% [ICON_PRODUCTION] Produktion. Heilige Stätten erhalten außerdem einen Standard-Nachbarschaftsbonus durch Küstenfelder.[NEWLINE][NEWLINE]Hafen-Bezirke neben einem Heilige-Stätte-Bezirk erhalten zusätzlich einen Nachbarschaftsbonus von +2 [ICON_GOLD] Gold.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Gewährt Küstenraubzüge und +50 % [ICON_PRODUCTION] Produktion für alle Nahkampf-Marineeinheiten. Erhaltet [ICON_SCIENCE] Wissenschaft durch Plündern von und Küstenraubzügen auf Minen zusätzlich zu [ICON_GOLD] Gold. Plündern von und Küstenraubzüge auf Steinbrüche, Weiden, Plantagen und Jagdlager gewähren zusätzlich zu [ICON_FAITH] Glauben auch [ICON_CULTURE]  Kultur.[NEWLINE][NEWLINE]Heilige Stätten erhalten einen Standard-Nachbarschaftsbonus durch Küstenfelder.[NEWLINE][NEWLINE]Hafen-Bezirke neben einem Heilige-Stätte-Bezirk erhalten zusätzlich einen Nachbarschaftsbonus von +2 [ICON_GOLD] Gold .</Text>
+			<Text>Gewährt Küstenraubzüge und +50 % [ICON_PRODUCTION] Produktion für alle Nahkampf-Marineeinheiten. Erhaltet [ICON_SCIENCE] Wissenschaft durch Plündern von und Küstenraubzügen auf Minen zusätzlich zu [ICON_GOLD] Gold. Plündern von und Küstenraubzüge auf Steinbrüche, Weiden, Plantagen und Jagdlager gewähren zusätzlich zu [ICON_FAITH] Glauben auch [ICON_CULTURE]  Kultur.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] auf Heilige Stätten. Heilige Stätten erhalten einen Standard-Nachbarschaftsbonus durch Küstenfelder.[NEWLINE][NEWLINE]Hafen-Bezirke neben einem Heilige-Stätte-Bezirk erhalten zusätzlich einen Nachbarschaftsbonus von +2 [ICON_GOLD] Gold.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
+			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit). +1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
+			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit). +1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik'.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
@@ -377,7 +312,7 @@
 			<Text>+1 [ICON_Science]  Wissenschaft pro 3 Anhänger dieser Religion in anderen Zivilisationen.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="de_DE">
-			<Text>+3 [ICON_Gold] Gold für jede Stadt mit dieser Religion.</Text>
+			<Text>+1 [ICON_Gold] Gold für je 3 Anhänger dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Culture] Kultur pro 3 Anhänger dieser Religion in anderen Zivilisationen.</Text>
@@ -400,7 +335,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="de_DE">
-			<Text> Erhöht die Generierung von [ICON_Culture] Kultur um 15 % in dieser Stadt. Religiöser Druck auf angrenzende Städte ist von dieser Stadt aus 50 % stärker.</Text>
+			<Text> Erhöht die Generierung von [ICON_Culture] Kultur um 15 % in dieser Stadt. Religiöser Druck auf angrenzende Städte ist von dieser Stadt aus 100% stärker.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion und +1 [ICON_Faith] Glauben durch Steinbrüche.</Text>
@@ -430,7 +365,7 @@
 			<Text>Hic Sunt Dracones Goldenes Zeitalter:[NEWLINE] Erhaltet +3 [ICON_Citizen] Startbevölkerung  für neu gegründete Städte. +2 [ICON_Movement] Fortbewegung für Marine- oder gewasserte Einheiten. +2 Loyalität pro Runde für Städte, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_6" Language="de_DE">
-			<Text>Hic Sunt Dracones: Gewährt +3 Zeitalterpunkte jedes Mal, wenn Ihr einen neuen Kontinent oder ein Naturwunder entdeckt. Erhaltet +1 Zeitalterpunkt, wenn Ihr eine nicht-barbarische Marineeinheit im Kampf besiegt. Wählt Ihr diese Widmung zu Beginn eines Goldenen Zeitalters, so erhaltet ihr +3 [ICON_Citizen] Startbevölkerung für neu gegründete Städte. +2 [ICON_Movement] +2 [ICON_Movement] Fortbewegung für Marine- oder gewasserte Einheiten. +2 Loyalität pro Runde für Städte, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen Renaissance bis einschließlich Moderne.</Text>
+			<Text>Hic Sunt Dracones: Gewährt +3 Zeitalterpunkte jedes Mal, wenn Ihr einen neuen Kontinent oder ein Naturwunder entdeckt. Erhaltet +1 Zeitalterpunkt, wenn Ihr eine nicht-barbarische Marineeinheit im Kampf besiegt. Wählt Ihr diese Widmung zu Beginn eines Goldenen Zeitalters, so erhaltet ihr +3 [ICON_Citizen] Startbevölkerung für neu gegründete Städte. +2 [ICON_Movement] Fortbewegung für Marine- oder gewasserte Einheiten. +2 Loyalität pro Runde für Städte, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen Renaissance bis einschließlich Moderne.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_Food] Nahrung, +2 [ICON_Production] Produktion, und +4 [ICON_Gold] Gold durch jede [ICON_GreatWork_Relic] Reliquie, jedes [ICON_GreatWork_Artifact] Artefakt, und jedes [ICON_GreatWork_Sculpture] Große Skulturwerk zusätzlich zur üblichen [ICON_Culture] Kultur.  50% mehr für [ICON_GreatWriter] Große Schriftsteller, [ICON_GreatArtist] Große Künstler, [ICON_GreatMusician] Große Musiker und [ICON_GreatMerchant] Große Händler. +100% [ICON_PRODUCTION] Produktion für Archäologen. Der Palast hat Plätze für 5 Große Werke.</Text>
@@ -448,10 +383,10 @@
 			<Text>Hat 1 Stufe [ICON_VisLimited] diplomatische Sichtbarkeit mehr als normal bei jeder Zivilisation, die sie getroffen hat.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="de_DE">
-			<Text>+75 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
+			<Text>+50 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
+			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
 		</Replace>
 
 
@@ -480,7 +415,7 @@
 			<Text>Unterhändlerin</Text>
 		</Row>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="de_DE">
-			<Text>Stadt kann nicht belagert werden und die Stadtverteidigung erhält +Kampfstärke.</Text>
+			<Text>Stadt kann nicht belagert werden und die Stadtverteidigung erhält +5 Kampfstärke.</Text>
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="de_DE">
 			<Text>Alle Städte innerhalb von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
@@ -512,23 +447,16 @@
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="de_DE">
 			<Text>+50% [ICON_Production] Produktion für Bezirke in Städten, die keinen Spezialbezirk haben.</Text>
 		</Replace>
-
-		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="de_DE">
-			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 50 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
 			<Text>Ausgehobene Einheiten von Stadstaaten erlangen eine Fähigkeit, die ihnen +1 [ICON_Movement] Fortbewegung gewährt. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten zusätzlich in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht ist.
-			[NEWLINE]Ausgehobene Einheiten von Stadtstaaten erhalten +3 [ICON_Strength] Kampfstärke, erhaltet zusätzlich +1 [ICON_Envoy] Gesandten im betreffenden Stadstaat, sobald ihr ein Gebäude der zweiten Stufe im Regierungsbezirk errichtet habt</Text>
+			[NEWLINE]Ausgehobene Einheiten von Stadtstaaten erhalten +3 [ICON_Strength] Kampfstärke.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
-			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit. Städte werden nicht kriegsmüde. Alle Militäreinheiten heilen vollständig, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
+			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 25% der [ICON_Strength] Kampfstärke der besiegten Einheit (auf Online-Geschwindigkeit). Städte erhalten keine Kriegsmüdigkeit. Alle Militäreinheiten heilen komplett, wenn dieser Spieler eine Stadt mit einem Weltwunder einnimmt.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
-			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzlich +5 Basis-Kampfstärke für Korps und Armeen.</Text>
+			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzliche +5 [ICON_STRENGTH] Basis-Kampfstärke für Korps und Armeen ab der Ausrichtung 'Mobilisierung'.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. +1 [ICON_Strength] Kampfstärke für jeden Stadtstaat in welchem Ihr Suzerän seid.</Text>
@@ -546,7 +474,7 @@
 			<Text>Pen, Brush, and Voice: Gain +1 Era Score each time you trigger an [ICON_CivicBoosted] Inspiration. +1 Era Score for constructing a building with a Great Work Slot. If chosen at the start of a Golden Age, [ICON_CivicBoosted] Inspirations provide an additional 10% of civic costs. Each city receives +2 [ICON_Culture] Culture and +1 [ICON_Gold] Gold for each specialty district.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_Food] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +2 [Icon_Governor] Governor Title.</Text>
+			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_Food] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_Science] Wissenschaft. Minen geben einen kleinen Nachbarschaftsbonus. Gewährt +1 [ICON_Culture] wenn neben einem Theaterplatz-Bezirk. Kulturschock auf angrenzen Feldern bei Fertigstellung.</Text>
@@ -555,7 +483,7 @@
 			<Text>Heilige-Stätte-Bezirke erhalten +1 [ICON_Faith] von angrenzenden flachen Tundra-Feldern.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="de_DE">
-			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Tundra-Geländefeldern.</Text>
+			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden flachen Tundra-Geländefeldern {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="de_DE">
 			<Text>Verteidigende Einheiten im Gebiet der Stadt erhalten +3 [ICON_Strength] Kampfstärke. Eure anderen Städte in einem Umkreis von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
@@ -573,7 +501,7 @@
 			<Text>+{1_Value} beim Angriff</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss.  In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Verhindert den Verlust von [ICON_Food] Nahrung bei Dürre. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
+			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss. In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Verhindert den Verlust von [ICON_Food] Nahrung bei Dürre. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="de_DE">
 			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss.  In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Verhindert den Verlust von [ICON_Food] Nahrung bei Dürre. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
@@ -582,7 +510,7 @@
 			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden zweiten benachbarten Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum.  In jedem Fall bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Muss angrenzend ans Stadtzentrum gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur. +1 Anziehungskraft. +1  [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur, wenn neben einem Wunder. +1 [ICON_Culture] Kultur und +1 [ICON_Production] Produktion beim Bau aufWüste. +1 [ICON_Culture] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Weitere Kultur nach der Entdeckung von Dipomatischem Dienst. Gewährt Tourismus nach der Erforschung von Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur. +2 Anziehungskraft. +1  [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur, wenn neben einem Wunder. +1 [ICON_Culture] Kultur und +1 [ICON_Production] Produktion beim Bau aufWüste. +1 [ICON_Culture] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Weitere Kultur nach der Entdeckung von Dipomatischem Dienst. Gewährt Tourismus nach der Erforschung von Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur. +1 Anziehungskraft. +1  [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur, wenn neben einem Wunder. +1 [ICON_Culture] Kultur und +1 [ICON_Production] Produktion beim Bau aufWüste. +1 [ICON_Culture] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Weitere Kultur nach der Entdeckung von Dipomatischem Dienst. Gewährt Tourismus nach der Erforschung von Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
@@ -641,14 +569,20 @@
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="de_DE">
 			<Text>+7 [ICON_Strength] Kampfstärke beim Angriff auf Nah- und Fernkampfeinheiten.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
+			<Text>Schnellere Fortbewegung in Wald und Regenwald.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartige Einheit der Cree in der Antike, welche stärker als der Späher ist und diesen ersetzt. Schnellere Fortbewegung [ICON_Movement]in Wald und Regenwald.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
-			<Text>Das Ausheben des Militärs von Stadtstaaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärkebonus, sofern Ihr der Suzerän des Stadtstaats seid (inklusive ausgehobene Einheiten).[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte und +3 Einflusspunkte pro Runde für Gesandte in Stadtstaaten.</Text>
+			<Text>Das Ausheben des Militärs von Stadtstaaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärkebonus, sofern Ihr der Suzerän des Stadtstaats seid (inklusive ausgehobene Einheiten).[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte und +2 Einflusspunkte pro Runde für Gesandte in Stadtstaaten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion durch die Sägewerk-Modernisierung. Schaltet Urbane Verteidigung frei und gewährt all Euren Städten automatisch 300 Befestigungsstärke und die Fernkampffähigkeit. Alle bisherigen Mauer-Modernisierungen werden veraltet und Belagerungs-Unterstützungseinheiten sind nicht mehr effektiv.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="de_DE">
-			<Text>Ermöglicht den Bau von Bauernhöfen auf Tundra-Geländefeldern. Nachdem das Bauwesen freigeschaltet ist, können Bauernhöfe auch auf Tundra-Hügeln gebaut werden. Auf Schnee, Tundra, Schneehügeln und Tundra-Hügeln gewähren alle Minen +1 [ICON_Production] Produktion, Sägewerk gewähren +1 [ICON_Production] Produktion, Jagdlager gewähren +1 [ICON_Food] Nahrung, und die Akkumulationsrate strategischer Ressourcen liegt bei +100 %. Reduziert die Kosten für den Kauf von Geländefeldern auf diesen Geländetypen um 50 %.[NEWLINE][NEWLINE]Städte mit einen Nationalpark generieren extra +8 [ICON_Food] Nahrung und +8 [ICON_Production] Produktion pro Runde.</Text>
+			<Text>Ermöglicht den Bau von Bauernhöfen auf Tundra-Geländefeldern. Nachdem das Bauwesen freigeschaltet ist, können Bauernhöfe auch auf Tundra-Hügeln gebaut werden. Auf Schnee, Tundra, Schneehügeln und Tundra-Hügeln gewähren alle Minen +1 [ICON_Production] Produktion, Sägewerk gewähren +1 [ICON_Production] Produktion, Jagdlager gewähren +1 [ICON_Food] Nahrung, und die Akkumulationsrate strategischer Ressourcen liegt bei +100 %. Reduziert die Kosten für den Kauf von Geländefeldern auf diesen Geländetypen um 50 %.[NEWLINE][NEWLINE]Städte mit einen Nationalpark generieren extra +4 [ICON_FOOD] Nahrung und +4 [ICON_PRODUCTION] Produktion pro Runde.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet 25% der Produktionskosten einer militärsichen Landeinheit in Glauben.</Text>
@@ -657,16 +591,16 @@
 			<Text>Erhaltet 25% der Produktionskosten einer militärsichen Landeinheit in Glauben.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="de_DE">
-			<Text>Euer Missionsteam ist erfolgreich auf dem Mond gelandet.</Text>
+			<Text>Euer Missionsteam ist erfolgreich auf dem Mond gelandet. Gewährt einen einmaligen [ICON_CULTURE] Kulturbonus, der dem Fünffachen Eurer [ICON_SCIENCE] Wissenschaft pro Runde entspricht, und markiert den zweiten Schritt in Richtung Wissenschaftssieg.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="de_DE">
-			<Text>Projekt für Weltraumrennen, das eine große Rakete startet, um einen Menschen auf den Mond zu befördern. Gewährt einen einmaligen Kulturbonus, der dem Fünffachen Eurer Wissenschaft pro Runde entspricht, und markiert den zweiten Schritt in Richtung Wissenschaftssieg.</Text>
+			<Text>Projekt für Weltraumrennen, das eine große Rakete startet, um einen Menschen auf den Mond zu befördern. Gewährt einen einmaligen [ICON_CULTURE] Kulturbonus, der dem Fünffachen Eurer [ICON_SCIENCE] Wissenschaft pro Runde entspricht, und markiert den zweiten Schritt in Richtung Wissenschaftssieg.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="de_DE">
 			<Text>50 % Nachlass auf Ressourcen bei allen Einheiten-Verbesserungen.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="de_DE">
-			<Text>50 % Nachlass auf Gold und Ressourcen bei allen Einheiten-Verbesserungen.</Text>
+			<Text>50 % Nachlass auf Gold bei allen Einheiten-Verbesserungen. 50% Nachlass auf die Kosten an strategischen Ressourcen für die Produktion und die Verbesserung von Einheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_GreatProphet] Große-Persönlichkeit-Punkt des Typs "Großer Prophet" ro Runde nach Erforschung von Astrologie. Automatisch den letzten Großen Propheten erhalten, wenn der vorletzte beansprucht wurde (und nicht bereits ein Großer Prophet verdient wurde). +1 Wissenschaft für jede fremde Stadt mit Arabiens Religion.</Text>
@@ -690,7 +624,7 @@
 			<Text>Heilige-Stätte-Bezirke erhalten +1 Glauben [ICON_Faith] durch benachbarte Wald- und Regenwald-Geländefelder.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="de_DE">
-			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Wald-Geländefeldern.</Text>
+			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Wald-Geländefeldern {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Row>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.</Text>
@@ -711,7 +645,7 @@
 			<Text>+{1_Amount} [ICON_Strength] Kampfstärke im Umkreis von 4 Geländerfeldern um einen eigenen Nationalpark</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="de_DE">
-			<Text>Einzigartiges Gebäude von Georgien. Ersetzt die Stadtmauern. Gewährt +3 [ICON_Tourism] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Gewährt +3 [ICON_Faith] Glauben.</Text>
+			<Text>Einzigartiges Gebäude von Georgien. Ersetzt die Stadtmauern. Gewährt +3 [ICON_Tourism] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Gewährt +3 [ICON_Faith] Glauben. +100% [ICON_FAITH] Glauben und [ICON_Tourismn], wenn Ihr Euch in einem goldenen Zeitalter befindet.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für alle Marine- und Landeinheiten. -1 [ICON_Gold] Gold Unterhaltskosten.[NEWLINE]Gewährt +1 [Icon_Governor] Gouerneur Beförderung und erhöht den Vorrat strategischer Ressourcen um 15.</Text>
@@ -733,9 +667,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="de_DE">
 			<Text>+100% [ICON_Production] Production für Gebäade im Theater Platz. Große Werke in Eleonores Städten verursachen -1 Loyalität pro Runde in fremden Städten im Umkreis von 9 Geländefeldern. Eine Stadt, die eine andere Zivilisation wegen Loyalitätsverlust verlässt und derzeit die meiste Loyalität pro Runde von Eleonores Zivilisation erhält, überspringt den Schritt der freien Stadt, um sich direkt dieser Zivilisation anzuschließen.</Text>
-		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="de_DE">
-			<Text>+100% [ICON_Production] Produktion für Belagerungseinheiten und Mauern.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="de_DE">
 			<Text>+{1_num} [ICON_Science] Wissenschaft von einem benachbartem Theaterplatz.</Text>
@@ -766,7 +697,7 @@
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Kann Flotten (Söldner-Ausrichtung) und Armadas (Merkantilismus-Ausrichtung) früher formen. [ICON_TradeRoute] Internationale Handelsrouten zwsichen mehreren Kontinenten erhalten zusätzlich [ICON_Gold] Gold. Zusätzlich [ICON_Food] Nahrung und [ICON_Production] Produktion für Handelsrouten zwischen Euren Städten. +2 Loyalität pro Runde für Städte mit einer Mission Modernisierung auf einem anderen Kontinent als Eure [ICON_Capital] ]Hauptstadt und neben dem Stadtzentrum</Text>
+			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Flotten und Armadas können in Städten mit Schiffswerften gebaut werden.[NEWLINE]Kontinente verbindende [ICON_TradeRoute] Handelswege erhalten einen [ICON_Gold] Gold-Bonus zu anderen Zivilisationen und [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse zu Euren eigenen Städten. +2 Loyalität pro Zug für Städte mit einer Mission neben ihren Stadtzentrum, welche nicht auf dem Kontinent Eurer [ICON_Capital] Hauptstadt liegen.[NEWLINE] +25% [ICON_Production] auf Geäbude im Hafen-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Missionare kosten 30% weniger [ICON_Faith] Glauben. Inquisitors können Ketzerei ein mal mehr entfernen und eliminieren 100% des Einflusses fremder Religionen. Militärsiche Einheiten erhalten +4 [ICON_Strength] Kampfstärke gegen Einheiten anderer Civilizationen mit fremder Mehrheitsreligion.</Text>
@@ -824,11 +755,17 @@
 		</Replace>
 		<!-- Aztec -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude der Azteken. Gewährt 1 [ICON_Amenities] Annehmlichkeit, +3 [ICON_Culture] Kultur und +1 [ICON_GreatGeneral] Punkt des Typs "Großer General" pro Runde.</Text>
+			<Text>Einzigartiges Gebäude der Azteken. Gewährt +1 [ICON_Amenities] Annehmlichkeit, +3 [ICON_Culture] Kultur und +1 [ICON_GreatGeneral] Punkt des Typs "Großer General" pro Runde.</Text>
 		</Replace>
 		<!-- Babylon -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="de_DE">
-			<Text>Heureka gewähren 85% der benötigten [ICON_SCIENCE] Wissenschaft für Technologien. -50% [ICON_SCIENCE] Wissenschaft pro Zug.</Text>
+			<Text>Eure Heurekas [ICON_SCIENCE] erforschen gänzlich die betreffenden Technologien, wenn die vorherigen Technologien bereits erforscht worden sind. -50% [ICON_SCIENCE] Wissenschaft in Campus-Bezirken.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="de_DE">
+			<Text>Zusätzliches Territorium bei Stadtgründung. +1 [ICON_Faith] Glauben in Eurer Hauptstadt. +1 [ICON_Production] Produktion durch Tundra-Felder.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Zusätzliches Territorium bei Stadtgründung. +1 [ICON_Faith] Glauben in Eurer Hauptstadt. +1 [ICON_Production] Produktion durch Tundra-Felder.</Text>
 		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="de_DE">
@@ -853,7 +790,7 @@
 			<Text>Georgische Spezialeinheit des Mittelalters. +5 [ICON_Strength] Kampfstärke beim Kampf in Hügel-Gelände. Kein Fortbewegungsmalus in Hügel-Gelände.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="de_DE">
-			<Text>Erhält [ICON_Faith] Glaube in Höhe von 50% der [ICON_STRENGTH] Grundkampfstärke einer im Kampf besiegten Einheit. Jeder [ICON_ENVOY] Gesandte, den Ihr in einen Stadtstaat mit eurer Mehrheitsreligion schickt, zählt als 2 [ICON_ENVOY] Gesandte.</Text>
+			<Text>Das Töten einer Einheit gewährt [ICON_FAITH] Glauben in Höhe von 50% der [ICON_STRENGTH] Basis-Kampfstärke der besiegten Einheit (auf Online-Geschwindigkeit). Jeder [ICON_ENVOY] Gesandte, den Ihr zu einem Stadtstaat Eurer Mehrheitsreligion sendet, zählt als zwei [ICON_ENVOY] Gesandte. (Benötigt eine Mehrheitsreligion).</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="de_DE">
@@ -892,6 +829,12 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chemamüll, die einzigartige Modernisierung der Mapuche, zu bauen.[NEWLINE][NEWLINE]Gewährt [ICON_Culture] Kultur in Höhe von 75 % der Anziehungskraft des Geländefelds und +1 [ICON_Production] Produktion. Gibt zusätzlich +1 [ICON_Production] Production bei der Ausrichtung "Öffentliche Verwaltung". Zusätzlicher [ICON_TOURISM] Tourismus nach Erforschung der Luftfahrt. Mindest-Anziehungskraft "Atemberaubend".</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_NAME" Language="de_DE">
+			<Text>Toki</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartige Eigenschaft der Mapuche: +5 [ICON_Strength] Kampfstärke gegen Zivilisationen in einem goldenen Zeitalter.</Text>
 		</Replace>
 		<!-- Norway -->
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
@@ -943,10 +886,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Faith] Glauben bzw. +1 [ICON_Culture] Kultur durch jeden Heilige-Stätte- und Theaterplatz-Bezirk in einer Stadt mit dieser Religion.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="de_DE">
-			<Text>Religion breitet sich in Städte aus, die 40 % weiter entfernt sind.</Text>
+			<Text>+2 [ICON_Faith] Glauben bzw. +2 [ICON_Culture] Kultur durch jeden Heilige-Stätte- und Theaterplatz-Bezirk in einer Stadt mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Amenities] Annehmlichkeiten in Städten mit einem Spezialbeszirk.</Text>
@@ -1011,7 +951,7 @@
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="de_DE">
 			<Text>Städte wurden schon seit frühester geschichtlich bekannter Zeit mit Mauern umgeben, um möglichen Feinden die Eroberung zu erschweren. Dagegen bildete sich ebenso früh eine Technik der Belagerung aus. Mythische Berichte reichen bis zur Belagerung von Jericho im Alten Testament und zur Belagerung von Troja, die Homer in der Ilias schilderte, zurück. [NEWLINE][NEWLINE] Auch das Heer Alexanders des Großen führte viele Belagerungen durch, insbesondere die Belagerungen von Tyros und des Sogdischen Felsens. Tyros war eine phönizische Inselstadt, die einen Kilometer vom Festland entfernt war und für uneinnehmbar gehalten wurde. Die Makedonen errichteten einen Damm zur Insel, der Überlieferungen zufolge zumindest 60 m breit war. Sobald dieser Damm in den Artilleriebereich hineinreichte, ließ Alexander die Stadtmauern mit Steinschleudern und leichten Katapulten beschießen. Nach einer sieben Monate andauernden Belagerung fiel die Stadt unter die Kontrolle der Makedonen. Im Gegensatz hierzu wurde die hoch auf den Klippen stehende Festung des Sogdischen Felsens durch List eingenommen. Alexander befahl seinen Truppen, die Klippen zu erklimmen und die hochgelegenen Flächen einzunehmen. Daraufhin gaben die demoralisierten Verteidiger auf. [NEWLINE][NEWLINE]Der Belagerungskrieg war in der Antike von zentraler Bedeutung. Die einfachste Form der Belagerung besteht darin, den Feind einfach einzuschließen und abzuwarten, bis ihm die Nahrung oder das Wasser ausgeht. Die Dauer einer Belagerung führt aber sowohl bei den belagernden Truppen als auch bei den Belagerten häufig zu Seuchen wegen der mangelnden Hygiene. [NEWLINE] [NEWLINE]Die hellenistischen Armeen entwickelten eine komplexe Belagerungstechnik auf rein mechanischen Grundlagen – Explosivwaffen waren im Altertum unbekannt. Insbesondere die römischen Armeen waren für ihre erfolgreichen Belagerungen bekannt. Julius Caesars Kampagne zur Einnahme Galliens beispielsweise basierte im Kern auf einer großen Zahl verschiedener Belagerungen. Während des Gallischen Kriegs beschrieb Caesar, wie die römischen Legionen in der Schlacht bei Alesia zwei befestigte Wälle um die Stadt errichteten. Die innere Circumvallation hielt mit einem Durchmesser von zehn Meilen die Kräfte Vercingetorix im Belagerungsbereich, während die äußere Contravallation verhinderte, dass diese von Nachschub erreicht werden konnte. Nachdem die Entsatztruppen der Gallier den römischen Kavallerie-Hilfstruppen unterlagen, gaben die Gallier im Angesicht des Hungertodes auf.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_SHELL_EXPLOSIVES_NAME" Language="de_DE">
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="de_DE">
 			<Text>Hardschalen-Sprengstoffe</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="de_DE">
@@ -1029,5 +969,377 @@
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="de_DE">
 			<Text>Als "Grabenkrieg" bezeichnet man eine Art des Stellungskrieges, bei der zwei sich gegenüber liegende Frontbefestigungen jeweils aus einem System von Schützen- und Laufgräben bestehen. Ursachen dieser Frontverfestigungen waren in entgegengesetzter Stoßrichtung aufeinander treffende, annähernd gleich starke gegnerische Truppen, die gleichermaßen über eine technisch fortgeschrittene Artillerie mit wirkungsvollen Granaten und hoher Geschützreichweite sowie über die damals neu aufgekommenen Maschinengewehre verfügten. Dabei blieb jedoch die Mobilität gerade auch der neuen schweren Waffen in dem meist unwegsamen Gelände gering, zumal die für den Vorspann benötigten Zugtiere der gesteigerten Waffenwirkung ebenso ausgesetzt waren, wie die Menschen.[NEWLINE][NEWLINE]Als ein archetypisches Phänomen wurde der Grabenkrieg rasch mit dem 1. Weltkrieg (1914-1918) assoziiert, nachdem im Verlauf des Septembers 1914 die Offensive des deutschen Heeres in Frankreich in der Marne-Schlacht zu einem Stillstand gebracht wurde und sich rasch von der Nordseeküste bis hin zur Schweizer Grenze ein gegenüberliegendes System von stark befestigten Gräben entwickelte. Auch unter massivstem Einsatz von Menschen und Material konnten nur geringe Geländegewinne erzielt werden. Allein in der Schlacht von Verdun wurden von Februar bis Dezember 1916 über 700.000 Soldaten getötet oder verletzt. Dabei konnten die Kämpfe den Frontverlauf nicht wesentlich verändern.[NEWLINE][NEWLINE] Erst die Taktik der beweglichen Gefechtsführung mit Panzerfahrzeugen vermochten diese Statik aufzubrechen, sodass der 2. Weltkrieg (1939-1945) eine deutlich größere Dynamik in der raschen Verschiebung von Frontverläufen entfaltete.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="de_DE">
+			<Text>Mehr [ICON_Science] Wissenschaft von Campus-Gebäuden: +50 %, bei 15 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50 %, bei +3 Nachbarschaftsbonus und mehr.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="de_DE">
+			<Text>Zusätzlicher Glauben [ICON_FAITH] durch Gebäude in Heiligen Stätten: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="de_DE">
+			<Text> Mehr [ICON_CULTURE] Kultur von Gebäuden im Theaterplatz: +50%, bei 15 [ICON_CITIZEN] Stadtbevölkerung oder mehr, +50%, bei Nachbarschaftsbonus +3 oder mehr.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="de_DE">
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +1 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="de_DE">
+			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="de_DE">
+			<Text>Eure Bezirke an oder neben Küsten- oder See-Geländefeldern bieten +1 [ICON_Culture] Kultur. Weiterer +1 [ICON_Culture] Kultur sobald die Ausrichtung 'Erkundung' erreicht wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_LISBON_DESCRIPTION" Language="de_DE">
+			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="de_DE">
+			<Text>Beginnt das Spiel mit dem Heureka [ICON_TechBoosted] der Schrift-Technologie. Küstenstädte, die von den Phöniziern gegründet wurden und sich auf dem gleichen Kontinent wie die phönizische [ICON_Capital] Hauptstadt befinden, sind zu 100% loyal. Gewasserte Siedler +1 [ICON_Movement] Fortbewegung und erhalten +2 Sichtweite. Für Siedler gelten keine zusätzlichen [ICON_Movement] Fortbewegungskosten für das Wassern und Ausschiffen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_TradeRoute] Handelsweg-Kapazität mit der Keramik-Technologie. Unbeanspruchte Geländefelder innerhalb von 3 Feldern einer Cree-Stadt fallen unter die Kontrolle der Cree, wenn ein Händler sie als Erster betritt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="de_DE">
+			<Text>Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen von freundlich gesinnten Städten mit dieser Religion.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="de_DE">
+			<Text> +2 [ICON_Strength] Kampfstärke für Einheiten auf Regenwald-, Sumpf- oder Waldfeldern. +1 [ICON_Movement] Fortbewegung sofern Sie ihren Zug dort beginnen. Beide Boni werden verdoppelt, sofern sich das Geländefeld in Eurem Territorium befindet.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_TRIEU_FEATURES_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_Strength] Kampfstärke für Einheiten auf Regenwald-, Sumpf- oder Waldfeldern. +1 [ICON_Movement] Fortbewegung sofern Sie ihren Zug dort beginnen. Beide Boni werden verdoppelt, sofern sich das Geländefeld in Eurem Territorium befindet.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="de_DE">
+			<Text>Ein einzigartiger Distrikt Vietnams der das Lager ersetzt. +1 [ICON_CULTURE] Kultur für jeden angrenzenden Bezirk. Nach Erforschung von 'Luftfahrt' erhaltet [ICON_TOURISM] in Höhe der erwirtschafteten [ICON_CULTURE] Kultur. Dieser Bezirk benötigt keine Bevölkerung, ist günstiger im Bau, kann nicht angrenzend an ein Stadtzentrum errichtet werden und zählt nicht als Spezialdistrikt.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="de_DE">
+			<Text>+1 [ICON_HOUSING] Wohnraum pro Ausbaustufe der Mauer. +2 [ICON_CULTURE] Kultur für jede Renaissance-Mauer.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+1 Glauben [ICON_Faith] für Geländefelder mit einer Anziehungskraft von 'Bezaubernd' oder besser.</Text>
+		</Replace>
+		<!-- Front End -->
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="de_DE">
+			<Text>Barbarenstämme</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_DESC" Language="de_DE">
+			<Text>Definiert, in welcher Form Barbaren in Eurem Spiel auftauchen.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_NAME" Language="de_DE">
+			<Text>Ausgewogen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_NAME" Language="de_DE">
+			<Text>Rasend</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_NAME" Language="de_DE">
+			<Text>Keine Barbaren</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_0_DESC" Language="de_DE">
+			<Text>Vanilla Setting</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_1_DESC" Language="de_DE">
+			<Text>Kavallerie-Stämme tauchen nicht vor Zug 15 auf. [NEWLINE]Die Platzierung der Lager zwischen den Spielern ist ausgewogen.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_2_DESC" Language="de_DE">
+			<Text>Möge Gott gnade mit Eurer Seele haben.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_BARB_SETTING_OFF_DESC" Language="de_DE">
+			<Text>Keine Barbaren</Text>
+		</Replace>			
+
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="de_DE">
+			<Text>Voraussetzungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_DESC" Language="de_DE">
+			<Text>Definiert, wie früh in Eurem Spiel die Siegbedingungen erfüllt werden können.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_NAME" Language="de_DE">
+			<Text>Ausgewogen f. Gathering Storm</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_NAME" Language="de_DE">
+			<Text>Ausgewogen f. Rise and Fall</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_NAME" Language="de_DE">
+			<Text>Angepasst</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_NAME" Language="de_DE">
+			<Text>Legacy BBG</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_BBG_LEGACY_DESC" Language="de_DE">
+			<Text>Pre 4.0 BBG-Einstellungen: frühestmöglich für Kultur- und Diplomatiesieg, alle übrigen Siegvarianten auf Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_0_DESC" Language="de_DE">
+			<Text>Voreingestelltes Firaxis Setting für Gathering Storm</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_1_DESC" Language="de_DE">
+			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Gathering Storm:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, 25% weniger Tourismus benötigt, um Auslandstouristen anzuziehen [NEWLINE]Diplomatiesieg: Erster Kongress im Mittelalter, erste Vergabe von Diplomatiesiegpunkten in der Renaissance [NEWLINE]Wissenschaftssieg: Leicht günstigere Projekte und eine geringe Reisezeit für die Exoplanet-Expedition.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_2_DESC" Language="de_DE">
+			<Text>Ausbalancierung des Eintritts der verschiedenen Siegbedingungen für Rise and Fall:[NEWLINE]Kultursieg: mehr Kultur/Tourismus für große Werke, sogar noch weniger Tourismus benötigt, um Auslandstouristen anzuziehen. [NEWLINE]Diplomatiesieg: Erster Kongress und erste Vergabe von Diplomatiesiegpunkten im Mittelalter [NEWLINE]Wissenschaftssieg: Endet mit Marks-Kolonien.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_CUSTOM_DESC" Language="de_DE">
+			<Text>Passt jede Siegbedingung individuell an</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_DESC" Language="de_DE">
+			<Text>Deaktiviert alle Siegbedingungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_MASTER_SETTING_OFF_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_NAME" Language="de_DE">
+			<Text>Off</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_NAME" Language="de_DE">
+			<Text>Früh</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_NAME" Language="de_DE">
+			<Text>Frühestmöglich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="de_DE">
+			<Text>Aus</Text>
+		</Replace>
+		
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_1_DESC" Language="de_DE">
+			<Text>Große Werke und Artefakte gewähren mehr Tourismus und Kultur.</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_2_DESC" Language="de_DE">
+			<Text>Große Werke und Artefakte gewähren mehr Tourismus und Kultur[NEWLINE]-25% Tourismus benötigt, um Auslandstouristen anzuziehen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Kultursieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: Religiöser Druck erstreckt sich 10 Felder weit</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_1_DESC" Language="de_DE">
+			<Text>Religiöser Druck erstreckt sich 12 Felder weit</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_2_DESC" Language="de_DE">
+			<Text>Religiöser Drucke rstreckt sich 13 Felder weit</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_RELIGIOUS_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Religionssieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: 250 Züge (Online)</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_1_DESC" Language="de_DE">
+			<Text>175 Züge</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_2_DESC" Language="de_DE">
+			<Text>150 Züge</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCORE_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Punktesieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_1_DESC" Language="de_DE">
+			<Text>Wissenschaftssieg benötigt: [NEWLINE]Mars-Reaktor[NEWLINE]Mars-Wohnmodule[NEWLINE]Mars-Hydrokultur</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_2_DESC" Language="de_DE">
+			<Text>Wissenschaftssieg benötigt: [NEWLINE]Mars-Reaktor[NEWLINE]Mars-Wohnmodule</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_SCIENCE_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Wissenschaftssieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_1_DESC" Language="de_DE">
+			<Text>Erster Kongress im Mittelalter[NEWLINE]Erste Vergabe von Diplomatiesiegpunkten in der Renaissance</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_2_DESC" Language="de_DE">
+			<Text>Erster Kongress im Mittelalter[NEWLINE]Erste Vergabe von Diplomatiesiegpunkten im Mittelalter</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DIPLO_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Diplomatiesieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: 66% der Landmasse</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_1_DESC" Language="de_DE">
+			<Text>60% der Landmasse in eurem Reich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_2_DESC" Language="de_DE">
+			<Text>50% der Landmasse in eurem Reich</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_DOMINATION_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Territorialsieg</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_0_DESC" Language="de_DE">
+			<Text>Standard Firaxis Einstellungen: Einnahme aller Hauptstädte</Text>
+		</Replace>
+		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="de_DE">
+			<Text>Kein Herrschaftssieg</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="de_DE">
+			<Text>Nutzt Euer Militär und Euer wachsendes Reich um die Länder dieser Welt zu dominieren!</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_PROGRESS" Language="de_DE">
+			<Text>% der kontrollierten Landmasse</Text>
+		</Replace>
+		<Replace Tag="LOC_TOOLTIP_TRADITIONAL_DOMINATION_BUTTON" Language="de_DE">
+			<Text>Territorial</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TAB" Language="de_DE">
+			<Text>Territorial</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_TRADITIONAL_DOMINATION_PANEL_HEADER" Language="de_DE">
+			<Text>TerritorialSieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_NAME" Language="de_DE">
+			<Text>TerritorialSieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_SUBHEADER" Language="de_DE">
+			<Text>TERRITORIALSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_VICTORY" Language="de_DE">
+			<Text>TERRITORIALSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_PROGRESS" Language="de_DE">
+			<Text>TERRITORIAL Fortschritt</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_DESCRIPTION" Language="de_DE">
+			<Text>Um einen [COLOR:ResMilitaryLabelCS]Territorial[ENDCOLOR] Sieg zu erzielen, müsst Ihr euer Reich vergrößern und eure Feinde erobern, um den größtmöglichen Anteil der Landmasse zu kontrollieren.[NEWLINE][NEWLINE]Ein starkes Militär ist äußert empfehlenswert.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_DESC_LAST" Language="de_DE">
+			<Text>[NEWLINE][NEWLINE]Benötigter prozentualer Anteil der Landmasse um zu gewinnen:  </Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_TRADITIONAL_DOMINATION_TT" Language="de_DE">
+			<Text>Landfelder im Besitz:</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="de_DE">
+			<Text>Die Welt erkennt eure absolute Herrschaft an, für welche Ihr ein Imperium errichtet hat, in dem die Sonne nie untergeht.</Text>
+		</Replace>
+		
+		
+		<!-- Conquest legacy text -->
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="de_DE">
+			<Text>Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="de_DE">
+			<Text>HERRSCHAFTSSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="de_DE">
+			<Text>HERRSCHAFTSSIEG</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="de_DE">
+			<Text>Fortschritt Herrschaftssieg</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="de_DE">
+			<Text>Um einen [COLOR:ResMilitaryLabelCS]HERRSCHAFTS[ENDCOLOR] Sieg zu erzielen, müsst Ihr die ursprüngliche [ICON_Capital] Hauptstadt jeder anderen Zivilisation erobern.[NEWLINE][NEWLINE]Ein sarkes Militär ist äußert empfehlenswert</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION" Language="de_DE">
+			<Text>Spezialeinheit des Mittelalters von Basilius II., die den Ritter ersetzt. Landeinheiten innerhalb von 1 Geländefeld erhalten +2 [ICON_Strength] Kampfstärke oder [ICON_RELIGION] religiöse Stärke.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="de_DE">
+			<Text> Minen gewähren allen Bezirken einen kleinen Nachbarschaftsbonus, erzeugen einen Kulturschock auf herrenlosem Gebiet und erhalten +1 [ICON_CULTURE] Kultur ab der Erfoschung von Bronzebearbeitung. Spezialbezirke erhalten keinen kleinen Nachbarschaftsbonus, wenn sie an einen anderen Bezirk angrenzen, und sie dürfen nicht an das Stadtzentrum angrenzen.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="de_DE">
+			<Text>Ein Bezirk, der ausschließlich Gallien zur Verfügung steht und günstiger sowie früher verfügbar ist als der Bezirk, den er ersetzt, das Industriegebiet. Der Oppidum-Bezirk kann verteidigt werden und verfügt über einen Fernangriff.[NEWLINE][NEWLINE]+2 Nachbarschaftsbonus auf die [ICON_Production] Produktion durch Steinbrüche und strategische Ressourcen.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="de_DE">
+			<Text>Ein einzigartiger Bezirk für Englands Herrschaft zur See. Ersetzt den Hafen-Distrikt und ist günstiger im Bau. Entfernt außerdem den [ICON_Movement] Bewegungsmalus für das Wassern auf und das Anlanden von diesem Geländefeld aus. Kann nur auf Küsten- oder Seefeldern angrenzend an Land errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_Movement] Fortbewegung für alle Einheiten, die in der Royal-Navy-Werft gebaut werden.[NEWLINE]+2 [ICON_Gold] Gold, wenn die Royal-Navy-Werft auf einem anderen Kontinent als dem eurer Hauptstadt errichtet wird.[NEWLINE]+1 [ICON_TradeRoute] Handelsrouten-Kapazität.[NEWLINE]+1 [ICON_GREATADMIRAL] Großer-Admiral-Punkte für den Leuchtturm.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="de_DE">
+			<Text>Ein einzigartiger Bezirk für Englands Herrschaft zur See. Ersetzt den Hafen-Distrikt und ist günstiger im Bau. Entfernt außerdem den [ICON_Movement] Bewegungsmalus für das Wassern auf und das Anlanden von diesem Geländefeld aus. Kann nur auf Küsten- oder Seefeldern angrenzend an Land errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_Movement] Fortbewegung für alle Einheiten, die in der Royal-Navy-Werft gebaut werden.[NEWLINE]+2 [ICON_Gold] Gold und +4 Loyalität, wenn die Royal-Navy-Werft auf einem anderen Kontinent als dem eurer Hauptstadt errichtet wird. Kann nicht auf einem Riff errichtet werden.[NEWLINE]+1 [ICON_GREATADMIRAL] Großer-Admiral-Punkte für den Leuchtturm.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Ein einzigartiger Bezirk für Englands Herrschaft zur See. Ersetzt den Hafen-Distrikt und ist günstiger im Bau. Entfernt außerdem den [ICON_Movement] Bewegungsmalus für das Wassern auf und das Anlanden von diesem Geländefeld aus. Kann nur auf Küsten- oder Seefeldern angrenzend an Land errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_Movement] Fortbewegung für alle Einheiten, die in der Royal-Navy-Werft gebaut werden.[NEWLINE]+2 [ICON_Gold] Gold und +4 Loyalität, wenn die Royal-Navy-Werft auf einem anderen Kontinent als dem eurer Hauptstadt errichtet wird. Kann nicht auf einem Riff errichtet werden.[NEWLINE]+1 [ICON_GREATADMIRAL] Großer-Admiral-Punkte für den Leuchtturm.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="de_DE">
+			<Text>Kampfsiege gewähren [ICON_Science] Wissenschaft in Höhe von 50% der [ICON_Strength] Kampfstärke der besiegten Einheit (auf Online-Geschwindigkeit).</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="de_DE">
+			<Text>Einheiten erhalten +1 Sicht. +1 [ICON_TradeRoute] Handelsroutenkapazität beim Eintritt in ein neues Zeitalter. Offene Grenzen zu allen Stadtstaaten.</Text>
+		</Replace>
+		<!-- Beta -->
+		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="de_DE">
+            <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+        </Replace>
 	</LocalizedText>
 </GameData>
