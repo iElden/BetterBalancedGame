@@ -84,7 +84,7 @@
 			<Text>All cities start with an additional City Center building after unlocking Code of Laws. (Starts with a Monument building in the Ancient era).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Polder, unique to Netherlands.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_Production] Production, and +0.5 [ICON_Housing] Housing. +1 [ICON_FOOD] Food if adjacent to a Polder improvement. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food  as you advance through the Civics and Technology Tree. Must be placed on a Coast or Lake tile adjacent to 2 or more passable land tiles. Increases [ICON_Movement] Movement Cost of tile to 3.</Text>
+			<Text>Unlocks the Builder ability to construct a Polder, unique to Netherlands.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_Production] Production, and +0.5 [ICON_Housing] Housing. +1 [ICON_FOOD] Food for every adjacent Polder. +1 [ICON_PRODUCTION] Production for every adjacent Harbor and every 2 adjacent Polders. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food  as you advance through the Civics and Technology Tree. Must be placed on a Coast or Lake tile adjacent to 2 or more passable land tiles. Increases [ICON_Movement] Movement Cost of tile to 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="en_US">
 			<Text>Begin the game in an Ocean tile. Gain +1 [ICON_Citizen] Population when settling your first city. The Palace receives +3 [ICON_HOUSING] Housing and +1 [ICON_AMENITIES] Amenity. +2 [ICON_SCIENCE] Science and +2 [ICON_CULTURE] Culture per turn before you settle your first city.</Text>
@@ -120,7 +120,7 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="en_US">
-			<Text>All units have +1 sight. Promoting Light Cavalry units do not end their turn.</Text>
+			<Text>All units have +1 sight. Promoting a unit does not end that unit's turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +1 [ICON_HOUSING] Housing if built on home continent.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
@@ -850,9 +850,11 @@
 			<Text>+15 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<!-- Nubia -->
+		<!-- Reverted in 4.8.0
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="en_US">
 			<Text>All Ranged units gain +30% combat experience. Mines over strategic resources provide +1 [ICON_Production] Production. Mines over bonus and luxury resources provide +2 [ICON_Gold] Gold.</Text>
 		</Replace>
+		-->
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities, additional +2 gold from Banking and Economic technologies, +2 culture from Medieval Faires and Urbanization civics. Roads built in your territory are one level more advanced than usual.</Text>
@@ -1591,10 +1593,10 @@
 		</Row>
 		<!-- Beta -->
 		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="en_US">
-			<Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
+			<Text>[COLOR_GREEN]Ban Trade Treaty Resolution[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="en_US">
-			<Text>Temporary option :[NEWLINE]Remove the Trade Treaty Resolution from World Congress.[NEWLINE](This Resolution is gonna be edited in BBG 4.8 and this option will be delete)</Text>
+			<Text>Remove the Trade Treaty Resolution from World Congress.[NEWLINE](This Resolution is changed so disabled by default)</Text>
 		</Row>
 		
 		<!-- English text fix -->
@@ -1635,5 +1637,36 @@
 			<Text>Your [COLOR:ResCultureLabelCS]VISITING TOURISTS[ENDCOLOR] represent the number of citizens you've attracted from the [COLOR:ResCultureLabelCS]DOMESTIC TOURIST[ENDCOLOR] pools of other civilizations. You need to accumulate [ICON_TOURISM] Tourism equal 150 times starting amount of civilizations to attract 1 Visiting Tourist from other civilization.</Text>
 		</Replace>
 		
+		<!-- 4.8.0 Update -->
+		<Replace Tag="LOC_BUILDING_WATER_MILL_DESCRIPTION" Language="en_US">
+			<Text>Farms gain +1 [ICON_PRODUCTION] Production. City must be adjacent to a River.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="en_US">
+			<Text>Land combat units that enter adjacent plots receive the ability 'Spear of Fionn' (+3 combat strength). Adjacent plots yield +1 [ICON_Culture] Culture.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="en_US">
+			<Text>Spear of Fionn: +3 Combat Strength</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MATTERHORN_DESCRIPTION" Language="en_US">
+			<Text>One tile impassable natural wonder. Provides +1 [ICON_CULTURE] Culture to adjacent tiles. Land combat units who move next to the Matterhorn ignore Hills for the rest of the game and gain +2 [ICON_Strength] Combat Strength when fighting in hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING__DESCRIPTION" Language="en_US">
+			<Text>Alpine Training: +2 [ICON_Strength] Combat Strength when fighting in Hills and no Movement penalty in Hill terrain.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION" Language="en_US">
+			<Text>International [ICON_TradeRoute] Trade Routes must originate from a coastal city and can only reach cities on the coast or with a Harbor, but receive +50% towards [ICON_GOLD] Gold. Trader units have +50% range over water, and can embark as soon as they are unlocked.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_PACHACUTI_QHAPAQ_NAN_DESCRIPTION" Language="en_US">
+			<Text>Domestic [ICON_TradeRoute] Trade Routes gain +1 [ICON_Food] Food for every Mountain tile in the origin city. International [ICON_TradeRoute] Trade Routes gain +1 [ICON_GOLD] Gold for every Mountain tile in the origin city. Gain the Qhapaq Ñan improvement when Foreign Trade civic is discovered.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
+			<Text>Cancels all domestic [ICON_TradeRoute] Trade Routes of chosen player.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
+			<Text>Domestic [ICON_TradeRoute] Trade Routes grants +4 [ICON_GOLD] Gold for chosen player.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_THRUST_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Strength vs. melee units.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
