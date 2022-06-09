@@ -810,7 +810,7 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Holy Sites are granted a Major adjacency in [ICON_FAITH] Faith and [ICON_FOOD] Food with Rivers, a Culture Bomb and +2 [ICON_Housing] Housing if on a River.</Text>
+			<Text>Holy Sites are granted a Major adjacency in [ICON_FAITH] Faith and [ICON_FOOD] Food with Rivers, a Culture Bomb, and +2 [ICON_Housing] Housing if on a River.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="en_US">
@@ -1660,10 +1660,10 @@
 			<Text>Domestic [ICON_TradeRoute] Trade Routes gain +1 [ICON_Food] Food for every Mountain tile in the origin city. International [ICON_TradeRoute] Trade Routes gain +1 [ICON_GOLD] Gold for every Mountain tile in the origin city. Gain the Qhapaq Ñan improvement when Foreign Trade civic is discovered.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
-			<Text>Cancels all domestic [ICON_TradeRoute] Trade Routes of chosen player.</Text>
+			<Text>International [ICON_TradeRoute] Trade Routes sent to the chosen player provide +4 [ICON_Gold] Gold to the sender. The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity. Cancels all domestic [ICON_TradeRoute] Trade Routes of chosen player, and bans any new ones.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
-			<Text>Domestic [ICON_TradeRoute] Trade Routes grants +4 [ICON_GOLD] Gold for chosen player.</Text>
+			<Text>Domestic [ICON_TradeRoute] Trade Routes provide +4 [ICON_GOLD] Gold for chosen player. Cancels any international [ICON_TradeRoute] Trade Routes between other civilizations and the chosen player, and embargoes any new ones from starting.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_THRUST_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Strength] Combat Strength vs. melee units.</Text>
