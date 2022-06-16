@@ -69,7 +69,7 @@ UPDATE Buildings SET Cost=330 WHERE BuildingType='BUILDING_COAL_POWER_PLANT';
 --=============
 
 -- Colosseum - reduce culture to 1 (from 2)
-
+UPDATE Building_YieldChanges SET YieldChange=1 WHERE BuildingType='BUILDING_COLOSSEUM' AND YieldType='YIELD_CULTURE';
 
 -- Jabel Barkal - Increase strategics ressource storage by 20 (online speed).
 
