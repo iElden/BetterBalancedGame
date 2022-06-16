@@ -114,3 +114,7 @@ INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, Til
 
 INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
     VALUES ('IMPROVEMENT_MAHAVIHARA','BBG_Mahavihara_Lavra_Faith');
+    
+--Great People: Margaret Mead : Maya/Korea bug fix - by FlashyFeeds
+UPDATE GreatPersonIndividuals Set ActionRequiresOwnedTile=1 WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_MARGARET_MEAD';
+UPDATE GreatPersonIndividuals Set ActionRequiresNonHostileTerritory=0 WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_MARGARET_MEAD';
