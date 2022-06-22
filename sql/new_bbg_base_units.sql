@@ -26,6 +26,7 @@ UPDATE ModifierArguments SET Value='10' WHERE ModifierId='THRUST_BONUS_VS_MELEE'
 -- Jack the Ripper proposal (31/12/2020) to boost Naval Movement
 -- Base is 3, Resource cost / Maintenance is 1 in GS
 UPDATE Units SET BaseMoves=4 WHERE  UnitType='UNIT_SUBMARINE';
+UPDATE Units SET BaseMoves=4 WHERE  UnitType='UNIT_GERMAN_UBOAT';
 -- Base is 4
 UPDATE Units SET BaseMoves=6 WHERE  UnitType='UNIT_DESTROYER';
 -- Base is 3
