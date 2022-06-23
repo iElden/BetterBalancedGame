@@ -415,7 +415,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'UnitType', 'UNIT_ARCHAEOLOGIST'),
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'Amount', '100');
 
--- Kongo Military Unit get forest and jungle free move.
+-- Kongo Military Unit get forest and jungle free move. Ngao move on hill but don't get general move.
 INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
     ('BBG_MILITARY_UNITS_IGNORE_WOODS', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY');
 
@@ -446,6 +446,21 @@ INSERT INTO UnitAbilities(UnitAbilityType, Name, Description, Inactive, ShowFloa
 INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId) VALUES
     ('BBG_IGNORE_WOODS_ABILITY', 'RANGER_IGNORE_FOREST_MOVEMENT_PENALTY'),
     ('BBG_IGNORE_HILLS_ABILITY', 'ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY');
+
+-- Ngao don't get general mouvment
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('BBG_UNIT_IS_NOT_EXCLUDED_FROM_GENERAL_MOVE', 'REQUIREMENTSET_TEST_ALL');
+
+INSERT INTO Requirements(RequirementId, RequirementType, Inverse) VALUES
+    ('BBG_UNIT_IS_NOT_NAGAO', 'REQUIREMENT_UNIT_TYPE_MATCHES', 1);
+
+INSERT INTO RequirementArguments(RequirementId, Name, Value) VALUES
+    ('BBG_UNIT_IS_NOT_NAGAO', 'UnitType', 'UNIT_KONGO_SHIELD_BEARER');
+
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId) VALUES
+    ('BBG_UNIT_IS_NOT_EXCLUDED_FROM_GENERAL_MOVE', 'BBG_UNIT_IS_NOT_NAGAO');
+
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_UNIT_IS_NOT_EXCLUDED_FROM_GENERAL_MOVE' WHERE ModifierId='GREAT_GENERAL_MOVEMENT';
 
 -- Grant relic on each gov plaza building.
 INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, OwnerRequirementSetId) VALUES
