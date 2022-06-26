@@ -83,6 +83,25 @@ INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VAL
 	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
 -- Rough Rider ability to +5 (from +10)
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS' AND Name='Amount';
+-- Trade route to city-State give 3x base yield.
+INSERT INTO Modifiers(ModifierId, ModifierType)
+    SELECT DISTINCT 'BBG_TEDDYRR_MODIFIER_GIVER_' || InheritFrom, 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER'
+    FROM BBG_CityStates;
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
+    SELECT DISTINCT 'BBG_TEDDYRR_TRADEROUTE_' || InheritFrom, 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL', 'BBG_PLAYER_IS_' || InheritFrom
+    FROM BBG_CityStates;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT DISTINCT 'BBG_TEDDYRR_MODIFIER_GIVER_' || InheritFrom, 'ModifierId', 'BBG_TEDDYRR_TRADEROUTE_' || InheritFrom
+    FROM BBG_CityStates;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT DISTINCT 'BBG_TEDDYRR_TRADEROUTE_' || InheritFrom, 'Amount', (CASE BaseYieldType WHEN 'YIELD_GOLD' THEN '6' ELSE '3' END)
+    FROM BBG_CityStates;
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT DISTINCT 'BBG_TEDDYRR_TRADEROUTE_' || InheritFrom, 'YieldType', BaseYieldType
+    FROM BBG_CityStates;
+INSERT INTO TraitModifiers(TraitType, ModifierId)
+    SELECT DISTINCT 'TRAIT_LEADER_ROOSEVELT_COROLLARY', 'BBG_TEDDYRR_MODIFIER_GIVER_' || InheritFrom
+    FROM BBG_CityStates;
 
 --==================
 -- Arabia
