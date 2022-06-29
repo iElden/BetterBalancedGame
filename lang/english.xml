@@ -1682,9 +1682,6 @@
 		<Replace Tag="LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION" Language="en_US">
 			<Text>Kongo unique Classical era unit that replaces the Swordsman. +1 [ICON_Movement] Movement, +10 [ICON_Strength] Combat Strength when defending against ranged attacks. Can see through Woods and Rainforests.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_GERMAN_UBOAT_DESCRIPTION" Language="en_US">
-			<Text>German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +1 Sight, +1 [ICON_Movement] Movement, and +10 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_PAX_BRITANNICA_DESCRIPTION" Language="en_US">
 			<Text>Each time you found your first city on a continent other than your home continent receive a free melee unit and a [ICON_TradeRoute] Trade Route capacity. Constructing any Royal Navy Dockyard grants you a copy of the strongest naval unit you can build. Lighthouse grants +1 [ICON_GREATADMIRAL] Great Admiral point per turn. Gain the Redcoat unique unit when the Military Science technology is researched.</Text>
 		</Replace>
