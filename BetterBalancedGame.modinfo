@@ -1,19 +1,19 @@
 <!-- BETA ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be231" version="40742">
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be231" version="40750">
 -->
 <!-- Codenaugh's ModID
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="4003">
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be240" version="4074">
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be240" version="4078">
 	<Properties>
-		<Name>Better Balanced Game 4.7.4</Name>
+		<Name>Better Balanced Game 4.7.8</Name>
 		<Description>
 			Live build of Better Balanced Game.
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4074</Version>
+		<Version>4078</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -208,13 +208,23 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="Criteria_BETA_MONU_NERF">
+		<!-- Gamemode -->
+		<Criteria id="No_Gamemode_Babylon">
+			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
 			<ConfigurationValueMatches>
-                <ConfigurationId>BETA_MONU_NERF</ConfigurationId>
-                <Group>Game</Group>
-                <Value>1</Value>
-            </ConfigurationValueMatches>
-        </Criteria>
+				<Group>Game</Group>
+				<ConfigurationId>BBG_GAMEMODE_BABYLON</ConfigurationId>
+				<Value>0</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="Gamemode_Babylon">
+			<ConfigurationValueMatches>
+				<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
+				<Group>Game</Group>
+				<ConfigurationId>BBG_GAMEMODE_BABYLON</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -239,9 +249,10 @@
 			<Properties>
 				<LoadOrder>19999</LoadOrder>
 			</Properties>
-            	<File>config/config.xml</File>
-				<File>config/config.sql</File>
-        </UpdateDatabase>										   
+			<File>config/config.xml</File>
+			<File>config/config.sql</File>
+			<File>config/april_fool_2022_config.sql</File>
+        </UpdateDatabase>
 	</FrontEndActions>
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
@@ -463,11 +474,17 @@
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
+		<UpdateDatabase id="bbg_nfp_babylon" criteria="No_Gamemode_Babylon">
 			<Properties>
 				<LoadOrder>11638</LoadOrder>
 			</Properties>
 			<File>sql/new_bbg_nfp_babylon.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_babylon_cs" criteria="nfp_babylon">
+			<Properties>
+				<LoadOrder>11638</LoadOrder>
+			</Properties>
+			<File>sql/new_bbg_nfp_babylon_city_states.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_nfp_vietnam_kubilai" criteria="nfp_vietnam_kubilai">
 			<Properties>
@@ -596,6 +613,21 @@
 				<File>ui/replacements/endgamemenu_bbg.lua</File>
 				<File>ui/replacements/endgamemenu.xml</File>
 		</ImportFiles>
+		<!-- Gamemode -->
+		<UpdateDatabase id="bbg_db_Gamemode_Babylon">
+			<Properties>
+                <LoadOrder>21010</LoadOrder>
+            </Properties>
+			<Criteria>Gamemode_Babylon</Criteria>
+			<File>sql/april_fool.sql</File>
+		</UpdateDatabase>
+		<UpdateText>
+			<Properties>
+                <LoadOrder>21010</LoadOrder>
+            </Properties>
+			<Criteria>Gamemode_Babylon</Criteria>
+			<File>lang/april_fool.xml</File>
+		</UpdateText>
 		<!-- Beta -->
 		<UpdateDatabase id="bbg_db_BETA_BAN_TRADE_TREATY">
             <Properties>
@@ -659,7 +691,7 @@
 		<File>sql/new_bbg_citystates.sql</File>
 		<File>sql/new_bbg_citystates_xp2.sql</File>
 		<File>sql/new_bbg_nfp_babylon.sql</File>
-		<File>sql/new_bbg_nfp_babylon.sql</File>
+		<File>sql/new_bbg_nfp_babylon_city_states.sql</File>
 		<File>sql/new_bbg_xp1_dutch.sql</File>
 		<File>sql/new_bbg_xp2_phoenician.sql</File>
 		<File>sql/new_bbg_great_people.sql</File>
@@ -705,5 +737,9 @@
 		<File>sql/victories/new_bbg_new_domination.sql</File>
 
 		<File>sql/beta/ban_trade_treaty.sql</File>
+
+		<File>sql/april_fool.sql</File>
+		<File>lang/april_fool.xml</File>
+		<File>config/april_fool_2022_config.sql</File>
 	</Files>
 </Mod>
