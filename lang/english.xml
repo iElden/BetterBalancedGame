@@ -154,7 +154,7 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
-			<Text>France unique project when Catherine Magnificence is their leader. Available with Medieval Faires civic to any city with a Theater Square.[NEWLINE]When complete, this project awards 50 [ICON_CULTURE] Culture and 50 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
+			<Text>France unique project when Catherine Magnificence is their leader. Available with Medieval Faires civic to any city with a Theater Square.[NEWLINE][NEWLINE]When complete, this project awards 50 [ICON_CULTURE] Culture and 50 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
@@ -535,7 +535,7 @@
 			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and cheaper to build.[NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is used in one of this cities districts. The Lavra provides +1 [ICON_GreatWriter] Great Writer point per turn with a Temple and +1 [ICON_GreatArtist] Great Artist point per turn with a Worship building.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
-			<Text>Improvement that unlocks with Craftsmanship and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts: +2 [ICON_Food] Food for the city center, [NEWLINE]+2 [ICON_SCIENCE] Science per adjacent Campus.[NEWLINE]+2 [ICON_PRODUCTION] Production per adjacent Industrial Zone .[NEWLINE]+2 [ICON_CULTURE] Culture per adjacent Theater Square.[NEWLINE]+2 [ICON_FAITH] Faith per adjacent Holy Site.[NEWLINE]+2 [ICON_GOLD] Gold per adjacent Commercial Hub and Harbor.[NEWLINE][NEWLINE]Can't be build next to another pyramid.</Text>
+			<Text>Improvement that unlocks with Craftsmanship and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts:[NEWLINE]+2 [ICON_Food] Food for the City Center, [NEWLINE]+2 [ICON_SCIENCE] Science per adjacent Campus.[NEWLINE]+2 [ICON_PRODUCTION] Production per adjacent Industrial Zone .[NEWLINE]+2 [ICON_CULTURE] Culture per adjacent Theater Square.[NEWLINE]+2 [ICON_FAITH] Faith per adjacent Holy Site.[NEWLINE]+2 [ICON_GOLD] Gold per adjacent Commercial Hub and Harbor.[NEWLINE][NEWLINE]Can't be build next to another pyramid.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
@@ -1606,7 +1606,7 @@
 		
 		<!-- English text fix -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor (on Standard speed) when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor (on Standard speed) when earning a Great Person. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE][NEWLINE]+1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities. +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, Factories and Government Plaza buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_QUEENS_BIBLIOTHEQUE_DESCRIPTION" Language="en_US">
 			<Text>A building unique to Sweden. Provides 2 slots of [ICON_GreatWork_WRITING] Writing, [ICON_GreatWork_MUSIC] Music, and any type of [ICON_GreatWork_Landscape] Art. This building is not mutually exclusive with other buildings in Government Plaza.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
@@ -1614,14 +1614,11 @@
 		<Replace Tag="LOC_IMPROVEMENT_CITY_PARK_DESCRIPTION" Language="en_US">
 			<Text>A [ICON_Governor] Governor unique improvement that can be built in a city with a Surveyor Governor with the Parks and Recreation promotion. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal to adjacent tiles.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities. Additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for domestic trade routes as you progress through the Technology and Civic trees. Roads built in your territory are one level more advanced than usual.</Text>
-		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="en_US">
 			<Text>You receive +40 Loyalty per turn in all cities.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MEKEWAP_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Mekewap, unique to Cree.[NEWLINE][NEWLINE]Provides +1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing. +1 [ICON_GOLD] Gold if adjacent to a Luxury resource. +1 [ICON_FOOD] Food for every 2 adjacent Bonus Resources. Additional +1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing with Civil Service civic. Additional +2 [ICON_GOLD] gold for each adjacent Luxury Resource with Cartography technology. Must be placed adjacent to a Bonus or Luxury resource. Cannot be built adjacent to another Mekewap.</Text>
+			<Text>Unlocks the Builder ability to construct a Mekewap, unique to Cree.[NEWLINE][NEWLINE]Provides +1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing. +1 [ICON_GOLD] Gold if adjacent to a Luxury resource. +1 [ICON_FOOD] Food for every 2 adjacent Bonus Resources. Additional +1 [ICON_Housing] Housing with Civil Service civic. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food as you advance through the Civics and Technology Tree.[NEWLINE]Must be placed adjacent to a Bonus or Luxury resource. Cannot be built adjacent to another Mekewap.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_SCIENCE_DESCRIPTION" Language="en_US">
 			<Text>Builders and Military Engineers gain the ability to use all of their charges to provide bonus [ICON_Production] Production to a District Project. Each charge grants 2% of project [ICON_Production] Production. Once per city per turn.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
@@ -1650,7 +1647,7 @@
 			<Text>Farms gain +1 [ICON_PRODUCTION] Production. City must be adjacent to a River.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="en_US">
-			<Text>Land combat units that enter adjacent plots receive the ability 'Spear of Fionn' (+3 combat strength). Adjacent plots yield +1 [ICON_Culture] Culture.</Text>
+			<Text>Land combat units that enter adjacent plots receive the ability 'Spear of Fionn' (+3 [ICON_STRENGTH] Combat Strength). Adjacent plots yield +1 [ICON_Culture] Culture.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="en_US">
 			<Text>Spear of Fionn: +3 Combat Strength</Text>
