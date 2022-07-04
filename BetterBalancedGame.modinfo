@@ -1,19 +1,20 @@
 <!-- BETA ModID
-<Mod id="cb84075d-5007-4207-b662-c35a5f7be231" version="40750">
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be231" version="40808">
 -->
 <!-- Codenaugh's ModID
 <Mod id="cb84075d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
 <!-- Elden's ModID-->
-<Mod id="cb84075d-5007-4207-b662-c35a5f7be240" version="4078">
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be240" version="4080">
+
 	<Properties>
-		<Name>Better Balanced Game 4.7.8</Name>
+		<Name>Better Balanced Game 4.8.0</Name>
 		<Description>
-			Live build of Better Balanced Game.
+			Live build of Better Balanced Game
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4078</Version>
+		<Version>4080</Version>
 		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -378,6 +379,7 @@
 			<File>sql/new_bbg_xp2_phoenician.sql</File>
 			<File>sql/new_bbg_xp2_government.sql</File>
 			<File>sql/new_bbg_improvement.sql</File>
+			<File>sql/new_bbg_xp2_world_congress.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
@@ -717,6 +719,7 @@
 		<File>sql/new_bbg_china.sql</File>
 		<File>sql/new_bbg_kublai.sql</File>
 		<File>sql/new_bbg_disasters.sql</File>
+		<File>sql/new_bbg_xp2_world_congress.sql</File>
 
 		<File>ui/replacements/worldrankings_bbg.lua</File>
 		<File>ui/replacements/endgamemenu_bbg.lua</File>

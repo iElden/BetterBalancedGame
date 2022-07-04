@@ -1,12 +1,6 @@
 --==================
 -- Colombia
 --==================
--- only light cav get promote before attack
-UPDATE Modifiers SET SubjectRequirementSetId='EJERCITO_PATRIOTA_PROMOTE_SRS_BBG' WHERE ModifierId='TRAIT_PROMOTE_NO_FINISH_MOVES';
-INSERT OR IGNORE INTO RequirementSetRequirements VALUES
-    ('EJERCITO_PATRIOTA_PROMOTE_SRS_BBG', 'UNIT_IS_LIGHT_CAVALRY');
-INSERT OR IGNORE INTO RequirementSets VALUES
-    ('EJERCITO_PATRIOTA_PROMOTE_SRS_BBG', 'REQUIREMENTSET_TEST_ALL');
 -- site instead of movement
 --DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_EJERCITO_PATRIOTA_EXTRA_MOVEMENT';
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNIT_ADJUST_SIGHT' WHERE ModifierId='EJERCITO_PATRIOTA_EXTRA_MOVEMENT';

@@ -39,6 +39,12 @@ UPDATE RandomEvent_Damages SET Percentage=10 WHERE DamageType='SPECIFIC_IMPROVEM
 UPDATE RandomEvent_Damages SET Percentage=50 WHERE DamageType='IMPROVEMENT_DESTROYED' AND RandomEventType='RANDOM_EVENT_KRAKATOA_CATASTROPHIC'; -- From: 80
 UPDATE RandomEvent_Damages SET Percentage=75 WHERE DamageType='IMPROVEMENT_DESTROYED' AND RandomEventType='RANDOM_EVENT_KRAKATOA_MEGACOLOSSAL'; -- From: 80
 
+-- Reduce prod yield from floodplain
+UPDATE RandomEvent_Yields SET Percentage=15 WHERE RandomEventType='RANDOM_EVENT_FLOOD_MAJOR' AND YieldType='YIELD_PRODUCTION' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND'; -- From: 30
+UPDATE RandomEvent_Yields SET Percentage=20 WHERE RandomEventType='RANDOM_EVENT_FLOOD_1000_YEAR' AND YieldType='YIELD_PRODUCTION' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND'; -- From: 40
+UPDATE RandomEvent_Yields SET Percentage=5 WHERE RandomEventType='RANDOM_EVENT_FLOOD_MAJOR' AND YieldType='YIELD_PRODUCTION' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS'; -- From: 5
+UPDATE RandomEvent_Yields SET Percentage=10 WHERE RandomEventType='RANDOM_EVENT_FLOOD_1000_YEAR' AND YieldType='YIELD_PRODUCTION' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS'; -- From: 10
+
 -- Delay heavy chariot on meteors
 -- REQUIRE DLC Gran Colombia to boot !
 INSERT INTO GoodyHutSubTypes(GoodyHut, SubTypeGoodyHut, Description, Weight, ModifierID) VALUES

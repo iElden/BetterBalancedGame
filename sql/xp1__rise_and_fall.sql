@@ -342,7 +342,7 @@ INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementS
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('GOV_TALL_FOOD_BUFF' , 'YieldType' , 'YIELD_FOOD');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('GOV_TALL_FOOD_BUFF' , 'Amount' , '3');
+	VALUES ('GOV_TALL_FOOD_BUFF' , 'Amount' , '2');
 --Warlord's Throne gives +25% production to naval and land military units... also reduces unit maintenance by 1
 DELETE FROM BuildingModifiers WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE';
 DELETE FROM ModifierArguments WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE';
@@ -478,6 +478,8 @@ UPDATE RequirementArguments SET Value='TERRAIN_TUNDRA' WHERE RequirementId='REQU
 -- St. Basil gives 1 relic
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_ST_BASILS_CATHEDRAL', 'WONDER_GRANT_RELIC_BBG');
+--Matterhorn +2 down from +3
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='ALPINE_TRAINING_COMBAT_HILLS' AND Name='Amount';
 
 
 

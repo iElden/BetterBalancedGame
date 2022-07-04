@@ -268,21 +268,15 @@ UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE Tr
 UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_SPIES_START_PROMOTED';
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
-delete from Improvement_Adjacencies where ImprovementType = 'IMPROVEMENT_CHATEAU' and YieldChangeId = 'Chateau_River';
--- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
-INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
-INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_GOLD' , '0');
-UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_CHATEAU' AND YieldType='YIELD_GOLD'; 
-INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'BBG_Chateau_Luxury_Food');
-INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'BBG_Chateau_Luxury_Gold');
-INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
-	VALUES ('BBG_Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
-INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
-	VALUES ('BBG_Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+-- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking Culture in addition to stacking gold
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange) VALUES
+    ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '1');
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId) VALUES
+    ('IMPROVEMENT_CHATEAU' , 'BBG_Chateau_Luxury_Gold'),
+	('IMPROVEMENT_CHATEAU' , 'BBG_Chateau_Luxury_Culture');
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass) VALUES
+	('BBG_Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY'),
+	('BBG_Chateau_Luxury_Culture' , 'Placeholder' , 'YIELD_CULTURE' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 UPDATE Improvements SET Housing='1', PreReqCivic='CIVIC_FEUDALISM', RequiresAdjacentBonusOrLuxury = 0, RequiresRiver = 0, SameAdjacentValid = 0 WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 -- Garde imperial to +5 on continent (from +10)
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='GARDE_CONTINENT_COMBAT' AND Name='Amount';
@@ -420,6 +414,37 @@ INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'UnitType', 'UNIT_ARCHAEOLOGIST'),
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'Amount', '100');
+
+-- Kongo Military Unit get forest and jungle free move. Ngao move on hill but don't get general move.
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_MILITARY_UNITS_IGNORE_WOODS', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY');
+
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_MILITARY_UNITS_IGNORE_WOODS', 'AbilityType', 'BBG_IGNORE_WOODS_ABILITY');
+
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_NKISI', 'BBG_MILITARY_UNITS_IGNORE_WOODS');
+
+INSERT INTO Types(Type, Kind) VALUES
+    ('BBG_IGNORE_WOODS_ABILITY', 'KIND_ABILITY');
+
+INSERT INTO TypeTags(Type, Tag) VALUES
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_RECON'),
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_MELEE'),
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_RANGED'),
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_ANTI_CAVALRY'),
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_LIGHT_CAVALRY'),
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_HEAVY_CAVALRY'),
+    ('BBG_IGNORE_WOODS_ABILITY', 'CLASS_SIEGE');
+
+INSERT INTO UnitAbilities(UnitAbilityType, Name, Description, Inactive, ShowFloatTextWhenEarned, Permanent)  VALUES
+    ('BBG_IGNORE_WOODS_ABILITY', 'LOC_BBG_IGNORE_WOODS_ABILITY_NAME', 'LOC_BBG_IGNORE_WOODS_ABILITY_DESCRIPTION', 1, 0, 1);
+
+INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId) VALUES
+    ('BBG_IGNORE_WOODS_ABILITY', 'RANGER_IGNORE_FOREST_MOVEMENT_PENALTY');
+
+-- NGao 3PM
+UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
 
 -- Grant relic on each gov plaza building.
 INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, OwnerRequirementSetId) VALUES
@@ -747,6 +772,7 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
 -- Monument to the Gods affects all wonders... not just Ancient and Classical Era
 UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_TO_THE_GODS_ANCIENTCLASSICALWONDER_MODIFIER' AND Name='EndEra';
+UPDATE ModifierArguments SET Value='20' WHERE ModifierId='MONUMENT_TO_THE_GODS_ANCIENTCLASSICALWONDER_MODIFIER' AND Name='Amount';
 -- God of War now God of War and Plunder (similar to divine spark)
 DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_GOD_OF_WAR';
 INSERT OR IGNORE INTO Modifiers  ( ModifierId , ModifierType , SubjectRequirementSetId )
@@ -1404,6 +1430,8 @@ INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_CRATER_LAKE' AND YieldType='YIELD_SCIENCE'; 
 INSERT OR IGNORE INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_GALAPAGOS', 'YIELD_FOOD', 1);
+--Causeway +3 down from +5
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='SPEAR_OF_FIONN_ADJUST_COMBAT_STRENGTH' AND Name='Amount';
 
 
 
@@ -1438,6 +1466,12 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CUL
 UPDATE GlobalParameters SET Value=1 WHERE Name='CITY_AMENITIES_FOR_FREE';
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_PALACE';
 
+-- Seaside Ressort buildable on hills
+INSERT INTO Improvement_ValidTerrains(ImprovementType, TerrainType) VALUES
+    ('IMPROVEMENT_BEACH_RESORT', 'TERRAIN_GRASS_HILLS'),
+    ('IMPROVEMENT_BEACH_RESORT', 'TERRAIN_PLAINS_HILLS'),
+    ('IMPROVEMENT_BEACH_RESORT', 'TERRAIN_DESERT_HILLS');
+
 --****		REQUIREMENTS		****--
 INSERT OR IGNORE INTO Requirements
 	(RequirementId , RequirementType)
@@ -1454,3 +1488,9 @@ INSERT OR IGNORE INTO RequirementArguments
 	('PLAYER_HAS_BANKING_CPLMOD'   , 		'TechnologyType', 	'TECH_BANKING'  ),
 	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'TechnologyType', 	'TECH_ECONOMICS');
 
+-- 2022-06-04 -- Add Scientific Theory as Prereq for Steam Power
+INSERT INTO TechnologyPrereqs (Technology, PrereqTech)
+	VALUES ('TECH_STEAM_POWER', 'TECH_SCIENTIFIC_THEORY');
+
+-- This is simply a visual change which makes the tech paths slighly more understandable (the dotted lines)
+-- UPDATE Technologies SET UITreeRow=-3 WHERE TechnologyType='TECH_INDUSTRIALIZATION';

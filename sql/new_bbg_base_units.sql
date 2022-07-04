@@ -18,10 +18,15 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 -- Melee changes
 UPDATE Units SET Combat=46, PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
 UPDATE Units SET Combat=36 WHERE UnitType='UNIT_SWORDSMAN';
+-- Melee vs Anticav +10 instead of +5
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='ANTI_SPEAR' AND Name='Amount';
+-- Anticav promote to +10
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='THRUST_BONUS_VS_MELEE' AND Name='Amount';
 
 -- Jack the Ripper proposal (31/12/2020) to boost Naval Movement
 -- Base is 3, Resource cost / Maintenance is 1 in GS
 UPDATE Units SET BaseMoves=4 WHERE  UnitType='UNIT_SUBMARINE';
+UPDATE Units SET BaseMoves=4 WHERE  UnitType='UNIT_GERMAN_UBOAT';
 -- Base is 4
 UPDATE Units SET BaseMoves=6 WHERE  UnitType='UNIT_DESTROYER';
 -- Base is 3
