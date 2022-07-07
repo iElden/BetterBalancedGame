@@ -334,7 +334,7 @@
 			<Text>Bâtiment exclusif à la Géorgie qui remplace les Murs Antiques avec une défense supérieure. [NEWLINE][ICON_Faith] Foi +4. [NEWLINE][ICON_TOURISM] Tourisme +1 au dogme de la Conservation. [NEWLINE][ICON_FAITH] Foi et [ICON_TOURISM] Tourisme doublés lors d'un âge d'or.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="fr_FR">
-      		<Text>Les victoires militaires octroient un bonus en [ICON_FAITH] foi équivalent à 50 % de la puissance de combat de l'unité vaincue (en vitesse normale). Chaque [ICON_ENVOY] émissaire envoyé dans une cité-état où votre religion est majoritaire compte double (doit posséder une religion dominante). Donne +1 [ICON_FAITH] par émissaire dans une cité état</Text>
+      		<Text>Les victoires militaires octroient un bonus en [ICON_FAITH] foi équivalent à 50 % de la puissance de combat de l'unité vaincue (en vitesse en ligne). [NEWLINE][NEWLINE]Si votre religion est dominante dans votre empire, chaque [ICON_ENVOY] émissaire envoyé dans une cité-état où votre religion est majoritaire compte double. Donne +1 [ICON_FAITH] par émissaire dans une cité état</Text>
     	</Replace>
 		<!-- ========== GRÈCE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="fr_FR">
