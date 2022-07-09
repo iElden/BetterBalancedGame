@@ -1681,5 +1681,17 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Each time you found your first city on a continent other than your home continent receive a free melee unit and a [ICON_TradeRoute] Trade Route capacity. Constructing any Royal Navy Dockyard grants you a copy of the strongest naval unit you can build. Gain the Redcoat unique unit when the Military Science technology is researched.[NEWLINE]Lighthouse grants +1 [ICON_GREATADMIRAL] Great Admiral point per turn.</Text>
 		</Replace>
+		
+		<!-- 4.8.1 Text fixes -->
+		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_1' Language="en_US">
+			<Text>+1 [ICON_STRENGTH] Combat Strength Alliance level (Shūtur eli sharrī)</Text>
+		</Row>
+		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_2' Language="en_US">
+			<Text>+2 [ICON_STRENGTH] Combat Strength Alliance level (Shūtur eli sharrī)</Text>
+		</Row>
+		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_3' Language="en_US">
+			<Text>+3 [ICON_STRENGTH] Combat Strength Alliance level (Shūtur eli sharrī)</Text>
+		</Row>
+
 	</LocalizedText>
 </GameData>
