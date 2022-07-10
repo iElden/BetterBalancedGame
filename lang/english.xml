@@ -349,7 +349,7 @@
 			<Text>Hic Sunt Dracones: Gain +3 Era Score each time you discover a new Continent or natural wonder. Gain +1 Era Score each time you kill a non-Barbarian naval unit in combat. If chosen at the start of a Golden Age, +3 starting [ICON_Citizen] Population for newly settled cities. +2 [ICON_Movement] Movement for naval and embarked units. +2 Loyalty per turn for cities not on your original [ICON_Capital] Capital's continent. Renaissance through Modern Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="en_US">
-			<Text>[ICON_GreatWork_Relic] Relics grant additional +2 [ICON_Food] Food, +2 [ICON_Production] Production, +4 [ICON_Gold] Gold and +1 [ICON_Faith] Faith. [ICON_GreatWork_Artifact] Artifacts and [ICON_GreatWork_Sculpture] Sculptures grant additional +2 [ICON_Food] Food, +2 [ICON_Production] Production, +4 [ICON_Gold] Gold and +4 [ICON_Faith] Faith. +100% [ICON_PRODUCTION] Production to Archeaologists. Palace has slots for 5 Great Works.[NEWLINE][NEWLINE]When completing a Government Plaza building receive [ICON_GreatWork_Relic] Relic.[NEWLINE][NEWLINE]Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points.[NEWLINE][NEWLINE]All land combat units ignore Rainforest and Woods [ICON_Movement] Movement penalty.</Text>
+			<Text>[ICON_GreatWork_Relic] Relics grant additional +2 [ICON_Food] Food, +2 [ICON_Production] Production, +4 [ICON_Gold] Gold and +1 [ICON_Faith] Faith. [ICON_GreatWork_Artifact] Artifacts and [ICON_GreatWork_Sculpture] Sculptures grant additional +2 [ICON_Food] Food, +2 [ICON_Production] Production, +4 [ICON_Gold] Gold and +4 [ICON_Faith] Faith. +100% [ICON_PRODUCTION] Production to Archeaologists. Palace has slots for 5 Great Works.[NEWLINE][NEWLINE]Receive [ICON_GreatWork_Relic] Relic for each Government Plaza building.[NEWLINE][NEWLINE]Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points.[NEWLINE][NEWLINE]All land combat units ignore Rainforest and Woods [ICON_Movement] Movement penalty.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="en_US">
 			<Text>Awards 1 [ICON_GreatWork_Relic] Relic and 3 [ICON_GreatWork_Relic] Relic slots. +100% [ICON_Tourism] Religious Tourism from this city. +1 [ICON_Food] Food, +1 [ICON_Production] Production, and +1 [ICON_Culture] Culture on all Tundra tiles for this city. Must be built adjacent to a City Center.</Text>
@@ -1562,10 +1562,10 @@
 			<Text>Grants the ability to buy land units with [ICON_Faith] Faith in all owned cities.[NEWLINE]Pillaging Improvements and Districts provides bonus [ICON_Faith] Faith.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Allows construction of Pagodas (+3 [ICON_Faith] Faith, +1 Influence Point per turn).</Text>
+			<Text>Allows construction of Pagodas (+3 [ICON_Faith] Faith, +1 [ICON_InfluencePerTurn] Influence Point per turn).</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+1 Influence Point per turn.</Text>
+			<Text>+1 [ICON_InfluencePerTurn] Influence Point per turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="en_US">
 			<Text>Allows construction of Synagogues (+7 [ICON_Faith] Faith).</Text>
@@ -1690,14 +1690,28 @@
 		
 		<!-- 4.8.1 Text fixes -->
 		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_1' Language="en_US">
-			<Text>+1 [ICON_STRENGTH] Combat Strength Alliance level (Shūtur eli sharrī)</Text>
+			<Text>+1 [ICON_STRENGTH] Combat Strength for Alliance level (Shūtur eli sharrī)</Text>
 		</Row>
 		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_2' Language="en_US">
-			<Text>+2 [ICON_STRENGTH] Combat Strength Alliance level (Shūtur eli sharrī)</Text>
+			<Text>+2 [ICON_STRENGTH] Combat Strength for Alliance level (Shūtur eli sharrī)</Text>
 		</Row>
 		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_3' Language="en_US">
-			<Text>+3 [ICON_STRENGTH] Combat Strength Alliance level (Shūtur eli sharrī)</Text>
+			<Text>+3 [ICON_STRENGTH] Combat Strength for Alliance level (Shūtur eli sharrī)</Text>
 		</Row>
-
+		<Row Tag='LOC_BBG_HOLY_SITE_RIVER_FOOD_ADJACENCY' Language="en_US">
+			<Text>+2 [ICON_FOOD] Food from the adjacent River.</Text>
+		</Row>
+		<Row Tag='LOC_BBG_IGNORE_WOODS_ABILITY_DESCRIPTION' Language="en_US">
+			<Text>Ignores Rainforest and Woods [ICON_Movement] Movement penalty (Nkisi).</Text>
+		</Row>
+		<Row Tag='LOC_BBG_ABILITY_NO_SUPPORT_BONUS_DESC' Language="en_US">
+			<Text>No support combat bonus for land ranged and naval ranged units.</Text>
+		</Row>
+		<Replace Tag="LOC_ABILITY_ANTI_SPEAR_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Strength against anti-cavalry units.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ANIT_SPEAR_MODIFIER_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Strength vs. anti-cavalry units.<Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
