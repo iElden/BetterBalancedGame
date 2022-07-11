@@ -311,7 +311,11 @@
 			<Text>Здесь живут драконы: Каждый открытый континент или чудо природы прибавляет +3 очка к счету эпохи. Уничтожение в бою каждого морского юнита, кроме варваров, прибавляет +1 очко к счету эпохи. Если выбрано в начале золотого века, +3 ед. [ICON_Citizen] населения в новых городах. +2 [ICON_Movement] ОП для морских и находящихся на борту судна юнитов. +2 ед. лояльности за ход в городах на континентах, на которых нет вашей [ICON_Capital] столицы. Возрождение и Промышленная эра.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="ru_RU">
+<<<<<<< Updated upstream
 			<Text>+2 [ICON_Food] пищи, +2 [ICON_Production] производства и +4 [ICON_Gold] золота от каждой [ICON_GreatWork_Relic] реликвии, [ICON_GreatWork_Artifact] артефакта и скульптуры [ICON_GreatWork_Sculpture] в дополнение к [ICON_Culture] культуре.[NEWLINE][ICON_Faith] +1 веры от каждой реликвии и [ICON_Faith] +4 веры от каждого [ICON_GreatWork_Artifact] артефакта и [ICON_GreatWork_Sculpture] скульптуры. На 50% больше очков [ICON_GreatWriter] великого писателя, [ICON_GreatArtist] великого художника, [ICON_GreatMusician] великого музыканта и [ICON_GreatMerchant] великого торговца. +100% [ICON_PRODUCTION] производства для археологов. В дворце есть 5 ячеек для шедевров.</Text>
+=======
+			<Text>Все наземные боевые юниты игнориуют штраф за перемещение [ICON_Movement] по лесам и тропическим лесам.[NEWLINE][NEWLINE] +2 [ICON_Food] пищи, +2 [ICON_Production] производства и +4 [ICON_Gold] золота от каждой [ICON_GreatWork_Relic] реликвии, [ICON_GreatWork_Artifact] артефакта и скульптуры [ICON_GreatWork_Sculpture] в дополнение к [ICON_Culture] культуре.[NEWLINE][ICON_Faith] +1 веры от каждой реликвии и [ICON_Faith] +4 веры от каждого [ICON_GreatWork_Artifact] артефакта и [ICON_GreatWork_Sculpture] скульптуры. На 50% больше очков [ICON_GreatWriter] великого писателя, [ICON_GreatArtist] великого художника, [ICON_GreatMusician] великого музыканта и [ICON_GreatMerchant] великого торговца. Получает [ICON_GreatWork_Relic] реликвию при постройке зданий в правительственной площади. +100% [ICON_PRODUCTION] производства для археологов. В дворце есть 5 ячеек для шедевров.</Text>
+>>>>>>> Stashed changes
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="ru_RU">
 			<Text>Дает 1 [ICON_GreatWork_Relic] реликвию и 3 [ICON_GreatWork_Relic] ячейки для реликвий. +100% [ICON_Tourism] религиозного туризма в этом городе. +1 [ICON_Food] пищи, +1 [ICON_Production] производства, и +1 [ICON_Culture] культуры на всех клетках тундры в этом городе. Можно построить только рядом с центром города.</Text>
@@ -1469,5 +1473,72 @@
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="ru_RU">
             <Text>Временная опция :[NEWLINE]Убирает резолюцию о запрете торговли из Мирового Конгресса.[NEWLINE](Эта резолюция будет изменена в версии 4.8 и данная опцияя будет удалена!)</Text>
         </Replace>
+<<<<<<< Updated upstream
+=======
+		<!-- 4.8.0 Update -->
+		<Replace Tag="LOC_BUILDING_WATER_MILL_DESCRIPTION" Language="ru_RU">
+			<Text>Все фермы в городе получают +1 [ICON_PRODUCTION] производства. Город должен находиться на реке.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="ru_RU">
+			<Text>Назменые боевые юниты, которые проходят через клетки чуда получают способность 'Копье Фина' (+3 [ICON_STRENGTH] Боевой Мощи). Соседние клетки получают + 1 [ICON_Culture] Культуры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="ru_RU">
+			<Text>Копье Фина : (+3 [ICON_STRENGTH] Боевой Мощи)</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MATTERHORN_DESCRIPTION" Language="ru_RU">
+			<Text>Непроходимое чудо природы на одну клетку. Соседние клетки получают + 1 [ICON_Culture] Культуры. Назменые боевые юниты, прошедшие рядом с Маттерхорном игнорируют холмы до конца игры и получают +2 [ICON_Strength] Боевой Мощи при сражениях на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING__DESCRIPTION" Language="ru_RU">
+			<Text>Горная Подготовка: +2 [ICON_Strength] Боевой Мощи при сражениях на холмах и отсутствие штрафа за перемещение по холмам.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION" Language="ru_RU">
+			<Text>Международные [ICON_TradeRoute] Торговые Пути должны начинаться в городах, расположенных на воде и должны заканчиваться в городах на побережье или в городах с гаванью, но получают +50% [ICON_GOLD] Золота. Торговые юниты получают +50% к дальности по воде, и могут погружаться на воду сразу после их открытия.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_PACHACUTI_QHAPAQ_NAN_DESCRIPTION" Language="ru_RU">
+			<Text>Внутренние [ICON_TradeRoute] Торговые Пути получают +1 [ICON_Food] Пищи за каждую клетки горы в пункте отправления. Международные [ICON_TradeRoute] Торговые Пути получают +1 [ICON_GOLD] Золото за каждую клетку гор в пункте отправления. Получает возможность построить Капах-ньян после изучения международной торговли.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="ru_RU">
+			<Text>Международные  [ICON_TradeRoute] Торговые Пути, отправленные к выбранному игроку, приносят +4 [ICON_Gold] Золота отправителю. Выбранный игрок получает +1 [ICON_TradeRoute] ячейку торгового пути. Отменяет все внутренние [ICON_TradeRoute] Торговые Пути выбранного игрока, и запрещает любые новые.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="ru_RU">
+			<Text>Внутренние [ICON_TradeRoute] Торговые Пути приносят +4 [ICON_GOLD] Золота для выбранного игрока. Отменяет все международные [ICON_TradeRoute] Торговые Пути между другими цивилизациями и выбранным игроком, и запрещает отправку любых новых путей.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_THRUST_DESCRIPTION" Language="ru_RU">
+			<Text>+10 [ICON_Strength] Боевой Мощи против юнитов ближнего боя.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MEKEWAP_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить Вигвам - уникальную постройку Кри.[NEWLINE][NEWLINE]Даёт +1 [ICON_PRODUCTION] Производства и +1 [ICON_Housing] Жилья. +1 [ICON_GOLD] Золота при соседстве с Редким ресурсом. +1 [ICON_FOOD] Еды  за каждые 2 соседних Бонусных Ресурса. Дополнительные +1 [ICON_PRODUCTION] Производства и +1 [ICON_Housing] Жилья после изучения Гослужбы. Дополнительные + 2 [ICON_GOLD] Золота за каждый соседний Редкий ресурс после изучения Картографии. Можно построить только рядом с Бонусными или Редкими ресурсами. Нельзя построить рядом с другим Вигвамом.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_SCIENCE_DESCRIPTION" Language="ru_RU">
+			<Text>Строители и Военные Инженеры получают возможность тратить все их заряды, чтобы добавить [ICON_Production] Производство к проекту в районе, один раз за ход. Каждый заряд даёт 2% [ICON_Production] Производства к проекту. [NEWLINE]Даёт +1 [Icon_Governor] Губернаторский Титул.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COLOSSEUM_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Culture] Культуры, +2 Лояльности, +2 [ICON_Amenities] Довольства для каждого города в радиусе 6 клеток. Может быть построен только на ровной клетке рядом с Развлекательным Комплексом с ареной внутри.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION" Language="ru_RU">
+			<Text>Конголезский уникальный юнит Античности, заменяющий Мечников. +1 [ICON_Movement] Очко Передвижения, +10 [ICON_Strength] Боевой Мощи против дальнобойных атак. Могут видеть сквозь леса и тропические леса.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Каждый раз, когда вы основываете первый город на отличном от вашей столицы континенте, вы получаете бесплатный юнит ближнего боя и дополнительную ячейку [ICON_TradeRoute] Торгового Пути. Постройка Верфей Королевского Флота даёт копию самого сильного морского юнита, которого вы можете построить. Может строить Красные Мундиры после изучения Военной Науки.[NEWLINE]Маяк приносит +1 [ICON_GREATADMIRAL] очко Великого Флотоводца за ход.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INDIAN_VARU_DESCRIPTION" Language="ru_RU">
+			<Text> Уникальный тяжелый кавалерийский иднийский юнит Античности. Имеет дальность обзора в 3 клетки. Соседние вражеские юниты получают -5 [ICON_STRENGTH] Боевой Мощи.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ru_RU">
+			<Text>Один дополнительный слот универсальной политики при любом правительстве после открытия Политической Философии.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_VETERANCY_DESCRIPTION_XP2" Language="ru_RU">
+		<Text>+30% [ICON_Production] производства при создании военных лагерей и гаваней, а также зданий в этих районах.</Text>
+		</Replace>
+		<Replace Tag="LOC_GREAT_PERSON_GRANT_LOTSO_SCIENCE" Language="ru_RU">
+			<Text>Даёт 1000 [ICON_SCIENCE] Науки и [ICON_CULTURE] Культуры (на Стандартной скорости). Может быть активирован только в кампусе другой цивилизации или города-государства.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_MILITARY_TRADITION_DESCRIPTION" Language="ru_RU">
+			<Text>Даёт бонус за атаку с фланга и бонус поддержки всем боевым юнитам, кроме дальнобойных наземных и морских юнитов.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_PAX_BRITANNICA_DESCRIPTION" Language="ru_RU">
+			<Text>Каждый раз, когда вы основываете первый город на отличном от вашей столицы континенте, вы получаете бесплатный юнит ближнего боя и дополнительную ячейку [ICON_TradeRoute] Торгового Пути. Постройка Верфей Королевского Флота даёт копию самого сильного морского юнита, которого вы можете построить. Может строить Красные Мундиры после изучения Военной Науки.[NEWLINE]Маяк приносит +1 [ICON_GREATADMIRAL] очко Великого Флотоводца за ход.</Text>
+		</Replace>
+>>>>>>> Stashed changes
 	</LocalizedText>
 </GameData>
