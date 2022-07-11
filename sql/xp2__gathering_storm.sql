@@ -251,7 +251,7 @@ INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
 --==================
 -- Kongo
 --==================
-UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
+UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
 
 
 --==========
