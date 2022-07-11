@@ -6,7 +6,7 @@
 -- Macedon
 --==========
 -- Reduce cost 
-UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';
+UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES'
 -- adj general bugfix
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
