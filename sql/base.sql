@@ -1076,7 +1076,7 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 -- Great Library unlocks at Drama & Poetry instead of Recorded History
 UPDATE Buildings SET PrereqCivic='CIVIC_DRAMA_POETRY' WHERE BuildingType='BUILDING_GREAT_LIBRARY';
 
--- Venetian Arsenal gives 100% production boost to all naval units in all cities instead of an extra naval unit in its city each time you build one
+-- Venetian Arsenal gives 80% production boost to all naval units in all cities instead of an extra naval unit in its city each time you build one
 DELETE FROM BuildingModifiers WHERE	BuildingType='BUILDING_VENETIAN_ARSENAL';
 
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
