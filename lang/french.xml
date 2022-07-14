@@ -387,7 +387,7 @@
       		<Text>[ICON_FAITH] Foi +0.5 pour chaque [ICON_CITIZEN] citoyen et [ICON_AMENITIES] activités +1 dans les villes possédant un aqueduc. [NEWLINE][ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc. [NEWLINE][ICON_FAITH] Foi +1 pour les fermes adjacents à un lieu saint.</Text>
     	</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_EXPANSION2_DESCRIPTION" Language="fr_FR">
-      		<Text>Bonus de proximité majeur pour les lieux saints situés sur une rivière. [ICON_Housing] Habitations +2 et [ICON_FOOD] Nourriture +2 s'ils se trouvent sur une rivière. Leur construction déclenche une bombe culturelle</Text>
+      		<Text>Bonus de proximité majeur pour les lieux saints situés sur une rivière. [ICON_Housing] Habitations +2 et [ICON_FOOD] Nourriture +2 s'ils se trouvent sur une rivière.</Text>
     	</Replace>
 		<!-- ========== MACÉDOINE ========== -->
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="fr_FR">
