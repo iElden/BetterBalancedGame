@@ -1044,6 +1044,9 @@ INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, Modifie
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_FLOODPLAINS_PROD_BBG' ),
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_VOLCANO_PROD_BBG' );
 
+--==============================================================
+--******                   N U K E S                      ******
+--==============================================================
 
 -- 14/07/2022 Nuke +50% production cost. uranium cost x1.5
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_MANHATTAN_PROJECT';
