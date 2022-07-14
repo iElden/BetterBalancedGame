@@ -16,7 +16,7 @@
 		</Replace>
 		<!-- ========== CATHERINE DE MEDICIS AU BAL MASQUÉ OHÉ OHÉ ========== -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="es_ES">
-			<Text>Cuando se completa, este proyecto otorga 40 de Cultura [ICON_CULTURE] y 40 de Turismo [ICON_TOURISM] (a velocidad normal) en funcion del número de recursos de lujo repetidos que tenga Francia.</Text>
+			<Text>Cuando se completa, este proyecto otorga 50 de Cultura [ICON_CULTURE] y 50 de Turismo [ICON_TOURISM] (a velocidad normal) en función del número de recursos de lujo repetidos que tenga Francia.</Text>
 		</Replace>
 		<!-- ========== CHANDRAGUPTA ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="es_ES">
@@ -66,7 +66,7 @@
 		</Replace>
 		<!-- ========== AMÉRIQUE ========== -->
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Un edificio exclusivo de América. +50% a la presión del Turismo [ICON_Tourism] desde esta ciudad a otras civilizaciones cuando el juego entra en la Época Moderna.</Text>
+			<Text>Un edificio exclusivo de América. +50% a la presión del Turismo [ICON_Tourism] desde esta ciudad a otras civilizaciones que alcanzaron la Era Moderna.</Text>
     	</Replace>
 		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="es_ES">
 			<Text>+5 a la Fuerza de combate defendiendo en el continente de orígen.</Text>
@@ -76,13 +76,13 @@
 		</Row>
 		<!-- ========== >ANGLETERRE ========== -->
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Inglaterra que sustituye al Puerto y es más barato de construir. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] cuando se construye en un continente extranjero.[NEWLINE]+1 a la capacidad de Rutas comerciales [ICON_TradeRoute].[NEWLINE]+1 punto de Gran almirante [ICON_GREATADMIRAL] por turno por Faro</Text>
+			<Text>Un distrito exclusivo de Inglaterra que sustituye al Puerto y es más barato de construir. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] como adyacencia cuando se construye en un continente extranjero.[NEWLINE]+1 a la capacidad de Rutas comerciales [ICON_TradeRoute].</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Inglaterra para las actividades navales en la ciudad. Sustituye al distrito de Puerto. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] y +4 de Lealtad por turno cuando se construye en un continente extranjero.No se puede construir sobre arrecifes.[NEWLINE]+1 punto de Gran almirante [ICON_GREATADMIRAL] por turno por Faro.</Text>
+			<Text>Un distrito exclusivo de Inglaterra para las actividades navales en la ciudad. Sustituye al distrito de Puerto. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] como adyacencia y +4 de Lealtad por turno cuando se construye en un continente extranjero. No se puede construir sobre arrecifes.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Inglaterra para las actividades navales en la ciudad. Sustituye al distrito de Puerto. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] y +4 de Lealtad por turno cuando se construye en un continente extranjero.No se puede construir sobre arrecifes.[NEWLINE]+1 punto de Gran almirante [ICON_GREATADMIRAL] por turno por Faro.</Text>
+			<Text>Un distrito exclusivo de Inglaterra para las actividades navales en la ciudad. Sustituye al distrito de Puerto. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] como adyacencia y +4 de Lealtad por turno cuando se construye en un continente extranjero. No se puede construir sobre arrecifes.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="es_ES">
 			<Text>Unidad exclusiva de Inglaterra de la Revolución Industrial que sustituye a la Infantería de línea. +5 a la Fuerza de combate [ICON_Strength] al luchar en continentes distintos a los de su capital. No tiene coste de desembarque.</Text>
@@ -109,7 +109,7 @@
 		</Replace>
 		<!-- ========== AZTEQUES ========== -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="es_ES">
-			<Text>Un edificio exclusivo de los aztecas. Proporciona +1 a Servicios [ICON_Amenities] y +1 a Cultura [ICON_Culture] a cada ciudad en un radio de 6 casillas.[NEWLINE] +1 punto de Gran general [ICON_GreatGeneral] por turno.</Text>
+			<Text>Un edificio exclusivo de los aztecas. Proporciona +1 a Servicios [ICON_Amenities] y +1 a Cultura [ICON_Culture] a cada ciudad en un radio de 6 casillas. Este beneficio no es acumulable con múltiples Tlachtlis.[NEWLINE] +1 punto de Gran general [ICON_GreatGeneral] por turno.</Text>
     	</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="es_ES">
 			<Text>Gasta cargas de Constructor para completar el 30% del coste original del distrito. +50% a la Producción [ICON_PRODUCTION] de unidades terrestres Cuerpo a cuerpo.</Text>
@@ -131,7 +131,7 @@
 			<Text>Las casillas de Selva tropical proporcionan +1 de bonificación por adyacencia a los distritos de Campus, Centro comercial, Lugar sagrado y Teatro, y otorgan +1 de Atractivo a las casillas adyacentes en lugar del habitual -1.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_WATER_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Brasil que no se restringe por la cantidad de población. Sustituye al Parque acuático y proporciona +2 a Servicios [ICON_Amenities]. Además desbloquea el proyecto Carnaval, que concede +1 a Servicios [ICON_Amenities] cuando se inicia y diversos puntos de Grandes personajes [ICON_GreatPerson] cuando se completa. No se puede construir en una ciudad con un Carnaval callejero ni sobre un Arrecife.</Text>
+			<Text>Un distrito exclusivo de Brasil que no se restringe por la cantidad de población. Sustituye al Parque acuático y proporciona +2 a Servicios [ICON_Amenities]. Además desbloquea el proyecto Carnaval, que concede +1 a Servicios [ICON_Amenities] cuando se inicia y diversos puntos de Grandes personajes [ICON_GreatPerson] cuando se completa. No se puede construir en una ciudad con un Carnaval callejero ni sobre un Arrecife.
     	</Replace>
     	<Replace Tag="LOC_DISTRICT_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>Un distrito exclusivo de Brasil que no se restringe por la cantidad de población. Sustituye al Complejo de ocio y proporciona +2 a Servicios [ICON_Amenities]. Además desbloquea el proyecto Carnaval, que concede +1 a Servicios [ICON_Amenities] cuando se inicia y diversos puntos de grandes personajes [ICON_GreatPerson] cuando se completa. No se puede construir en una ciudad con un Copacabana.</Text>
@@ -195,7 +195,7 @@
 		</Replace>
 		<!-- ========== COLOMBIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="es_ES">
-			<Text>+1 a la Visión para todas las unidades. Al ascender a una unidad de Caballería ligera no finaliza su turno.</Text>
+			<Text>+1 a la Visión para todas las unidades. Al ascender a una unidad no finaliza su turno.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="es_ES">
 			<Text>+1 a la Visión para todas las unidades (Ejército Patriota).</Text>
@@ -210,18 +210,18 @@
 			<Text>Gana un Comandante general cuando el juego entra en una nueva era. No puede reclutar Grandes generales [ICON_GreatGeneral].</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad del Constructor de erigir una Hacienda, exclusiva de la Gran Colombia.[NEWLINE][NEWLINE]+2 a Oro [ICON_GOLD], +1 a Producción [ICON_PRODUCTION] y +1 a Alojamiento [Icon_Housing]. +1 a Alimentos [ICON_Food] por cada dos Plantaciones adyacentes (aumenta a cada Plantación con Repuestos). Las Plantaciones y Haciendas reciben +1 a Producción [ICON_Production] por cada dos Haciendas adyacentes (aumenta a cada Hacienda con Despliegue rápido). Solo se puede construir en Llanuras y Praderas.</Text>
+			<Text>Desbloquea la habilidad del Constructor de erigir una Hacienda, exclusiva de la Gran Colombia.[NEWLINE][NEWLINE]+2 a Oro [ICON_GOLD], +1 a Producción [ICON_PRODUCTION] y +0,5 a Alojamiento [Icon_Housing]. +1 a Alimentos [ICON_Food] por cada dos Plantaciones adyacentes (aumenta a cada Plantación con Repuestos). Las Plantaciones y Haciendas reciben +1 a Producción [ICON_Production] por cada dos Haciendas adyacentes (aumenta a cada Hacienda con Despliegue rápido). Solo se puede construir en Llanuras y Praderas.</Text>
 		</Replace>
 		<!-- ========== CONGO ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="es_ES">		<!-- Correction de la traduction officielle : Coach peut à nouveau recruter des personnages illustres =D -->
 			<Text>No puede construir distritos de Lugar sagrado, obtener Grandes profetas ni fundar religiones. Obtiene todas las creencias de cualquier religión que se haya establecido en la mayoría de sus ciudades. Recibe a un Apóstol cada vez que finalice un distrito M'banza o Teatro (de la religión mayoritaria de esa ciudad).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="es_ES">
-			<Text>+2 a Alimentos [ICON_Food], +2 a la Producción [ICON_Production] y +4 a Oro [ICON_Gold] por cada Reliquia [ICON_GreatWork_Relic], Artefacto [ICON_GreatWork_Artifact] y Gran obra de Escultura [ICON_GreatWork_Sculpture], además de la Cultura [ICON_Culture] habitual.[NEWLINE]+1 a Fe [ICON_Faith] por cada Reliquia [ICON_GreatWork_Relic] y +4 a Fe [ICON_Faith] por cada Artefacto [ICON_GreatWork_Artifact] y Gran obra de Escultura [ICON_GreatWork_Sculpture]. Recibe un 50% más de puntos de Gran escritor [ICON_GreatWriter], Gran artista [ICON_GreatArtist], Gran músico [ICON_GreatMusician] y Gran mercader [ICON_GreatMerchant]. +100% a la Producción [ICON_PRODUCTION] de Arqueólogos. El Palacio tiene espacio para 5 Grandes obras.</Text>
+			<Text>+2 a Alimentos [ICON_Food], +2 a la Producción [ICON_Production] y +4 a Oro [ICON_Gold] por cada Reliquia [ICON_GreatWork_Relic], Artefacto [ICON_GreatWork_Artifact] y Gran obra de Escultura [ICON_GreatWork_Sculpture], además de la Cultura [ICON_Culture] habitual.[NEWLINE]+1 a Fe [ICON_Faith] por cada Reliquia [ICON_GreatWork_Relic] y +4 a Fe [ICON_Faith] por cada Artefacto [ICON_GreatWork_Artifact] y Gran obra de Escultura [ICON_GreatWork_Sculpture]. Recibe un 50% más de puntos de Gran escritor [ICON_GreatWriter], Gran artista [ICON_GreatArtist], Gran músico [ICON_GreatMusician] y Gran mercader [ICON_GreatMerchant]. +100% a la Producción [ICON_PRODUCTION] de Arqueólogos. El Palacio tiene espacio para 5 Grandes obras.[NEWLINE][NEWLINE]Todas las unidades de combate terrestre ignoran la penalidad de Movimiento [ICON_Movement] en Selvas tropicales y Bosques.</Text>
     	</Replace>
 		<!-- ========== CORÉE ========== -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Corea que sustituye al Campus y que debe construirse en Colinas. +2 a Ciencia [ICON_SCIENCE]. Las minas proporcionan un bonus por adyacencia mínimo. Proporciona +1 a Cultura [ICON_CULTURE] a los distritos de Teatro adyacentes. Provoca un bombardeo cultural al completarse.</Text>
+			<Text>Un distrito exclusivo de Corea que sustituye al Campus y que debe construirse en Colinas. +2 a Ciencia [ICON_SCIENCE]. +1 a Ciencia [ICON_SCIENCE] por cada 2 minas adyacentes. -1 a Ciencia [ICON_Science] por cada distrito adyacente, excepto Teatros. Proporciona +1 a Cultura [ICON_CULTURE] a los distritos de Teatro adyacentes. Provoca un bombardeo cultural al completarse.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION" Language="es_ES">
 			<Text>Por cada distrito de Seowon adyacente las Minas reciben +1 a Ciencia [ICON_SCIENCE] y las Granjas +1 a Alimentos [ICON_FOOD].</Text>
@@ -269,8 +269,11 @@
 			<Text>Desbloquea la habilidad del Constructor para crear una Esfinge, exclusiva de Egipto.[NEWLINE][NEWLINE]+2 a Fe [ICON_Faith], +1 a Cultura [ICON_Culture] y +1 de Atractivo.[NEWLINE][NEWLINE]+1 a Fe [ICON_Faith] y +1 a Cultura [ICON_Culture] si está junto a una maravilla. +1 a Alimentos [ICON_FOOD] y +1 a Producción [ICON_PRODUCTION] si se construye en Desierto o +1 a Cultura [ICON_CULTURE] si se construye en Terrenos de aluvión.[NEWLINE][NEWLINE]Cultura [ICON_CULTURE] adicional cuando se desbloquea Cuerpo diplomático. Concede Turismo [ICON_TOURISM] tras investigar Vuelo. No puede construirse junto a otra Esfinge. No puede construirse en Nieve o Colinas nevadas.</Text>
         </Replace>
 		<!-- ========== ESPAGNE ========== -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="es_ES">
+			<Text>Se pueden formar Flotas y Armadas antes (Mercenarios y Mercantilismo). Se pueden entrenar Flotas y Armadas más rápido en ciudades con un Astillero.[NEWLINE][NEWLINE]Las Rutas comerciales [ICON_TradeRoute] reciben +3 de Oro [ICON_Gold], +2 a Fe [ICON_Faith] y +1 a Producción [ICON_Production]. Las Rutas comerciales [ICON_TradeRoute] entre varios continentes reciben el doble de estas cantidades. Las ciudades que no estén en el continente original de la capital reciben un +25% a la Producción [ICON_Production] destinada a distritos.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Se pueden formar Flotas y Armadas antes (Mercenarios y Mercantilismo). Se pueden entrenar Flotas y Armadas más rápido en ciudades con un Astillero.[NEWLINE][NEWLINE]Las Rutas comerciales [ICON_TradeRoute] reciben +3 de Oro [ICON_Gold], +2 a Fe [ICON_Faith] y +1 a Producción [ICON_Production]. Las Rutas comerciales [ICON_TradeRoute] entre varios continentes reciben el doble de estas cantidades. Las ciudades que no estén en el continente original de la capital reciben un +25% a la Producción [ICON_Production] destinada a distritos.[NEWLINE][NEWLINE]+25% a la Producción [ICON_Production] para los edificios del Puerto.</Text>
+			<Text>Se pueden formar Flotas y Armadas antes (Mercenarios y Mercantilismo). Se pueden entrenar Flotas y Armadas más rápido en ciudades con un Astillero.[NEWLINE][NEWLINE]Las Rutas comerciales [ICON_TradeRoute] reciben +3 de Oro [ICON_Gold], +2 a Fe [ICON_Faith] y +1 a Producción [ICON_Production]. Las Rutas comerciales [ICON_TradeRoute] entre varios continentes reciben el doble de estas cantidades. Las ciudades que no estén en el continente original de la capital reciben un +25% a la Producción [ICON_Production] destinada a distritos.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+5 a la Fuerza de combate [ICON_Strength] contra jugadores de otras religiones.[NEWLINE]Los Misioneros cuestan un 30% menos. Los Inquisidores pueden eliminar la herejía una vez más y eliminan el 100% de la presencia de otras religiones.</Text>
@@ -305,8 +308,11 @@
 			<Text>No recibe penalizaciones de Movimiento [ICON_Movement] por moverse en Colinas y recibe +4 a la Fuerza de combate [ICON_STRENGTH] en Colinas.</Text>
 		</Replace>
 		<!-- ========== FRANCE ========== -->
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad Constructor para crear un Château, exclusivo de Francia.[NEWLINE][NEWLINE]+2 a Cultura [ICON_Culture], +1 de Oro [ICON_Gold], +1 de Alimento [ICON_Food], +1 a Alojamiento ICON_HOUSING] y +1 de Atractivo. +1 a Cultura [ICON_Culture] por cada maravilla adyacente, mejora a +2 tras investigar Vuelo. +2 de Oro [ICON_Gold] si se construye junto a un Río. +1 a Cultura [ICON_Culture] y +1 de Oro [ICON_Gold] por cada recurso de lujo adyacente. Otorga Turismo [ICON_TOURISM] por Cultura [ICON_CULTURE] tras investigar Vuelo. No se puede construir adyacente a otro Château.</Text>
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad Constructor para crear un Château, exclusivo de Francia.[NEWLINE][NEWLINE]+1 a Alojamiento ICON_HOUSING], +2 a Cultura [ICON_Culture] y +1 de Atractivo. +1 a Cultura [ICON_Culture] por cada maravilla adyacente. +1 de Oro [ICON_Gold] y +1 de Alimento [ICON_Food] por cada recurso de lujo adyacente. Otorga Turismo [ICON_TOURISM] por Cultura [ICON_CULTURE] tras investigar Vuelo. No se puede construir adyacente a otro Château.</Text>
+			<Text>Desbloquea la habilidad Constructor para crear un Château, exclusivo de Francia.[NEWLINE][NEWLINE]+2 a Cultura [ICON_Culture], +1 de Oro [ICON_Gold], +1 de Alimento [ICON_Food], +1 a Alojamiento ICON_HOUSING] y +1 de Atractivo. +1 a Cultura [ICON_Culture] por cada maravilla adyacente, mejora a +2 tras investigar Vuelo. +2 de Oro [ICON_Gold] si se construye junto a un Río. +1 a Cultura [ICON_Culture] y +1 de Oro [ICON_Gold] por cada recurso de lujo adyacente. Otorga Turismo [ICON_TOURISM] por Cultura [ICON_CULTURE] tras investigar Vuelo. No se puede construir adyacente a otro Château.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="es_ES">
 			<Text>Recive un Espía gratis (y una capacidad de Espías) con la tecnología Castillos. Todos los espías comienzan como Agentes y con una promoción gratis. +20% a la Producción [ICON_Production] para maravillas de la Edad Media, el Renacimiento y la Revolución Industrial. +50% al Turismo [ICON_Tourism] de las maravillas de cualquier época.</Text>
@@ -336,19 +342,19 @@
     	</Replace>
 		<!-- ========== GRÈCE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="es_ES">
-			<Text>Un espacio de política comodín adicional en cualquier gobierno.</Text>
+			<Text>Un espacio de política comodín adicional en cualquier gobierno tras desbloquear Filosofía política.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION" Language="es_ES">
 			<Text>+5% a Cultura [ICON_Culture] por cada Ciudad-estado de la que seas suzerano. Consigue 1 Enviado [ICON_ENVOY] cuando un Anfiteatro es completado.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Grecia que sustituye al Teatro y es más barato de construir.[NEWLINE][NEWLINE] +1 a Cultura [ICON_Culture] por cada distrito adyacente y +1 a Cultura [ICON_Culture] adicional por Centro urbano adyacente. +2 a Cultura [ICON_Culture] por cada maravilla adyacente. Solo se puede construir en Colinas.</Text>
+			<Text>Un distrito exclusivo de Grecia que sustituye al Teatro y es más barato de construir.[NEWLINE][NEWLINE] +1 a Cultura [ICON_Culture] por cada distrito adyacente. +1 a Cultura [ICON_Culture] adicional por Centro urbano adyacente. +2 a Cultura [ICON_Culture] por cada maravilla adyacente. Solo se puede construir en Colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Grecia que sustituye al Teatro y es más barato de construir.[NEWLINE][NEWLINE] +1 a Cultura [ICON_Culture] por cada distrito adyacente y +1 a Cultura [ICON_Culture] adicional por Centro urbano adyacente. +2 a Cultura [ICON_Culture] por cada maravilla adyacente. Solo se puede construir en Colinas.</Text>
+			<Text>Un distrito exclusivo de Grecia que sustituye al Teatro y es más barato de construir.[NEWLINE][NEWLINE] +1 a Cultura [ICON_Culture] por cada distrito adyacente. +1 a Cultura [ICON_Culture] adicional por Centro urbano adyacente. +2 a Cultura [ICON_Culture] por cada maravilla adyacente. Solo se puede construir en Colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Grecia que sustituye al Teatro y es más barato de construir.[NEWLINE][NEWLINE] +1 a Cultura [ICON_Culture] por cada distrito adyacente y +1 a Cultura [ICON_Culture] adicional por Centro urbano adyacente. +2 a Cultura [ICON_Culture] por cada maravilla, Complejo de ocio y Parque acuático adyacente. Solo se puede construir en Colinas.</Text>
+			<Text>Un distrito exclusivo de Grecia que sustituye al Teatro y es más barato de construir.[NEWLINE][NEWLINE] +1 a Cultura [ICON_Culture] por cada distrito adyacente. +1 a Cultura [ICON_Culture] adicional por Centro urbano adyacente. +2 a Cultura [ICON_Culture] por cada maravilla, Complejo de ocio y Parque acuático adyacente. Solo se puede construir en Colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="es_ES">
 			<Text>Adyacencia: bonificación normal a Cultura [ICON_Culture] por Centro urbano adyacente. Bonificación normal a Cultura [ICON_Culture] por cada distrito adyacente. Gran bonificación a Cultura [ICON_Culture] por cada maravilla adyacente. Sólo se puede construir en Colinas.</Text>
@@ -482,18 +488,19 @@
 			<Text>+{1_num} de Fe [ICON_Faith] por Bosques adyacentes.</Text>
 		</Row>
 		<!-- ========== NUBIE ========== -->
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="es_ES">
+		<!-- Reverted in 4.8.0<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="es_ES">
 			<Text>Todas las unidades a distancia ganan un +30% a la experiencia de combate. Las Minas sobre recursos estratégicos otorgan +1 a la Producción [ICON_Production]. Las Minas sobre recursos de lujo y adicionales otorgan +2 de Oro [ICON_Gold].</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="es_ES">
-			<Text>Mejora que se desbloquea con la Mampostería y que debe construirse sobre Desierto, Colinas del desierto, Terrenos de aluvión, Llanuras o Praderas. +2 a Fe [ICON_Faith] y +1 a Alimentos [ICON_Food]. Recibe rendimientos adicionales por los distritos adyacentes: +2 a Alimentos [ICON_Food] por el Centro urbano.[NEWLINE]+2 a Ciencia [ICON_SCIENCE] por Campus.[NEWLINE]+2 a Producción [ICON_PRODUCTION] por Zona industrial.[NEWLINE]+2 a Cultura [ICON_CULTURE] por Teatro.[NEWLINE]+2 a Fe [ICON_FAITH] por Lugar sagrado.[NEWLINE]+2 a Oro [ICON_GOLD] por Centro comercial y Puerto.[NEWLINE][NEWLINE]No se puede construir junto a otra Pirámide.</Text>
+			<Text>Mejora que se desbloquea con la Mampostería y que debe construirse sobre Desierto, Colinas del desierto, Terrenos de aluvión, Llanuras o Praderas. +2 a Fe [ICON_Faith] y +1 a Alimentos [ICON_Food]. Recibe rendimientos adicionales por los distritos adyacentes:[NEWLINE]+2 a Alimentos [ICON_Food] por el Centro urbano.[NEWLINE]+2 a Ciencia [ICON_SCIENCE] por Campus.[NEWLINE]+2 a Producción [ICON_PRODUCTION] por Zona industrial.[NEWLINE]+2 a Cultura [ICON_CULTURE] por Teatro.[NEWLINE]+2 a Fe [ICON_FAITH] por Lugar sagrado.[NEWLINE]+2 a Oro [ICON_GOLD] por Centro comercial y Puerto.[NEWLINE][NEWLINE]No se puede construir junto a otra Pirámide.</Text>
         </Replace>
 		<!-- ========== PAYS-BAS ========= -->
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad del Constructor para erigir un Pólder, exclusivo de los Países Bajos.[NEWLINE][NEWLINE]+1 a Alimentos [ICON_FOOD], +1 a Producción [ICON_Production] y +0,5 a Alojamiento [ICON_Housing]. +1 a Alimentos [ICON_FOOD] si se encuentra adyacente a otro Pólder. Producción [ICON_PRODUCTION], Oro [ICON_GOLD] y Alimentos [ICON_FOOD] adicionales a medida que avances por el árbol de principios y tecnologías. Debe colocarse en una casilla de Costa o Lago adyacente a 2 o más casillas terrestres franqueables. Aumenta el costo de Movimiento [ICON_Movement] de la casilla a 3.</Text>
+			<Text>Desbloquea la habilidad del Constructor para erigir un Pólder, exclusivo de los Países Bajos.[NEWLINE][NEWLINE]+1 a Alimentos [ICON_FOOD], +1 a Producción [ICON_Production] y +0,5 a Alojamiento [ICON_Housing]. +1 a Alimentos [ICON_FOOD] por cada Pólder adjacente. +1 a Producción [ICON_PRODUCTION] por cada Puerto adyacente y por cada 2 Pólders adyacentes. Producción [ICON_PRODUCTION], Oro [ICON_GOLD] y Alimentos [ICON_FOOD] adicionales a medida que avances por el árbol de principios y tecnologías. Debe colocarse en una casilla de Costa o Lago adyacente a 2 o más casillas terrestres franqueables. Aumenta el costo de Movimiento [ICON_Movement] de la casilla a 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="es_ES">
-			<Text>Las Rutas comerciales [ICON_TradeRoute] entre tus propias ciudades proporcionan +2 de Lealtad a la ciudad de origen. Las Rutas comerciales [ICON_TradeRoute] con destino a ciudades extranjeras o con origen en estas te proporcionan +2 a Cultura [ICON_Culture] y +1 a Cultura [ICON_Culture] a quién la envía.</Text>
+			<Text>Las Rutas comerciales [ICON_TradeRoute] entre tus propias ciudades proporcionan +2 de Lealtad a la ciudad de origen. Las Rutas comerciales [ICON_TradeRoute] con destino a ciudades extranjeras o con origen en estas te proporcionan +2 a Cultura [ICON_Culture] a ti y +1 a Cultura [ICON_Culture] a quién la envía.</Text>
 		</Replace>
 		<!-- ========== PHENICIE ========= -->
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="es_ES">
@@ -524,7 +531,7 @@
 			<Text>Todas las unidades tienen +3 a la Fuerza de combate [ICON_Strength] al atacar. +5 de Lealtad por turno en las ciudades ocupadas con una unidad en guarnición. La declaración de guerra por sorpresa solo cuenta como guerra formal a efectos de belicosidad y hastío bélico.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Todas las unidades tienen +3 a la Fuerza de combate [ICON_Strength] al atacar.. +5 de Lealtad por turno en las ciudades ocupadas con una unidad en guarnición. La declaración de una guerra por sorpresa solo cuenta como guerra formal a efectos de Quejas [ICON_STAT_GRIEVANCE] y hastío bélico.</Text>
+			<Text>Todas las unidades tienen +3 a la Fuerza de combate [ICON_Strength] al atacar. +5 de Lealtad por turno en las ciudades ocupadas con una unidad en guarnición. La declaración de una guerra por sorpresa solo cuenta como guerra formal a efectos de Quejas [ICON_STAT_GRIEVANCE] y hastío bélico.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad del Constructor para crear un Pairi-Daeza, exclusivo de Persia.[NEWLINE][NEWLINE]+1 a Cultura [ICON_CULTURE], +2 a Oro [ICON_GOLD] y +1 al Atractivo. +1 a Cultura [ICON_CULTURE] por cada Lugar sagrado, Campus y Teatro adyacentes. +1 de Oro [ICON_GOLD] por cada Centro comercial, Puerto, Zona industrial y Centro urbano adyacentes. Más Cultura [ICON_Culture] y Turismo [ICON_Tourism] al avanzar por el árbol de tecnologías y el de principios. No puede construirse sobre Nieve, Tundra, Colinas nevadas o Colinas con tundra, ni puede estar adyacente a otro Pairi-Daeza.</Text>
@@ -533,7 +540,7 @@
 			<Text>+{1_Value} al atacar</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="es_ES">
-			<Text>+1 a la capacidad de Rutas comerciales [ICON_TradeRoute] con el principio de Filosofía política. Recibe +2 de Oro [ICON_Gold] y +1 a Cultura [ICON_Culture] por las rutas entre tus propias ciudades. Más Oro [ICON_Gold] y Cultura [ICON_Culture] en rutas comerciales nacionales al avanzar por el árbol de tecnologías y el de principios. Las carreteras construidas en tu territorio están un nivel por encima de lo habitual.</Text>
+			<Text>+1 a la capacidad de Rutas comerciales [ICON_TradeRoute] con el principio de Filosofía política. Recibe +2 de Oro [ICON_Gold] y +1 a Cultura [ICON_Culture] en rutas nacionales. +2 de Oro [ICON_Gold] adicional tras investigar Banca y Economía, +2 a Cultura [ICON_Culture] adicional tras desbloquear Ferias medievales y Urbanismo. Las carreteras construidas en tu territorio están un nivel por encima de lo habitual.</Text>
 		</Replace>
 		<!-- ========== ROME ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="es_ES">
@@ -660,7 +667,7 @@
 			<Text>+{1_num} a Fe [ICON_Faith] por {1_Num: plural 1?la casilla de Tundra adyacente; other?las casillas de Tundra adyacentes;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="es_ES">
-			<Text>+15% a la Producción [ICON_Production] de Maravillas.</Text>
+			<Text>+20% a la Producción [ICON_Production] de Maravillas.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="es_ES">
 			<Text>+1 a Producción [ICON_Production] y +1 a Fe [ICON_FAITH] en Canteras.</Text>
@@ -779,7 +786,7 @@
 			<Text>Maravilla natural infranqueable de dos casillas. Aparece en terreno costero y proporciona +2 a Ciencia [ICON_Science] y +1 a Alimentos [ICON_Food] a las casillas adyacentes.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="es_ES">
-			<Text>Maravilla natural de una casilla. Aparece como Lago y proporciona +2 a Alimentos [ICON_Food], +2 a Ciencia [ICON_Science] y +4 a Fe [ICON_Faith].</Text>
+			<Text>Maravilla natural de una casilla. Aparece como Lago y proporciona +2 a Alimentos [ICON_Food], +2 a Ciencia [ICON_Science] y +5 a Fe [ICON_Faith].</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="es_ES">
 			<Text>Maravilla natural de cuatro casillas. Aparece como Pantano y proporciona +2 a Fe [ICON_FAITH], +2 a Alimentos [ICON_FOOD] y +2 a Producción [ICON_PRODUCTION].</Text>
@@ -791,7 +798,7 @@
 			<Text>Maravilla natural de tres casillas. Las unidades que entran en ella son teletransportadas a un océano muy lejano, si son unidades navales ganan la habilidad "Corrientes misteriosas" (+1 a Movimiento [ICON_Movement]).</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="es_ES">
-			<Text>Maravilla natural infranqueable de tres casillas. Proporciona +1 de Oro [ICON_Gold] y +1 a Cultura [ICON_Culture] a las casillas adyacentes. Las Rutas comerciales [ICON_TradeRoute] internacionales enviadas desde ciudades que tengan al menos una casilla del Paititi Generan +3 de Oro [ICON_Gold].</Text>
+			<Text>Maravilla natural infranqueable de tres casillas. Proporciona +1 de Oro [ICON_Gold] y +1 a Cultura [ICON_Culture] a las casillas adyacentes. Las Rutas comerciales [ICON_TradeRoute] internacionales enviadas desde ciudades que tengan al menos una casilla del Paititi Generan +4 de Oro [ICON_Gold].</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="es_ES">
 			<Text>Maravilla natural de dos casillas que aparece en terreno costero y proporciona +3 a Alimentos [ICON_Food] y +2 a Ciencia [ICON_Science]. Gran bonificación por adyacencia al distrito de Campus.</Text>
@@ -874,7 +881,7 @@
 		
 		<!-- Place de la gouvernance -->
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="es_ES">
-			<Text>+1 a Servicios [ICON_Amenities], +3 a Alimentos [ICON_FOOD] y +3 a Alojamiento [ICON_Housing] en ciudades con Gobernadores [ICON_Governor].[NEWLINE]-2 a Lealtad en ciudades sin Gobernadores [ICON_Governor].[NEWLINE]Otorga +1 Título de gobernador [Icon_Governor].</Text>
+			<Text>+1 a Servicios [ICON_Amenities], +2 a Alimentos [ICON_FOOD] y +3 a Alojamiento [ICON_Housing] en ciudades con Gobernadores [ICON_Governor].[NEWLINE]-2 a Lealtad en ciudades sin Gobernadores [ICON_Governor].[NEWLINE]Otorga +1 Título de gobernador [Icon_Governor].</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="es_ES">
 			<Text>Reclutar unidades de las Ciudades-estado cuesta la mitad de Oro [ICON_Gold].[NEWLINE]Las unidades de una Ciudad-estado ganan +4 a la Fuerza de combate [ICON_Strength] si eres su suzerano (incluye a las unidades reclutadas).[NEWLINE]Otorga +1 Título de gobernador [Icon_Governor]. +2 Enviados [ICON_ENVOY] y +2 puntos de influencia por turno.</Text>
@@ -986,7 +993,10 @@
 			<Text>+1 a Alojamiento [ICON_HOUSING] por cada distrito y maravilla en la ciudad.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="es_ES">
-			<Text>Se puede construir la mejora exclusiva de Parque urbano en la ciudad una vez que se desbloquea Juegos y actividades lúdicas. Se puede constituir uno por ciudad. +3 a Ciencia [ICON_SCIENCE], +3 a Cultura [ICON_Culture], +3 de Oro [ICON_GOLD], +1 a Alojamiento [ICON_HOUSING], +1 a Servicios [ICON_Amenities] y +2 de Atractivo.</Text>
+			<Text>Se puede construir la mejora exclusiva de Parque urbano en la ciudad una vez que se desbloquea Juegos y actividades lúdicas. +3 a Ciencia [ICON_SCIENCE], +3 a Cultura [ICON_Culture], +3 de Oro [ICON_GOLD], +1 a Alojamiento [ICON_HOUSING], +1 a Servicios [ICON_Amenities]. +2 de Atractivo a casillas adyacentes. Sólo puede construirse uno por ciudad.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CITY_PARK_DESCRIPTION" Language="es_ES">
+			<Text>Una mejora exclusiva de Gobernador [ICON_Governor] que se puede construir en una ciudad con una Gobernadora Perito con el ascenso Parques y jardines. +3 a Ciencia [ICON_SCIENCE], +3 a Cultura [ICON_Culture], +3 de Oro [ICON_GOLD], +1 a Alojamiento [ICON_HOUSING], +1 a Servicios [ICON_Amenities]. +2 de Atractivo a casillas adyacentes. Sólo puede construirse uno por ciudad.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="es_ES">
 			<Text>+1 a la Producción [ICON_Production] en casillas de Terreno de aluvión y Suelo volcánico en la ciudad. Los Efectos medioambientales no pueden dañar las mejoras, los edificios ni los distritos de la ciudad.</Text>
@@ -1168,10 +1178,10 @@
 			<Text>Todos tus distritos de Teatro reciben una bonificación por adyacencia del 50% si tienes una alianza de nivel 1, aumenta al 100% por una alianza de nivel 2 y al 150 % por una alianza de nivel 3. No acumulable con alianzas adicionales.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_PRESLAV_BONUS_XP1" Language="es_ES">
-			<Text>+40 de Lealtad por turno en todas tus ciudades, asegurando una lealtad inquebrantable en todo tu imperio.</Text>
+			<Text>+40 de Lealtad por turno en todas tus ciudades.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="es_ES">
-			<Text>+40 de Lealtad por turno en todas tus ciudades, asegurando una lealtad inquebrantable en todo tu imperio.</Text>
+			<Text>+40 de Lealtad por turno en todas tus ciudades.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_MOHENJO_DARO_BONUS" Language="es_ES">
 			<Text>Tus ciudades tienen Alojamiento [ICON_Housing] completo por el agua, como si estuviesen junto a un Río.</Text>
@@ -1280,6 +1290,14 @@
 		<Replace Tag="LOC_UNIT_GREEK_HOPLITE_DESCRIPTION" Language="es_ES">
 			<Text>Unidad anticaballería exclusiva de la Grecia de la Antigüedad que sustituye al Lancero. +7 a la Fuerza de combate [ICON_Strength] si hay al menos un Hoplita adyacente.</Text>
 		</Replace>
+		
+		<!-- April Fool 2022 -->
+		<Row Tag="BBG_GAMEMODE_BABYLON_NAME" Language="es_ES">
+			<Text>April Fool 2022</Text>
+		</Row>
+		<Row Tag="BBG_GAMEMODE_BABYLON_DESCRIPTION" Language="es_ES">
+			<Text>Descubre una nueva experiencia multijugador. Perfectamente balanceada y más corta.</Text>
+		</Row>
 		
 		<!-- Front End -->
 		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="es_ES">
@@ -1557,9 +1575,93 @@
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="es_ES">
 			<Text>El mundo reconoce tu absoluta dominación por el imperio que has construido en el cual el sol nunca se pone.</Text>
 		</Replace>
+		
 		<!-- Beta -->
-		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="es_ES">
-			<Text>[COLOR_GREEN]Quitar Tratado de libre comercio[ENDCOLOR]</Text>
-        </Replace>
+		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="es_ES">
+			<Text>[COLOR_GREEN]Desactivar la resolución Tratado de comercio[ENDCOLOR]</Text>
+        </Row>
+		<Row Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_DESC" Language="es_ES">
+		<Text>Quita la resolución Tratado de comercio del Congreso mundial.[NEWLINE](Esta resolución fue cambiada, por lo que está deshabilitada de forma predeterminada)</Text>
+		</Row>
+		
+		<Replace Tag="LOC_IMPROVEMENT_MEKEWAP_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor de colocar un Mekewap, exclusivo de los cri.[NEWLINE][NEWLINE]Proporciona +1 a la Producción [ICON_PRODUCTION] y +1 a Alojamiento [ICON_Housing]. +1 de Oro [ICON_GOLD] si se encuentra adyacente a un recurso de lujo. +1 a Alimentos [ICON_FOOD] por cada 2 recursos adicionales adyacentes. +1 a Alojamiento [ICON_Housing] adicional tras desbloquear el principio Administración pública. Producción [ICON_PRODUCTION], Oro [ICON_GOLD] y Alimentos [ICON_FOOD] adicionales a medida que avances por los principios y el árbol tecnológico.[NEWLINE][NEWLINE]Debe colocarse adyacente a un recurso adicional o de lujo. No se puede construir adyacente a otro Mekewap.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_SCIENCE_DESCRIPTION" Language="es_ES">
+			<Text>Los Constructores e Ingenieros civiles pueden usar todas sus cargas para conceder una bonificación a la Producción [ICON_Production] de un proyecto urbanístico. Una vez por turno y ciudad. Cada carga otorga un 2% del costo del proyecto.[NEWLINE]Otorga +1 Título de gobernador [Icon_Governor].</Text>
+		</Replace>
+		<Replace Tag="LOC_GREAT_PERSON_GRANT_LOTSO_SCIENCE" Language="es_ES">
+			<Text>A velocidad normal, confiere 1000 de Ciencia [ICON_SCIENCE] y Cultura [ICON_CULTURE]. Debe activarse en un Campus de otra civilización.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_MILITARY_TRADITION_DESCRIPTION" Language="es_ES">
+			<Text>Concede las bonificaciones de Flanqueo y Apoyo a todas las unidades de combate excepto unidades terrestres y navales a distancia.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INDIAN_VARU_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de caballería pesada exclusiva de la India de la Época Clásica. Tiene 3 de Visibilidad. Las unidades enemigas adyacentes reciben -5 a la Fuerza de combate [ICON_Strength].</Text>
+		</Replace>
+
+		<!-- 4.8.0 Update -->
+		<Replace Tag="LOC_BUILDING_WATER_MILL_DESCRIPTION" Language="es_ES">
+			<Text>Las Granjas obtienen +1 de Producción [ICON_PRODUCTION]. La ciudad debe estar presente a un Río.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="es_ES">
+			<Text>Las unidades de combate terrestre que entren en casillas adyacentes obtienen la habilidad "Lanza de Fionn" (+3 a la Fuerza de combate). Las casillas adyacentes producen +1 a Cultura [ICON_Culture].</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="es_ES">
+			<Text>Lanza de Fionn: +3 a la Fuerza de combate</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MATTERHORN_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla natural infranqueable de una casilla. Proporciona +1 a Cultura [ICON_CULTURE] a las casillas adyacentes. Las unidades de combate terrestre que se muevan junto al Cervino ignorarán las Colinas durante el resto de la partida y ganarán +2 a la Fuerza de combate [ICON_Strength] cuando combatan en Colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING__DESCRIPTION" Language="es_ES">
+			<Text>Entrenamiento alpino: +2 a la Fuerza de combate [ICON_Strength] al luchar en Colinas. No hay penalización al Movimiento en terreno de Colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION" Language="es_ES">
+			<Text>Las Rutas comerciales internacionales [ICON_TradeRoute] deben salir de una ciudad costera y solo pueden llegar a las ciudades que estén en la costa o tengan Puerto, pero reciben +50% al Oro [ICON_GOLD]. Los Comerciantes tienen un +50% al alcance por agua y pueden embarcarse en cuanto se desbloquean.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_PACHACUTI_QHAPAQ_NAN_DESCRIPTION" Language="es_ES">
+			<Text>Las Rutas comerciales [ICON_TradeRoute] nacionales obtienen +1 a Alimentos [ICON_Food] por cada casilla de Montaña en la ciudad de origen. Las Rutas comerciales [ICON_TradeRoute] internacionales obtienen +1 de Oro [ICON_GOLD] por cada casilla de Montaña en la ciudad de origen. Se obtiene la mejora Qhapaq Ñan al descubrir el principio Comercio exterior.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="es_ES">
+			<Text>Las Rutas comerciales [ICON_TradeRoute] enviadas al jugador elegido proporcionan +4 de Oro [ICON_Gold] al remitente. El jugador elegido recibe +1 a la capacidad de Rutas comerciales [ICON_TradeRoute]. Cancela todas las Rutas comerciales [ICON_TradeRoute] nacionales del jugador elegido e impide la creación de nuevas</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="es_ES">
+			<Text>Las Rutas comerciales [ICON_TradeRoute] nacionales del jugador elegido obtienen +4 de Oro [ICON_GOLD]. Se cancelan todas las Rutas comerciales [ICON_TradeRoute] existentes entre las demás civilizaciones y el jugador elegido e impide que se creen nuevas a partir de ahora.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_THRUST_DESCRIPTION" Language="es_ES">
+			<Text>+10 a la Fuerza de combate [ICON_Strength] contra unidades cuerpo a cuerpo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COLOSSEUM_DESCRIPTION" Language="es_ES">
+			<Text>+1 a Cultura [ICON_Culture] y +1 a Servicios [ICON_Amenities] Amenities a cada ciudad que esté a 6 casillas. Debe construirse en terreno llano adyacente a un distrito de Complejo de ocio con una Arena.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION" Language="es_ES">
+			<Text>Unidad exclusiva del Congo de la Época Clásica que sustituye al Soldado con espada. +1 al Movimiento [ICON_Movement]. +10 a la Fuerza de combate [ICON_Strength] al defenderse contra ataques a distancia. Puede moverse y ver a través de Bosques y Selvas tropicales.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Cada vez que fundes tu primera ciudad en un continente diferente a tu continente de origen recibirás una unidad de cuerpo a cuerpo gratis y +1 a la capacidad de Rutas comerciales [ICON_TradeRoute]. Al construir el Astillero de la Marina Real obtendrás una copia de la unidad naval más fuerte que puedas construir. Consigues la unidad exclusiva Casaca roja cuando investigues la tecnología de la Belicología.[NEWLINE]El Faro proporciona +1 punto adicional de Gran almirante [ICON_GREATADMIRAL] por turno.</Text>
+		</Replace>
+		
+				<!-- Conquest legacy text -->
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="es_ES">
+			<Text>Dominación</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORYSTATUS_DOMINATION_PANEL_HEADER" Language="es_ES">
+			<Text>Victoria por dominación</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_NAME" Language="es_ES">
+			<Text>Victoria por dominación</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONQUEST_NAME" Language="es_ES">
+			<Text>Victoria por dominación</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_DOMINATION_SUBHEADER" Language="es_ES">
+			<Text>VICTORIA POR DOMINACIÓN</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_VICTORY" Language="es_ES">
+			<Text>VICTORIA POR DOMINACIÓN</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="es_ES">
+			<Text>Progreso de dominación<</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
