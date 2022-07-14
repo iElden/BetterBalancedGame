@@ -1045,10 +1045,10 @@ INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, Modifie
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_VOLCANO_PROD_BBG' );
 
 
--- Nuke +50% production cost. double uranium cost.
+-- 14/07/2022 Nuke +50% production cost. uranium cost x1.5
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_MANHATTAN_PROJECT';
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_OPERATION_IVY';
 UPDATE Projects SET Cost=1200 WHERE ProjectType='PROJECT_BUILD_NUCLEAR_DEVICE';
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_BUILD_THERMONUCLEAR_DEVICE';
-UPDATE Project_ResourceCosts SET StartProductionCost=20 WHERE ProjectType='PROJECT_BUILD_NUCLEAR_DEVICE';
-UPDATE Project_ResourceCosts SET StartProductionCost=20 WHERE ProjectType='PROJECT_BUILD_THERMONUCLEAR_DEVICE';
+UPDATE Project_ResourceCosts SET StartProductionCost=15 WHERE ProjectType='PROJECT_BUILD_NUCLEAR_DEVICE';
+UPDATE Project_ResourceCosts SET StartProductionCost=30 WHERE ProjectType='PROJECT_BUILD_THERMONUCLEAR_DEVICE';
