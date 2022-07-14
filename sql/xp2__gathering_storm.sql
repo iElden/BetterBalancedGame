@@ -320,14 +320,16 @@ UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE' 
 --==================
 -- Persia
 --==================
-UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
+--14/07/2022: Reverted
+-- UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 
 
 
 --==================
 -- Rome
 --==================
-UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
+--14/07/2022: Reverted
+-- UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 
 
 --==================
@@ -589,6 +591,9 @@ UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_ANCIENT_R
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_INDUSTRIAL_ROAD';
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_MEDIEVAL_ROAD';
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_MODERN_ROAD';
+
+--14/07/2022: all spads to 5
+UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_SWORDSMAN';
 
 
 
