@@ -1688,6 +1688,9 @@
 		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING__DESCRIPTION" Language="ko_KR">
 			<Text>고산지역 훈련: 언덕 전투 시 [ICON_Strength] 전투력 +2를 획득하고 언덕 지형에서 이동력 페널티가 없습니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING_COMBAT_HILLS_MODIFIER_DESCRIPTION" Language="ko_KR">
+			<Text>언덕 전투 시 [ICON_Strength] 전투력 +2</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION" Language="ko_KR">
 			<Text>국제 [ICON_TradeRoute] 교역로는 해안 도시가 출발지여야 하고 해안에 있거나 항만이 있는 도시에만 도달할 수 있으며, 교역로의 [Icon_Gold] 금 생산량이 +50% 증가합니다. 물 위에서 상인 유닛의 범위가 +50% 증가하고, 잠금 해제되는 즉시 승선할 수 있습니다.</Text>
 		</Replace>
@@ -1708,6 +1711,9 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION" Language="ko_KR">
 			<Text>검사를 대체하는 콩고 특유의 고전 시대 유닛입니다. 기본 [ICON_Movement] 이동력이 1 높으며, 원거리 공격 방어 시 [ICON_Strength] 전투력 +10을 획득합니다. 숲과 열대우림에서 시야 방해를 받지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_DESCRIPTION" Language="ko_KR">
+			<Text>고향 대륙 외의 대륙에 세운 모든 도시가 무료 근접 유닛을 획득합니다. 세운 도시에 영국 해군 기지창을 건설하면 무료 근접 유닛이 추가로 제공됩니다. 군사 과학 기술을 완료하면 특유의 레드코트 유닛을 생산할 수 있습니다.[NEWLINE]등대 건물이 있을 시 [ICON_GreatAdmiral] 위대한 제독 점수 +1점을 추가로 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>고향 외 다른 대륙에서 도시를 처음으로 건설할 때마다 무료 근접 유닛과 [ICON_TradeRoute] 교역로를 획득합니다. 영국 해군 기지창을 건설하면 생산할 수 있는 가장 강한 해상 유닛을 획득합니다. 군사 과학 기술을 연구하면 특유의 레드코트 유닛을 생산할 수 있습니다.[NEWLINE]등대 건물이 있을 시 [ICON_GreatAdmiral] 위대한 제독 점수 +1점을 추가로 얻습니다.</Text>
