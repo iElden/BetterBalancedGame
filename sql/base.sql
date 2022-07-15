@@ -63,26 +63,91 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='FILMSTUDIO_ENHANCEDLAT
 -- INSERT OR IGNORE INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
 -- UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS';
 -- Continent combat bonus: +5 attack on foreign continent, +5 defense on home continent
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG',    'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'UNIT_IS_DOMAIN_LAND'),
-	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG', 'ModifierId', 'COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG'),
-	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Amount', '5');
-INSERT OR IGNORE INTO ModifierStrings (ModifierId, Context, Text) VALUES
-	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Preview', 'LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION');
-INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
-	('TRAIT_LEADER_ROOSEVELT_COROLLARY', 'TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG');
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
-	('REQUIREMENTS_UNIT_ON_HOME_CONTINENT',    'PLAYER_IS_DEFENDER_REQUIREMENTS'),
-	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'PLAYER_IS_ATTACKER_REQUIREMENTS'),
-	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG');
-INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
-	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
-	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
+-- INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+-- 	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG',    'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'UNIT_IS_DOMAIN_LAND'),
+-- 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG');
+-- INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+-- 	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG', 'ModifierId', 'COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG'),
+-- 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Amount', '5');
+-- INSERT OR IGNORE INTO ModifierStrings (ModifierId, Context, Text) VALUES
+-- 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Preview', 'LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION');
+-- INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
+-- 	('TRAIT_LEADER_ROOSEVELT_COROLLARY', 'TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG');
+-- INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+-- 	('REQUIREMENTS_UNIT_ON_HOME_CONTINENT',    'PLAYER_IS_DEFENDER_REQUIREMENTS'),
+-- 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'PLAYER_IS_ATTACKER_REQUIREMENTS'),
+-- 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG');
+-- INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+-- 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
+-- INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
+-- 	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
 -- Rough Rider ability to +5 (from +10)
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS' AND Name='Amount';
+
+-- New Technology Requirements
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
+	SELECT 'BBG_REQUIRES_PLAYER_HAS_' || t.TechnologyType, 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY'
+	FROM Eras e
+	left join Technologies t on e.EraType = t.EraType  
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+INSERT OR IGNORE INTO RequirementArguments
+	SELECT 'BBG_REQUIRES_PLAYER_HAS_' || t.TechnologyType, 'TechnologyType', 'ARGTYPE_IDENTITY', t.TechnologyType, null, null
+	FROM Eras e
+	left join Technologies t on e.EraType = t.EraType 
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+-- New Civic Requirements
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
+	SELECT 'BBG_REQUIRES_PLAYER_HAS_' || C.CivicType, 'REQUIREMENT_PLAYER_HAS_CIVIC'
+	FROM Eras e
+	left join Civics c on e.EraType = c.EraType  
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+INSERT OR IGNORE INTO RequirementArguments
+	SELECT 'BBG_REQUIRES_PLAYER_HAS_' || c.CivicType, 'TechnologyType', 'ARGTYPE_IDENTITY', c.CivicType, null, null
+	FROM Eras e
+	left join Civics c on e.EraType = c.EraType 
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+
+INSERT OR IGNORE INTO RequirementSets(RequirementSetId, RequirementSetType)
+	SELECT 'BBG_PLAYER_' || EraType || '_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY'
+	FROM Eras e
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+-- Connect Tech Requirements to Set
+INSERT OR IGNORE INTO RequirementSetRequirements(RequirementSetId, RequirementId)
+	SELECT rs.RequirementSetId, r.RequirementId 
+	FROM Eras e
+	left join Technologies t on e.EraType = t.EraType
+	left join RequirementArguments ra on ra.value = t.TechnologyType 
+	left join Requirements r on r.RequirementId = ra.RequirementId 
+	left join RequirementSets rs on rs.RequirementSetId = 'BBG_PLAYER_' || e.EraType || '_REQUIREMENTS'
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+-- Connect Civic Requirements to Set
+INSERT OR IGNORE INTO RequirementSetRequirements(RequirementSetId, RequirementId)
+	SELECT rs.RequirementSetId, r.RequirementId 
+	FROM Eras e
+	left join Civics c on e.EraType = c.EraType
+	left join RequirementArguments ra on ra.value = c.CivicType
+	left join Requirements r on r.RequirementId = ra.RequirementId 
+	left join RequirementSets rs on rs.RequirementSetId = 'BBG_PLAYER_' || e.EraType || '_REQUIREMENTS'
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+
+INSERT OR IGNORE INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId, RunOnce, NewOnly, Permanent)
+    SELECT 'TRAIT_COMBAT_BONUS_ON_' || e.EraType, 'MODIFIER_PLAYER_UNITS_ADJUST_COMBAT_STRENGTH', rs.RequirementSetId, 0, 1, 1
+    FROM Eras e
+	left join RequirementSets rs on rs.RequirementSetId = 'BBG_PLAYER_' || e.EraType || '_REQUIREMENTS'
+	WHERE e.EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
+    SELECT 'TRAIT_COMBAT_BONUS_ON_' || EraType, 'Amount', 1
+    FROM Eras 
+	WHERE EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+	
+INSERT OR IGNORE INTO TraitModifiers(TraitType, ModifierId)
+    SELECT 'TRAIT_LEADER_ROOSEVELT_COROLLARY', 'TRAIT_COMBAT_BONUS_ON_' || EraType
+    FROM Eras
+	WHERE EraType in ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL', 'ERA_RENAISSANCE', 'ERA_INDUSTRIAL');
+
+-- Delete existing RR +5 on home continent 
+DELETE FROM TypeTags where Type = 'ABILITY_ROOSEVELT_COMBAT_BONUS_HOME_CONTINENT';
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ROOSEVELT_COROLLARY' AND ModifierId='TRAIT_COMBAT_BONUS_HOME_CONTINENT';
 
 --==================
 -- Arabia
