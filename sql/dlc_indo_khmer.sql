@@ -23,6 +23,9 @@ UPDATE ModifierArguments SET Value='0.5' WHERE ModifierId='BARAYS_FAITH_POPULATI
 -- 15/05/2021: Khmer get 0.3 Culture per pop in cities with Prasat
 UPDATE ModifierArguments SET Value='0.3' WHERE ModifierId='PRASAT_CULTURE_POPULATION' AND Name='Amount';
 
+-- 12/07/22: no more culture bomb on holy site
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_MONASTERIES_KING' AND ModifierId='TRAIT_HOLY_SITE_CULTURE_BOMB';
+
 --==================
 -- Indonesia
 --==================
