@@ -6,16 +6,16 @@
 --==============================================================================================
 --******  CATHERINE THE MAGNIFICIENT(LY OPed)  ******
 --==============================================================================================
-INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType) VALUES
+INSERT INTO Requirements (RequirementId , RequirementType) VALUES
     ('REQUIRES_PLAYER_HAS_MEDIEVAL_FAIRES', 'REQUIREMENT_PLAYER_HAS_CIVIC'); 
 
-INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name, Value) VALUES
+INSERT INTO RequirementArguments (RequirementId , Name, Value) VALUES
     ('REQUIRES_PLAYER_HAS_MEDIEVAL_FAIRES', 'CivicType', 'CIVIC_MEDIEVAL_FAIRES'); 
 
-INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
     ('PLAYER_HAS_MEDIEVAL_FAIRES', 'REQUIREMENTSET_TEST_ALL'); 
 
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
     ('PLAYER_HAS_MEDIEVAL_FAIRES', 'REQUIRES_PLAYER_HAS_MEDIEVAL_FAIRES'); 
 
 
@@ -25,35 +25,35 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_MEDIEVAL_FAIRES' WHERE 
 
 
 -- 15/07/2022: Magnificence castel/theater gives culture to improved strategic adjacent
-INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
     ('BBG_PLOT_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS',  'REQUIREMENTSET_TEST_ALL'); 
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
     ('BBG_PLOT_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS',  'PLOT_ADJACENT_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS_MET'); 
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
     ('BBG_PLOT_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS',  'REQUIRES_PLOT_HAS_IMPROVED_STRATEGIC'); 
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
     ('BBG_MAGNIFICENCES_CULTURE_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'BBG_PLOT_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
     ('BBG_MAGNIFICENCES_CULTURE_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU', 'YieldType', 'YIELD_CULTURE'),
     ('BBG_MAGNIFICENCES_CULTURE_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU', 'Amount', '2');
-INSERT OR IGNORE INTO TraitModifiers(TraitType, ModifierId) VALUES
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
     ('TRAIT_LEADER_MAGNIFICENCES', 'BBG_MAGNIFICENCES_CULTURE_STRATEGIC_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU');
 
 -- 15/07/2022: Magnificence castel/theater gives culture to improved bonus adjacent
-INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES
     ('BBG_REQUIRES_PLOT_HAS_IMPROVED_BONUS', 'REQUIREMENT_PLOT_IMPROVED_RESOURCE_CLASS_TYPE_MATCHES');
-INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
     ('BBG_REQUIRES_PLOT_HAS_IMPROVED_BONUS', 'ResourceClassType', 'RESOURCECLASS_BONUS');
-INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
     ('BBG_PLOT_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS',  'REQUIREMENTSET_TEST_ALL'); 
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
     ('BBG_PLOT_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS',  'PLOT_ADJACENT_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS_MET'); 
-INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
     ('BBG_PLOT_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS',  'BBG_REQUIRES_PLOT_HAS_IMPROVED_BONUS'); 
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
     ('BBG_MAGNIFICENCES_CULTURE_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'BBG_PLOT_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU_REQUIREMENTS');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
     ('BBG_MAGNIFICENCES_CULTURE_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU', 'YieldType', 'YIELD_CULTURE'),
     ('BBG_MAGNIFICENCES_CULTURE_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU', 'Amount', '2');
-INSERT OR IGNORE INTO TraitModifiers(TraitType, ModifierId) VALUES
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
     ('TRAIT_LEADER_MAGNIFICENCES', 'BBG_MAGNIFICENCES_CULTURE_BONUS_ADJACENT_TO_THEATER_SQUARE_OR_CHATEAU');
