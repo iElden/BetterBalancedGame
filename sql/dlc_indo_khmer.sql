@@ -19,7 +19,8 @@ INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
     ('TRAIT_LEADER_MONASTERIES_KING', 'BBG_HOLY_SITE_RIVER_FOOD_ADJACENCY');
 
 -- 15/05/2021: Khmer get 0.5 Faith per pop in cities with Aqueduc
-UPDATE ModifierArguments SET Value='0.5' WHERE ModifierId='BARAYS_FAITH_POPULATION' AND Name='Amount';
+-- 14/07/2022: No more faith per pop // deleting the modifier seems to also delete amenitie
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='BARAYS_FAITH_POPULATION' AND Name='Amount';
 -- 15/05/2021: Khmer get 0.3 Culture per pop in cities with Prasat
 UPDATE ModifierArguments SET Value='0.3' WHERE ModifierId='PRASAT_CULTURE_POPULATION' AND Name='Amount';
 
