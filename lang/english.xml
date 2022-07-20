@@ -154,7 +154,7 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
-			<Text>France unique project when Catherine Magnificence is their leader. Available with Medieval Faires civic to any city with a Theater Square.[NEWLINE]When complete, this project awards 50 [ICON_CULTURE] Culture and 50 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
+			<Text>France unique project when Catherine Magnificence is their leader. Available with Medieval Faires civic to any city with a Theater Square.[NEWLINE][NEWLINE]When complete, this project awards 50 [ICON_CULTURE] Culture and 50 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
@@ -202,13 +202,10 @@
 			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production per segment. Provides an increase to [ICON_Strength] Defense. Bonus to [ICON_Gold] Gold if adjacent to other segments. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="en_US">
-			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 60% of civics and technologies instead of 50%. When completing a wonder receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration from the era of the wonder, if available.[NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
+			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 60% of civics and technologies instead of 50%. When completing a wonder receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration from the era of the wonder, if available.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="en_US">
-			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%. When completing a wonder receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration from the era of the wonder, if available.[NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%. When completing a wonder receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration from the era of the wonder, if available.[NEWLINE]Constructed Wonders provide their cities with +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
+			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%. When completing a wonder receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration from the era of the wonder, if available.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="en_US">
 			<Text>Land combat or Support units are 10% cheaper to purchase with [ICON_GOLD] Gold or [ICON_FAITH] Faith for each Encampment district building in that city.</Text>
@@ -352,7 +349,7 @@
 			<Text>Hic Sunt Dracones: Gain +3 Era Score each time you discover a new Continent or natural wonder. Gain +1 Era Score each time you kill a non-Barbarian naval unit in combat. If chosen at the start of a Golden Age, +3 starting [ICON_Citizen] Population for newly settled cities. +2 [ICON_Movement] Movement for naval and embarked units. +2 Loyalty per turn for cities not on your original [ICON_Capital] Capital's continent. Renaissance through Modern Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="en_US">
-			<Text>+2 [ICON_Food] Food, +2 [ICON_Production] Production and +4 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture[NEWLINE][ICON_Faith] Faith +1 for relic and [ICON_Faith] Faith +4 for [ICON_GreatWork_Artifact] Artifact and [ICON_GreatWork_Sculpture] Sculpture Great Work. +100% [ICON_PRODUCTION] Production to Archeaologists. Palace has slots for 5 Great Works.[NEWLINE][NEWLINE]Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points.[NEWLINE][NEWLINE]All land combat units ignore Rainforest and Woods [ICON_Movement] Movement penalty.</Text>
+			<Text>[ICON_GreatWork_Relic] Relics grant additional +2 [ICON_Food] Food, +2 [ICON_Production] Production, +4 [ICON_Gold] Gold and +1 [ICON_Faith] Faith. [ICON_GreatWork_Artifact] Artifacts and [ICON_GreatWork_Sculpture] Sculptures grant additional +2 [ICON_Food] Food, +2 [ICON_Production] Production, +4 [ICON_Gold] Gold and +4 [ICON_Faith] Faith. +100% [ICON_PRODUCTION] Production to Archeaologists. Palace has slots for 5 Great Works.[NEWLINE][NEWLINE]Receive [ICON_GreatWork_Relic] Relic for each Government Plaza building.[NEWLINE][NEWLINE]Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points.[NEWLINE][NEWLINE]All land combat units ignore Rainforest and Woods [ICON_Movement] Movement penalty.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="en_US">
 			<Text>Awards 1 [ICON_GreatWork_Relic] Relic and 3 [ICON_GreatWork_Relic] Relic slots. +100% [ICON_Tourism] Religious Tourism from this city. +1 [ICON_Food] Food, +1 [ICON_Production] Production, and +1 [ICON_Culture] Culture on all Tundra tiles for this city. Must be built adjacent to a City Center.</Text>
@@ -535,7 +532,7 @@
 			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and cheaper to build.[NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is used in one of this cities districts. The Lavra provides +1 [ICON_GreatWriter] Great Writer point per turn with a Temple and +1 [ICON_GreatArtist] Great Artist point per turn with a Worship building.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
-			<Text>Improvement that unlocks with Craftsmanship and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts: +2 [ICON_Food] Food for the city center, [NEWLINE]+2 [ICON_SCIENCE] Science per adjacent Campus.[NEWLINE]+2 [ICON_PRODUCTION] Production per adjacent Industrial Zone .[NEWLINE]+2 [ICON_CULTURE] Culture per adjacent Theater Square.[NEWLINE]+2 [ICON_FAITH] Faith per adjacent Holy Site.[NEWLINE]+2 [ICON_GOLD] Gold per adjacent Commercial Hub and Harbor.[NEWLINE][NEWLINE]Can't be build next to another pyramid.</Text>
+			<Text>Improvement that unlocks with Craftsmanship and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_FOOD] Food and +2 [ICON_Faith] Faith. Receives additional yields from adjacent districts:[NEWLINE]+2 [ICON_Food] Food for the City Center, [NEWLINE]+2 [ICON_SCIENCE] Science per adjacent Campus.[NEWLINE]+2 [ICON_PRODUCTION] Production per adjacent Industrial Zone .[NEWLINE]+2 [ICON_CULTURE] Culture per adjacent Theater Square.[NEWLINE]+2 [ICON_FAITH] Faith per adjacent Holy Site.[NEWLINE]+2 [ICON_GOLD] Gold per adjacent Commercial Hub and Harbor.[NEWLINE][NEWLINE]Can't be build next to another pyramid.</Text>
 		</Replace>
 		<!--
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="en_US">
@@ -687,7 +684,7 @@
 			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture, +1 [ICON_Gold] Gold, +1 [ICON_Food], +1 [ICON_HOUSING] Housing and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent wonder, up to +2 [ICON_Culture] after researching Flight. +2 [ICON_Gold] Gold if built next to River. +1 [ICON_Culture] Culture and +1 [ICON_Gold] Gold for each adjacent Luxury resource. Provides [ICON_TOURISM] Tourism after researching Flight. Can't be built adjacent to another Chateau.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Housing, +2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides [ICON_TOURISM] Tourism after researching Flight. Can't be built adjacent to another chateau.</Text>
+			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture, +1 [ICON_Gold] Gold, +1 [ICON_Food], +1 [ICON_HOUSING] Housing and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent wonder, up to +2 [ICON_Culture] after researching Flight. +2 [ICON_Gold] Gold if built next to River. +1 [ICON_Culture] Culture and +1 [ICON_Gold] Gold for each adjacent Luxury resource. Provides [ICON_TOURISM] Tourism after researching Flight. Can't be built adjacent to another Chateau.</Text>
 		</Replace>
 		
 		<!--======== GATHERING STORM ========-->
@@ -862,11 +859,11 @@
 		-->
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities, additional +2 gold from Banking and Economic technologies, +2 culture from Medieval Faires and Urbanization civics. Roads built in your territory are one level more advanced than usual.</Text>
+			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities, additional +2 [ICON_Gold] Gold from Banking and Economic technologies, +2 [ICON_Culture] Culture from Medieval Faires and Urbanization civics. Roads built in your territory are one level more advanced than usual.</Text>
 		</Replace>
 		<!-- Poland -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
-			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics generate an additional +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, and +4 [ICON_Gold] Gold. Recieve a Relic when founding and when completing a Religion.</Text>
+			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All [ICON_GreatWork_Relic] Relics generate an additional +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, and +4 [ICON_Gold] Gold. Recieve a [ICON_GreatWork_Relic] Relic when founding and when completing a Religion.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="en_US">
@@ -1565,10 +1562,10 @@
 			<Text>Grants the ability to buy land units with [ICON_Faith] Faith in all owned cities.[NEWLINE]Pillaging Improvements and Districts provides bonus [ICON_Faith] Faith.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Allows construction of Pagodas (+3 [ICON_Faith] Faith, +1 Influence Point per turn).</Text>
+			<Text>Allows construction of Pagodas (+3 [ICON_Faith] Faith, +1 [ICON_InfluencePerTurn] Influence Point per turn).</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+1 Influence Point per turn.</Text>
+			<Text>+1 [ICON_InfluencePerTurn] Influence Point per turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_SYNAGOGUE_DESCRIPTION" Language="en_US">
 			<Text>Allows construction of Synagogues (+7 [ICON_Faith] Faith).</Text>
@@ -1606,7 +1603,7 @@
 		
 		<!-- English text fix -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor (on Standard speed) when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE]+50% [ICON_PRODUCTION] Production towards government plaza buildings.</Text>
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor (on Standard speed) when earning a Great Person. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.[NEWLINE][NEWLINE]+1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities. +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, Factories and Government Plaza buildings.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_QUEENS_BIBLIOTHEQUE_DESCRIPTION" Language="en_US">
 			<Text>A building unique to Sweden. Provides 2 slots of [ICON_GreatWork_WRITING] Writing, [ICON_GreatWork_MUSIC] Music, and any type of [ICON_GreatWork_Landscape] Art. This building is not mutually exclusive with other buildings in Government Plaza.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
@@ -1614,14 +1611,11 @@
 		<Replace Tag="LOC_IMPROVEMENT_CITY_PARK_DESCRIPTION" Language="en_US">
 			<Text>A [ICON_Governor] Governor unique improvement that can be built in a city with a Surveyor Governor with the Parks and Recreation promotion. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal to adjacent tiles.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities. Additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for domestic trade routes as you progress through the Technology and Civic trees. Roads built in your territory are one level more advanced than usual.</Text>
-		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="en_US">
 			<Text>You receive +40 Loyalty per turn in all cities.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MEKEWAP_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Mekewap, unique to Cree.[NEWLINE][NEWLINE]Provides +1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing. +1 [ICON_GOLD] Gold if adjacent to a Luxury resource. +1 [ICON_FOOD] Food for every 2 adjacent Bonus Resources. Additional +1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing with Civil Service civic. Additional +2 [ICON_GOLD] gold for each adjacent Luxury Resource with Cartography technology. Must be placed adjacent to a Bonus or Luxury resource. Cannot be built adjacent to another Mekewap.</Text>
+			<Text>Unlocks the Builder ability to construct a Mekewap, unique to Cree.[NEWLINE][NEWLINE]Provides +1 [ICON_PRODUCTION] Production and +1 [ICON_Housing] Housing. +1 [ICON_GOLD] Gold if adjacent to a Luxury resource. +1 [ICON_FOOD] Food for every 2 adjacent Bonus Resources. Additional +1 [ICON_Housing] Housing with Civil Service civic. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food as you advance through the Civics and Technology Tree.[NEWLINE][NEWLINE]Must be placed adjacent to a Bonus or Luxury resource. Cannot be built adjacent to another Mekewap.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_SCIENCE_DESCRIPTION" Language="en_US">
 			<Text>Builders and Military Engineers gain the ability to use all of their charges to provide bonus [ICON_Production] Production to a District Project. Each charge grants 2% of project [ICON_Production] Production. Once per city per turn.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
@@ -1635,12 +1629,14 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_COMBAT_7_CHAPTER_CONTENT_PARA_4" Language="en_US">
 			<Text>Flanking and Support bonuses: Outmaneuvering the enemy as well as making sure units in the field are supported by their counterparts is important in order to insure victory in the field. In Civilization VI we simulate this with the Flanking and Support bonuses. Once a player has completed the Military Tradition civic, their military is considered advanced enough in order to benefit from these bonuses.[NEWLINE][NEWLINE]Flanking: If an enemy melee unit is surrounded by 2 or more adjacent friendly melee units during an attack, it is considered flanked, granting a +2 combat bonus to the melee attacker for each additional flanking melee unit.[NEWLINE][NEWLINE]Support: When defending against an enemy melee attack, a defending unit ([COLOR_RED]except land ranged and naval ranged - Better Balanced Game[ENDCOLOR]) can gain a +2 combat bonus for every adjacent friendly unit.[NEWLINE][NEWLINE]Air and anti-air units gain combat strength for each adjacent unit. It is similar to support combat bonus but they do not need Military Tradition civic to get this bonus.[NEWLINE][NEWLINE]Air units gain +5 combat bonus for every adjacent deployed air unit when defending.[NEWLINE][NEWLINE]Anti-air units gain +5 combat bonus for every adjacent unit that has anti-air ability.</Text>
 		</Replace>
+		<!-- text overlaps bottom text
 		<Replace Tag="LOC_WORLD_RANKINGS_CULTURE_DETAILS_DOMESTIC_TOURISTS" Language="en_US">
 			<Text>Your [COLOR:ResCultureLabelCS]DOMESTIC TOURISTS[ENDCOLOR] represent the tourists from your civilization that are currently happy vacationing within your borders. You need to generate 100 [ICON_CULTURE] Culture to get 1 Domestic Tourist.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_RANKINGS_CULTURE_DETAILS_VISITING_TOURISTS" Language="en_US">
 			<Text>Your [COLOR:ResCultureLabelCS]VISITING TOURISTS[ENDCOLOR] represent the number of citizens you've attracted from the [COLOR:ResCultureLabelCS]DOMESTIC TOURIST[ENDCOLOR] pools of other civilizations. You need to accumulate [ICON_TOURISM] Tourism equal 150 times starting amount of civilizations to attract 1 Visiting Tourist from other civilization.</Text>
 		</Replace>
+		-->
 		<Replace Tag="LOC_UNIT_INDIAN_VARU_DESCRIPTION" Language="en_US">
 			<Text>Indian unique Classical era heavy cavalry unit. Has Sight of 3. Adjacent enemy units receive -5 [ICON_STRENGTH] Combat Strength.</Text>
 		</Replace>
@@ -1650,7 +1646,7 @@
 			<Text>Farms gain +1 [ICON_PRODUCTION] Production. City must be adjacent to a River.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="en_US">
-			<Text>Land combat units that enter adjacent plots receive the ability 'Spear of Fionn' (+3 combat strength). Adjacent plots yield +1 [ICON_Culture] Culture.</Text>
+			<Text>Land combat units that enter adjacent plots receive the ability 'Spear of Fionn' (+3 [ICON_STRENGTH] Combat Strength). Adjacent plots yield +1 [ICON_Culture] Culture.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="en_US">
 			<Text>Spear of Fionn: +3 Combat Strength</Text>
@@ -1660,6 +1656,9 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING__DESCRIPTION" Language="en_US">
 			<Text>Alpine Training: +2 [ICON_Strength] Combat Strength when fighting in Hills and no Movement penalty in Hill terrain.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING_COMBAT_HILLS_MODIFIER_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_Strength] Combat Strength when fighting in Hills</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION" Language="en_US">
 			<Text>International [ICON_TradeRoute] Trade Routes must originate from a coastal city and can only reach cities on the coast or with a Harbor, but receive +50% towards [ICON_GOLD] Gold. Trader units have +50% range over water, and can embark as soon as they are unlocked.</Text>
@@ -1683,7 +1682,36 @@
 			<Text>Kongo unique Classical era unit that replaces the Swordsman. +1 [ICON_Movement] Movement, +10 [ICON_Strength] Combat Strength when defending against ranged attacks. Can see through Woods and Rainforests.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_PAX_BRITANNICA_DESCRIPTION" Language="en_US">
-			<Text>Each time you found your first city on a continent other than your home continent receive a free melee unit and a [ICON_TradeRoute] Trade Route capacity. Constructing any Royal Navy Dockyard grants you a copy of the strongest naval unit you can build. Lighthouse grants +1 [ICON_GREATADMIRAL] Great Admiral point per turn. Gain the Redcoat unique unit when the Military Science technology is researched.</Text>
+			<Text>All cities founded on a continent other than your home continent receive a free melee unit. Constructing a Royal Navy Dockyard in that city will grant an additional free melee unit. Gain the Redcoat unique unit when the Military Science technology is researched.[NEWLINE]Lighthouse grants +1 [ICON_GREATADMIRAL] Great Admiral point per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Each time you found your first city on a continent other than your home continent receive a free melee unit and a [ICON_TradeRoute] Trade Route capacity. Constructing any Royal Navy Dockyard grants you a copy of the strongest naval unit you can build. Gain the Redcoat unique unit when the Military Science technology is researched.[NEWLINE]Lighthouse grants +1 [ICON_GREATADMIRAL] Great Admiral point per turn.</Text>
+		</Replace>
+		
+		<!-- 4.8.1 Text fixes -->
+		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_1' Language="en_US">
+			<Text>+1 [ICON_STRENGTH] Combat Strength for Alliance level (Shūtur eli sharrī)</Text>
+		</Row>
+		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_2' Language="en_US">
+			<Text>+2 [ICON_STRENGTH] Combat Strength for Alliance level (Shūtur eli sharrī)</Text>
+		</Row>
+		<Row Tag='LOC_BBG_SUMMER_COMBAT_ALLY_3' Language="en_US">
+			<Text>+3 [ICON_STRENGTH] Combat Strength for Alliance level (Shūtur eli sharrī)</Text>
+		</Row>
+		<Row Tag='LOC_BBG_HOLY_SITE_RIVER_FOOD_ADJACENCY' Language="en_US">
+			<Text>+2 [ICON_FOOD] Food from the adjacent River.</Text>
+		</Row>
+		<Row Tag='LOC_BBG_IGNORE_WOODS_ABILITY_DESCRIPTION' Language="en_US">
+			<Text>Ignores Rainforest and Woods [ICON_Movement] Movement penalty (Nkisi).</Text>
+		</Row>
+		<Row Tag='LOC_BBG_ABILITY_NO_SUPPORT_BONUS_DESC' Language="en_US">
+			<Text>No support combat bonus for land ranged and naval ranged units.</Text>
+		</Row>
+		<Replace Tag="LOC_ABILITY_ANTI_SPEAR_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Strength against anti-cavalry units.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ANIT_SPEAR_MODIFIER_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Strength vs. anti-cavalry units.<Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
