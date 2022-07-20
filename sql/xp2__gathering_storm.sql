@@ -381,14 +381,6 @@ INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
 --==============================================================
 -- flood barriers unlocked at steam power
 UPDATE Buildings SET PrereqTech='TECH_STEAM_POWER' WHERE BuildingType='BUILDING_FLOOD_BARRIER';
--- +1 coal for seaports
-INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
-	('BUILDING_SEAPORT', 'COAL_FROM_SEAPORT_BBG');
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('COAL_FROM_SEAPORT_BBG', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_COAL_CPLMOD');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('COAL_FROM_SEAPORT_BBG', 'ResourceType', 'RESOURCE_COAL'),
-	('COAL_FROM_SEAPORT_BBG', 'Amount', '1');
 -- +1 niter from armories
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_ARMORY', 'NITER_FROM_ARMORY_BBG');
@@ -405,6 +397,14 @@ INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSet
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('OIL_FROM_MIL_ACAD_BBG', 'ResourceType', 'RESOURCE_OIL'),
 	('OIL_FROM_MIL_ACAD_BBG', 'Amount', '2');
+-- +1 coal from shipyard
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_SHIPYARD', 'COAL_FROM_SHIPYARD_BBG');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('COAL_FROM_SHIPYARD_BBG', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_COAL_CPLMOD');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('COAL_FROM_SHIPYARD_BBG', 'ResourceType', 'RESOURCE_COAL'),
+	('COAL_FROM_SHIPYARD_BBG', 'Amount', '1');
 -- +2 alum from airports
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_AIRPORT', 'ALUM_FROM_AIRPORT_BBG');
