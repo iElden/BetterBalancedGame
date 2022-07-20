@@ -784,7 +784,7 @@
 			<Text>A building unique to Georgia which replaces and is stronger than the Ancient Walls. Provides +3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides +3 [ICON_Faith] Faith.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="en_US">
-			<Text>Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).</Text>
+			<Text>Killing a unit provides [ICON_FAITH] Faith equal to 50% of the defeated unit's base [ICON_STRENGTH] Combat Strength (on Online speed). Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion). Give +1 [ICON_FAITH] per emissary in a city state</Text>
 		</Replace>
 		<!-- Germany -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="en_US">
