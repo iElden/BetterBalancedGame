@@ -573,10 +573,10 @@
 			<Text>City Centers in Tundra receive +1 [ICON_Food] Food.[NEWLINE][NEWLINE]Farms can be constructed in Tundra. After Civil Engineering is unlocked, Farms can be built on Tundra Hills. Improvements in Tundra and Snow receive the following bonuses: Mines and Lumber Mills +2 [ICON_PRODUCTION] Production, Farms and Camps +2 [ICON_FOOD] Food. Receive double the normal accumulation rate for Strategic Resources improved in tundra and snow. -50% of the normal cost to purchase Snow and Tundra tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
-			<Text>Receive 30% of a military land unit's production value in [ICON_FAITH] Faith when produced.[NEWLINE]Your capital receive 2 warriors.</Text>
+			<Text>Receive 35% of a military land unit's production value in [ICON_FAITH] Faith when produced.[NEWLINE]Your capital receive 1 warrior.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Receive 30% of a military land unit's production value in [ICON_FAITH] Faith when produced.[NEWLINE]Your capital receive 2 warriors.</Text>
+			<Text>Receive 35% of a military land unit's production value in [ICON_FAITH] Faith when produced.[NEWLINE]Your capital receive 1 warrior.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="en_US">
 			<Text>You successfully land a person on the moon! Grants a [ICON_Culture] Culture bonus equal to 5 times your [ICON_Science] Science per turn, and marks the second step towards the Science Victory.</Text>
