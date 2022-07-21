@@ -84,6 +84,9 @@
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>Un distrito exclusivo de Inglaterra para las actividades navales en la ciudad. Sustituye al distrito de Puerto. También quita la penalización al movimiento [ICON_Movement] por embarcar desde esta casilla y desembarcar en ella. Debe construirse en terreno de Costa o Lago adyacente a tierra.[NEWLINE][NEWLINE]+1 al Movimiento [ICON_Movement] de todas las unidades navales construidas en los Astilleros.[NEWLINE]+2 de Oro [ICON_Gold] como adyacencia y +4 de Lealtad por turno cuando se construye en un continente extranjero. No se puede construir sobre arrecifes.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="es_ES">
+			<Text>Unidad exclusiva de Inglaterra en la Revolución Industrial, cuando Victoria es su líder, que sustituye a la Infantería de línea. +5 a la Fuerza de combate [ICON_Strength] al luchar en continentes distintos a los de su capital. No tiene coste de desembarque.</Text>
+    	</Replace>
 		<!-- ========== ARABIE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="es_ES">
 			<Text>+1 punto de Gran Profeta [ICON_GreatProphet] por turno tras investigar Astrología. Recibe automáticamente el último Gran profeta [ICON_GreatProphet]. +1 a Ciencia [ICON_Science] por cada ciudad extranjera que siga la religion de Arabia. </Text>
