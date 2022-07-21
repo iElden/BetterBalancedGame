@@ -672,7 +672,7 @@
 			<Text>Modern era anti-air support unit. Provides cover from air attacks up to 1 hex away from the weapon.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="en_US">
-			<Text>Canadian unique Modern era unit. Can create a National Park. +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of a National Park. Additional +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of an Owned National Park.</Text>
+			<Text>Canadian unique Modern era unit. Has Sight of 4. Can create 2 National Parks. +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of a National Park. Additional +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of an Owned National Park.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="en_US">
 			<Text>Grants the ability to construct an additional Spy. +50% [ICON_Tourism] Tourism across your empire.</Text>
@@ -1720,6 +1720,8 @@
 		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+25% combat experience for all naval units trained in this city. Bonus [ICON_Production] Production equal to the adjacency bonus of the Harbor district. +1 [ICON_PRODUCTION] Production on all unimproved Coast and Lake tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn once discovered.</Text>
 		</Replace>
-
+		<Replace Tag="LOC_UNIT_VIETNAMESE_VOI_CHIEN_DESCRIPTION" Language="en_US">
+			<Text>Vietnamese unique Medieval era ranged unit that replaces the Crossbowman. Has Sight of 3 and can move after attacking. They are also stronger when defending and more expensive.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
