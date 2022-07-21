@@ -1353,6 +1353,9 @@
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Points d'influence +1 par tour.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_WATER_MILL_DESCRIPTION" Language="fr_FR">
+      		<Text>[ICON_PRODUCTION] Production +1 pour toutes les fermes de la ville. La ville doit être adjacente à une rivière.</Text>
+    	</Replace>
 		
 		<!-- Front End -->
 		<Replace Tag="BBG_FRONT_BARBARIANS_SETTING_NAME" Language="fr_FR">
@@ -1653,8 +1656,5 @@
 		<Replace Tag="LOC_BBG_FRONT_BETA_BAN_TRADE_TREATY_NAME" Language="fr_FR">
             <Text>[COLOR_GREEN]Ban Trade Treaty[ENDCOLOR]</Text>
         </Replace>
-		<Replace Tag="LOC_BUILDING_WATER_MILL_DESCRIPTION" Language="fr_FR">
-      		<Text>[ICON_Production] Production +1 pour chaque fermes. La ville doit être adjacente à une rivière.</Text>
-    	</Replace>
 	</LocalizedText>
 </GameData>
