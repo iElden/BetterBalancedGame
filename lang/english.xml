@@ -1663,10 +1663,10 @@
 			<Text>Domestic [ICON_TradeRoute] Trade Routes gain +1 [ICON_Food] Food for every Mountain tile in the origin city. International [ICON_TradeRoute] Trade Routes gain +1 [ICON_GOLD] Gold for every Mountain tile in the origin city. Gain the Qhapaq Ñan improvement when Foreign Trade civic is discovered.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
-			<Text>International [ICON_TradeRoute] Trade Routes sent to the chosen player provide +4 [ICON_Gold] Gold to the sender. The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity. Cancels all domestic [ICON_TradeRoute] Trade Routes of chosen player, and bans any new ones.</Text>
+			<Text>International [ICON_TradeRoute] Trade Routes sent to the chosen player provide +4 [ICON_Gold] Gold to the sender. The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
-			<Text>Domestic [ICON_TradeRoute] Trade Routes provide +4 [ICON_GOLD] Gold for chosen player. Cancels any international [ICON_TradeRoute] Trade Routes between other civilizations and the chosen player, and embargoes any new ones from starting.</Text>
+			<Text>International [ICON_TradeRoute] Trade Routes sent to the chosen player or from the chosen player provide -4 [ICON_Gold] Gold (can be negative).</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_THRUST_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Strength] Combat Strength vs. melee units.</Text>
@@ -1707,7 +1707,19 @@
 			<Text>+10 [ICON_Strength] Combat Strength against anti-cavalry units.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ANIT_SPEAR_MODIFIER_DESCRIPTION" Language="en_US">
-			<Text>+10 [ICON_Strength] Combat Strength vs. anti-cavalry units.<Text>
+			<Text>+10 [ICON_Strength] Combat Strength vs. anti-cavalry units.</Text>
 		</Replace>
+
+		<!-- 4.8.2 -->
+		<Replace Tag="LOC_TRAIT_LEADER_MAGNIFICENCES_DESCRIPTION" Language="en_US">
+			<Text>Improved resources adjacent to Theater Square districts or Châteaux receive +2 [ICON_CULTURE] Culture. May initiate the Court Festival unique project in any city with a Theater Square district.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MEDITERRANEAN_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Your [ICON_TradeRoute] Trade Routes to other civilizations provide +6 [ICON_Gold] Gold for Egypt. Other civilizations' [ICON_TradeRoute] Trade Routes to Egypt provide +2 [ICON_Food] Food for them and +2 [ICON_Gold] Gold for Egypt. Trading with Allies earns twice as many bonus Alliance Points.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all naval units trained in this city. Bonus [ICON_Production] Production equal to the adjacency bonus of the Harbor district. +1 [ICON_PRODUCTION] Production on all unimproved Coast and Lake tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn once discovered.</Text>
+		</Replace>
+
 	</LocalizedText>
 </GameData>
