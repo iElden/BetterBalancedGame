@@ -131,7 +131,7 @@
 			<Text>Las casillas de Selva tropical proporcionan +1 de bonificación por adyacencia a los distritos de Campus, Centro comercial, Lugar sagrado y Teatro, y otorgan +1 de Atractivo a las casillas adyacentes en lugar del habitual -1.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_WATER_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Brasil que no se restringe por la cantidad de población. Sustituye al Parque acuático y proporciona +2 a Servicios [ICON_Amenities]. Además desbloquea el proyecto Carnaval, que concede +1 a Servicios [ICON_Amenities] cuando se inicia y diversos puntos de Grandes personajes [ICON_GreatPerson] cuando se completa. No se puede construir en una ciudad con un Carnaval callejero ni sobre un Arrecife.
+			<Text>Un distrito exclusivo de Brasil que no se restringe por la cantidad de población. Sustituye al Parque acuático y proporciona +2 a Servicios [ICON_Amenities]. Además desbloquea el proyecto Carnaval, que concede +1 a Servicios [ICON_Amenities] cuando se inicia y diversos puntos de Grandes personajes [ICON_GreatPerson] cuando se completa. No se puede construir en una ciudad con un Carnaval callejero ni sobre un Arrecife.</Text>
     	</Replace>
     	<Replace Tag="LOC_DISTRICT_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>Un distrito exclusivo de Brasil que no se restringe por la cantidad de población. Sustituye al Complejo de ocio y proporciona +2 a Servicios [ICON_Amenities]. Además desbloquea el proyecto Carnaval, que concede +1 a Servicios [ICON_Amenities] cuando se inicia y diversos puntos de grandes personajes [ICON_GreatPerson] cuando se completa. No se puede construir en una ciudad con un Copacabana.</Text>
@@ -1661,7 +1661,7 @@
 			<Text>VICTORIA POR DOMINACIÓN</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_PROGRESS" Language="es_ES">
-			<Text>Progreso de dominación<</Text>
+			<Text>Progreso de dominación</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
