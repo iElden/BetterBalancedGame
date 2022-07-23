@@ -812,17 +812,17 @@
 		</Replace>
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ru_RU">
-			<Text>Победа в бою дает [ICON_FAITH] веру в размере 50% от базовой [ICON_STRENGTH] боевой мощи побежденного врага (на сетевой скорости). Каждый ваш [ICON_ENVOY] посол в городе-государстве с вашей доминирующей религией считается за двух [ICON_ENVOY] послов. (Должна быть доминирующая религия).</Text>
+			<Text>Победа в бою дает [ICON_FAITH] веру в размере 50% от базовой [ICON_STRENGTH] боевой мощи побежденного врага (на сетевой скорости). Каждый ваш [ICON_ENVOY] посол в городе-государстве с вашей доминирующей религией считается за двух [ICON_ENVOY] послов. (Должна быть доминирующая религия). Получает +1 [ICON_FAITH] Веру за каждого Посла в городе-государстве.</Text>
 		</Replace>
 		<!-- Newest -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="ru_RU">
 			<Text>Все районы получают дополнительный стандартный бонус за соседство с другим районом. Однако центры коммерции не получают бонусы соседства от рек.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="ru_RU">
-			<Text>Религия, основанная Польшей, начинает преобладать в соседнем городе, который теряет клетку в результате культурного захвата. Священные места получают стандартный бонус веры от соседства с районами. Все реликвии дают бонус к [ICON_FAITH] вере (+2), [ICON_CULTURE] культуре (+2) и [ICON_Gold] золоту (+4). Получите [ICON_GreatWork_Relic] реликвию при основании религии и еще одну при получении всех возможных верований.</Text>
+			<Text>Религия, основанная Польшей, начинает преобладать в соседнем городе, который теряет клетку в результате культурного захвата. Священные места получают стандартный бонус веры от соседства с районами. Все реликвии дают бонус к [ICON_FAITH] вере (+2), [ICON_CULTURE] культуре (+2) и [ICON_Gold] золоту (+4). Получает [ICON_GreatWork_Relic] реликвию при основании религии и еще одну при получении всех возможных верований.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное здание Ацтеков. Даёт [ICON_Amenities] довольство, +1 [ICON_CULTURE] культуры для центра городов в радиусе 6 клеток.[NEWLINE][ICON_GreatGeneral] Даёт очки великого полководца.</Text>
+			<Text>Уникальное здание Ацтеков. Даёт +1 [ICON_Amenities] довольство, +1 [ICON_CULTURE] культуры для центра городов в радиусе 6 клеток.[NEWLINE][ICON_GreatGeneral] Даёт очки великого полководца.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы. Занимает три клетки. Дает +2 [ICON_FOOD] еды, +2 [ICON_PRODUCTION] производства и +2 [ICON_SCIENCE] науки.</Text>
@@ -835,7 +835,7 @@
 		</Replace>
 		<!-- Last Updates -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="ru_RU">
-			<Text>После получения социального института "Гильдии" в каждом город можно будет построить на один район больше, чем обычно (сверх предела, определяемого численностью [ICON_Citizen] населения).</Text>
+			<Text>После получения социального института "Гильдии" в каждом городе можно будет построить на один район больше, чем обычно (сверх предела, определяемого численностью [ICON_Citizen] населения).</Text>
 		</Replace>
 		<!-- Greece -->
 		<Replace Tag="LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION" Language="ru_RU">
@@ -1598,6 +1598,9 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING_COMBAT_HILLS_MODIFIER_DESCRIPTION" Language="ru_RU">
 		<Text>+2 [ICON_Strength] Боевой Мощи при сражениях на Холмах</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_COMANDANTE_GENERAL_DESCRIPTION" Language="ru_RU">
+		<Text>Особый тип великого человека, доступный только Симону Боливару. Каждый из них обеспечивает +1 [ICON_Movement] очко перемещения всем наземным боевым юнитам в радиусе двух клеток и обладает уникальными способностями, включая пассивный эффект и эффект отхода от дел.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
