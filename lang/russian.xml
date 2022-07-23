@@ -763,7 +763,7 @@
 		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ru_RU">
-			<Text>+100% [ICON_Production] производства при создании морских юнитов. Можно построить только на клетке побережья рядом с промышленной зоной.</Text>
+			<Text>+75% [ICON_Production] производства при создании морских юнитов. Можно построить только на клетке побережья рядом с промышленной зоной.</Text>
 		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ru_RU">
@@ -1578,7 +1578,7 @@
 		<Replace Tag="LOC_LEADER_TRAIT_VATICAN_CITY_DESCRIPTION" Language="ru_RU">
 		<Text>При активации [ICON_GreatPerson] великого человека он распространяет 400 влияния вашей религии (основанной вами или преобладающей) на города в радиусе 6 клеток.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_JEBEL_BARKAL_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_BUILDING_JEBEL_BARKAL_XP2_DESCRIPTION" Language="ru_RU">
 		<Text>Дает 4 [ICON_RESOURCE_IRON] железа за ход. Производит +4 [ICON_Faith] веры во всех городах на расстоянии до 6 клеток.[NEWLINE][NEWLINE]Можно построить только в пустыне (холмы).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_BEACH_RESORT_DESCRIPTION" Language="ru_RU">
@@ -1588,13 +1588,16 @@
 		<Text>Ваши города получают +40 Лояльности за ход.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MAGNIFICENCES_DESCRIPTION" Language="ru_RU">
-		<Text>Улучшенные ресурсы, рядом с Театральной Площадью и Шато приносят +2 [ICON_CULTURE] Культуры. Может устроить придворный фестиваль, уникальный проект, в любом городе с Театральной Площадью.</Text>
+		<Text>Улучшенные ресурсы приносят +2 [ICON_CULTURE] Культуры рядом с Театральной Площадью и Шато. Может провести уникальный проект "придворный фестиваль" в любом городе с Театральной Площадью.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MEDITERRANEAN_EXPANSION2_DESCRIPTION" Language="ru_RU">
 		<Text>Ваши [ICON_TradeRoute] Торговые Пути к другим цивилизациям приносят +6 [ICON_Gold] Золота Египту. [ICON_TradeRoute] Торговые Пути других цивилизаций к Египту приносят им +2 [ICON_Food] Пищи и +2 [ICON_Gold] Золота Египту. Торговля с союзниками приносит Египту в два раза больше очков союза.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="ru_RU">
 		<Text>+25% боевого опыта для всех морских юнитов, построенных в этом городе. Даёт бонус к [ICON_Production] Производству, равный бонусу соседства Гавани. +1 [ICON_PRODUCTION] Производства на всех необработанных Прибрежных клетках и клетках Озера в этом городе. +1 [ICON_RESOURCE_COAL] Угля в ход после его изучения.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING_COMBAT_HILLS_MODIFIER_DESCRIPTION" Language="ru_RU">
+		<Text>+2 [ICON_Strength] Боевой Мощи при сражениях на Холмах</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
