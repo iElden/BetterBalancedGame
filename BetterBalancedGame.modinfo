@@ -1,21 +1,20 @@
-<!-- BETA ModID
-<Mod id="cb84075d-5007-4207-b662-c35a5f7be231" version="40808">
--->
+<!-- BETA ModID-->
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be231" version="40821">
 <!-- Codenaugh's ModID
 <Mod id="cb84075d-5007-4207-b662-c35a5f7be217" version="4003">
 -->
-<!-- Elden's ModID-->
-<Mod id="cb84075d-5007-4207-b662-c35a5f7be240" version="4080">
-
+<!-- Elden's ModID
+<Mod id="cb84075d-5007-4207-b662-c35a5f7be240" version="4082">
+-->
 	<Properties>
-		<Name>Better Balanced Game 4.8.0</Name>
+		<Name>Better Balanced Game BETA 4.8.2 (build 1)</Name>
 		<Description>
-			Live build of Better Balanced Game
+			Beta build of Better Balanced Game
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>iElden, D. / Jack The Narrator, codenaugh</Authors>
-		<Version>4080</Version>
-		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj)</SpecialThanks>
+		<Version>40821</Version>
+		<SpecialThanks>coloo, abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate, wazabaza, Ignasiuz, MarsLife(puj), Apeul</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	<!--
