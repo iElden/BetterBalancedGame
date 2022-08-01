@@ -180,10 +180,10 @@
 			<Text>+20 к лечению на клетках города, обращенного в вашу религию.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ru_RU">
-        <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
+        <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ru_RU">
-        <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства за каждый сегмент. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи. Великая стена может быть разорена (но не уничтожена) только стихийными бедствиями.</Text>
+        <Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] производства. Дает улучшение к [ICON_Strength] обороне. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
 		</Replace>
 		<!-- CHINA -->
 		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="ru_RU">
@@ -822,7 +822,7 @@
 			<Text>Религия, основанная Польшей, начинает преобладать в соседнем городе, который теряет клетку в результате культурного захвата. Священные места получают стандартный бонус веры от соседства с районами. Все реликвии дают бонус к [ICON_FAITH] вере (+2), [ICON_CULTURE] культуре (+2) и [ICON_Gold] золоту (+4). Получает [ICON_GreatWork_Relic] реликвию при основании религии и еще одну при получении всех возможных верований.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное здание Ацтеков. Даёт +1 [ICON_Amenities] довольство, +1 [ICON_CULTURE] культуры для центра городов в радиусе 6 клеток.[NEWLINE][ICON_GreatGeneral] Даёт очки великого полководца.</Text>
+			<Text>Уникальное здание Ацтеков. Даёт +1 [ICON_Amenities] довольства, +1 [ICON_CULTURE] культуры для центра городов в радиусе 6 клеток.[NEWLINE][ICON_GreatGeneral] Даёт очки великого полководца.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы. Занимает три клетки. Дает +2 [ICON_FOOD] еды, +2 [ICON_PRODUCTION] производства и +2 [ICON_SCIENCE] науки.</Text>
@@ -1578,7 +1578,7 @@
 		<Replace Tag="LOC_LEADER_TRAIT_VATICAN_CITY_DESCRIPTION" Language="ru_RU">
 		<Text>При активации [ICON_GreatPerson] великого человека он распространяет 400 влияния вашей религии (основанной вами или преобладающей) на города в радиусе 6 клеток.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_JEBEL_BARKAL_XP2_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_BUILDING_JEBEL_BARKAL_EXPANSION2_DESCRIPTION" Language="ru_RU">
 		<Text>Дает 4 [ICON_RESOURCE_IRON] железа за ход. Производит +4 [ICON_Faith] веры во всех городах на расстоянии до 6 клеток.[NEWLINE][NEWLINE]Можно построить только в пустыне (холмы).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_BEACH_RESORT_DESCRIPTION" Language="ru_RU">
