@@ -38,7 +38,15 @@ UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqu
 UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
 -- Georgia gets 50% faith kills (online) instead of Protectorate War Bonus
 UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_LEADER_FAITH_KILLS' AND Name='PercentDefeatedStrength';
-
+-- Georgia gets +1 faith for every envoy
+INSERT INTO TraitModifiers (TraitType , ModifierId) VALUES
+	('TRAIT_LEADER_RELIGION_CITY_STATES' , 'BBG_GEORGIA_FAITH_PER_ENVOY');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('BBG_GEORGIA_FAITH_PER_ENVOY', 'MODIFIER_PLAYER_ADJUST_YIELD_CHANGE_PER_USED_INFLUENCE_TOKEN');
+INSERT INTO ModifierArguments (ModifierId , Name , Value) VALUES
+	('BBG_GEORGIA_FAITH_PER_ENVOY' , 'YieldType', 'YIELD_FAITH');
+INSERT INTO ModifierArguments (ModifierId , Name , Value) VALUES
+	('BBG_GEORGIA_FAITH_PER_ENVOY' , 'Amount', '1');
 
 --==================
 -- India (Chandra)

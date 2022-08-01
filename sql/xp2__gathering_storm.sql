@@ -320,14 +320,16 @@ UPDATE Modifiers SET SubjectRequirementSetId='BBG_PLOT_HAS_JUNGLE_EARLY_EMPIRE' 
 --==================
 -- Persia
 --==================
-UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
+--14/07/2022: Reverted
+-- UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 
 
 
 --==================
 -- Rome
 --==================
-UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
+--14/07/2022: Reverted
+-- UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 
 
 --==================
@@ -381,14 +383,6 @@ INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
 --==============================================================
 -- flood barriers unlocked at steam power
 UPDATE Buildings SET PrereqTech='TECH_STEAM_POWER' WHERE BuildingType='BUILDING_FLOOD_BARRIER';
--- +1 coal for seaports
-INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
-	('BUILDING_SEAPORT', 'COAL_FROM_SEAPORT_BBG');
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('COAL_FROM_SEAPORT_BBG', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_COAL_CPLMOD');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('COAL_FROM_SEAPORT_BBG', 'ResourceType', 'RESOURCE_COAL'),
-	('COAL_FROM_SEAPORT_BBG', 'Amount', '1');
 -- +1 niter from armories
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_ARMORY', 'NITER_FROM_ARMORY_BBG');
@@ -405,6 +399,14 @@ INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSet
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('OIL_FROM_MIL_ACAD_BBG', 'ResourceType', 'RESOURCE_OIL'),
 	('OIL_FROM_MIL_ACAD_BBG', 'Amount', '2');
+-- +1 coal from shipyard
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_SHIPYARD', 'COAL_FROM_SHIPYARD_BBG');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('COAL_FROM_SHIPYARD_BBG', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_COAL_CPLMOD');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('COAL_FROM_SHIPYARD_BBG', 'ResourceType', 'RESOURCE_COAL'),
+	('COAL_FROM_SHIPYARD_BBG', 'Amount', '1');
 -- +2 alum from airports
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_AIRPORT', 'ALUM_FROM_AIRPORT_BBG');
@@ -589,6 +591,9 @@ UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_ANCIENT_R
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_INDUSTRIAL_ROAD';
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_MEDIEVAL_ROAD';
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_MODERN_ROAD';
+
+--14/07/2022: all spads to 5
+UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_SWORDSMAN';
 
 
 
@@ -1044,11 +1049,14 @@ INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, Modifie
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_FLOODPLAINS_PROD_BBG' ),
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_VOLCANO_PROD_BBG' );
 
+--==============================================================
+--******                   N U K E S                      ******
+--==============================================================
 
--- Nuke +50% production cost. double uranium cost.
+-- 14/07/2022 Nuke +50% production cost. uranium cost x1.5
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_MANHATTAN_PROJECT';
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_OPERATION_IVY';
 UPDATE Projects SET Cost=1200 WHERE ProjectType='PROJECT_BUILD_NUCLEAR_DEVICE';
 UPDATE Projects SET Cost=1500 WHERE ProjectType='PROJECT_BUILD_THERMONUCLEAR_DEVICE';
-UPDATE Project_ResourceCosts SET StartProductionCost=20 WHERE ProjectType='PROJECT_BUILD_NUCLEAR_DEVICE';
-UPDATE Project_ResourceCosts SET StartProductionCost=20 WHERE ProjectType='PROJECT_BUILD_THERMONUCLEAR_DEVICE';
+UPDATE Project_ResourceCosts SET StartProductionCost=15 WHERE ProjectType='PROJECT_BUILD_NUCLEAR_DEVICE';
+UPDATE Project_ResourceCosts SET StartProductionCost=30 WHERE ProjectType='PROJECT_BUILD_THERMONUCLEAR_DEVICE';
