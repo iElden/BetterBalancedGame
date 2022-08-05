@@ -1100,7 +1100,7 @@
 			<Text>[ICON_Strength] Puissance de Combat +10 contre les unités Anti-Cavalerie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ANIT_SPEAR_MODIFIER_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de Combat +10 contre les unités Anti-Cavalerie.<Text>
+			<Text>[ICON_Strength] Puissance de Combat +10 contre les unités Anti-Cavalerie.</Text>
 		</Replace>
 
 
