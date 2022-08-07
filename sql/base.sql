@@ -405,6 +405,11 @@ INSERT OR IGNORE INTO ExcludedAdjacencies (TraitType , YieldChangeId)
 -- Implemented by Firaxis
 -- UPDATE Units SET PrereqCivic='CIVIC_FEUDALISM' , PrereqTech=NULL WHERE UnitType='UNIT_JAPANESE_SAMURAI';
 
+-- 08/08/2022: fix bug where bonus is not working on gdr
+DELETE FROM TypeTags WHERE Type='ABILITY_HOJO_TOKIMUNE_COASTAL_COMBAT_BONUS';
+
+INSERT OR IGNORE INTO TypeTags (Type , Tag) VALUES
+	('ABILITY_HOJO_TOKIMUNE_COASTAL_COMBAT_BONUS' ,'CLASS_ALL_COMBAT_UNITS');
 
 --==================
 -- Kongo
